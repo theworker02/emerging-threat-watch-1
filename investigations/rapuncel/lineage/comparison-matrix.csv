@@ -1,0 +1,11 @@
+dimension,rapuncel_status,boryptgrab_status,similarity_class,confidence,evidence_ids,notes
+SEO fake GitHub distribution,reported,documented (Trend Micro),MODERATE LINEAGE SIGNAL,Moderate,RAP-EV-0012;RAP-SRC-0006,Common delivery theme; could be copied tradecraft
+GitHub Pages download portals,reported,documented,MODERATE LINEAGE SIGNAL,Moderate,RAP-EV-0012,Needs primary artifact comparison
+Oversized ZIP padding,reported (127-148MB),reported in some BoryptGrab ZIPs,WEAK LINEAGE SIGNAL,Low,RAP-EV-0002,Common evasion
+Chrome Elevation Service / ABE workflow,reported,documented,MODERATE LINEAGE SIGNAL,Moderate,RAP-EV-0009,Also common among modern stealers
+Filegraber misspelling,reported,reported overlap,STRONG LINEAGE SIGNAL,Moderate,RAP-EV-0012,Distinctive artifact if confirmed in primary
+UserInformation.txt BUILD NAME field,reported,reported overlap,STRONG LINEAGE SIGNAL,Moderate,RAP-EV-0012,Needs sample confirmation
+Alinubx.sys kernel killer,reported present,not in documented BoryptGrab,UNKNOWN,Moderate,RAP-EV-0004,Differentiator / evolution hypothesis
+Byte-identical payloads,no (reported),n/a,UNKNOWN,Moderate,RAP-EV-0012,Researchers say hashes not shared
+Compiler/runtime NativeAOT loader,reported,BoryptGrab C/C++ stealer,WEAK LINEAGE SIGNAL,Low,RAP-EV-0002;RAP-SRC-0006,Different stack may argue sibling/reuse not clone
+Cruciferra PUROSANGUE crypter,reported on loader,not established for BoryptGrab here,COMMON TECHNIQUE,Low,RAP-EV-0002,Commodity crypter possible

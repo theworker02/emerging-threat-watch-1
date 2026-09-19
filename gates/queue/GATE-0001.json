@@ -1,0 +1,17 @@
+{
+  "gate_id": "GATE-0001",
+  "tier": 1,
+  "type": "sandbox_detonate",
+  "family": "SynkLoader",
+  "summary": "Detonate SynkLoader sample SHA-256 from published-indicators only (CAPEv2/ANY.RUN); capture PCAP+config \u2014 do not invent hashes",
+  "payload_path": "gates/payloads/synkloader-detonate.json",
+  "status": "pending",
+  "submitted_utc": "2026-09-19T19:45:28Z",
+  "submitted_by": "agent",
+  "approved_utc": null,
+  "approved_by": null,
+  "denied_utc": null,
+  "completed_utc": null,
+  "run_notes": "",
+  "content_sha256": "b67d1d12e4c21ae9091beac61bf9859ad7ee5979ecf4aefbc0af7a3e9c2ba17d"
+}

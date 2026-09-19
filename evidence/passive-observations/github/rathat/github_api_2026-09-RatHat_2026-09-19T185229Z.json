@@ -1,0 +1,50 @@
+[
+  {
+    "name": "apks.csv",
+    "path": "2026-09-RatHat/apks.csv",
+    "sha": "4acf917c0616753b2bfd8515536820470117d67b",
+    "size": 10530,
+    "url": "https://api.github.com/repos/Zimperium/IOC/contents/2026-09-RatHat/apks.csv?ref=master",
+    "html_url": "https://github.com/Zimperium/IOC/blob/master/2026-09-RatHat/apks.csv",
+    "git_url": "https://api.github.com/repos/Zimperium/IOC/git/blobs/4acf917c0616753b2bfd8515536820470117d67b",
+    "download_url": "https://raw.githubusercontent.com/Zimperium/IOC/master/2026-09-RatHat/apks.csv",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Zimperium/IOC/contents/2026-09-RatHat/apks.csv?ref=master",
+      "git": "https://api.github.com/repos/Zimperium/IOC/git/blobs/4acf917c0616753b2bfd8515536820470117d67b",
+      "html": "https://github.com/Zimperium/IOC/blob/master/2026-09-RatHat/apks.csv"
+    }
+  },
+  {
+    "name": "c2.csv",
+    "path": "2026-09-RatHat/c2.csv",
+    "sha": "8f6b472fc612ccd7703bcd949dca63d7129fed06",
+    "size": 404,
+    "url": "https://api.github.com/repos/Zimperium/IOC/contents/2026-09-RatHat/c2.csv?ref=master",
+    "html_url": "https://github.com/Zimperium/IOC/blob/master/2026-09-RatHat/c2.csv",
+    "git_url": "https://api.github.com/repos/Zimperium/IOC/git/blobs/8f6b472fc612ccd7703bcd949dca63d7129fed06",
+    "download_url": "https://raw.githubusercontent.com/Zimperium/IOC/master/2026-09-RatHat/c2.csv",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Zimperium/IOC/contents/2026-09-RatHat/c2.csv?ref=master",
+      "git": "https://api.github.com/repos/Zimperium/IOC/git/blobs/8f6b472fc612ccd7703bcd949dca63d7129fed06",
+      "html": "https://github.com/Zimperium/IOC/blob/master/2026-09-RatHat/c2.csv"
+    }
+  },
+  {
+    "name": "phishing.csv",
+    "path": "2026-09-RatHat/phishing.csv",
+    "sha": "9230a27803cf46981e955f0272ea73741aa1689a",
+    "size": 152,
+    "url": "https://api.github.com/repos/Zimperium/IOC/contents/2026-09-RatHat/phishing.csv?ref=master",
+    "html_url": "https://github.com/Zimperium/IOC/blob/master/2026-09-RatHat/phishing.csv",
+    "git_url": "https://api.github.com/repos/Zimperium/IOC/git/blobs/9230a27803cf46981e955f0272ea73741aa1689a",
+    "download_url": "https://raw.githubusercontent.com/Zimperium/IOC/master/2026-09-RatHat/phishing.csv",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/Zimperium/IOC/contents/2026-09-RatHat/phishing.csv?ref=master",
+      "git": "https://api.github.com/repos/Zimperium/IOC/git/blobs/9230a27803cf46981e955f0272ea73741aa1689a",
+      "html": "https://github.com/Zimperium/IOC/blob/master/2026-09-RatHat/phishing.csv"
+    }
+  }
+]

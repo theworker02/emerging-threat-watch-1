@@ -1,0 +1,346 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "disk-director.github.io/.github"
+        },
+        "page": {
+          "url": "lafferdingar.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "disk-director.github.io",
+        "apexDomain": "disk-director.github.io",
+        "time": "2026-07-16T12:26:30.640Z",
+        "uuid": "019f6ae4-010e-724c-bbfe-712e00e413c0",
+        "url": "https://disk-director.github.io/.github/"
+      },
+      "stats": {
+        "uniqIPs": 5,
+        "uniqCountries": 2,
+        "dataLength": 126894,
+        "encodedDataLength": 45178,
+        "requests": 12
+      },
+      "page": {
+        "server": "cloudflare",
+        "redirected": "off-domain",
+        "ip": "188.114.97.3",
+        "apexDomainAgeDays": 148,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Suspected Phishing | Cloudflare",
+        "url": "https://lafferdingar.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 30,
+        "domainAgeDays": 148,
+        "tlsValidFrom": "2026-06-15T18:28:29.000Z",
+        "domain": "lafferdingar.com",
+        "apexDomain": "lafferdingar.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "403"
+      },
+      "labels": [],
+      "_id": "019f6ae4-010e-724c-bbfe-712e00e413c0",
+      "_score": null,
+      "sort": [
+        1784204790640,
+        "019f6ae4-010e-724c-bbfe-712e00e413c0"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019f6ae4-010e-724c-bbfe-712e00e413c0/",
+      "screenshot": "https://urlscan.io/screenshots/019f6ae4-010e-724c-bbfe-712e00e413c0.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "sap-crystal-reports.github.io/.github"
+        },
+        "page": {
+          "url": "apocketwilderness.com/4wdvfn3q23sc/sap-crystal-reports.github.io"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "sap-crystal-reports.github.io",
+        "apexDomain": "sap-crystal-reports.github.io",
+        "time": "2026-06-02T14:07:48.480Z",
+        "uuid": "019e88a9-62fa-766c-ba98-946f43ccddb6",
+        "url": "https://sap-crystal-reports.github.io/.github/"
+      },
+      "stats": {
+        "uniqIPs": 3,
+        "uniqCountries": 3,
+        "dataLength": 31693,
+        "encodedDataLength": 14403,
+        "requests": 7
+      },
+      "page": {
+        "country": "GE",
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "redirected": "off-domain",
+        "ip": "91.214.78.165",
+        "apexDomainAgeDays": 1203,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Github Download · Sap Crystal Reports · Github",
+        "url": "https://apocketwilderness.com/4wdvfn3q23sc/sap-crystal-reports.github.io/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 8,
+        "domainAgeDays": 1203,
+        "tlsValidFrom": "2026-05-25T08:25:55.000Z",
+        "domain": "apocketwilderness.com",
+        "apexDomain": "apocketwilderness.com",
+        "asnname": "neoncorenetworks NEON CORE NETWORK LLC, US",
+        "asn": "AS205775",
+        "tlsIssuer": "R12",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019e88a9-62fa-766c-ba98-946f43ccddb6",
+      "_score": null,
+      "sort": [
+        1780409268480,
+        "019e88a9-62fa-766c-ba98-946f43ccddb6"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019e88a9-62fa-766c-ba98-946f43ccddb6/",
+      "screenshot": "https://urlscan.io/screenshots/019e88a9-62fa-766c-ba98-946f43ccddb6.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "zaffersnouty.com"
+        },
+        "page": {
+          "url": "threads.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "zaffersnouty.com",
+        "apexDomain": "zaffersnouty.com",
+        "time": "2026-05-15T06:17:10.705Z",
+        "uuid": "019e2a48-0066-7299-ab15-ee43006f8c48",
+        "url": "http://zaffersnouty.com/"
+      },
+      "stats": {
+        "uniqIPs": 4,
+        "uniqCountries": 2,
+        "dataLength": 7410195,
+        "encodedDataLength": 1769926,
+        "requests": 38
+      },
+      "page": {
+        "country": "DE",
+        "redirected": "off-domain",
+        "ip": "157.240.0.63",
+        "apexDomainAgeDays": 3238,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Threads",
+        "url": "https://www.threads.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 83,
+        "ptr": "instagram-p3-shv-02-fra3.fbcdn.net",
+        "domainAgeDays": 1973,
+        "tlsValidFrom": "2026-02-21T00:00:00.000Z",
+        "domain": "www.threads.com",
+        "umbrellaRank": 29727,
+        "apexDomain": "threads.com",
+        "asnname": "FACEBOOK - Facebook, Inc., US",
+        "asn": "AS32934",
+        "tlsIssuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019e2a48-0066-7299-ab15-ee43006f8c48",
+      "_score": null,
+      "sort": [
+        1778825830705,
+        "019e2a48-0066-7299-ab15-ee43006f8c48"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019e2a48-0066-7299-ab15-ee43006f8c48/",
+      "screenshot": "https://urlscan.io/screenshots/019e2a48-0066-7299-ab15-ee43006f8c48.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "zaffersnouty.com"
+        },
+        "page": {
+          "url": "threads.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "zaffersnouty.com",
+        "apexDomain": "zaffersnouty.com",
+        "time": "2026-04-12T02:58:48.267Z",
+        "uuid": "019d7fa0-8a68-70ac-b4fa-e60c5066760f",
+        "url": "http://zaffersnouty.com/"
+      },
+      "stats": {
+        "uniqIPs": 6,
+        "uniqCountries": 3,
+        "dataLength": 7211865,
+        "encodedDataLength": 2141766,
+        "requests": 42
+      },
+      "page": {
+        "country": "DE",
+        "redirected": "off-domain",
+        "ip": "57.144.244.192",
+        "apexDomainAgeDays": 3205,
+        "language": "de",
+        "mimeType": "text/html",
+        "title": "Threads",
+        "url": "https://www.threads.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 83,
+        "ptr": "instagram-p3-shv-01-fra5.fbcdn.net",
+        "domainAgeDays": 1940,
+        "tlsValidFrom": "2026-01-19T00:00:00.000Z",
+        "domain": "www.threads.com",
+        "umbrellaRank": 29366,
+        "apexDomain": "threads.com",
+        "asnname": "FACEBOOK - Facebook, Inc., US",
+        "asn": "AS32934",
+        "tlsIssuer": "DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019d7fa0-8a68-70ac-b4fa-e60c5066760f",
+      "_score": null,
+      "sort": [
+        1775962728267,
+        "019d7fa0-8a68-70ac-b4fa-e60c5066760f"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019d7fa0-8a68-70ac-b4fa-e60c5066760f/",
+      "screenshot": "https://urlscan.io/screenshots/019d7fa0-8a68-70ac-b4fa-e60c5066760f.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "zaffersnouty.com"
+        },
+        "page": {
+          "url": "hustlefu.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "zaffersnouty.com",
+        "apexDomain": "zaffersnouty.com",
+        "time": "2026-02-25T08:02:27.652Z",
+        "uuid": "019c93d2-05a6-753b-b0ac-9f52d0bc4ba3",
+        "url": "http://zaffersnouty.com/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 2,
+        "dataLength": 1210,
+        "encodedDataLength": 910,
+        "requests": 2
+      },
+      "page": {
+        "country": "DE",
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "redirected": "off-domain",
+        "ip": "213.176.79.177",
+        "apexDomainAgeDays": 1980,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Hustle Fu",
+        "url": "https://hustlefu.com/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 8,
+        "domainAgeDays": 1980,
+        "tlsValidFrom": "2026-02-17T07:42:24.000Z",
+        "domain": "hustlefu.com",
+        "apexDomain": "hustlefu.com",
+        "asnname": "Partner-Hosting-LTD Partner Hosting LTD, GB",
+        "asn": "AS215826",
+        "tlsIssuer": "R13",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019c93d2-05a6-753b-b0ac-9f52d0bc4ba3",
+      "_score": null,
+      "sort": [
+        1772006547652,
+        "019c93d2-05a6-753b-b0ac-9f52d0bc4ba3"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019c93d2-05a6-753b-b0ac-9f52d0bc4ba3/",
+      "screenshot": "https://urlscan.io/screenshots/019c93d2-05a6-753b-b0ac-9f52d0bc4ba3.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "bleachbit-software.github.io/.github"
+        },
+        "page": {
+          "url": "discoveringkourend.com/bleachbit-software.github.io/n2pnkb3z3j0g"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "bleachbit-software.github.io",
+        "apexDomain": "bleachbit-software.github.io",
+        "time": "2026-02-10T04:34:40.203Z",
+        "uuid": "019c45d4-6892-701f-b63b-c36357267d55",
+        "url": "https://bleachbit-software.github.io/.github/"
+      },
+      "stats": {
+        "uniqIPs": 3,
+        "uniqCountries": 3,
+        "dataLength": 31896,
+        "encodedDataLength": 14586,
+        "requests": 8
+      },
+      "page": {
+        "country": "CZ",
+        "server": "nginx/1.18.0 (Ubuntu)",
+        "redirected": "off-domain",
+        "ip": "95.85.236.70",
+        "apexDomainAgeDays": 1091,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Secure Content Delivery",
+        "url": "https://discoveringkourend.com/bleachbit-software.github.io/n2pnkb3z3j0g",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 21,
+        "domainAgeDays": 1091,
+        "tlsValidFrom": "2026-01-19T09:56:39.000Z",
+        "domain": "discoveringkourend.com",
+        "apexDomain": "discoveringkourend.com",
+        "asnname": "Partner-Hosting-LTD Partner Hosting LTD, GB",
+        "asn": "AS215826",
+        "tlsIssuer": "R13",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019c45d4-6892-701f-b63b-c36357267d55",
+      "_score": null,
+      "sort": [
+        1770698080203,
+        "019c45d4-6892-701f-b63b-c36357267d55"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019c45d4-6892-701f-b63b-c36357267d55/",
+      "screenshot": "https://urlscan.io/screenshots/019c45d4-6892-701f-b63b-c36357267d55.png"
+    }
+  ],
+  "total": 6,
+  "took": 2648,
+  "has_more": false
+}

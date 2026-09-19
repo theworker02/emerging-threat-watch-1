@@ -1,0 +1,12 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+url,https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0001,Initial Teams-delivered MSI URL | NOT OBSERVED by ETW until passive row exists.
+domain,neversoftmain.net,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0013,Loader C2 | NOT OBSERVED by ETW until passive row exists.
+domain,rootfarmapp.net,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0014,Loader C2 | NOT OBSERVED by ETW until passive row exists.
+domain,tripinupdate.net,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0015,Loader C2 | NOT OBSERVED by ETW until passive row exists.
+domain,dondermicapp.net,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0016,TrafficRedirector C2 | NOT OBSERVED by ETW until passive row exists.
+domain,aroclenetapp.net,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0017,VNC StreamMaster C2 | NOT OBSERVED by ETW until passive row exists.
+filename,PowershellCleaner,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0018,MSI product/folder name | NOT OBSERVED by ETW until passive row exists.
+filename,ss.py,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0019,Main Python loader | NOT OBSERVED by ETW until passive row exists.
+filename,msvcp150.dll,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0020,Fake VC++ DLL hosting RunPowerShell | NOT OBSERVED by ETW until passive row exists.
+filename,msvcp160.dll,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0021,In-memory DLL mapper | NOT OBSERVED by ETW until passive row exists.
+path,C:\Windows\Web\Screen,2026-07/2026-08,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,SYN-IND-0022,PhishLocker wallpaper source | NOT OBSERVED by ETW until passive row exists.

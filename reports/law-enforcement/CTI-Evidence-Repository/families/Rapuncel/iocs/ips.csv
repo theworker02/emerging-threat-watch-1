@@ -1,0 +1,7 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+ipv4,2.26.126.50,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0014,Rapuncel /upload exfil | NOT OBSERVED by ETW — primary-source only.
+ipv4,104.21.27.38,unspecified,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,RAP-IND-0015,Cloudflare-fronted mapping — low specificity | NOT OBSERVED by ETW — primary-source only.
+ipv4,172.67.168.224,unspecified,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,RAP-IND-0016,Cloudflare-fronted mapping — low specificity | NOT OBSERVED by ETW — primary-source only.
+ipv4,172.67.212.253,unspecified,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,RAP-IND-0017,Cloudflare-fronted — do not promote as actor-owned | NOT OBSERVED by ETW — primary-source only.
+ipv4,104.21.20.224,unspecified,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,RAP-IND-0018,Cloudflare-fronted — do not promote as actor-owned | NOT OBSERVED by ETW — primary-source only.
+ipv4,104.21.18.89,unspecified,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,RAP-IND-0019,Cloudflare-fronted — do not promote as actor-owned | NOT OBSERVED by ETW — primary-source only.

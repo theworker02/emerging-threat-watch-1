@@ -1,0 +1,29 @@
+{
+    "type": "bundle",
+    "id": "bundle--e7cf63b5-ebe2-55c9-97f5-d0a06b5b4271",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--28f10a64-2a9e-5bf3-8f61-99f9ac0f418b",
+            "created": "2026-09-19T20:30:00.000000Z",
+            "modified": "2026-09-19T20:30:00.000000Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--5faad625-1002-5165-a7a5-2bec7a95a420",
+            "created": "2026-09-19T20:30:00.000000Z",
+            "modified": "2026-09-19T20:30:00.000000Z",
+            "name": "Argamal",
+            "description": "ETW CANDIDATE stub for Argamal. Author attribution NOT_ESTABLISHED. No PRIMARY indicators in bundle.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        }
+    ]
+}

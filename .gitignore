@@ -1,0 +1,41 @@
+# Secrets
+.env
+.env.*
+*.pem
+credentials.json
+secrets/
+
+# Law-enforcement handoff: filled submission dossiers stay local/private (template is tracked)
+reports/law-enforcement/SUBMISSION_REPORT.md
+reports/law-enforcement/SUBMISSION_REPORT.local.md
+reports/law-enforcement/private/
+
+# GPG-signed checksum clearsign (optional)
+reports/law-enforcement/CTI-Evidence-Repository/CHECKSUMS.asc
+
+# Lab PCAPs / memory dumps (keep README placeholders tracked)
+reports/law-enforcement/CTI-Evidence-Repository/**/network_captures/*.pcap
+reports/law-enforcement/CTI-Evidence-Repository/**/network_captures/*.pcapng
+reports/law-enforcement/CTI-Evidence-Repository/**/memory_dumps/**
+!reports/law-enforcement/CTI-Evidence-Repository/**/memory_dumps/README.md
+!reports/law-enforcement/CTI-Evidence-Repository/**/network_captures/README.md
+
+# Malware / binaries (never commit)
+*.exe
+*.dll
+*.sys
+*.apk
+*.dex
+*.msi
+*.scr
+samples/**/binaries/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.cursor/
+__pycache__/
+*.pyc
+.venv/

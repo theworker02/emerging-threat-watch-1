@@ -1,0 +1,110 @@
+{
+    "type": "bundle",
+    "id": "bundle--9b3d0144-e72d-432d-8f65-dfe925859764",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--c00a38e7-b434-42d5-a7f7-78d143022c2c",
+            "created": "2026-09-19T19:25:40.032506Z",
+            "modified": "2026-09-19T19:25:40.032506Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--6bd46046-da00-496a-8c8f-5dbbd2769ae5",
+            "created": "2026-09-19T19:25:40.032642Z",
+            "modified": "2026-09-19T19:25:40.032642Z",
+            "name": "Settra",
+            "description": "ETW family Settra. Author attribution NOT_ESTABLISHED. Case-isolated.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--61943610-2739-4b19-8cc9-a1de0019228b",
+            "created": "2026-09-19T19:25:40.032725Z",
+            "modified": "2026-09-19T19:25:40.032725Z",
+            "name": "Settra ipv4 45.13.122.7",
+            "description": "evidence_id=SET-IND-0001; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '45.13.122.7']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f9e1945d-e48d-484b-b538-bec535d0c5d2",
+            "created": "2026-09-19T19:25:40.033143Z",
+            "modified": "2026-09-19T19:25:40.033143Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--61943610-2739-4b19-8cc9-a1de0019228b",
+            "target_ref": "malware--6bd46046-da00-496a-8c8f-5dbbd2769ae5"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b7089c43-7432-4045-a748-f55e2e5585bb",
+            "created": "2026-09-19T19:25:40.033228Z",
+            "modified": "2026-09-19T19:25:40.033228Z",
+            "name": "Settra ipv4 193.5.65.114",
+            "description": "evidence_id=SET-IND-0002; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '193.5.65.114']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4bc4d80f-1d17-436e-98f8-814c605a20d6",
+            "created": "2026-09-19T19:25:40.033446Z",
+            "modified": "2026-09-19T19:25:40.033446Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b7089c43-7432-4045-a748-f55e2e5585bb",
+            "target_ref": "malware--6bd46046-da00-496a-8c8f-5dbbd2769ae5"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4500d01c-f017-4514-808a-c70da4c79a3b",
+            "created": "2026-09-19T19:25:40.033513Z",
+            "modified": "2026-09-19T19:25:40.033513Z",
+            "name": "Settra domain id-manulife.com",
+            "description": "evidence_id=SET-IND-0015; provenance=OBSERVED_PASSIVE; confidence=Low. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'id-manulife.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 30
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2ed1bdce-aa60-4a8f-8aa8-bd12274832d8",
+            "created": "2026-09-19T19:25:40.033716Z",
+            "modified": "2026-09-19T19:25:40.033716Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4500d01c-f017-4514-808a-c70da4c79a3b",
+            "target_ref": "malware--6bd46046-da00-496a-8c8f-5dbbd2769ae5"
+        }
+    ]
+}

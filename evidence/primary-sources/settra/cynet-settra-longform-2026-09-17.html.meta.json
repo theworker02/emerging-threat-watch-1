@@ -1,0 +1,16 @@
+{
+  "evidence_id": "PS-SET-002",
+  "source_id": "SOURCE-SET-CYNET-LONG",
+  "original_url": "https://www.cynet.com/settra-ransomware-inside-a-new-enterprise-grade-extortion-threat/",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "30e1b769098aa083f0152b01562fccd85994d35d9cde8f8af560ce54e0fd3b52",
+  "http_status": 200,
+  "bytes": 558843,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "Settra",
+    "AES",
+    "pass"
+  ]
+}

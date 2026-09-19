@@ -1,0 +1,6 @@
+url=https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer
+http_status=403
+bytes=441
+sha256=3abd5850d55e31c87b69edd64701cd0efe92235b42fe1ad8ec9d2b40727c3128
+retrieved_utc=2026-09-19T18:39:24Z
+preview='<HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don\'t have permission to access "http&#58;&#47;&#47;blog&#46;lastpass&#46;com&#47;posts&#47;lastpass&#45;delphos&#45;report&#45;rapuncel&#45;infostealer" on this server.<P>\nReference&#32;&#35;18&#46;9209c617&#46;1789843162&#46;5ca2c2cd\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;9209c617&#46;1789843162&#46;5ca2c2cd</P>\n</BODY>\n</HTML>\n'

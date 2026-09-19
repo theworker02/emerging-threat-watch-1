@@ -1,0 +1,16 @@
+priority,family,gap,why_crucial,status
+P0,Rapuncel,Byte/code compare Alinubx vs CcProtect,Defines identity-swapped precisely,OPEN
+P0,Rapuncel,CT + historical DNS all domains,CT apex chronology closed RAP-CLAIM-0037; Wayback CDX blocked; ryanpresbrey.cc→207.207.210.x non-CDN OBSERVED_PASSIVE; CF edges demoted,PARTIAL
+P0,Rapuncel,Separate Cruciferra loader code from Rapuncel-specific code,DCRCVDrv 87e8d39d + vsdbg sideload catalog ledgered (RAP-CLAIM-0039/40); sample byte separation still needed,PARTIAL
+P0,Settra,Verified SHA-256 outer and inner payloads,Usable sample-hash corpus missing — blocks hosting/registrar takedown package (TAKEDOWN_AND_ENFORCEMENT_EVIDENCE); MB/sandbox APIs unavailable 2026-09-19,OPEN
+P0,Settra,Historical pivot WIN-LIVFRVQFMKO + 193.5.65.114,Kaspersky SSL-CN + urlscan MeshCentral from 2025-05 + RDAP Rapid Seedbox (SET-CLAIM-0016–18); exclusivity UNKNOWN,PARTIAL
+P0,Settra,Pre-encryption exfiltration tooling/destination,Encryptor has no exfil stack,OPEN
+P0,RatHat,APK hashes/package names from authorized sources,Reproducible sample identity for store/platform abuse; Zimperium SHA-256 list exists — package names / applicationId still open,PARTIAL
+P0,RatHat,Concrete C2/FRP hosts without active interaction,URI paths known; no remote host IPs in Zimperium primary; community IOC domains ASSOCIATION_ONLY only,OPEN
+P0,PollCat,PollCat-only host IPv4 / domains in POL-IND rows,Securelist co-IOC table not split; published-indicators header-only; no PollCat infra IPs in ledger,OPEN
+P0,NodeRabbit,Resolve Kaspersky MD5 archives to SHA-256,Correlation robustness; enforcement packages need SHA-256 not MD5 alone,OPEN
+P0,NodeRabbit,CT/pDNS chronology for non-Azure domains,agent:servers mutability; current A mostly Cloudflare edges (ASSOCIATION_ONLY),PARTIAL
+P0,All,Human/licensed sandbox timed PCAP for families with SHA-256 + non-CDN IP,Enforcement readiness P0 — autonomous collectors do not execute malware; see docs/ENFORCEMENT_READINESS.md,OPEN
+P1,All,Map infrastructure-ip-ledger non-CDN IPs to ASN/abuse contacts without personal attribution,LE correlation only; see investigations/_shared/docs/operator-ip-research-note.md,PARTIAL
+P1,NodeRabbit,Linux/WSL artifact timeline,Under-represented vs Windows reporting,IN_PROGRESS
+P1,NodeRabbit,VS Code publisher/signature mismatch detection,Durable detection hypothesis,OPEN

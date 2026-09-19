@@ -1,0 +1,195 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "filereserve.blob.core.windows.net/vgnghuyk/331331.msi"
+        },
+        "page": {
+          "url": "filereserve.blob.core.windows.net/vgnghuyk/331331.msi"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "filereserve.blob.core.windows.net",
+        "apexDomain": "filereserve.blob.core.windows.net",
+        "time": "2026-09-11T03:53:39.281Z",
+        "uuid": "01a08e99-3395-700d-b1f3-c39158fe9bf0",
+        "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331331.msi",
+        "tags": [
+          "hybridanalysis"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 2,
+        "uniqCountries": 1,
+        "dataLength": 552,
+        "encodedDataLength": 892,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "Microsoft-HTTPAPI/2.0",
+        "ip": "57.150.140.65",
+        "apexDomainAgeDays": 31,
+        "language": "en",
+        "mimeType": "application/xml",
+        "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331331.msi",
+        "tlsValidDays": 180,
+        "tlsAgeDays": 52,
+        "domainAgeDays": 31,
+        "tlsValidFrom": "2026-07-20T20:07:39.000Z",
+        "domain": "filereserve.blob.core.windows.net",
+        "apexDomain": "filereserve.blob.core.windows.net",
+        "asnname": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "asn": "AS8075",
+        "tlsIssuer": "Microsoft TLS G2 RSA CA OCSP 04",
+        "status": "403"
+      },
+      "labels": [],
+      "_id": "01a08e99-3395-700d-b1f3-c39158fe9bf0",
+      "_score": null,
+      "sort": [
+        1789098819281,
+        "01a08e99-3395-700d-b1f3-c39158fe9bf0"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a08e99-3395-700d-b1f3-c39158fe9bf0/",
+      "screenshot": "https://urlscan.io/screenshots/01a08e99-3395-700d-b1f3-c39158fe9bf0.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+        },
+        "page": {
+          "url": "filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "filereserve.blob.core.windows.net",
+        "apexDomain": "windows.net",
+        "time": "2026-08-26T08:29:10.644Z",
+        "uuid": "01a03d2f-7d5b-76d9-838d-0f519a0e1b1a",
+        "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "files": [
+        {
+          "filename": "331.msi",
+          "sha256": "151d2a7f52f047638ca8ad80c859c6bfe04d7510fb10933817fa0e3ba5d07a11",
+          "filesize": 11829248,
+          "state": "completed",
+          "mimeType": "application/x-msi",
+          "mimeDescription": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.2, MSI Installer, Code page: 1252, Title: Installation Database, Subject: PowershellCleaner, Author: CCATechnology, Keywords: Installer, Comments: This installer database contains the logic and data required to install PowershellCleaner., Template: Intel;1033, Revision Number: {5D337205-059F-47D3-B6AD-135AB6AA3694}, Create Time/Date: Mon Aug 10 12:43:54 2026, Last Saved Time/Date: Mon Aug 10 12:43:54 2026, Number of Pages: 200, Number of Words: 10, Name of Creating Application: Windows Installer XML Toolset (3.14.0.8606), Security: 2",
+          "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+        }
+      ],
+      "page": {
+        "country": "US",
+        "server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+        "ip": "57.150.140.65",
+        "apexDomainAgeDays": 3252,
+        "mimeType": "application/octet-stream",
+        "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi",
+        "tlsValidDays": 180,
+        "tlsAgeDays": 36,
+        "domainAgeDays": 15,
+        "tlsValidFrom": "2026-07-20T20:07:39.000Z",
+        "domain": "filereserve.blob.core.windows.net",
+        "apexDomain": "windows.net",
+        "asnname": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "asn": "AS8075",
+        "tlsIssuer": "Microsoft TLS G2 RSA CA OCSP 04",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "01a03d2f-7d5b-76d9-838d-0f519a0e1b1a",
+      "_score": null,
+      "sort": [
+        1787732950644,
+        "01a03d2f-7d5b-76d9-838d-0f519a0e1b1a"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a03d2f-7d5b-76d9-838d-0f519a0e1b1a/",
+      "screenshot": "https://urlscan.io/screenshots/01a03d2f-7d5b-76d9-838d-0f519a0e1b1a.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+        },
+        "page": {
+          "url": "filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "filereserve.blob.core.windows.net",
+        "apexDomain": "filereserve.blob.core.windows.net",
+        "time": "2026-08-22T00:30:05.323Z",
+        "uuid": "01a026df-71b7-761a-8c61-a8f41ca9ddcf",
+        "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "files": [
+        {
+          "filename": "331.msi",
+          "sha256": "151d2a7f52f047638ca8ad80c859c6bfe04d7510fb10933817fa0e3ba5d07a11",
+          "filesize": 11829248,
+          "state": "completed",
+          "mimeType": "application/x-msi",
+          "mimeDescription": "Composite Document File V2 Document, Little Endian, Os: Windows, Version 6.2, MSI Installer, Code page: 1252, Title: Installation Database, Subject: PowershellCleaner, Author: CCATechnology, Keywords: Installer, Comments: This installer database contains the logic and data required to install PowershellCleaner., Template: Intel;1033, Revision Number: {5D337205-059F-47D3-B6AD-135AB6AA3694}, Create Time/Date: Mon Aug 10 12:43:54 2026, Last Saved Time/Date: Mon Aug 10 12:43:54 2026, Number of Pages: 200, Number of Words: 10, Name of Creating Application: Windows Installer XML Toolset (3.14.0.8606), Security: 2",
+          "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi"
+        }
+      ],
+      "page": {
+        "country": "US",
+        "server": "Windows-Azure-Blob/1.0 Microsoft-HTTPAPI/2.0",
+        "ip": "57.150.140.65",
+        "apexDomainAgeDays": 11,
+        "mimeType": "application/octet-stream",
+        "url": "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi",
+        "tlsValidDays": 180,
+        "tlsAgeDays": 32,
+        "domainAgeDays": 11,
+        "tlsValidFrom": "2026-07-20T20:07:39.000Z",
+        "domain": "filereserve.blob.core.windows.net",
+        "apexDomain": "filereserve.blob.core.windows.net",
+        "asnname": "MICROSOFT-CORP-MSN-AS-BLOCK - Microsoft Corporation, US",
+        "asn": "AS8075",
+        "tlsIssuer": "Microsoft TLS G2 RSA CA OCSP 04",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "01a026df-71b7-761a-8c61-a8f41ca9ddcf",
+      "_score": null,
+      "sort": [
+        1787358605323,
+        "01a026df-71b7-761a-8c61-a8f41ca9ddcf"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a026df-71b7-761a-8c61-a8f41ca9ddcf/",
+      "screenshot": "https://urlscan.io/screenshots/01a026df-71b7-761a-8c61-a8f41ca9ddcf.png"
+    }
+  ],
+  "total": 3,
+  "took": 348,
+  "has_more": false
+}

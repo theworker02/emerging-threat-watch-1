@@ -1,0 +1,16 @@
+{
+  "evidence_id": "PS-SET-003",
+  "source_id": "SOURCE-SET-HUNTRESS",
+  "original_url": "https://www.huntress.com/blog/new-settra-ransomware-variant",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "c0f473e2099ddb0c27d80f109c9b8e67b21622b66d67a4a47067939033a99d8f",
+  "http_status": 200,
+  "bytes": 882219,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "WIN-LIVFRVQFMKO",
+    "45.13.122",
+    "MeshAgent"
+  ]
+}

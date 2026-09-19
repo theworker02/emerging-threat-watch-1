@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id,provenance_url
+https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi,url,,,Expel,High,synkloader,UNVERIFIED,Teams phishing MSI — do not download,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/

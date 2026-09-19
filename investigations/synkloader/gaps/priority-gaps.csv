@@ -1,0 +1,4 @@
+priority,family,gap,why_crucial,status
+P0,SynkLoader,Archive Expel primary HTML locally,Primary freeze incomplete without bytes,OPEN
+P0,SynkLoader,Extract published IOCs into SYN-IND rows,Expel PRIMARY table present; +4 OBSERVED_PASSIVE C2 A IPs (SYN-IND-0026–0029) promoted from ledger,PARTIAL
+P1,SynkLoader,Passive CT/pDNS on Expel-published C2 domains,OBSERVED_PASSIVE A records collected 2026-09-19 and promoted to SYN-IND-0026–0029,PARTIAL

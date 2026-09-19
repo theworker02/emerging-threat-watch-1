@@ -1,0 +1,299 @@
+{
+  "rdapConformance": [
+    "icann_rdap_response_profile_0",
+    "icann_rdap_technical_implementation_guide_0",
+    "icann_rdap_response_profile_1",
+    "icann_rdap_technical_implementation_guide_1",
+    "rdap_level_0",
+    "redacted"
+  ],
+  "notices": [
+    {
+      "title": "Status Codes",
+      "description": [
+        "For more information on domain status codes, please visit https://icann.org/epp"
+      ],
+      "links": [
+        {
+          "value": "https://rdap.zdnsgtld.com/top/domain/tmgg01.top",
+          "rel": "glossary",
+          "href": "https://icann.org/epp",
+          "title": "More information on domain status codes"
+        }
+      ]
+    },
+    {
+      "title": "Terms of Use",
+      "description": [
+        "For more information on domain status codes, please visit https://icann.org/epp",
+        "",
+        "NOTICE: The expiration date displayed in this record is the date the",
+        "registrar's sponsorship of the domain name registration in the registry is",
+        "currently set to expire. This date does not necessarily reflect the expiration",
+        "date of the domain name registrant's agreement with the sponsoring",
+        "registrar.  Users may consult the sponsoring registrar's Whois database to",
+        "view the registrar's reported date of expiration for this registration.",
+        "",
+        "TERMS OF USE: The information in the Whois database is collected through ICANN-accredited registrars. Jiangsu bangning science & technology Co., Ltd(\"BANGNING\") make this information available to you and do not guarantee its accuracy or completeness. By submitting a whois query, you agree to abide by the following terms of use: you agree that you may use this data only for lawful purposes and that under no circumstances will you use this data to:  (1) to allow\uff0c enable\uff0c or otherwise support the transmission of mass unsolicited\uff0c commercial advertising or solicitations via direct mail\uff0c electronic mail\uff0c or by telephone; (2) in contravention of any applicable data and privacy protection acts; or (3) to enable high volume\uff0c automated\uff0c electronic processes that apply to BANGNING (or its computer systems). Compilation\uff0c repackaging\uff0c dissemination\uff0c or other use of the WHOIS database in its entirety\uff0c or of a substantial portion thereof\uff0c is not allowed without BANGNING prior written permission. You agree not to use electronic processes that are automated and high-volume to access or query the whois database except as reasonably necessary to register domain names or modify existing registrations. BANGNING reserves the right to restrict your access to the whois database in its sole discretion to ensure operational stability.  BANGNING may restrict or terminate your access to the whois database for failure to abide by these terms of use. BANGNING reserves the right to modify these terms at any time without prior or subsequent notification of any kind. "
+      ],
+      "links": [
+        {
+          "value": "https://rdap.zdnsgtld.com/top/domain/tmgg01.top",
+          "rel": "terms-of-service",
+          "href": "http://www.nic.top",
+          "title": "Terms of Use"
+        }
+      ]
+    },
+    {
+      "title": "RDDS Inaccuracy Complaint Form",
+      "description": [
+        "URL of the ICANN RDDS Inaccuracy Complaint Form: https://icann.org/wicf"
+      ],
+      "links": [
+        {
+          "value": "https://rdap.zdnsgtld.com/top/domain/tmgg01.top",
+          "rel": "help",
+          "href": "https://icann.org/wicf",
+          "title": "ICANN RDDS Inaccuracy Complaint Form"
+        }
+      ]
+    },
+    {
+      "title": "Data Policy",
+      "description": [
+        "The object does not contain all data due to lack of authorization."
+      ],
+      "type": "object truncated due to authorization"
+    }
+  ],
+  "objectClassName": "domain",
+  "handle": "D20260510G10001G_75002787-top",
+  "links": [
+    {
+      "value": "https://rdap.zdnsgtld.com/top/domain/tmgg01.top.",
+      "rel": "self",
+      "href": "https://rdap.zdnsgtld.com/top/domain/tmgg01.top.",
+      "title": "Authoritative URL for this resource",
+      "type": "application/rdap+json"
+    },
+    {
+      "value": "https://rdap.zdnsgtld.com/top/domain/tmgg01.top",
+      "rel": "related",
+      "href": "https://rdap.kouming.com/domain/tmgg01.top",
+      "title": "URL of Sponsoring Registrar's RDAP Record",
+      "type": "application/rdap+json"
+    }
+  ],
+  "events": [
+    {
+      "eventAction": "registration",
+      "eventDate": "2026-05-10T09:21:15.0Z"
+    },
+    {
+      "eventAction": "expiration",
+      "eventDate": "2027-05-10T09:21:15.0Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2026-07-23T17:21:10.0Z"
+    },
+    {
+      "eventAction": "last update of RDAP database",
+      "eventDate": "2026-09-19T18:50:20.0Z"
+    }
+  ],
+  "status": [
+    "active"
+  ],
+  "port43": "whois.nic.top",
+  "entities": [
+    {
+      "objectClassName": "entity",
+      "handle": "3972",
+      "links": [
+        {
+          "value": "https://rdap.zdnsgtld.com/top/entity/3972",
+          "rel": "self",
+          "href": "https://rdap.zdnsgtld.com/top/entity/3972",
+          "title": "Authoritative URL for this resource",
+          "type": "application/rdap+json"
+        },
+        {
+          "value": "https://rdap.kouming.com/",
+          "rel": "about",
+          "href": "https://www.kouming.com",
+          "title": "Registrar's Website"
+        }
+      ],
+      "entities": [
+        {
+          "objectClassName": "entity",
+          "handle": "not applicable",
+          "roles": [
+            "abuse"
+          ],
+          "vcardArray": [
+            "vcard",
+            [
+              [
+                "version",
+                {},
+                "text",
+                "4.0"
+              ],
+              [
+                "fn",
+                {},
+                "text",
+                "abuse"
+              ],
+              [
+                "org",
+                {},
+                "text",
+                "Hongkong Kouming International Limited"
+              ],
+              [
+                "email",
+                {},
+                "text",
+                "abuse@kouming.com"
+              ],
+              [
+                "tel",
+                {
+                  "type": "voice"
+                },
+                "text",
+                "tel:85255737874"
+              ],
+              [
+                "tel",
+                {
+                  "type": "fax"
+                },
+                "text",
+                "85255737874"
+              ],
+              [
+                "adr",
+                {},
+                "text",
+                [
+                  "",
+                  "",
+                  "",
+                  "Hongkong Kouming",
+                  "Hongkong Kouming",
+                  "999077",
+                  ""
+                ]
+              ]
+            ]
+          ]
+        }
+      ],
+      "roles": [
+        "registrar"
+      ],
+      "publicIds": [
+        {
+          "type": "IANA Registrar ID",
+          "identifier": "3972"
+        }
+      ],
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "Hongkong Kouming International Limited"
+          ],
+          [
+            "email",
+            {},
+            "text",
+            "jinkui@kouming.com"
+          ],
+          [
+            "tel",
+            {
+              "type": "voice"
+            },
+            "text",
+            "tel:85255737874"
+          ],
+          [
+            "tel",
+            {
+              "type": "fax"
+            },
+            "text",
+            "85255737874"
+          ],
+          [
+            "adr",
+            {
+              "cc": "HK"
+            },
+            "text",
+            [
+              "",
+              "",
+              "",
+              "Hongkong Kouming",
+              "Hongkong Kouming",
+              "999077",
+              ""
+            ]
+          ]
+        ]
+      ]
+    }
+  ],
+  "lang": "en",
+  "ldhName": "tmgg01.top",
+  "unicodeName": "tmgg01.top",
+  "nameservers": [
+    {
+      "objectClassName": "nameserver",
+      "links": [
+        {
+          "value": "https://rdap.zdnsgtld.com/top/nameserver/dilbert.ns.cloudflare.com",
+          "rel": "self",
+          "href": "https://rdap.zdnsgtld.com/top/nameserver/dilbert.ns.cloudflare.com",
+          "title": "Authoritative URL for this resource",
+          "type": "application/rdap+json"
+        }
+      ],
+      "ldhName": "dilbert.ns.cloudflare.com.",
+      "unicodeName": "dilbert.ns.cloudflare.com."
+    },
+    {
+      "objectClassName": "nameserver",
+      "links": [
+        {
+          "value": "https://rdap.zdnsgtld.com/top/nameserver/lily.ns.cloudflare.com",
+          "rel": "self",
+          "href": "https://rdap.zdnsgtld.com/top/nameserver/lily.ns.cloudflare.com",
+          "title": "Authoritative URL for this resource",
+          "type": "application/rdap+json"
+        }
+      ],
+      "ldhName": "lily.ns.cloudflare.com.",
+      "unicodeName": "lily.ns.cloudflare.com."
+    }
+  ],
+  "secureDNS": {
+    "delegationSigned": false
+  }
+}

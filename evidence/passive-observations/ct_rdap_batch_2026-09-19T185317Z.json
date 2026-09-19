@@ -1,0 +1,182 @@
+﻿[
+    {
+        "fam":  "pollcat",
+        "domain":  "sahi-finance.com",
+        "ct_ok":  false,
+        "cert_count":  "fetch-fail",
+        "ct_sha":  null,
+        "rd_ok":  true,
+        "rd_sha":  "2f4b2bf8ae06d213561c3f56f296d317a4b4d6552472a26655a52b2060270ee6"
+    },
+    {
+        "fam":  "pollcat",
+        "domain":  "lifespotify.com",
+        "ct_ok":  true,
+        "cert_count":  47,
+        "ct_sha":  "a4d13c893ac2addc11df6c4546926780723ef1c35ed364b18d67912a00a22113",
+        "rd_ok":  true,
+        "rd_sha":  "37530c0f13457e6757c9b36f5daa8422ac785a62d6648e4fb4d94fb89ae721c9"
+    },
+    {
+        "fam":  "pollcat",
+        "domain":  "gamebarapp.azurewebsites.net",
+        "ct_ok":  true,
+        "cert_count":  0,
+        "ct_sha":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "rd_ok":  false,
+        "rd_sha":  null
+    },
+    {
+        "fam":  "pollcat",
+        "domain":  "gamebarappinformation.azurewebsites.net",
+        "ct_ok":  true,
+        "cert_count":  0,
+        "ct_sha":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "rd_ok":  false,
+        "rd_sha":  null
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "healthful-hub.com",
+        "ct_ok":  false,
+        "cert_count":  "fetch-fail",
+        "ct_sha":  null,
+        "rd_ok":  true,
+        "rd_sha":  "5e00e7b4cb588213a4b54ae1ec7a16fdbd8aaf8ede2db6edcf2420e5291551c6"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "neumedicahealthcare.com",
+        "ct_ok":  true,
+        "cert_count":  45,
+        "ct_sha":  "7cfaf71c6f9770086caa965761dec97286c617fda717660608325be66a052372",
+        "rd_ok":  true,
+        "rd_sha":  "255d53b99a9d1013aaacd37978e334013a1893923f5a7918a1c67c1a4de24c3b"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "optimumhealthcredit.com",
+        "ct_ok":  false,
+        "cert_count":  "fetch-fail",
+        "ct_sha":  null,
+        "rd_ok":  true,
+        "rd_sha":  "3e2526617ce70f1bc0a602e32a3f078e066584faacc2bdd6c2fb2df4ab2d7e47"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "healthfullyrecipes.com",
+        "ct_ok":  false,
+        "cert_count":  "fetch-fail",
+        "ct_sha":  null,
+        "rd_ok":  true,
+        "rd_sha":  "d0b97ffbbf2d3f9acb3444fa6c6a670314c25386b73a234ca986114fa7df04d9"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "refreshhealthandwellness.com",
+        "ct_ok":  true,
+        "cert_count":  131,
+        "ct_sha":  "f6fa3f20e9ff51203e6c9aac44bc851ca0cbf897aace036dc368120d3ce453f0",
+        "rd_ok":  true,
+        "rd_sha":  "05db5ee1a80b22c259aafacadc3c69af924c514f549a052d30639625e4aa11e3"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "healthvitalitycare.com",
+        "ct_ok":  true,
+        "cert_count":  51,
+        "ct_sha":  "a497293aac15979c6fe59f3d75d58eb0e21dbe957096e71591052be9b9ff5ce1",
+        "rd_ok":  true,
+        "rd_sha":  "1e2ed40dd77a8272ad032466e595e9e65f27347b3b0e25ca83187c855167ee4d"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "aceofspadesmanagement.com",
+        "ct_ok":  true,
+        "cert_count":  39,
+        "ct_sha":  "ed3117981e26e50c99533b3648ed3ff56d6e8917936b9f1605b287fdbb5bec2e",
+        "rd_ok":  true,
+        "rd_sha":  "58226a3a93cecce155fffbf1db665aa098bb4d1cdd9103b70b6add58f04440b0"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "glmediaagency.com",
+        "ct_ok":  true,
+        "cert_count":  59,
+        "ct_sha":  "68d4b8dbf3d0604f6df43dad75e4d832e41c82d8a1236145850216b3d7cfc2c2",
+        "rd_ok":  true,
+        "rd_sha":  "fb934ecaaf8db1f43db03b3cb13ad3373b442d9c51f79f1081216cda3aa51ab5"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "digimediaskill.com",
+        "ct_ok":  true,
+        "cert_count":  22,
+        "ct_sha":  "15b7adca98aa991b199c329388884f5caefc7803fdf34e22e45dbac61067082a",
+        "rd_ok":  true,
+        "rd_sha":  "3f3f95c3881b279e516fd4a28157f940f125da5984a0fe2cefeb13fa31091e48"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "healthyweightplan.com",
+        "ct_ok":  true,
+        "cert_count":  206,
+        "ct_sha":  "18604e092ed4ce92d2de63b5e4dfe883da0b833f31952d3b45d2030fc24e2903",
+        "rd_ok":  true,
+        "rd_sha":  "5f736b0a42c751bf6c4a0439f50a6f745b17d4ec6d4164f10fb1a85f507a0180"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "mens-health-online.com",
+        "ct_ok":  true,
+        "cert_count":  39,
+        "ct_sha":  "3cf1dd446ad8ef7de5045cfe670db52e7f81fcc49e347aecd7e20f6a97ea3513",
+        "rd_ok":  true,
+        "rd_sha":  "55ae4082ff646e134072c0c5de96d943578a531a101516ce7333133a492ea965"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "msmanagementgrp.com",
+        "ct_ok":  true,
+        "cert_count":  49,
+        "ct_sha":  "c69f619d93bdc97b20f3b198d40247e90bc355b40e0856898bab96eaafc3b466",
+        "rd_ok":  true,
+        "rd_sha":  "edb5678eaaa813434fc4fa74193104c17534c37b3a4f66a6424e12511d2e5068"
+    },
+    {
+        "fam":  "noderabbit",
+        "domain":  "msmanagementgrpmedia.com",
+        "ct_ok":  true,
+        "cert_count":  2,
+        "ct_sha":  "f8ca6af6be3948de02d6208ddc485f586b570afd5b130458c977b164ef2a0c35",
+        "rd_ok":  true,
+        "rd_sha":  "56d1317f72ab19113be8acbbc9bffbf640a886575ae0b6e62133811069db0766"
+    },
+    {
+        "fam":  "showboat",
+        "domain":  "telecom.webredirect.org",
+        "ct_ok":  true,
+        "cert_count":  0,
+        "ct_sha":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "rd_ok":  false,
+        "rd_sha":  null
+    },
+    {
+        "fam":  "showboat",
+        "domain":  "singtelcom.site",
+        "ct_ok":  true,
+        "cert_count":  28,
+        "ct_sha":  "7fe6cb711dbba930405b706c39f5d4408a2b6ba2d4673266d132d58c15a21d54",
+        "rd_ok":  true,
+        "rd_sha":  "551267d0721a46d9d0374d3ea76bbd094796374ab40a9010bbc2f97ecaf9d8fc"
+    },
+    {
+        "fam":  "showboat",
+        "domain":  "kaztelecom.shop",
+        "ct_ok":  false,
+        "cert_count":  "fetch-fail",
+        "ct_sha":  null,
+        "rd_ok":  true,
+        "rd_sha":  "9d9e597bbd9618ce8d4103f51ac8afbce660a5558216732fb7cde6fef9b72407"
+    }
+]

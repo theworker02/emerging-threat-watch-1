@@ -1,0 +1,4 @@
+priority,family,gap,why_crucial,status
+P0,Okobot,Freeze PRIMARY-SOURCE URL and archive HTML/PDF bytes,Cannot promote without primary freeze,OPEN
+P0,Okobot,Transcribe published IOCs into OKO-IND rows (no invention),Empty ledger is intentional until primary exists,OPEN
+P1,Okobot,Assess technique/market overlap labels vs active families,Must keep authorship_link=NOT_ESTABLISHED unless proven,OPEN

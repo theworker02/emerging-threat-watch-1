@@ -1,0 +1,16 @@
+{
+  "evidence_id": "PS-RAT-001",
+  "source_id": "SOURCE-RAT-ZIMP",
+  "original_url": "https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "ee89b28e92c50152f3df205f1571dcb4ca4f12f0d9539c4e0f78d5796539f956",
+  "http_status": 200,
+  "bytes": 128426,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "liblocal-service",
+    "getevent",
+    "7910"
+  ]
+}

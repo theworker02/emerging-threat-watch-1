@@ -1,0 +1,2 @@
+# No cryptocurrency wallet addresses established in ETW corpus for this family.
+# Add BTC/XMR/USDT/ETH addresses only with PRIMARY-SOURCE or OBSERVED_PASSIVE provenance.

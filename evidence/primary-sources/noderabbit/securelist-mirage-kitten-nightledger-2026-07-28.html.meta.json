@@ -1,0 +1,16 @@
+{
+  "evidence_id": "PS-NRB-002",
+  "source_id": "SOURCE-NRB-MK-JULY",
+  "original_url": "https://securelist.com/mirage-kitten-new-tools/120811/",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "1fa3f87becd33c03064b4ccedf5faf2d13a4d296b485a8b5297c7970d3432172",
+  "http_status": 200,
+  "bytes": 211485,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "NightLedger",
+    "BridgeHead",
+    "Mirage Kitten"
+  ]
+}

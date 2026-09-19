@@ -1,0 +1,47 @@
+﻿[
+    {
+        "domain":  "neversoftmain.net",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "b984d33a12746fc0b024924df0d9e2719a012b8c94e4a0839caff192614515ce",
+        "rdOk":  true,
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\synkloader\\ct_neversoftmain.net_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\synkloader\\rdap_neversoftmain.net_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "rootfarmapp.net",
+        "certCount":  7,
+        "ctSha":  "be966310bd43ae456b39dfb06a1c5181b73cf628f5314ea9aea4cd5ad2d3df8d",
+        "rdSha":  "e37f2a95daaa97e5f6d9f6d27dec3231c02eb71686accf4b7e5710892bc7934f",
+        "rdOk":  true,
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\synkloader\\ct_rootfarmapp.net_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\synkloader\\rdap_rootfarmapp.net_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "tripinupdate.net",
+        "certCount":  0,
+        "ctSha":  "0185814ef7c2f6c357e4d17b85e9b37d9e1eb0238072760e316b428d8e435dd5",
+        "rdSha":  "8ab2b74874549f56130ecbe90211c3ef4aba87850094e7de5ffec4d3768ff6fe",
+        "rdOk":  true,
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\synkloader\\ct_tripinupdate.net_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\synkloader\\rdap_tripinupdate.net_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "dondermicapp.net",
+        "certCount":  4,
+        "ctSha":  "522171731baed64acafd5bbe59a60d3aea8988bddce4286a56e5e79a6fbc97af",
+        "rdSha":  "524b54999cc627576e40c0c005fa0a03a0ae0d5b0ad931bda5fff2828a989470",
+        "rdOk":  true,
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\synkloader\\ct_dondermicapp.net_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\synkloader\\rdap_dondermicapp.net_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "aroclenetapp.net",
+        "certCount":  0,
+        "ctSha":  "f17a56fba4bb4c000c1dc9ad5533972b992338a27ebbc3a60b84d34443016a45",
+        "rdSha":  "b5f6d29955737d2b491505a63c6e42b364fad45ec41a54c42cbc80562f243149",
+        "rdOk":  true,
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\synkloader\\ct_aroclenetapp.net_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\synkloader\\rdap_aroclenetapp.net_2026-09-19T185319Z.json"
+    }
+]

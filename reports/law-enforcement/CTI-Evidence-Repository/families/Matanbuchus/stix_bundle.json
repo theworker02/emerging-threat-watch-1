@@ -1,0 +1,29 @@
+{
+    "type": "bundle",
+    "id": "bundle--5f0a1ad4-16d6-513b-8c45-a72feac2bd1b",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--28f10a64-2a9e-5bf3-8f61-99f9ac0f418b",
+            "created": "2026-09-19T20:30:00.000000Z",
+            "modified": "2026-09-19T20:30:00.000000Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--e7cf94d1-0842-5723-9521-6704014d2c80",
+            "created": "2026-09-19T20:30:00.000000Z",
+            "modified": "2026-09-19T20:30:00.000000Z",
+            "name": "Matanbuchus",
+            "description": "ETW CANDIDATE_COMPARATOR stub for Matanbuchus. Author attribution NOT_ESTABLISHED. No PRIMARY indicators in bundle.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        }
+    ]
+}

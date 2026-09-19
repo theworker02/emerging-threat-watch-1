@@ -1,0 +1,3691 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+      
+      
+        <title>RatHat: AI-Powered Mobile Threat is Here for Your Credentials &amp; Bank Accounts</title>
+      
+      
+        <meta name="description" content="zLabs uncovers RatHat, an AI-powered Android RAT that abuses Wireless Debugging for shell access, steals banking PINs and OTPs, and reinstalls itself.">
+      
+    
+
+    
+      <link rel="shortcut icon" href="https://zimperium.com/hubfs/Images/Stock%20Images%20-%20Backgrounds/ZIMPERIUM-logo_orangeZ_ff4c15_white.svg">
+    
+
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:description" content="zLabs uncovers RatHat, an AI-powered Android RAT that abuses Wireless Debugging for shell access, steals banking PINs and OTPs, and reinstalls itself.">
+    <meta property="og:title" content="RatHat: AI-Powered Mobile Threat is Here for Your Credentials &amp; Bank Accounts">
+    <meta name="twitter:description" content="zLabs uncovers RatHat, an AI-powered Android RAT that abuses Wireless Debugging for shell access, steals banking PINs and OTPs, and reinstalls itself.">
+    <meta name="twitter:title" content="RatHat: AI-Powered Mobile Threat is Here for Your Credentials &amp; Bank Accounts">
+
+    
+
+    
+  <!-- Force meta description to fall back to Summary when SEO meta is empty -->
+  <meta name="description" content="true">
+  <meta property="og:description" content="true">
+  <meta name="twitter:description" content="true">
+
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://zimperium.com/hubfs/hub_generated/template_assets/1/176818283431/1789769629269/template_main.min.css">
+<link rel="stylesheet" href="https://zimperium.com/hubfs/hub_generated/template_assets/1/176816938789/1789769630855/template_aos.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://zimperium.com/hubfs/hub_generated/template_assets/1/176818305463/1789769630878/template_child.css">
+<link rel="stylesheet" href="https://zimperium.com/hubfs/hub_generated/module_assets/1/176818305548/1755711165028/module_Header_w_Mega_Nav.min.css">
+
+<style>
+	
+</style>
+
+<link rel="stylesheet" href="https://zimperium.com/hubfs/hub_generated/module_assets/1/180806398771/1762448175190/module_Footer.min.css">
+
+<style>
+	#hs_cos_wrapper_module_172867651989312 .section-banner { background-color:rgba(22,52,93,1.0); }
+
+</style>
+
+<style>
+  @font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Lato/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Lato/regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Lato";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Lato/700.woff2") format("woff2"), url("/_hcms/googlefonts/Lato/700.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Montserrat/700.woff2") format("woff2"), url("/_hcms/googlefonts/Montserrat/700.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Montserrat/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Montserrat/regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Poppins/500.woff2") format("woff2"), url("/_hcms/googlefonts/Poppins/500.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Poppins/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Poppins/regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Poppins/700.woff2") format("woff2"), url("/_hcms/googlefonts/Poppins/700.woff") format("woff");
+  }
+</style>
+
+    <script type="application/ld+json">
+{
+  "mainEntityOfPage" : {
+    "@type" : "WebPage",
+    "@id" : "https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts"
+  },
+  "author" : {
+    "name" : "Gianluca Braga",
+    "url" : "https://zimperium.com/blog/author/gianluca-braga",
+    "@type" : "Person"
+  },
+  "headline" : "RatHat: AI-Powered Mobile Threat is Here for Your Credentials & Bank Accounts",
+  "datePublished" : "2026-09-16T13:00:10.000Z",
+  "dateModified" : "2026-09-16T15:26:15.886Z",
+  "publisher" : {
+    "name" : "Zimperium, Inc.",
+    "logo" : {
+      "url" : "https://zimperium.com/hubfs/Logos/ZIMPERIUM-logo_orangeZ_white.png",
+      "@type" : "ImageObject"
+    },
+    "@type" : "Organization"
+  },
+  "@context" : "https://schema.org",
+  "@type" : "BlogPosting",
+  "image" : [ "https://zimperium.com/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png" ]
+}
+</script>
+
+
+    
+<!--  Added by GoogleAnalytics4 integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+
+if (!window._hsGoogleConsentRunOnce) {
+  window._hsGoogleConsentRunOnce = true;
+
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'wait_for_update': waitForUpdateMillis
+  });
+
+  if (useGoogleConsentModeV2) {
+    _hsp.push(['useGoogleConsentModeV2'])
+  } else {
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      var hasAnalyticsConsent = consent && (consent.allowed || (consent.categories && consent.categories.analytics));
+      var hasAdsConsent = consent && (consent.allowed || (consent.categories && consent.categories.advertisement));
+
+      gtag('consent', 'update', {
+        'ad_storage': hasAdsConsent ? 'granted' : 'denied',
+        'analytics_storage': hasAnalyticsConsent ? 'granted' : 'denied',
+        'ad_user_data': hasAdsConsent ? 'granted' : 'denied',
+        'ad_personalization': hasAdsConsent ? 'granted' : 'denied'
+      });
+    }]);
+  }
+}
+
+gtag('js', new Date());
+gtag('set', 'developer_id.dZTQ1Zm', true);
+gtag('config', 'G-YVQR9B6GMV');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVQR9B6GMV"></script>
+
+<!-- /Added by GoogleAnalytics4 integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var useGoogleConsentModeV2 = true;
+var waitForUpdateMillis = 1000;
+
+if (useGoogleConsentModeV2) {
+
+  gtag('set','developer_id.dZTQ1Zm',true);
+
+  gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'wait_for_update': waitForUpdateMillis
+  });
+}
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    if (useGoogleConsentModeV2) {
+      _hsp.push(['useGoogleConsentModeV2'])
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-58KL6J8Z');
+
+    window._hsGtmLoadOnce = true;
+};
+
+_hsp.push(['addPrivacyConsentListener', function(consent){
+  if(consent.allowed || (consent.categories && consent.categories.analytics)){
+    hsLoadGtm();
+  }
+}]);
+
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+
+<!-- ============================================= -->
+<!-- NEW: Disable HubSpot's native banner — Ketch is the CMP -->
+<!-- MUST run before HubSpot tracking code loads -->
+<!-- ============================================= -->
+<script>
+  window.disableHubSpotCookieBanner = true;
+</script>
+
+<!-- ============================================= -->
+<!-- CONSENT MODE V2 DEFAULT — MUST BE FIRST -->
+<!-- Sets deny-by-default before any Google tag loads -->
+<!-- ============================================= -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'denied',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
+</script>
+
+<!-- ============================================= -->
+<!-- Ketch CMP loader -->
+<!-- MODIFIED 2026-07-27: banner suppressed on paths listed in -->
+<!-- KETCH_EXCLUDED_PATHS below (partner request via M. Gaffney). -->
+<!-- The window.ketch stub is defined BEFORE the early return so the -->
+<!-- bridge blocks below can still queue without throwing. -->
+<!-- Consequence on excluded pages: no consent event fires, so GTM -->
+<!-- never loads (Demandbase, Qualified), Oktopost stays inert, and -->
+<!-- GA4 runs cookieless under the denied defaults set above. -->
+<!-- ============================================= -->
+<script>
+(function(){
+  window.semaphore = window.semaphore || [];
+  window.ketch = function(){ window.semaphore.push(arguments); };
+
+  // Add paths here as alternation, e.g. (zimperium-eula|company/privacy/privacy-policy)
+  var KETCH_EXCLUDED_PATHS = /^\/(zimperium-eula)\/?$/i;
+
+  if (KETCH_EXCLUDED_PATHS.test(window.location.pathname)) return;
+
+  var e = document.createElement("script");
+  e.type = "text/javascript";
+  e.src = "https://global.ketchcdn.com/web/v3/config/zimperium/website_smart_tag/boot.js";
+  e.defer = e.async = true;
+  document.getElementsByTagName("head")[0].appendChild(e);
+})();
+</script>
+
+<!-- ============================================= -->
+<!-- Ketch -> Google Consent Mode bridge -->
+<!-- Translates Ketch purpose choices into Consent Mode updates. -->
+<!-- NOTE: If you enable Ketch's native Google Consent Mode -->
+<!-- integration in the console, DELETE this block to avoid -->
+<!-- double-updating. -->
+<!-- ============================================= -->
+<script>
+  window.semaphore = window.semaphore || [];
+  ketch('on', 'consent', function(consent) {
+    var analytics = consent.purposes.analytics ? 'granted' : 'denied';
+    var ads = consent.purposes.behavioral_advertising ? 'granted' : 'denied';
+    gtag('consent', 'update', {
+      'analytics_storage': analytics,
+      'ad_storage': ads,
+      'ad_user_data': ads,
+      'ad_personalization': ads
+    });
+    window.dataLayer.push({
+      event: 'ketch_consent_update',
+      ketch_analytics: analytics,
+      ketch_ads: ads
+    });
+  });
+</script>
+
+<!-- ============================================= -->
+<!-- NEW: Ketch -> HubSpot Consent bridge -->
+<!-- Holds HubSpot cookies until Ketch grants consent -->
+<!-- ============================================= -->
+<script>
+  window._hsp = window._hsp || [];
+  window.semaphore = window.semaphore || [];
+  ketch('on', 'consent', function(consent) {
+    window._hsp.push(['setHubSpotConsent', {
+      analytics:     !!consent.purposes.analytics,
+      advertisement: !!consent.purposes.behavioral_advertising,
+      functionality: !!consent.purposes.essential_services
+    }]);
+  });
+</script>
+
+<!-- ============================================= -->
+<!-- Google tag (gtag.js) -->
+<!-- dataLayer/gtag already defined above; do not redeclare -->
+<!-- ============================================= -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVQR9B6GMV"></script>
+<script>
+  gtag('js', new Date());
+  gtag('config', 'G-YVQR9B6GMV');
+</script>
+<!-- End Google tag (gtag.js) -->
+
+<!-- ============================================= -->
+<!-- REMOVED: Demandbase — now loaded via orchestrated GTM tag -->
+<!-- ("Demand Base Tag", gated to behavioral_advertising in Ketch) -->
+<!-- ============================================= -->
+
+<!-- ============================================= -->
+<!-- REMOVED: Qualified — now loaded via orchestrated GTM tag -->
+<!-- ("Qualified Script", gated in Ketch) -->
+<!-- ============================================= -->
+
+<!-- ============================================= -->
+<!-- Oktopost — NOT present in GTM, so gated here via Ketch Smart Tag. -->
+<!-- type="text/plain" + data-purposes holds execution until the -->
+<!-- 'analytics' purpose is granted. -->
+<!-- ============================================= -->
+<script type="text/plain" data-purposes="analytics">
+(function(a, b, c, d, e, m) {
+	a['OktopostTrackerObject'] = d;
+	a[d] = a[d] || function() {
+		(a[d].q = a[d].q || []).push(arguments);
+	};
+	e = b.createElement('script');
+	m = b.getElementsByTagName('script')[0];
+	e.async = 1;
+	e.src = c;
+	m.parentNode.insertBefore(e, m);
+})(window, document, 'https://static.oktopost.com/oktrk.js', '_oktrk');
+_oktrk('create', '001cggrxdid07os');
+</script>
+
+<!-- ============================================= -->
+<!-- Functional: image map resizer (no cookies, no gating needed) -->
+<!-- ============================================= -->
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    imageMapResize();
+  });
+</script>
+
+<!-- ============================================= -->
+<!-- Functional: external link / PDF target handler -->
+<!-- (no cookies, no gating needed) -->
+<!-- ============================================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("a[href]");
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+    if (!href) return;
+    const isExternal =
+      href.startsWith("http") &&
+      !href.includes(window.location.hostname);
+    const isPDF = href.toLowerCase().endsWith(".pdf");
+    if (isExternal || isPDF) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+});
+</script>
+
+<script>
+(function(d,b,a,s,e){ var t = b.createElement(a),
+  fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
+  fs.parentNode.insertBefore(t, fs); })
+(window,document,'script','https://tag.demandbase.com/02a868983778c6c6.min.js','demandbase_js_lib');  
+</script>
+<link rel="amphtml" href="https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts?hs_amp=true">
+
+<meta property="og:image" content="https://zimperium.com/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="559">
+
+<meta name="twitter:image" content="https://zimperium.com/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png">
+
+
+<meta property="og:url" content="https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts">
+
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="https://zimperium.com/blog/rss.xml">
+<meta name="twitter:domain" content="zimperium.com">
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+</script>
+
+<meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+    
+    
+    
+
+
+    
+  <meta name="generator" content="HubSpot"></head>
+  <body>
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58KL6J8Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <div class="body-wrapper   hs-content-id-221972581180 hs-blog-post hs-blog-id-182213814455">
+      
+        <div id="hs_cos_wrapper_module_17247843921661" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+<header class="main-header" style="--bgc: var(--bz-primary);">
+  
+  
+    
+  <div class="courtesy-bar" style="--bgc: var(--bz-dark);
+              --lcn: var(--bz-white);
+              --lch: var(--bz-primary);">
+    <div class="container
+                container-wide">
+      <nav class="courtesy-menu
+                  courtesy-menu--align-left">
+        
+      </nav>
+    </div>
+  </div>
+
+  
+  
+  <div class="container
+              container-wide">
+    <div class="main-header__main
+                main-nav">
+      <a href="https://www.zimperium.com/" class="main-nav__logo-link">
+        <img src="https://zimperium.com/hubfs/ZIMPERIUM-logo_orangeZ_ff4c15_white.svg" alt="ZIMPERIUM-logo_orangeZ_ff4c15_white" loading="eager" class="main-nav__logo-img" style="width: 200px;
+                    aspect-ratio: 324 / 49">
+      </a>
+      
+      <nav class="main-nav__nav
+                  nav-menu
+                  nav-menu--align-center" style="--lcn: var(--bz-white);
+                  --lch: var(--bz-primary);">
+        
+        
+        <ul class="nav-menu__list
+                   nav-list">
+          
+            
+  <li class="nav-list__item
+             nav-list__item--1
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <a target="" class="nav-item__link">
+          Mobile Applications
+          
+            <svg class="nav-item__arrow" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewbox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          <ul class="nav-item__sub-menu
+                     sub-menu">
+            
+            
+              
+  <li class="nav-list__item
+             nav-list__item--2
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <div class="sub-menu__item
+                    sub-menu-item">
+          
+          <div class="sub-menu-item__content">
+            <a style="text-decoration: none; cursor: default; pointer-events: none;" target="" class="nav-item__link">
+              Mobile Application Security
+              
+            </a>
+            
+            
+              <ul class="sub-menu-item__sub-menu
+                         sub-sub-menu">
+                
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/maps" target="" class="nav-item__link">
+          Mobile Application Protection Suite | MAPS
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/maps/mobile-app-response-agent" target="" class="nav-item__link">
+          Mobile App Response Agent
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/maps/zscan" target="" class="nav-item__link">
+          Application Security Testing
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/maps/zkeybox" target="" class="nav-item__link">
+          Cryptographic Key Protection
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/maps/zshield" target="" class="nav-item__link">
+          Application Shielding
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/maps/zdefend" target="" class="nav-item__link">
+          Runtime Protection
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+
+
+
+  </li>
+
+            
+          </ul>
+        
+          
+            
+              <div class="nav-item__extra-col">
+                <div class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-198009386165" style="max-width:100%; max-height:100%; width:220px;height:322px" data-hubspot-wrapper-cta-id="198009386165">
+  <a href="/hs/cta/wi/redirect?encryptedPayload=AVxigLLxpy9IeQ3YWoPcgQuy7X5LmvgdgVHxbKvP5dpvqxIsLwLzLjd60Dj6TUGNP6009Bbrj7uvygPsoLd%2BaJ5Q2nYoRmnf7k7xxKXqKw%2BkZ9GaxSHkRPX64KGg55770MPm%2BaS%2FS2InL%2F2%2FMlpm0P9LwG30bcxJSJQe%2Fleg2SZBMxwUf%2FOhv9zj0k%2BQZ9qK&amp;webInteractiveContentId=198009386165&amp;portalId=46745145" target="_blank" rel="noopener" crossorigin="anonymous">
+    <img alt="" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46745145/interactive-198009386165.png" style="height: 100%; width: 100%; object-fit: fill" onerror="this.style.display='none'">
+  </a>
+</div>
+
+              </div>
+            
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+          
+            
+  <li class="nav-list__item
+             nav-list__item--1
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <a target="" class="nav-item__link">
+          Mobile Devices
+          
+            <svg class="nav-item__arrow" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewbox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          <ul class="nav-item__sub-menu
+                     sub-menu">
+            
+            
+              
+  <li class="nav-list__item
+             nav-list__item--2
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <div class="sub-menu__item
+                    sub-menu-item">
+          
+          <div class="sub-menu-item__content">
+            <a style="text-decoration: none; cursor: default; pointer-events: none;" target="" class="nav-item__link">
+              Mobile Device Security
+              
+            </a>
+            
+            
+              <ul class="sub-menu-item__sub-menu
+                         sub-sub-menu">
+                
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/mtd/mobile-threat-defense" target="" class="nav-item__link">
+          Mobile Threat Defense (MTD)
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/mtd/mobile-soc-agent" target="" class="nav-item__link">
+          Mobile SOC Agent
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/mtd/phishing" target="" class="nav-item__link">
+          Mobile Phishing Protection
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/mtd/mobile-app-vetting" target="" class="nav-item__link">
+          Mobile App Vetting
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/mtd/byod" target="" class="nav-item__link">
+          Mobile BYOD Security
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/government/chromebooks" target="" class="nav-item__link">
+          MTD for Chromebooks
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/government/zsecure" target="" class="nav-item__link">
+          zSecure Resident Safety
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+
+
+
+  </li>
+
+            
+          </ul>
+        
+          
+            
+              <div class="nav-item__extra-col">
+                <div class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-209475969320" style="max-width:100%; max-height:100%; width:220px;height:322px" data-hubspot-wrapper-cta-id="209475969320">
+  <a href="/hs/cta/wi/redirect?encryptedPayload=AVxigLIzSy3eVjY4ea%2Fa%2FBYbcKoffCn9CwmZeae9ioD1FDgj2KxayWu9bgKpiaRLOrXdkMIvLeFgJmDewlZTFiGsJLGK5jnDbPFgaP6EuGPju2pjH3i54kHfYEZazt9Y8aAJjUTkifq8rLZsS34ACWBEL9nDBvuCkNbIQ%2FGVCUmKcYM48GktEYh5StW%2BHDmkJcU%3D&amp;webInteractiveContentId=209475969320&amp;portalId=46745145" target="_blank" rel="noopener" crossorigin="anonymous">
+    <img alt="CTA Embed on Nav - MDM Is Not Enough" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46745145/interactive-209475969320.png" style="height: 100%; width: 100%; object-fit: fill" onerror="this.style.display='none'">
+  </a>
+</div>
+
+              </div>
+            
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+          
+            
+  <li class="nav-list__item
+             nav-list__item--1
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <a target="" class="nav-item__link">
+          Solutions
+          
+            <svg class="nav-item__arrow" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewbox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          <ul class="nav-item__sub-menu
+                     sub-menu">
+            
+            
+              
+  <li class="nav-list__item
+             nav-list__item--2
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <div class="sub-menu__item
+                    sub-menu-item">
+          
+          <div class="sub-menu-item__content">
+            <a style="text-decoration: none; cursor: default; pointer-events: none;" target="" class="nav-item__link">
+              Mobile Security Solutions by Industry
+              
+            </a>
+            
+            
+              <ul class="sub-menu-item__sub-menu
+                         sub-sub-menu">
+                
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/automotive" target="" class="nav-item__link">
+          Automotive
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/aviation" target="" class="nav-item__link">
+          Aviation
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/finance/banking" target="" class="nav-item__link">
+          Banking
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/federal-government" target="" class="nav-item__link">
+          Federal
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/finance" target="" class="nav-item__link">
+          Financial Services
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/government/state-local" target="" class="nav-item__link">
+          Government
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/healthcare" target="" class="nav-item__link">
+          Healthcare
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/media-entertainment" target="" class="nav-item__link">
+          Media &amp; Entertainment
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/industry/retail" target="" class="nav-item__link">
+          Retail
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+
+
+
+  </li>
+
+            
+              
+  <li class="nav-list__item
+             nav-list__item--2
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <div class="sub-menu__item
+                    sub-menu-item">
+          
+          <div class="sub-menu-item__content">
+            <a style="text-decoration: none; cursor: default; pointer-events: none;" target="" class="nav-item__link">
+              Mobile Security Solutions by Use Case
+              
+            </a>
+            
+            
+              <ul class="sub-menu-item__sub-menu
+                         sub-sub-menu">
+                
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/solutions/compliance_and_regulations" target="" class="nav-item__link">
+          Regulatory Compliance
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+
+
+
+  </li>
+
+            
+          </ul>
+        
+          
+            
+              <div class="nav-item__extra-col">
+                <p></p><div class="hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-212314427810" style="max-width:100%; max-height:100%; width:220px;height:322px" data-hubspot-wrapper-cta-id="212314427810">
+  <a href="/hs/cta/wi/redirect?encryptedPayload=AVxigLLauX3Bp%2FN5IFFCKZO69iEggbDes7zooYCzfXb5W2fvD7N%2F5uE7XzzK%2BGHbnOe1xtZafGsz3fhOGbXFiLM0LDrudkA6m0VfT0NHNCOQ%2BXzLP8e2jIu4tK0LhBesK6AK5%2BKNul0j4Oiqt1FFuHVZ%2FjHY2iWke%2FGKkfI10Hw%3D&amp;webInteractiveContentId=212314427810&amp;portalId=46745145" target="_blank" rel="noopener" crossorigin="anonymous">
+    <img alt="CTA Embed on Nav - AI" loading="lazy" src="https://no-cache.hubspot.com/cta/default/46745145/interactive-212314427810.png" style="height: 100%; width: 100%; object-fit: fill" onerror="this.style.display='none'">
+  </a>
+</div>
+<p></p>
+<p>&nbsp;</p>
+              </div>
+            
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+          
+            
+  <li class="nav-list__item
+             nav-list__item--1
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <a target="" class="nav-item__link">
+          Company
+          
+            <svg class="nav-item__arrow" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewbox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          <ul class="nav-item__sub-menu
+                     sub-menu">
+            
+            
+              
+  <li class="nav-list__item
+             nav-list__item--2
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <div class="sub-menu__item
+                    sub-menu-item">
+          
+          <div class="sub-menu-item__content">
+            <a style="text-decoration: none; cursor: default; pointer-events: none;" target="" class="nav-item__link">
+              Company
+              
+            </a>
+            
+            
+              <ul class="sub-menu-item__sub-menu
+                         sub-sub-menu">
+                
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/company" target="" class="nav-item__link">
+          About Us
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://www.zimperium.com/blog/" target="" class="nav-item__link">
+          Blog
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/company/careers" target="" class="nav-item__link">
+          Careers
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/company/events" target="" class="nav-item__link">
+          Events
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/newsroom" target="" class="nav-item__link">
+          Newsroom
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://www.zimperium.com/support/" target="" class="nav-item__link">
+          Support
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+
+
+
+  </li>
+
+            
+              
+  <li class="nav-list__item
+             nav-list__item--2
+             nav-item
+             nav-list__item--has-children"> 
+   
+      
+        <div class="sub-menu__item
+                    sub-menu-item">
+          
+          <div class="sub-menu-item__content">
+            <a style="text-decoration: none; cursor: default; pointer-events: none;" target="" class="nav-item__link">
+              Partners
+              
+            </a>
+            
+            
+              <ul class="sub-menu-item__sub-menu
+                         sub-sub-menu">
+                
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/partners" target="" class="nav-item__link">
+          Partner Network
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://zimperium.com/partner-contact-us" target="" class="nav-item__link">
+          Become a Partner
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+                  
+  <li class="nav-list__item
+             nav-list__item--3
+             nav-item
+             "> 
+   
+      
+        <a href="https://learning.zimperium.com/learn" target="" class="nav-item__link">
+          zPartner Login
+          
+        </a>
+    
+      <div class="advanced-menu">
+        <div class="container
+              container-wide">
+    
+        
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+                
+              </ul>
+            
+          </div>
+        </div>
+      
+
+
+
+  </li>
+
+            
+          </ul>
+        
+          
+            
+              <div class="nav-item__extra-col">
+                <p><a href="https://zimperium.com/hubfs/MTD/REPORT/GENERIC/Mishing%20Threat%20Report26Q1.pdf" rel="noopener"><img src="https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=220&amp;height=322&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg" width="220" height="322" loading="lazy" alt="Screenshot 2024-10-09 at 2.42.53 PM" style="height: auto; max-width: 100%; width: 220px; margin-left: auto; margin-right: auto; display: block;" srcset="https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=110&amp;height=161&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg 110w, https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=220&amp;height=322&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg 220w, https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=330&amp;height=483&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg 330w, https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=440&amp;height=644&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg 440w, https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=550&amp;height=805&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg 550w, https://zimperium.com/hs-fs/hubfs/Images/Screenshot-2024-10-09-at-2.42.53.jpg?width=660&amp;height=966&amp;name=Screenshot-2024-10-09-at-2.42.53.jpg 660w" sizes="(max-width: 220px) 100vw, 220px"></a></p>
+<p>&nbsp;</p>
+              </div>
+            
+          
+    
+          </div>
+        </div>
+    
+    
+
+
+
+  </li>
+
+          
+        </ul>
+      </nav>
+      
+      
+      
+       
+        <div class="main-nav__button">
+          
+          
+          
+          <a href="https://zimperium.com/contact-us" class="btn btn--primary button-1" target="_blank" rel="noopener">
+            CONTACT US
+          </a>
+        </div>
+      
+      
+      
+        <div class="main-nav__search">
+          <a href="/hs-search-results">
+            <span id="hs_cos_wrapper_module_17247843921661_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="Magnifying Glass1_layer"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" /></g></svg></span>
+          </a>
+        </div>
+      
+      
+      <div class="main-nav__menu-toggle
+                  icon-open-row">
+        <div class="icon-open-container">
+          <div class="icon-open-col-1">☰</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+    
+
+</header>
+
+
+
+<div class="off-canvas" style="--bgc: #fff;
+            --lcn: #182947;
+            --lch: 182947;">
+   <div class="off-canvas-header">
+     <h4 class="off-canvas-title">Menu</h4>
+     <div aria-label="Close">
+       <div class="icon-close"></div>
+     </div>
+   </div>
+
+  <div class="off-canvas-body">
+    <nav class="off-canvas-nav">
+      <div class="list-level-0">
+        
+          
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-1" target="">
+        Mobile Applications
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-1">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-2" target="">
+        Mobile Application Security
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-2">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/maps" class="link-level-3" target="">
+        Mobile Application Protection Suite | MAPS
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/maps/mobile-app-response-agent" class="link-level-3" target="">
+        Mobile App Response Agent
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/maps/zscan" class="link-level-3" target="">
+        Application Security Testing
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/maps/zkeybox" class="link-level-3" target="">
+        Cryptographic Key Protection
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/maps/zshield" class="link-level-3" target="">
+        Application Shielding
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/maps/zdefend" class="link-level-3" target="">
+        Runtime Protection
+        
+      </a>
+    </div>
+    
+
+
+          
+        </div>
+      
+
+
+          
+        </div>
+      
+
+
+        
+          
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-1" target="">
+        Mobile Devices
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-1">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-2" target="">
+        Mobile Device Security
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-2">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/mtd/mobile-threat-defense" class="link-level-3" target="">
+        Mobile Threat Defense (MTD)
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/mtd/mobile-soc-agent" class="link-level-3" target="">
+        Mobile SOC Agent
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/mtd/phishing" class="link-level-3" target="">
+        Mobile Phishing Protection
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/mtd/mobile-app-vetting" class="link-level-3" target="">
+        Mobile App Vetting
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/mtd/byod" class="link-level-3" target="">
+        Mobile BYOD Security
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/government/chromebooks" class="link-level-3" target="">
+        MTD for Chromebooks
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/government/zsecure" class="link-level-3" target="">
+        zSecure Resident Safety
+        
+      </a>
+    </div>
+    
+
+
+          
+        </div>
+      
+
+
+          
+        </div>
+      
+
+
+        
+          
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-1" target="">
+        Solutions
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-1">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-2" target="">
+        Mobile Security Solutions by Industry
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-2">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/automotive" class="link-level-3" target="">
+        Automotive
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/aviation" class="link-level-3" target="">
+        Aviation
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/finance/banking" class="link-level-3" target="">
+        Banking
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/federal-government" class="link-level-3" target="">
+        Federal
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/finance" class="link-level-3" target="">
+        Financial Services
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/government/state-local" class="link-level-3" target="">
+        Government
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/healthcare" class="link-level-3" target="">
+        Healthcare
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/media-entertainment" class="link-level-3" target="">
+        Media &amp; Entertainment
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/industry/retail" class="link-level-3" target="">
+        Retail
+        
+      </a>
+    </div>
+    
+
+
+          
+        </div>
+      
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-2" target="">
+        Mobile Security Solutions by Use Case
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-2">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/solutions/compliance_and_regulations" class="link-level-3" target="">
+        Regulatory Compliance
+        
+      </a>
+    </div>
+    
+
+
+          
+        </div>
+      
+
+
+          
+        </div>
+      
+
+
+        
+          
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-1" target="">
+        Company
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-1">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-2" target="">
+        Company
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-2">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/company" class="link-level-3" target="">
+        About Us
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://www.zimperium.com/blog/" class="link-level-3" target="">
+        Blog
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/company/careers" class="link-level-3" target="">
+        Careers
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/company/events" class="link-level-3" target="">
+        Events
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/newsroom" class="link-level-3" target="">
+        Newsroom
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://www.zimperium.com/support/" class="link-level-3" target="">
+        Support
+        
+      </a>
+    </div>
+    
+
+
+          
+        </div>
+      
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a class="link-level-2" target="">
+        Partners
+        
+          <span class="link-arrow">›</span>
+        
+      </a>
+    </div>
+    
+        
+        
+        <div class="list-level-2">
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/partners" class="link-level-3" target="">
+        Partner Network
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://zimperium.com/partner-contact-us" class="link-level-3" target="">
+        Become a Partner
+        
+      </a>
+    </div>
+    
+
+
+          
+            
+
+    <div class="list-item
+                list-item">
+      <a href="https://learning.zimperium.com/learn" class="link-level-3" target="">
+        zPartner Login
+        
+      </a>
+    </div>
+    
+
+
+          
+        </div>
+      
+
+
+          
+        </div>
+      
+
+
+        
+        
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+
+<script src="https://zimperium.com/hubfs/hub_generated/template_assets/1/176818283567/1789769633119/template_off-canvas.min.js" async></script></div>
+      
+
+      <main id="main">
+        
+  
+  
+
+
+  <link rel="stylesheet" href="https://zimperium.com/hubfs/hub_generated/template_assets/1/176818305462/1789769636247/template_blog-post.css">
+<style>/* restore top padding for the inline author row */
+
+  
+  .authors-inline-row {
+  margin-top: 25px !important;     /* add space between title and author */
+  margin-bottom: 18px !important;     /* add space between title and author */
+  display: block;
+  text-align: center;   /* keeps it centered under the title */
+}
+
+/* optional: adjust on mobile for tighter spacing */
+@media (max-width: 767px) {
+  .authors-inline-row {
+    margin-top: 12px;
+  }
+  
+  .h2, h2 {
+    font-size: 30px !important;}
+  .single-tags__tag {
+  margin-bottom:10px !important;
+  }
+  
+}
+
+
+</style>
+  <div class="progress-container">
+    <div class="progress-bar" id="prog-bar"></div>
+    </div>
+
+<div class="blog-social-share">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts"><i class="fab fa-facebook"></i></a>
+  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20post%3A%20https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts"><i class="fab fa-x-twitter"></i></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts"><i class="fab fa-linkedin"></i></a>
+</div>
+
+      
+      <article class="s-blog-post
+                      s-blog-post--a">
+        <header class="s-blog-post__header
+                       post-header">
+          <div class="container">
+            <div class="blog-all">
+  
+    <a class="post-badge" href="https://zimperium.com/blog/">blog</a>
+  
+</div>
+            <div class="post-header__date">
+              Sep 16, 2026
+            </div>
+            <h1 class="post-header__title">
+              <span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">RatHat: AI-Powered Mobile Threat is Here for Your Credentials &amp; Bank Accounts</span>
+            </h1>
+           
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+    
+  
+
+  
+    
+  
+
+
+<!-- author_debug_inline: slug="rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts", total=3 -->
+
+
+  <div class="authors-inline-row">
+    
+      
+      
+      
+      
+
+      <span class="authors-inline-item"><a href="/blog/author/gianluca-braga">Gianluca Braga</a></span>
+      <span style="color:#ff4c15;" class="authors-inline-sep">|</span>
+    
+      
+      
+      
+        
+      
+      
+
+      <span class="authors-inline-item"><a href="/blog/author/vishnu-pratapagiri">Vishnu Pratapagiri</a></span>
+      <span style="color:#ff4c15;" class="authors-inline-sep">|</span>
+    
+      
+      
+      
+      
+
+      <span class="authors-inline-item"><a href="/blog/author/fernandosanchez">Fernando Ortega</a></span>
+      
+    
+  </div>
+
+
+
+          </div>
+        </header>
+         
+        
+        
+        <div class="s-blog-post__body">
+          <div class="container
+                      container-xnarrow">
+            <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><h2><span>Executive Summary</span></h2>
+<p><span>The zLabs team has uncovered </span><strong><span>RatHat</span></strong><span>, a novel Android malware strain linked to threat actors that appear to be operating in China. RatHat incorporates novel techniques for persistence and leverage generative AI for operational control.</span></p>
+<p><span>Distributed primarily via targeted smishing (SMS/text phishing) and malvertising campaigns leading to deceptive third-party download portals, RatHat uses an automated multi-stage infection pipeline. Once deployed, it pairs Accessibility abuse with autonomous local ADB (Android Debug Bridge) self-pairing to break out of the standard Android application sandbox, staging independent native daemons that execute with shell-level privileges.</span></p>
+<h3><span>Key Technical Findings</span></h3>
+<ul>
+<li><strong><span>Global Financial Targeting:</span></strong><span> The malware deploys sophisticated, fake interfaces designed to mimic legitimate banking and payment apps, tricking users into providing their financial login credentials, while also intercepting OTP/2FA codes.</span></li>
+<li><strong><span>AI-Driven Automation:</span></strong><span> RatHat uses AI to intelligently navigate and control the device interface in real-time, making its operations more adaptable and harder for security software to detect than traditional, scripted automation.</span></li>
+<li><strong><span>Hardware-Level Credential Theft:</span></strong><span> By monitoring raw touch input at the hardware level, the malware bypasses standard security protections, allowing it to reconstruct PINs, passwords, and unlock patterns by tracking finger movements directly.</span></li>
+<li><strong><span>Self-Escalating Privileges:</span></strong><span> The malware automatically grants itself deep, administrative-level control over the device without needing a host computer, enabling unrestricted access to critical system functions.</span></li>
+<li><strong><span>Persistent &amp; Self-Restoring Access:</span></strong><span> The malware installs a hidden background service that operates independently of the main app. If a user uninstalls the app, this service remains active, silently reinstalling the malware and restoring its malicious permissions.</span></li>
+<li><strong><span>Stealthy Communication Channels:</span></strong><span> It establishes a covert, permanent connection to the attacker's server, bypassing network security measures to maintain continuous, unauthorized remote control.</span></li>
+</ul>
+<p><span>RatHat highlights a distinct paradigm shift in the mobile threat landscape: moving away from static, easily disrupted automation toward adaptive, AI-assisted execution chains that operate outside the constraints of traditional mobile app sandboxes.</span></p>
+<!--more-->
+<h2><span>Delivery Vectors</span></h2>
+<p><span>Threat actors are constantly refining their malware to gain undetected, unauthorized access to sensitive financial information. To succeed, malware developers must overcome two primary obstacles: neutralizing modern OS security controls and deceiving increasingly cautious users.</span></p>
+<p><span>Initial compromise relies on hybrid delivery channels that combine social engineering with technical obfuscation. During this research we have discovered how the malware has been adapting itself and improving in order to maximize infection rates.<br><br>RatHat is primarily distributed through deceptive phishing sites promoted via malvertising, smishing campaigns, and third-party forums, luring victims into manually downloading malicious APKs that appear to be legitimate apps (</span><strong><span>Figure&nbsp;1</span></strong><span>).<br><br></span></p>
+<p style="text-align: center;"><span><!-- Fig.1 image here --><img src="https://zimperium.com/hs-fs/hubfs/image8-2.png?width=300&amp;height=594&amp;name=image8-2.png" width="300" height="594" loading="lazy" alt="image8-2" style="height: auto; max-width: 100%; width: 300px;" srcset="https://zimperium.com/hs-fs/hubfs/image8-2.png?width=150&amp;height=297&amp;name=image8-2.png 150w, https://zimperium.com/hs-fs/hubfs/image8-2.png?width=300&amp;height=594&amp;name=image8-2.png 300w, https://zimperium.com/hs-fs/hubfs/image8-2.png?width=450&amp;height=891&amp;name=image8-2.png 450w, https://zimperium.com/hs-fs/hubfs/image8-2.png?width=600&amp;height=1188&amp;name=image8-2.png 600w, https://zimperium.com/hs-fs/hubfs/image8-2.png?width=750&amp;height=1485&amp;name=image8-2.png 750w, https://zimperium.com/hs-fs/hubfs/image8-2.png?width=900&amp;height=1782&amp;name=image8-2.png 900w" sizes="(max-width: 300px) 100vw, 300px"><br><strong><br>Fig.1</strong>: Phishing site distributing RatHat malware</span></p>
+<h2><span>Installation &amp; Anti-analysis Techniques</span></h2>
+<p><span>In response to continuous improvements in Android's security architecture, threat actors have refined their deployment methods to bypass real-time detection and ensure persistent access to compromised endpoints.</span></p>
+<p><span>To remain silent, the installation is done by a dropper and the malware contains four anti-analysis layers and one anti-debug layer. All these stages are described below.</span></p>
+<h3><span>Dropper</span></h3>
+<p><span>The dropper carries its payload in two encrypted assets. Both use the same trivial transform: skip a 24-byte header, read a big-endian length, then per byte ((b ^ 0x4A) - 0xD2) ^ 0xF1, then gunzip. The stage 2 is an in-memory DEX loaded by reflection that contains the code inside to unpack and install the malware payload.</span></p>
+<p><span>Droppers exploit native SessionInstaller APIs to bypass Android’s restricted settings and Accessibility Service protections, enabling the installation of the malicious payload and subsequent access to protected APIs.</span></p>
+<h3><span>Four Anti-Analysis layers</span></h3>
+<p><span>Droppers and payloads incorporate multiple sophisticated anti-analysis mechanisms to complicate static and dynamic inspection. These defenses span four distinct technical layers: container tampering, manifest manipulation, DEX bytecode poisoning, and dual string-encryption schemes.</span></p>
+<h4><span>Layer 1: Container Tampering</span></h4>
+<p><span>The container tampering layer consists of declaring some files as directories in the zip, or setting the ZIP general-purpose encryption bit on some files. These modifications are ignored by Android </span><strong><span>libziparchive</span></strong><span> but not by </span><em><span>unzip</span></em><span>, </span><em><span>apktool</span></em><span> and other tools. A similar technique is used by other malware families we </span><a href="https://zimperium.com/blog/over-3000-android-malware-samples-using-multiple-techniques-to-bypass-detection"><u><span>blogged about in the past</span></u></a><span>.</span></p>
+<h4><span>Layer 2: Manifest Bomb</span></h4>
+<p><span>The AndroidManifest.xml file is of 61MB and the 99% of it is composed by 2 chunks of undocumented type 0x9999 placed between string pool and the real element stream. This exploits a parse differential: Android’s native runtime simply skips the unknown 0x9999 chunk headers, whereas decompilers and static analyzers fail to parse the non-standard structure or exhaust their memory limits, causing automated analysis pipelines to crash or time out.</span></p>
+<h4><span>Layer 3: DEX Bytecode Poisoning</span></h4>
+<p><span>A substantial portion of the Dex code incorporates pseudo-instructions configured with an invalid </span><em><span>element_width</span></em><span> attribute. Although the Android Runtime (ART) never executes these payloads, disassemblers attempt to calculate the payload length. Consequently, while the application operates normally, the disassembly process fails.</span></p>
+<h4><span>Layer 4: String-Encryption Scheme</span></h4>
+<p><span>General strings use StringFog (a string encryption library for Android) that is based on a base64 ciphertext XORed with a per-string base64 key. In order to prevent the analysis, this malware uses a scheme called StringCrypto: base64. On top of this, the malware swaps adjacent byte pairs and XOR the result with a 16-byte key.</span></p>
+<h3><span>Anti-debugging Layer</span></h3>
+<p><span>The malware contains six runtime checks for avoiding the debugging:</span></p>
+<ul>
+<li><strong><span>JDWP debugger check</span></strong><span>: </span><em><span>Debug.isDebuggerConnected()</span></em><span> and </span><em><span>Debug.waitingForDebugger()</span></em></li>
+<li><strong><span>Ptrace attach check</span></strong><span>: reads /proc/self/status and locates the “TracerPid:” line. Catches gdb, lldb and any native attach.</span></li>
+<li><strong><span>Presence of FLAG_DEBUGGABLE</span></strong><span>: this is catching if an analyst is repackaging the APK.</span></li>
+<li><strong><span>Properties check</span></strong><span>: checks for getprop ro.debuggable == "1" and getprop ro.secure == "0".</span></li>
+<li><strong><span>Frida Check</span></strong><span>: TCP probe to port 27042, ps output and grepping for “frida” and scan of the </span><em><span>/proc/self/maps</span></em><span> for </span><strong><span>libfrida-agent.so</span></strong><span> presence.</span></li>
+<li><strong><span>Xposed, root or emulator checks</span></strong><span>: 20 root paths and packages, three Xposed manager packages plus persist.sys.xposed.enable, Build fingerprint and QEMU device nodes</span></li>
+</ul>
+<h2><span>Architecture</span></h2>
+<p><span>The architecture of this Android threat can be broken down into three primary operational parts: the </span><strong><span>Malicious Android Application</span></strong><span>, the </span><strong><span>Go Agent</span></strong><span> (liblocal-service.so), and the </span><strong><span>FRP Client</span></strong><span> (libmedia_codec.so).</span></p>
+<p><span><br><img src="https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=1024&amp;height=559&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png" width="1024" height="559" loading="lazy" alt="image2-Sep-15-2026-07-11-59-6412-PM" style="height: auto; max-width: 100%; width: 1024px;" srcset="https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=512&amp;height=280&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png 512w, https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=1024&amp;height=559&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png 1024w, https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=1536&amp;height=839&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png 1536w, https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=2048&amp;height=1118&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png 2048w, https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=2560&amp;height=1398&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png 2560w, https://zimperium.com/hs-fs/hubfs/image2-Sep-15-2026-07-11-59-6412-PM.png?width=3072&amp;height=1677&amp;name=image2-Sep-15-2026-07-11-59-6412-PM.png 3072w" sizes="(max-width: 1024px) 100vw, 1024px"></span></p>
+<p style="text-align: center;"><span><strong>Fig.2</strong>: Architecture and Operational Flow<br><br></span></p>
+<h3><span>The Android App</span></h3>
+<p><span>Its main role is to act as the primary interface with the user, acquire critical system permissions, and bootstrap the rest of the infection chain:</span></p>
+<ul>
+<li><strong><span>Lure &amp; Delivery (UI Layer)</span></strong><span>: This component uses sophisticated social engineering. In one build, </span><em><span>server_config.json</span></em><span> is set to pose as a well known streaming app, hiding behind that app's icon and label. The APK contains dynamic configuration that allows the operator to restyle the launcher icon later by enabling different activity aliases, such as one labeled "Chrome."</span></li>
+<li><strong><span>Permissions Acquisition Engine</span></strong><span>: The critical dependency for everything else is the Accessibility Service. The app uses a localized HTML lure (</span><em><span>svc_config.html</span></em><span>) driven by pageStyleConfig. In some countries, it claims permission is needed "due to network restrictions" and offers financial bait.</span></li>
+<li><strong><span>The Accessibility Service Activation (SystemHelper)</span></strong><span>: once the service is granted, </span><em><span>SystemHelperService</span></em><span> becomes the engine for every automated system change. This service is used to:</span>
+<ul>
+<li><span>Unlock </span><em><span>Developer Options</span></em><span> by tapping the "Build Number" 7 times.</span></li>
+<li><span>Enable Wireless Debugging.</span></li>
+<li style="text-align: center;"><span>Scrape critical connection data from the UI, such as the 6-digit ADB Pairing Code and the dynamic port from the pairing dialog, falling back to scanning all TextViews if resource IDs are absent (</span><strong><span>Figure&nbsp;3</span></strong><span>).<br><br><img src="https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=1022&amp;height=674&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png" width="1022" height="674" loading="lazy" alt="Screenshot 2026-09-15 at 12.04.41 PM" style="height: auto; max-width: 100%; width: 1022px;" srcset="https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=511&amp;height=337&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png 511w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=1022&amp;height=674&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png 1022w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=1533&amp;height=1011&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png 1533w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=2044&amp;height=1348&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png 2044w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=2555&amp;height=1685&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png 2555w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.04.41%20PM.png?width=3066&amp;height=2022&amp;name=Screenshot%202026-09-15%20at%2012.04.41%20PM.png 3066w" sizes="(max-width: 1022px) 100vw, 1022px"><br><strong><br>Fig.3</strong>: Enable Wireless debugging and get pairing code<br><br></span></li>
+</ul>
+</li>
+<li><strong><span>Spyware Capabilities</span></strong><span>: Beyond orchestration, the APK has powerful direct-access capabilities:</span>
+<ul>
+<li><strong><span>Credential Theft</span></strong><span>: An advanced WebView overlay injection engine targets specific apps, primarily to steal banking credentials.</span></li>
+<li><strong><span>Screen and Input Capture</span></strong><span>: A combination of MediaProjection Screen streaming and a Lock-screen credential capture mechanism.</span></li>
+<li><strong><span>Data Interception</span></strong><span>: An SMS receiver and notification listener work in tandem to intercept 2FA/OTP codes.</span></li>
+<li><strong><span>Device Admin &amp; Anti-Uninstall</span></strong><span>: The app can request Device Admin rights, which grants it the capability to wipe the device if an uninstall attempt is made.</span></li>
+</ul>
+</li>
+<li><strong><span>Generative AI UI-Automation Engine</span></strong><span>: This is a particularly unique feature. The malware serializes the device's live Accessibility tree to XML and communicates with one of the world’s most popular Generative AI assistants (</span><strong><span>Figure&nbsp;4</span></strong><span>). This AI is used for non-malicious actions including:</span>
+<ul>
+<li><span>Resolving a named target's centre coordinates on the screen as JSON to direct synthetic clicks.</span></li>
+<li><span>Resolving a target's actual on-screen text from the XML (without translating).</span></li>
+<li><span>Signaling automatic navigation commands like SCROLL_DOWN.<br><br></span></li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;"><span><img src="https://zimperium.com/hs-fs/hubfs/image9-2.png?width=567&amp;height=688&amp;name=image9-2.png" width="567" height="688" loading="lazy" alt="image9-2" style="height: auto; max-width: 100%; width: 567px;" srcset="https://zimperium.com/hs-fs/hubfs/image9-2.png?width=284&amp;height=344&amp;name=image9-2.png 284w, https://zimperium.com/hs-fs/hubfs/image9-2.png?width=567&amp;height=688&amp;name=image9-2.png 567w, https://zimperium.com/hs-fs/hubfs/image9-2.png?width=851&amp;height=1032&amp;name=image9-2.png 851w, https://zimperium.com/hs-fs/hubfs/image9-2.png?width=1134&amp;height=1376&amp;name=image9-2.png 1134w, https://zimperium.com/hs-fs/hubfs/image9-2.png?width=1418&amp;height=1720&amp;name=image9-2.png 1418w, https://zimperium.com/hs-fs/hubfs/image9-2.png?width=1701&amp;height=2064&amp;name=image9-2.png 1701w" sizes="(max-width: 567px) 100vw, 567px"><br><strong><br>Fig.4</strong>: AI Prompts used by RatHat indicating potential of China-based threat actors<br></span><span><!-- Fig.4 image here --><br></span></p>
+<h3><span>The Local Privileged Executor: liblocal-service.so Go Agent</span></h3>
+<p><span>The malware includes a sophisticated agent written in Go, which is dropped and executed by the APK once a shell is acquired via the local ADB daemon. It is shipped disguised as a native library (liblocal-service.so) and staged to /data/local/tmp.</span></p>
+<p><span>The agent is the command-and-control brain executing commands from an ADB shell context, bypassing security limitations that the user-facing app faces.</span></p>
+<p><span>It is responsible for applying critical system-level persistence and power management exemptions. These are crucial for steady-state operation but are absent from the APK's DEX file, existing only within the Go binary. These commands are visible in the Go agent's strings:</span></p>
+<ul>
+<li><span>dumpsys deviceidle whitelist +%s: Exempts the app from Doze mode (battery saving).</span></li>
+<li><span>am set-standby-bucket %s active: Puts the app in the "active" standby bucket, prioritizing its background execution.</span></li>
+<li><span>pm disable-user --user 0 %s: Allows the operator to disable arbitrary packages on the system.</span></li>
+<li><span>pm uninstall -k --user 0 %s: Allows full uninstallation of security or other packages.</span></li>
+</ul>
+<h3><span>The Stealth Persistence Tunnel: libmedia_codec.so FRP Client</span></h3>
+<p><span>The third main part is the reverse-proxy client, </span><strong><span>frpc</span></strong><span> (derived from </span><strong><span>fatedier/frp</span></strong><span>). This is also a Go binary, shipped disguised as </span><em><span>libmedia_codec.so</span></em><span>. Once staged to </span><em><span>/data/local/tmp/frpc</span></em><span>, its only function is to establish a secure, persistent reverse tunnel back to the C2 server. It connects back to the attacker using configuration data (IP, Port, and Token) fetched from the C2 server by the Go Agent (main.fetchFrpcConfigFromServer).</span></p>
+<p><span>This connection is used by attackers to have access to the ADB daemon: it's a general-purpose road into the device that carries whatever the operator wants, independent of the malware's own feature set.</span></p>
+<h3><span>Operational Flow</span></h3>
+<p><span>The infection and operational flow illustrates the precise sequence through which these components interact.</span></p>
+<p><span>Initially, the Android application secures Accessibility service access and employs synthetic tap gestures to enable Developer Options and access the Wireless Debugging pairing interface. Subsequently, the application leverages its Accessibility service to extract the local pairing PIN and dynamic port from the user interface. Utilizing the embedded libadb-android library, the application authenticates against the local device's ADB daemon, thereby securing shell-level access to the /data/local/tmp directory.</span></p>
+<p><span>Via this established ADB connection, the application executes commands to stage and launch both the Go Agent and the FRP Client.</span></p>
+<p><span>The application interacts with the active Go Agent over a local loopback HTTP interface. Operating within its elevated shell context, the Go Agent executes key system commands—including pm grant and deviceidle—to grant the application persistent operation and WRITE_SECURE_SETTINGS permissions.</span></p>
+<p><span>Finally, the Go Agent retrieves the FRP tunnel configuration from the C2 server, enabling the FRP Client to establish a persistent, active reverse tunnel to the operator.</span></p>
+<h2><span>Persistence</span></h2>
+<p><span>The App intercepts the uninstall confirmation dialog and renders a fake failure overlay styled as Google Play, cancelling the uninstallation. But even if the user manages to uninstall it, there is another mechanism in place: the local-service is running outside the package lifecycle, so it is not removed when the app is uninstalled.</span></p>
+<p><span>After the uninstallation, the attacker still has a shell on the device. The service checks if the app is still installed and if the presence is not confirmed, then the app is reinstalled.</span></p>
+<p><span>The service launches the following commands that allow the reinstallation of the apk, granting every runtime permission automatically and re-granting the accessibility without interacting with the UI:<br><br></span></p>
+<div align="left">
+<table style="border-collapse: collapse; border-image: initial; width: 100.704%; border: medium none currentcolor;"><colgroup></colgroup>
+<tbody>
+<tr>
+<td style="vertical-align: top; background-color: #282b2e; width: 100%;">
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="color: #a9b7c6; background-color: #282b2e;">&gt; pm install -r -g -i com.android.packageinstaller /data/local/tmp/app.apk</span><br><span style="color: #a9b7c6; background-color: #282b2e;">&gt; settings put secure enabled_accessibility_services '%s'</span><br><span style="color: #a9b7c6; background-color: #282b2e;">&gt; settings put secure accessibility_enabled 1</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span>On the other side, until the app is present and running, it runs a heartbeat that redeploys and relaunches local-service if it stops responding, rescanning the ADB port ladder and re-enabling debugging settings if needed.</span></p>
+<h2><span>C&amp;C Communication Channels</span></h2>
+<p><span>The malware establishes persistent, real-time command-and-control channels to execute remote commands and exfiltrate telemetry, though they rely on fundamentally different networking protocols.</span></p>
+<p><span>The Android App registers over HTTP, then holds a WebSocket open with heartbeats. Requests are authenticated with HMAC-SHA256 over a device key derived from </span><em><span>deviceKeySalt.</span></em></p>
+<p><span>Using the embedded Go Agent (</span><strong><span>liblocal-service.so</span></strong><span>), the malware spins up an HTTP server bound to </span><strong><span>127.0.0.1:7910</span></strong><span>.</span></p>
+<p><span>Additionally, as said before, it deploys a masqueraded native library (libmedia_codec.so), which is actually a </span><a href="https://github.com/fatedier/frp"><u><span>Fast Reverse Proxy Client (</span><strong><span>frpc</span></strong><span>)</span></u></a><span>, to expose the internal loopback server and local device interfaces to the internet, bypassing NAT and firewall restrictions.</span></p>
+<h3><span>Communication Endpoints</span></h3>
+<div align="center">
+<table class="mitre-table">
+<thead>
+<tr>
+<th>Endpoint</th>
+<th>Caller</th>
+<th>Data Carried / Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Endpoint"><em><span>/api/node/register</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>Device enrolment and fingerprint</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/data/credentials</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>Overlay-harvested credentials</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/sync/cipher</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>Lock-screen credential sync</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/data/messages</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>SMS bodies</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/data/app-list</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>Installed-application inventory</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/fs/upload-from-device</span></em><br><em><span>/api/fs/download-for-device</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>File transfer in both directions</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/adbk/upload</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>The device's ADB cert.pem and private.key (multipart, with deviceId = android_id)</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/adbk/port</span></em></td>
+<td data-label="Caller"><strong><span>App</span></strong></td>
+<td data-label="Data Carried / Description"><span>{"deviceId","ip":"127.0.0.1","port":N} the live wireless-debugging port</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/data/cipher</span></em></td>
+<td data-label="Caller"><strong><span>Both</span></strong></td>
+<td data-label="Data Carried / Description"><span>Lock-screen PIN, pattern, and password material. Managed by agent via main.syncCipherToServer so exfiltration survives app removal</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/data/form</span></em></td>
+<td data-label="Caller"><strong><span>Both</span></strong></td>
+<td data-label="Data Carried / Description"><span>Overlay form submissions</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/node/logs</span></em></td>
+<td data-label="Caller"><strong><span>Both</span></strong></td>
+<td data-label="Data Carried / Description"><span>Log upload, including anti-analysis findings</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/inj/global-configs</span></em></td>
+<td data-label="Caller"><strong><span>Both</span></strong></td>
+<td data-label="Data Carried / Description"><span>Overlay template distribution</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/tasks?deviceId=%s</span></em><br><em><span>/api/v2/dev/task/response</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Work queue and results, a command channel independent of the app's WebSocket</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/cacheTasks?deviceId=%s</span></em><br><em><span>/api/v2/dev/cacheTaskResult</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Offline queue (main.startupSyncServerCacheTasks) that drains buffered tasks, executing downtime commands on reconnect</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/message</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Free-form messaging (main.postMessageToServer), including initial start check-in</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/localServiceHeartbeat</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Agent liveness check, separate from the app's heartbeat</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/data/screen-monitor</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Shell-level screen monitoring, independent of MediaProjection and its consent dialog</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/upload/video</span></em><br><em><span>/api/vid/upload?deviceId=%s</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Chunked video upload pipeline (handleBeginVideoUpload → handleAppendVideoChunk → handleFinishVideoUpload)</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/tun/config</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>FRP tunnel configuration, main.fetchFrpcConfigFromServer retrieves FrpsAddr, FrpsPort, and FrpsToken</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/tun/deployed</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Reports active tunnel status via main.notifyTunnelDeployed</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/sapp</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Evasion list via main.fetchSensitiveAppsFromServer, suspends Accessibility processing on sensitive packages without updating the build</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/bapp</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Block list (main.fetchBlackAppsFromServer)</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/bin/%s/minicap.so?sdk=%s</span></em><br><em><span>/api/bin/%s/minicap?brand=%s</span></em><br><em><span>/api/bin/noarch/minicap.apk</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Screen-capture tooling selected by device ABI, SDK level, and brand</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/agentVersion?deviceId=%s&amp;currentVersion=%s</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Self-update check staged to /data/local/tmp/local-service.update</span></td>
+</tr>
+<tr>
+<td data-label="Endpoint"><em><span>/api/v2/dev/install-log</span></em></td>
+<td data-label="Caller"><strong><span>Agent</span></strong></td>
+<td data-label="Data Carried / Description"><span>Install telemetry</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2><span>Espionage and Keylogging</span></h2>
+<p><span>Keylogging remains a staple technique across Remote Access Trojans (RATs). While malware authors employ various strategies to harvest keystrokes, exploiting Android's Accessibility service to track screen activity and exfiltrate data to command-and-control (C&amp;C) servers is among the most prevalent.</span></p>
+<p><span>To achieve this, RatHat implements the 3 specialized mechanisms described below.</span></p>
+<h3><span>Accessibility text-event keylogger</span></h3>
+<p><strong><span>UniversalInputMonitor</span></strong><span> consumes accessibility text-change events and reconstructs what was typed, tracking </span><em><span>beforeText</span></em><span>, </span><em><span>eventText</span></em><span>, </span><em><span>nodeText</span></em><span>, </span><em><span>hintText</span></em><span>, </span><em><span>fieldId</span></em><span> and </span><em><span>pkg</span></em><span> per event. It classifies credential fields using the localised </span><em><span>PASSWORD_KEYWORDS, PIN_KEYWORDS</span></em><span> and </span><em><span>ENTER_PASSWORD_KEYWORDS</span></em><span> categories, and specifically handles masked_input, reconstructing content from a field showing only dots, with password_field, new_field and per-character char_ records.</span></p>
+<h3><span>Browser URL Harvesting</span></h3>
+<p><strong><span>KeystrokeCapture</span></strong><span> reads address bars by resource ID: </span><em><span>com.android.chrome:id/url_bar, com.brave.browser:id/url_bar, com.opera.browser:id/url_field, com.opera.mini.native:id/url_field, com.microsoft.emmx:id/url_bar, com.duckduckgo.mobile.android:id/omnibarTextInput, com.sec.android.app.sbrowser:id/location_bar_edit_text</span></em><span>, plus AOSP and ColorOS browsers.</span></p>
+<h3><span>Raw /dev/input from Go Agent</span></h3>
+<p><span>This is the most capable of the three, and it's a genuine hardware-level keylogger. The class driving it is named </span><strong><span>AdbTouchCapture</span></strong><span>.</span></p>
+<p><span>This logging is executed by the Go Agent and it is able to record where the finger touched the screen.<br><br></span></p>
+<p style="text-align: center;"><span><img src="https://zimperium.com/hs-fs/hubfs/image7-3.png?width=1024&amp;height=559&amp;name=image7-3.png" width="1024" height="559" loading="lazy" alt="image7-3" style="height: auto; max-width: 100%; width: 1024px;" srcset="https://zimperium.com/hs-fs/hubfs/image7-3.png?width=512&amp;height=280&amp;name=image7-3.png 512w, https://zimperium.com/hs-fs/hubfs/image7-3.png?width=1024&amp;height=559&amp;name=image7-3.png 1024w, https://zimperium.com/hs-fs/hubfs/image7-3.png?width=1536&amp;height=839&amp;name=image7-3.png 1536w, https://zimperium.com/hs-fs/hubfs/image7-3.png?width=2048&amp;height=1118&amp;name=image7-3.png 2048w, https://zimperium.com/hs-fs/hubfs/image7-3.png?width=2560&amp;height=1398&amp;name=image7-3.png 2560w, https://zimperium.com/hs-fs/hubfs/image7-3.png?width=3072&amp;height=1677&amp;name=image7-3.png 3072w" sizes="(max-width: 1024px) 100vw, 1024px"><br><strong><br>Fig.5</strong>: Go Agent keylogging<br></span></p>
+<p><span>The malware is leveraging the fact that it is executed in a shell environment and is using the tool </span><strong><span>getevent.</span></strong><span> The command </span><strong><span>getevent</span></strong><span> is a standard Android debugging tool that reads (</span><strong><span>Figure&nbsp;5</span></strong><span>) the raw device file the kernel writes to. Its output looks like this:<br><br></span></p>
+<div align="left">
+<table style="border-collapse: collapse; border-image: initial; width: 100.704%; border: medium none currentcolor;"><colgroup></colgroup>
+<tbody>
+<tr>
+<td style="vertical-align: top; background-color: #282b2e; width: 100%;">
+<p style="margin-top: 0px; margin-bottom: 0px;"><span style="color: #a9b7c6; background-color: #282b2e;">[ 12345.678901] /dev/input/event2: EV_ABS ABS_MT_POSITION_X 0000021c</span><br><span style="color: #a9b7c6; background-color: #282b2e;">[ 12345.678901] /dev/input/event2: EV_ABS ABS_MT_POSITION_Y 00000658</span><br><span style="color: #a9b7c6; background-color: #282b2e;">[ 12345.678901] /dev/input/event2: EV_SYN SYN_REPORT 00000000</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="text-align: center;"><span>&nbsp;</span></p>
+<p><span>That's it: a X, a Y, and a timestamp. No text, no app name, no idea what was on screen. Just "someone touched pixel (540, 1624) at this moment."</span></p>
+<p><span>Normal apps cannot read /dev/input/*; the permissions don't allow it. Shell UID 2000 can. That's a large part of why the malware goes through the whole Wireless Debugging self-pairing dance in the first place, this capability is one of the prizes.</span></p>
+<p><span>A raw coordinate is useless on its own. What makes it a keylogger is the second half: the malware ships </span><strong><span>locateValues.json</span></strong><span>, which contains the keypad layouts for every major phone brand, where key "0" sits, where "5" sits, the geometry of the pattern-lock grid.</span></p>
+<p><span>So touch at (540, 1624) + "this is a Samsung PIN pad" = "5"</span></p>
+<p><span>The same trick is used for pattern unlock: the sequence of touch points is matched against the 3×3 dot grid to recover the pattern. That's what the Point and DotAlign helper classes in the cipher package do, and it's why the malware tags recovered credentials with a type called PASSWORD_QUALITY_TOUCH_POINTS: it knows this credential came from geometry rather than from text.</span></p>
+<p><span>This approach seems to be quite complex and very powerful since it is able to bypass the protections that Android put in place for the other techniques:</span></p>
+<ul>
+<li><strong><span>FLAG_SECURE on a window</span></strong><span>: Blocks screenshots and accessibility reads. Doesn't touch the input driver.</span></li>
+<li><strong><span>Usage of a custom keyboard</span></strong><span>: The app never hands text to the system but the fingers still hit the screen.</span></li>
+<li><strong><span>Lock screen protection</span></strong><span>: Deliberately hides PIN digits from accessibility. Coordinates are unaffected.</span></li>
+</ul>
+<h2><span>Injection Overlay Technique</span></h2>
+<p><span>RatHat is able to steal the credentials of some banking/crypto applications: the malware monitors the foreground application and, upon detecting a targeted package, triggers the corresponding HTML injection mechanism.</span></p>
+<p><span>The malicious HTML content is supplied by the attacker and is associated with the targeted application, allowing the malware to present a deceptive interface over the legitimate application to capture sensitive banking credentials as shown in </span><strong><span>Figure&nbsp;6.<br><br></span></strong></p>
+<p style="text-align: center;"><span><!-- Fig.6 image here --><img src="https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=500&amp;height=406&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png" width="500" height="406" loading="lazy" alt="Screenshot 2026-09-15 at 12.05.18 PM" style="height: auto; max-width: 100%; width: 500px;" srcset="https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=250&amp;height=203&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png 250w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=500&amp;height=406&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png 500w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=750&amp;height=609&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png 750w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=1000&amp;height=812&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png 1000w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=1250&amp;height=1015&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png 1250w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.18%20PM.png?width=1500&amp;height=1218&amp;name=Screenshot%202026-09-15%20at%2012.05.18%20PM.png 1500w" sizes="(max-width: 500px) 100vw, 500px"><br><strong><br>Fig.6</strong>: Malware targeting banking apps</span></p>
+<p><span><br>RatHat malware focuses also on payment applications like WeChat and Alipay, deploying deceptive screen overlays (</span><strong><span>Figure&nbsp;7</span></strong><span>) that are directly embedded in its code to steal user PINs.<br><br></span></p>
+<p style="text-align: center;"><span><!-- Fig.7 image here --><img src="https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=500&amp;height=460&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png" width="500" height="460" loading="lazy" alt="Screenshot 2026-09-15 at 12.05.49 PM" style="height: auto; max-width: 100%; width: 500px;" srcset="https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=250&amp;height=230&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png 250w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=500&amp;height=460&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png 500w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=750&amp;height=690&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png 750w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=1000&amp;height=920&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png 1000w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=1250&amp;height=1150&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png 1250w, https://zimperium.com/hs-fs/hubfs/Screenshot%202026-09-15%20at%2012.05.49%20PM.png?width=1500&amp;height=1380&amp;name=Screenshot%202026-09-15%20at%2012.05.49%20PM.png 1500w" sizes="(max-width: 500px) 100vw, 500px"><br><strong><br>Fig.7</strong>: RatHat targeting payment apps</span></p>
+<h2><span>Zimperium vs. RatHat</span></h2>
+<p><span>RatHat’s multi-tiered architecture, reliance on out-of-lifecycle daemons, and use of real-time GenAI decision loops illustrate why traditional, signature-based mobile security controls are insufficient. Both Zimperium’s </span><a href="https://zimperium.com/mtd/mobile-threat-defense"><u><span>Mobile Threat Defense</span></u></a><span> (MTD) and </span><a href="https://zimperium.com/maps/zdefend"><u><span>Mobile Runtime Protection</span></u></a><span> (zDefend) provide comprehensive zero-day coverage against RatHat across every stage of the attack chain.</span></p>
+<h3><span>Zimperium Mobile Threat Defense (MTD)</span></h3>
+<p><span>For enterprise mobile devices, Zimperium MTD detects and neutralizes RatHat through on-device, dynamic machine learning models:</span></p>
+<ul>
+<li><strong><span>Zero-Day Malware Detection:</span></strong><span> Powered by the on-device z9 engine, MTD flags the dropper and secondary payloads without relying on cloud-tethered lookups or static signatures, not being affected by the bundle manipulation tailored to prevent the analysis.</span></li>
+<li><strong><span>Privilege Escalation &amp; ADB Abuse:</span></strong><span> MTD monitors runtime behavioral indicators, alerting on anomalous Accessibility Service exploitation, synthetic developer option activation, and local loopback pairing attempts targeting the device's internal ADB daemon.</span></li>
+<li><strong><span>Network &amp; Phishing Protection:</span></strong><span> MTD’s on-device web protection blocks malicious domains used in the initial smishing and malvertising distribution stages, while isolating active C2 communications and FRP reverse-proxy tunnels. This would effectively prevent malicious actors from remotely controlling the device.</span></li>
+</ul>
+<h3><span>Zimperium Mobile Runtime Protection (zDefend)</span></h3>
+<p><span>For financial institutions, e-wallets, and payment providers targeted by RatHat’s credential-harvesting overlays and input scraping:</span></p>
+<ul>
+<li><strong><span>Overlay detection:</span></strong><span> zDefend detects fraudulent HTML injection screens and synthetic UI clicks, preventing malicious overlays from intercepting user credentials and PINs.</span></li>
+<li><strong><span>Untrusted Environment &amp; Tooling Detection:</span></strong><span> zDefend identifies when a banking or payment application is executing in an environment compromised by active Accessibility scraping, screen capture utilities, or elevated debugging services, allowing the app to terminate sensitive sessions or trigger real-time mitigation before credentials can be exfiltrated.</span></li>
+<li><strong><span>Tamper &amp; Hooking Mitigation:</span></strong><span> Detects unauthorized system manipulation and dynamic instrumentation, protecting application integrity even on compromised endpoints with shell-level access.</span></li>
+</ul>
+<h2><span>IOCs</span></h2>
+<p><span>RatHat IOCs can be found in </span><a href="https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat/"><u><span>this repository</span></u></a><span>.</span></p>
+<div id="hs_cos_wrapper_widget_b29a074f-58bf-4826-83ff-e6fa2b8f04a0" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+  <style type="text/css">
+    /* =========================================   DESKTOP TABLE (DEFAULT)   Applies to: <table class="mitre-table">========================================= */.mitre-table {  width: 100%;  border-collapse: collapse;  margin-left: auto;  margin-right: auto;}.mitre-table td,.mitre-table th {  border: 1px solid #99acc2;  padding: 10px;  vertical-align: top;}/* Real header only */.mitre-table thead th {  background-color: #f4f6fb;  font-weight: 700;}/* =========================================   MOBILE — TURN ROWS INTO CARDS   (≤ 768px)========================================= */@media (max-width: 768px) {  /* Hide actual table header on mobile */  .mitre-table thead {    display: none;  }  .mitre-table {    display: block;    width: 100% !important;    max-width: 100vw !important;    border-collapse: separate !important;  }  .mitre-table tbody {    display: block;    width: 100% !important;  }  /* Each row becomes a card */  .mitre-table tr {    display: block;    width: 100% !important;    max-width: 100% !important;    margin-bottom: 1.25rem;    border: 1px solid #d1d9e6 !important;    border-radius: 12px;    overflow: hidden;    background: #ffffff;    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);    box-sizing: border-box;  }  /* Cells become stacked rows inside the card */  .mitre-table td {    display: block;    width: 100% !important;    max-width: 100% !important;    padding: 0.75rem 1rem !important;    border: none !important;    border-bottom: 1px solid #eef2f7 !important;    box-sizing: border-box;    overflow-wrap: anywhere;    word-wrap: break-word;    word-break: break-word;    white-space: normal !important;  }  .mitre-table td:last-child {    border-bottom: none !important;  }  /* Label above each value using data-label */  .mitre-table td::before {    content: attr(data-label);    display: block;    margin-bottom: 0.25rem;    font-size: 0.75rem;    font-weight: 600;    letter-spacing: 0.06em;    text-transform: uppercase;    color: #6b7280;  }  /* Highlight tactic/command cells inside cards */  .mitre-table td[data-label="Tactic"],  .mitre-table td[data-label="Command"] {    background: #f4f6fb;    font-weight: 700;    border-bottom: 1px solid #e0e7ff !important;  }  .mitre-table td[data-label="ID"],  .mitre-table td[data-label="Command"] {    overflow-wrap: anywhere;    word-break: break-word;    white-space: normal !important;  }  .mitre-table td a {    display: inline-block;    max-width: 100%;    overflow-wrap: anywhere;    word-break: break-word;    white-space: normal !important;    text-decoration: underline;  }}
+  </style>
+</div></span>
+          </div>
+        </div>
+        
+        
+          <div class="container
+                      container-xnarrow">
+            <div class="s-blog-post__tags
+                        single-tags">
+              
+              <a href="/blog/tag/threat-research">
+                       
+                       
+               
+              <div class="single-tags__tag">
+                  Threat Research
+                </div>
+              </a>
+              
+              <a href="/blog/tag/zlabs">
+                       
+                       
+               
+              <div class="single-tags__tag">
+                  zLabs
+                </div>
+              </a>
+              
+              <a href="/blog/tag/threat-intelligence">
+                       
+                       
+               
+              <div class="single-tags__tag">
+                  Threat Intelligence
+                </div>
+              </a>
+              
+            </div>
+          </div>
+        
+        
+        
+
+      </article>
+
+
+        
+
+    <!-- start of related posts --> 
+     
+        <div class="container">
+          <h3>
+              Latest News
+            </h3>
+          <div class="related-post__container">
+            
+              
+                  
+                      
+                      
+                          
+                      
+                          
+                          <a href="https://zimperium.com/blog/mantax-otax-indonesian-mobile-ransomware-with-spyware-integration">
+                            <div class="related-post__item">
+                                <div class="related-post__image-container"></div> 
+                              <div>
+                                <img src="https://zimperium.com/hubfs/Mantax%20Otax%20Blog.png">
+                              </div>
+                                <div class="related-post__title">
+                                  <div class="relate-post__date">
+                                    Sep 09, 2026
+                                  </div>
+                                  Mantax Otax: Indonesian Mobile Ransomware with Spyware Integration
+                                </div>
+                            </div>
+                          </a>
+                          
+                      
+                          
+                          <a href="https://zimperium.com/blog/extended-rapid-response-zimperium-identifies-recruittrap-recruit-scams-are-targeting-enterprise-credentials-on-mobile">
+                            <div class="related-post__item">
+                                <div class="related-post__image-container"></div> 
+                              <div>
+                                <img src="https://zimperium.com/hubfs/RecruitTrap%20Blog.png">
+                              </div>
+                                <div class="related-post__title">
+                                  <div class="relate-post__date">
+                                    Aug 24, 2026
+                                  </div>
+                                  Extended Rapid Response: Zimperium Identifies RecruitTrap Recruit Scams are Targeting Enterprise Credentials on Mobile
+                                </div>
+                            </div>
+                          </a>
+                          
+                      
+                  
+              
+                  
+              
+                  
+              
+          </div>
+        </div>
+    
+
+
+     
+      
+  
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+          scrollProgress()
+        };
+
+        function scrollProgress() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("prog-bar").style.width = scrolled + "%";
+        }
+      </script>          
+
+
+        
+      </main>
+
+      
+  <div id="hs_cos_wrapper_module_172867651989312" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+<section class="section-banner section--footer section-theme--dark pt-3 pt-md-3 pt-lg-3 pb-3 pb-md-3 pb-lg-3 d-block d-md-block d-lg-block">
+
+
+
+	
+	<div class="section--footer-content__wrapper">
+		
+		
+			<div class="container container-wide">
+		
+        
+        
+        <div class="pre-footer-cta">
+          <div class="offer">
+            <h3>Make mobile security<br><span style="color: #ff4c15;">your first priority.</span></h3>
+          </div>
+          <div class="ctas">
+            
+            
+              
+              
+              <a class="btn
+                        btn--primary" href="https://zimperium.com/contact-us" target="_blank" rel="noopener">
+                Contact Us
+              </a>
+            
+          </div>
+        </div>
+        
+			<div class="row align-items-start flex-row flex-md-row flex-lg-row">
+				
+					
+					
+						
+						
+					
+					<div class="col-12 d-block d-md-block d-lg-block">
+						
+						
+						
+            
+              <ul class="footer-menu">
+                
+                
+                  
+  
+    <li class="footer-nav__item
+               footer-nav__item--1
+               footer-nav-item
+               footer-nav__item--has-children
+               
+               
+               ">
+      <a href="#" target="" class="footer-nav-item__link">
+        Products
+      </a>
+      
+      <ul class="footer-nav-item__sub-menu">
+        
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/mtd/mobile-threat-defense" target="" class="footer-nav-item__link">
+        Mobile Threat Defense
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/maps" target="" class="footer-nav-item__link">
+        Mobile Application Security
+      </a>
+      
+    </li>
+  
+
+        
+      </ul>
+      
+    </li>
+  
+
+                
+                  
+  
+    <li class="footer-nav__item
+               footer-nav__item--1
+               footer-nav-item
+               footer-nav__item--has-children
+               
+               
+               ">
+      <a href="#" target="" class="footer-nav-item__link">
+        Industries
+      </a>
+      
+      <ul class="footer-nav-item__sub-menu">
+        
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/industry/automotive" target="" class="footer-nav-item__link">
+        Automotive
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/industry/aviation" target="" class="footer-nav-item__link">
+        Aviation
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/industry/finance" target="" class="footer-nav-item__link">
+        Financial Services
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/industry/government/state-local" target="" class="footer-nav-item__link">
+        Government
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/industry/media-entertainment" target="" class="footer-nav-item__link">
+        Media &amp; Entertainment
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/industry/retail" target="" class="footer-nav-item__link">
+        Retail
+      </a>
+      
+    </li>
+  
+
+        
+      </ul>
+      
+    </li>
+  
+
+                
+                  
+  
+    <li class="footer-nav__item
+               footer-nav__item--1
+               footer-nav-item
+               footer-nav__item--has-children
+               
+               
+               ">
+      <a href="#" target="" class="footer-nav-item__link">
+        Company
+      </a>
+      
+      <ul class="footer-nav-item__sub-menu">
+        
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/company" target="" class="footer-nav-item__link">
+        About Us
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/company/careers" target="" class="footer-nav-item__link">
+        Careers
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/contact-us" target="" class="footer-nav-item__link">
+        Contact Us
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/newsroom" target="" class="footer-nav-item__link">
+        Newsroom
+      </a>
+      
+    </li>
+  
+
+        
+      </ul>
+      
+    </li>
+  
+
+                
+                  
+  
+    <li class="footer-nav__item
+               footer-nav__item--1
+               footer-nav-item
+               footer-nav__item--has-children
+               
+               
+               ">
+      <a href="#" target="" class="footer-nav-item__link">
+        Privacy
+      </a>
+      
+      <ul class="footer-nav-item__sub-menu">
+        
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/privacy-policy" target="" class="footer-nav-item__link">
+        Privacy Policy
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://my.compliancehotline.com/report/zimperium" target="" class="footer-nav-item__link">
+        Compliance Hotline
+      </a>
+      
+    </li>
+  
+
+        
+          
+  
+    <li class="footer-nav__item
+               footer-nav__item--2
+               footer-nav-item
+               
+               
+               
+               ">
+      <a href="https://zimperium.com/hubfs/Zimperium/Zimperium%20Vulnerability%20Disclosure%20Policy%20(1).pdf" target="_blank" class="footer-nav-item__link">
+        Responsible Disclosure Policy
+      </a>
+      
+    </li>
+  
+
+        
+      </ul>
+      
+    </li>
+  
+
+                
+              </ul>
+            
+        
+					</div>
+				
+					
+					
+						
+						
+					
+					<div class="col-12 d-block d-md-block d-lg-block">
+						
+						
+						
+            
+        
+					</div>
+				
+			</div>
+		
+        
+      <div class="footer-subscribe-wrapper">
+        <div class="footer-logo">
+          <img src="https://zimperium.com/hubfs/ZIMPERIUM-logo_orangeZ_ff4c15_white.svg" width="200" loading="lazy" alt="" style="height: auto; max-width: 100%; width: 200px;">
+        </div>
+        <div class="footer-subscribe">
+          <div id="hs_cos_wrapper_module_172867651989312_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_inline_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="inline_rich_text" data-hs-cos-field="subscribe.subscribe">Get the latest Mobile Security News and Updates in your inbox:</div>
+          
+          
+          <a class="btn
+                    btn--primary btn-primary-footer" href="">
+            Subscribe
+          </a>
+        </div>
+      </div>
+      <div class="legal">
+        <div>
+          <div class="hide-on-mobile">
+<p style="text-align: center;">© 2026 Zimperium. All Rights Reserved.&nbsp; &nbsp;<a href="#" onclick="ketch('showExperience')">Privacy Settings</a>&nbsp; &nbsp;<a href="https://zimperium.com/company/modern-slavery-act-statement/" rel="noopener" target="_blank">Modern Slavery Act Statement</a></p>
+</div>
+<div class="hide-on-desktop">
+<p style="text-align: center;">© 2026 Zimperium. All Rights Reserved.</p>
+<p style="text-align: center;"><a href="#" onclick="ketch('showExperience')">Privacy Settings</a></p>
+<p style="text-align: center;"><a href="https://zimperium.com/company/modern-slavery-act-statement/" rel="noopener" target="_blank">Modern Slavery Act Statement</a></p>
+</div>
+        </div>
+        <div class="social">
+          
+            
+            <a href="https://www.facebook.com/ZIMPERIUMINC/" class="social__icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          
+          
+            
+            <a href="https://www.linkedin.com/company/zimperium/" class="social__icon">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          
+          
+            
+            <a href="https://x.com/zimperium" class="social__icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          
+          
+            
+            <a href="https://www.youtube.com/channel/UCKFuAnB5ZwrDGSE2pOr7xtQ" class="social__icon">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          
+        </div>
+      </div>
+    </div>
+	</div>
+
+
+
+	
+</section>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('img[title]').forEach(img => {
+      img.addEventListener('mouseenter', function() {
+        this.dataset.originalTitle = this.title;
+        this.removeAttribute('title');
+      });
+      img.addEventListener('mouseleave', function() {
+        if (this.dataset.originalTitle) {
+          this.title = this.dataset.originalTitle;
+        }
+      });
+    });
+  });
+</script></div>
+
+    </div>
+
+    
+    
+    
+    
+<!-- HubSpot performance collection script -->
+<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://zimperium.com/hubfs/hub_generated/template_assets/1/176818305443/1789769630232/template_aos.min.js"></script>
+<script src="https://zimperium.com/hubfs/hub_generated/template_assets/1/176818283433/1789769637891/template_main.min.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<!-- Start of Web Interactives Embed Code -->
+<script defer src="https://js.hubspot.com/web-interactives-embed.js" type="text/javascript" id="hubspot-web-interactives-loader" data-loader="hs-previewer" data-hsjs-portal="46745145" data-hsjs-env="prod" data-hsjs-hublet="na1"></script>
+<!-- End of Web Interactives Embed Code -->
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/zimperium.com\/blog\/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts"]);
+_hsq.push(["setPageId", "221972581180"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 221972581180,
+    "legacyPageId": "221972581180",
+    "contentFolderId": null,
+    "contentGroupId": 182213814455,
+    "abTestId": null,
+    "languageVariantId": 221972581180,
+    "languageCode": "en",
+    
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/46745145.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "6c1c3030-6962-46e0-b2d0-5d4e3cb5f62a",
+    ticks: 1789769874790,
+    page_id: 221972581180,
+    
+    content_group_id: 182213814455,
+    portal_id: 46745145,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "blog-post",
+    scp_content_type: "",
+    
+    analytics_page_id: "221972581180",
+    category_id: 3,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.640/js/index.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.icon-open-container');
+  const sidebar = document.querySelector('.off-canvas');
+
+  if (hamburger && sidebar) {
+    hamburger.addEventListener('click', function (e) {
+      const closeButton = document.querySelector('.icon-close');
+      
+      if (sidebar.classList.contains('show')) {
+        // Menu is already open → simulate click on the close button
+        if (closeButton) {
+          closeButton.click();
+        }
+        // STOP the menu from re-opening
+        e.stopImmediatePropagation(); // <- this instead of preventDefault
+        e.preventDefault(); 
+      }
+      // Otherwise, if the menu is closed, DO NOTHING → let it open normally
+    }, true); // Important: use capture phase
+  }
+});
+</script>
+
+
+<div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0";
+  fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+
+
+  
+</body></html>

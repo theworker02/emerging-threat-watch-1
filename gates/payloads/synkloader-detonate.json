@@ -1,0 +1,19 @@
+{
+  "job": "sandbox_detonate",
+  "family": "SynkLoader",
+  "sandbox": "CAPEv2_or_ANY.RUN",
+  "sample_sha256_refs": [
+    "Use SHA-256 values already listed in investigations/synkloader/published-indicators.csv / CTI-Evidence-Repository SynkLoader IOCs — do not invent hashes"
+  ],
+  "capture": ["pcap", "network_iocs", "extracted_config", "screenshots"],
+  "output_dir": "CTI-Evidence-Repository/families/SynkLoader/network_captures/",
+  "post_ingest": [
+    "python shared/tooling/extract_ips_from_text.py <exported_strings_or_pcap_notes>",
+    "python shared/tooling/build_cti_evidence_repository.py"
+  ],
+  "constraints": [
+    "Isolated lab only",
+    "No C2 authentication",
+    "No send commands to implant"
+  ]
+}

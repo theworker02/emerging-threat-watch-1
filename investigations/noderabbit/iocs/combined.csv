@@ -1,0 +1,10 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+1EA83E4E4592B01E4ACAB63EB867BEE5,md5,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Front-Technical-Challenge.zip,noderabbit
+plugplay.azurewebsites.net,domain,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Azure C2,noderabbit
+rgbteller.azurewebsites.net,domain,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Azure C2,noderabbit
+wslwebui.azurewebsites.net,domain,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Azure C2,noderabbit
+https://oracle-challenge.s3.us-east-1.amazonaws.com/Front-Technical-Challenge.zip,url,,,Kaspersky,High,noderabbit,HISTORICAL,Delivery URL — revalidate before blocking blindly,noderabbit
+colorized_terminal@2.1.0,package,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Locally bundled trojanized package,noderabbit
+pretty-log@2.1.0,package,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Alternate trojanized package,noderabbit
+node_modules/.cache/.320697f1/index.js,path,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Implant launch path,noderabbit
+127.0.0.1:48739,network,,,Kaspersky,Moderate,noderabbit,SUSPICIOUS,Local single-instance listener — may FP,noderabbit

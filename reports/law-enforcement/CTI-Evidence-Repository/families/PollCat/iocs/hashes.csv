@@ -1,0 +1,2 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+md5,795e053a990a1569ffdcb57f48f6d085,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0001,RankChallenge-react-6uJSX3-main.zip PollCat lure. Was mis-tagged NRB-IND-0011; keep NRB cross-ref only. SHA-256 unresolved.

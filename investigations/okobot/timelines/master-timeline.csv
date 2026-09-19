@@ -1,0 +1,2 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+OKO-TL-0001,unspecified,candidate_catalog,"Okobot listed in docs/CANDIDATE_FAMILIES.md",ETW candidate pipeline,INTERNAL,Low,OKO-EV-0000

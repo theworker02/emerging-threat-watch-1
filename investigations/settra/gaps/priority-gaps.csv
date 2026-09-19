@@ -1,0 +1,5 @@
+priority,family,gap,why_crucial,status
+P0,Settra,Verified SHA-256 outer and inner payloads,Usable sample-hash corpus missing; MB/sandbox APIs unavailable this pass,OPEN
+P1,Settra,Historical pivot WIN-LIVFRVQFMKO + 193.5.65.114,Kaspersky SSL-CN + urlscan MeshCentral chronology + RDAP Rapid Seedbox now ledgered (SET-CLAIM-0016–0018); exclusivity still UNKNOWN,REFINED
+P0,Settra,Pre-encryption exfiltration tooling/destination,Encryptor has no exfil stack,OPEN
+P2,Settra,Archive Sophos WantToCry / malicious-VM HTML (timed out 2026-09-19),Corroborate ISPsystem template narrative with frozen PRIMARY bytes,OPEN

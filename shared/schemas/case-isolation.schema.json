@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/case-isolation.schema.json",
+  "title": "CrossCaseRelationship",
+  "type": "object",
+  "required": ["relationship_id", "case_a", "case_b", "relationship_type", "evidence_ids", "confidence", "status"],
+  "properties": {
+    "relationship_id": {"type": "string", "pattern": "^XT-REL-[0-9]{4}$"},
+    "case_a": {"enum": ["rapuncel", "settra", "rathat", "noderabbit"]},
+    "case_b": {"enum": ["rapuncel", "settra", "rathat", "noderabbit"]},
+    "relationship_type": {"enum": ["SHARED_INFRASTRUCTURE", "SHARED_SAMPLE", "SHARED_OPERATOR", "CODE_LINEAGE", "COMPARATIVE_ONLY", "NONE"]},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "confidence": {"enum": ["High", "Moderate", "Low"]},
+    "status": {"enum": ["PROPOSED", "SUPPORTED", "REJECTED", "UNKNOWN"]},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false,
+  "description": "No cross-case transfer of IOCs/attribution without a Supported relationship record."
+}

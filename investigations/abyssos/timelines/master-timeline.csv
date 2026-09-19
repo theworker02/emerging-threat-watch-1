@@ -1,0 +1,2 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+ABY-TL-0001,unspecified,candidate_catalog,"Abyssos listed in docs/CANDIDATE_FAMILIES.md",ETW candidate pipeline,INTERNAL,Low,ABY-EV-0000

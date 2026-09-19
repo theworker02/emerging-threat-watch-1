@@ -1,0 +1,596 @@
+{
+    "type": "bundle",
+    "id": "bundle--9d96ae84-4d76-41f4-89d3-af14d81d40e4",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--b19d17be-1600-4419-a187-c74fd4fa8c17",
+            "created": "2026-09-19T19:25:40.151649Z",
+            "modified": "2026-09-19T19:25:40.151649Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374",
+            "created": "2026-09-19T19:25:40.151752Z",
+            "modified": "2026-09-19T19:25:40.151752Z",
+            "name": "SynkLoader",
+            "description": "ETW family SynkLoader. Author attribution NOT_ESTABLISHED. Case-isolated.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b502b994-fe80-4334-9cca-05a2f9b39bdd",
+            "created": "2026-09-19T19:25:40.151832Z",
+            "modified": "2026-09-19T19:25:40.151832Z",
+            "name": "SynkLoader url https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi",
+            "description": "evidence_id=SYN-IND-0001; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--50576211-1a51-408f-82fa-9fa2de9f1aa5",
+            "created": "2026-09-19T19:25:40.152117Z",
+            "modified": "2026-09-19T19:25:40.152117Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b502b994-fe80-4334-9cca-05a2f9b39bdd",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fb4ebc88-3abf-4cac-9036-53b3b9621f24",
+            "created": "2026-09-19T19:25:40.152194Z",
+            "modified": "2026-09-19T19:25:40.152194Z",
+            "name": "SynkLoader sha256 151d2a7f52f047638ca8ad80c859c6bfe04d7510fb10933817fa0e3ba5d07a11",
+            "description": "evidence_id=SYN-IND-0002; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '151d2a7f52f047638ca8ad80c859c6bfe04d7510fb10933817fa0e3ba5d07a11']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--de0cf73f-1551-4921-a874-b16365b95399",
+            "created": "2026-09-19T19:25:40.152464Z",
+            "modified": "2026-09-19T19:25:40.152464Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fb4ebc88-3abf-4cac-9036-53b3b9621f24",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f82415c5-8a5b-4737-a52c-73fd2145bddf",
+            "created": "2026-09-19T19:25:40.152533Z",
+            "modified": "2026-09-19T19:25:40.152533Z",
+            "name": "SynkLoader sha256 80f08360ba768b152b71abb1cab557f552a13de18c83fe8e6396a197feec9185",
+            "description": "evidence_id=SYN-IND-0003; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '80f08360ba768b152b71abb1cab557f552a13de18c83fe8e6396a197feec9185']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b9a08ee9-4ad7-4a4b-bd5a-5dfb4fc7a43f",
+            "created": "2026-09-19T19:25:40.152796Z",
+            "modified": "2026-09-19T19:25:40.152796Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f82415c5-8a5b-4737-a52c-73fd2145bddf",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1eb3d7c9-6774-4ea6-8047-3b3870bee611",
+            "created": "2026-09-19T19:25:40.152862Z",
+            "modified": "2026-09-19T19:25:40.152862Z",
+            "name": "SynkLoader sha256 209f69a6ca859f05c954096b30391a43fda33c9ed264dfdccf806697f04b06a8",
+            "description": "evidence_id=SYN-IND-0004; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '209f69a6ca859f05c954096b30391a43fda33c9ed264dfdccf806697f04b06a8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c337b6f9-da10-4cf6-aac4-8be2def7e9d9",
+            "created": "2026-09-19T19:25:40.153117Z",
+            "modified": "2026-09-19T19:25:40.153117Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1eb3d7c9-6774-4ea6-8047-3b3870bee611",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fcf82435-cb61-46ed-9935-cabec82a52f5",
+            "created": "2026-09-19T19:25:40.15318Z",
+            "modified": "2026-09-19T19:25:40.15318Z",
+            "name": "SynkLoader sha256 d150c70d2732df17aa77991b9ebf4c896f044445e900978581d9598dfa5dc98c",
+            "description": "evidence_id=SYN-IND-0005; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'd150c70d2732df17aa77991b9ebf4c896f044445e900978581d9598dfa5dc98c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6864f404-3196-4fb8-ab7f-91cd20f43985",
+            "created": "2026-09-19T19:25:40.153426Z",
+            "modified": "2026-09-19T19:25:40.153426Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fcf82435-cb61-46ed-9935-cabec82a52f5",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--584fd1e2-fa60-4c1c-96a8-0cde384ad53e",
+            "created": "2026-09-19T19:25:40.153488Z",
+            "modified": "2026-09-19T19:25:40.153488Z",
+            "name": "SynkLoader sha256 61f961cfebdf9967844526649b4b75bba5b1b83210b70aa1bffe3f64e6ac3112",
+            "description": "evidence_id=SYN-IND-0006; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '61f961cfebdf9967844526649b4b75bba5b1b83210b70aa1bffe3f64e6ac3112']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bfd422b7-4570-4ed9-8d9a-cf83d4604051",
+            "created": "2026-09-19T19:25:40.153726Z",
+            "modified": "2026-09-19T19:25:40.153726Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--584fd1e2-fa60-4c1c-96a8-0cde384ad53e",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fe41f786-c358-44b9-a612-912dac7d6e91",
+            "created": "2026-09-19T19:25:40.15379Z",
+            "modified": "2026-09-19T19:25:40.15379Z",
+            "name": "SynkLoader sha256 8207d8d949530ea063ffd5d47ee81b74bf718ec0a4755e2349e6af9b91e92dc1",
+            "description": "evidence_id=SYN-IND-0007; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '8207d8d949530ea063ffd5d47ee81b74bf718ec0a4755e2349e6af9b91e92dc1']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ba78a2a6-f87d-4e70-b287-78cff3b96bf7",
+            "created": "2026-09-19T19:25:40.154029Z",
+            "modified": "2026-09-19T19:25:40.154029Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fe41f786-c358-44b9-a612-912dac7d6e91",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--899fb575-e16c-4d3b-8912-63d64bd90e4f",
+            "created": "2026-09-19T19:25:40.15409Z",
+            "modified": "2026-09-19T19:25:40.15409Z",
+            "name": "SynkLoader sha256 c4acda412774c292f0db5d64467a2dd09282cdea43c41967e8bf90f6298accf3",
+            "description": "evidence_id=SYN-IND-0008; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'c4acda412774c292f0db5d64467a2dd09282cdea43c41967e8bf90f6298accf3']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--de4bd7d8-b78e-49c9-a4ae-1e32f138ece1",
+            "created": "2026-09-19T19:25:40.154331Z",
+            "modified": "2026-09-19T19:25:40.154331Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--899fb575-e16c-4d3b-8912-63d64bd90e4f",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1bfc8e8f-7a31-4f93-a45a-308b60360601",
+            "created": "2026-09-19T19:25:40.154392Z",
+            "modified": "2026-09-19T19:25:40.154392Z",
+            "name": "SynkLoader sha256 63622c1ddb3e2a9f11cac192e13ac7494f558516b19d5d8f140f6d0d4d38ea84",
+            "description": "evidence_id=SYN-IND-0009; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '63622c1ddb3e2a9f11cac192e13ac7494f558516b19d5d8f140f6d0d4d38ea84']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dd8d6040-0fef-41d0-859b-f88f02c0cec8",
+            "created": "2026-09-19T19:25:40.154634Z",
+            "modified": "2026-09-19T19:25:40.154634Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1bfc8e8f-7a31-4f93-a45a-308b60360601",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--98615d87-4ab3-44cc-b152-72524ccff97b",
+            "created": "2026-09-19T19:25:40.154697Z",
+            "modified": "2026-09-19T19:25:40.154697Z",
+            "name": "SynkLoader sha256 a335e75b78b601ebc5c258975d95fd79aa21f836fc6b79d82e9a22c596133f07",
+            "description": "evidence_id=SYN-IND-0010; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'a335e75b78b601ebc5c258975d95fd79aa21f836fc6b79d82e9a22c596133f07']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--18307e9e-608c-4443-8e8d-cf02337c4328",
+            "created": "2026-09-19T19:25:40.155206Z",
+            "modified": "2026-09-19T19:25:40.155206Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--98615d87-4ab3-44cc-b152-72524ccff97b",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7c6b7bea-ca28-4d53-831d-72f3926a2f40",
+            "created": "2026-09-19T19:25:40.155274Z",
+            "modified": "2026-09-19T19:25:40.155274Z",
+            "name": "SynkLoader sha256 0428fbdefa8dda10ce8fc12b1b516641e83cd5088388168e3f1a0be1432b4077",
+            "description": "evidence_id=SYN-IND-0011; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '0428fbdefa8dda10ce8fc12b1b516641e83cd5088388168e3f1a0be1432b4077']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4b978e09-f104-441c-b6f1-320fb29bdf8c",
+            "created": "2026-09-19T19:25:40.155522Z",
+            "modified": "2026-09-19T19:25:40.155522Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7c6b7bea-ca28-4d53-831d-72f3926a2f40",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--522f1723-c7da-4d13-93db-9f85f2424a54",
+            "created": "2026-09-19T19:25:40.155586Z",
+            "modified": "2026-09-19T19:25:40.155586Z",
+            "name": "SynkLoader sha256 cb1c657f74b9e57f5e81126179128e8db949d1d4196be9dcb890341e222fd384",
+            "description": "evidence_id=SYN-IND-0012; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'cb1c657f74b9e57f5e81126179128e8db949d1d4196be9dcb890341e222fd384']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--41ea39b3-9e18-4ff9-94ea-eef5f407f1ab",
+            "created": "2026-09-19T19:25:40.155826Z",
+            "modified": "2026-09-19T19:25:40.155826Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--522f1723-c7da-4d13-93db-9f85f2424a54",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6084ad1e-169e-437d-b1c2-c75e1d2a8839",
+            "created": "2026-09-19T19:25:40.15589Z",
+            "modified": "2026-09-19T19:25:40.15589Z",
+            "name": "SynkLoader domain neversoftmain.net",
+            "description": "evidence_id=SYN-IND-0013; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'neversoftmain.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e6cbe688-0502-4402-b596-66989f28e30b",
+            "created": "2026-09-19T19:25:40.156089Z",
+            "modified": "2026-09-19T19:25:40.156089Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6084ad1e-169e-437d-b1c2-c75e1d2a8839",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b2a14d52-79d2-43a6-b6bd-8c644157641a",
+            "created": "2026-09-19T19:25:40.15615Z",
+            "modified": "2026-09-19T19:25:40.15615Z",
+            "name": "SynkLoader domain rootfarmapp.net",
+            "description": "evidence_id=SYN-IND-0014; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'rootfarmapp.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--21c8daa3-9df4-4206-9869-93f1b84306f8",
+            "created": "2026-09-19T19:25:40.156347Z",
+            "modified": "2026-09-19T19:25:40.156347Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b2a14d52-79d2-43a6-b6bd-8c644157641a",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--3c3a01ea-b6b3-4aa8-8965-088de5a284e9",
+            "created": "2026-09-19T19:25:40.156408Z",
+            "modified": "2026-09-19T19:25:40.156408Z",
+            "name": "SynkLoader domain tripinupdate.net",
+            "description": "evidence_id=SYN-IND-0015; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'tripinupdate.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a2232026-07a6-4701-af94-ba7a3c55df8a",
+            "created": "2026-09-19T19:25:40.156605Z",
+            "modified": "2026-09-19T19:25:40.156605Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--3c3a01ea-b6b3-4aa8-8965-088de5a284e9",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--18fc8ef7-091f-4a50-a656-85372638272d",
+            "created": "2026-09-19T19:25:40.156672Z",
+            "modified": "2026-09-19T19:25:40.156672Z",
+            "name": "SynkLoader domain dondermicapp.net",
+            "description": "evidence_id=SYN-IND-0016; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'dondermicapp.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--38f0da0f-8c10-435d-b542-3c50fffb5b3f",
+            "created": "2026-09-19T19:25:40.156889Z",
+            "modified": "2026-09-19T19:25:40.156889Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--18fc8ef7-091f-4a50-a656-85372638272d",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2d6ce858-1a23-417a-a8c8-5ab5c9d34138",
+            "created": "2026-09-19T19:25:40.156952Z",
+            "modified": "2026-09-19T19:25:40.156952Z",
+            "name": "SynkLoader domain aroclenetapp.net",
+            "description": "evidence_id=SYN-IND-0017; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'aroclenetapp.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e1e4f1d8-d6ab-415b-ba2a-3ceb22f37722",
+            "created": "2026-09-19T19:25:40.157149Z",
+            "modified": "2026-09-19T19:25:40.157149Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2d6ce858-1a23-417a-a8c8-5ab5c9d34138",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--25500033-3a98-48a5-b8fb-6d3ade12a3af",
+            "created": "2026-09-19T19:25:40.157213Z",
+            "modified": "2026-09-19T19:25:40.157213Z",
+            "name": "SynkLoader ipv4 149.248.76.220",
+            "description": "evidence_id=SYN-IND-0026; provenance=OBSERVED_PASSIVE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '149.248.76.220']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4364773b-48b2-48f8-957b-0b54540d1aee",
+            "created": "2026-09-19T19:25:40.157408Z",
+            "modified": "2026-09-19T19:25:40.157408Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--25500033-3a98-48a5-b8fb-6d3ade12a3af",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1abe8876-f221-462c-abd1-13091d6931da",
+            "created": "2026-09-19T19:25:40.157469Z",
+            "modified": "2026-09-19T19:25:40.157469Z",
+            "name": "SynkLoader ipv4 162.33.177.8",
+            "description": "evidence_id=SYN-IND-0027; provenance=OBSERVED_PASSIVE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '162.33.177.8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--40f504ef-090e-4bf6-a8f9-8c13ce1d22e7",
+            "created": "2026-09-19T19:25:40.157662Z",
+            "modified": "2026-09-19T19:25:40.157662Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1abe8876-f221-462c-abd1-13091d6931da",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4a5e4b34-f2eb-4df8-8e3a-4df1aae53932",
+            "created": "2026-09-19T19:25:40.157722Z",
+            "modified": "2026-09-19T19:25:40.157722Z",
+            "name": "SynkLoader ipv4 216.245.184.14",
+            "description": "evidence_id=SYN-IND-0028; provenance=OBSERVED_PASSIVE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '216.245.184.14']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6fa29847-5ff9-4a73-bd44-a6886722d052",
+            "created": "2026-09-19T19:25:40.157919Z",
+            "modified": "2026-09-19T19:25:40.157919Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4a5e4b34-f2eb-4df8-8e3a-4df1aae53932",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e05d371a-28ef-40ab-a2d2-01365afa79ae",
+            "created": "2026-09-19T19:25:40.15798Z",
+            "modified": "2026-09-19T19:25:40.15798Z",
+            "name": "SynkLoader ipv4 64.94.85.67",
+            "description": "evidence_id=SYN-IND-0029; provenance=OBSERVED_PASSIVE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '64.94.85.67']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3dbedb38-511d-49e1-a7e6-7cf5e6cc3409",
+            "created": "2026-09-19T19:25:40.158174Z",
+            "modified": "2026-09-19T19:25:40.158174Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e05d371a-28ef-40ab-a2d2-01365afa79ae",
+            "target_ref": "malware--e0f927f7-d873-4628-a3c4-547f3df0a374"
+        }
+    ]
+}

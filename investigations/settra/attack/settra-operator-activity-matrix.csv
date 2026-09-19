@@ -1,0 +1,9 @@
+technique_id,technique_name,observed_behavior,evidence_source,claim_ids,confidence,scope,wording_rule
+T1078,Valid Accounts,Compromised VPN / valid credentials for foothold,MOXFIVE,SET-CLAIM-0012,High,operator,Operators in Settra-associated IR used valid accounts — not Settra.exe
+T1046,Network Service Discovery,NetExec (nxc) and Netscan for mapping,MOXFIVE,SET-CLAIM-0012,High,operator,Operator tooling
+T1003,OS Credential Dumping,Procdump and Mimikatz observed,MOXFIVE,SET-CLAIM-0012,High,operator,Never say Settra uses Mimikatz
+T1021,Remote Services,PAExec / NetExec lateral movement,MOXFIVE,SET-CLAIM-0012,High,operator,Operator tooling
+T1219,Remote Access Software,MeshAgent RMM persistence (mvtcs.exe or stock),Huntress|MOXFIVE,SET-CLAIM-0007|SET-CLAIM-0008|SET-CLAIM-0012,High,operator,Legitimate RMM abuse
+T1562,Impair Defenses,edr_blind; event log clearing; gdrv.sys / STProcessMonitor_v114.sys BYOVD,Huntress|MOXFIVE,SET-CLAIM-0008|SET-CLAIM-0012|SET-CLAIM-0009,High,operator,Operator/defense-impairment stage
+T1486,Data Encrypted for Impact,Deployment of domain_win64.exe Settra encryptor,Huntress,SET-CLAIM-0011,High,operator+malware,Final stage after prior access
+T1657,Financial Theft / Extortion,Tor leak site + Tox negotiations (reported),MOXFIVE,SET-CLAIM-0014,Moderate,operator,Extortion workflow outside encryptor binary

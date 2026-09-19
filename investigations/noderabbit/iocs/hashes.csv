@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+1EA83E4E4592B01E4ACAB63EB867BEE5,md5,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,Challenge ZIP MD5 from primary,noderabbit
+123289b3680c1d693db0e3702137cc55862dbe8b9a34376bcdf08bd0514b98e7,sha256,,,PolySwarm,Moderate,noderabbit,RELATED SAMPLE,Associated NodeRabbit sample; not MD5 map for Front-Technical ZIP,noderabbit
+307ce2448211a5f5d122643f2a739aff33ede72c1858518c8de098f3148bbd00,sha256,,,PolySwarm,Moderate,noderabbit,RELATED SAMPLE,Associated NodeRabbit sample; not MD5 map for Front-Technical ZIP,noderabbit

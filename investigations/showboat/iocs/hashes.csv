@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011,sha256,2025-05,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Linux ELF sample,showboat
+8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165,sha256,,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Windows sample,showboat
+253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56,sha256,,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Windows sample,showboat
+27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677,x509_sha256,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Primary cluster cert fingerprint,showboat

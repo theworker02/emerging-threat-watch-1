@@ -1,0 +1,10 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+domain,sahi-finance.com,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0002,PollCat registration C2 #1. NOT OBSERVED ownership.
+domain,gamebarappinformation.azurewebsites.net,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0003,PollCat C2 #2 Azure. Shared edge ASSOCIATION_ONLY.
+domain,gamebarapp.azurewebsites.net,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0004,PollCat C2 #3 Azure.
+domain,lifespotify.com,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0005,OTP validation host; Kaspersky late-June-2026 registration claim.
+url,https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0006,OTP validate URL path. Do not probe live.
+filename,requireObjects.js,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0007,Malicious component started via requireAuth.js.
+filename,requireObject.js,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0008,Windows persistence worker under %APPDATA%\Microsoft\Network.
+filename,com.harsh.requireobject.plist,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0009,macOS LaunchAgent persistence marker.
+path,~/.node_packages,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,POL-IND-0011,Linux/macOS persistence directory.

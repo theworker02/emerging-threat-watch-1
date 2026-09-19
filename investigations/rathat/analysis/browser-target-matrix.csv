@@ -1,0 +1,11 @@
+browser,package,resource_id,URL_collection,credential_collection,overlay_target,evidence_source,confidence
+Chrome,com.android.chrome,com.android.chrome:id/url_bar,yes,via Accessibility/overlays,banking overlays separate,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+Brave,com.brave.browser,com.brave.browser:id/url_bar,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+Opera,com.opera.browser,com.opera.browser:id/url_field,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+Opera Mini,com.opera.mini.native,com.opera.mini.native:id/url_field,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+Edge,com.microsoft.emmx,com.microsoft.emmx:id/url_bar,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+DuckDuckGo,com.duckduckgo.mobile.android,com.duckduckgo.mobile.android:id/omnibarTextInput,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+Samsung Internet,com.sec.android.app.sbrowser,com.sec.android.app.sbrowser:id/location_bar_edit_text,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+AOSP/ColorOS browsers,varies,per Zimperium list,yes,via Accessibility,unknown,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,Moderate
+WeChat/Alipay (payment),payment apps,N/A-overlay,no,PIN overlays embedded,yes,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High
+Banking apps (generic),targeted packages,N/A-HTML injection,no,WebView overlay injection,yes,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,High

@@ -1,0 +1,8 @@
+{
+  "status": 200,
+  "sha256": "2da4ab57dc4d2060f1dfb89e9b20fc74881dc7c4d9ec4d7c94c08bbc4aa20377",
+  "ips_found": [
+    "23.27.201.160"
+  ],
+  "path": "evidence/primary-sources/showboat/Showboat_IOCs_2026-09-19T190009Z.txt"
+}

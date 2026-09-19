@@ -1,0 +1,3 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+NRB-TL-0001,2026-09-01T00:00:00Z,disclosure,Kaspersky publishes NodeRabbit/PollCat research,Securelist,PRIMARY-SOURCE,High,NRB-EV-0001
+NRB-TL-0002,2026-09-19T00:00:00Z,etw_phase1,ETW Phase 1 baseline for NodeRabbit,ETW,OBSERVED,High,

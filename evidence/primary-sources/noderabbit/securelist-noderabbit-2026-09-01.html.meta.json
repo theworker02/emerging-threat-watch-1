@@ -1,0 +1,16 @@
+{
+  "evidence_id": "PS-NRB-001",
+  "source_id": "SOURCE-NRB-SECURELIST",
+  "original_url": "https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "9d9d39e81a906afcddd3381977e50c335179878db07b00bde70e85e6e897c111",
+  "http_status": 200,
+  "bytes": 260700,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "NodeRabbit",
+    "Front-Technical-Challenge",
+    "Copilot"
+  ]
+}

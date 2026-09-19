@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Showboat Malware Exposes Telecom Networks to Advanced Cyber Threats</title>
+	<meta name="description" content="Discover how the newly identified Showboat malware targets telecommunications providers. Learn how this stealthy Linux-based framework enables persistence, lateral movement, and network compromise." />
+	<link rel="canonical" href="https://apac.lumen.com/en/blog/showboat-malware-targeting-telecom-providers/" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Lumen APAC &raquo; Feed" href="https://apac.lumen.com/en/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://apac.lumen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapac.lumen.com%2Fen%2Fblog%2Fshowboat-malware-targeting-telecom-providers%2F&#038;lang=en" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://apac.lumen.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fapac.lumen.com%2Fen%2Fblog%2Fshowboat-malware-targeting-telecom-providers%2F&#038;format=xml&#038;lang=en" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='genesis-blocks-style-css-css' href='https://apac.lumen.com/wp-content/plugins/genesis-page-builder/vendor/genesis/blocks/dist/style-blocks.build.css?ver=1765180134' media='all' />
+<link rel='stylesheet' id='genesis-sample-css' href='https://apac.lumen.com/wp-content/themes/genesis-sample-develop/style.css?ver=3.4.2' media='all' />
+<style id="genesis-sample-inline-css">
+
+
+		a,
+		.entry-title a:focus,
+		.entry-title a:hover,
+		.genesis-nav-menu a:focus,
+		.genesis-nav-menu a:hover,
+		.genesis-nav-menu .current-menu-item > a,
+		.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
+		.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+		.menu-toggle:focus,
+		.menu-toggle:hover,
+		.sub-menu-toggle:focus,
+		.sub-menu-toggle:hover {
+			color: #007981;
+		}
+
+		
+
+		button:focus,
+		button:hover,
+		input[type="button"]:focus,
+		input[type="button"]:hover,
+		input[type="reset"]:focus,
+		input[type="reset"]:hover,
+		input[type="submit"]:focus,
+		input[type="submit"]:hover,
+		input[type="reset"]:focus,
+		input[type="reset"]:hover,
+		input[type="submit"]:focus,
+		input[type="submit"]:hover,
+		.site-container div.wpforms-container-full .wpforms-form input[type="submit"]:focus,
+		.site-container div.wpforms-container-full .wpforms-form input[type="submit"]:hover,
+		.site-container div.wpforms-container-full .wpforms-form button[type="submit"]:focus,
+		.site-container div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
+		.button:focus,
+		.button:hover {
+			background-color: #f95e4a;
+			color: #ffffff;
+		}
+
+		@media only screen and (min-width: 960px) {
+			.genesis-nav-menu > .menu-highlight > a:hover,
+			.genesis-nav-menu > .menu-highlight > a:focus,
+			.genesis-nav-menu > .menu-highlight.current-menu-item > a {
+				background-color: #f95e4a;
+				color: #ffffff;
+			}
+		}
+		
+		.wp-custom-logo .site-container .custom-logo-link {
+			aspect-ratio: 160/23;
+		}
+		
+		.wp-custom-logo .site-container .title-area {
+			max-width: 160px;
+		}
+		
+		.wp-custom-logo .title-area {
+			padding-top: 23.5px;
+		}
+		
+/*# sourceURL=genesis-sample-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<link rel='stylesheet' id='editorskit-frontend-css' href='https://apac.lumen.com/wp-content/plugins/block-options/build/style.build.css?ver=new' media='all' />
+
+<link rel='stylesheet' id='genesis-page-builder-frontend-styles-css' href='https://apac.lumen.com/wp-content/plugins/genesis-page-builder/build/style-blocks.css?ver=1748854109' media='all' />
+<link rel='stylesheet' id='genesis-sample-fonts-css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700&#038;display=swap' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://apac.lumen.com/wp-includes/css/dashicons.min.css?ver=7.0.5' media='all' />
+<link rel='stylesheet' id='customstyle-css' href='https://apac.lumen.com/wp-content/themes/genesis-sample-develop/custom_style.css?ver=7.0.5' media='all' />
+<link rel='stylesheet' id='custom-fonts-css' href='https://apac.lumen.com/wp-content/themes/genesis-sample-develop/fonts/custom-fonts.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='custom-css-css' href='https://apac.lumen.com/wp-content/themes/genesis-sample-develop/css/custom-css.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='slick-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?ver=1.8.1' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css?ver=1.8.1' media='all' />
+<link rel='stylesheet' id='magnific-popup-css' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css?ver=7.0.5' media='all' />
+<link rel='stylesheet' id='slick-theme-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css?ver=7.0.5' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?ver=7.0.5' media='all' />
+<link rel='stylesheet' id='genesis-sample-gutenberg-css' href='https://apac.lumen.com/wp-content/themes/genesis-sample-develop/lib/gutenberg/front-end.css?ver=3.4.2' media='all' />
+<style id="genesis-sample-gutenberg-inline-css">
+.gb-block-post-grid .gb-post-grid-items h2 a:hover {
+	color: #007981;
+}
+
+.site-container .wp-block-button .wp-block-button__link {
+	background-color: #007981;
+}
+
+.wp-block-button .wp-block-button__link:not(.has-background),
+.wp-block-button .wp-block-button__link:not(.has-background):focus,
+.wp-block-button .wp-block-button__link:not(.has-background):hover {
+	color: #ffffff;
+}
+
+.site-container .wp-block-button.is-style-outline .wp-block-button__link {
+	color: #007981;
+}
+
+.site-container .wp-block-button.is-style-outline .wp-block-button__link:focus,
+.site-container .wp-block-button.is-style-outline .wp-block-button__link:hover {
+	color: #239ca4;
+}		.site-container .has-small-font-size {
+			font-size: 12px;
+		}		.site-container .has-normal-font-size {
+			font-size: 18px;
+		}		.site-container .has-large-font-size {
+			font-size: 20px;
+		}		.site-container .has-larger-font-size {
+			font-size: 24px;
+		}		.site-container .has-theme-primary-color,
+		.site-container .wp-block-button .wp-block-button__link.has-theme-primary-color,
+		.site-container .wp-block-button.is-style-outline .wp-block-button__link.has-theme-primary-color {
+			color: #007981;
+		}
+
+		.site-container .has-theme-primary-background-color,
+		.site-container .wp-block-button .wp-block-button__link.has-theme-primary-background-color,
+		.site-container .wp-block-pullquote.is-style-solid-color.has-theme-primary-background-color {
+			background-color: #007981;
+		}		.site-container .has-theme-secondary-color,
+		.site-container .wp-block-button .wp-block-button__link.has-theme-secondary-color,
+		.site-container .wp-block-button.is-style-outline .wp-block-button__link.has-theme-secondary-color {
+			color: #f95e4a;
+		}
+
+		.site-container .has-theme-secondary-background-color,
+		.site-container .wp-block-button .wp-block-button__link.has-theme-secondary-background-color,
+		.site-container .wp-block-pullquote.is-style-solid-color.has-theme-secondary-background-color {
+			background-color: #f95e4a;
+		}
+/*# sourceURL=genesis-sample-gutenberg-inline-css */
+</style>
+<link rel='stylesheet' id='simple-social-icons-font-css' href='https://apac.lumen.com/wp-content/plugins/simple-social-icons/css/style.css?ver=3.0.2' media='all' />
+<script id="jquery-core-js" src="https://apac.lumen.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://apac.lumen.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-5786RBRB" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["apac.lumen.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-5786RBRB");
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://apac.lumen.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://apac.lumen.com/wp-json/wp/v2/posts/25499" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://apac.lumen.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://apac.lumen.com/?p=25499' />
+<meta name="generator" content="Site Kit by Google 1.167.0" />
+
+<!-- This site is optimized with the Schema plugin v1.7.9.6 - https://schema.press -->
+<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/apac.lumen.com\/en\/blog\/showboat-malware-targeting-telecom-providers\/"},"url":"https:\/\/apac.lumen.com\/en\/blog\/showboat-malware-targeting-telecom-providers\/","headline":"Introducing Showboat: A new malware family taunts defenses and targets international telecom firms","datePublished":"2026-07-28T18:46:42+08:00","dateModified":"2026-07-30T10:47:54+08:00","publisher":{"@type":"Organization","@id":"https:\/\/apac.lumen.com\/#organization","name":"Lumen Technologies","logo":{"@type":"ImageObject","url":"http:\/\/apac.lumen.com\/wp-content\/uploads\/2023\/04\/Lumen_Technologies_logo.svg.png","width":600,"height":60}},"image":{"@type":"ImageObject","url":"https:\/\/apac.lumen.com\/wp-content\/uploads\/2026\/07\/img-blog-header-bll-malware-848x566-1.webp","width":848,"height":566},"articleSection":"Black Lotus Lab","description":"Black Lotus Labs®, the threat research team at Lumen, has uncovered a previously unreported Linux malware family called Showboat, used in a campaign targeting telecommunications organizations across multiple regions. In this post, we break down how the malware works, what our telemetry reveals about the infrastructure behind it, and","author":{"@type":"Person","name":"Lumen Technologies","url":"https:\/\/apac.lumen.com\/en\/author\/lumen-technologies\/","image":{"@type":"ImageObject","url":"https:\/\/apac.lumen.com\/wp-content\/uploads\/2023\/04\/lumenfavicon-150x150.png","height":96,"width":96},"sameAs":["https:\/\/www.apac.lumen.com\/"]}}</script>
+
+<link rel="pingback" href="https://apac.lumen.com/xmlrpc.php" />
+
+	<style>
+		.accordion--default .gb-accordion-title:before {
+			content: '';
+			background-image: url('https://apac.lumen.com/wp-content/uploads/2023/04/Vector.svg');
+			height: 10px;
+			width: 17px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			right: 11px;
+		}
+
+		#menu-mobile>li.menu-item-has-children>a,
+		#menu-header-menu li.menu-item-has-children a,
+		#menu-header-menu-for-jap li.menu-item-has-children a,
+		#menu-jp-mobile>li.menu-item-has-children>a{
+			position: relative;
+		}
+
+		#menu-mobile>li.menu-item-has-children>a:before,
+		#menu-header-menu>li.menu-item-has-children>a:before,
+		#menu-header-menu-for-jap>li.menu-item-has-children>a:before,
+		#menu-jp-mobile>li.menu-item-has-children>a:before {
+			content: '';
+			background-image: url('https://apac.lumen.com/wp-content/uploads/2023/04/Vector.svg');
+			height: 7px;
+			width: 12px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+			-o-transform: translateY(-50%);
+			transform: translateY(-50%);
+			right: 5px;
+		}
+
+		 /* jap navigation  */
+		 .nav--wrapper .menu-header-menu-for-jap-container > ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+    } 
+
+    #menu-header-menu-for-jap li.menu-item-has-children {
+        position: relative;
+    }
+    
+    #menu-header-menu-for-jap li .sub-menu a {
+        padding: 5px 32px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #menu-header-menu-for-jap>li>.sub-menu {
+        display: none;
+        position: absolute;
+        left: 0;
+        background: #fff;
+        min-width: 300px;
+        padding-top: 2em;
+        padding-bottom: 30px;
+    }
+    
+    #menu-header-menu-for-jap>li>.sub-menu>li .sub-menu {
+        padding-left: 14px;
+    }
+
+
+
+
+	</style>
+	<link rel="icon" href="https://apac.lumen.com/wp-content/uploads/2023/04/cropped-lumenfavicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://apac.lumen.com/wp-content/uploads/2023/04/cropped-lumenfavicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://apac.lumen.com/wp-content/uploads/2023/04/cropped-lumenfavicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://apac.lumen.com/wp-content/uploads/2023/04/cropped-lumenfavicon-270x270.png" />
+<style id="wp-custom-css">
+/* Common button styles */
+.mktoForm .mktoButtonRow button.mktoButton,
+.mktoForm button.mktoButton,
+form button.mktoButton,
+.mktoForm .mktoButtonWrap .mktoButton {
+    cursor: pointer !important;
+    margin: 0 !important;
+    background: #F95E4A !important;
+    background: linear-gradient(90deg, #F95E4A 0%, #F95E4A 100%) !important;
+    border-radius: 0 !important;
+    border: unset !important;
+    width: 100% !important;
+    display: block !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 15px !important;
+    color: #ffffff !important;
+    font-family: 'Artex', Helvetica, Arial, sans-serif !important;
+    padding: 15px !important;
+}
+
+.custom-indent {
+  margin-left: 30px !important;
+}
+
+/* Update hyperlink color considering overrides */
+a.ek-link:not(h2 a),
+:where(p.has-text-color:not(.has-link-color)) a:not(h2 a),
+.contact--form.mktoForm label a {
+    color: #007981 !important;
+}
+
+/* Polylang dropdown menu adjustments */
+.pll-parent-menu-item {
+    position: relative;
+}
+
+.pll-parent-menu-item > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.pll-parent-menu-item .sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pll-parent-menu-item:hover .sub-menu,
+.pll-parent-menu-item:focus-within .sub-menu {
+    display: block;
+}
+
+.pll-parent-menu-item .sub-menu li {
+    display: block;
+    margin: 0;
+}
+
+.pll-parent-menu-item .sub-menu a {
+    display: block;
+    padding: 5px 10px;
+    color: #007981;
+    text-decoration: none;
+}
+
+.pll-parent-menu-item .sub-menu a:hover {
+    background: #f0f0f0;
+    color: #005f60;
+}
+
+/* Japanese menu specific styles to match English menu */
+.menu-jp-header-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-jp-header-menu-container .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+amenu.mktoForm .mktoButtonRow button.mktoButton,
+.mktoForm button.mktoButton,
+form button.mktoButton,
+.mktoForm .mktoButtonWrap .mktoButton {
+cursor: pointer !important;
+margin: 0 !important;
+background: #F95E4A !important;
+background: linear-gradient(90deg, #F95E4A 0%, #F95E4A 100%) !important;
+border-radius: 0 !important;
+border: unset !important;
+width: 100% !important;
+display: block !important;
+box-shadow: none !important;
+outline: none !important;
+font-weight: 600 !important;
+font-size: 13px !important;
+line-height: 15px !important;
+color: #ffffff !important;
+font-family: 'Artex', Helvetica, Arial, sans-serif !important;
+padding: 15px !important;
+}
+
+/* Update hyperlink color considering overrides */
+a.ek-link
+(h2 a),
+(p.has-text-color
+(.has-link-color)) a
+(h2 a),
+.contact--form.mktoForm label a {
+color: #007981 !important;
+}
+
+/* Polylang dropdown menu adjustments */
+.pll-parent-menu-item {
+position: relative;
+}
+
+.pll-parent-menu-item > a {
+display: flex;
+align-items: center;
+text-decoration: none;
+}
+
+.pll-parent-menu-item .sub-menu {
+list-style: none;
+padding: 0;
+margin: 0;
+position: absolute;
+top: 100%;
+left: 0;
+display: none;
+background: white;
+border: 1px solid #ccc;
+z-index: 1000;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pll-parent-menu-item
+.sub-menu,
+.pll-parent-menu-item
+.sub-menu {
+display: block;
+}
+
+.pll-parent-menu-item .sub-menu li {
+display: block;
+margin: 0;
+}
+
+.pll-parent-menu-item .sub-menu a {
+display: block;
+padding: 5px 10px;
+color: #007981;
+text-decoration: none;
+}
+
+.pll-parent-menu-item .sub-menu a
+{
+background: #f0f0f0;
+color: #005f60;
+}
+.menu-jp-header-menu-container .menu-item {
+    margin: 0 15px;
+}
+
+.menu-jp-header-menu-container .menu-item a {
+    text-decoration: none;
+    color: #007981;
+    font-family: 'Artex', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.menu-jp-header-menu-container .menu-item a:hover {
+    color: #005f60;
+}
+
+/* Remove duplicate entries in the Japanese menu */
+.menu-jp-header-menu-container #menu-item-24087,
+.menu-jp-header-menu-container #menu-item-24089,
+.menu-jp-header-menu-container #menu-item-24093 {
+    display: none;
+}
+/* default listing css */
+ul.wp-block-list li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+ul.wp-block-list li:last-child ,ol.wp-block-list li:last-child {
+    margin-bottom: 22px;
+}
+ol.wp-block-list li {
+    list-style: decimal;
+    margin-left: 20px;
+}
+/*post pages disclamer */
+ .disclaimer {
+    font-style: italic;
+    font-size: 12px;
+    color: #333;
+    margin-top: 2em;
+    border-radius: 4px;
+    line-height: 1.6;
+    font-family: 'Gotham Book';
+}
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+    border-bottom: none !important;
+}
+</style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFPNT9J');</script>
+<script type="text/javascript">
+	
+
+
+
+	
+    
+		
+
+</script>
+</head>
+<body class="wp-singular post-template-default single single-post postid-25499 single-format-standard wp-custom-logo wp-embed-responsive wp-theme-genesis wp-child-theme-genesis-sample-develop header-full-width full-width-content genesis-breadcrumbs-hidden genesis-singular-image-visible genesis-footer-widgets-hidden no-js first-block-core-paragraph"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFPNT9J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>
+		//<![CDATA[
+		(function() {
+			var c = document.body.classList;
+			c.remove('no-js');
+			c.add('js');
+		})();
+		//]]>
+	</script>
+<div class="site-container"><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li></ul><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><a href="https://apac.lumen.com/en/" class="custom-logo-link" rel="home"><img width="2560" height="368" src="https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg.png" class="custom-logo" alt="Lumen APAC" decoding="async" srcset="https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg.png 2560w, https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg-300x43.png 300w, https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg-1024x147.png 1024w, https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg-768x110.png 768w, https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg-1536x221.png 1536w, https://apac.lumen.com/wp-content/uploads/2023/04/Lumen_Technologies_logo.svg-2048x294.png 2048w" sizes="(max-width: 2560px) 100vw, 2560px" /></a><p class="site-title" itemprop="headline">Lumen APAC</p><p class="site-description" itemprop="description">Transformation just got a lot easier</p></div><nav class="nav-primary" aria-label="Main" itemscope itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary"><div class="wrap"><ul id="menu-main-menu" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-24754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-24754"><a href="#" itemprop="url"><span itemprop="name">Services</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-24860" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24860"><a href="https://apac.lumen.com/en/category/security/" itemprop="url"><span itemprop="name">Security</span></a></li>
+	<li id="menu-item-24763" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24763"><a href="https://apac.lumen.com/en/category/network/" itemprop="url"><span itemprop="name">Network</span></a></li>
+	<li id="menu-item-24764" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24764"><a href="https://apac.lumen.com/en/category/edge-cloud/" itemprop="url"><span itemprop="name">Edge Cloud</span></a></li>
+	<li id="menu-item-24765" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-24765"><a href="https://apac.lumen.com/en/category/managed-professional-services/" itemprop="url"><span itemprop="name">Managed &#038; Professional Services</span></a></li>
+</ul>
+</li>
+<li id="menu-item-24766" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24766"><a href="https://apac.lumen.com/en/customer-stories/" itemprop="url"><span itemprop="name">Customer Stories</span></a></li>
+<li id="menu-item-24767" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24767"><a target="_blank" href="http://lumen.com" itemprop="url"><span itemprop="name">About Lumen</span></a></li>
+<li id="menu-item-24790" class="pll-parent-menu-item menu-item menu-item-type-custom menu-item-object-custom current-menu-parent menu-item-has-children menu-item-24790"><a href="#pll_switcher" itemprop="url"><span itemprop="name">English</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-24790-en" class="lang-item lang-item-208 lang-item-en current-lang lang-item-first menu-item menu-item-type-custom menu-item-object-custom menu-item-24790-en"><a href="https://apac.lumen.com/en/blog/showboat-malware-targeting-telecom-providers/" hreflang="en-US" lang="en-US" itemprop="url"><span itemprop="name">English</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-search"><a href="#" class="search-toggle"><span class="dashicons dashicons-search"></span></a></li></ul></div></nav></div></header><div class="site-inner">
+<div class="container category-page  single-page">
+    <div class="row">
+        <!-- Main Content (80%) -->
+        <div class="category-left" id="post-container">
+            <div class="main_title">
+                                <div id="post-25499" class="post">
+                        <div class="post_wrapper">
+                          
+                            <div class="post_content_wrapper">
+                                <div class="post_header mixed">
+                                    <div class="post_header_title">
+                                        <div class="post_info_cat">
+                                            <span>
+                                                <a href="https://apac.lumen.com/en/category/black-lotus-lab/" rel="category tag">Black Lotus Lab</a>                                            </span>
+                                        </div>
+                                        <h5><a href="https://apac.lumen.com/en/blog/showboat-malware-targeting-telecom-providers/">Introducing Showboat: A new malware family taunts defenses and targets international telecom firms</a></h5>
+                                        <div class="post_detail post_date">
+                                            <span class="post_info_author">
+                                                <a href="https://apac.lumen.com/en/author/lumen-technologies/">
+                                                    <span class="gravatar">
+                                                        <img src="https://apac.lumen.com/wp-content/uploads/2023/04/lumenfavicon-75x75.png" width="60" height="60" srcset="https://apac.lumen.com/wp-content/uploads/2023/04/lumenfavicon-150x150.png 2x" alt="Lumen Technologies" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" />                                                    </span>
+                                                    Lumen Technologies                                                </a>
+                                            </span>
+                                            <span class="post_info_date">
+                                                <a href="https://apac.lumen.com/en/blog/showboat-malware-targeting-telecom-providers/">Posted On July 28, 2026</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    
+                                <div class="post_img">
+                                    <a href="https://apac.lumen.com/en/blog/showboat-malware-targeting-telecom-providers/">
+                                        <img src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-header-bll-malware-848x566-1.webp" alt="Introducing Showboat: A new malware family taunts defenses and targets international telecom firms" >
+                                    </a>
+                                </div>                            
+                                    <p>
+<p class="wp-block-paragraph">Black Lotus Labs®, the threat research team at Lumen, has uncovered a previously unreported Linux malware family called Showboat, used in a campaign targeting telecommunications organizations across multiple regions. In this post, we break down how the malware works, what our telemetry reveals about the infrastructure behind it, and why these findings matter for defenders tracking persistent threats against critical networks.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Key findings</strong></h3>
+
+
+
+<ul class="wp-block-list">
+<li style="font-size:16px">Black Lotus Labs identified a new Linux malware family we dubbed “Showboat.” The campaign has been active since at least mid-2022.</li>
+
+
+
+<li style="font-size:16px">Showboat is a modular post-exploitation framework designed for Linux systems, capable of spawning a remote shell, transferring files and functioning as a Socks5 proxy.</li>
+
+
+
+<li style="font-size:16px">Multiple threat clusters aligned with the People’s Republic of China (PRC) have been observed using the same post-exploitation frameworks and techniques in recent years. Showboat was in use by at least one, and likely several, PRC-aligned threat activity clusters.</li>
+
+
+
+<li style="font-size:16px">The campaign impacted a telecommunications provider in the Middle East and impersonated telecom firms in Southeast Asia.</li>
+
+
+
+<li style="font-size:16px">Black Lotus Labs collaborated with PricewaterhouseCoopers’ Threat Intelligence teams through the research process. We will continue to hunt for samples of this and similar malware to protect our customers and critical infrastructure.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Research overview</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Black Lotus Labs discovered a new malware family we have dubbed “Showboat.” Technical artifacts suggest that this campaign has been ongoing since at least mid-2022. Analysis of the malware revealed functions that allow its process to be hidden from system administrators, transfer files and perform Socks5 proxy functions, allowing it to interact with machines deeper within the network. We believe this is the first public reporting of this toolset, one which highlights the persistent targeting of Linux-based systems as access vectors to move deeper into networks.</p>
+
+
+
+<p class="wp-block-paragraph">Using Lumen global telemetry and elements of the network discovered in our research, we believe the malware was used by at least one, and likely several, PRC-aligned activity clusters. At the time of discovery, Showboat was deployed in a campaign against telecommunication providers in the Middle East, and impersonating telecommunications firms in Southeast Asia. Our analysis shows a correlation between command-and-control (C2) nodes and connections associated with IP addresses that correlate to Chengdu, China.</p>
+
+
+
+<p class="wp-block-paragraph">Lumen would like to thank the Cyber Threat Intelligence Team at PricewaterhouseCoopers for their collaboration during this research. Their report on this activity&nbsp;<a href="https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/red-lamassu-open-season.html" target="_blank" rel="noreferrer noopener">can be found here.</a>&nbsp;Lumen is committed to proactively defending our networks, collaborating with industry partners, and maintaining vigilance against emerging threats to ensure the integrity and reliability of our services.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Background and context</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Among China-based threat actors, attribution based solely on tooling has become increasingly difficult given shared national objectives across organizations, along with increased sharing of tools and exploits across actor groups. Shared frameworks such as PoisonIvy,&nbsp;<a href="https://www.sentinelone.com/labs/shadowpad-a-masterpiece-of-privately-sold-malware-in-chinese-espionage/" target="_blank" rel="noreferrer noopener">ShadowPad</a>, and more recently&nbsp;<a href="https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/" target="_blank" rel="noreferrer noopener">NosyDoor</a>, have made attribution through this method increasingly difficult. This notion of resource pooling is reinforced by other reporting. ESET, for example, has reported&nbsp;<a href="https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/" target="_blank" rel="noreferrer noopener">different PRC-aligned clusters</a>&nbsp;all using the same exploit even when it was a zero-day vulnerability.</p>
+
+
+
+<p class="wp-block-paragraph">We believe that Showboat is the latest post-exploitation framework in use by multiple threat actors aligned with the PRC, and our report reflects the modularity that we and others are observing in the current landscape.</p>
+
+
+
+<p class="wp-block-paragraph">This research covers:</p>
+
+
+
+<ul class="wp-block-list">
+<li style="font-size:16px">An analysis of the malware and its functions from a reverse engineering perspective.</li>
+
+
+
+<li style="font-size:16px">Two different activity clusters, potentially denoting separate campaigns, derived from malware and associated telemetry indicators.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><strong>Malware analysis</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Our investigation into this campaign began with the malware’s discovery on VirusTotal, triggered by a hit on one of our proactive threat-hunt signatures. As the malware was not directly observed on any live systems, we are unable to comment on the initial access vector or exploit. The sample was compiled for AMD x86-64. When it was submitted to VirusTotal on May 5, 2025, it had a detection rate of zero and remains undetected through April 2026.</p>
+
+
+
+<p class="wp-block-paragraph">The first critical element of Showboat is the configuration file retrieved by the agent to begin installation. The file was XOR-encrypted with a hardcoded key to each byte, using the cheeky phrase: “look me, AV!”</p>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="926" height="186" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig1.webp" alt="" class="wp-image-25500" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig1.webp 926w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig1-300x60.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig1-768x154.webp 768w" sizes="(max-width: 926px) 100vw, 926px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 1: Malware agent screenshot showing zero detection at submission.</p>
+
+
+
+<p class="wp-block-paragraph">The sample’s first callout is to an embedded C2 server to extract a configuration file (a copy and its breakdown is addressed further in the “Network communications” section of this post). Following extract, it gathers various host configurations, including hostname, operating system information, list of running processes, the process of the agent and a screenshot of the desktop.</p>
+
+
+
+<p class="wp-block-paragraph">The results are then combined with information received from the C2, such as the agent UUID, agent version and sleep intervals. The agent transmits the gathered host-based parameters in a PNG field as an encrypted and base64-encoded string and sends back to the C2 server as shown.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="936" height="800" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig2.webp" alt="" class="wp-image-25501" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig2.webp 936w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig2-300x256.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig2-768x656.webp 768w" sizes="auto, (max-width: 936px) 100vw, 936px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 2: Screenshot showing the host-based information and C2 information combined in heartbeat beacon.</p>
+
+
+
+<p class="wp-block-paragraph">Our analysis revealed several pre-built functions that an operator could call. These functions allow the operators to upload and download files to and from the host machine, hide the agent itself from the process list, obtain persistence as a service, and swap out C2 nodes.</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&amp;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a" alt="Description: table 1"/></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Table 1: All Showboat malware names and descriptions, taken from the binary.</p>
+
+
+
+<p class="wp-block-paragraph">One notable feature is the “hide” command, which enables a process to conceal itself on a host machine by retrieving code stored on external websites such as Pastebin or online forums for use as a “dead drop.” For instance, we found a particular code snippet that was first posted to Pastebin in January 2022. Interactions with this post would likely come from victim systems, as well as from web crawlers, making the “view count” an unreliable indicator of the scale of victimology. The upload date, however, provides a useful reference point for the earliest-seen date of this activity.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="936" height="564" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig3.webp" alt="" class="wp-image-25502" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig3.webp 936w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig3-300x181.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig3-768x463.webp 768w" sizes="auto, (max-width: 936px) 100vw, 936px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 3: Screenshot of the Pastebin page likely set up by the threat actors and its associated metadata.</p>
+
+
+
+<p class="wp-block-paragraph">Two other network functions that warranted further exploration were the&nbsp;<em>SOCKS5</em>&nbsp;and&nbsp;<em>portmap</em>&nbsp;functions. These have the same embedded routines except for the URL used in C2 communications. The difference is that one appends the string “<em>SKS</em>” to the URL—likely the&nbsp;<em>SOCKS5</em>&nbsp;function—while the other function appends “<em>MAP</em>” to the URL, probably with&nbsp;<em>portmap</em>. The actor can first scan for other devices and then connect to them via the Socks5 functionality. The presence of these two functions indicates that the purpose of Showboat is to function as a foothold. This would allow the attackers to interact with machines that are not exposed publicly to the internet and only accessible via the LAN.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="936" height="736" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig4.webp" alt="" class="wp-image-25503" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig4.webp 936w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig4-300x236.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig4-768x604.webp 768w" sizes="auto, (max-width: 936px) 100vw, 936px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 4: The functionality between SOCKS5 and portmap.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Malware: network-based communications</strong></h3>
+
+
+
+<p class="wp-block-paragraph">After the initial handshake above to obtain the configuration file and share local host details with the embedded C2, the agent creates a JSON string with information about the infected host, malware version and a unique UUID. This JSON string is “encrypted” using the last 5 digits from the UUID as the key. A copy of a decrypted configuration file is shown below:</p>
+
+
+
+<p class="wp-block-paragraph">SERVER_ADDRESS = telecom.webredirect[.]org</p>
+
+
+
+<p class="wp-block-paragraph">RESOLVE_IP = NULL</p>
+
+
+
+<p class="wp-block-paragraph">SERVER_PORT = 80</p>
+
+
+
+<p class="wp-block-paragraph">PROXY_ADDRESS =</p>
+
+
+
+<p class="wp-block-paragraph">PROXY_PORT = 0</p>
+
+
+
+<p class="wp-block-paragraph">MIN_SLEEP = 5</p>
+
+
+
+<p class="wp-block-paragraph">MAX_SLEEP = 10</p>
+
+
+
+<p class="wp-block-paragraph">SLOW_MODE_MIN_SLEEP = 20</p>
+
+
+
+<p class="wp-block-paragraph">SLOW_MODE_MAX_SLEEP = 25</p>
+
+
+
+<p class="wp-block-paragraph">Resolving this hostname,&nbsp;<em>telecom.webredirect[.]org</em>, identified the C2 node located at IP address&nbsp;<em>139.84.227[.]139, referred to as the original C2</em>.</p>
+
+
+
+<h3 class="wp-block-heading has-normal-font-size"><strong>Correlated indicators, separate activity clusters and network telemetry</strong></h3>
+
+
+
+<h4 class="wp-block-heading has-normal-font-size"><strong>Primary activity cluster</strong></h4>
+
+
+
+<p class="wp-block-paragraph">Our investigation took form after extracting the hostname,&nbsp;<em>telecom[.]webredirect[.]org</em>, which provided us with our first active C2 node. We noticed that this IP address,&nbsp;<em>139.84.227[.]139,</em>&nbsp;had four ports open. The most significant was the self-signed X.509 certificate that used the metadata “My Organization,” whose SHA256 fingerprint started out with 27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677. This fingerprint was the central data point for clustering around what we designate as the “Primary cluster.” (The full list of IP addresses associated with Showboat will be in our GitHub.) We assess with high confidence that all these nodes are associated with Showboat.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="353" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig5-1024x353.webp" alt="" class="wp-image-25504" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig5-1024x353.webp 1024w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig5-300x103.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig5-768x264.webp 768w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig5.webp 1426w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 5: Showing the X.509 metadata associated with the certificate: 27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677.</p>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph">Other open ports on&nbsp;<em>139.84.227[.]139</em>&nbsp;included 9999, which displayed a Socks5 banner. Next, there was a self-signed x.509 certificate on port 53 (typically associated with DNS) from at least March 15-17, 2025. We hypothesize that the actor could have configured the malware to communicate over port 53 to avoid network security products such as firewalls.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="385" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig6-1024x385.webp" alt="" class="wp-image-25505" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig6-1024x385.webp 1024w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig6-300x113.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig6-768x288.webp 768w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig6.webp 1430w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph"><br>Figure 6: Certificate presented on port 53 on the first identified C2 node: SHA256 A72427af3c046fd90999a6505b2372dc4ffde122227f30ed21621ecd4f2d3e8b.</p>
+
+
+
+<p class="has-normal-font-size wp-block-paragraph">The fourth open port, port 80, had an X.509 certificate present on port 80 with the<br>SHA256 fingerprint:&nbsp;<em>E28a96f983b8605decd2ac1db16ebad5fa741a6aa4e585a38ade0e5ad7d6cec0</em>. This certificate was also present on and led to a second C2 at IP address&nbsp;<em>194.135.25[.]132</em>.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="936" height="426" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-newmalware-figure7.webp" alt="" class="wp-image-25506" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-newmalware-figure7.webp 936w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-newmalware-figure7-300x137.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-newmalware-figure7-768x350.webp 768w" sizes="auto, (max-width: 936px) 100vw, 936px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 7: Primary cluster elements.</p>
+
+
+
+<p class="wp-block-paragraph">Primary cluster interactions with regional telecommunications providers</p>
+
+
+
+<p class="wp-block-paragraph">While pivoting upon network elements associated with the primary cluster, we correlated two IP addresses that hosted domains impersonating regional telecommunications organizations:</p>
+
+
+
+<ul class="wp-block-list">
+<li style="font-size:16px">23.27.201[.]160 which resolved the&nbsp;<em>singtelcom[.]site</em>&nbsp;domain</li>
+
+
+
+<li style="font-size:16px">101.36.105[.]222 which resolved the&nbsp;<em>kaztelecom[.]shop</em>&nbsp;domain</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Given that two of the domains appeared to mimic specific telecommunications firms, while the original sample contains the generic hostname&nbsp;<em>telecom[.]webredirect[.]org</em>, we can theorize the primary cluster is focused on telecommunications firms, specifically those in Asia. This assessment is also supported by our global telemetry, where we positively confirm at least two victims. We first observed connections from an Outlook server belonging to an Afghanistan-based ISP provider, which communicated with the C2 node&nbsp;<em>194.135.25[.]132</em>. Connections between these two were seen from December 1, 2025, through February 3, 2026. The second victim identified from the primary cluster geolocated in Azerbaijan.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Possible upstream infrastructure</strong></h4>
+
+
+
+<p class="wp-block-paragraph">During our investigation into the primary cluster, we observed one IP address that exhibited the same SHA256 fingerprint as the original C2 but which stood out as it was not correlated to any known VPS provider. This node,&nbsp;<em>116.169.244[.]208:2096,</em>&nbsp;resolved to China Unicom and roughly geolocated to the region of Chengdu. Since the node was not associated with a VPS, we suspect that this could denote either an upstream IP address or a developer test environment.</p>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="936" height="458" src="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig8.webp" alt="" class="wp-image-25507" srcset="https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig8.webp 936w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig8-300x147.webp 300w, https://apac.lumen.com/wp-content/uploads/2026/07/img-blog-bll-malware-fig8-768x376.webp 768w" sizes="auto, (max-width: 936px) 100vw, 936px" /></figure>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Figure 8: Components of the secondary activity cluster.</p>
+
+
+
+<h4 class="wp-block-heading"><strong>Secondary activity clusters and infrastructure</strong></h4>
+
+
+
+<p class="wp-block-paragraph">The primary cluster of C2 nodes shared the same SHA256 fingerprint. We expanded the search criteria for similar X.509 certificates that exhibited the same metadata properties, such as the same subject DN and issuer DN, including those that had different SHA256 fingerprints under the suspicion these nodes could be additional Showboat C2s.</p>
+
+
+
+<p class="wp-block-paragraph">Employing a technique like those outlined here by&nbsp;<a href="https://censys.com/blog/using-cobalt-strike-to-find-more-cobalt-strike" target="_blank" rel="noreferrer noopener">Censys</a>, another 20 C2 nodes were discovered that shared metadata properties, two of which we examine further below. We suspect that the certificate borne by these nodes was likely generated by a common startup script. The use of differing cryptographic values, while retaining core attributes of the certificate, suggests separate campaigns. Each of these C2s had either a single or low number of victims.</p>
+
+
+
+<p class="wp-block-paragraph">These different fingerprints likely denote infrastructure used by other PRC-aligned activity clusters. One notable data point is that we only found one more SHA256 fingerprint,&nbsp;<em>2229e7f3cabbce4d67cd79c89fd5a100b20e8a99f4a2bf9aac77a978f49eb520</em>, that was observed on two different IP addresses at the same time. All the other suspected C2 nodes had unique SHA256 fingerprints corresponding to a different IP.</p>
+
+
+
+<p class="wp-block-paragraph">We queried the nodes that exhibited the “My Organization” x.509 certificate metadata properties and identified two potential compromises—both stemming from the United States—associated with the C2 at&nbsp;<em>192.9.141[.]111</em>. The first was active from December 29, 2025, through January 12, 2026, while the second potential victim communicated for approximately one day between November 27 and 28, 2025. Both victims’ traffic was on port 9999, which was associated with the Socks5 proxy service on another C2 node.</p>
+
+
+
+<p class="wp-block-paragraph">An additional C2,&nbsp;<em>64.176.43[.]209</em>, appeared to communicate with Ukrainian-based IP addresses that geolocated to the disputed territory regions along the western Ukrainian/Russian border. As we have seen in the past, PRC-based actors tend to assign geographical regions to separate activity clusters; we believe with moderate confidence this focus on the Donbas region is another example of shared tooling among distinct groups.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>Telecommunications networks remain prime targets for intrusion</strong></h3>
+
+
+
+<p class="wp-block-paragraph">Satellite and telecommunications providers continue to be a strategic target for&nbsp;<a href="https://therecord.media/fbi-warns-of-space-cyberattacks" target="_blank" rel="noreferrer noopener">nation-state threat actors</a>, especially those in geographical proximity to major powers. Even when final targets are based in North America, the global interconnectivity of telecommunications firms means that risks can quickly extend worldwide. Because these organizations are essential for transmitting user voice and data, they represent a critical component of any organization’s supply chain.</p>
+
+
+
+<p class="wp-block-paragraph">While some threat actors are increasingly using stealthy, native system tools to evade detection, others still deploy persistent malware implants. The presence of such threats should be taken as an early warning sign, indicating the potential for broader and more serious security issues within affected networks.<br><br>As in many of our prior reports, we have seen a shift towards persisting on&nbsp;<a href="https://www.lumen.com/blog/en-us/taking-elevator-down-ring-0">Linux-based systems</a>&nbsp;and&nbsp;<a href="https://blog.lumen.com/the-j-magic-show-magic-packets-and-where-to-find-them/" target="_blank" rel="noreferrer noopener">routers</a>, which typically do not run any sort of EDR-based system. Therefore, we encourage organizations to be mindful of their perimeter and continue to monitor events such as east-west traffic from servers that do not clearly map to business processes.</p>
+
+
+
+<p class="wp-block-paragraph">Black Lotus Labs will continue proactively hunting for unique telemetry signals. We will continue to work with the information security community and post updates as we uncover more connections to named activity clusters or interesting data points. We encourage other organizations to report this and share related findings from their observations.</p>
+
+
+
+<p class="wp-block-paragraph"><em>Analysis of showboat was performed by Danny Adamitis, and Steve Rudd with technical editing by Ryan English</em></p>
+
+
+
+<h3 class="wp-block-heading"><strong>Explore more threat intelligence resources</strong></h3>
+
+
+
+<ul class="wp-block-list">
+<li style="font-size:16px">View current IOCs, which are continuously updated on our<a href="https://github.com/blacklotuslabs/IOCs/blob/main/FrostArmada_IOCs.txt" target="_blank" rel="noreferrer noopener">&nbsp;GitHub page</a>&nbsp;and continuously updated there. We encourage the community to monitor and alert on these and any similar IOCs.</li>
+
+
+
+<li style="font-size:16px">Learn how we protect our customers with&nbsp;<a href="https://www.lumen.com/en-us/services/lumen-defender.html">Lumen Defender</a><sup>SM</sup>.</li>
+
+
+
+<li style="font-size:16px">Understand modern cyberthreats and what their trajectories signal for the future in our first annual&nbsp;<a href="https://www.lumen.com/en-us/resources/2026-threat-intelligence-report.html">Lumen Defender Threatscape Report</a>.</li>
+
+
+
+<li style="font-size:16px">Want to collaborate on future research? Connect with us on&nbsp;<a href="https://www.linkedin.com/showcase/blacklotuslabs/" target="_blank" rel="noreferrer noopener">LinkedIn</a>&nbsp;and&nbsp;<a href="https://x.com/blacklotuslabs?lang=en" target="_blank" rel="noreferrer noopener">X</a>&nbsp;(@BlackLotusLabs).</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Discover how Black Lotus Labs’ advanced threat technology identifies and eliminates threats fast, helping to protect your business and keep the internet clean.</strong></p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-fe48e5de wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link has-background wp-element-button" href="https://www.lumen.com/en-sg/security/black-lotus-labs.html" style="background:linear-gradient(135deg,rgb(252,185,0) 0%,rgb(249,94,74) 100%)">Learn more</a></div>
+</div>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">This content is provided for informational purposes only and may require additional research and substantiation by the end user. In addition, the information is provided “as is” without any warranty or condition of any kind, either express or implied. Use of this information is at the end user’s own risk. Lumen does not warrant that the information will meet the end user’s requirements or that the implementation or usage of this information will result in the desired outcome of the end user. All third-party company and product or service names referenced in this article are for identification purposes only and do not imply endorsement or affiliation with Lumen. This document represents Lumen products and offerings as of the date of issue. Services not available everywhere. Lumen may change or cancel products and services or substitute similar products and services at its sole discretion without notice. © 2026 Lumen Technologies. All Rights Reserved.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+</p>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+            
+            
+        
+  <!-- realated post -->
+   <br>
+   <br>
+      <!-- <div class="post_related_wrap">
+   <h2> Related Post </h2>
+                <div class="post_related"> -->
+
+               
+                    

@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+github.com/LastPass-Authenticator,repository,,,CyberInsider citing LastPass,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Fraudulent org; current status unknown to ETW,rapuncel
+massimolongqdoj.github.io,url,2026-08-19,,ETW urlscan OBSERVED_PASSIVE,High,rapuncel,CAMPAIGN_ASSOCIATED,DoNotSpy11 path redirected to albinofennel.com (RAP-IND-0031 / RAP-PO-0021),rapuncel
+github.com/massimolongqdoj,repository,2026-08-19,,ETW urlscan (inferred from Pages host),Moderate,rapuncel,SUSPICIOUS,Verify org existence before takedown requests,rapuncel

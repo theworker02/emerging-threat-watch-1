@@ -1,0 +1,49 @@
+﻿family,surface,query_or_template,example_url_or_tool,ledger_ip_if_any,status,notes
+NodeRabbit,npm_registry,colorized_terminal,https://registry.npmjs.org/colorized_terminal,,COLLECTION_SEED,Kaspersky PRIMARY: locally bundled @2.1.0 â€” not npm registry. ETW 2026-09-19 GET â†’ HTTP 404 (NRB-PO-0200).
+NodeRabbit,npm_registry,pretty-log,https://registry.npmjs.org/pretty-log,,COLLECTION_SEED,Malicious pin @2.1.0 local per Kaspersky. Public registry has unrelated 0.1.0 only (NRB-PO-0201) â€” do not treat 0.1.0 as NodeRabbit.
+NodeRabbit,github_code,"colorized_terminal" "2.1.0",https://github.com/search?q=%22colorized_terminal%22+%222.1.0%22&type=code,,COLLECTION_SEED,Prior logged-out search result_count=0 (deep-pass). Re-check periodically.
+NodeRabbit,github_code,node_modules/.cache/.320697f1,https://github.com/search?q=node_modules%2F.cache%2F.320697f1&type=code,,COLLECTION_SEED,Implant path from Securelist.
+NodeRabbit,github_code,"pretty-log" "2.1.0" TaskFlow OR coding OR challenge,https://github.com/search?q=%22pretty-log%22+%222.1.0%22&type=code,,COLLECTION_SEED,Alternate launcher package.
+PollCat,github_code,RankChallenge-react,https://github.com/search?q=RankChallenge-react&type=code,,COLLECTION_SEED,PollCat lure project name (PRIMARY Securelist). Do not auto-seed NodeRabbit.
+PollCat,github_code,requireObjects.js NetSync OR harsh.requireobject,https://github.com/search?q=requireObjects.js&type=code,,COLLECTION_SEED,PollCat startup / macOS plist strings.
+PollCat,gist_gitlab,RankChallenge OR coding challenge OTP lifespotify,https://gist.github.com/search?q=RankChallenge,,COLLECTION_SEED,Fake recruitment / coding-test stubs.
+PollCat,grayhatwarfare,filename:RankChallenge*.zip OR PollCat OR requireObjects,https://buckets.grayhatwarfare.com/,,COLLECTION_SEED,Open-bucket ZIP staging hunt â€” metadata only; no download/exec.
+PollCat,s3_azure_metadata,RankChallenge-react-6uJSX3-main.zip,urlscan/VT URL search,,COLLECTION_SEED,MD5 POL-IND-0001; resolve SHA-256 via metadata services only.
+Showboat,pastebin,ukpkmkk.c,https://pastebin.com/search?q=ukpkmkk.c,,COLLECTION_SEED,Hide-command C source (Picus SECONDARY filename; Lumen PRIMARY Pastebin class).
+Showboat,pastebin,ukpkmkk.so OR ld.so.preload kworkers,https://pastebin.com/search?q=ukpkmkk,,COLLECTION_SEED,Compiled SO / preload strings.
+Showboat,paste_content,process_to_filter kworkers|dbus|autoupdate,web/paste indexes,,COLLECTION_SEED,Hardcoded process filter per Picus SECONDARY.
+Showboat,linux_forums,Showboat OR EvaRAT OR ukpkmkk,forum search / CTI index,,COLLECTION_SEED,Dead-drop / chatter â€” SECONDARY until tracker IOC.
+SynkLoader,azure_blob,filereserve.blob.core.windows.net vgnghuyk 331.msi,https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi,,COLLECTION_SEED,Expel PRIMARY URL â€” metadata/urlscan only; do not download MSI.
+SynkLoader,grayhatwarfare,filename:*.msi PowershellCleaner OR SynkLoader OR vgnghuyk,https://buckets.grayhatwarfare.com/,,COLLECTION_SEED,Open Azure/S3 MSI/PS1 staging.
+SynkLoader,shodan,ip:{LEDGER_IP} port:80,443,8080,8443,https://www.shodan.io/host/{LEDGER_IP},149.248.76.220,COLLECTION_SEED,Ledger C2 for neversoftmain.net â€” ports bounded; depthâ‰¤1.
+SynkLoader,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},162.33.177.8,COLLECTION_SEED,rootfarmapp.net C2 mapping.
+SynkLoader,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},216.245.184.14,COLLECTION_SEED,tripinupdate.net C2 mapping.
+SynkLoader,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},64.94.85.67,COLLECTION_SEED,aroclenetapp.net C2 mapping.
+SynkLoader,censys,services.ip:{LEDGER_IP},https://search.censys.io/hosts/{LEDGER_IP},149.248.76.220,COLLECTION_SEED,Unauth banner/snapshot only â€” never panel login.
+SynkLoader,censys,services.ip:{LEDGER_IP},https://search.censys.io/hosts/{LEDGER_IP},162.33.177.8,COLLECTION_SEED,Bounded ledger-IP footprinting.
+SynkLoader,censys,services.ip:{LEDGER_IP},https://search.censys.io/hosts/{LEDGER_IP},216.245.184.14,COLLECTION_SEED,Bounded ledger-IP footprinting.
+SynkLoader,censys,services.ip:{LEDGER_IP},https://search.censys.io/hosts/{LEDGER_IP},64.94.85.67,COLLECTION_SEED,Bounded ledger-IP footprinting.
+SynkLoader,gowitness,http://{LEDGER_IP}:80 https://{LEDGER_IP}:443,gowitness / webscreenshot,149.248.76.220,COLLECTION_SEED,Unauth GET snapshot of public pages only.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},45.76.157.243,COLLECTION_SEED,BLL C2 :443.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},139.84.135.190,COLLECTION_SEED,BLL C2 :443.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},139.180.223.193,COLLECTION_SEED,BLL C2 :443.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},152.32.159.11,COLLECTION_SEED,BLL C2 singtelcom.site.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},23.27.201.160,COLLECTION_SEED,BLL C2 :443.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},38.246.73.120,COLLECTION_SEED,BLL C2 :443.
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},114.116.239.178,COLLECTION_SEED,Hosted ukpkmkk.bin (non-CDN).
+Showboat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},103.10.145.129,COLLECTION_SEED,Historical ukpkmkk.bin host.
+Showboat,censys,services.ip:{LEDGER_IP},https://search.censys.io/hosts/{LEDGER_IP},45.76.157.243,COLLECTION_SEED,Bounded; ports 80/443/8080/8443.
+Showboat,gowitness,https://{LEDGER_IP}:443,gowitness / webscreenshot,152.32.159.11,COLLECTION_SEED,Unauth snapshot only â€” never auth to panels.
+Rapuncel,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},2.26.126.50,COLLECTION_SEED,PRIMARY exfil IP â€” non-CDN.
+Rapuncel,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},207.207.210.50,COLLECTION_SEED,ryanpresbrey.cc clustering lead â€” INFRASTRUCTURE_OVERLAP.
+Rapuncel,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},207.207.210.23,COLLECTION_SEED,ryanpresbrey.cc clustering lead.
+Rapuncel,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},207.207.210.36,COLLECTION_SEED,ryanpresbrey.cc clustering lead.
+Settra,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},45.13.122.7,COLLECTION_SEED,Huntress MeshAgent C2 â€” incident-scoped.
+Settra,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},193.5.65.114,COLLECTION_SEED,Huntress MeshAgent C2.
+Settra,censys,services.ip:{LEDGER_IP},https://search.censys.io/hosts/{LEDGER_IP},193.5.65.114,COLLECTION_SEED,Prior urlscan MeshCentral login â€” unauth GET only.
+RatHat,apk_mirror,RatHat OR banking remote OR xiongmao,https://apkpure.com/search?q=RatHat,,COLLECTION_SEED,Listing metadata only â€” no sideload.
+RatHat,apk_mirror,package listing screenshots,APKCombo / Aptoide search,,COLLECTION_SEED,Cross-check package names from Zimperium PRIMARY only.
+RatHat,sandbox_ui,VT Behavior/Screenshots/Dropped Files,https://www.virustotal.com/,,COLLECTION_SEED,Fake banking / lock-screen UI evidence from public reports.
+RatHat,shodan,ip:{LEDGER_IP},https://www.shodan.io/host/{LEDGER_IP},186.240.200.23,COLLECTION_SEED,ASSOCIATION_ONLY community domain A â€” not confirmed RatHat C2.
+JARM,ssl_pivot,ssl.jarm:{KNOWN_BAD_JARM} from evidence certs only,Shodan/Censys,,COLLECTION_SEED,Only after known-bad cert/JARM exists in evidence â€” no blind internet hunt.
+FOFA,bounded_ip,ip="{LEDGER_IP}" && port="443",https://fofa.info/,,COLLECTION_SEED,Same bound as Shodan/Censys â€” ledger IPs only; depthâ‰¤1.

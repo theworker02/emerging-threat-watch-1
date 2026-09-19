@@ -1,0 +1,6 @@
+priority,family,gap,why_crucial,status
+P0,RatHat,APK applicationId / signing certificate from authorized metadata,Reproducible sample identity beyond SHA-256,OPEN
+P0,RatHat,Concrete FRP (FrpsAddr/FrpsPort) hosts from live config,URI paths known; FRP endpoints runtime-fetched,OPEN
+P1,RatHat,Unauthenticated MalwareBazaar/VT package metadata for listed APK hashes,MB/VT APIs returned 401/Unauthorized on 2026-09-19,OPEN
+P2,RatHat,Official Google Play Protect / ASB advisory naming Wireless ADB self-pair,Technique comparison only; no Google-named RatHat advisory found,OPEN
+P1,RatHat,urlscan hits for RatHat API path strings,Deep-pass returned total=0 for /api/node/register etc.,OPEN

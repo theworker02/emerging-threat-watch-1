@@ -1,0 +1,4 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+SHO-TL-0001,2022-06-01T00:00:00Z,vendor_reported,Lumen reports technical artifacts suggesting activity since at least mid-2022,Lumen BLL,PRIMARY-SOURCE,Moderate,SHO-EV-0001
+SHO-TL-0002,2026-05-01T00:00:00Z,disclosure,Lumen Black Lotus Labs public Showboat reporting window (2026),Lumen BLL,PRIMARY-SOURCE,High,SHO-EV-0001
+SHO-TL-0003,2026-09-19T20:00:00Z,etw_phase1,ETW Phase 1 Showboat package stub opened,ETW,OBSERVED,High,

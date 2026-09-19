@@ -1,0 +1,67 @@
+﻿family,service,query,url_template,status,notes
+Rapuncel,ThreatFox,Rapuncel,https://threatfox.abuse.ch/browse.php?search=tag%3ARapuncel,UNVERIFIED,Tag/search seed — do not invent IOCs. Classic Remcos/AsyncRAT examples in researcher notes are methodology illustrations only.
+Rapuncel,MalwareBazaar,Rapuncel,https://bazaar.abuse.ch/browse.php?search=tag%3ARapuncel,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+Rapuncel,URLhaus,Rapuncel,https://urlhaus.abuse.ch/browse.php?search=Rapuncel,UNVERIFIED,URL distribution search seed.
+Rapuncel,Triage,Rapuncel,https://tria.ge/s?q=Rapuncel,UNVERIFIED,Public sandbox/config search seed — prefer C2 from sample configs over forum screenshots.
+Rapuncel,InQuest,Rapuncel,https://labs.inquest.net/dfi/search/filename/Rapuncel,UNVERIFIED,Metadata/reputation pivot seed.
+Rapuncel,AnyRun,Rapuncel,https://any.run/malware-trends/,UNVERIFIED,Public report search seed for family name; cite public reports only — no sample execution.
+Settra,ThreatFox,Settra,https://threatfox.abuse.ch/browse.php?search=tag%3ASettra,UNVERIFIED,Tag/search seed — do not invent IOCs.
+Settra,MalwareBazaar,Settra,https://bazaar.abuse.ch/browse.php?search=tag%3ASettra,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+Settra,URLhaus,Settra,https://urlhaus.abuse.ch/browse.php?search=Settra,UNVERIFIED,URL distribution search seed.
+Settra,Triage,Settra,https://tria.ge/s?q=Settra,UNVERIFIED,Public sandbox/config search seed.
+Settra,InQuest,Settra,https://labs.inquest.net/dfi/search/filename/Settra,UNVERIFIED,Metadata/reputation pivot seed.
+Settra,AnyRun,Settra,https://any.run/malware-trends/,UNVERIFIED,Public report search seed; cite public reports only.
+RatHat,ThreatFox,RatHat,https://threatfox.abuse.ch/browse.php?search=tag%3ARatHat,UNVERIFIED,Tag/search seed — do not invent IOCs.
+RatHat,MalwareBazaar,RatHat,https://bazaar.abuse.ch/browse.php?search=tag%3ARatHat,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+RatHat,URLhaus,RatHat,https://urlhaus.abuse.ch/browse.php?search=RatHat,UNVERIFIED,URL distribution search seed.
+RatHat,Triage,RatHat,https://tria.ge/s?q=RatHat,UNVERIFIED,Public sandbox/config search seed.
+RatHat,InQuest,RatHat,https://labs.inquest.net/dfi/search/filename/RatHat,UNVERIFIED,Metadata/reputation pivot seed.
+RatHat,AnyRun,RatHat,https://any.run/malware-trends/,UNVERIFIED,Public report search seed; cite public reports only.
+NodeRabbit,ThreatFox,NodeRabbit,https://threatfox.abuse.ch/browse.php?search=tag%3ANodeRabbit,UNVERIFIED,Tag/search seed — do not invent IOCs.
+NodeRabbit,MalwareBazaar,NodeRabbit,https://bazaar.abuse.ch/browse.php?search=tag%3ANodeRabbit,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+NodeRabbit,URLhaus,NodeRabbit,https://urlhaus.abuse.ch/browse.php?search=NodeRabbit,UNVERIFIED,URL distribution search seed.
+NodeRabbit,Triage,NodeRabbit,https://tria.ge/s?q=NodeRabbit,UNVERIFIED,Public sandbox/config search seed.
+NodeRabbit,InQuest,NodeRabbit,https://labs.inquest.net/dfi/search/filename/NodeRabbit,UNVERIFIED,Metadata/reputation pivot seed.
+NodeRabbit,AnyRun,NodeRabbit,https://any.run/malware-trends/,UNVERIFIED,Public report search seed; cite public reports only.
+PollCat,ThreatFox,PollCat,https://threatfox.abuse.ch/browse.php?search=tag%3APollCat,UNVERIFIED,Tag/search seed — do not invent IOCs. Do not auto-merge NodeRabbit.
+PollCat,MalwareBazaar,PollCat,https://bazaar.abuse.ch/browse.php?search=tag%3APollCat,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+PollCat,URLhaus,PollCat,https://urlhaus.abuse.ch/browse.php?search=PollCat,UNVERIFIED,URL distribution search seed.
+PollCat,Triage,PollCat,https://tria.ge/s?q=PollCat,UNVERIFIED,Public sandbox/config search seed.
+PollCat,InQuest,PollCat,https://labs.inquest.net/dfi/search/filename/PollCat,UNVERIFIED,Metadata/reputation pivot seed.
+PollCat,AnyRun,PollCat,https://any.run/malware-trends/,UNVERIFIED,Public report search seed; cite public reports only.
+SynkLoader,ThreatFox,SynkLoader,https://threatfox.abuse.ch/browse.php?search=tag%3ASynkLoader,UNVERIFIED,Tag/search seed — do not invent IOCs. Exploit.in IAB/dropper cites remain SECONDARY until config IOC.
+SynkLoader,MalwareBazaar,SynkLoader,https://bazaar.abuse.ch/browse.php?search=tag%3ASynkLoader,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+SynkLoader,URLhaus,SynkLoader,https://urlhaus.abuse.ch/browse.php?search=SynkLoader,UNVERIFIED,URL distribution search seed.
+SynkLoader,Triage,SynkLoader,https://tria.ge/s?q=SynkLoader,UNVERIFIED,Public sandbox/config search seed — preferred over Exploit.in marketplace screenshots.
+SynkLoader,InQuest,SynkLoader,https://labs.inquest.net/dfi/search/filename/SynkLoader,UNVERIFIED,Metadata/reputation pivot seed.
+SynkLoader,AnyRun,SynkLoader,https://any.run/malware-trends/,UNVERIFIED,Public report search seed; cite public reports only.
+Showboat,ThreatFox,Showboat,https://threatfox.abuse.ch/browse.php?search=tag%3AShowboat,UNVERIFIED,Tag/search seed — do not invent IOCs. Private E2EE channel intel is commercial-CTI only.
+Showboat,MalwareBazaar,Showboat,https://bazaar.abuse.ch/browse.php?search=tag%3AShowboat,UNVERIFIED,Tag search seed. Metadata only; do not execute downloads.
+Showboat,URLhaus,Showboat,https://urlhaus.abuse.ch/browse.php?search=Showboat,UNVERIFIED,URL distribution search seed.
+Showboat,Triage,Showboat,https://tria.ge/s?q=Showboat,UNVERIFIED,Public sandbox/config search seed.
+Showboat,InQuest,Showboat,https://labs.inquest.net/dfi/search/filename/Showboat,UNVERIFIED,Metadata/reputation pivot seed.
+Showboat,AnyRun,Showboat,https://any.run/malware-trends/,UNVERIFIED,Public report search seed; cite public reports only.
+Cruciferra,ThreatFox,Cruciferra,https://threatfox.abuse.ch/browse.php?search=tag%3ACruciferra,UNVERIFIED,ASSOCIATION_ONLY crypter marketplace lead — not Rapuncel operator identity.
+Cruciferra,MalwareBazaar,Cruciferra,https://bazaar.abuse.ch/browse.php?search=tag%3ACruciferra,UNVERIFIED,ASSOCIATION_ONLY. Metadata only; do not execute downloads.
+Cruciferra,URLhaus,Cruciferra,https://urlhaus.abuse.ch/browse.php?search=Cruciferra,UNVERIFIED,ASSOCIATION_ONLY crypter lead.
+Cruciferra,Triage,Cruciferra,https://tria.ge/s?q=Cruciferra,UNVERIFIED,ASSOCIATION_ONLY sandbox search seed.
+PUROSANGUE,ThreatFox,PUROSANGUE,https://threatfox.abuse.ch/browse.php?search=tag%3APUROSANGUE,UNVERIFIED,Cruciferra package alias — ASSOCIATION_ONLY until PRIMARY ties to a family chain.
+PUROSANGUE,MalwareBazaar,PUROSANGUE,https://bazaar.abuse.ch/browse.php?search=tag%3APUROSANGUE,UNVERIFIED,Cruciferra package alias — ASSOCIATION_ONLY.
+PUROSANGUE,URLhaus,PUROSANGUE,https://urlhaus.abuse.ch/browse.php?search=PUROSANGUE,UNVERIFIED,Cruciferra package alias — ASSOCIATION_ONLY.
+PUROSANGUE,Triage,PUROSANGUE,https://tria.ge/s?q=PUROSANGUE,UNVERIFIED,ASSOCIATION_ONLY sandbox search seed.
+Matanbuchus,ThreatFox,Matanbuchus,https://threatfox.abuse.ch/browse.php?search=tag%3AMatanbuchus,UNVERIFIED,CANDIDATE technique comparator for SynkLoader (Teams+ChaCha20) — authorship NOT_ESTABLISHED. Do not invent IOCs; metadata only.
+Matanbuchus,MalwareBazaar,Matanbuchus,https://bazaar.abuse.ch/browse.php?search=tag%3AMatanbuchus,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+AstarionRAT,ThreatFox,AstarionRAT,https://threatfox.abuse.ch/browse.php?search=tag%3AAstarionRAT,UNVERIFIED,CANDIDATE with Matanbuchus MaaS packaging — not SynkLoader lineage.
+AstarionRAT,MalwareBazaar,AstarionRAT,https://bazaar.abuse.ch/browse.php?search=tag%3AAstarionRAT,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+StarlandRAT,ThreatFox,StarlandRAT,https://threatfox.abuse.ch/browse.php?search=tag%3AStarlandRAT,UNVERIFIED,CANDIDATE (UAT-11795 / WLDR Agent context). Telegram C2 methodology only — no private E2EE join.
+StarlandRAT,MalwareBazaar,StarlandRAT,https://bazaar.abuse.ch/browse.php?search=tag%3AStarlandRAT,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+LummaStealer,ThreatFox,LummaStealer,https://threatfox.abuse.ch/browse.php?search=tag%3ALummaStealer,UNVERIFIED,CANDIDATE stealer MaaS — Rapuncel market comparator only; authorship NOT_ESTABLISHED.
+LummaStealer,MalwareBazaar,LummaStealer,https://bazaar.abuse.ch/browse.php?search=tag%3ALummaStealer,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+Vidar,ThreatFox,Vidar,https://threatfox.abuse.ch/browse.php?search=tag%3AVidar,UNVERIFIED,CANDIDATE stealer MaaS — Rapuncel market comparator only; authorship NOT_ESTABLISHED.
+Vidar,MalwareBazaar,Vidar,https://bazaar.abuse.ch/browse.php?search=tag%3AVidar,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+Pikabot,ThreatFox,Pikabot,https://threatfox.abuse.ch/browse.php?search=tag%3APikabot,UNVERIFIED,CANDIDATE initial-access loader — SynkLoader ClickFix-class technique comparator; authorship NOT_ESTABLISHED.
+Pikabot,MalwareBazaar,Pikabot,https://bazaar.abuse.ch/browse.php?search=tag%3APikabot,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+QakBot,ThreatFox,QakBot,https://threatfox.abuse.ch/browse.php?search=tag%3AQakBot,UNVERIFIED,CANDIDATE / historical IA variants — technique context only; do not invent IOCs.
+QakBot,MalwareBazaar,QakBot,https://bazaar.abuse.ch/browse.php?search=tag%3AQakBot,UNVERIFIED,CANDIDATE. Metadata only; do not execute downloads.
+ClickFix,ThreatFox,ClickFix,https://threatfox.abuse.ch/browse.php?search=tag%3AClickFix,UNVERIFIED,TECHNIQUE CLASS seed (paste/exec social engineering) — not a family authorship claim.
+ClickFix,MalwareBazaar,ClickFix,https://bazaar.abuse.ch/browse.php?search=tag%3AClickFix,UNVERIFIED,TECHNIQUE CLASS. Metadata only; do not execute downloads.

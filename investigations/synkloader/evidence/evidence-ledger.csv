@@ -1,0 +1,2 @@
+evidence_id,date_collected,time_collected_utc,collector,evidence_type,indicator_type,value,description,source,source_url,source_author,publication_date,retrieval_date,provenance,confidence,first_seen,last_seen,independently_verified,verification_method,related_evidence,notes
+SYN-EV-0001,2026-09-19,20:00:00Z,ETW-Phase1,publication,,,Expel SynkLoader primary disclosure,Expel,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/,Expel,2026-08,2026-09-19,PRIMARY-SOURCE,High,2026-08,2026-08,False,URL frozen; HTML archive pending,,

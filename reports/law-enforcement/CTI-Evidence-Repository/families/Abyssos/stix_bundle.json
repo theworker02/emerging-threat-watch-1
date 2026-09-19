@@ -1,0 +1,29 @@
+{
+    "type": "bundle",
+    "id": "bundle--34f83df8-74d5-5451-84e2-d9658eafdfee",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--28f10a64-2a9e-5bf3-8f61-99f9ac0f418b",
+            "created": "2026-09-19T20:30:00.000000Z",
+            "modified": "2026-09-19T20:30:00.000000Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--a06f04ac-d5a7-59cc-8f68-2fbc84a93c9b",
+            "created": "2026-09-19T20:30:00.000000Z",
+            "modified": "2026-09-19T20:30:00.000000Z",
+            "name": "Abyssos",
+            "description": "ETW CANDIDATE stub for Abyssos. Author attribution NOT_ESTABLISHED. No PRIMARY indicators in bundle.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        }
+    ]
+}

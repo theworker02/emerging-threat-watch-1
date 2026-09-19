@@ -1,0 +1,16 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+domain,albinofennel.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0007,primary payload server (LastPass/Delphos). DoH 2026-09-19 NXDOMAIN (RAP-CLAIM-0038) — DNS fact only; not permanent takedown proof.
+domain,hanselarinmusky.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0008,payload server | NOT OBSERVED by ETW — primary-source only.
+domain,icansamyope.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0009,secondary payload server | NOT OBSERVED by ETW — primary-source only.
+domain,istatlmenus.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0010,dynamic traffic director | NOT OBSERVED by ETW — primary-source only.
+domain,macperformancetools.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0011,terminal domain | NOT OBSERVED by ETW — primary-source only.
+domain,zaffersnouty.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0012,terminal domain | NOT OBSERVED by ETW — primary-source only.
+domain,ryanpresbrey.cc,unspecified,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,RAP-IND-0013,clustering lead | NOT OBSERVED by ETW — primary-source only.
+path,C:\Windows\System32\drivers\nvfsflt64.sys,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0020,Alinubx on-disk path | NOT OBSERVED by ETW — primary-source only.
+url,lastpass-authenticator.github.io,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0026,fake landing | NOT OBSERVED by ETW — primary-source only.
+url,edgarcostartqd.github.io,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0027,redirector | NOT OBSERVED by ETW — primary-source only.
+url,dallikilic54.github.io,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0028,redirector | NOT OBSERVED by ETW — primary-source only.
+filename,browser_decryption.log,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0029,host artifact from LastPass/Delphos | NOT OBSERVED by ETW — primary-source only.
+filename,sends.log,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAP-IND-0030,host artifact from LastPass/Delphos | NOT OBSERVED by ETW — primary-source only.
+url,massimolongqdoj.github.io,2026-08-19,2026-09-19T19:10:00Z,High,OBSERVED_PASSIVE,RAP-IND-0031,GitHub Pages lure path /.github/DoNotSpy11 redirected to albinofennel.com (urlscan). Manifest RAP-PO-0021. Not actor attribution.
+url,https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io,2026-07-26,2026-09-19T19:10:00Z,High,OBSERVED_PASSIVE,RAP-IND-0033,urlscan-observed branded lure path on payload host. Corroborates LastPass passathook-cs2 mention.

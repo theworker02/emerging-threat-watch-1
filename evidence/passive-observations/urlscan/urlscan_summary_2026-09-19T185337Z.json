@@ -1,0 +1,297 @@
+﻿[
+    {
+        "family":  "rathat",
+        "query":  "\"api/node/register\"",
+        "total":  0,
+        "sha256":  "3ac817c9464e6b02906f61a3413f9f2d6f916a89ce5595ec73249dfeda54a9d4",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_api_node_register_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    },
+    {
+        "family":  "rathat",
+        "query":  "\"api/data/credentials\"",
+        "total":  0,
+        "sha256":  "99aa9df57d6aa4e0088b72e622b41d71384705ecbdf3c94de258d5c8b1536ca2",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_api_data_credentials_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    },
+    {
+        "family":  "rathat",
+        "query":  "\"api/adbk/upload\"",
+        "total":  0,
+        "sha256":  "a498c14535d5ec49e33745b6464228182a95c9b710a6bbda00d79c9525281d07",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_api_adbk_upload_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    },
+    {
+        "family":  "rathat",
+        "query":  "\"api/tun/config\"",
+        "total":  0,
+        "sha256":  "866544b562394a4f4ca1e0fce5bd0e76fb4cade423d74e62890fe9ca56416924",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_api_tun_config_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    },
+    {
+        "family":  "rathat",
+        "query":  "\"liblocal-service\"",
+        "total":  0,
+        "sha256":  "7aaff4e5b98f438ca105aba31693497d374ed499ab4924bdd8f8c73404419213",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_liblocal_service_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    },
+    {
+        "family":  "rathat",
+        "query":  "domain:adidasabc.com",
+        "total":  1,
+        "sha256":  "74100cda29f1d9e74076eb55ded5360fdc2b658e7da9507d792ab861ab0babd3",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_domain_adidasabc_2026-09-19T185337Z.json",
+        "sample":  {
+                       "page_url":  "https://fegrs.adidasabc.com/",
+                       "domain":  "fegrs.adidasabc.com",
+                       "task_time":  "2026-09-18T14:40:08.706Z",
+                       "uuid":  "01a0b4f5-bda8-775c-84b4-b0f184031a1f"
+                   }
+    },
+    {
+        "family":  "rathat",
+        "query":  "domain:xiongmaocs.help",
+        "total":  1,
+        "sha256":  "55e5a2f21c6bff62337b9e976ca0a3bd38220b82811a50d90dead185476918fc",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_domain_xiongmaocs_help_2026-09-19T185337Z.json",
+        "sample":  {
+                       "page_url":  "https://admin.xiongmaocs.help/",
+                       "domain":  "admin.xiongmaocs.help",
+                       "task_time":  "2026-09-18T14:40:18.349Z",
+                       "uuid":  "01a0b4f5-c408-757b-aa95-44c55fc4b413"
+                   }
+    },
+    {
+        "family":  "rathat",
+        "query":  "domain:kingbss.com",
+        "total":  1,
+        "sha256":  "fbc4859226624fd05545c6590753eb3bc35c63c9fd996bbab2bd71bc990979c9",
+        "out":  "evidence\\passive-observations\\urlscan\\rathat\\urlscan_domain_kingbss_2026-09-19T185337Z.json",
+        "sample":  {
+                       "page_url":  "https://kingbss.com/",
+                       "domain":  "kingbss.com",
+                       "task_time":  "2026-09-18T14:40:27.857Z",
+                       "uuid":  "01a0b4f6-0080-72af-a930-5aaa30591aa4"
+                   }
+    },
+    {
+        "family":  "synkloader",
+        "query":  "domain:neversoftmain.net",
+        "total":  5,
+        "sha256":  "80c3541d7dd8162bcc9e51460f1691ffe0c56c50a2ad180e9349f8ed79ffef76",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_domain_neversoftmain_2026-09-19T185337Z.json",
+        "sample":  [
+                       {
+                           "page_url":  "https://neversoftmain.net/",
+                           "domain":  "neversoftmain.net",
+                           "task_time":  "2026-08-27T08:51:01.208Z",
+                           "uuid":  "01a0426a-3cfe-74ac-86c9-dcc0c718c5e9"
+                       },
+                       {
+                           "page_url":  "https://neversoftmain.net/",
+                           "domain":  "neversoftmain.net",
+                           "task_time":  "2026-08-26T02:16:46.508Z",
+                           "uuid":  "01a03bda-f2ec-766c-85f8-abfd87b42b09"
+                       },
+                       {
+                           "page_url":  "https://neversoftmain.net/",
+                           "domain":  "neversoftmain.net",
+                           "task_time":  "2026-08-21T08:37:12.089Z",
+                           "uuid":  "01a02377-73f5-717d-8bc1-a32b79eddf7a"
+                       },
+                       {
+                           "page_url":  "https://neversoftmain.net/",
+                           "domain":  "neversoftmain.net",
+                           "task_time":  "2026-08-21T08:12:59.574Z",
+                           "uuid":  "01a02361-44d7-738d-880a-b8086f708ad6"
+                       },
+                       {
+                           "page_url":  "https://neversoftmain.net/",
+                           "domain":  "neversoftmain.net",
+                           "task_time":  "2026-07-11T00:43:18.775Z",
+                           "uuid":  "019f4ea0-7e11-71c2-9cae-21660daf41b8"
+                       }
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "domain:rootfarmapp.net",
+        "total":  4,
+        "sha256":  "2dc7b92225535c45b29924318f82fbf46e9617864d4628348ea66f73d2a0b3f1",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_domain_rootfarmapp_2026-09-19T185337Z.json",
+        "sample":  [
+                       {
+                           "page_url":  "https://rootfarmapp.net/",
+                           "domain":  "rootfarmapp.net",
+                           "task_time":  "2026-08-27T08:51:34.819Z",
+                           "uuid":  "01a0426a-c203-771b-baa5-43fb25e5060e"
+                       },
+                       {
+                           "page_url":  "https://rootfarmapp.net/",
+                           "domain":  "rootfarmapp.net",
+                           "task_time":  "2026-08-26T02:16:47.858Z",
+                           "uuid":  "01a03bda-f3f2-7140-a453-e0ab39b9fdbf"
+                       },
+                       {
+                           "page_url":  "https://rootfarmapp.net/",
+                           "domain":  "rootfarmapp.net",
+                           "task_time":  "2026-08-21T08:37:13.126Z",
+                           "uuid":  "01a02377-72cb-7562-a25a-41e7d44b5a44"
+                       },
+                       {
+                           "page_url":  "https://rootfarmapp.net/",
+                           "domain":  "rootfarmapp.net",
+                           "task_time":  "2026-08-21T08:07:53.180Z",
+                           "uuid":  "01a0235c-99b5-76b3-8a2b-5357c5a7c45c"
+                       }
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "domain:tripinupdate.net",
+        "total":  5,
+        "sha256":  "73b87c631b7632fd49b068cbb97959fe20ea8792540153803d5ac7dc6281a814",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_domain_tripinupdate_2026-09-19T185337Z.json",
+        "sample":  [
+                       {
+                           "page_url":  "https://tripinupdate.net/",
+                           "domain":  "tripinupdate.net",
+                           "task_time":  "2026-08-27T08:51:22.314Z",
+                           "uuid":  "01a0426a-9443-73da-ae5b-002b03e25526"
+                       },
+                       {
+                           "page_url":  "https://tripinupdate.net/",
+                           "domain":  "tripinupdate.net",
+                           "task_time":  "2026-08-26T02:16:49.684Z",
+                           "uuid":  "01a03bda-f6ce-7776-b1de-96d8a55e03c4"
+                       },
+                       {
+                           "page_url":  "https://tripinupdate.net/",
+                           "domain":  "tripinupdate.net",
+                           "task_time":  "2026-08-21T08:36:52.797Z",
+                           "uuid":  "01a02377-290b-710f-8c8b-3aa139487a13"
+                       },
+                       {
+                           "page_url":  "https://tripinupdate.net/",
+                           "domain":  "tripinupdate.net",
+                           "task_time":  "2026-08-21T08:03:18.403Z",
+                           "uuid":  "01a02358-645e-701a-a350-3f8c91b75f66"
+                       },
+                       {
+                           "page_url":  "https://tripinupdate.net/",
+                           "domain":  "tripinupdate.net",
+                           "task_time":  "2026-07-12T01:42:18.895Z",
+                           "uuid":  "019f53fc-dea6-759d-96ec-d8410e2a1ef9"
+                       }
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "domain:dondermicapp.net",
+        "total":  2,
+        "sha256":  "b386c64bb212d689a537c52d797f412cb40f5f0fdb66d891f7c1cc0ea37e1d39",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_domain_dondermicapp_2026-09-19T185337Z.json",
+        "sample":  [
+                       {
+                           "page_url":  "http://dondermicapp.net/",
+                           "domain":  "dondermicapp.net",
+                           "task_time":  "2026-08-27T08:52:20.203Z",
+                           "uuid":  "01a0426b-17c5-755d-8392-a9178378dec0"
+                       },
+                       {
+                           "page_url":  "http://dondermicapp.net/",
+                           "domain":  "dondermicapp.net",
+                           "task_time":  "2026-08-21T08:37:36.004Z",
+                           "uuid":  "01a02377-72d8-7644-ba4d-9a0a613321d1"
+                       }
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "domain:aroclenetapp.net",
+        "total":  3,
+        "sha256":  "f973ec4081923d44a0ac4b7a45919d7b264b391c3f04c1be08d6f96a9f5af4ad",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_domain_aroclenetapp_2026-09-19T185337Z.json",
+        "sample":  [
+                       {
+                           "page_url":  "http://aroclenetapp.net/",
+                           "domain":  "aroclenetapp.net",
+                           "task_time":  "2026-08-30T05:01:55.465Z",
+                           "uuid":  "01a0510b-3947-77a8-adaf-c2f80846bced"
+                       },
+                       {
+                           "page_url":  "http://aroclenetapp.net/",
+                           "domain":  "aroclenetapp.net",
+                           "task_time":  "2026-08-27T08:53:01.794Z",
+                           "uuid":  "01a0426b-bb57-778a-b10a-09137f5c53c7"
+                       },
+                       {
+                           "page_url":  "https://aroclenetapp.net/",
+                           "domain":  "aroclenetapp.net",
+                           "task_time":  "2026-08-21T08:37:59.951Z",
+                           "uuid":  "01a02378-1f98-7700-8478-d44f011f6c1d"
+                       }
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "\"filereserve.blob.core.windows.net\"",
+        "total":  3,
+        "sha256":  "4b5568c25ba27a2287121ff498de3a820519c0d7142077c7f885d3f13312852e",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_azure_filereserve_2026-09-19T185337Z.json",
+        "sample":  [
+                       {
+                           "page_url":  "https://filereserve.blob.core.windows.net/vgnghuyk/331331.msi",
+                           "domain":  "filereserve.blob.core.windows.net",
+                           "task_time":  "2026-09-11T03:53:39.281Z",
+                           "uuid":  "01a08e99-3395-700d-b1f3-c39158fe9bf0"
+                       },
+                       {
+                           "page_url":  "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi",
+                           "domain":  "filereserve.blob.core.windows.net",
+                           "task_time":  "2026-08-26T08:29:10.644Z",
+                           "uuid":  "01a03d2f-7d5b-76d9-838d-0f519a0e1b1a"
+                       },
+                       {
+                           "page_url":  "https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi",
+                           "domain":  "filereserve.blob.core.windows.net",
+                           "task_time":  "2026-08-22T00:30:05.323Z",
+                           "uuid":  "01a026df-71b7-761a-8c61-a8f41ca9ddcf"
+                       }
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "\"PowershellCleaner\"",
+        "total":  0,
+        "sha256":  "10e9aed707241e454503bb33bdd16cfb47b1c979a17ef11cc7791f46ed863abf",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_powershell_cleaner_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    },
+    {
+        "family":  "synkloader",
+        "query":  "\"PhishLocker\" SynkLoader",
+        "total":  0,
+        "sha256":  "a555136854878945cc098743b676aa16960ba4ab9ffe3b9c3a485195804f153a",
+        "out":  "evidence\\passive-observations\\urlscan\\synkloader\\urlscan_phishlocker_2026-09-19T185337Z.json",
+        "sample":  [
+
+                   ]
+    }
+]

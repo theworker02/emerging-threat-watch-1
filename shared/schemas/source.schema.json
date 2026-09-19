@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/source.schema.json",
+  "title": "SourceRecord",
+  "type": "object",
+  "required": ["source_id", "title", "url", "organization_or_author", "publication_date", "retrieval_date", "source_tier", "case_ids"],
+  "properties": {
+    "source_id": {"type": "string", "pattern": "^(RAP|SET|RAT|NRB|SHR)-SRC-[0-9]{4}$"},
+    "title": {"type": "string"},
+    "url": {"type": "string"},
+    "organization_or_author": {"type": "string"},
+    "publication_date": {"type": "string"},
+    "retrieval_date": {"type": "string"},
+    "source_tier": {"enum": ["PRIMARY", "VENDOR", "JOURNALISM", "SECONDARY", "SOCIAL", "PLATFORM"]},
+    "case_ids": {"type": "array", "items": {"enum": ["rapuncel", "settra", "rathat", "noderabbit", "landscape"]}},
+    "notes": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

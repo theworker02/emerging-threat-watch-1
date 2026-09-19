@@ -1,0 +1,199 @@
+{
+  "collected_utc": "2026-09-19T191134Z",
+  "queries": [
+    {
+      "id": "RAP-PO-0024",
+      "family": "Rapuncel",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/rapuncel/threatfox_Rapuncel_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SET-PO-0004",
+      "family": "Settra",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/settra/threatfox_Settra_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "RAT-PO-0019",
+      "family": "RatHat",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/rathat/threatfox_RatHat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "NRB-PO-0112",
+      "family": "NodeRabbit",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/noderabbit/threatfox_NodeRabbit_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "POL-PO-0006",
+      "family": "PollCat",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/pollcat/threatfox_PollCat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SYN-PO-0015",
+      "family": "SynkLoader",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/synkloader/threatfox_SynkLoader_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SHO-PO-0004",
+      "family": "Showboat",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/showboat/threatfox_Showboat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "CRU-PO-0001",
+      "family": "Cruciferra",
+      "service": "ThreatFox",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/cruciferra/threatfox_Cruciferra_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "RAP-PO-0025",
+      "family": "Rapuncel",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/rapuncel/malwarebazaar_Rapuncel_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SET-PO-0005",
+      "family": "Settra",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/settra/malwarebazaar_Settra_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "RAT-PO-0020",
+      "family": "RatHat",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/rathat/malwarebazaar_RatHat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "NRB-PO-0113",
+      "family": "NodeRabbit",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/noderabbit/malwarebazaar_NodeRabbit_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "POL-PO-0007",
+      "family": "PollCat",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/pollcat/malwarebazaar_PollCat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SYN-PO-0016",
+      "family": "SynkLoader",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/synkloader/malwarebazaar_SynkLoader_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SHO-PO-0005",
+      "family": "Showboat",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/showboat/malwarebazaar_Showboat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "CRU-PO-0002",
+      "family": "Cruciferra",
+      "service": "MalwareBazaar",
+      "status": 401,
+      "query_status": "AUTH_REQUIRED",
+      "path": "evidence/passive-observations/trackers/cruciferra/malwarebazaar_Cruciferra_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "RAP-PO-0026",
+      "family": "Rapuncel",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/rapuncel/urlhaus_Rapuncel_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SET-PO-0006",
+      "family": "Settra",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/settra/urlhaus_Settra_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "RAT-PO-0021",
+      "family": "RatHat",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/rathat/urlhaus_RatHat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "NRB-PO-0114",
+      "family": "NodeRabbit",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/noderabbit/urlhaus_NodeRabbit_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "POL-PO-0008",
+      "family": "PollCat",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/pollcat/urlhaus_PollCat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SYN-PO-0017",
+      "family": "SynkLoader",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/synkloader/urlhaus_SynkLoader_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "SHO-PO-0006",
+      "family": "Showboat",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/showboat/urlhaus_Showboat_2026-09-19T191134Z.json"
+    },
+    {
+      "id": "CRU-PO-0003",
+      "family": "Cruciferra",
+      "service": "URLhaus",
+      "status": null,
+      "query_status": "REQUEST_FAILED",
+      "path": "evidence/passive-observations/trackers/cruciferra/urlhaus_Cruciferra_2026-09-19T191134Z.json"
+    }
+  ],
+  "auth_blocked": true,
+  "hits": []
+}

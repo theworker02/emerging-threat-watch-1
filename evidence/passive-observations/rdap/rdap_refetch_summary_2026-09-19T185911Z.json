@@ -1,0 +1,365 @@
+{
+  "collected_utc": "2026-09-19T18:59:11Z",
+  "ts": "2026-09-19T185911Z",
+  "rathat": [
+    {
+      "domain": "adidasabc.com",
+      "http_status": 200,
+      "sha256": "1aa349b462144b17a940dd606bd7317d3324ccb8dea8a2192828e9df0d7ad5c0",
+      "bytes": 2567,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_adidasabc.com_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "ADIDASABC.COM",
+        "status": [
+          "client transfer prohibited"
+        ],
+        "registration": "2024-02-18T10:59:32Z",
+        "last_changed": "2026-07-26T05:52:08Z",
+        "nameservers": [
+          "GARRET.NS.CLOUDFLARE.COM",
+          "KENIA.NS.CLOUDFLARE.COM"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "xiongmaocs.help",
+      "http_status": 200,
+      "sha256": "a1ec6977cdb53f391c3ee2de7b05dcaaae3cbb27573f1d850c7a610aac6de0c3",
+      "bytes": 5040,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_xiongmaocs.help_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "xiongmaocs.help",
+        "status": [
+          "server transfer prohibited"
+        ],
+        "registration": "2026-08-03T14:24:00.0Z",
+        "last_changed": "2026-08-10T10:40:55.0Z",
+        "nameservers": [
+          "ns1.dnsowl.com",
+          "ns2.dnsowl.com",
+          "ns3.dnsowl.com"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "uuokxx.com",
+      "http_status": 200,
+      "sha256": "8d6add28290a1fb66e23e5ffed72ba128321f0f014ce96ffd4947a9c3fe9f3b0",
+      "bytes": 2542,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_uuokxx.com_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "UUOKXX.COM",
+        "status": [
+          "client transfer prohibited"
+        ],
+        "registration": "2026-07-30T16:44:46Z",
+        "last_changed": "2026-07-31T10:43:06Z",
+        "nameservers": [
+          "ALFRED.NS.CLOUDFLARE.COM",
+          "KATE.NS.CLOUDFLARE.COM"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "andxxxo.com",
+      "http_status": 200,
+      "sha256": "6ec2dc5e87d0b820efb0e60a7732d5934929e0e4ffb57c9ca11f3a65d2c9a6de",
+      "bytes": 2550,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_andxxxo.com_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "ANDXXXO.COM",
+        "status": [
+          "client transfer prohibited"
+        ],
+        "registration": "2026-07-30T16:44:46Z",
+        "last_changed": "2026-07-31T10:43:08Z",
+        "nameservers": [
+          "ALFRED.NS.CLOUDFLARE.COM",
+          "KATE.NS.CLOUDFLARE.COM"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "blackcat880.shop",
+      "http_status": 200,
+      "sha256": "f64a7a6aa6efd1811986147c5c37e1d678da8f6b4292af7dbf27ed80a8f2b2f1",
+      "bytes": 4172,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_blackcat880.shop_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "blackcat880.shop",
+        "status": [
+          "client hold",
+          "client transfer prohibited"
+        ],
+        "registration": "2025-10-23T07:41:48.0Z",
+        "last_changed": "2026-09-19T18:13:36.0Z",
+        "nameservers": [
+          "a.share-dns.com",
+          "b.share-dns.net"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "cheng770.cyou",
+      "http_status": 200,
+      "sha256": "f26e823aed7c7cd9e23a8d6b67fc956bcd17a85ba5f9e670c8ec64f7cf7effef",
+      "bytes": 4702,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_cheng770.cyou_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "cheng770.cyou",
+        "status": [
+          "client transfer prohibited"
+        ],
+        "registration": "2026-04-28T10:22:35.0Z",
+        "last_changed": "2026-05-03T10:27:16.0Z",
+        "nameservers": [
+          "a7.share-dns.com",
+          "b7.share-dns.net"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "xiongmaocs.mom",
+      "http_status": 200,
+      "sha256": "d30524b7a12a69a0bbb6557dae034b29c2a03f1867e2ad7c90ff90ae8466b9f8",
+      "bytes": 4723,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_xiongmaocs.mom_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "xiongmaocs.mom",
+        "status": [
+          "server transfer prohibited"
+        ],
+        "registration": "2026-08-03T14:23:59.0Z",
+        "last_changed": "2026-09-05T13:37:20.0Z",
+        "nameservers": [
+          "charles.ns.cloudflare.com",
+          "sneh.ns.cloudflare.com"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "xiongmaocs.pics",
+      "http_status": 200,
+      "sha256": "8009fd00210380c9097caa40d4ee9013f0b466ea7c135a905a30334ae850bf79",
+      "bytes": 5040,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_xiongmaocs.pics_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "xiongmaocs.pics",
+        "status": [
+          "server transfer prohibited"
+        ],
+        "registration": "2026-08-03T14:24:02.0Z",
+        "last_changed": "2026-08-10T10:40:55.0Z",
+        "nameservers": [
+          "ns1.dnsowl.com",
+          "ns2.dnsowl.com",
+          "ns3.dnsowl.com"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "fjbjwgyuyftg.qpon",
+      "http_status": 200,
+      "sha256": "8071849bf5d237df516dc28ad09da18e060cc6ec175aa3bd02e0b7afad03cfbe",
+      "bytes": 9430,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_fjbjwgyuyftg.qpon_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "fjbjwgyuyftg.qpon",
+        "status": [
+          "server transfer prohibited"
+        ],
+        "registration": "2026-08-15T16:00:40.0Z",
+        "last_changed": "2026-09-02T09:09:18.0Z",
+        "nameservers": [
+          "ns1.dnsowl.com",
+          "ns2.dnsowl.com",
+          "ns3.dnsowl.com"
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "niaotong2.top",
+      "http_status": 200,
+      "sha256": "bd01aaece6395cbbdacc3bc25606aed3ac4f058c54ebae65f334988f5ef6bafe",
+      "bytes": 6306,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_niaotong2.top_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "niaotong2.top",
+        "status": [
+          "active"
+        ],
+        "registration": "2026-04-25T14:14:32.0Z",
+        "last_changed": null,
+        "nameservers": [
+          "ns1.dnsowl.com.",
+          "ns3.dnsowl.com.",
+          "ns2.dnsowl.com."
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "heilongyk.top",
+      "http_status": 200,
+      "sha256": "b1817e041415546658e4f08a2b481afd31371ff04c8c7cb841719cb01c06c47a",
+      "bytes": 6140,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_heilongyk.top_2026-09-19T185911Z.json",
+      "parsed": {
+        "ldhName": "heilongyk.top",
+        "status": [
+          "client transfer prohibited"
+        ],
+        "registration": "2026-08-19T16:26:51.0Z",
+        "last_changed": "2026-08-23T02:13:59.0Z",
+        "nameservers": [
+          "keaton.ns.cloudflare.com.",
+          "lina.ns.cloudflare.com."
+        ],
+        "sha_preview": true
+      }
+    },
+    {
+      "domain": "gpgmk.com",
+      "http_status": 0,
+      "sha256": "94954fc32f6f68af4b82fbe84ba893ac0704cebab6bbeb791b254fc8c51619e4",
+      "bytes": 90,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_gpgmk.com_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/gpgmk.com"
+      }
+    },
+    {
+      "domain": "jrgdef.cn",
+      "http_status": 0,
+      "sha256": "3653286861dad8ae2e708f6268111b9414569665d3be7349e952476380d4e17c",
+      "bytes": 90,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_jrgdef.cn_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/jrgdef.cn"
+      }
+    },
+    {
+      "domain": "etlva.cn",
+      "http_status": 0,
+      "sha256": "1b8e2b113f8906a5d7de1a33423068532b0fd4af60de6d4c8efc9cbedd84badb",
+      "bytes": 89,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_etlva.cn_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/etlva.cn"
+      }
+    },
+    {
+      "domain": "terh5.cn",
+      "http_status": 0,
+      "sha256": "bc92b4803db895b0a88876edc2d19abc4dd61a4378b41d96944f11a74c65dbcf",
+      "bytes": 89,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_terh5.cn_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/terh5.cn"
+      }
+    },
+    {
+      "domain": "kingbss.com",
+      "http_status": 0,
+      "sha256": "f1e053deef008f10ddd3cf692e6a0cefc38bb8e96f0d917a491f8961b2902bf9",
+      "bytes": 92,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_kingbss.com_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/kingbss.com"
+      }
+    },
+    {
+      "domain": "tmgg01.top",
+      "http_status": 0,
+      "sha256": "dd632f9a5b93b7dfa65faf76720a9d3bb2028fd6955b417b775e366c5f81da58",
+      "bytes": 91,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_tmgg01.top_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/tmgg01.top"
+      }
+    },
+    {
+      "domain": "primevoria.com",
+      "http_status": 0,
+      "sha256": "4f841d812afd8f3ca6ec735baecdaf528d0835b0c8183c24cff09362436d8b5f",
+      "bytes": 95,
+      "path": "evidence\\passive-observations\\rdap\\rathat\\rdap_primevoria.com_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/primevoria.com"
+      }
+    }
+  ],
+  "synkloader": [
+    {
+      "domain": "neversoftmain.net",
+      "http_status": 0,
+      "sha256": "729b66e7a034c7e7b5bff6b9947086b8ef1addcbf0232e0e41c6ee237225e3ca",
+      "bytes": 98,
+      "path": "evidence\\passive-observations\\rdap\\synkloader\\rdap_neversoftmain.net_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/neversoftmain.net"
+      }
+    },
+    {
+      "domain": "rootfarmapp.net",
+      "http_status": 0,
+      "sha256": "6f74d2e5e504f4a8b9043fce90c0dbc599ad03ce332456a01a97bb0028917e4d",
+      "bytes": 96,
+      "path": "evidence\\passive-observations\\rdap\\synkloader\\rdap_rootfarmapp.net_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/rootfarmapp.net"
+      }
+    },
+    {
+      "domain": "tripinupdate.net",
+      "http_status": 0,
+      "sha256": "f317f7f011fa90939e2082629addc931d28529e438914a8e217832d33f0f451d",
+      "bytes": 97,
+      "path": "evidence\\passive-observations\\rdap\\synkloader\\rdap_tripinupdate.net_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/tripinupdate.net"
+      }
+    },
+    {
+      "domain": "dondermicapp.net",
+      "http_status": 0,
+      "sha256": "57ebd7426f477ae078e3ab60a992a6bade2320b8c5138374810527de9b5e6733",
+      "bytes": 97,
+      "path": "evidence\\passive-observations\\rdap\\synkloader\\rdap_dondermicapp.net_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/dondermicapp.net"
+      }
+    },
+    {
+      "domain": "aroclenetapp.net",
+      "http_status": 0,
+      "sha256": "a98911c84f8c86ab53875d6811e0d7e3ea18533044823203794aa556dabcef45",
+      "bytes": 97,
+      "path": "evidence\\passive-observations\\rdap\\synkloader\\rdap_aroclenetapp.net_2026-09-19T185911Z.json",
+      "parsed": {
+        "error": "HTTP Error 429: Too Many Requests",
+        "url": "https://rdap.org/domain/aroclenetapp.net"
+      }
+    }
+  ]
+}

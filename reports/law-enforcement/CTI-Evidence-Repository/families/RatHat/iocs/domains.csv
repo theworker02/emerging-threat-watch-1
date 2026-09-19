@@ -1,0 +1,36 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+filename,liblocal-service.so,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0001,Go agent | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+path,/data/local/tmp,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0002,staging path | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+filename,libmedia_codec.so,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0003,disguised FRP client | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+local_service,127.0.0.1:7910,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0004,Go agent HTTP | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/node/register,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0005,C2 register | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/data/credentials,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0006,credential exfil | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/adbk/upload,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0007,ADB cert/key upload | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/adbk/port,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0008,ADB port reporting | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/data/cipher,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0009,PIN/pattern/password | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/tun/config,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0010,FRP config | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/v2/dev/tasks,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0013,agent command queue | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/v2/dev/localServiceHeartbeat,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0014,agent heartbeat | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+uri_path,/api/v2/dev/data/screen-monitor,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0015,shell screen monitor | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+path,/dev/input,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,RAT-IND-0017,kernel input nodes | Architectural IOC — no SHA-256 in parsed article body. NOT OBSERVED by ETW.
+filename,locateValues.json,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,RAT-IND-0018,Keypad geometry artifact | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,fegrs.adidasabc.com,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0020,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,admin.xiongmaocs.help,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0021,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,oop.uuokxx.com,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0022,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,andxxxo.com,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0023,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,www.blackcat880.shop,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0024,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,www.cheng770.cyou,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0025,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,admin.xiongmaocs.mom,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0026,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,admin.xiongmaocs.pics,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0027,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,admin.fjbjwgyuyftg.qpon,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0028,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,admin.niaotong2.top,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0029,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,www.heilongyk.top,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0030,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,cz.gpgmk.com,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0031,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,cunzhang.jrgdef.cn,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0032,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,bc.etlva.cn,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0033,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,jiaozhu.etlva.cn,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0034,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,mao.terh5.cn,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0035,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,kingbss.com,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0036,From Zimperium phishing.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,app.tmgg01.top,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0037,From Zimperium phishing.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+domain,primevoria.com,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0038,From Zimperium phishing.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+url,https://x14hidgz0ez.s3.ap-south-1.amazonaws.com/Xr9HBk23fX.apk,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0039,Phishing APK URL — do not download | UNVERIFIED pending passive checks where applicable. NOT malware download.

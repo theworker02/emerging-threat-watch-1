@@ -1,0 +1,1 @@
+{"Status":2,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"114.65.5.193.in-addr.arpa","type":12}],"Comment":["EDE(22): No Reachable Authority at delegation 65.5.193.in-addr.arpa.","EDE(23): Network Error 45.94.45.3:53 returned REFUSED for 114.65.5.193.in-addr.arpa PTR"]}

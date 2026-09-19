@@ -1,0 +1,272 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "tripinupdate.net"
+        },
+        "page": {
+          "url": "tripinupdate.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "time": "2026-08-27T08:51:22.314Z",
+        "uuid": "01a0426a-9443-73da-ae5b-002b03e25526",
+        "url": "http://tripinupdate.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "redirected": "https-only",
+        "ip": "216.245.184.14",
+        "apexDomainAgeDays": 55,
+        "mimeType": "text/plain",
+        "url": "https://tripinupdate.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 31,
+        "domainAgeDays": 55,
+        "tlsValidFrom": "2026-07-27T05:47:01.000Z",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a0426a-9443-73da-ae5b-002b03e25526",
+      "_score": null,
+      "sort": [
+        1787820682314,
+        "01a0426a-9443-73da-ae5b-002b03e25526"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0426a-9443-73da-ae5b-002b03e25526/",
+      "screenshot": "https://urlscan.io/screenshots/01a0426a-9443-73da-ae5b-002b03e25526.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "tripinupdate.net"
+        },
+        "page": {
+          "url": "tripinupdate.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "time": "2026-08-26T02:16:49.684Z",
+        "uuid": "01a03bda-f6ce-7776-b1de-96d8a55e03c4",
+        "url": "https://tripinupdate.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "ip": "216.245.184.14",
+        "apexDomainAgeDays": 54,
+        "mimeType": "text/plain",
+        "url": "https://tripinupdate.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 29,
+        "domainAgeDays": 54,
+        "tlsValidFrom": "2026-07-27T05:47:01.000Z",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a03bda-f6ce-7776-b1de-96d8a55e03c4",
+      "_score": null,
+      "sort": [
+        1787710609684,
+        "01a03bda-f6ce-7776-b1de-96d8a55e03c4"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a03bda-f6ce-7776-b1de-96d8a55e03c4/",
+      "screenshot": "https://urlscan.io/screenshots/01a03bda-f6ce-7776-b1de-96d8a55e03c4.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "tripinupdate.net"
+        },
+        "page": {
+          "url": "tripinupdate.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "time": "2026-08-21T08:36:52.797Z",
+        "uuid": "01a02377-290b-710f-8c8b-3aa139487a13",
+        "url": "http://tripinupdate.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "redirected": "https-only",
+        "ip": "216.245.184.14",
+        "apexDomainAgeDays": 49,
+        "mimeType": "text/plain",
+        "url": "https://tripinupdate.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 25,
+        "domainAgeDays": 49,
+        "tlsValidFrom": "2026-07-27T05:47:01.000Z",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a02377-290b-710f-8c8b-3aa139487a13",
+      "_score": null,
+      "sort": [
+        1787301412797,
+        "01a02377-290b-710f-8c8b-3aa139487a13"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a02377-290b-710f-8c8b-3aa139487a13/",
+      "screenshot": "https://urlscan.io/screenshots/01a02377-290b-710f-8c8b-3aa139487a13.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "tripinupdate.net"
+        },
+        "page": {
+          "url": "tripinupdate.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "time": "2026-08-21T08:03:18.403Z",
+        "uuid": "01a02358-645e-701a-a350-3f8c91b75f66",
+        "url": "http://tripinupdate.net/",
+        "tags": [
+          "hybridanalysis"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "redirected": "https-only",
+        "ip": "216.245.184.14",
+        "apexDomainAgeDays": 49,
+        "mimeType": "text/plain",
+        "url": "https://tripinupdate.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 25,
+        "domainAgeDays": 49,
+        "tlsValidFrom": "2026-07-27T05:47:01.000Z",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a02358-645e-701a-a350-3f8c91b75f66",
+      "_score": null,
+      "sort": [
+        1787299398403,
+        "01a02358-645e-701a-a350-3f8c91b75f66"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a02358-645e-701a-a350-3f8c91b75f66/",
+      "screenshot": "https://urlscan.io/screenshots/01a02358-645e-701a-a350-3f8c91b75f66.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "tripinupdate.net"
+        },
+        "page": {
+          "url": "tripinupdate.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "tripinupdate.net",
+        "apexDomain": "tripinupdate.net",
+        "time": "2026-07-12T01:42:18.895Z",
+        "uuid": "019f53fc-dea6-759d-96ec-d8410e2a1ef9",
+        "url": "https://tripinupdate.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 0,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "page": {
+        "domainAgeDays": 9,
+        "domain": "tripinupdate.net",
+        "apexDomainAgeDays": 9,
+        "apexDomain": "tripinupdate.net",
+        "url": "https://tripinupdate.net/"
+      },
+      "labels": [],
+      "_id": "019f53fc-dea6-759d-96ec-d8410e2a1ef9",
+      "_score": null,
+      "sort": [
+        1783820538895,
+        "019f53fc-dea6-759d-96ec-d8410e2a1ef9"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019f53fc-dea6-759d-96ec-d8410e2a1ef9/",
+      "screenshot": "https://urlscan.io/screenshots/019f53fc-dea6-759d-96ec-d8410e2a1ef9.png"
+    }
+  ],
+  "total": 5,
+  "took": 303,
+  "has_more": false
+}

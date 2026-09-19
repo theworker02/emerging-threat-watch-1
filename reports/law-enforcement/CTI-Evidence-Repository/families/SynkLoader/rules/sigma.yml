@@ -1,0 +1,13 @@
+title: ETW Placeholder — Do Not Deploy
+id: 00000000-0000-0000-0000-000000000000
+status: experimental
+description: Placeholder Sigma rule. Replace with validated detections before SIEM use.
+logsource:
+    product: windows
+detection:
+    selection:
+        EventID: 0
+    condition: selection
+falsepositives:
+    - Placeholder never matches
+level: informational

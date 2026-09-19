@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/evidence.schema.json",
+  "title": "EvidenceRecord",
+  "type": "object",
+  "required": ["evidence_id", "date_collected", "collector", "evidence_type", "description", "provenance", "confidence", "independently_verified"],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^(RAP|SET|RAT|NRB)-EV-[0-9]{4}$"},
+    "date_collected": {"type": "string", "format": "date"},
+    "time_collected_utc": {"type": "string"},
+    "collector": {"type": "string"},
+    "evidence_type": {"type": "string"},
+    "indicator_type": {"type": ["string", "null"]},
+    "value": {"type": ["string", "null"]},
+    "description": {"type": "string"},
+    "source": {"type": ["string", "null"]},
+    "source_url": {"type": ["string", "null"]},
+    "source_author": {"type": ["string", "null"]},
+    "publication_date": {"type": ["string", "null"]},
+    "retrieval_date": {"type": ["string", "null"]},
+    "provenance": {"enum": ["OBSERVED", "PRIMARY-SOURCE", "CORROBORATED", "SECONDARY", "INFERRED", "UNVERIFIED", "CONTRADICTED"]},
+    "confidence": {"enum": ["High", "Moderate", "Low"]},
+    "first_seen": {"type": ["string", "null"]},
+    "last_seen": {"type": ["string", "null"]},
+    "independently_verified": {"type": "boolean"},
+    "verification_method": {"type": ["string", "null"]},
+    "related_evidence": {"type": ["string", "null"]},
+    "notes": {"type": ["string", "null"]},
+    "case_id": {"enum": ["rapuncel", "settra", "rathat", "noderabbit"]}
+  },
+  "additionalProperties": false
+}

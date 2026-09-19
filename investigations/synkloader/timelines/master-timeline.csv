@@ -1,0 +1,4 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+SYN-TL-0001,2026-07-28T00:00:00Z,vendor_reported,Expel reports compile/distribution around late July 2026,Expel,PRIMARY-SOURCE,Moderate,SYN-EV-0001
+SYN-TL-0002,2026-08-01T00:00:00Z,disclosure,Expel publishes SynkLoader research (Aug 2026 window),Expel,PRIMARY-SOURCE,High,SYN-EV-0001
+SYN-TL-0003,2026-09-19T20:00:00Z,etw_phase1,ETW Phase 1 SynkLoader package stub opened,ETW,OBSERVED,High,

@@ -1,0 +1,66 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "kingbss.com"
+        },
+        "page": {
+          "url": "kingbss.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "kingbss.com",
+        "apexDomain": "kingbss.com",
+        "time": "2026-09-18T14:40:27.857Z",
+        "uuid": "01a0b4f6-0080-72af-a930-5aaa30591aa4",
+        "url": "http://kingbss.com/",
+        "tags": [
+          "demotag1"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 109036,
+        "encodedDataLength": 91864,
+        "requests": 3
+      },
+      "page": {
+        "server": "cloudflare",
+        "redirected": "https-only",
+        "ip": "188.114.97.3",
+        "apexDomainAgeDays": 49,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Nexus One - Download & Install",
+        "url": "https://kingbss.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 49,
+        "domainAgeDays": 49,
+        "tlsValidFrom": "2026-07-31T09:53:01.000Z",
+        "domain": "kingbss.com",
+        "apexDomain": "kingbss.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "01a0b4f6-0080-72af-a930-5aaa30591aa4",
+      "_score": null,
+      "sort": [
+        1789742427857,
+        "01a0b4f6-0080-72af-a930-5aaa30591aa4"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0b4f6-0080-72af-a930-5aaa30591aa4/",
+      "screenshot": "https://urlscan.io/screenshots/01a0b4f6-0080-72af-a930-5aaa30591aa4.png"
+    }
+  ],
+  "total": 1,
+  "took": 357,
+  "has_more": false
+}

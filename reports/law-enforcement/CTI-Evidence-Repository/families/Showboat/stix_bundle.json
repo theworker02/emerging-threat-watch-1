@@ -1,0 +1,569 @@
+{
+    "type": "bundle",
+    "id": "bundle--70e3cbfb-6693-4352-95f7-2b2ec5614c05",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--b601cf35-bc05-4e90-ab4c-a3ac05d890e6",
+            "created": "2026-09-19T19:25:40.179289Z",
+            "modified": "2026-09-19T19:25:40.179289Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac",
+            "created": "2026-09-19T19:25:40.179422Z",
+            "modified": "2026-09-19T19:25:40.179422Z",
+            "name": "Showboat",
+            "description": "ETW family Showboat. Author attribution NOT_ESTABLISHED. Case-isolated.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7c28d94b-5b36-4b66-92a4-38405225a451",
+            "created": "2026-09-19T19:25:40.179507Z",
+            "modified": "2026-09-19T19:25:40.179507Z",
+            "name": "Showboat domain telecom.webredirect.org",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'telecom.webredirect.org']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9fc0c4cf-228a-4f65-919a-cb00d97446d7",
+            "created": "2026-09-19T19:25:40.179884Z",
+            "modified": "2026-09-19T19:25:40.179884Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7c28d94b-5b36-4b66-92a4-38405225a451",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8100027d-d725-4494-a59b-e8843de90ba2",
+            "created": "2026-09-19T19:25:40.179975Z",
+            "modified": "2026-09-19T19:25:40.179975Z",
+            "name": "Showboat ip 139.84.227.139",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '139.84.227.139']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--180b9c4f-ac0e-43d4-9133-69db131b7cbc",
+            "created": "2026-09-19T19:25:40.180206Z",
+            "modified": "2026-09-19T19:25:40.180206Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8100027d-d725-4494-a59b-e8843de90ba2",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--482fec1f-fbd9-4f41-9464-14dd3427cb15",
+            "created": "2026-09-19T19:25:40.180276Z",
+            "modified": "2026-09-19T19:25:40.180276Z",
+            "name": "Showboat ip 194.135.25.132",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '194.135.25.132']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--83a721b4-72b5-4c0e-ab35-65dc2107579a",
+            "created": "2026-09-19T19:25:40.180482Z",
+            "modified": "2026-09-19T19:25:40.180482Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--482fec1f-fbd9-4f41-9464-14dd3427cb15",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--520cd75c-9e68-4a29-9cb0-e934de0adad2",
+            "created": "2026-09-19T19:25:40.180546Z",
+            "modified": "2026-09-19T19:25:40.180546Z",
+            "name": "Showboat domain singtelcom.site",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'singtelcom.site']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--289f1679-67a5-4c9d-bc65-e99e3629e0d7",
+            "created": "2026-09-19T19:25:40.180831Z",
+            "modified": "2026-09-19T19:25:40.180831Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--520cd75c-9e68-4a29-9cb0-e934de0adad2",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5526ff28-5917-4b95-9680-102a7e0b5b72",
+            "created": "2026-09-19T19:25:40.18094Z",
+            "modified": "2026-09-19T19:25:40.18094Z",
+            "name": "Showboat ip 23.27.201.160",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '23.27.201.160']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6bc5e779-3d56-4fbf-92c3-0d3de473bbfe",
+            "created": "2026-09-19T19:25:40.181171Z",
+            "modified": "2026-09-19T19:25:40.181171Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5526ff28-5917-4b95-9680-102a7e0b5b72",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e3894904-d8ae-4cf0-9985-d4415bc66cf6",
+            "created": "2026-09-19T19:25:40.181241Z",
+            "modified": "2026-09-19T19:25:40.181241Z",
+            "name": "Showboat domain kaztelecom.shop",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'kaztelecom.shop']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--be7375b7-cc7c-4a52-addd-b7b8788f25cb",
+            "created": "2026-09-19T19:25:40.181457Z",
+            "modified": "2026-09-19T19:25:40.181457Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e3894904-d8ae-4cf0-9985-d4415bc66cf6",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--589c3d30-dfa7-4a69-9c4b-758b3e7f3847",
+            "created": "2026-09-19T19:25:40.181522Z",
+            "modified": "2026-09-19T19:25:40.181522Z",
+            "name": "Showboat ip 101.36.105.222",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '101.36.105.222']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6d17c645-494f-4c7a-bc5c-a14c997942f7",
+            "created": "2026-09-19T19:25:40.181722Z",
+            "modified": "2026-09-19T19:25:40.181722Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--589c3d30-dfa7-4a69-9c4b-758b3e7f3847",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fbc75054-648c-430c-85da-3de55be26e89",
+            "created": "2026-09-19T19:25:40.181786Z",
+            "modified": "2026-09-19T19:25:40.181786Z",
+            "name": "Showboat sha256 d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'd6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4b0b036b-eb5d-4249-8262-48723afce75f",
+            "created": "2026-09-19T19:25:40.182043Z",
+            "modified": "2026-09-19T19:25:40.182043Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fbc75054-648c-430c-85da-3de55be26e89",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8f8f26b2-b26a-48bc-a3cc-1aad8ca7737e",
+            "created": "2026-09-19T19:25:40.182106Z",
+            "modified": "2026-09-19T19:25:40.182106Z",
+            "name": "Showboat sha256 8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0186e0f5-7fae-4926-831e-fc6e1f078223",
+            "created": "2026-09-19T19:25:40.182343Z",
+            "modified": "2026-09-19T19:25:40.182343Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8f8f26b2-b26a-48bc-a3cc-1aad8ca7737e",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7d6ff0c8-090d-4c82-a000-2f095a2ca483",
+            "created": "2026-09-19T19:25:40.182413Z",
+            "modified": "2026-09-19T19:25:40.182413Z",
+            "name": "Showboat sha256 253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3ec1c0a3-a70e-45d6-a0a8-d980ae191efd",
+            "created": "2026-09-19T19:25:40.182654Z",
+            "modified": "2026-09-19T19:25:40.182654Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7d6ff0c8-090d-4c82-a000-2f095a2ca483",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--661fee2a-1d9b-4390-9181-55843ef09160",
+            "created": "2026-09-19T19:25:40.182716Z",
+            "modified": "2026-09-19T19:25:40.182716Z",
+            "name": "Showboat ip 103.10.145.129",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '103.10.145.129']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8de27377-bf32-4663-a42b-a58ea2553678",
+            "created": "2026-09-19T19:25:40.182914Z",
+            "modified": "2026-09-19T19:25:40.182914Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--661fee2a-1d9b-4390-9181-55843ef09160",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--115ee26a-7835-44e7-a5e8-17ae78503d3b",
+            "created": "2026-09-19T19:25:40.182975Z",
+            "modified": "2026-09-19T19:25:40.182975Z",
+            "name": "Showboat ip 114.116.239.178",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '114.116.239.178']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0003b035-b891-4f13-80a1-086f22b592b6",
+            "created": "2026-09-19T19:25:40.183169Z",
+            "modified": "2026-09-19T19:25:40.183169Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--115ee26a-7835-44e7-a5e8-17ae78503d3b",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--8fe81934-5713-4966-a371-28a968a6049c",
+            "created": "2026-09-19T19:25:40.18323Z",
+            "modified": "2026-09-19T19:25:40.18323Z",
+            "name": "Showboat ip 192.9.141.111",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '192.9.141.111']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c6607a2e-7249-408c-bcf7-d95a70361028",
+            "created": "2026-09-19T19:25:40.183423Z",
+            "modified": "2026-09-19T19:25:40.183423Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--8fe81934-5713-4966-a371-28a968a6049c",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--15658e95-c578-468e-9c31-fba1335bd4ee",
+            "created": "2026-09-19T19:25:40.183484Z",
+            "modified": "2026-09-19T19:25:40.183484Z",
+            "name": "Showboat ip 64.176.43.209",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '64.176.43.209']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--aa6f6f77-48fc-4ec0-9438-c5403d3d0080",
+            "created": "2026-09-19T19:25:40.183678Z",
+            "modified": "2026-09-19T19:25:40.183678Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--15658e95-c578-468e-9c31-fba1335bd4ee",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1865a61c-5948-43b0-9613-ce3d3a79cbcc",
+            "created": "2026-09-19T19:25:40.183739Z",
+            "modified": "2026-09-19T19:25:40.183739Z",
+            "name": "Showboat ip 116.169.244.208",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '116.169.244.208']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--39b1e656-84e3-4de3-a87c-7378cd7b1cc8",
+            "created": "2026-09-19T19:25:40.183935Z",
+            "modified": "2026-09-19T19:25:40.183935Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1865a61c-5948-43b0-9613-ce3d3a79cbcc",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--93bfc5a1-f533-4a25-995e-330617c30ac9",
+            "created": "2026-09-19T19:25:40.183995Z",
+            "modified": "2026-09-19T19:25:40.183995Z",
+            "name": "Showboat ip 45.76.157.243",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '45.76.157.243']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--15c2795b-cf97-4fd9-9bee-ff1026e7fb5d",
+            "created": "2026-09-19T19:25:40.184189Z",
+            "modified": "2026-09-19T19:25:40.184189Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--93bfc5a1-f533-4a25-995e-330617c30ac9",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d8831d51-8e89-42fe-8d4c-3eae2ffb5bd8",
+            "created": "2026-09-19T19:25:40.184248Z",
+            "modified": "2026-09-19T19:25:40.184248Z",
+            "name": "Showboat ip 139.84.135.190",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '139.84.135.190']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6cdf5850-6b48-47f7-b0b4-9d03751ed7d2",
+            "created": "2026-09-19T19:25:40.184446Z",
+            "modified": "2026-09-19T19:25:40.184446Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d8831d51-8e89-42fe-8d4c-3eae2ffb5bd8",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--470877b7-1fa2-467f-84ea-44b45e9dd80e",
+            "created": "2026-09-19T19:25:40.184508Z",
+            "modified": "2026-09-19T19:25:40.184508Z",
+            "name": "Showboat ip 139.180.223.193",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '139.180.223.193']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7b7ca702-851e-4a8f-8f6e-0f33cac74d36",
+            "created": "2026-09-19T19:25:40.184707Z",
+            "modified": "2026-09-19T19:25:40.184707Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--470877b7-1fa2-467f-84ea-44b45e9dd80e",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7c8b092c-a23a-4d7f-bb66-72f188461fc4",
+            "created": "2026-09-19T19:25:40.184768Z",
+            "modified": "2026-09-19T19:25:40.184768Z",
+            "name": "Showboat ip 152.32.159.11",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '152.32.159.11']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6d01da68-5124-43f6-8b58-76a321ac2488",
+            "created": "2026-09-19T19:25:40.184965Z",
+            "modified": "2026-09-19T19:25:40.184965Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7c8b092c-a23a-4d7f-bb66-72f188461fc4",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--17eb6a83-a0af-42e9-8c51-b6d2fa8834f3",
+            "created": "2026-09-19T19:25:40.185024Z",
+            "modified": "2026-09-19T19:25:40.185024Z",
+            "name": "Showboat ip 38.246.73.120",
+            "description": "evidence_id=None; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '38.246.73.120']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d7a515c6-5ca2-402d-b517-81cbe4192eea",
+            "created": "2026-09-19T19:25:40.185425Z",
+            "modified": "2026-09-19T19:25:40.185425Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--17eb6a83-a0af-42e9-8c51-b6d2fa8834f3",
+            "target_ref": "malware--2e206ac9-5a0a-49b9-8351-797d443d07ac"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+795e053a990a1569ffdcb57f48f6d085,md5,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,RankChallenge-react-6uJSX3-main.zip,pollcat
+sahi-finance.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 register #1,pollcat
+gamebarappinformation.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #2,pollcat
+gamebarapp.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #3,pollcat
+lifespotify.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP lure domain,pollcat
+https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate,url,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP validate; do not probe,pollcat

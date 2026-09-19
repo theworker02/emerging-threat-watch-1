@@ -1,0 +1,13 @@
+{
+  "collected_utc": "2026-09-19T191134Z",
+  "collection_mechanism": "HTTP POST URLhaus public API (no Auth-Key)",
+  "originating_service": "URLhaus",
+  "original_query": "Settra",
+  "http_status": null,
+  "family": "Settra",
+  "response": {
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>",
+    "error2": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)>"
+  },
+  "notes": "Passive tag/payload_tag query. Empty/no_result is valid NEGATIVE SEARCH RESULT."
+}

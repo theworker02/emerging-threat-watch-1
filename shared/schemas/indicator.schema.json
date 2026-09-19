@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/indicator.schema.json",
+  "title": "IndicatorRecord",
+  "type": "object",
+  "required": ["value", "type", "source", "confidence", "status", "case_id"],
+  "properties": {
+    "value": {"type": "string"},
+    "type": {"type": "string"},
+    "first_seen": {"type": ["string", "null"]},
+    "last_seen": {"type": ["string", "null"]},
+    "source": {"type": "string"},
+    "confidence": {"enum": ["High", "Moderate", "Low"]},
+    "campaign_association": {"type": ["string", "null"]},
+    "status": {"enum": ["HIGH CONFIDENCE MALICIOUS", "CAMPAIGN ASSOCIATED", "SUSPICIOUS", "HISTORICAL", "UNVERIFIED"]},
+    "notes": {"type": ["string", "null"]},
+    "case_id": {"enum": ["rapuncel", "settra", "rathat", "noderabbit"]},
+    "cross_case_link_evidence_id": {"type": ["string", "null"], "description": "Required only if this indicator is asserted to connect cases"}
+  },
+  "additionalProperties": false
+}

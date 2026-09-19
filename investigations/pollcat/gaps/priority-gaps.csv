@@ -1,0 +1,8 @@
+priority,family,gap,why_crucial,status
+P0,PollCat,Expand secondary/primary corpus beyond Securelist,Extremely sparse public research,PARTIAL — CyberVeille FR + PolySwarm co-coverage; still thin
+P0,PollCat,Transcribe PollCat IOCs from Securelist into POL-IND rows,Separate from NodeRabbit IND corpus,CLOSED — POL-IND-0001..0015 written 2026-09-19
+P1,PollCat,Lineage vs NodeRabbit (parallel/generation/payload/co-deploy),CRITICAL; default non-authorship,PARTIAL — lineage note updated; MiniFast path stronger than NodeRabbit code reuse
+P1,PollCat,Passive CT/pDNS for PollCat-only hosts,Do not auto-seed NodeRabbit pivots,PARTIAL — lifespotify CT=47; sahi-finance CT flaky; Azure gamebar CT=0
+P1,PollCat,Resolve RankChallenge MD5 to SHA-256,Sample correlation,OPEN — MalwareBazaar 401; OpenTIP no SHA-256
+P2,PollCat,NightLedger context without lineage transfer,Ops attribution ≠ implant equivalence,PARTIAL — July article mined for chronology only
+P2,PollCat,GitHub public code hits for requireObjects/NetSync/harsh.plist,Leakage hunt,CLOSED negative — logged-out result_count=0

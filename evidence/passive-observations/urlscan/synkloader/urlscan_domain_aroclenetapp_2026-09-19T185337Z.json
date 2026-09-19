@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "aroclenetapp.net"
+        },
+        "page": {
+          "url": "aroclenetapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "aroclenetapp.net",
+        "apexDomain": "aroclenetapp.net",
+        "time": "2026-08-30T05:01:55.465Z",
+        "uuid": "01a0510b-3947-77a8-adaf-c2f80846bced",
+        "url": "http://aroclenetapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 0,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "page": {
+        "domainAgeDays": 31,
+        "domain": "aroclenetapp.net",
+        "apexDomainAgeDays": 31,
+        "apexDomain": "aroclenetapp.net",
+        "url": "http://aroclenetapp.net/"
+      },
+      "labels": [],
+      "_id": "01a0510b-3947-77a8-adaf-c2f80846bced",
+      "_score": null,
+      "sort": [
+        1788066115465,
+        "01a0510b-3947-77a8-adaf-c2f80846bced"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0510b-3947-77a8-adaf-c2f80846bced/",
+      "screenshot": "https://urlscan.io/screenshots/01a0510b-3947-77a8-adaf-c2f80846bced.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "aroclenetapp.net"
+        },
+        "page": {
+          "url": "aroclenetapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "aroclenetapp.net",
+        "apexDomain": "aroclenetapp.net",
+        "time": "2026-08-27T08:53:01.794Z",
+        "uuid": "01a0426b-bb57-778a-b10a-09137f5c53c7",
+        "url": "http://aroclenetapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 0,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "page": {
+        "domainAgeDays": 28,
+        "domain": "aroclenetapp.net",
+        "apexDomainAgeDays": 28,
+        "apexDomain": "aroclenetapp.net",
+        "url": "http://aroclenetapp.net/"
+      },
+      "labels": [],
+      "_id": "01a0426b-bb57-778a-b10a-09137f5c53c7",
+      "_score": null,
+      "sort": [
+        1787820781794,
+        "01a0426b-bb57-778a-b10a-09137f5c53c7"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0426b-bb57-778a-b10a-09137f5c53c7/",
+      "screenshot": "https://urlscan.io/screenshots/01a0426b-bb57-778a-b10a-09137f5c53c7.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "aroclenetapp.net"
+        },
+        "page": {
+          "url": "aroclenetapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "aroclenetapp.net",
+        "apexDomain": "aroclenetapp.net",
+        "time": "2026-08-21T08:37:59.951Z",
+        "uuid": "01a02378-1f98-7700-8478-d44f011f6c1d",
+        "url": "http://aroclenetapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "redirected": "https-only",
+        "ip": "64.94.85.67",
+        "apexDomainAgeDays": 22,
+        "mimeType": "text/plain",
+        "url": "https://aroclenetapp.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 16,
+        "domainAgeDays": 22,
+        "tlsValidFrom": "2026-08-04T17:05:45.000Z",
+        "domain": "aroclenetapp.net",
+        "apexDomain": "aroclenetapp.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR2",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a02378-1f98-7700-8478-d44f011f6c1d",
+      "_score": null,
+      "sort": [
+        1787301479951,
+        "01a02378-1f98-7700-8478-d44f011f6c1d"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a02378-1f98-7700-8478-d44f011f6c1d/",
+      "screenshot": "https://urlscan.io/screenshots/01a02378-1f98-7700-8478-d44f011f6c1d.png"
+    }
+  ],
+  "total": 3,
+  "took": 937,
+  "has_more": false
+}

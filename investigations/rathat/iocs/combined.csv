@@ -1,0 +1,6 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+liblocal-service.so,filename,,,Zimperium,High,rathat,CAMPAIGN ASSOCIATED,Go agent disguise name,rathat
+libmedia_codec.so,filename,,,Zimperium/THN,High,rathat,CAMPAIGN ASSOCIATED,FRP client disguise name,rathat
+/data/local/tmp,path,,,Zimperium,Moderate,rathat,SUSPICIOUS,Staging directory for native components — not unique to malware,rathat
+svc_config.html,filename,,,Zimperium,Moderate,rathat,CAMPAIGN ASSOCIATED,Accessibility lure HTML,rathat
+server_config.json,filename,,,Zimperium,Moderate,rathat,CAMPAIGN ASSOCIATED,Dynamic branding config,rathat

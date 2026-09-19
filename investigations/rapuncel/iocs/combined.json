@@ -1,0 +1,4 @@
+[
+  {"value": "2.26.126.50", "type": "ip", "status": "CAMPAIGN ASSOCIATED", "case_id": "rapuncel", "confidence": "Moderate", "provenance_note": "Secondary relay of primary research"},
+  {"value": "albinofennel.com", "type": "domain", "status": "CAMPAIGN ASSOCIATED", "case_id": "rapuncel", "confidence": "Moderate", "provenance_note": "Secondary relay of primary research"}
+]

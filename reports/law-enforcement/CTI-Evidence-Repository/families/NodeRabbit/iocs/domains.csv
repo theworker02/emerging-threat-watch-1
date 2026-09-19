@@ -1,0 +1,29 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+domain,plugplay.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,rgbteller.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,wslwebui.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,visitfinancedentists.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,kyrasey-f8hfexa5cqamh7fk.westeurope-01.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,healthcomfsdpower.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,naturalapplication.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,retaildemo.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,tubitak.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,crossdwm.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,wdisystem.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,wslmenus.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,dnshnsdev.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,hpjumpsrv.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,storview.azurewebsites.net,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,msmanagementgrp.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,msmanagementgrpmedia.com,unspecified,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,,Azure/Cloudflare-backed C2 context. Shared cloud IP != actor-owned. agent:servers makes lists perishable. NOT OBSERVED by ETW. Alias NOD-EV in seed pass.
+domain,healthful-hub.com,2026-07-03,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Kaspersky pattern-based additional Mirage Kitten asset (NameCheap). Not sample-bound to NodeRabbit implant. NOT OBSERVED ownership.
+domain,neumedicahealthcare.com,2026-07-03,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset. ASSOCIATION_ONLY until sample linkage.
+domain,optimumhealthcredit.com,2026-07-03,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,healthfullyrecipes.com,2026-06-30,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,refreshhealthandwellness.com,2026-06-09,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,healthvitalitycare.com,2026-05-18,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,aceofspadesmanagement.com,2026-05-18,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,glmediaagency.com,2026-05-18,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,digimediaskill.com,2026-05-18,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,healthyweightplan.com,2026-05-18,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.
+domain,mens-health-online.com,2026-05-15,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,,Pattern-based additional asset.

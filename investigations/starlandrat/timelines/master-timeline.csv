@@ -1,0 +1,2 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+STR-TL-0001,unspecified,candidate_catalog,"StarlandRAT listed in docs/CANDIDATE_FAMILIES.md",ETW candidate pipeline,INTERNAL,Low,STR-EV-0000

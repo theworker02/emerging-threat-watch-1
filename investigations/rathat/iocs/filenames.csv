@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+liblocal-service.so,filename,,,Zimperium,High,rathat,CAMPAIGN ASSOCIATED,,rathat
+libmedia_codec.so,filename,,,Zimperium/THN,High,rathat,CAMPAIGN ASSOCIATED,,rathat
+svc_config.html,filename,,,Zimperium,Moderate,rathat,CAMPAIGN ASSOCIATED,,rathat
+server_config.json,filename,,,Zimperium,Moderate,rathat,CAMPAIGN ASSOCIATED,,rathat

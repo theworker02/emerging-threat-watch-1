@@ -1,0 +1,9 @@
+﻿priority,family,gap,why_crucial,status
+P0,Showboat,Archive Lumen/BLL primary HTML locally,Primary freeze incomplete without bytes,OPEN
+P0,Showboat,Clarify historical activity >=2022 vs disclosure date,Intel dating gap,OPEN
+P0,Showboat,Extract published IOCs into SHO-IND rows,BLL Showboat_IOCs.txt IPv4 set in SHO-IND; staging strings added SHO-IND-0023..0026,PARTIAL
+P1,Showboat,Linux post-ex detection hypotheses (UNVALIDATED),Telecom Linux surface,OPEN
+P1,Showboat,Locate attacker Pastebin raw URL for ukpkmkk.c,OBSERVED_PASSIVE paste retrieval,OPEN
+P2,Showboat,Picus secondary freeze for ukpkmkk.c / ld.so.preload strings,Defense depth,PARTIAL — Picus SECONDARY claims SHO-CLAIM-0009/0010 + IND-0023..0026; Pastebin raw URL still OPEN
+P2,Showboat,PwC companion report URL archive,Secondary corpus,OPEN
+P2,Showboat,FIRST.org / national telecom CERT advisory naming Showboat,Victimology corroboration,OPEN — negative this pass

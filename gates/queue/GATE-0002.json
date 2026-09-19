@@ -1,0 +1,17 @@
+{
+  "gate_id": "GATE-0002",
+  "tier": 1,
+  "type": "sample_download",
+  "family": "Showboat",
+  "summary": "Download Showboat Linux sample listed in BLL IOC appendix (SHA-256 already in published-indicators) for isolated lab \u2014 metadata-only remains Tier 0",
+  "payload_path": "",
+  "status": "pending",
+  "submitted_utc": "2026-09-19T19:45:28Z",
+  "submitted_by": "agent",
+  "approved_utc": null,
+  "approved_by": null,
+  "denied_utc": null,
+  "completed_utc": null,
+  "run_notes": "",
+  "content_sha256": "5bd1c1c1358925e29017f5c64a7e132d7ff0ace1f2c639345bc68b49c627997a"
+}

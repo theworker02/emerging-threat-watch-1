@@ -1,0 +1,13 @@
+comparison,signal,assessment,confidence,provenance,notes
+Rapuncel↔BoryptGrab,passathook-cs2; GitHub/SEO; UserInformation.txt; installed_applications.txt; Filegraber; browser elevation,Related variant/sibling plausible; same campaign/operator not established,Moderate,PRIMARY-SOURCE,LastPass/Delphos
+Rapuncel↔BoryptGrab,different builds/C2/helper packaging; Alinubx vs TunnesshClient/HeaconLoad,Counterevidence to identical malware/campaign,High,PRIMARY-SOURCE,
+Rapuncel-loader↔Cruciferra/PUROSANGUE,NativeAOT; .reloc; Base16; 145-process list; purosangue.tx,Strong shared-tooling; does not establish stealer authorship,High,PRIMARY-SOURCE,RAP-H-CRY
+Settra-malware↔Settra-operator,encryptor no exfil; operator uses creds/RMM/lateral/BYOVD,Maintain separate ATT&CK models,High,PRIMARY-SOURCE,Never say Settra uses Mimikatz
+Settra-July↔Settra-September,_win64.exe; recovery impairment; logs; note; MeshAgent,Strong operational similarity; affiliate/operator unresolved,High,PRIMARY-SOURCE,
+RatHat↔other-self-ADB,Wireless ADB self-pair + shell,Technique parallel only unless code/infra evidence,Low,INFERRED,Not lineage
+NodeRabbit-V1↔V2↔V3,proxy; persistence; C2; command set growth,Strong family evolution,High,PRIMARY-SOURCE,
+NodeRabbit↔Mirage-Kitten,victimology; lure; cloud; historical overlap,Kaspersky attribution — not ETW-established,High,PRIMARY-SOURCE,Attribution provenance
+PollCat↔NodeRabbit,co-disclosure; recruiter coding-challenge delivery; Azure+CF C2 style; Mirage Kitten vendor attribution,COMMON TECHNIQUE / shared delivery class — implant authorship NOT established,Moderate,PRIMARY-SOURCE,See shared/lineage/pollcat-noderabbit-lineage-note.md; keep ETW-POL-IC3 vs ETW-NRB-IC3
+PollCat↔NodeRabbit,JS structure; C2 handshake (HTTP400/socketId vs AES-GCM); persistence markers; host-ID scheme; command model,Counterevidence to shared implant lineage — substantially different per Kaspersky,High,PRIMARY-SOURCE,Default non-equivalence
+PollCat↔MiniFast/Retrograde,HTTP400 socketId handshake; beacon 120s/5s; shared command IDs 0xB0/0xB1 stubs,Strong structural C2 lineage to prior native tooling — not to NodeRabbit,High,PRIMARY-SOURCE,Kaspersky attribution support path
+Showboat↔Calypso/EvaRAT/JFMBackdoor,THN narrative + Kaspersky EvaRAT alias; Afghanistan telecom overlap claim,Possible shared-cluster tooling — not ETW-established actor identity,Low,SECONDARY,Do not merge into Showboat attribution without primary corroboration

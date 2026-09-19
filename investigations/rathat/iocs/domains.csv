@@ -1,0 +1,21 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id,provenance_url
+fegrs.adidasabc.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv — not passively resolved by ETW,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+admin.xiongmaocs.help,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+oop.uuokxx.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+andxxxo.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+www.blackcat880.shop,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+www.cheng770.cyou,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+admin.xiongmaocs.mom,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+admin.xiongmaocs.pics,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+admin.fjbjwgyuyftg.qpon,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+admin.niaotong2.top,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+www.heilongyk.top,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+cz.gpgmk.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+cunzhang.krgdef.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+bc.etlva.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+jiaozhu.etlva.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+mao.terh5.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+kingbss.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From phishing.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+app.tmgg01.top,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From phishing.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+primevoria.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From phishing.csv path host,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+s3.ap-south-1.amazonaws.com,domain,,,Zimperium IOC repo,Low,rathat,UNVERIFIED,Shared AWS host — not unique; phishing.csv APK path only,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat

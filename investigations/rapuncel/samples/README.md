@@ -1,0 +1,4 @@
+# Samples — rapuncel
+
+Metadata and manifests only in git.
+Never commit live malware binaries.

@@ -1,0 +1,15 @@
+{
+  "evidence_id": "PS-SET-001",
+  "source_id": "SOURCE-SET-CYNET-SUMMARY",
+  "original_url": "https://www.cynet.com/blog/inside-cynets-settra-ransomware-investigation/",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "8ddc8d9d0df5bf47af20d519bb9f64eb84f1d69bc9e2ecc00860cc2c336e74db",
+  "http_status": 200,
+  "bytes": 485525,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "Settra",
+    "exfiltrat"
+  ]
+}

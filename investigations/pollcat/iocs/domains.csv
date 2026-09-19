@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+sahi-finance.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 register #1,pollcat
+gamebarappinformation.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #2,pollcat
+gamebarapp.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #3,pollcat
+lifespotify.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP lure domain,pollcat

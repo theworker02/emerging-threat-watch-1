@@ -1,0 +1,4 @@
+﻿ERROR: Cannot convert argument "bytes", with value: "[]
+", for "WriteAllBytes" to type "System.Byte[]": "Cannot convert value "[]
+" to type "System.Byte[]". Error: "Cannot convert value "[]
+" to type "System.Byte". Error: "Input string was not in a correct format."""

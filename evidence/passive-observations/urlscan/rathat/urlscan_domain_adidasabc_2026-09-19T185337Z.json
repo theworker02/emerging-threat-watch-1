@@ -1,0 +1,68 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "fegrs.adidasabc.com"
+        },
+        "page": {
+          "url": "fegrs.adidasabc.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "fegrs.adidasabc.com",
+        "apexDomain": "adidasabc.com",
+        "time": "2026-09-18T14:40:08.706Z",
+        "uuid": "01a0b4f5-bda8-775c-84b4-b0f184031a1f",
+        "url": "http://fegrs.adidasabc.com/",
+        "tags": [
+          "demotag1"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 7903542,
+        "encodedDataLength": 7923825,
+        "requests": 9
+      },
+      "page": {
+        "country": "IN",
+        "server": "nginx/1.24.0 (Ubuntu)",
+        "redirected": "https-only",
+        "ip": "8.231.120.246",
+        "apexDomainAgeDays": 942,
+        "language": "zh",
+        "mimeType": "text/html",
+        "title": "安卓管理中心",
+        "url": "https://fegrs.adidasabc.com/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 54,
+        "ptr": "246.120.231.8.bc.googleusercontent.com",
+        "domainAgeDays": 54,
+        "tlsValidFrom": "2026-07-26T05:47:30.000Z",
+        "domain": "fegrs.adidasabc.com",
+        "apexDomain": "adidasabc.com",
+        "asnname": "GOOGLE-CLOUD-PLATFORM - Google LLC, US",
+        "asn": "AS396982",
+        "tlsIssuer": "YE1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "01a0b4f5-bda8-775c-84b4-b0f184031a1f",
+      "_score": null,
+      "sort": [
+        1789742408706,
+        "01a0b4f5-bda8-775c-84b4-b0f184031a1f"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0b4f5-bda8-775c-84b4-b0f184031a1f/",
+      "screenshot": "https://urlscan.io/screenshots/01a0b4f5-bda8-775c-84b4-b0f184031a1f.png"
+    }
+  ],
+  "total": 1,
+  "took": 597,
+  "has_more": false
+}

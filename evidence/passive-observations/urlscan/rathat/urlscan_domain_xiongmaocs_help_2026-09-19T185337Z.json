@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "admin.xiongmaocs.help"
+        },
+        "page": {
+          "url": "admin.xiongmaocs.help"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "admin.xiongmaocs.help",
+        "apexDomain": "xiongmaocs.help",
+        "time": "2026-09-18T14:40:18.349Z",
+        "uuid": "01a0b4f5-c408-757b-aa95-44c55fc4b413",
+        "url": "http://admin.xiongmaocs.help/",
+        "tags": [
+          "demotag1"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 9876940,
+        "encodedDataLength": 9879827,
+        "requests": 9
+      },
+      "page": {
+        "country": "SG",
+        "server": "nginx",
+        "redirected": "https-only",
+        "ip": "186.240.200.23",
+        "apexDomainAgeDays": 45,
+        "language": "zh",
+        "mimeType": "text/html",
+        "title": "熊猫工坊-旗舰版V6",
+        "url": "https://admin.xiongmaocs.help/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 4,
+        "domainAgeDays": 42,
+        "tlsValidFrom": "2026-09-14T05:37:40.000Z",
+        "domain": "admin.xiongmaocs.help",
+        "apexDomain": "xiongmaocs.help",
+        "asnname": "BGPNETPTELTD-AS-AP - BGPNET PTE. LTD., SG",
+        "asn": "AS4907",
+        "tlsIssuer": "YE2",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "01a0b4f5-c408-757b-aa95-44c55fc4b413",
+      "_score": null,
+      "sort": [
+        1789742418349,
+        "01a0b4f5-c408-757b-aa95-44c55fc4b413"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0b4f5-c408-757b-aa95-44c55fc4b413/",
+      "screenshot": "https://urlscan.io/screenshots/01a0b4f5-c408-757b-aa95-44c55fc4b413.png"
+    }
+  ],
+  "total": 1,
+  "took": 822,
+  "has_more": false
+}

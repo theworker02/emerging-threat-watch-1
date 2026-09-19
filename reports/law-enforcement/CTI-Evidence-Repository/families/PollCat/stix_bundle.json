@@ -1,0 +1,191 @@
+{
+    "type": "bundle",
+    "id": "bundle--5d0dab8a-72e9-448d-87eb-c5d88faa2b10",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--e998dc07-60e9-42dd-bd1c-108937228fe8",
+            "created": "2026-09-19T19:25:40.146068Z",
+            "modified": "2026-09-19T19:25:40.146068Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347",
+            "created": "2026-09-19T19:25:40.146201Z",
+            "modified": "2026-09-19T19:25:40.146201Z",
+            "name": "PollCat",
+            "description": "ETW family PollCat. Author attribution NOT_ESTABLISHED. Case-isolated.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6ab0baef-9357-42cc-af26-54ade4d8e598",
+            "created": "2026-09-19T19:25:40.146283Z",
+            "modified": "2026-09-19T19:25:40.146283Z",
+            "name": "PollCat md5 795e053a990a1569ffdcb57f48f6d085",
+            "description": "evidence_id=POL-IND-0001; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.MD5 = '795e053a990a1569ffdcb57f48f6d085']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--aaebf672-7a9c-4d0d-97ac-ac7a9dfc20ae",
+            "created": "2026-09-19T19:25:40.146735Z",
+            "modified": "2026-09-19T19:25:40.146735Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6ab0baef-9357-42cc-af26-54ade4d8e598",
+            "target_ref": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--025f2a5e-4086-4a7a-bc52-eaa0fb09bc49",
+            "created": "2026-09-19T19:25:40.14683Z",
+            "modified": "2026-09-19T19:25:40.14683Z",
+            "name": "PollCat domain sahi-finance.com",
+            "description": "evidence_id=POL-IND-0002; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'sahi-finance.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2f85f630-5bb9-461e-b790-7c733be38b60",
+            "created": "2026-09-19T19:25:40.147059Z",
+            "modified": "2026-09-19T19:25:40.147059Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--025f2a5e-4086-4a7a-bc52-eaa0fb09bc49",
+            "target_ref": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a782a2b9-9109-43d5-9440-8d2a27cdc8a1",
+            "created": "2026-09-19T19:25:40.147125Z",
+            "modified": "2026-09-19T19:25:40.147125Z",
+            "name": "PollCat domain gamebarappinformation.azurewebsites.net",
+            "description": "evidence_id=POL-IND-0003; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'gamebarappinformation.azurewebsites.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--23d61b23-c4ea-48c3-91ff-012b6e134c5c",
+            "created": "2026-09-19T19:25:40.147347Z",
+            "modified": "2026-09-19T19:25:40.147347Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a782a2b9-9109-43d5-9440-8d2a27cdc8a1",
+            "target_ref": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6020b275-4e35-44a9-b251-87787dc5ac54",
+            "created": "2026-09-19T19:25:40.147428Z",
+            "modified": "2026-09-19T19:25:40.147428Z",
+            "name": "PollCat domain gamebarapp.azurewebsites.net",
+            "description": "evidence_id=POL-IND-0004; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'gamebarapp.azurewebsites.net']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0f33e62b-0cee-4f24-bdea-8cb8da09aaa3",
+            "created": "2026-09-19T19:25:40.147647Z",
+            "modified": "2026-09-19T19:25:40.147647Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6020b275-4e35-44a9-b251-87787dc5ac54",
+            "target_ref": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--19f1f9e3-76bb-426f-bfbd-ac92a89b3673",
+            "created": "2026-09-19T19:25:40.14771Z",
+            "modified": "2026-09-19T19:25:40.14771Z",
+            "name": "PollCat domain lifespotify.com",
+            "description": "evidence_id=POL-IND-0005; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'lifespotify.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--869001e4-8409-4c42-ab2c-428a43fd8d47",
+            "created": "2026-09-19T19:25:40.147907Z",
+            "modified": "2026-09-19T19:25:40.147907Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--19f1f9e3-76bb-426f-bfbd-ac92a89b3673",
+            "target_ref": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2550b6f5-cf79-46a7-8fe0-b3d0710063a4",
+            "created": "2026-09-19T19:25:40.147969Z",
+            "modified": "2026-09-19T19:25:40.147969Z",
+            "name": "PollCat url https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223",
+            "description": "evidence_id=POL-IND-0006; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c7d3398f-7861-4361-8b89-926771b08a22",
+            "created": "2026-09-19T19:25:40.148191Z",
+            "modified": "2026-09-19T19:25:40.148191Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2550b6f5-cf79-46a7-8fe0-b3d0710063a4",
+            "target_ref": "malware--8e84752b-08f5-40e5-a02b-09fd1a7fe347"
+        }
+    ]
+}

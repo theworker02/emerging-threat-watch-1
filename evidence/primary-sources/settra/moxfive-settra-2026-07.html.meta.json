@@ -1,0 +1,14 @@
+{
+  "evidence_id": "PS-SET-004",
+  "source_id": "SOURCE-SET-MOXFIVE",
+  "original_url": "https://www.moxfive.com/blog/settra-ransomware-ttps-victims-and-defense-guide",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "1e419c18b8565e7a07abdf5227f9c8a4235b4545907962814703bd9d8e0eb0bf",
+  "http_status": 200,
+  "bytes": 34259,
+  "content_verified": true,
+  "frozen": false,
+  "verify_hits": [
+    "Settra"
+  ]
+}

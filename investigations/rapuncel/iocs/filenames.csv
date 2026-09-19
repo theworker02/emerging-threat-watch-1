@@ -1,0 +1,6 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+vsdbg.exe,filename,,,secondary reporting,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Legitimate Microsoft binary abused via rename/sideload — hash of legit binary is NOT an IOC by itself,rapuncel
+vsdbg.dll,filename,,,secondary reporting,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Malicious companion DLL name as reported,rapuncel
+Alinubx.sys,filename,,,secondary reporting,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Driver original name as reported,rapuncel
+nvfsflt64.sys,filename,,,secondary reporting,Moderate,rapuncel,CAMPAIGN ASSOCIATED,On-disk disguise path under System32\drivers,rapuncel
+Alinubx.ccf,filename,,,TechTimes citing joint report,Low,rapuncel,SUSPICIOUS,Config enabling extra driver features; reported not deployed in campaign,rapuncel

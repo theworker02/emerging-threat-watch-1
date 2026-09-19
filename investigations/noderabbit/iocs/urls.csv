@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+https://oracle-challenge.s3.us-east-1.amazonaws.com/Front-Technical-Challenge.zip,url,,,Kaspersky,High,noderabbit,HISTORICAL,,noderabbit

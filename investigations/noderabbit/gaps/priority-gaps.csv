@@ -1,0 +1,8 @@
+priority,family,gap,why_crucial,status
+P0,NodeRabbit,Resolve Kaspersky MD5 archives to SHA-256,Correlation robustness,OPEN — MB/ThreatFox/Triage 401; OpenTIP empty; PolySwarm SHA-256s are RELATED_SAMPLE not MD5 maps
+P0,NodeRabbit,CT/pDNS chronology for non-Azure domains,agent:servers mutability,PARTIAL — msmanagementgrp CT=49; health-* domains CT collected; pDNS still thin
+P1,NodeRabbit,Linux/WSL artifact timeline,Under-represented vs Windows reporting,IN_PROGRESS
+P1,NodeRabbit,VS Code publisher/signature mismatch detection,Durable detection hypothesis,OPEN
+P1,NodeRabbit,Confirm PolySwarm SHA-256 ↔ Securelist MD5 mapping,Avoid false hash joins,OPEN
+P2,NodeRabbit,GitHub shepherd-persist public leakage,Detection corpus,CLOSED negative — result_count=0 logged-out
+P2,NodeRabbit,RankChallenge MD5 case correction,Isolation,CLOSED — retagged CROSS_REF_POLLCAT; POL-IND-0001 authoritative

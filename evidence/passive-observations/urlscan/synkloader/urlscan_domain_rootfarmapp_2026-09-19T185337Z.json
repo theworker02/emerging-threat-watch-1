@@ -1,0 +1,228 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "rootfarmapp.net"
+        },
+        "page": {
+          "url": "rootfarmapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "time": "2026-08-27T08:51:34.819Z",
+        "uuid": "01a0426a-c203-771b-baa5-43fb25e5060e",
+        "url": "http://rootfarmapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "redirected": "https-only",
+        "ip": "162.33.177.8",
+        "apexDomainAgeDays": 55,
+        "mimeType": "text/plain",
+        "url": "https://rootfarmapp.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 31,
+        "domainAgeDays": 55,
+        "tlsValidFrom": "2026-07-27T06:31:34.000Z",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a0426a-c203-771b-baa5-43fb25e5060e",
+      "_score": null,
+      "sort": [
+        1787820694819,
+        "01a0426a-c203-771b-baa5-43fb25e5060e"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0426a-c203-771b-baa5-43fb25e5060e/",
+      "screenshot": "https://urlscan.io/screenshots/01a0426a-c203-771b-baa5-43fb25e5060e.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "rootfarmapp.net"
+        },
+        "page": {
+          "url": "rootfarmapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "time": "2026-08-26T02:16:47.858Z",
+        "uuid": "01a03bda-f3f2-7140-a453-e0ab39b9fdbf",
+        "url": "https://rootfarmapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "ip": "162.33.177.8",
+        "apexDomainAgeDays": 54,
+        "mimeType": "text/plain",
+        "url": "https://rootfarmapp.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 29,
+        "domainAgeDays": 54,
+        "tlsValidFrom": "2026-07-27T06:31:34.000Z",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a03bda-f3f2-7140-a453-e0ab39b9fdbf",
+      "_score": null,
+      "sort": [
+        1787710607858,
+        "01a03bda-f3f2-7140-a453-e0ab39b9fdbf"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a03bda-f3f2-7140-a453-e0ab39b9fdbf/",
+      "screenshot": "https://urlscan.io/screenshots/01a03bda-f3f2-7140-a453-e0ab39b9fdbf.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "rootfarmapp.net"
+        },
+        "page": {
+          "url": "rootfarmapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "time": "2026-08-21T08:37:13.126Z",
+        "uuid": "01a02377-72cb-7562-a25a-41e7d44b5a44",
+        "url": "http://rootfarmapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "redirected": "https-only",
+        "ip": "162.33.177.8",
+        "apexDomainAgeDays": 49,
+        "mimeType": "text/plain",
+        "url": "https://rootfarmapp.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 25,
+        "domainAgeDays": 49,
+        "tlsValidFrom": "2026-07-27T06:31:34.000Z",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a02377-72cb-7562-a25a-41e7d44b5a44",
+      "_score": null,
+      "sort": [
+        1787301433126,
+        "01a02377-72cb-7562-a25a-41e7d44b5a44"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a02377-72cb-7562-a25a-41e7d44b5a44/",
+      "screenshot": "https://urlscan.io/screenshots/01a02377-72cb-7562-a25a-41e7d44b5a44.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "rootfarmapp.net"
+        },
+        "page": {
+          "url": "rootfarmapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "time": "2026-08-21T08:07:53.180Z",
+        "uuid": "01a0235c-99b5-76b3-8a2b-5357c5a7c45c",
+        "url": "https://rootfarmapp.net/",
+        "tags": [
+          "hybridanalysis"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 28,
+        "encodedDataLength": 371,
+        "requests": 2
+      },
+      "page": {
+        "country": "US",
+        "server": "nginx/1.30.4",
+        "ip": "162.33.177.8",
+        "apexDomainAgeDays": 49,
+        "mimeType": "text/plain",
+        "url": "https://rootfarmapp.net/",
+        "tlsValidDays": 89,
+        "tlsAgeDays": 25,
+        "domainAgeDays": 49,
+        "tlsValidFrom": "2026-07-27T06:31:34.000Z",
+        "domain": "rootfarmapp.net",
+        "apexDomain": "rootfarmapp.net",
+        "asnname": "BLNWX - BL Networks, US",
+        "asn": "AS399629",
+        "tlsIssuer": "YR1",
+        "status": "404"
+      },
+      "labels": [],
+      "_id": "01a0235c-99b5-76b3-8a2b-5357c5a7c45c",
+      "_score": null,
+      "sort": [
+        1787299673180,
+        "01a0235c-99b5-76b3-8a2b-5357c5a7c45c"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0235c-99b5-76b3-8a2b-5357c5a7c45c/",
+      "screenshot": "https://urlscan.io/screenshots/01a0235c-99b5-76b3-8a2b-5357c5a7c45c.png"
+    }
+  ],
+  "total": 4,
+  "took": 414,
+  "has_more": false
+}

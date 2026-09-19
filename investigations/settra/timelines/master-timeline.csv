@@ -1,0 +1,6 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+SET-TL-0001,2026-06-01T00:00:00Z,first_seen_reported,Settra first identified / observed (approx.),Cynet; Huntress,SECONDARY,Moderate,SET-EV-0001
+SET-TL-0002,2026-07-01T00:00:00Z,incident,Huntress investigates July Settra-related incident with MeshAgent,Huntress,PRIMARY-SOURCE,High,SET-EV-0007
+SET-TL-0003,2026-09-01T00:00:00Z,incident,Huntress September incident (agent installed mid-compromise),Huntress,PRIMARY-SOURCE,High,SET-EV-0007
+SET-TL-0004,2026-09-17T00:00:00Z,disclosure,Cynet publishes Settra RE investigation,Cynet,PRIMARY-SOURCE,High,SET-EV-0001
+SET-TL-0005,2026-09-19T00:00:00Z,etw_phase1,ETW Phase 1 baseline for Settra,ETW,OBSERVED,High,

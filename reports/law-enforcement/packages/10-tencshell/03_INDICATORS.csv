@@ -1,0 +1,2 @@
+evidence_id,family,indicator,type,first_seen,provenance,confidence,independently_verified,source_url,retrieval_date_utc,notes,status_label
+TEN-IND-0000,TencShell,NO_PRIMARY_IOCS_YET,placeholder,unspecified,UNVERIFIED,None,false,UNVERIFIED — freeze primary URL before IOC ingest,2026-09-19T20:30:00Z,Intentional empty — ASSOCIATION_ONLY / UNVERIFIED candidate stub.,UNVERIFIED

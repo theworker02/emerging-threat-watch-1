@@ -1,0 +1,2 @@
+evidence_id,family,artifact_type,path_or_ref,retrieved_date_utc,sha256,provenance,notes
+MNF-EV-0000,MiniFast,stub_note,investigations/minifast/README.md,2026-09-19T20:30:00Z,,INTERNAL,Candidate skeleton only

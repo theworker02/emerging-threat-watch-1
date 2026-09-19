@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+plugplay.azurewebsites.net,domain,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,,noderabbit
+rgbteller.azurewebsites.net,domain,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,,noderabbit
+wslwebui.azurewebsites.net,domain,,,Kaspersky,High,noderabbit,CAMPAIGN ASSOCIATED,,noderabbit

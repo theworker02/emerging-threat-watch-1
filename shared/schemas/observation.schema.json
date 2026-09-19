@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/observation.schema.json",
+  "title": "ObservationRecord",
+  "type": "object",
+  "required": ["observation_id", "case_id", "observed_at_utc", "collector", "method", "summary", "provenance"],
+  "properties": {
+    "observation_id": {"type": "string"},
+    "case_id": {"enum": ["rapuncel", "settra", "rathat", "noderabbit"]},
+    "observed_at_utc": {"type": "string"},
+    "collector": {"type": "string"},
+    "method": {"type": "string", "description": "Must be passive or isolated-lab; never live C2 interaction"},
+    "summary": {"type": "string"},
+    "provenance": {"enum": ["OBSERVED", "PRIMARY-SOURCE", "CORROBORATED", "SECONDARY", "INFERRED", "UNVERIFIED", "CONTRADICTED"]},
+    "artifact_path": {"type": ["string", "null"]},
+    "related_evidence": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

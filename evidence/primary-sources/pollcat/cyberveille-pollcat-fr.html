@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Mirage Kitten cible l&#39;aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat | CyberVeille</title>
+<meta name="keywords" content="APT, FinTech, IOC, MiniFast, Mirage Kitten, Node.js, NodeRabbit, PollCat, RAT, Retrograde, TTP, aviation, faux recruteur">
+<meta name="description" content="🔍 Contexte
+Publié le 1er septembre 2026 par Kaspersky (Securelist), cet article de recherche documente la découverte de deux nouvelles familles de malwares attribuées à Mirage Kitten (également connu sous les noms UNC1549, Smoke Sandstorm, Nimbus Manticore), un groupe APT ciblant historiquement le Moyen-Orient et l&rsquo;Afrique.
+🎯 Vecteur d&rsquo;accès initial
+La campagne repose sur une technique de faux recruteur (recruiter persona) sur LinkedIn et d&rsquo;autres plateformes d&rsquo;emploi. Les cibles reçoivent un lien vers une archive de défi de codage trojanisée hébergée sur Amazon S3, présentée comme une évaluation technique pour un poste d&rsquo;ingénieur. L&rsquo;archive contient un projet Node.js légitime (TaskFlow ou RankChallenge-react) dont un fichier source a été modifié pour importer un package npm malveillant (colorized_terminal ou pretty-log, version 2.1.0) bundlé directement dans le répertoire node_modules.">
+<meta name="author" content="">
+<link rel="canonical" href="https://cyberveille.ch/posts/2026-09-01-mirage-kitten-cible-l-aviation-et-la-fintech-au-moyen-orient-et-en-afrique-avec-noderabbit-et-pollcat/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://cyberveille.ch/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cyberveille.ch/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cyberveille.ch/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cyberveille.ch/apple-touch-icon.png">
+<link rel="mask-icon" href="https://cyberveille.ch/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="fr" href="https://cyberveille.ch/posts/2026-09-01-mirage-kitten-cible-l-aviation-et-la-fintech-au-moyen-orient-et-en-afrique-avec-noderabbit-et-pollcat/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<script src="https://tinylytics.app/embed/C_x_W2iQUtx2sXPZDKoM.js?hits&kudos=%f0%9f%91%8d" defer></script>
+
+<link rel="me" href="https://infosec.exchange/@decio">
+
+<meta property="og:url" content="https://cyberveille.ch/posts/2026-09-01-mirage-kitten-cible-l-aviation-et-la-fintech-au-moyen-orient-et-en-afrique-avec-noderabbit-et-pollcat/">
+  <meta property="og:site_name" content="CyberVeille">
+  <meta property="og:title" content="Mirage Kitten cible l&#39;aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat">
+  <meta property="og:description" content="🔍 Contexte Publié le 1er septembre 2026 par Kaspersky (Securelist), cet article de recherche documente la découverte de deux nouvelles familles de malwares attribuées à Mirage Kitten (également connu sous les noms UNC1549, Smoke Sandstorm, Nimbus Manticore), un groupe APT ciblant historiquement le Moyen-Orient et l’Afrique.
+🎯 Vecteur d’accès initial La campagne repose sur une technique de faux recruteur (recruiter persona) sur LinkedIn et d’autres plateformes d’emploi. Les cibles reçoivent un lien vers une archive de défi de codage trojanisée hébergée sur Amazon S3, présentée comme une évaluation technique pour un poste d’ingénieur. L’archive contient un projet Node.js légitime (TaskFlow ou RankChallenge-react) dont un fichier source a été modifié pour importer un package npm malveillant (colorized_terminal ou pretty-log, version 2.1.0) bundlé directement dans le répertoire node_modules.">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-09-01T00:00:00+02:00">
+    <meta property="article:modified_time" content="2026-09-01T00:00:00+02:00">
+    <meta property="article:tag" content="APT">
+    <meta property="article:tag" content="Fintech">
+    <meta property="article:tag" content="IOC">
+    <meta property="article:tag" content="MiniFast">
+    <meta property="article:tag" content="Mirage Kitten">
+    <meta property="article:tag" content="Node.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mirage Kitten cible l&#39;aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat">
+<meta name="twitter:description" content="🔍 Contexte
+Publié le 1er septembre 2026 par Kaspersky (Securelist), cet article de recherche documente la découverte de deux nouvelles familles de malwares attribuées à Mirage Kitten (également connu sous les noms UNC1549, Smoke Sandstorm, Nimbus Manticore), un groupe APT ciblant historiquement le Moyen-Orient et l&rsquo;Afrique.
+🎯 Vecteur d&rsquo;accès initial
+La campagne repose sur une technique de faux recruteur (recruiter persona) sur LinkedIn et d&rsquo;autres plateformes d&rsquo;emploi. Les cibles reçoivent un lien vers une archive de défi de codage trojanisée hébergée sur Amazon S3, présentée comme une évaluation technique pour un poste d&rsquo;ingénieur. L&rsquo;archive contient un projet Node.js légitime (TaskFlow ou RankChallenge-react) dont un fichier source a été modifié pour importer un package npm malveillant (colorized_terminal ou pretty-log, version 2.1.0) bundlé directement dans le répertoire node_modules.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://cyberveille.ch/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Mirage Kitten cible l'aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat",
+      "item": "https://cyberveille.ch/posts/2026-09-01-mirage-kitten-cible-l-aviation-et-la-fintech-au-moyen-orient-et-en-afrique-avec-noderabbit-et-pollcat/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Mirage Kitten cible l'aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat",
+  "name": "Mirage Kitten cible l\u0027aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat",
+  "description": "🔍 Contexte Publié le 1er septembre 2026 par Kaspersky (Securelist), cet article de recherche documente la découverte de deux nouvelles familles de malwares attribuées à Mirage Kitten (également connu sous les noms UNC1549, Smoke Sandstorm, Nimbus Manticore), un groupe APT ciblant historiquement le Moyen-Orient et l\u0026rsquo;Afrique.\n🎯 Vecteur d\u0026rsquo;accès initial La campagne repose sur une technique de faux recruteur (recruiter persona) sur LinkedIn et d\u0026rsquo;autres plateformes d\u0026rsquo;emploi. Les cibles reçoivent un lien vers une archive de défi de codage trojanisée hébergée sur Amazon S3, présentée comme une évaluation technique pour un poste d\u0026rsquo;ingénieur. L\u0026rsquo;archive contient un projet Node.js légitime (TaskFlow ou RankChallenge-react) dont un fichier source a été modifié pour importer un package npm malveillant (colorized_terminal ou pretty-log, version 2.1.0) bundlé directement dans le répertoire node_modules.\n",
+  "keywords": [
+    "APT", "FinTech", "IOC", "MiniFast", "Mirage Kitten", "Node.js", "NodeRabbit", "PollCat", "RAT", "Retrograde", "TTP", "aviation", "faux recruteur"
+  ],
+  "articleBody": "🔍 Contexte Publié le 1er septembre 2026 par Kaspersky (Securelist), cet article de recherche documente la découverte de deux nouvelles familles de malwares attribuées à Mirage Kitten (également connu sous les noms UNC1549, Smoke Sandstorm, Nimbus Manticore), un groupe APT ciblant historiquement le Moyen-Orient et l’Afrique.\n🎯 Vecteur d’accès initial La campagne repose sur une technique de faux recruteur (recruiter persona) sur LinkedIn et d’autres plateformes d’emploi. Les cibles reçoivent un lien vers une archive de défi de codage trojanisée hébergée sur Amazon S3, présentée comme une évaluation technique pour un poste d’ingénieur. L’archive contient un projet Node.js légitime (TaskFlow ou RankChallenge-react) dont un fichier source a été modifié pour importer un package npm malveillant (colorized_terminal ou pretty-log, version 2.1.0) bundlé directement dans le répertoire node_modules.\n🐇 NodeRabbit RAT — Trois variantes NodeRabbit est un RAT multiplateforme (Windows, Linux, macOS) écrit en Node.js. Trois variantes ont été identifiées :\nVariante 1 (Afghanistan) : lancée via colorized_terminal, C2 sur Azure (plugplay, Rgbteller, Wslwebui), chiffrement AES-256-GCM, 11 commandes, persistance masquée en Microsoft Edge Update. Variante 2 (Égypte) : lancée via pretty-log, anti-analyse (mémoire, CPU, uptime, noms d’utilisateur suspects), support proxy NTLM/Negotiate via curl.exe, port TCP dérivé de l’identifiant agent, persistance masquée en Intel DSA. Variante 3 (Éthiopie) : lancée via pretty-log, 23 commandes dont outlook:emails, persist:vscode, persist:project:inject (Git hooks), C2 mixte Azure/Cloudflare, support WSL, fausse extension VS Code nommée GitHub Copilot Helper. 🐱 PollCat RAT PollCat est un RAT multiplateforme écrit en JavaScript obfusqué, distribué via un faux défi React (RankChallenge-react). Il démarre indépendamment du processus d’authentification OTP. Il communique avec ses C2 (sahi-finance.com, GamebarAppinformation.azurewebsites.net, GamebarApp.azurewebsites.net) via des endpoints /beacon, /gate/hello, /gate/fetch, /gate/submit. Il déclare 22 commandes dont EVAL_JS, SYSTEM_CHECK, RUNDLL, CHUNKED_DOWNLOAD. La réponse de handshake attendue est un HTTP 400 contenant un socketId.\n🏗️ Infrastructure L’infrastructure C2 repose principalement sur Azure Websites (AS 8075, MarkMonitor) et des domaines Cloudflare (AS 13335, NameCheap). Les acteurs ont parfois intégré le nom de l’organisation ciblée dans le sous-domaine Azure. Des domaines additionnels enregistrés entre mai et juillet 2026 ont été identifiés via des patterns d’infrastructure.\n🎯 Victimologie Victimes confirmées dans les secteurs FinTech et aviation/aérospatial en Égypte, Éthiopie et Afghanistan. Des soumissions d’archives malveillantes à des scanners en ligne ont été détectées depuis l’Inde, la Turquie, Israël, l’Irak, l’Allemagne et l’Irlande.\n🔗 Attribution L’attribution à Mirage Kitten repose sur des similarités structurelles avec le backdoor natif Retrograde/MiniFast : handshake C2 identique (HTTP 400 comme succès, socketId), endpoints similaires, timing de beacon identique (120 000 ms / 5 000 ms jitter), commandes partagées (dont REQUEST_ELEVATION 0xB0 et PERSIST 0xB1), et délégation proxy NTLM via curl.exe.\n📄 Nature de l’article Il s’agit d’une publication de recherche technique de Kaspersky GReAT visant à documenter une nouvelle campagne APT, ses TTPs, son infrastructure et ses IoCs pour permettre la détection et le tracking par la communauté CTI.\n🧠 TTPs et IOCs détectés Acteurs de menace Mirage Kitten (state-sponsored) — TTP T1566.002 — Phishing: Spearphishing Link (Initial Access) T1195.002 — Supply Chain Compromise: Compromise Software Supply Chain (Initial Access) T1059.007 — Command and Scripting Interpreter: JavaScript (Execution) T1547.001 — Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (Persistence) T1053.005 — Scheduled Task/Job: Scheduled Task (Persistence) T1053.003 — Scheduled Task/Job: Cron (Persistence) T1543.001 — Create or Modify System Process: Launch Agent (Persistence) T1036.005 — Masquerading: Match Legitimate Name or Location (Defense Evasion) T1027 — Obfuscated Files or Information (Defense Evasion) T1497 — Virtualization/Sandbox Evasion (Defense Evasion) T1071.001 — Application Layer Protocol: Web Protocols (Command and Control) T1573.001 — Encrypted Channel: Symmetric Cryptography (Command and Control) T1090 — Proxy (Command and Control) T1105 — Ingress Tool Transfer (Command and Control) T1083 — File and Directory Discovery (Discovery) T1057 — Process Discovery (Discovery) T1082 — System Information Discovery (Discovery) T1016 — System Network Configuration Discovery (Discovery) T1518.001 — Software Discovery: Security Software Discovery (Discovery) T1114.001 — Email Collection: Local Email Collection (Collection) T1005 — Data from Local System (Collection) T1608.001 — Stage Capabilities: Upload Malware (Resource Development) T1586.001 — Compromise Accounts: Social Media Accounts (Resource Development) T1588.002 — Obtain Capabilities: Tool (Resource Development) IOC Domaines : oracle-challenge.s3.us-east-1.amazonaws.com — VT · URLhaus · ThreatFox Domaines : naturalapplication.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : retaildemo.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : tubitak.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : rgbteller.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : wslwebui.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : plugplay.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : crossdwm.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : wdisystem.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : wslmenus.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : dnshnsdev.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : hpjumpsrv.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : storview.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : healthcomfsdpower.com — VT · URLhaus · ThreatFox Domaines : visitfinancedentists.com — VT · URLhaus · ThreatFox Domaines : kyrasey-f8hfexa5cqamh7fk.westeurope-01.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : greenyjsgfd.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : helptellerbls.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : timedrv.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : userwellgtfs.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : hecowime-aqdphyd4bbdef6es.westeurope-01.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : msmanagementgrp.com — VT · URLhaus · ThreatFox Domaines : msmanagementgrpmedia.com — VT · URLhaus · ThreatFox Domaines : lifespotify.com — VT · URLhaus · ThreatFox Domaines : gamebarapp.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : gamebarappinformation.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : sahi-finance.com — VT · URLhaus · ThreatFox Domaines : healthful-hub.com — VT · URLhaus · ThreatFox Domaines : neumedicahealthcare.com — VT · URLhaus · ThreatFox Domaines : optimumhealthcredit.com — VT · URLhaus · ThreatFox Domaines : healthfullyrecipes.com — VT · URLhaus · ThreatFox Domaines : refreshhealthandwellness.com — VT · URLhaus · ThreatFox Domaines : healthvitalitycare.com — VT · URLhaus · ThreatFox Domaines : aceofspadesmanagement.com — VT · URLhaus · ThreatFox Domaines : glmediaagency.com — VT · URLhaus · ThreatFox Domaines : digimediaskill.com — VT · URLhaus · ThreatFox Domaines : healthyweightplan.com — VT · URLhaus · ThreatFox Domaines : mens-health-online.com — VT · URLhaus · ThreatFox URLs : https://oracle-challenge.s3.us-east-1.amazonaws.com/Front-Technical-Challenge.zip — URLhaus URLs : https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate — URLhaus MD5 : 1EA83E4E4592B01E4ACAB63EB867BEE5 — VT · MalwareBazaar MD5 : CBAAF0900A13F28E380F49ADECEC932C — VT · MalwareBazaar MD5 : 366515822D5AC1CC500711EF57A2E32E — VT · MalwareBazaar MD5 : CF449F1992C2819E62AC44A0B06AC2E7 — VT · MalwareBazaar MD5 : E95A4366686E3F786EA3C056FAB5B0DA — VT · MalwareBazaar MD5 : DE5AF16A3757EF700B01DC34D67079AE — VT · MalwareBazaar MD5 : BE086789568441D0D7E4679AEE51F566 — VT · MalwareBazaar MD5 : E259C5EDF158AAC4CFE14F77DDD0B196 — VT · MalwareBazaar MD5 : 291AC3ABE73C5158E59A437B75D5F0AA — VT · MalwareBazaar MD5 : 0962F56D7EC69F4F2A0162DCBE22116B — VT · MalwareBazaar MD5 : 795E053A990A1569FFDCB57F48F6D085 — VT · MalwareBazaar MD5 : 810F8E3B88EB05F710C09552941D6F56 — VT · MalwareBazaar Fichiers : Front-Technical-Challenge.zip Fichiers : FrontEnd-Task.zip Fichiers : Task-FullStack.zip Fichiers : fullstack-1536.zip Fichiers : webapp76592.zip Fichiers : webapp76531.zip Fichiers : challenges-17831.zip Fichiers : challenges-17832.zip Fichiers : Project-1802.zip Fichiers : Case-34234.zip Fichiers : RankChallenge-react-6uJSX3-main.zip Fichiers : colorized_terminal Fichiers : pretty-log Fichiers : server.js Fichiers : requireObjects.js Fichiers : index.js Chemins : node_modules/.cache/.320697f1/index.js Chemins : %APPDATA%\\Microsoft\\EdgeUpdate\\msedge_update.js Chemins : %LOCALAPPDATA%\\Intel\\DSA\\idriver_support.js Chemins : ~/.config/microsoft-edge-update/msedge_update.js Chemins : ~/.config/intel-dsa/idriver_support.js Chemins : ~/Library/Application Support/Intel DSA/idriver_support.js Chemins : ~/Library/LaunchAgents/com.microsoft.edgeupdate.plist Chemins : ~/Library/LaunchAgents/com.intel.dsa.helper Chemins : %APPDATA%\\Microsoft\\Network\\requireObject.js Chemins : ~/.node_packages Chemins : ~/Library/LaunchAgents/com.harsh.requireobject.plist Chemins : .git/hooks/post-merge Chemins : .git/hooks/post-checkout Chemins : .sv.json ⚠️ À propos de ces IOC — ils sont extraits automatiquement de l’article original le 1 septembre 2026 et n’ont pas fait l’objet d’une vérification externe. Un indicateur peut avoir été réattribué depuis : une IP de C2 peut redevenir un service légitime, un domaine sinkholé peut changer de propriétaire. Aucune garantie d’exactitude ni d’actualité — contrôlez leur validité avant tout usage opérationnel, en particulier avant de les injecter dans une blocklist ou un SIEM.\nMalware / Outils NodeRabbit (rat) PollCat (rat) Retrograde (backdoor) MiniFast (backdoor) 🟢 Indice de vérification factuelle : 80/100 (haute) ✅ securelist.com — source reconnue (liste interne) (20pts) ✅ 37350 chars — texte complet (fulltext extrait) (15pts) ✅ 82 IOCs dont des hashes (15pts) ⬜ 0/5 IOCs confirmés externellement (0pts) ✅ 24 TTPs MITRE identifiées (15pts) ✅ date extraite du HTML source (10pts) ✅ acteur(s) identifié(s) : Mirage Kitten (5pts) ⬜ pas de CVE à vérifier (0pts) 🔗 Source originale : https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/\n",
+  "wordCount" : "1359",
+  "inLanguage": "fr",
+  "datePublished": "2026-09-01T00:00:00+02:00",
+  "dateModified": "2026-09-01T00:00:00+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://cyberveille.ch/posts/2026-09-01-mirage-kitten-cible-l-aviation-et-la-fintech-au-moyen-orient-et-en-afrique-avec-noderabbit-et-pollcat/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CyberVeille",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cyberveille.ch/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://cyberveille.ch/" accesskey="h" title="CyberVeille (Alt + H)">
+                <img src="https://cyberveille.ch/images/cyberveille_logo_tr.png" alt="" aria-label="logo"
+                    height="100">CyberVeille</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://cyberveille.ch/pays/" title="🌍 Pays">
+                    <span>🌍 Pays</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/map/" title="🌍 Pew Pew">
+                    <span>🌍 Pew Pew</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/categories/" title="📂 Catégories">
+                    <span>📂 Catégories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/tags/" title="🏷️ Tags">
+                    <span>🏷️ Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/archives/" title="🗃️ Archives">
+                    <span>🗃️ Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/search/" title="🔍 Recherche (Alt &#43; /)" accesskey=/>
+                    <span>🔍 Recherche</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/about/" title="ℹ️ À propos">
+                    <span>ℹ️ À propos</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/cti/" title="🔗 CTI">
+                    <span>🔗 CTI</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single" data-pagefind-body>
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://cyberveille.ch/">Accueil</a>&nbsp;»&nbsp;<a href="https://cyberveille.ch/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Mirage Kitten cible l&#39;aviation et la FinTech au Moyen-Orient et en Afrique avec NodeRabbit et PollCat
+    </h1>
+    <div class="post-meta"><span title='2026-09-01 00:00:00 +0200 CEST'>1 septembre 2026</span>&nbsp;·&nbsp;7 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table des matières</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-contexte" aria-label="🔍 Contexte">🔍 Contexte</a></li>
+                <li>
+                    <a href="#-vecteur-dacc%c3%a8s-initial" aria-label="🎯 Vecteur d&rsquo;accès initial">🎯 Vecteur d&rsquo;accès initial</a></li>
+                <li>
+                    <a href="#-noderabbit-rat--trois-variantes" aria-label="🐇 NodeRabbit RAT — Trois variantes">🐇 NodeRabbit RAT — Trois variantes</a></li>
+                <li>
+                    <a href="#-pollcat-rat" aria-label="🐱 PollCat RAT">🐱 PollCat RAT</a></li>
+                <li>
+                    <a href="#-infrastructure" aria-label="🏗️ Infrastructure">🏗️ Infrastructure</a></li>
+                <li>
+                    <a href="#-victimologie" aria-label="🎯 Victimologie">🎯 Victimologie</a></li>
+                <li>
+                    <a href="#-attribution" aria-label="🔗 Attribution">🔗 Attribution</a></li>
+                <li>
+                    <a href="#-nature-de-larticle" aria-label="📄 Nature de l&rsquo;article">📄 Nature de l&rsquo;article</a></li>
+                <li>
+                    <a href="#-ttps-et-iocs-d%c3%a9tect%c3%a9s" aria-label="🧠 TTPs et IOCs détectés">🧠 TTPs et IOCs détectés</a><ul>
+                        
+                <li>
+                    <a href="#acteurs-de-menace" aria-label="Acteurs de menace">Acteurs de menace</a></li>
+                <li>
+                    <a href="#ttp" aria-label="TTP">TTP</a></li>
+                <li>
+                    <a href="#ioc" aria-label="IOC">IOC</a></li>
+                <li>
+                    <a href="#malware--outils" aria-label="Malware / Outils">Malware / Outils</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-indice-de-v%c3%a9rification-factuelle--80100-haute" aria-label="🟢 Indice de vérification factuelle : 80/100 (haute)">🟢 Indice de vérification factuelle : 80/100 (haute)</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+<div class="confidence-badge" style="margin: 0.8em 0; padding: 0.5em 0.8em; border-radius: 6px; display: inline-block; font-size: 0.9em; background: #e6f9e6; border: 1px solid #4caf50; color: #2e7d32;">
+  🟢 Vérification factuelle : <strong>80/100</strong> (haute)
+</div>
+
+  <div class="post-content"><h2 id="-contexte">🔍 Contexte<a hidden class="anchor" aria-hidden="true" href="#-contexte">#</a></h2>
+<p>Publié le 1er septembre 2026 par Kaspersky (Securelist), cet article de recherche documente la découverte de deux nouvelles familles de malwares attribuées à <strong>Mirage Kitten</strong> (également connu sous les noms UNC1549, Smoke Sandstorm, Nimbus Manticore), un groupe APT ciblant historiquement le Moyen-Orient et l&rsquo;Afrique.</p>
+<h2 id="-vecteur-daccès-initial">🎯 Vecteur d&rsquo;accès initial<a hidden class="anchor" aria-hidden="true" href="#-vecteur-daccès-initial">#</a></h2>
+<p>La campagne repose sur une technique de <strong>faux recruteur</strong> (recruiter persona) sur LinkedIn et d&rsquo;autres plateformes d&rsquo;emploi. Les cibles reçoivent un lien vers une <strong>archive de défi de codage trojanisée</strong> hébergée sur Amazon S3, présentée comme une évaluation technique pour un poste d&rsquo;ingénieur. L&rsquo;archive contient un projet Node.js légitime (TaskFlow ou RankChallenge-react) dont un fichier source a été modifié pour importer un <strong>package npm malveillant</strong> (<code>colorized_terminal</code> ou <code>pretty-log</code>, version 2.1.0) bundlé directement dans le répertoire <code>node_modules</code>.</p>
+<h2 id="-noderabbit-rat--trois-variantes">🐇 NodeRabbit RAT — Trois variantes<a hidden class="anchor" aria-hidden="true" href="#-noderabbit-rat--trois-variantes">#</a></h2>
+<p><strong>NodeRabbit</strong> est un RAT multiplateforme (Windows, Linux, macOS) écrit en <strong>Node.js</strong>. Trois variantes ont été identifiées :</p>
+<ul>
+<li><strong>Variante 1</strong> (Afghanistan) : lancée via <code>colorized_terminal</code>, C2 sur Azure (<code>plugplay</code>, <code>Rgbteller</code>, <code>Wslwebui</code>), chiffrement <strong>AES-256-GCM</strong>, 11 commandes, persistance masquée en Microsoft Edge Update.</li>
+<li><strong>Variante 2</strong> (Égypte) : lancée via <code>pretty-log</code>, anti-analyse (mémoire, CPU, uptime, noms d&rsquo;utilisateur suspects), support proxy NTLM/Negotiate via <code>curl.exe</code>, port TCP dérivé de l&rsquo;identifiant agent, persistance masquée en Intel DSA.</li>
+<li><strong>Variante 3</strong> (Éthiopie) : lancée via <code>pretty-log</code>, 23 commandes dont <code>outlook:emails</code>, <code>persist:vscode</code>, <code>persist:project:inject</code> (Git hooks), C2 mixte Azure/Cloudflare, support WSL, fausse extension VS Code nommée <strong>GitHub Copilot Helper</strong>.</li>
+</ul>
+<h2 id="-pollcat-rat">🐱 PollCat RAT<a hidden class="anchor" aria-hidden="true" href="#-pollcat-rat">#</a></h2>
+<p><strong>PollCat</strong> est un RAT multiplateforme écrit en <strong>JavaScript obfusqué</strong>, distribué via un faux défi React (<code>RankChallenge-react</code>). Il démarre indépendamment du processus d&rsquo;authentification OTP. Il communique avec ses C2 (<code>sahi-finance.com</code>, <code>GamebarAppinformation.azurewebsites.net</code>, <code>GamebarApp.azurewebsites.net</code>) via des endpoints <code>/beacon</code>, <code>/gate/hello</code>, <code>/gate/fetch</code>, <code>/gate/submit</code>. Il déclare <strong>22 commandes</strong> dont <code>EVAL_JS</code>, <code>SYSTEM_CHECK</code>, <code>RUNDLL</code>, <code>CHUNKED_DOWNLOAD</code>. La réponse de handshake attendue est un <strong>HTTP 400</strong> contenant un <code>socketId</code>.</p>
+<h2 id="-infrastructure">🏗️ Infrastructure<a hidden class="anchor" aria-hidden="true" href="#-infrastructure">#</a></h2>
+<p>L&rsquo;infrastructure C2 repose principalement sur <strong>Azure Websites</strong> (AS 8075, MarkMonitor) et des <strong>domaines Cloudflare</strong> (AS 13335, NameCheap). Les acteurs ont parfois intégré le nom de l&rsquo;organisation ciblée dans le sous-domaine Azure. Des domaines additionnels enregistrés entre mai et juillet 2026 ont été identifiés via des patterns d&rsquo;infrastructure.</p>
+<h2 id="-victimologie">🎯 Victimologie<a hidden class="anchor" aria-hidden="true" href="#-victimologie">#</a></h2>
+<p>Victimes confirmées dans les secteurs <strong>FinTech</strong> et <strong>aviation/aérospatial</strong> en Égypte, Éthiopie et Afghanistan. Des soumissions d&rsquo;archives malveillantes à des scanners en ligne ont été détectées depuis l&rsquo;Inde, la Turquie, Israël, l&rsquo;Irak, l&rsquo;Allemagne et l&rsquo;Irlande.</p>
+<h2 id="-attribution">🔗 Attribution<a hidden class="anchor" aria-hidden="true" href="#-attribution">#</a></h2>
+<p>L&rsquo;attribution à <strong>Mirage Kitten</strong> repose sur des similarités structurelles avec le backdoor natif <strong>Retrograde/MiniFast</strong> : handshake C2 identique (HTTP 400 comme succès, <code>socketId</code>), endpoints similaires, timing de beacon identique (120 000 ms / 5 000 ms jitter), commandes partagées (dont <code>REQUEST_ELEVATION</code> 0xB0 et <code>PERSIST</code> 0xB1), et délégation proxy NTLM via <code>curl.exe</code>.</p>
+<h2 id="-nature-de-larticle">📄 Nature de l&rsquo;article<a hidden class="anchor" aria-hidden="true" href="#-nature-de-larticle">#</a></h2>
+<p>Il s&rsquo;agit d&rsquo;une <strong>publication de recherche technique</strong> de Kaspersky GReAT visant à documenter une nouvelle campagne APT, ses TTPs, son infrastructure et ses IoCs pour permettre la détection et le tracking par la communauté CTI.</p>
+<h2 id="-ttps-et-iocs-détectés">🧠 TTPs et IOCs détectés<a hidden class="anchor" aria-hidden="true" href="#-ttps-et-iocs-détectés">#</a></h2>
+<h3 id="acteurs-de-menace">Acteurs de menace<a hidden class="anchor" aria-hidden="true" href="#acteurs-de-menace">#</a></h3>
+<ul>
+<li><strong>Mirage Kitten</strong> (state-sponsored) —</li>
+</ul>
+<h3 id="ttp">TTP<a hidden class="anchor" aria-hidden="true" href="#ttp">#</a></h3>
+<ul>
+<li><strong>T1566.002</strong> — Phishing: Spearphishing Link (Initial Access)</li>
+<li><strong>T1195.002</strong> — Supply Chain Compromise: Compromise Software Supply Chain (Initial Access)</li>
+<li><strong>T1059.007</strong> — Command and Scripting Interpreter: JavaScript (Execution)</li>
+<li><strong>T1547.001</strong> — Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder (Persistence)</li>
+<li><strong>T1053.005</strong> — Scheduled Task/Job: Scheduled Task (Persistence)</li>
+<li><strong>T1053.003</strong> — Scheduled Task/Job: Cron (Persistence)</li>
+<li><strong>T1543.001</strong> — Create or Modify System Process: Launch Agent (Persistence)</li>
+<li><strong>T1036.005</strong> — Masquerading: Match Legitimate Name or Location (Defense Evasion)</li>
+<li><strong>T1027</strong> — Obfuscated Files or Information (Defense Evasion)</li>
+<li><strong>T1497</strong> — Virtualization/Sandbox Evasion (Defense Evasion)</li>
+<li><strong>T1071.001</strong> — Application Layer Protocol: Web Protocols (Command and Control)</li>
+<li><strong>T1573.001</strong> — Encrypted Channel: Symmetric Cryptography (Command and Control)</li>
+<li><strong>T1090</strong> — Proxy (Command and Control)</li>
+<li><strong>T1105</strong> — Ingress Tool Transfer (Command and Control)</li>
+<li><strong>T1083</strong> — File and Directory Discovery (Discovery)</li>
+<li><strong>T1057</strong> — Process Discovery (Discovery)</li>
+<li><strong>T1082</strong> — System Information Discovery (Discovery)</li>
+<li><strong>T1016</strong> — System Network Configuration Discovery (Discovery)</li>
+<li><strong>T1518.001</strong> — Software Discovery: Security Software Discovery (Discovery)</li>
+<li><strong>T1114.001</strong> — Email Collection: Local Email Collection (Collection)</li>
+<li><strong>T1005</strong> — Data from Local System (Collection)</li>
+<li><strong>T1608.001</strong> — Stage Capabilities: Upload Malware (Resource Development)</li>
+<li><strong>T1586.001</strong> — Compromise Accounts: Social Media Accounts (Resource Development)</li>
+<li><strong>T1588.002</strong> — Obtain Capabilities: Tool (Resource Development)</li>
+</ul>
+<h3 id="ioc">IOC<a hidden class="anchor" aria-hidden="true" href="#ioc">#</a></h3>
+<ul>
+<li><strong>Domaines</strong> : <code>oracle-challenge.s3.us-east-1.amazonaws.com</code> — <a href="https://www.virustotal.com/gui/domain/oracle-challenge.s3.us-east-1.amazonaws.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=oracle-challenge.s3.us-east-1.amazonaws.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aoracle-challenge.s3.us-east-1.amazonaws.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>naturalapplication.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/naturalapplication.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=naturalapplication.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Anaturalapplication.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>retaildemo.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/retaildemo.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=retaildemo.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aretaildemo.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>tubitak.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/tubitak.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=tubitak.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Atubitak.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>rgbteller.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/rgbteller.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=rgbteller.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Argbteller.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>wslwebui.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/wslwebui.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=wslwebui.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Awslwebui.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>plugplay.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/plugplay.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=plugplay.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aplugplay.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>crossdwm.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/crossdwm.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=crossdwm.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Acrossdwm.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>wdisystem.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/wdisystem.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=wdisystem.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Awdisystem.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>wslmenus.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/wslmenus.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=wslmenus.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Awslmenus.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>dnshnsdev.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/dnshnsdev.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=dnshnsdev.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Adnshnsdev.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>hpjumpsrv.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/hpjumpsrv.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=hpjumpsrv.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahpjumpsrv.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>storview.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/storview.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=storview.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Astorview.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>healthcomfsdpower.com</code> — <a href="https://www.virustotal.com/gui/domain/healthcomfsdpower.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=healthcomfsdpower.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahealthcomfsdpower.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>visitfinancedentists.com</code> — <a href="https://www.virustotal.com/gui/domain/visitfinancedentists.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=visitfinancedentists.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Avisitfinancedentists.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>kyrasey-f8hfexa5cqamh7fk.westeurope-01.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/kyrasey-f8hfexa5cqamh7fk.westeurope-01.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=kyrasey-f8hfexa5cqamh7fk.westeurope-01.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Akyrasey-f8hfexa5cqamh7fk.westeurope-01.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>greenyjsgfd.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/greenyjsgfd.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=greenyjsgfd.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Agreenyjsgfd.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>helptellerbls.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/helptellerbls.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=helptellerbls.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahelptellerbls.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>timedrv.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/timedrv.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=timedrv.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Atimedrv.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>userwellgtfs.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/userwellgtfs.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=userwellgtfs.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Auserwellgtfs.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>hecowime-aqdphyd4bbdef6es.westeurope-01.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/hecowime-aqdphyd4bbdef6es.westeurope-01.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=hecowime-aqdphyd4bbdef6es.westeurope-01.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahecowime-aqdphyd4bbdef6es.westeurope-01.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>msmanagementgrp.com</code> — <a href="https://www.virustotal.com/gui/domain/msmanagementgrp.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=msmanagementgrp.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Amsmanagementgrp.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>msmanagementgrpmedia.com</code> — <a href="https://www.virustotal.com/gui/domain/msmanagementgrpmedia.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=msmanagementgrpmedia.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Amsmanagementgrpmedia.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>lifespotify.com</code> — <a href="https://www.virustotal.com/gui/domain/lifespotify.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=lifespotify.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Alifespotify.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>gamebarapp.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/gamebarapp.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=gamebarapp.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Agamebarapp.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>gamebarappinformation.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/gamebarappinformation.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=gamebarappinformation.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Agamebarappinformation.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>sahi-finance.com</code> — <a href="https://www.virustotal.com/gui/domain/sahi-finance.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=sahi-finance.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Asahi-finance.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>healthful-hub.com</code> — <a href="https://www.virustotal.com/gui/domain/healthful-hub.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=healthful-hub.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahealthful-hub.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>neumedicahealthcare.com</code> — <a href="https://www.virustotal.com/gui/domain/neumedicahealthcare.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=neumedicahealthcare.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aneumedicahealthcare.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>optimumhealthcredit.com</code> — <a href="https://www.virustotal.com/gui/domain/optimumhealthcredit.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=optimumhealthcredit.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aoptimumhealthcredit.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>healthfullyrecipes.com</code> — <a href="https://www.virustotal.com/gui/domain/healthfullyrecipes.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=healthfullyrecipes.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahealthfullyrecipes.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>refreshhealthandwellness.com</code> — <a href="https://www.virustotal.com/gui/domain/refreshhealthandwellness.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=refreshhealthandwellness.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Arefreshhealthandwellness.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>healthvitalitycare.com</code> — <a href="https://www.virustotal.com/gui/domain/healthvitalitycare.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=healthvitalitycare.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahealthvitalitycare.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>aceofspadesmanagement.com</code> — <a href="https://www.virustotal.com/gui/domain/aceofspadesmanagement.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=aceofspadesmanagement.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aaceofspadesmanagement.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>glmediaagency.com</code> — <a href="https://www.virustotal.com/gui/domain/glmediaagency.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=glmediaagency.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglmediaagency.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>digimediaskill.com</code> — <a href="https://www.virustotal.com/gui/domain/digimediaskill.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=digimediaskill.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Adigimediaskill.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>healthyweightplan.com</code> — <a href="https://www.virustotal.com/gui/domain/healthyweightplan.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=healthyweightplan.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ahealthyweightplan.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>mens-health-online.com</code> — <a href="https://www.virustotal.com/gui/domain/mens-health-online.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=mens-health-online.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Amens-health-online.com">ThreatFox</a></li>
+<li><strong>URLs</strong> : <code>https://oracle-challenge.s3.us-east-1.amazonaws.com/Front-Technical-Challenge.zip</code> — <a href="https://urlhaus.abuse.ch/browse.php?search=https%3A%2F%2Foracle-challenge.s3.us-east-1.amazonaws.com%2FFront-Technical-Challenge.zip">URLhaus</a></li>
+<li><strong>URLs</strong> : <code>https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate</code> — <a href="https://urlhaus.abuse.ch/browse.php?search=https%3A%2F%2Flifespotify.com%2Fapi%2Fusers%2Fb879746e-fed9-4211-a6da-4d8223681267%2Fotp%2Fvalidate">URLhaus</a></li>
+<li><strong>MD5</strong> : <code>1EA83E4E4592B01E4ACAB63EB867BEE5</code> — <a href="https://www.virustotal.com/gui/search/1EA83E4E4592B01E4ACAB63EB867BEE5">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3A1EA83E4E4592B01E4ACAB63EB867BEE5">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>CBAAF0900A13F28E380F49ADECEC932C</code> — <a href="https://www.virustotal.com/gui/search/CBAAF0900A13F28E380F49ADECEC932C">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3ACBAAF0900A13F28E380F49ADECEC932C">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>366515822D5AC1CC500711EF57A2E32E</code> — <a href="https://www.virustotal.com/gui/search/366515822D5AC1CC500711EF57A2E32E">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3A366515822D5AC1CC500711EF57A2E32E">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>CF449F1992C2819E62AC44A0B06AC2E7</code> — <a href="https://www.virustotal.com/gui/search/CF449F1992C2819E62AC44A0B06AC2E7">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3ACF449F1992C2819E62AC44A0B06AC2E7">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>E95A4366686E3F786EA3C056FAB5B0DA</code> — <a href="https://www.virustotal.com/gui/search/E95A4366686E3F786EA3C056FAB5B0DA">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3AE95A4366686E3F786EA3C056FAB5B0DA">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>DE5AF16A3757EF700B01DC34D67079AE</code> — <a href="https://www.virustotal.com/gui/search/DE5AF16A3757EF700B01DC34D67079AE">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3ADE5AF16A3757EF700B01DC34D67079AE">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>BE086789568441D0D7E4679AEE51F566</code> — <a href="https://www.virustotal.com/gui/search/BE086789568441D0D7E4679AEE51F566">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3ABE086789568441D0D7E4679AEE51F566">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>E259C5EDF158AAC4CFE14F77DDD0B196</code> — <a href="https://www.virustotal.com/gui/search/E259C5EDF158AAC4CFE14F77DDD0B196">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3AE259C5EDF158AAC4CFE14F77DDD0B196">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>291AC3ABE73C5158E59A437B75D5F0AA</code> — <a href="https://www.virustotal.com/gui/search/291AC3ABE73C5158E59A437B75D5F0AA">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3A291AC3ABE73C5158E59A437B75D5F0AA">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>0962F56D7EC69F4F2A0162DCBE22116B</code> — <a href="https://www.virustotal.com/gui/search/0962F56D7EC69F4F2A0162DCBE22116B">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3A0962F56D7EC69F4F2A0162DCBE22116B">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>795E053A990A1569FFDCB57F48F6D085</code> — <a href="https://www.virustotal.com/gui/search/795E053A990A1569FFDCB57F48F6D085">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3A795E053A990A1569FFDCB57F48F6D085">MalwareBazaar</a></li>
+<li><strong>MD5</strong> : <code>810F8E3B88EB05F710C09552941D6F56</code> — <a href="https://www.virustotal.com/gui/search/810F8E3B88EB05F710C09552941D6F56">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=md5%3A810F8E3B88EB05F710C09552941D6F56">MalwareBazaar</a></li>
+<li><strong>Fichiers</strong> : <code>Front-Technical-Challenge.zip</code></li>
+<li><strong>Fichiers</strong> : <code>FrontEnd-Task.zip</code></li>
+<li><strong>Fichiers</strong> : <code>Task-FullStack.zip</code></li>
+<li><strong>Fichiers</strong> : <code>fullstack-1536.zip</code></li>
+<li><strong>Fichiers</strong> : <code>webapp76592.zip</code></li>
+<li><strong>Fichiers</strong> : <code>webapp76531.zip</code></li>
+<li><strong>Fichiers</strong> : <code>challenges-17831.zip</code></li>
+<li><strong>Fichiers</strong> : <code>challenges-17832.zip</code></li>
+<li><strong>Fichiers</strong> : <code>Project-1802.zip</code></li>
+<li><strong>Fichiers</strong> : <code>Case-34234.zip</code></li>
+<li><strong>Fichiers</strong> : <code>RankChallenge-react-6uJSX3-main.zip</code></li>
+<li><strong>Fichiers</strong> : <code>colorized_terminal</code></li>
+<li><strong>Fichiers</strong> : <code>pretty-log</code></li>
+<li><strong>Fichiers</strong> : <code>server.js</code></li>
+<li><strong>Fichiers</strong> : <code>requireObjects.js</code></li>
+<li><strong>Fichiers</strong> : <code>index.js</code></li>
+<li><strong>Chemins</strong> : <code>node_modules/.cache/.320697f1/index.js</code></li>
+<li><strong>Chemins</strong> : <code>%APPDATA%\Microsoft\EdgeUpdate\msedge_update.js</code></li>
+<li><strong>Chemins</strong> : <code>%LOCALAPPDATA%\Intel\DSA\idriver_support.js</code></li>
+<li><strong>Chemins</strong> : <code>~/.config/microsoft-edge-update/msedge_update.js</code></li>
+<li><strong>Chemins</strong> : <code>~/.config/intel-dsa/idriver_support.js</code></li>
+<li><strong>Chemins</strong> : <code>~/Library/Application Support/Intel DSA/idriver_support.js</code></li>
+<li><strong>Chemins</strong> : <code>~/Library/LaunchAgents/com.microsoft.edgeupdate.plist</code></li>
+<li><strong>Chemins</strong> : <code>~/Library/LaunchAgents/com.intel.dsa.helper</code></li>
+<li><strong>Chemins</strong> : <code>%APPDATA%\Microsoft\Network\requireObject.js</code></li>
+<li><strong>Chemins</strong> : <code>~/.node_packages</code></li>
+<li><strong>Chemins</strong> : <code>~/Library/LaunchAgents/com.harsh.requireobject.plist</code></li>
+<li><strong>Chemins</strong> : <code>.git/hooks/post-merge</code></li>
+<li><strong>Chemins</strong> : <code>.git/hooks/post-checkout</code></li>
+<li><strong>Chemins</strong> : <code>.sv.json</code></li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>À propos de ces IOC</strong> — ils sont extraits automatiquement de l&rsquo;article original le <strong>1 septembre 2026</strong> et <strong>n&rsquo;ont pas fait l&rsquo;objet d&rsquo;une vérification externe.</strong> Un indicateur peut avoir été réattribué depuis : une IP de C2 peut redevenir un service légitime, un domaine sinkholé peut changer de propriétaire. Aucune garantie d&rsquo;exactitude ni d&rsquo;actualité — contrôlez leur validité avant tout usage opérationnel, en particulier avant de les injecter dans une blocklist ou un SIEM.</p></blockquote>
+<h3 id="malware--outils">Malware / Outils<a hidden class="anchor" aria-hidden="true" href="#malware--outils">#</a></h3>
+<ul>
+<li><strong>NodeRabbit</strong> (rat)</li>
+<li><strong>PollCat</strong> (rat)</li>
+<li><strong>Retrograde</strong> (backdoor)</li>
+<li><strong>MiniFast</strong> (backdoor)</li>
+</ul>
+<hr>
+<h2 id="-indice-de-vérification-factuelle--80100-haute">🟢 Indice de vérification factuelle : 80/100 (haute)<a hidden class="anchor" aria-hidden="true" href="#-indice-de-vérification-factuelle--80100-haute">#</a></h2>
+<ul>
+<li>✅ securelist.com — source reconnue (liste interne) (20pts)</li>
+<li>✅ 37350 chars — texte complet (fulltext extrait) (15pts)</li>
+<li>✅ 82 IOCs dont des hashes (15pts)</li>
+<li>⬜ 0/5 IOCs confirmés externellement (0pts)</li>
+<li>✅ 24 TTPs MITRE identifiées (15pts)</li>
+<li>✅ date extraite du HTML source (10pts)</li>
+<li>✅ acteur(s) identifié(s) : Mirage Kitten (5pts)</li>
+<li>⬜ pas de CVE à vérifier (0pts)</li>
+</ul>
+<hr>
+<p><strong>🔗 Source originale</strong> : <a href="https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/">https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/</a></p>
+
+
+  </div>
+
+  
+  <span data-pagefind-filter="tag" style="display:none;">APT</span>
+  <span data-pagefind-filter="tag" style="display:none;">FinTech</span>
+  <span data-pagefind-filter="tag" style="display:none;">IOC</span>
+  <span data-pagefind-filter="tag" style="display:none;">MiniFast</span>
+  <span data-pagefind-filter="tag" style="display:none;">Mirage Kitten</span>
+  <span data-pagefind-filter="tag" style="display:none;">Node.js</span>
+  <span data-pagefind-filter="tag" style="display:none;">NodeRabbit</span>
+  <span data-pagefind-filter="tag" style="display:none;">PollCat</span>
+  <span data-pagefind-filter="tag" style="display:none;">RAT</span>
+  <span data-pagefind-filter="tag" style="display:none;">Retrograde</span>
+  <span data-pagefind-filter="tag" style="display:none;">TTP</span>
+  <span data-pagefind-filter="tag" style="display:none;">aviation</span>
+  <span data-pagefind-filter="tag" style="display:none;">faux recruteur</span>
+  <span data-pagefind-filter="catégorie" style="display:none;">publication de recherche</span>
+  <span data-pagefind-filter="pays" style="display:none;">[International]</span>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://cyberveille.ch/tags/apt/">APT</a></li>
+      <li><a href="https://cyberveille.ch/tags/fintech/">Fintech</a></li>
+      <li><a href="https://cyberveille.ch/tags/ioc/">IOC</a></li>
+      <li><a href="https://cyberveille.ch/tags/minifast/">MiniFast</a></li>
+      <li><a href="https://cyberveille.ch/tags/mirage-kitten/">Mirage Kitten</a></li>
+      <li><a href="https://cyberveille.ch/tags/node.js/">Node.js</a></li>
+      <li><a href="https://cyberveille.ch/tags/noderabbit/">NodeRabbit</a></li>
+      <li><a href="https://cyberveille.ch/tags/pollcat/">PollCat</a></li>
+      <li><a href="https://cyberveille.ch/tags/rat/">RAT</a></li>
+      <li><a href="https://cyberveille.ch/tags/retrograde/">Retrograde</a></li>
+      <li><a href="https://cyberveille.ch/tags/ttp/">TTP</a></li>
+      <li><a href="https://cyberveille.ch/tags/aviation/">Aviation</a></li>
+      <li><a href="https://cyberveille.ch/tags/faux-recruteur/">Faux Recruteur</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://cyberveille.ch/posts/2026-09-01-mcpjacking-155-serveurs-mcp-detournes-via-des-domaines-expires-dans-le-registre-officiel/">
+    <span class="title">« Précédent</span>
+    <br>
+    <span>MCPJacking : 155 serveurs MCP détournés via des domaines expirés dans le registre officiel</span>
+  </a>
+  <a class="next" href="https://cyberveille.ch/posts/2026-09-01-netsupport-rat-distribue-via-des-liens-chatgpt-legitimes-et-une-fausse-verification-cloudflare/">
+    <span class="title">Suivant »</span>
+    <br>
+    <span>NetSupport RAT distribué via des liens ChatGPT légitimes et une fausse vérification Cloudflare</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>Cyberveille <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span> · 
+        Fait avec ❤️&amp;🍺 par <a href="https://infosec.exchange/@decio">Decio</a> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><div style="font-size: 0.9rem; text-align: center; color: red;">Dernière mise à jour le: 19 septembre 2026
+  <span>📝</span> 
+</div>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'Copier';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'Copié !';
+            setTimeout(() => {
+                copybutton.innerHTML = 'Copier';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

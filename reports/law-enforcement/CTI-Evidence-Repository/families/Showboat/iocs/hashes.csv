@@ -1,0 +1,4 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+sha256,d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011,2025-05,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,,Linux sample from BLL IOC appendix; also VT link in THN.
+sha256,8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,,Windows sample (BLL appendix).
+sha256,253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,,Windows sample (BLL appendix).

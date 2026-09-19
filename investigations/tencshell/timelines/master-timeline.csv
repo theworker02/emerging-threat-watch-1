@@ -1,0 +1,2 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+TEN-TL-0001,unspecified,candidate_catalog,"TencShell listed in docs/CANDIDATE_FAMILIES.md",ETW candidate pipeline,INTERNAL,Low,TEN-EV-0000

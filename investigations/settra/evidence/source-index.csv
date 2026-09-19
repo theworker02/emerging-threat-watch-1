@@ -1,0 +1,4 @@
+source_id,title,url,organization_or_author,publication_date,retrieval_date,source_tier,case_ids,notes
+SET-SRC-0001,Inside Cynet's Settra Ransomware Investigation,https://www.cynet.com/blog/inside-cynets-settra-ransomware-investigation/,Cynet CyOps Research Labs,2026-09-17,2026-09-19,PRIMARY,settra,Primary RE writeup
+SET-SRC-0002,Settra Ransomware: Inside a New Enterprise-Grade Extortion Threat,https://www.cynet.com/settra-ransomware-inside-a-new-enterprise-grade-extortion-threat/,Cynet,2026-09-17,2026-09-19,PRIMARY,settra,Extended product/research page
+SET-SRC-0003,Ready Settra Go: New Settra Ransomware Variant Deploys MeshAgent RMM,https://www.huntress.com/blog/new-settra-ransomware-variant,Huntress,2026-09,2026-09-19,PRIMARY,settra,IR telemetry; MeshAgent IOCs

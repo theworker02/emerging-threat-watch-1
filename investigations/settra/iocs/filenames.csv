@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+RESTORE_FILES.txt,filename,,,Cynet,High,settra,CAMPAIGN ASSOCIATED,,settra
+RESTORE_FILES.html,filename,,,Cynet,High,settra,CAMPAIGN ASSOCIATED,,settra
+mvtcs.exe,filename,,,Huntress,Moderate,settra-incident-july,SUSPICIOUS,Renamed MeshAgent,settra

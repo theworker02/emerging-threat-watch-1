@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Showboat Malware: Emerging Threats Targeting Telecom Providers</title>
+    <link rel="canonical" href="https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms">
+    <meta name="description" content="Black Lotus Labs reveals new malware discovery Showboat, a Linux-based post-exploitation framework linked to PRC-aligned threat activity targeting telecom providers.">
+    <meta name="keywords" content="New malware discovery">
+    <meta property="og:title" content="Showboat Malware: Emerging Threats Targeting Telecom Providers">
+    <meta property="og:description" content="Black Lotus Labs reveals new malware discovery Showboat, a Linux-based post-exploitation framework linked to PRC-aligned threat activity targeting telecom providers.">
+    <meta property="og:url" content="https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms">
+    <meta property="og:image" content="https://assets.lumen.com/is/image/Lumen/img-blog-resource-card-bll-malware-480x200?$PNG$&#x26;Creativeid=c9eb271a-09be-4616-b990-618ca2ba7424">
+    <meta property="og:image:secure_url" content="https://assets.lumen.com/is/image/Lumen/img-blog-resource-card-bll-malware-480x200?$PNG$&#x26;Creativeid=c9eb271a-09be-4616-b990-618ca2ba7424">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Showboat Malware: Emerging Threats Targeting Telecom Providers">
+    <meta name="twitter:description" content="Black Lotus Labs reveals new malware discovery Showboat, a Linux-based post-exploitation framework linked to PRC-aligned threat activity targeting telecom providers.">
+    <meta name="twitter:image" content="https://assets.lumen.com/is/image/Lumen/img-blog-resource-card-bll-malware-480x200?$PNG$&#x26;Creativeid=c9eb271a-09be-4616-b990-618ca2ba7424">
+    <meta name="robots" content="index, follow">
+    <meta name="published-time" content="2026-05-20T10:57:37.058Z">
+    <meta name="cqtags" content="blog-and-news:categories/topics/malware, blog-and-news:categories/topics/threat-mitigation, blog-and-news:categories/topics/network-security, blog-and-news:categories/topics/leadership-perspectives">
+    <meta name="modified-time" content="2026-05-18T07:24:26.599Z">
+    <meta name="blogauthor" content="Black Lotus Labs">
+    <meta name="categories" content="blog-and-news:categories/black-lotus-lab">
+    <meta name="blogpublisheddate" content="May 21, 2026">
+    <meta name="blogreadduration" content="11">
+    <meta name="imageurl" content="https://assets.lumen.com/is/image/Lumen/img-blog-resource-card-bll-malware-480x200?$PNG$&#x26;Creativeid=c9eb271a-09be-4616-b990-618ca2ba7424">
+    <meta name="imagealt" content="Black Lotus Labs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" hreflang="en-US" href="/blog/en-us/">
+    <script nonce="ufTxhHnF4KcGoh62P1CSm+jc" src="/da/scripts/aem.js" type="module"></script>
+    <script nonce="ufTxhHnF4KcGoh62P1CSm+jc" src="/da/scripts/scripts.js" type="module"></script>
+    <link rel="stylesheet" href="/da/styles/styles.css">
+    <link rel="icon" href="https://www.lumen.com/blog/favicon.png">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="hero hero-type-bar">
+          <div>
+            <div>hero-background-color-red-orange-gradient</div>
+          </div>
+        </div>
+      </div>
+      <div class="two-col-indent">
+        <div class="card overview-card-blog-post">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-header-bll-malware-848x566?$PNG$&#x26;Creativeid=7832e142-117a-4b22-9ce4-cf575ba34f02">https://assets.lumen.com/is/image/Lumen/img-blog-header-bll-malware-848x566?$PNG$&#x26;Creativeid=7832e142-117a-4b22-9ce4-cf575ba34f02</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-header-bll-malware-848x566?$PNG$&#x26;Creativeid=7832e142-117a-4b22-9ce4-cf575ba34f02">https://assets.lumen.com/is/image/Lumen/img-blog-header-bll-malware-848x566?$PNG$&#x26;Creativeid=7832e142-117a-4b22-9ce4-cf575ba34f02</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-header-bll-malware-848x566?$PNG$&#x26;Creativeid=7832e142-117a-4b22-9ce4-cf575ba34f02">https://assets.lumen.com/is/image/Lumen/img-blog-header-bll-malware-848x566?$PNG$&#x26;Creativeid=7832e142-117a-4b22-9ce4-cf575ba34f02</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>Black Lotus Labs hero image</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>content</div>
+            <div>content-col-11</div>
+            <div></div>
+            <div>
+              <h1 id="introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms"><strong>Introducing Showboat: A new malware family taunts defenses and targets international telecom firms</strong></h1>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="lmn-blog-split-left-14">
+        <p>Black Lotus Labs®, the threat research team at Lumen, has uncovered a previously unreported Linux malware family called Showboat, used in a campaign targeting telecommunications organizations across multiple regions. In this post, we break down how the malware works, what our telemetry reveals about the infrastructure behind it, and why these findings matter for defenders tracking persistent threats against critical networks.</p>
+        <h2 id="key-findings">Key findings</h2>
+        <ul>
+          <li>Black Lotus Labs identified a new Linux malware family we dubbed “Showboat.” The campaign has been active since at least mid-2022.</li>
+          <li>Showboat is a modular post-exploitation framework designed for Linux systems, capable of spawning a remote shell, transferring files and functioning as a Socks5 proxy.</li>
+          <li>Multiple threat clusters aligned with the People’s Republic of China (PRC) have been observed using the same post-exploitation frameworks and techniques in recent years. Showboat was in use by at least one, and likely several, PRC-aligned threat activity clusters.</li>
+          <li>The campaign impacted a telecommunications provider in the Middle East and impersonated telecom firms in Southeast Asia.</li>
+          <li>Black Lotus Labs collaborated with PricewaterhouseCoopers’ Threat Intelligence teams through the research process. We will continue to hunt for samples of this and similar malware to protect our customers and critical infrastructure.</li>
+        </ul>
+        <h2 id="research-overview">Research overview</h2>
+        <p>Black Lotus Labs discovered a new malware family we have dubbed “Showboat.” Technical artifacts suggest that this campaign has been ongoing since at least mid-2022. Analysis of the malware revealed functions that allow its process to be hidden from system administrators, transfer files and perform Socks5 proxy functions, allowing it to interact with machines deeper within the network. We believe this is the first public reporting of this toolset, one which highlights the persistent targeting of Linux-based systems as access vectors to move deeper into networks.</p>
+        <p>Using Lumen global telemetry and elements of the network discovered in our research, we believe the malware was used by at least one, and likely several, PRC-aligned activity clusters. At the time of discovery, Showboat was deployed in a campaign against telecommunication providers in the Middle East, and impersonating telecommunications firms in Southeast Asia. Our analysis shows a correlation between command-and-control (C2) nodes and connections associated with IP addresses that correlate to Chengdu, China.</p>
+        <p>Lumen would like to thank the Cyber Threat Intelligence Team at PricewaterhouseCoopers for their collaboration during this research. Their report on this activity <a href="https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/red-lamassu-open-season.html">can be found here.</a> Lumen is committed to proactively defending our networks, collaborating with industry partners, and maintaining vigilance against emerging threats to ensure the integrity and reliability of our services.</p>
+        <h3 id="background-and-context">Background and context</h3>
+        <p>Among China-based threat actors, attribution based solely on tooling has become increasingly difficult given shared national objectives across organizations, along with increased sharing of tools and exploits across actor groups. Shared frameworks such as PoisonIvy, <a href="https://www.sentinelone.com/labs/shadowpad-a-masterpiece-of-privately-sold-malware-in-chinese-espionage/">ShadowPad</a>, and more recently <a href="https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/">NosyDoor</a>, have made attribution through this method increasingly difficult. This notion of resource pooling is reinforced by other reporting. ESET, for example, has reported <a href="https://www.welivesecurity.com/2021/03/10/exchange-servers-under-siege-10-apt-groups/">different PRC-aligned clusters</a> all using the same exploit even when it was a zero-day vulnerability.</p>
+        <p>We believe that Showboat is the latest post-exploitation framework in use by multiple threat actors aligned with the PRC, and our report reflects the modularity that we and others are observing in the current landscape.</p>
+        <p>This research covers:</p>
+        <ul>
+          <li>An analysis of the malware and its functions from a reverse engineering perspective.</li>
+          <li>Two different activity clusters, potentially denoting separate campaigns, derived from malware and associated telemetry indicators.</li>
+        </ul>
+        <h3 id="malware-analysis">Malware analysis</h3>
+        <p>Our investigation into this campaign began with the malware’s discovery on VirusTotal, triggered by a hit on one of our proactive threat-hunt signatures. As the malware was not directly observed on any live systems, we are unable to comment on the initial access vector or exploit. The sample was compiled for AMD x86-64. When it was submitted to VirusTotal on May 5, 2025, it had a detection rate of zero and remains undetected through April 2026.</p>
+        <p>The first critical element of Showboat is the configuration file retrieved by the agent to begin installation. The file was XOR-encrypted with a hardcoded key to each byte, using the cheeky phrase: “look me, AV!”</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig1?$PNG$&#x26;Creativeid=baae57fe-30cb-446d-9373-b5835ed6d74a">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig1?$PNG$&#x26;Creativeid=baae57fe-30cb-446d-9373-b5835ed6d74a</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig1?$PNG$&#x26;Creativeid=baae57fe-30cb-446d-9373-b5835ed6d74a">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig1?$PNG$&#x26;Creativeid=baae57fe-30cb-446d-9373-b5835ed6d74a</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig1?$PNG$&#x26;Creativeid=baae57fe-30cb-446d-9373-b5835ed6d74a">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig1?$PNG$&#x26;Creativeid=baae57fe-30cb-446d-9373-b5835ed6d74a</a></div>
+          </div>
+          <div>
+            <div>A screenshot from VirusTotal on the day of discovery showing zero detection rate by antivirus systems. The rate rose to two in late 2025 and is back down to zero at the time of publication. Description: Black Lotus Labs Forest Blizzard: Expansion</div>
+          </div>
+          <div>
+            <div><em>Figure 1: Malware agent screenshot showing zero detection at submission.</em></div>
+          </div>
+        </div>
+        <p>The sample’s first callout is to an embedded C2 server to extract a configuration file (a copy and its breakdown is addressed further in the “Network communications” section of this post). Following extract, it gathers various host configurations, including hostname, operating system information, list of running processes, the process of the agent and a screenshot of the desktop.</p>
+        <p>The results are then combined with information received from the C2, such as the agent UUID, agent version and sleep intervals. The agent transmits the gathered host-based parameters in a PNG field as an encrypted and base64-encoded string and sends back to the C2 server as shown.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig2?$PNG$&#x26;Creativeid=679e321b-7df3-45e4-9292-c1c02c13732c">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig2?$PNG$&#x26;Creativeid=679e321b-7df3-45e4-9292-c1c02c13732c</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig2?$PNG$&#x26;Creativeid=679e321b-7df3-45e4-9292-c1c02c13732c">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig2?$PNG$&#x26;Creativeid=679e321b-7df3-45e4-9292-c1c02c13732c</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig2?$PNG$&#x26;Creativeid=679e321b-7df3-45e4-9292-c1c02c13732c">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig2?$PNG$&#x26;Creativeid=679e321b-7df3-45e4-9292-c1c02c13732c</a></div>
+          </div>
+          <div>
+            <div>The PNG field sent by the agent back to the C2 that shows all relevant device information.</div>
+          </div>
+          <div>
+            <div><em>Figure 2: Screenshot showing the host-based information and C2 information combined in heartbeat beacon.</em></div>
+          </div>
+        </div>
+        <p>Our analysis revealed several pre-built functions that an operator could call. These functions allow the operators to upload and download files to and from the host machine, hide the agent itself from the process list, obtain persistence as a service, and swap out C2 nodes.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&#x26;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&#x26;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&#x26;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&#x26;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&#x26;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-showboat-table?$JPG$&#x26;Creativeid=416e9156-1fd8-4382-b2a3-107f5062946a</a></div>
+          </div>
+          <div>
+            <div>Description: table 1</div>
+          </div>
+          <div>
+            <div><em>Table 1: All Showboat malware names and descriptions, taken from the binary.</em></div>
+          </div>
+        </div>
+        <p>One notable feature is the “hide” command, which enables a process to conceal itself on a host machine by retrieving code stored on external websites such as Pastebin or online forums for use as a “dead drop.” For instance, we found a particular code snippet that was first posted to Pastebin in January 2022. Interactions with this post would likely come from victim systems, as well as from web crawlers, making the “view count” an unreliable indicator of the scale of victimology. The upload date, however, provides a useful reference point for the earliest-seen date of this activity.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig3?$PNG$&#x26;Creativeid=c742db12-86dc-4216-b182-07991ebadce5">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig3?$PNG$&#x26;Creativeid=c742db12-86dc-4216-b182-07991ebadce5</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig3?$PNG$&#x26;Creativeid=c742db12-86dc-4216-b182-07991ebadce5">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig3?$PNG$&#x26;Creativeid=c742db12-86dc-4216-b182-07991ebadce5</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig3?$PNG$&#x26;Creativeid=c742db12-86dc-4216-b182-07991ebadce5">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig3?$PNG$&#x26;Creativeid=c742db12-86dc-4216-b182-07991ebadce5</a></div>
+          </div>
+          <div>
+            <div>Description: Screenshot of the Pastebin app used by the threat actors as a "dead drop" for code retrieval by the malware.</div>
+          </div>
+          <div>
+            <div><em>Figure 3: Screenshot of the Pastebin page likely set up by the threat actors and its associated metadata.</em></div>
+          </div>
+        </div>
+        <p>Two other network functions that warranted further exploration were the <em>SOCKS5</em> and <em>portmap</em> functions. These have the same embedded routines except for the URL used in C2 communications. The difference is that one appends the string “<em>SKS</em>” to the URL—likely the <em>SOCKS5</em> function—while the other function appends “<em>MAP</em>” to the URL, probably with <em>portmap</em>. The actor can first scan for other devices and then connect to them via the Socks5 functionality. The presence of these two functions indicates that the purpose of Showboat is to function as a foothold. This would allow the attackers to interact with machines that are not exposed publicly to the internet and only accessible via the LAN.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig4?$PNG$&#x26;Creativeid=f104f1c6-3a1f-460b-b597-813b63e43e0d">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig4?$PNG$&#x26;Creativeid=f104f1c6-3a1f-460b-b597-813b63e43e0d</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig4?$PNG$&#x26;Creativeid=f104f1c6-3a1f-460b-b597-813b63e43e0d">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig4?$PNG$&#x26;Creativeid=f104f1c6-3a1f-460b-b597-813b63e43e0d</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig4?$PNG$&#x26;Creativeid=f104f1c6-3a1f-460b-b597-813b63e43e0d">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig4?$PNG$&#x26;Creativeid=f104f1c6-3a1f-460b-b597-813b63e43e0d</a></div>
+          </div>
+          <div>
+            <div>Description: Screenshot of the malware's Socks5 and portmapping functions, which allow it to infect downstream devices.</div>
+          </div>
+          <div>
+            <div><em>Figure 4: The functionality between SOCKS5 and portmap.</em></div>
+          </div>
+        </div>
+        <h4 id="malware-network-based-communications">Malware: network-based communications</h4>
+        <p>After the initial handshake above to obtain the configuration file and share local host details with the embedded C2, the agent creates a JSON string with information about the infected host, malware version and a unique UUID. This JSON string is “encrypted” using the last 5 digits from the UUID as the key. A copy of a decrypted configuration file is shown below:</p>
+        <p>SERVER_ADDRESS = telecom.webredirect[.]org</p>
+        <p>RESOLVE_IP = NULL</p>
+        <p>SERVER_PORT = 80</p>
+        <p>PROXY_ADDRESS =</p>
+        <p>PROXY_PORT = 0</p>
+        <p>MIN_SLEEP = 5</p>
+        <p>MAX_SLEEP = 10</p>
+        <p>SLOW_MODE_MIN_SLEEP = 20</p>
+        <p>SLOW_MODE_MAX_SLEEP = 25</p>
+        <p>Resolving this hostname, <em>telecom.webredirect[.]org</em>, identified the C2 node located at IP address <em>139.84.227[.]139, referred to as the original C2</em>.</p>
+        <h3 id="correlated-indicators-separate-activity-clusters-and-network-telemetry">Correlated indicators, separate activity clusters and network telemetry</h3>
+        <h4 id="primary-activity-cluster">Primary activity cluster</h4>
+        <p>Our investigation took form after extracting the hostname, <em>telecom[.]webredirect[.]org</em>, which provided us with our first active C2 node. We noticed that this IP address, <em>139.84.227[.]139,</em> had four ports open. The most significant was the self-signed X.509 certificate that used the metadata “My Organization,” whose SHA256 fingerprint started out with 27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677. This fingerprint was the central data point for clustering around what we designate as the “Primary cluster.” (The full list of IP addresses associated with Showboat will be in our GitHub.) We assess with high confidence that all these nodes are associated with Showboat.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig5?$PNG$&#x26;Creativeid=9f6a7f84-711d-4f83-b1b4-38b6129e1d23">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig5?$PNG$&#x26;Creativeid=9f6a7f84-711d-4f83-b1b4-38b6129e1d23</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig5?$PNG$&#x26;Creativeid=9f6a7f84-711d-4f83-b1b4-38b6129e1d23">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig5?$PNG$&#x26;Creativeid=9f6a7f84-711d-4f83-b1b4-38b6129e1d23</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig5?$PNG$&#x26;Creativeid=9f6a7f84-711d-4f83-b1b4-38b6129e1d23">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig5?$PNG$&#x26;Creativeid=9f6a7f84-711d-4f83-b1b4-38b6129e1d23</a></div>
+          </div>
+          <div>
+            <div>Description: Screenshot of the X.509 certificate and metadata that allowed researchers to connect other C2 nodes that shared this data.</div>
+          </div>
+          <div>
+            <div><em>Figure 5: Showing the X.509 metadata associated with the certificate:</em> 27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677.</div>
+          </div>
+        </div>
+        <p>Other open ports on <em>139.84.227[.]139</em> included 9999, which displayed a Socks5 banner. Next, there was a self-signed x.509 certificate on port 53 (typically associated with DNS) from at least March 15-17, 2025. We hypothesize that the actor could have configured the malware to communicate over port 53 to avoid network security products such as firewalls.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig6?$PNG$&#x26;Creativeid=a9148deb-22b8-43c8-bb11-dc6feceb9714">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig6?$PNG$&#x26;Creativeid=a9148deb-22b8-43c8-bb11-dc6feceb9714</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig6?$PNG$&#x26;Creativeid=a9148deb-22b8-43c8-bb11-dc6feceb9714">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig6?$PNG$&#x26;Creativeid=a9148deb-22b8-43c8-bb11-dc6feceb9714</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig6?$PNG$&#x26;Creativeid=a9148deb-22b8-43c8-bb11-dc6feceb9714">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig6?$PNG$&#x26;Creativeid=a9148deb-22b8-43c8-bb11-dc6feceb9714</a></div>
+          </div>
+          <div>
+            <div>Description: S Screenshot of an additional certificate on the primary C2 node shared by others in this cluster.</div>
+          </div>
+          <div>
+            <div><em>Figure 6: Certificate presented on port 53 on the first identified C2 node: SHA256 A72427af3c046fd90999a6505b2372dc4ffde122227f30ed21621ecd4f2d3e8b.</em></div>
+          </div>
+        </div>
+        <p>The fourth open port, port 80, had an X.509 certificate present on port 80 with the<br>SHA256 fingerprint: <em>E28a96f983b8605decd2ac1db16ebad5fa741a6aa4e585a38ade0e5ad7d6cec0</em>. This certificate was also present on and led to a second C2 at IP address <em>194.135.25[.]132</em>.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-newmalware-figure7?$PNG$&#x26;Creativeid=adbfea9c-c17b-4cbe-bb9d-c800b6b23a84">https://assets.lumen.com/is/image/Lumen/img-blog-bll-newmalware-figure7?$PNG$&#x26;Creativeid=adbfea9c-c17b-4cbe-bb9d-c800b6b23a84</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-newmalware-figure7?$PNG$&#x26;Creativeid=adbfea9c-c17b-4cbe-bb9d-c800b6b23a84">https://assets.lumen.com/is/image/Lumen/img-blog-bll-newmalware-figure7?$PNG$&#x26;Creativeid=adbfea9c-c17b-4cbe-bb9d-c800b6b23a84</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-newmalware-figure7?$PNG$&#x26;Creativeid=adbfea9c-c17b-4cbe-bb9d-c800b6b23a84">https://assets.lumen.com/is/image/Lumen/img-blog-bll-newmalware-figure7?$PNG$&#x26;Creativeid=adbfea9c-c17b-4cbe-bb9d-c800b6b23a84</a></div>
+          </div>
+          <div>
+            <div>Description: Diagram illustrating the primary activity cluster.</div>
+          </div>
+          <div>
+            <div><em>Figure 7: Primary cluster elements.</em></div>
+          </div>
+        </div>
+        <p>Primary cluster interactions with regional telecommunications providers<br><br>While pivoting upon network elements associated with the primary cluster, we correlated two IP addresses that hosted domains impersonating regional telecommunications organizations:</p>
+        <ul>
+          <li>23.27.201[.]160 which resolved the <em>singtelcom[.]site</em> domain</li>
+          <li>101.36.105[.]222 which resolved the <em>kaztelecom[.]shop</em> domain</li>
+        </ul>
+        <p>Given that two of the domains appeared to mimic specific telecommunications firms, while the original sample contains the generic hostname <em>telecom[.]webredirect[.]org</em>, we can theorize the primary cluster is focused on telecommunications firms, specifically those in Asia. This assessment is also supported by our global telemetry, where we positively confirm at least two victims. We first observed connections from an Outlook server belonging to an Afghanistan-based ISP provider, which communicated with the C2 node <em>194.135.25[.]132</em>. Connections between these two were seen from December 1, 2025, through February 3, 2026. The second victim identified from the primary cluster geolocated in Azerbaijan.</p>
+        <h4 id="possible-upstream-infrastructure">Possible upstream infrastructure</h4>
+        <p>During our investigation into the primary cluster, we observed one IP address that exhibited the same SHA256 fingerprint as the original C2 but which stood out as it was not correlated to any known VPS provider. This node, <em>116.169.244[.]208:2096,</em> resolved to China Unicom and roughly geolocated to the region of Chengdu. Since the node was not associated with a VPS, we suspect that this could denote either an upstream IP address or a developer test environment.</p>
+        <div class="image-block">
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig8?$PNG$&#x26;Creativeid=bdd1dcd8-5848-4020-b2e8-448ad48d9e98">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig8?$PNG$&#x26;Creativeid=bdd1dcd8-5848-4020-b2e8-448ad48d9e98</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig8?$PNG$&#x26;Creativeid=bdd1dcd8-5848-4020-b2e8-448ad48d9e98">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig8?$PNG$&#x26;Creativeid=bdd1dcd8-5848-4020-b2e8-448ad48d9e98</a></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig8?$PNG$&#x26;Creativeid=bdd1dcd8-5848-4020-b2e8-448ad48d9e98">https://assets.lumen.com/is/image/Lumen/img-blog-bll-malware-fig8?$PNG$&#x26;Creativeid=bdd1dcd8-5848-4020-b2e8-448ad48d9e98</a></div>
+          </div>
+          <div>
+            <div>Diagram of a secondary activity cluster showing 20 C2 nodes. It highlights two that infected a pair of U.S. victims and one that reached a victim in Ukraine.</div>
+          </div>
+          <div>
+            <div><em>Figure 8: Components of the secondary activity cluster.</em></div>
+          </div>
+        </div>
+        <h4 id="secondary-activity-clusters-and-infrastructure">Secondary activity clusters and infrastructure</h4>
+        <p>The primary cluster of C2 nodes shared the same SHA256 fingerprint. We expanded the search criteria for similar X.509 certificates that exhibited the same metadata properties, such as the same subject DN and issuer DN, including those that had different SHA256 fingerprints under the suspicion these nodes could be additional Showboat C2s.</p>
+        <p>Employing a technique like those outlined here by <a href="https://censys.com/blog/using-cobalt-strike-to-find-more-cobalt-strike">Censys</a>, another 20 C2 nodes were discovered that shared metadata properties, two of which we examine further below. We suspect that the certificate borne by these nodes was likely generated by a common startup script. The use of differing cryptographic values, while retaining core attributes of the certificate, suggests separate campaigns. Each of these C2s had either a single or low number of victims.</p>
+        <p>These different fingerprints likely denote infrastructure used by other PRC-aligned activity clusters. One notable data point is that we only found one more SHA256 fingerprint, <em>2229e7f3cabbce4d67cd79c89fd5a100b20e8a99f4a2bf9aac77a978f49eb520</em>, that was observed on two different IP addresses at the same time. All the other suspected C2 nodes had unique SHA256 fingerprints corresponding to a different IP.</p>
+        <p>We queried the nodes that exhibited the “My Organization” x.509 certificate metadata properties and identified two potential compromises—both stemming from the United States—associated with the C2 at <em>192.9.141[.]111</em>. The first was active from December 29, 2025, through January 12, 2026, while the second potential victim communicated for approximately one day between November 27 and 28, 2025. Both victims’ traffic was on port 9999, which was associated with the Socks5 proxy service on another C2 node.</p>
+        <p>An additional C2, <em>64.176.43[.]209</em>, appeared to communicate with Ukrainian-based IP addresses that geolocated to the disputed territory regions along the western Ukrainian/Russian border. As we have seen in the past, PRC-based actors tend to assign geographical regions to separate activity clusters; we believe with moderate confidence this focus on the Donbas region is another example of shared tooling among distinct groups.</p>
+        <h2 id="telecommunications-networks-remain-prime-targets-for-intrusion">Telecommunications networks remain prime targets for intrusion</h2>
+        <p>Satellite and telecommunications providers continue to be a strategic target for <a href="https://therecord.media/fbi-warns-of-space-cyberattacks">nation-state threat actors</a>, especially those in geographical proximity to major powers. Even when final targets are based in North America, the global interconnectivity of telecommunications firms means that risks can quickly extend worldwide. Because these organizations are essential for transmitting user voice and data, they represent a critical component of any organization’s supply chain.</p>
+        <p>While some threat actors are increasingly using stealthy, native system tools to evade detection, others still deploy persistent malware implants. The presence of such threats should be taken as an early warning sign, indicating the potential for broader and more serious security issues within affected networks.<br><br>As in many of our prior reports, we have seen a shift towards persisting on <a href="https://www.lumen.com/blog/en-us/taking-elevator-down-ring-0">Linux-based systems</a> and <a href="https://blog.lumen.com/the-j-magic-show-magic-packets-and-where-to-find-them/">routers</a>, which typically do not run any sort of EDR-based system. Therefore, we encourage organizations to be mindful of their perimeter and continue to monitor events such as east-west traffic from servers that do not clearly map to business processes.</p>
+        <p>Black Lotus Labs will continue proactively hunting for unique telemetry signals. We will continue to work with the information security community and post updates as we uncover more connections to named activity clusters or interesting data points. We encourage other organizations to report this and share related findings from their observations.</p>
+        <p><em>Analysis of showboat was performed by Danny Adamitis, and Steve Rudd with technical editing by Ryan English</em></p>
+        <h2 id="explore-more-threat-intelligence-resources">Explore more threat intelligence resources</h2>
+        <ul>
+          <li>View current IOCs, which are continuously updated on our<a href="https://github.com/blacklotuslabs/IOCs/blob/main/FrostArmada_IOCs.txt"> GitHub page</a> and continuously updated there. We encourage the community to monitor and alert on these and any similar IOCs.</li>
+          <li>Learn how we protect our customers with <a href="https://www.lumen.com/en-us/services/lumen-defender.html">Lumen Defender</a><sup>SM</sup>.</li>
+          <li>Understand modern cyberthreats and what their trajectories signal for the future in our first annual <a href="https://www.lumen.com/en-us/resources/2026-threat-intelligence-report.html">Lumen Defender Threatscape Report</a>.</li>
+          <li>Want to collaborate on future research? Connect with us on <a href="https://www.linkedin.com/showcase/blacklotuslabs/">LinkedIn</a> and <a href="https://x.com/blacklotuslabs?lang=en">X</a> (@BlackLotusLabs).</li>
+        </ul>
+        <p><strong>Discover how Black Lotus Labs’ advanced threat technology identifies and eliminates threats fast, helping to protect your business and keep the internet clean.</strong></p>
+        <div class="global-button">
+          <div>
+            <div>primaryOrange</div>
+          </div>
+          <div>
+            <div>Learn more</div>
+          </div>
+          <div>
+            <div><a href="https://www.lumen.com/en-us/security/black-lotus-labs.html">https://www.lumen.com/en-us/security/black-lotus-labs.html</a></div>
+          </div>
+          <div>
+            <div>_blank</div>
+          </div>
+        </div>
+        <p>This content is provided for informational purposes only and may require additional research and substantiation by the end user. In addition, the information is provided “as is” without any warranty or condition of any kind, either express or implied. Use of this information is at the end user’s own risk. Lumen does not warrant that the information will meet the end user’s requirements or that the implementation or usage of this information will result in the desired outcome of the end user. All third-party company and product or service names referenced in this article are for identification purposes only and do not imply endorsement or affiliation with Lumen. This document represents Lumen products and offerings as of the date of issue. Services not available everywhere. Lumen may change or cancel products and services or substitute similar products and services at its sole discretion without notice. © 2026 Lumen Technologies. All Rights Reserved.</p>
+        <div class="tag-list">
+          <div>
+            <div></div>
+          </div>
+        </div>
+        <div class="card author-card">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/author-black-lotus-labs-logo-image-300x300?Creativeid=b08a9660-2840-4cf8-b2b4-aa45b9585632">https://assets.lumen.com/is/image/Lumen/author-black-lotus-labs-logo-image-300x300?Creativeid=b08a9660-2840-4cf8-b2b4-aa45b9585632</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/author-black-lotus-labs-logo-image-300x300?Creativeid=b08a9660-2840-4cf8-b2b4-aa45b9585632">https://assets.lumen.com/is/image/Lumen/author-black-lotus-labs-logo-image-300x300?Creativeid=b08a9660-2840-4cf8-b2b4-aa45b9585632</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/author-black-lotus-labs-logo-image-300x300?Creativeid=b08a9660-2840-4cf8-b2b4-aa45b9585632">https://assets.lumen.com/is/image/Lumen/author-black-lotus-labs-logo-image-300x300?Creativeid=b08a9660-2840-4cf8-b2b4-aa45b9585632</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>Black Lotus Labs logo</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>content</div>
+            <div></div>
+            <div>Author</div>
+            <div>
+              <h4 id="black-lotus-labs"><strong>Black Lotus Labs</strong></h4>
+            </div>
+            <div></div>
+            <div>The mission of Black Lotus Labs is to leverage our network visibility to help protect customers and keep the internet clean.</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="lmn-blog-split-right-6">
+        <div class="related-posts">
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div class="lmn-blog-column-indent-20-20-20 section-align-center">
+        <h2 id="related-resources"><strong>Related resources</strong></h2>
+      </div>
+      <div class="peek-carousel">
+        <div class="card resource-card">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>image</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-featured-resource-card-bll?Creativeid=844b527d-b24a-4d66-928e-9d6964fc2220">https://assets.lumen.com/is/image/Lumen/img-blog-featured-resource-card-bll?Creativeid=844b527d-b24a-4d66-928e-9d6964fc2220</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-featured-resource-card-bll?Creativeid=844b527d-b24a-4d66-928e-9d6964fc2220">https://assets.lumen.com/is/image/Lumen/img-blog-featured-resource-card-bll?Creativeid=844b527d-b24a-4d66-928e-9d6964fc2220</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div><a href="https://assets.lumen.com/is/image/Lumen/img-blog-featured-resource-card-bll?Creativeid=844b527d-b24a-4d66-928e-9d6964fc2220">https://assets.lumen.com/is/image/Lumen/img-blog-featured-resource-card-bll?Creativeid=844b527d-b24a-4d66-928e-9d6964fc2220</a></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>Video thumbnail showing abstract blue and white light trails curving upward against a dark background, with small glowing particles scattered throughout. A red circular play button is centered on the image, and a time stamp of 1 minute 52 seconds appears in the bottom-right corner.</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>content</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>VIDEO</div>
+            <div>See how Black Lotus Labs® helps protect your business</div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div>link</div>
+            <div></div>
+            <div>Watch video</div>
+            <div><a href="https://assets.lumen.com/is/content/Lumen/Black_Lotus_Labs_Video-6341053041112">https://assets.lumen.com/is/content/Lumen/Black_Lotus_Labs_Video-6341053041112</a></div>
+            <div></div>
+            <div></div>
+            <div>_self</div>
+            <div></div>
+          </div>
+        </div>
+        <div class="card resource-card">
+          <div>
+            <div>content</div>
+            <div></div>
+            <div></div>
+            <div>Related products</div>
+            <div></div>
+            <div>
+              <p><a href="https://www.lumen.com/en-us/services/lumen-defender.html">Defender</a></p>
+              <p><a href="https://www.lumen.com/en-us/security/ddos-hyper.html">DDoS Hyper</a></p>
+              <p><a href="https://assets.lumen.com/is/content/Lumen/ddos-rtd-rapid-threat-defense-datasheetpdf?Creativeid=030f722a-017d-414f-a56c-517804bc03f9">Rapid Threat Defense</a></p>
+            </div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div><strong>Card (resource card)</strong></div>
+          </div>
+          <div>
+            <div>content</div>
+            <div></div>
+            <div></div>
+            <div>Research &#x26; reports</div>
+            <div></div>
+            <div><a href="https://www.lumen.com/en-us/resources/2026-threat-intelligence-report.html">Lumen going all out to be the affordable threat detection leader</a></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

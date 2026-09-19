@@ -1,0 +1,7 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id,provenance_url
+neversoftmain.net,domain,,,Expel,High,synkloader,UNVERIFIED,Loader C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
+rootfarmapp.net,domain,,,Expel,High,synkloader,UNVERIFIED,Loader C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
+tripinupdate.net,domain,,,Expel,High,synkloader,UNVERIFIED,Loader C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
+dondermicapp.net,domain,,,Expel,High,synkloader,UNVERIFIED,TrafficRedirector C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
+aroclenetapp.net,domain,,,Expel,High,synkloader,UNVERIFIED,VNC StreamMaster C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
+filereserve.blob.core.windows.net,domain,,,Expel,High,synkloader,UNVERIFIED,Azure Blob delivery host — shared Microsoft edge,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/

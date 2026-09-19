@@ -1,0 +1,8 @@
+relationship_id,case_a,case_b,relationship_type,evidence_ids,confidence,status,notes
+XT-REL-0001,rapuncel,settra,NONE,N/A,High,UNKNOWN,No linkage evidence identified in Phase 1; co-dated disclosures only
+XT-REL-0002,rapuncel,rathat,NONE,N/A,High,UNKNOWN,No linkage evidence identified
+XT-REL-0003,rapuncel,noderabbit,NONE,N/A,High,UNKNOWN,No linkage evidence identified
+XT-REL-0004,settra,rathat,NONE,N/A,High,UNKNOWN,No linkage evidence identified
+XT-REL-0005,settra,noderabbit,NONE,N/A,High,UNKNOWN,No linkage evidence identified
+XT-REL-0006,rathat,noderabbit,NONE,N/A,High,UNKNOWN,No linkage evidence identified
+XT-REL-0007,rapuncel,rapuncel,CODE_LINEAGE,RAP-EV-0012,Moderate,PROPOSED,Intra-case only: Rapuncel↔BoryptGrab lineage assessed by primary researchers — tracked inside rapuncel investigation; not a cross-ETW-family link

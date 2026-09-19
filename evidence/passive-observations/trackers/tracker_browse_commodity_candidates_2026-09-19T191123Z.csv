@@ -1,0 +1,7 @@
+﻿"family","service","hits","status","note","path"
+"Matanbuchus","ThreatFox-browse","0","UNVERIFIED_CHALLENGE","CAPTCHA_OR_CHALLENGE — not NEGATIVE SEARCH RESULT; Auth-Key required for API","evidence\passive-observations\trackers\threatfox_browse_Matanbuchus_2026-09-19T191123Z.html"
+"LummaStealer","ThreatFox-browse","0","UNVERIFIED_CHALLENGE","CAPTCHA_OR_CHALLENGE — not NEGATIVE SEARCH RESULT; Auth-Key required for API","evidence\passive-observations\trackers\threatfox_browse_LummaStealer_2026-09-19T191123Z.html"
+"Matanbuchus","MalwareBazaar-browse","0","UNVERIFIED_CHALLENGE","CAPTCHA_OR_CHALLENGE","evidence\passive-observations\trackers\malwarebazaar_browse_Matanbuchus_2026-09-19T191123Z.html"
+"LummaStealer","MalwareBazaar-browse","0","UNVERIFIED_CHALLENGE","CAPTCHA_OR_CHALLENGE","evidence\passive-observations\trackers\malwarebazaar_browse_LummaStealer_2026-09-19T191123Z.html"
+"Matanbuchus","ThreatFox-api","0","ERROR","HTTP 401 Unauthorized — Auth-Key required",""
+"LummaStealer","ThreatFox-api","0","ERROR","HTTP 401 Unauthorized — Auth-Key required",""

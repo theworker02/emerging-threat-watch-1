@@ -1,0 +1,10 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+hostname,WIN-LIVFRVQFMKO,see notes,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,SET-IND-0003,Workstation lead; Huntress to 2024-12-24; Kaspersky SSL CN on :7777 (SET-CLAIM-0016). UNKNOWN / not Settra-exclusive — do not backdate Settra.
+filename,RESTORE_FILES.txt,see notes,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,SET-IND-0004,ransom note | NOT OBSERVED by ETW.
+filename,RESTORE_FILES.html,see notes,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,SET-IND-0005,ransom note (Cynet) | NOT OBSERVED by ETW.
+filename,gdrv.sys,see notes,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,SET-IND-0006,BYOVD Sept incident | NOT OBSERVED by ETW.
+filename,STProcessMonitor_v114.sys,see notes,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,SET-IND-0007,MOXFIVE BYOVD artifact — operator tooling | NOT OBSERVED by ETW.
+filename,STProcessMonitor.sys,see notes,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,SET-IND-0008,related vulnerable-driver artifact | NOT OBSERVED by ETW.
+path,C:\Users\Public\NOTICE.png,see notes,2026-09-19T18:07:48Z,Moderate,PRIMARY-SOURCE,SET-IND-0011,wallpaper artifact (Cynet) | NOT OBSERVED by ETW.
+filename_pattern,*_win64.exe,see notes,2026-09-19T18:07:48Z,High,PRIMARY-SOURCE,SET-IND-0013,victim-domain_win64.exe naming | NOT OBSERVED by ETW.
+domain,id-manulife.com,2025-05-05,2026-09-19T19:10:00Z,Low,OBSERVED_PASSIVE,SET-IND-0015,Historical domain resolving to MeshAgent IP 193.5.65.114 (MeshCentral UI). INFRASTRUCTURE_OVERLAP / UNKNOWN — not Settra-exclusive.

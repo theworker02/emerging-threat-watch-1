@@ -1,0 +1,596 @@
+{
+    "type": "bundle",
+    "id": "bundle--68115eea-f6f0-4d05-8806-98a835bf940d",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--f70bc7b4-933e-49a0-beea-4b24b8cfc14e",
+            "created": "2026-09-19T19:25:40.035856Z",
+            "modified": "2026-09-19T19:25:40.035856Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a",
+            "created": "2026-09-19T19:25:40.036046Z",
+            "modified": "2026-09-19T19:25:40.036046Z",
+            "name": "RatHat",
+            "description": "ETW family RatHat. Author attribution NOT_ESTABLISHED. Case-isolated.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--67c13006-19ed-49b2-b733-27cef745fabc",
+            "created": "2026-09-19T19:25:40.036174Z",
+            "modified": "2026-09-19T19:25:40.036174Z",
+            "name": "RatHat domain fegrs.adidasabc.com",
+            "description": "evidence_id=RAT-IND-0020; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'fegrs.adidasabc.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b8c78beb-987b-43a0-b1e3-05fc105df675",
+            "created": "2026-09-19T19:25:40.036486Z",
+            "modified": "2026-09-19T19:25:40.036486Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--67c13006-19ed-49b2-b733-27cef745fabc",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ae7d0fdb-2ec1-4ca7-b270-932c0aeb77f9",
+            "created": "2026-09-19T19:25:40.036568Z",
+            "modified": "2026-09-19T19:25:40.036568Z",
+            "name": "RatHat domain admin.xiongmaocs.help",
+            "description": "evidence_id=RAT-IND-0021; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'admin.xiongmaocs.help']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--807e6194-edb9-48f2-86d7-e1c208a4046e",
+            "created": "2026-09-19T19:25:40.036819Z",
+            "modified": "2026-09-19T19:25:40.036819Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ae7d0fdb-2ec1-4ca7-b270-932c0aeb77f9",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--399209a1-a162-4979-87da-a4eab2e7da80",
+            "created": "2026-09-19T19:25:40.036888Z",
+            "modified": "2026-09-19T19:25:40.036888Z",
+            "name": "RatHat domain oop.uuokxx.com",
+            "description": "evidence_id=RAT-IND-0022; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'oop.uuokxx.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--54feafb7-c043-4be9-a0f0-ed4cafce6bfe",
+            "created": "2026-09-19T19:25:40.03722Z",
+            "modified": "2026-09-19T19:25:40.03722Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--399209a1-a162-4979-87da-a4eab2e7da80",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b38d80f9-3ac7-429f-aef7-d3fd8d05af51",
+            "created": "2026-09-19T19:25:40.037335Z",
+            "modified": "2026-09-19T19:25:40.037335Z",
+            "name": "RatHat domain andxxxo.com",
+            "description": "evidence_id=RAT-IND-0023; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'andxxxo.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--03412b4e-604c-4ab0-89fc-c72d05b440c6",
+            "created": "2026-09-19T19:25:40.037616Z",
+            "modified": "2026-09-19T19:25:40.037616Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b38d80f9-3ac7-429f-aef7-d3fd8d05af51",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a43931a9-3061-4442-b192-2c0d5a0c6cf7",
+            "created": "2026-09-19T19:25:40.0377Z",
+            "modified": "2026-09-19T19:25:40.0377Z",
+            "name": "RatHat domain www.blackcat880.shop",
+            "description": "evidence_id=RAT-IND-0024; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'www.blackcat880.shop']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--27dc889a-2df3-4ad7-b622-925d4e798ba8",
+            "created": "2026-09-19T19:25:40.037989Z",
+            "modified": "2026-09-19T19:25:40.037989Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a43931a9-3061-4442-b192-2c0d5a0c6cf7",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--06b21acc-34b4-4090-b198-8f97072a6651",
+            "created": "2026-09-19T19:25:40.038058Z",
+            "modified": "2026-09-19T19:25:40.038058Z",
+            "name": "RatHat domain www.cheng770.cyou",
+            "description": "evidence_id=RAT-IND-0025; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'www.cheng770.cyou']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--909ff94d-ae88-4b2d-91d8-0e5c12f61555",
+            "created": "2026-09-19T19:25:40.038269Z",
+            "modified": "2026-09-19T19:25:40.038269Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--06b21acc-34b4-4090-b198-8f97072a6651",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5388cfd1-bdd9-44a9-adcc-2e719e8fd3b9",
+            "created": "2026-09-19T19:25:40.038334Z",
+            "modified": "2026-09-19T19:25:40.038334Z",
+            "name": "RatHat domain admin.xiongmaocs.mom",
+            "description": "evidence_id=RAT-IND-0026; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'admin.xiongmaocs.mom']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--49a411da-1ef6-4a76-bb80-24df43fa9298",
+            "created": "2026-09-19T19:25:40.038552Z",
+            "modified": "2026-09-19T19:25:40.038552Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5388cfd1-bdd9-44a9-adcc-2e719e8fd3b9",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--cd8095bb-304c-474a-b2f8-53cabe665946",
+            "created": "2026-09-19T19:25:40.038617Z",
+            "modified": "2026-09-19T19:25:40.038617Z",
+            "name": "RatHat domain admin.xiongmaocs.pics",
+            "description": "evidence_id=RAT-IND-0027; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'admin.xiongmaocs.pics']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e715fa99-6758-4d54-923d-1e92245e01ea",
+            "created": "2026-09-19T19:25:40.038916Z",
+            "modified": "2026-09-19T19:25:40.038916Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--cd8095bb-304c-474a-b2f8-53cabe665946",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--80eed550-4a3f-4bd7-8fc2-07bf5ac891e5",
+            "created": "2026-09-19T19:25:40.039019Z",
+            "modified": "2026-09-19T19:25:40.039019Z",
+            "name": "RatHat domain admin.fjbjwgyuyftg.qpon",
+            "description": "evidence_id=RAT-IND-0028; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'admin.fjbjwgyuyftg.qpon']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--521f2f5f-38b1-4956-a2fd-7dde46a029c7",
+            "created": "2026-09-19T19:25:40.039256Z",
+            "modified": "2026-09-19T19:25:40.039256Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--80eed550-4a3f-4bd7-8fc2-07bf5ac891e5",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--dbced672-72ec-4546-b69d-ca67a83bf4cd",
+            "created": "2026-09-19T19:25:40.039328Z",
+            "modified": "2026-09-19T19:25:40.039328Z",
+            "name": "RatHat domain admin.niaotong2.top",
+            "description": "evidence_id=RAT-IND-0029; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'admin.niaotong2.top']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2fe92e45-8c81-4c56-b9fc-74af1f812432",
+            "created": "2026-09-19T19:25:40.039543Z",
+            "modified": "2026-09-19T19:25:40.039543Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--dbced672-72ec-4546-b69d-ca67a83bf4cd",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b511bb79-6342-40c2-9eca-7341a6354847",
+            "created": "2026-09-19T19:25:40.039609Z",
+            "modified": "2026-09-19T19:25:40.039609Z",
+            "name": "RatHat domain www.heilongyk.top",
+            "description": "evidence_id=RAT-IND-0030; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'www.heilongyk.top']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--d57c4db9-24b3-4ed1-a96e-a57d1dd460bc",
+            "created": "2026-09-19T19:25:40.039813Z",
+            "modified": "2026-09-19T19:25:40.039813Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b511bb79-6342-40c2-9eca-7341a6354847",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--db36b998-7ca7-4c84-b367-117573edf6c4",
+            "created": "2026-09-19T19:25:40.039877Z",
+            "modified": "2026-09-19T19:25:40.039877Z",
+            "name": "RatHat domain cz.gpgmk.com",
+            "description": "evidence_id=RAT-IND-0031; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cz.gpgmk.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--449bae6a-d50e-45d1-8325-40c61f197cdb",
+            "created": "2026-09-19T19:25:40.040304Z",
+            "modified": "2026-09-19T19:25:40.040304Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--db36b998-7ca7-4c84-b367-117573edf6c4",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2d50f603-c3f1-48d9-bfaf-e0a83c512406",
+            "created": "2026-09-19T19:25:40.040376Z",
+            "modified": "2026-09-19T19:25:40.040376Z",
+            "name": "RatHat domain cunzhang.jrgdef.cn",
+            "description": "evidence_id=RAT-IND-0032; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cunzhang.jrgdef.cn']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ba09183e-1622-4667-8671-ddc2190c4e3b",
+            "created": "2026-09-19T19:25:40.040601Z",
+            "modified": "2026-09-19T19:25:40.040601Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2d50f603-c3f1-48d9-bfaf-e0a83c512406",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a9b8d933-d63f-413f-8660-e73e113c54be",
+            "created": "2026-09-19T19:25:40.040668Z",
+            "modified": "2026-09-19T19:25:40.040668Z",
+            "name": "RatHat domain bc.etlva.cn",
+            "description": "evidence_id=RAT-IND-0033; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'bc.etlva.cn']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--93277021-1d79-40b0-b684-b5a5efd3ba68",
+            "created": "2026-09-19T19:25:40.0409Z",
+            "modified": "2026-09-19T19:25:40.0409Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a9b8d933-d63f-413f-8660-e73e113c54be",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ee7e4e3f-270c-401b-b659-ce9b0d5b1eef",
+            "created": "2026-09-19T19:25:40.040963Z",
+            "modified": "2026-09-19T19:25:40.040963Z",
+            "name": "RatHat domain jiaozhu.etlva.cn",
+            "description": "evidence_id=RAT-IND-0034; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'jiaozhu.etlva.cn']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b5642095-c571-4f9f-b63f-c6e5d68bf280",
+            "created": "2026-09-19T19:25:40.041188Z",
+            "modified": "2026-09-19T19:25:40.041188Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ee7e4e3f-270c-401b-b659-ce9b0d5b1eef",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--11f7ecb5-71b2-42b7-9188-494e22311857",
+            "created": "2026-09-19T19:25:40.04125Z",
+            "modified": "2026-09-19T19:25:40.04125Z",
+            "name": "RatHat domain mao.terh5.cn",
+            "description": "evidence_id=RAT-IND-0035; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'mao.terh5.cn']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7af3e82a-bbbb-4061-b107-1a2479c1f0ec",
+            "created": "2026-09-19T19:25:40.041447Z",
+            "modified": "2026-09-19T19:25:40.041447Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--11f7ecb5-71b2-42b7-9188-494e22311857",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--63848c86-f424-489e-85cf-896bba029e0d",
+            "created": "2026-09-19T19:25:40.041508Z",
+            "modified": "2026-09-19T19:25:40.041508Z",
+            "name": "RatHat domain kingbss.com",
+            "description": "evidence_id=RAT-IND-0036; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'kingbss.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--99810bb6-dc10-449e-b44d-54715d7f00bb",
+            "created": "2026-09-19T19:25:40.041735Z",
+            "modified": "2026-09-19T19:25:40.041735Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--63848c86-f424-489e-85cf-896bba029e0d",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--efa8ae54-3ea5-4bf5-8d4b-6a20e2f475b2",
+            "created": "2026-09-19T19:25:40.041799Z",
+            "modified": "2026-09-19T19:25:40.041799Z",
+            "name": "RatHat domain app.tmgg01.top",
+            "description": "evidence_id=RAT-IND-0037; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'app.tmgg01.top']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bd402c3e-cd12-448a-b312-7bd1a1a09843",
+            "created": "2026-09-19T19:25:40.041995Z",
+            "modified": "2026-09-19T19:25:40.041995Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--efa8ae54-3ea5-4bf5-8d4b-6a20e2f475b2",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--db57d9c2-03b7-4910-8f05-f872a36085a2",
+            "created": "2026-09-19T19:25:40.042056Z",
+            "modified": "2026-09-19T19:25:40.042056Z",
+            "name": "RatHat domain primevoria.com",
+            "description": "evidence_id=RAT-IND-0038; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'primevoria.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a187b5a2-430a-4700-979b-aae72c8a4c31",
+            "created": "2026-09-19T19:25:40.042275Z",
+            "modified": "2026-09-19T19:25:40.042275Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--db57d9c2-03b7-4910-8f05-f872a36085a2",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--765de567-651b-4ee1-a1ee-8a47a962c4c1",
+            "created": "2026-09-19T19:25:40.042336Z",
+            "modified": "2026-09-19T19:25:40.042336Z",
+            "name": "RatHat url https://x14hidgz0ez.s3.ap-south-1.amazonaws.com/Xr9HBk23fX.apk",
+            "description": "evidence_id=RAT-IND-0039; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'https://x14hidgz0ez.s3.ap-south-1.amazonaws.com/Xr9HBk23fX.apk']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--43566b68-c0ca-4f45-8cae-ad630ff6f4d4",
+            "created": "2026-09-19T19:25:40.042593Z",
+            "modified": "2026-09-19T19:25:40.042593Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--765de567-651b-4ee1-a1ee-8a47a962c4c1",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c66b0e22-e6ae-46a9-b45a-fc273b480806",
+            "created": "2026-09-19T19:25:40.042654Z",
+            "modified": "2026-09-19T19:25:40.042654Z",
+            "name": "RatHat sha256 00ba0d5aea129f098b5a609633ac77cd642fddba8b64f6332e49e6d33294992e",
+            "description": "evidence_id=RAT-IND-0040; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '00ba0d5aea129f098b5a609633ac77cd642fddba8b64f6332e49e6d33294992e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f29e2dac-f330-4635-9628-a975d134c86c",
+            "created": "2026-09-19T19:25:40.042908Z",
+            "modified": "2026-09-19T19:25:40.042908Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c66b0e22-e6ae-46a9-b45a-fc273b480806",
+            "target_ref": "malware--9a44d312-994c-439c-89ef-107dcc8e0b6a"
+        }
+    ]
+}

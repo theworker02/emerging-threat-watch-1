@@ -1,0 +1,95 @@
+﻿{
+    "macperformancetools.com":  [
+                                    {
+                                        "Name":  "macperformancetools.com",
+                                        "Type":  1,
+                                        "IPAddress":  "104.21.20.224",
+                                        "TTL":  300,
+                                        "Section":  1
+                                    },
+                                    {
+                                        "Name":  "macperformancetools.com",
+                                        "Type":  1,
+                                        "IPAddress":  "172.67.194.182",
+                                        "TTL":  300,
+                                        "Section":  1
+                                    }
+                                ],
+    "ryanpresbrey.cc":  [
+                            {
+                                "Name":  "ryanpresbrey.cc",
+                                "Type":  1,
+                                "IPAddress":  "207.207.210.50",
+                                "TTL":  56,
+                                "Section":  1
+                            },
+                            {
+                                "Name":  "ryanpresbrey.cc",
+                                "Type":  1,
+                                "IPAddress":  "207.207.210.23",
+                                "TTL":  56,
+                                "Section":  1
+                            },
+                            {
+                                "Name":  "ryanpresbrey.cc",
+                                "Type":  1,
+                                "IPAddress":  "207.207.210.36",
+                                "TTL":  56,
+                                "Section":  1
+                            }
+                        ],
+    "icansamyope.com":  {
+                            "error":  "icansamyope.com : DNS name does not exist"
+                        },
+    "zaffersnouty.com":  [
+                             {
+                                 "Name":  "zaffersnouty.com",
+                                 "Type":  1,
+                                 "IPAddress":  "104.21.18.89",
+                                 "TTL":  300,
+                                 "Section":  1
+                             },
+                             {
+                                 "Name":  "zaffersnouty.com",
+                                 "Type":  1,
+                                 "IPAddress":  "172.67.181.133",
+                                 "TTL":  300,
+                                 "Section":  1
+                             }
+                         ],
+    "albinofennel.com":  {
+                             "error":  "albinofennel.com : DNS name does not exist"
+                         },
+    "hanselarinmusky.com":  [
+                                {
+                                    "Name":  "hanselarinmusky.com",
+                                    "Type":  1,
+                                    "IPAddress":  "172.67.221.134",
+                                    "TTL":  300,
+                                    "Section":  1
+                                },
+                                {
+                                    "Name":  "hanselarinmusky.com",
+                                    "Type":  1,
+                                    "IPAddress":  "104.21.25.5",
+                                    "TTL":  300,
+                                    "Section":  1
+                                }
+                            ],
+    "istatlmenus.com":  [
+                            {
+                                "Name":  "istatlmenus.com",
+                                "Type":  1,
+                                "IPAddress":  "172.67.212.253",
+                                "TTL":  300,
+                                "Section":  1
+                            },
+                            {
+                                "Name":  "istatlmenus.com",
+                                "Type":  1,
+                                "IPAddress":  "104.21.85.249",
+                                "TTL":  300,
+                                "Section":  1
+                            }
+                        ]
+}

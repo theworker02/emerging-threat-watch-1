@@ -1,0 +1,8 @@
+package_id,family,folder,threat_type,status,ic3_complaint_number,fbi_tip_or_case_number,reviewer,review_date_utc,filed_date_utc,notes
+ETW-RAP-IC3,Rapuncel,packages/01-rapuncel,Windows stealer / GitHub-SEO distribution,DRAFT,,,,,,"36 INDs; Cruciferra≠author; massimolongqdoj+NXDOMAIN OBSERVED_PASSIVE; no ownership claim"
+ETW-SET-IC3,Settra,packages/02-settra,Enterprise ransomware + operator intrusion,DRAFT,,,,,,"16 INDs; WIN-LIVFRVQFMKO lead not exclusive; MeshCentral/Rapid Seedbox chronology on 193.5.65.114"
+ETW-RAT-IC3,RatHat,packages/03-rathat,Android Accessibility/ADB RAT,DRAFT,,,,,,"40 RAT-IND (arch + Zimperium IOC-repo domains/hashes); package names still open — do not invent"
+ETW-NRB-IC3,NodeRabbit,packages/04-noderabbit,Cross-platform developer-targeted RAT,DRAFT,,,,,,"Mirage Kitten = Kaspersky assessment; Git hooks = local persistence"
+ETW-POL-IC3,PollCat,packages/05-pollcat,Cross-platform obfuscated JavaScript RAT (coding-challenge delivery),DRAFT,,,,,,"Stub package; PRIMARY-SOURCE URL frozen; no OBSERVED infra"
+ETW-SYN-IC3,SynkLoader,packages/06-synkloader,Modular mixed-language loader / credential theft / tunneling,DRAFT,,,,,,"29 SYN-IND (Expel PRIMARY + 4 OBSERVED_PASSIVE A); PS-SYN-001 frozen; still DRAFT pending human review"
+ETW-SHO-IC3,Showboat,packages/07-showboat,Linux modular post-exploitation framework,DRAFT,,,,,,"Stub package; PRIMARY-SOURCE URL frozen; no OBSERVED infra"

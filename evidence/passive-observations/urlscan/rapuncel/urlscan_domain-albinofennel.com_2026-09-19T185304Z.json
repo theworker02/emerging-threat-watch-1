@@ -1,0 +1,358 @@
+﻿ERROR: Cannot convert argument "bytes", with value: "{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "massimolongqdoj.github.io/.github/DoNotSpy11"
+        },
+        "page": {
+          "url": "albinofennel.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "massimolongqdoj.github.io",
+        "apexDomain": "massimolongqdoj.github.io",
+        "time": "2026-08-19T19:21:15.926Z",
+        "uuid": "01a01b78-6612-77eb-89ff-405327ef33ec",
+        "url": "https://massimolongqdoj.github.io/.github/DoNotSpy11",
+        "tags": [
+          "hybridanalysis"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 5,
+        "uniqCountries": 2,
+        "dataLength": 34364,
+        "encodedDataLength": 22415,
+        "requests": 11
+      },
+      "page": {
+        "server": "cloudflare",
+        "redirected": "off-domain",
+        "ip": "188.114.96.3",
+        "apexDomainAgeDays": 30,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "albinofennel.com | 523: Origin is unreachable",
+        "url": "https://albinofennel.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 30,
+        "domainAgeDays": 30,
+        "tlsValidFrom": "2026-07-19T21:27:15.000Z",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "523"
+      },
+      "labels": [],
+      "_id": "01a01b78-6612-77eb-89ff-405327ef33ec",
+      "_score": null,
+      "sort": [
+        1787167275926,
+        "01a01b78-6612-77eb-89ff-405327ef33ec"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a01b78-6612-77eb-89ff-405327ef33ec/",
+      "screenshot": "https://urlscan.io/screenshots/01a01b78-6612-77eb-89ff-405327ef33ec.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+        },
+        "page": {
+          "url": "albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "time": "2026-07-26T00:15:17.502Z",
+        "uuid": "019f9bc6-946f-701b-bffc-eded8020c489",
+        "url": "https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 14987,
+        "encodedDataLength": 4781,
+        "requests": 1
+      },
+      "page": {
+        "server": "cloudflare",
+        "ip": "188.114.97.3",
+        "apexDomainAgeDays": 6,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Passathook Cs2 · Github",
+        "url": "https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 6,
+        "domainAgeDays": 6,
+        "tlsValidFrom": "2026-07-19T21:27:15.000Z",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019f9bc6-946f-701b-bffc-eded8020c489",
+      "_score": null,
+      "sort": [
+        1785024917502,
+        "019f9bc6-946f-701b-bffc-eded8020c489"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019f9bc6-946f-701b-bffc-eded8020c489/",
+      "screenshot": "https://urlscan.io/screenshots/019f9bc6-946f-701b-bffc-eded8020c489.png"
+    }
+  ],
+  "total": 2,
+  "took": 790,
+  "has_more": false
+}", for "WriteAllBytes" to type "System.Byte[]": "Cannot convert value "{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "massimolongqdoj.github.io/.github/DoNotSpy11"
+        },
+        "page": {
+          "url": "albinofennel.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "massimolongqdoj.github.io",
+        "apexDomain": "massimolongqdoj.github.io",
+        "time": "2026-08-19T19:21:15.926Z",
+        "uuid": "01a01b78-6612-77eb-89ff-405327ef33ec",
+        "url": "https://massimolongqdoj.github.io/.github/DoNotSpy11",
+        "tags": [
+          "hybridanalysis"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 5,
+        "uniqCountries": 2,
+        "dataLength": 34364,
+        "encodedDataLength": 22415,
+        "requests": 11
+      },
+      "page": {
+        "server": "cloudflare",
+        "redirected": "off-domain",
+        "ip": "188.114.96.3",
+        "apexDomainAgeDays": 30,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "albinofennel.com | 523: Origin is unreachable",
+        "url": "https://albinofennel.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 30,
+        "domainAgeDays": 30,
+        "tlsValidFrom": "2026-07-19T21:27:15.000Z",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "523"
+      },
+      "labels": [],
+      "_id": "01a01b78-6612-77eb-89ff-405327ef33ec",
+      "_score": null,
+      "sort": [
+        1787167275926,
+        "01a01b78-6612-77eb-89ff-405327ef33ec"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a01b78-6612-77eb-89ff-405327ef33ec/",
+      "screenshot": "https://urlscan.io/screenshots/01a01b78-6612-77eb-89ff-405327ef33ec.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+        },
+        "page": {
+          "url": "albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "time": "2026-07-26T00:15:17.502Z",
+        "uuid": "019f9bc6-946f-701b-bffc-eded8020c489",
+        "url": "https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 14987,
+        "encodedDataLength": 4781,
+        "requests": 1
+      },
+      "page": {
+        "server": "cloudflare",
+        "ip": "188.114.97.3",
+        "apexDomainAgeDays": 6,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Passathook Cs2 · Github",
+        "url": "https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 6,
+        "domainAgeDays": 6,
+        "tlsValidFrom": "2026-07-19T21:27:15.000Z",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019f9bc6-946f-701b-bffc-eded8020c489",
+      "_score": null,
+      "sort": [
+        1785024917502,
+        "019f9bc6-946f-701b-bffc-eded8020c489"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019f9bc6-946f-701b-bffc-eded8020c489/",
+      "screenshot": "https://urlscan.io/screenshots/019f9bc6-946f-701b-bffc-eded8020c489.png"
+    }
+  ],
+  "total": 2,
+  "took": 790,
+  "has_more": false
+}" to type "System.Byte[]". Error: "Cannot convert value "{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "massimolongqdoj.github.io/.github/DoNotSpy11"
+        },
+        "page": {
+          "url": "albinofennel.com"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "massimolongqdoj.github.io",
+        "apexDomain": "massimolongqdoj.github.io",
+        "time": "2026-08-19T19:21:15.926Z",
+        "uuid": "01a01b78-6612-77eb-89ff-405327ef33ec",
+        "url": "https://massimolongqdoj.github.io/.github/DoNotSpy11",
+        "tags": [
+          "hybridanalysis"
+        ]
+      },
+      "stats": {
+        "uniqIPs": 5,
+        "uniqCountries": 2,
+        "dataLength": 34364,
+        "encodedDataLength": 22415,
+        "requests": 11
+      },
+      "page": {
+        "server": "cloudflare",
+        "redirected": "off-domain",
+        "ip": "188.114.96.3",
+        "apexDomainAgeDays": 30,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "albinofennel.com | 523: Origin is unreachable",
+        "url": "https://albinofennel.com/",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 30,
+        "domainAgeDays": 30,
+        "tlsValidFrom": "2026-07-19T21:27:15.000Z",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "523"
+      },
+      "labels": [],
+      "_id": "01a01b78-6612-77eb-89ff-405327ef33ec",
+      "_score": null,
+      "sort": [
+        1787167275926,
+        "01a01b78-6612-77eb-89ff-405327ef33ec"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a01b78-6612-77eb-89ff-405327ef33ec/",
+      "screenshot": "https://urlscan.io/screenshots/01a01b78-6612-77eb-89ff-405327ef33ec.png"
+    },
+    {
+      "canonical": {
+        "task": {
+          "url": "albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+        },
+        "page": {
+          "url": "albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "manual",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "time": "2026-07-26T00:15:17.502Z",
+        "uuid": "019f9bc6-946f-701b-bffc-eded8020c489",
+        "url": "https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 1,
+        "dataLength": 14987,
+        "encodedDataLength": 4781,
+        "requests": 1
+      },
+      "page": {
+        "server": "cloudflare",
+        "ip": "188.114.97.3",
+        "apexDomainAgeDays": 6,
+        "language": "en",
+        "mimeType": "text/html",
+        "title": "Passathook Cs2 · Github",
+        "url": "https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io",
+        "tlsValidDays": 90,
+        "tlsAgeDays": 6,
+        "domainAgeDays": 6,
+        "tlsValidFrom": "2026-07-19T21:27:15.000Z",
+        "domain": "albinofennel.com",
+        "apexDomain": "albinofennel.com",
+        "asnname": "CLOUDFLARENET - Cloudflare, Inc., US",
+        "asn": "AS13335",
+        "tlsIssuer": "WE1",
+        "status": "200"
+      },
+      "labels": [],
+      "_id": "019f9bc6-946f-701b-bffc-eded8020c489",
+      "_score": null,
+      "sort": [
+        1785024917502,
+        "019f9bc6-946f-701b-bffc-eded8020c489"
+      ],
+      "result": "https://urlscan.io/api/v1/result/019f9bc6-946f-701b-bffc-eded8020c489/",
+      "screenshot": "https://urlscan.io/screenshots/019f9bc6-946f-701b-bffc-eded8020c489.png"
+    }
+  ],
+  "total": 2,
+  "took": 790,
+  "has_more": false
+}" to type "System.Byte". Error: "Input string was not in a correct format."""

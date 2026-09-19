@@ -1,0 +1,12 @@
+{
+  "collected_utc": "2026-09-19T191134Z",
+  "collection_mechanism": "HTTP POST ThreatFox public API (no Auth-Key)",
+  "originating_service": "ThreatFox",
+  "original_query": "SynkLoader",
+  "http_status": 401,
+  "family": "SynkLoader",
+  "response": {
+    "error": "Unauthorized"
+  },
+  "notes": "Passive taginfo query. ASSOCIATION_ONLY for Cruciferra. Do not invent IOCs. Auth-Key may be required."
+}

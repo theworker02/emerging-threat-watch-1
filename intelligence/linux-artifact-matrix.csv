@@ -1,0 +1,21 @@
+family,variant,artifact_type,artifact,platform,purpose,observed_or_inferred,source,evidence_id,confidence
+NodeRabbit,V1,persistence_path,~/.config/microsoft-edge-update/msedge_update.js,Linux,Masquerade Edge Update + durable implant copy,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0012,High
+NodeRabbit,V1,persistence_mechanism,@reboot cron invoking Node.js on msedge_update.js,Linux,Survive reboot,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0012,High
+NodeRabbit,V2,persistence_path,~/.config/intel-dsa/idriver_support.js,Linux,Masquerade Intel DSA,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0013,High
+NodeRabbit,V2,persistence_mechanism,@reboot cron,Linux,Survive reboot,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0013,High
+NodeRabbit,V3,persistence_path,~/.local/share/<payload>,Linux,Generic user-local persistence staging,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0014,High
+NodeRabbit,V3,persistence_mechanism,@reboot cron; skip if crontab -l fails,Linux,Conditional persistence,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0014,High
+NodeRabbit,V3,persistence_bridge,launcher.vbs + scheduled task → wscript.exe → wsl.exe,WSL/Windows,Relaunch Linux payload from Windows scheduler,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0015,High
+NodeRabbit,All,account_discovery,Agent ID = SHA-256(hostname|username|OS|arch|MAC)[:32],Win/Linux/macOS,Unique agent identity without whoami,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0016,High
+NodeRabbit,All,c2_command,sys:info → hostname domain-user username PID,Win/Linux/macOS,Runtime/API host & account info,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0017,High
+NodeRabbit,All,c2_command,net:config → adapters MAC IP DNS,Win/Linux/macOS,Network identity enumeration,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0018,High
+NodeRabbit,All,c2_command,proc:start → arbitrary shell execution,Win/Linux/macOS,C2 arbitrary exec (can run whoami if operator chooses),observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0019,High
+NodeRabbit,All,platform_capability,Native Node.js RAT Win/Linux/macOS,Cross-platform,Single codebase Linux execution,observed,Kaspersky Securelist 2026-09-01,NRB-CLAIM-0001,High
+RatHat,n/a,shell_context,ADB shell UID 2000 after Wireless Debugging self-pair,Android,Break out of app sandbox,observed,Zimperium zLabs 2026-09-16,RAT-CLAIM-0013,High
+RatHat,n/a,staging_path,/data/local/tmp/liblocal-service.so,Android,Go agent outside package lifecycle,observed,Zimperium zLabs 2026-09-16,RAT-CLAIM-0014,High
+RatHat,n/a,staging_path,/data/local/tmp/frpc (from libmedia_codec.so),Android,FRP reverse tunnel,observed,Zimperium zLabs 2026-09-16,RAT-CLAIM-0014,High
+RatHat,n/a,shell_command,"dumpsys deviceidle; am set-standby-bucket; pm disable-user/uninstall/install/grant; settings put secure",Android,Persistence & privilege from shell,observed,Zimperium zLabs 2026-09-16,RAT-CLAIM-0015,High
+RatHat,n/a,hardware_input,getevent → /dev/input/* → touch coords + keypad geometry,Android (Linux kernel),PIN reconstruction,observed,Zimperium zLabs 2026-09-16,RAT-CLAIM-0009,High
+RatHat,n/a,classification_rule,Android malware + ADB shell on Linux-kernel interfaces — NOT Linux desktop malware,Android,Wording discipline,inferred,ETW methodology + Zimperium primary,RAT-CLAIM-0016,High
+Settra,n/a,negative_result,No Linux/Unix artifacts in primary corpus,Windows,N/A — NEGATIVE SEARCH RESULT,observed_absence,SEARCH-SET-LINUX-001,SEARCH-SET-LINUX-001,High
+Rapuncel,n/a,negative_result,No defensible Linux/Unix artifacts presently,Windows,N/A — NEGATIVE SEARCH RESULT,observed_absence,SEARCH-RAP-LINUX-001,SEARCH-RAP-LINUX-001,Moderate

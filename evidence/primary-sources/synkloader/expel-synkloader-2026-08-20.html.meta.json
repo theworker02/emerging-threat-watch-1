@@ -1,0 +1,12 @@
+﻿{
+    "bytes":  1389994,
+    "provenance":  "PRIMARY-SOURCE",
+    "retrieved_utc":  "2026-09-19T18:52:34Z",
+    "http_status":  200,
+    "collection_method":  "HTTP GET Invoke-WebRequest browser UA; passive document retrieval only",
+    "original_url":  "https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/",
+    "publisher":  "Expel",
+    "sha256":  "0e0864449f6fe6b17ce216e639c5b2c9066202b6f58cd19cdc21b00b1d6b9cd9",
+    "publication_date":  "2026-08-20",
+    "family":  "synkloader"
+}

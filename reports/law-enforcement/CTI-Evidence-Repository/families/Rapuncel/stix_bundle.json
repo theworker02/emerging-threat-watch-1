@@ -1,0 +1,758 @@
+{
+    "type": "bundle",
+    "id": "bundle--1d54fdb7-7541-469f-8e83-1544905cbe6b",
+    "objects": [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--0f3fad55-5a1a-4fa1-a21b-a907f46ed6b6",
+            "created": "2026-09-19T19:25:39.984305Z",
+            "modified": "2026-09-19T19:25:39.984305Z",
+            "name": "Emerging Threat Watch",
+            "description": "Defensive threat-intelligence research package.",
+            "identity_class": "organization"
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88",
+            "created": "2026-09-19T19:25:39.984458Z",
+            "modified": "2026-09-19T19:25:39.984458Z",
+            "name": "Rapuncel",
+            "description": "ETW family Rapuncel. Author attribution NOT_ESTABLISHED. Case-isolated.",
+            "malware_types": [
+                "unknown"
+            ],
+            "is_family": true
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b668c531-63f9-44f2-8235-2f7a6327b4f3",
+            "created": "2026-09-19T19:25:39.984755Z",
+            "modified": "2026-09-19T19:25:39.984755Z",
+            "name": "Rapuncel sha256 ea8c31a86fa785ab514022c278a2f6e571c86aac9283745a96605c44d88382d6",
+            "description": "evidence_id=RAP-IND-0001; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'ea8c31a86fa785ab514022c278a2f6e571c86aac9283745a96605c44d88382d6']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bf8cd7bc-6ccb-4323-a940-30d3bd47dcf2",
+            "created": "2026-09-19T19:25:39.990366Z",
+            "modified": "2026-09-19T19:25:39.990366Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b668c531-63f9-44f2-8235-2f7a6327b4f3",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7fe218aa-1e33-4e4a-9cf7-fae605e1e3c6",
+            "created": "2026-09-19T19:25:39.990742Z",
+            "modified": "2026-09-19T19:25:39.990742Z",
+            "name": "Rapuncel sha256 aefbc6e04320e9a0e80f2323f8a897c4fdb222a37b0b87d76e850109decbfadd",
+            "description": "evidence_id=RAP-IND-0002; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = 'aefbc6e04320e9a0e80f2323f8a897c4fdb222a37b0b87d76e850109decbfadd']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6583e826-951b-4ac1-b4a7-0bd19a1d0542",
+            "created": "2026-09-19T19:25:39.991197Z",
+            "modified": "2026-09-19T19:25:39.991197Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7fe218aa-1e33-4e4a-9cf7-fae605e1e3c6",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--10479c00-b698-4fb9-9886-a397666e9324",
+            "created": "2026-09-19T19:25:39.991286Z",
+            "modified": "2026-09-19T19:25:39.991286Z",
+            "name": "Rapuncel sha256 611b3ba687b7f46319a19609605ddfe5225e6d85277d8e923eea3fdb6f7b5b61",
+            "description": "evidence_id=RAP-IND-0003; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '611b3ba687b7f46319a19609605ddfe5225e6d85277d8e923eea3fdb6f7b5b61']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3fb94b51-cfc7-4dd8-ae47-fd1a6c9bdda2",
+            "created": "2026-09-19T19:25:39.991594Z",
+            "modified": "2026-09-19T19:25:39.991594Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--10479c00-b698-4fb9-9886-a397666e9324",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2c0f48fa-134d-42e6-925e-173a0c3efd8b",
+            "created": "2026-09-19T19:25:39.991668Z",
+            "modified": "2026-09-19T19:25:39.991668Z",
+            "name": "Rapuncel sha256 75018b06c7105a1dca391805d17b402aed35ebd515b92d461236eafbd606cb40",
+            "description": "evidence_id=RAP-IND-0004; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '75018b06c7105a1dca391805d17b402aed35ebd515b92d461236eafbd606cb40']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a8f749d4-6c7d-4efc-8c2f-6dd94a2ffa27",
+            "created": "2026-09-19T19:25:39.992005Z",
+            "modified": "2026-09-19T19:25:39.992005Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2c0f48fa-134d-42e6-925e-173a0c3efd8b",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c4342e8a-aabc-4716-a291-90eef63133ff",
+            "created": "2026-09-19T19:25:39.992077Z",
+            "modified": "2026-09-19T19:25:39.992077Z",
+            "name": "Rapuncel sha256 26db14b956e33f69b3397a36387d32e01eb63613acff91069dc76b6ed7de45a8",
+            "description": "evidence_id=RAP-IND-0005; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '26db14b956e33f69b3397a36387d32e01eb63613acff91069dc76b6ed7de45a8']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ab8d72a2-e569-4598-aed5-106a0d38b5c3",
+            "created": "2026-09-19T19:25:39.992416Z",
+            "modified": "2026-09-19T19:25:39.992416Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c4342e8a-aabc-4716-a291-90eef63133ff",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e30096ab-3ea3-47a9-80b2-762f618228eb",
+            "created": "2026-09-19T19:25:39.992488Z",
+            "modified": "2026-09-19T19:25:39.992488Z",
+            "name": "Rapuncel sha256 5f0cfe8357bb52b45068ddbac053e32bc38e6cb5e086746f5402657b0a5cfb1c",
+            "description": "evidence_id=RAP-IND-0006; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '5f0cfe8357bb52b45068ddbac053e32bc38e6cb5e086746f5402657b0a5cfb1c']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5cd10edb-fc0b-4adc-b0cb-71d8a104149b",
+            "created": "2026-09-19T19:25:39.992762Z",
+            "modified": "2026-09-19T19:25:39.992762Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e30096ab-3ea3-47a9-80b2-762f618228eb",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e3c12c6d-42e4-4fe8-bdfe-b30a3c84dbb4",
+            "created": "2026-09-19T19:25:39.992829Z",
+            "modified": "2026-09-19T19:25:39.992829Z",
+            "name": "Rapuncel domain albinofennel.com",
+            "description": "evidence_id=RAP-IND-0007; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'albinofennel.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--561b238c-2fa8-4b54-b777-7c52dacf2bad",
+            "created": "2026-09-19T19:25:39.993515Z",
+            "modified": "2026-09-19T19:25:39.993515Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e3c12c6d-42e4-4fe8-bdfe-b30a3c84dbb4",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0fbeb915-27aa-4f41-b726-b80bc3b7bb4a",
+            "created": "2026-09-19T19:25:39.993621Z",
+            "modified": "2026-09-19T19:25:39.993621Z",
+            "name": "Rapuncel domain hanselarinmusky.com",
+            "description": "evidence_id=RAP-IND-0008; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'hanselarinmusky.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--58daf557-ccac-4eba-868c-dead84ff4c75",
+            "created": "2026-09-19T19:25:39.99396Z",
+            "modified": "2026-09-19T19:25:39.99396Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0fbeb915-27aa-4f41-b726-b80bc3b7bb4a",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--68157b2f-9896-4f53-966f-091dcdc929b3",
+            "created": "2026-09-19T19:25:39.994035Z",
+            "modified": "2026-09-19T19:25:39.994035Z",
+            "name": "Rapuncel domain icansamyope.com",
+            "description": "evidence_id=RAP-IND-0009; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'icansamyope.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cd76db61-3af1-4088-9082-4dbe96d04fb4",
+            "created": "2026-09-19T19:25:39.994297Z",
+            "modified": "2026-09-19T19:25:39.994297Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--68157b2f-9896-4f53-966f-091dcdc929b3",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--03cc2c0d-04a5-4be0-abc5-172ef2d1dc22",
+            "created": "2026-09-19T19:25:39.994363Z",
+            "modified": "2026-09-19T19:25:39.994363Z",
+            "name": "Rapuncel domain istatlmenus.com",
+            "description": "evidence_id=RAP-IND-0010; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'istatlmenus.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1b464eef-fb2d-4ab4-939b-f4e20677a76b",
+            "created": "2026-09-19T19:25:39.994599Z",
+            "modified": "2026-09-19T19:25:39.994599Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--03cc2c0d-04a5-4be0-abc5-172ef2d1dc22",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2863c1a7-d260-4d53-a900-f894005873d2",
+            "created": "2026-09-19T19:25:39.994664Z",
+            "modified": "2026-09-19T19:25:39.994664Z",
+            "name": "Rapuncel domain macperformancetools.com",
+            "description": "evidence_id=RAP-IND-0011; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'macperformancetools.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--39c31ed7-9aa9-4f85-b109-2718ec8c75f0",
+            "created": "2026-09-19T19:25:39.994902Z",
+            "modified": "2026-09-19T19:25:39.994902Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2863c1a7-d260-4d53-a900-f894005873d2",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7cdd76ef-03fa-4c83-9af5-a339958bc172",
+            "created": "2026-09-19T19:25:39.99497Z",
+            "modified": "2026-09-19T19:25:39.99497Z",
+            "name": "Rapuncel domain zaffersnouty.com",
+            "description": "evidence_id=RAP-IND-0012; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'zaffersnouty.com']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ecace3b6-3b88-4b00-8491-7a219518c03b",
+            "created": "2026-09-19T19:25:39.995193Z",
+            "modified": "2026-09-19T19:25:39.995193Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7cdd76ef-03fa-4c83-9af5-a339958bc172",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1cf2042b-b2ed-4422-9c54-3cff7376d865",
+            "created": "2026-09-19T19:25:39.995255Z",
+            "modified": "2026-09-19T19:25:39.995255Z",
+            "name": "Rapuncel domain ryanpresbrey.cc",
+            "description": "evidence_id=RAP-IND-0013; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'ryanpresbrey.cc']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bb8bb72f-1eff-45a1-863c-34f7201f7533",
+            "created": "2026-09-19T19:25:39.995479Z",
+            "modified": "2026-09-19T19:25:39.995479Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1cf2042b-b2ed-4422-9c54-3cff7376d865",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--1b1c0ce8-439a-4cfd-87ca-bb038c027f04",
+            "created": "2026-09-19T19:25:39.99554Z",
+            "modified": "2026-09-19T19:25:39.99554Z",
+            "name": "Rapuncel ipv4 2.26.126.50",
+            "description": "evidence_id=RAP-IND-0014; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '2.26.126.50']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--33805d9c-8f45-4858-9cf9-853144703cbd",
+            "created": "2026-09-19T19:25:39.99584Z",
+            "modified": "2026-09-19T19:25:39.99584Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--1b1c0ce8-439a-4cfd-87ca-bb038c027f04",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fc9c80fb-bc1d-4a90-a1a0-13ed24bb650f",
+            "created": "2026-09-19T19:25:39.995904Z",
+            "modified": "2026-09-19T19:25:39.995904Z",
+            "name": "Rapuncel ipv4 104.21.27.38",
+            "description": "evidence_id=RAP-IND-0015; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '104.21.27.38']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--630d1601-ea2a-44fd-b5d3-85dde0860f6d",
+            "created": "2026-09-19T19:25:39.996123Z",
+            "modified": "2026-09-19T19:25:39.996123Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fc9c80fb-bc1d-4a90-a1a0-13ed24bb650f",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ee7ebc2d-e3cd-4f95-abd3-2958610ab994",
+            "created": "2026-09-19T19:25:39.996188Z",
+            "modified": "2026-09-19T19:25:39.996188Z",
+            "name": "Rapuncel ipv4 172.67.168.224",
+            "description": "evidence_id=RAP-IND-0016; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '172.67.168.224']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b6313fe8-a533-40ff-8653-4a6e974ae9e0",
+            "created": "2026-09-19T19:25:39.996388Z",
+            "modified": "2026-09-19T19:25:39.996388Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ee7ebc2d-e3cd-4f95-abd3-2958610ab994",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d28aa160-977f-4323-a90d-178c1fe2e464",
+            "created": "2026-09-19T19:25:39.99645Z",
+            "modified": "2026-09-19T19:25:39.99645Z",
+            "name": "Rapuncel ipv4 172.67.212.253",
+            "description": "evidence_id=RAP-IND-0017; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '172.67.212.253']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--552ec413-9142-475a-a36c-8a5c099c8b36",
+            "created": "2026-09-19T19:25:39.996655Z",
+            "modified": "2026-09-19T19:25:39.996655Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d28aa160-977f-4323-a90d-178c1fe2e464",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--7ea304b4-65c4-4213-b3a1-4d95d9692862",
+            "created": "2026-09-19T19:25:39.996722Z",
+            "modified": "2026-09-19T19:25:39.996722Z",
+            "name": "Rapuncel ipv4 104.21.20.224",
+            "description": "evidence_id=RAP-IND-0018; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '104.21.20.224']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c60eaf6f-f544-4545-90dc-afa2b5da35d9",
+            "created": "2026-09-19T19:25:39.996922Z",
+            "modified": "2026-09-19T19:25:39.996922Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--7ea304b4-65c4-4213-b3a1-4d95d9692862",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--55618d00-f99d-4d61-8cc4-7233bc7f6ad8",
+            "created": "2026-09-19T19:25:39.996981Z",
+            "modified": "2026-09-19T19:25:39.996981Z",
+            "name": "Rapuncel ipv4 104.21.18.89",
+            "description": "evidence_id=RAP-IND-0019; provenance=PRIMARY-SOURCE; confidence=Moderate. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[ipv4-addr:value = '104.21.18.89']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 60
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1f06d43a-f3c6-42af-adee-b84f9b5874b8",
+            "created": "2026-09-19T19:25:39.997174Z",
+            "modified": "2026-09-19T19:25:39.997174Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--55618d00-f99d-4d61-8cc4-7233bc7f6ad8",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b03f7f0c-3944-42ef-b43c-f78d2be6bac5",
+            "created": "2026-09-19T19:25:39.997234Z",
+            "modified": "2026-09-19T19:25:39.997234Z",
+            "name": "Rapuncel sha256 1e6c1766ac78d7adfdae71d361cb132d972771897ae9065503b135cb812d7c35",
+            "description": "evidence_id=RAP-IND-0023; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '1e6c1766ac78d7adfdae71d361cb132d972771897ae9065503b135cb812d7c35']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--462ed0cc-ad12-4ca9-b853-ecf5cd85f874",
+            "created": "2026-09-19T19:25:39.997647Z",
+            "modified": "2026-09-19T19:25:39.997647Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b03f7f0c-3944-42ef-b43c-f78d2be6bac5",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e280ca50-f039-4a68-aa80-b3705055c4d9",
+            "created": "2026-09-19T19:25:39.997716Z",
+            "modified": "2026-09-19T19:25:39.997716Z",
+            "name": "Rapuncel url lastpass-authenticator.github.io",
+            "description": "evidence_id=RAP-IND-0026; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'lastpass-authenticator.github.io']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--30adf713-9fb5-49c0-a58a-11ab8a706bc1",
+            "created": "2026-09-19T19:25:39.998025Z",
+            "modified": "2026-09-19T19:25:39.998025Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e280ca50-f039-4a68-aa80-b3705055c4d9",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--66f02d31-4473-4bd0-a75c-4c86ae64f94f",
+            "created": "2026-09-19T19:25:39.998089Z",
+            "modified": "2026-09-19T19:25:39.998089Z",
+            "name": "Rapuncel url edgarcostartqd.github.io",
+            "description": "evidence_id=RAP-IND-0027; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'edgarcostartqd.github.io']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--06bb3f97-43a9-4d9a-9c06-52a843d766d9",
+            "created": "2026-09-19T19:25:39.998308Z",
+            "modified": "2026-09-19T19:25:39.998308Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--66f02d31-4473-4bd0-a75c-4c86ae64f94f",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--eac75c78-09f2-470c-a78b-93db21147868",
+            "created": "2026-09-19T19:25:39.99837Z",
+            "modified": "2026-09-19T19:25:39.99837Z",
+            "name": "Rapuncel url dallikilic54.github.io",
+            "description": "evidence_id=RAP-IND-0028; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'dallikilic54.github.io']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7d6fae41-34c0-449c-a438-1de0db1c9825",
+            "created": "2026-09-19T19:25:39.998586Z",
+            "modified": "2026-09-19T19:25:39.998586Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eac75c78-09f2-470c-a78b-93db21147868",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0600b2be-4ece-45d9-be18-b13c488a6df2",
+            "created": "2026-09-19T19:25:39.998647Z",
+            "modified": "2026-09-19T19:25:39.998647Z",
+            "name": "Rapuncel url massimolongqdoj.github.io",
+            "description": "evidence_id=RAP-IND-0031; provenance=OBSERVED_PASSIVE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'massimolongqdoj.github.io']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--972e88f9-e9bf-48db-84e4-f0c7b9a9ac21",
+            "created": "2026-09-19T19:25:39.998865Z",
+            "modified": "2026-09-19T19:25:39.998865Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0600b2be-4ece-45d9-be18-b13c488a6df2",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--000eb38a-4b03-4a14-88bb-c8606d8b3938",
+            "created": "2026-09-19T19:25:39.998926Z",
+            "modified": "2026-09-19T19:25:39.998926Z",
+            "name": "Rapuncel url https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io",
+            "description": "evidence_id=RAP-IND-0033; provenance=OBSERVED_PASSIVE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[url:value = 'https://albinofennel.com/o8ehlpnvdqan/passathook-cs2.github.io']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--87ad50e0-65e6-4af1-ab88-db34d058dbb0",
+            "created": "2026-09-19T19:25:39.999194Z",
+            "modified": "2026-09-19T19:25:39.999194Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--000eb38a-4b03-4a14-88bb-c8606d8b3938",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fb6a827f-8a6a-4acd-ab2a-11720dd559b8",
+            "created": "2026-09-19T19:25:39.999255Z",
+            "modified": "2026-09-19T19:25:39.999255Z",
+            "name": "Rapuncel sha256 87e8d39db624f37d3e77aedf487a2dfd197f71a4730ea74f4e7a4341deaec2ff",
+            "description": "evidence_id=RAP-IND-0034; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '87e8d39db624f37d3e77aedf487a2dfd197f71a4730ea74f4e7a4341deaec2ff']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3589e6a9-fc99-418c-844b-1332b08e634e",
+            "created": "2026-09-19T19:25:39.999514Z",
+            "modified": "2026-09-19T19:25:39.999514Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fb6a827f-8a6a-4acd-ab2a-11720dd559b8",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--468c3fb6-9235-4aee-8bbb-b69957d1bfa3",
+            "created": "2026-09-19T19:25:39.999577Z",
+            "modified": "2026-09-19T19:25:39.999577Z",
+            "name": "Rapuncel sha256 0ae0a7f118b80e4655b8b86bb421c151a8f17930e76e714b2fa199409f3af9ce",
+            "description": "evidence_id=RAP-IND-0035; provenance=PRIMARY-SOURCE; confidence=High. NOT author attribution.",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[file:hashes.'SHA-256' = '0ae0a7f118b80e4655b8b86bb421c151a8f17930e76e714b2fa199409f3af9ce']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2026-09-19T19:25:39.984003Z",
+            "confidence": 85
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--62f4a9c6-29fd-4f46-b859-848f500d568e",
+            "created": "2026-09-19T19:25:39.99984Z",
+            "modified": "2026-09-19T19:25:39.99984Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--468c3fb6-9235-4aee-8bbb-b69957d1bfa3",
+            "target_ref": "malware--ccfef87b-bddb-4ae4-9218-c685fdb59d88"
+        }
+    ]
+}

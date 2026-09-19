@@ -1,0 +1,355 @@
+<!DOCTYPE html><!-- Last Published: Fri Sep 11 2026 18:37:56 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="www.moxfive.com" data-wf-page="6392100b832f6269b3c8dab4" data-wf-site="5ff346f64ac6783fa467a060" lang="en" data-wf-collection="6392100b832f620c44c8da2f" data-wf-item-slug="settra-ransomware-ttps-victims-and-defense-guide"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>Settra Ransomware: TTPs, Victims, and Defense Guide</title><meta content="MOXFIVE breaks down Settra ransomware&#x27;s confirmed attack chain, tools, and tactics from active casework, plus practical steps to detect and defend against it." name="description"/><meta content="Settra Ransomware: TTPs, Victims, and Defense Guide" property="og:title"/><meta content="MOXFIVE breaks down Settra ransomware&#x27;s confirmed attack chain, tools, and tactics from active casework, plus practical steps to detect and defend against it." property="og:description"/><meta content="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover.png" property="og:image"/><meta content="Settra Ransomware: TTPs, Victims, and Defense Guide" name="twitter:title"/><meta content="MOXFIVE breaks down Settra ransomware&#x27;s confirmed attack chain, tools, and tactics from active casework, plus practical steps to detect and defend against it." name="twitter:description"/><meta content="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover.png" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="WycAM6cU_MJ5AKppZprgYIMhko2qlbAIKT_Zh_jLcXA" name="google-site-verification"/><link href="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/css/moxfive-dev-site.webflow.shared.092e1f78f.min.css" rel="stylesheet" type="text/css" integrity="sha384-CS4fePHTKPVCHF8OQybisB/UsneMllG0ervGNv6x8VLrW9y5T5eAoQz5vkuzUa54" crossorigin="anonymous"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["DM Sans:300,400,500,600,700","Poppins:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/6035c2e9856ac8471ab86c95_moxfive-logo-favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/6035c319d31dcad3a3c7815e_moxfive-logo-brandmark-webclip.png" rel="apple-touch-icon"/><link href="https://www.moxfive.com//blog/settra-ransomware-ttps-victims-and-defense-guide" rel="canonical"/><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Settra Ransomware: TTPs, Victims, and Defense Guide",
+  "description": "MOXFIVE breaks down Settra&#39;s confirmed attack chain, tools, and tactics from active casework, plus how to defend against it.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover.png"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Luke Moran",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "MOXFIVE",
+      "url": "https://www.moxfive.com"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "MOXFIVE",
+    "url": "https://www.moxfive.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.moxfive.com/images/moxfive-logo.png"
+    }
+  },
+  "datePublished": "2026-07-22T19:02:54.231Z",
+  "dateModified": "2026-07-22T19:02:33.741Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "settra-ransomware-ttps-victims-and-defense-guide"
+  }
+}
+</script><style>
+  [x-cloak] { display: none !important; }
+.blog-header-slider .splide__list,
+.blog-posts-slider .splide__list {gap: 0;}
+  .blog-header-slider.splide,
+.blog-posts-slider.splide {
+    display: flex;
+    flex-direction: column-reverse;
+}
+  .blog-header-slider .splide__arrows,
+.blog-posts-slider .splide__arrows {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+  .blog-header-slider .splide__arrow,
+.blog-posts-slider .splide__arrow {
+    position: static;
+    transform: none;
+    color: var(--dark-orange);
+    opacity: 1;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,1);
+}
+  .blog-header-slider  .splide__arrow svg,
+.blog-posts-slider .splide__arrow svg {
+    fill: currentColor;
+}
+.blog-posts-slider .collection-item {
+    height: 100%;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0E2DGSNH2R"></script>
+-->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-0E2DGSNH2R');
+</script>
+
+<!-- Google Tag Manager -->
+<!--
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K76C5VL');</script>
+-->
+<!-- End Google Tag Manager -->
+<!--
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+-->
+<!-- Start of HubSpot Embed Code -->
+<!--
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8088882.js"></script>
+-->
+<!-- End of HubSpot Embed Code -->
+<script type="text/javascript">
+_linkedin_partner_id = "4254244";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script>
+  const lazyStyles = [
+    {"src" : "https://unpkg.com/swiper/swiper-bundle.min.css", "media" : 'all'},
+    {"src" : "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css", "media" : 'all'},
+  ];
+  const lazyScripts = [
+    {
+        "src" : "https://www.googletagmanager.com/gtag/js?id=G-0E2DGSNH2R",
+        "defer" : false,
+        "async" : true,
+        "body" : false
+    },
+    {
+        "src" : "https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js",
+        "defer" : true,
+        "async" : false,
+        "body" : true
+    },
+    {
+        "src" : "https://unpkg.com/swiper/swiper-bundle.min.js",
+        "defer" : true,
+        "async" : false,
+        "body" : true
+    },
+    {
+        "src" : "https://js.hs-scripts.com/8088882.js",
+        "defer" : false,
+        "async" : false,
+        "body" : true
+    },
+    {
+        "src" : "https://js.hsforms.net/forms/v2.js",
+        "defer" : false,
+        "async" : false,
+        "body" : true
+    },
+    {
+        "src" : "https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js",
+        "defer" : true,
+        "async" : false,
+        "body" : true
+    }
+];
+function loadStyles(src,media){
+    var link  = document.createElement('link');
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = src;
+  	if(media)
+    link.media = media ? media : 'all';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+function loadScript(src, defer, async, body) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = src;
+    if (defer) {
+        script.defer = true;
+    }
+    if (async) {
+        script.async = true;
+    }
+    let parent = body ? 'body' : 'head';
+    document.getElementsByTagName(parent)[0].appendChild(script);
+}
+['click', 'scroll', 'mousemove', 'touchstart'].forEach(function(e) {
+    window.addEventListener(e, firstInteraction, {
+        once: true
+    });
+});
+var userInteracted = false;
+
+function firstInteraction() {
+    if (!userInteracted) {
+        userInteracted = true;
+      document.body.classList.add('user-interected');
+      
+        for (ls = 0; ls < lazyStyles.length; ls++) {
+            let style = lazyStyles[ls];
+            loadStyles(style.src, style.media)
+        }
+        for (ls = 0; ls < lazyScripts.length; ls++) {
+            let script = lazyScripts[ls];
+            loadScript(script.src, script.defer, script.async, script.body)
+        }
+      // Google Tag Manager
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K76C5VL');
+      
+      (function(l) {
+      if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+      window.lintrk.q=[]}
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";b.async = true;b.defer = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);})(window.lintrk);
+      
+      
+    }
+}
+</script><style>
+.post-author-item:not(:last-child):after {
+    content: ',';
+}
+figcaption {
+    font-size: .7em;
+}
+.rich-text-block-2 .w-embed.w-script {
+  display: none;
+}
+</style></head><body class="body"><div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="w-embed w-iframe"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76C5VL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<style type="text/css">
+/*
+  @media (min-width:992px) and (max-width:1279px){
+    .w-container {
+      max-width: 1140px;
+    }
+  }
+  */
+  @media (min-width:1280px){
+    .w-container {
+      max-width: 1140px;
+    }
+  }
+.tail-left:before,
+.tail-right:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: inherit;
+  top: 0;
+  bottom: 0;
+  width: 1000px;
+  z-index:-1;
+}
+.tail-left:before {
+  right:99%;
+}
+.tail-right:before {
+  left:99%;
+}
+figure.w-richtext-align-floatright {
+    margin-left: 40px !important;
+}
+figure.w-richtext-align-floatleft {
+    margin-right: 40px !important;
+}
+@media (max-width:767px){
+    figure.w-richtext-align-floatright,figure.w-richtext-align-floatleft  {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        float: none !important;
+        max-width: initial !important;
+    }
+}
+@media (max-width:480px){
+  .no-slide-animation {
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg) !important;
+  }
+}
+</style></div><div class="container-flex wide w-container"><a href="/" class="brand w-nav-brand"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/67232a2acee1ee616025c422_nav-logo.webp" loading="eager" width="158" alt=""/></a><nav role="navigation" class="nav-menu w-nav-menu"><a href="/about-us" class="nav-link w-nav-link">About</a><a href="/services" class="nav-link w-nav-link">Services</a><a href="/marketplace" class="nav-link w-nav-link">Marketplace</a><a href="/blog" class="nav-link w-nav-link">Blog</a><a href="/resources" class="nav-link w-nav-link">Resources</a><a href="/career" class="nav-link w-nav-link">CareerS</a><a href="/contact" class="nav-button w-nav-link">Under Attack?</a></nav><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div><a aria-label="Open Search Bar" data-w-id="1d3f44f9-e4f7-5208-0aa6-d87ad874c2d7" href="#" class="link-block w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/6004c67af65b6e79f4b3aeb3_Search.svg" loading="lazy" alt="Search icon" class="image-4"/></a></div><div x-cloak="" x-data="" class="search-block-outer"><div class="container-2 w-container"><form action="/search" class="search-2 w-form"><label for="search-2" class="field-label">Search</label><input class="search-input-2 w-input" autofocus="true" maxlength="256" name="query" placeholder="Search…" type="search" id="search" required=""/><input type="submit" class="search-button-2 w-button" value="Search"/></form></div></div></div><div class="section-31"><div class="container-36 w-container"><div class="div-block-117"><div class="div-block-118"><div class="div-block-89"><div class="post-author-list-wrap w-dyn-list"><div role="list" class="post-author-list w-dyn-items"><div role="listitem" class="post-author-item w-dyn-item"><div class="post-author-name">Luke Moran</div><div class="post-author-sep">-</div><div class="post-author-company">MOXFIVE</div></div></div></div></div><h1 class="heading-42">Settra Ransomware: TTPs, Victims, and Defense Guide</h1></div><div class="div-block-119"><a href="/blog" class="link-block-9 w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/600f922f00ce6a53763efd55_back.png" loading="lazy" alt="" class="image-33"/><div class="text-block-56">BACK TO POSTS</div></a></div></div><img height="Auto" loading="lazy" width="Auto" alt="" src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover.png" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 939px" srcset="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover-p-500.png 500w, https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover-p-800.png 800w, https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover-p-1080.png 1080w, https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58dc232d5e12aaa60a3714_Settra%20Cover.png 1333w" class="image-23"/><div class="rich-text-block-2 w-richtext"><h2>What is Settra Ransomware? </h2><p>Settra is a ransomware and data extortion group first identified in June 2026. The group combines data theft with encryption, a method known as double extortion, and threatens to publish stolen data on a Tor-based leak site if a ransom isn&#x27;t paid. Settra communicates with victims through Tox, an encrypted messaging protocol favored by several ransomware groups for negotiation.</p><p>MOXFIVE Threat Intelligence began tracking Settra activity in late June 2026, when the group burst onto the scene, posting nearly two dozen victims to its leak site in a short span. While this sharp growth is not fully substantiated, MOXFIVE has direct case work involving Settra and can confirm it as a real, active threat actor currently carrying out attacks.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58de62da85d8338175345a_settra_monthly_victims_chart.png" loading="lazy"/></div><figcaption>Settra leak site postings</figcaption></figure><h2>Is Settra Still Active?</h2><p>Settra remains active as of July 16, 2026, with new victims being posted to the group&#x27;s data leak site. Notably, Settra appears to operate sporadically, posting victims in batches, and often taking several days between responses on their Tox chat. This can be an indication of an actor that is comprised of only a few individuals, or even a sole actor, unlike larger RaaS (ransomware-as-a-service) groups.</p><h2><strong>How Settra&#x27;s Extortion Model Works</strong></h2><p>Settra&#x27;s approach follows a familiar double extortion pattern: exfiltrate data, then encrypt systems, then use the threat of public exposure to increase pressure on the victim to pay.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58de1c9b94300dc42a336d_Settra%20-%20Why%20We%20Do%20This.png" loading="lazy"/></div><figcaption>Settra publicly describes its motivation</figcaption></figure><p>Publicly, Settra has described its motivation as financial rather than ideological. The group has said it does not target specific countries or industries, and instead targets organizations with exploitable weaknesses, including unpatched systems and weak access management. </p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58def3b3041d26846814d1_Settra%20Industry.png" loading="lazy"/></div><figcaption>Top industries targeted by Settra</figcaption></figure><h2><strong>Settra Initial Access Methods</strong></h2><p>In our own case work, MOXFIVE has observed Settra gain initial access through compromised VPN credentials, then use those valid credentials to move through victim environments, a pattern common among ransomware groups.</p><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58df2aad5248930337d5ea_Settra%20-%20Open%20to%20Cooperation.png" loading="lazy"/></div><figcaption>Settra&#x27;s stated approach </figcaption></figure><p>Once inside, MOXFIVE has observed Settra move quickly from a single foothold to a broader view of the environment, relying on legitimate administrative and red-team tools rather than custom-built malware, a choice that helps its activity blend into normal network traffic. The specific tools observed at each stage are detailed below.</p><h2><strong>Settra Attack Chain</strong></h2><p>From initial access to encryption, here is what MOXFIVE has directly observed in cases involving Settra:</p><ul role="list"><li><strong>Initial Access: </strong>Credential compromise, using valid credentials to establish a foothold in the victim environment.</li><li><strong>Discovery: </strong>NetExec (also known as nxc, a widely used red-team tool) and Netscan have been used to map out victim networks and validate which credentials work where.</li><li><strong>Credential Access: </strong>Procdump and Mimikatz have been used to pull additional credentials from compromised systems.</li><li><strong>Lateral Movement: </strong>PAExec, similar to PsExec, along with NetExec, has been used to move across victim environments using compromised credentials.</li><li><strong>Defense Evasion</strong>: Settra has used a tool called edr_blind to disable endpoint detection tools and manually cleared Windows event logs to cover its tracks. In at least one case, it also escalated privileges using a known vulnerable driver, STProcessMonitor_v114.sys, a technique called &quot;bring your own vulnerable driver&quot; (BYOVD) to gain kernel-level execution.</li><li><strong>Command and Control: </strong>Mesh Agent, a legitimate remote access tool, has been used to maintain persistent access into victim environments.</li></ul><figure class="w-richtext-align-center w-richtext-figure-type-image"><div><img alt="" src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a58df724f11a0bdd706ac53_Settra%20-%20Targeting%20Rules.png" loading="lazy"/></div><figcaption>Settra&#x27;s stated rules of engagement</figcaption></figure><h2><strong>How to Defend Against Settra Ransomware</strong></h2><p>The controls that matter most against Settra are largely the same fundamentals that defend against other threat actors.</p><ul role="list"><li><strong>Enforce phishing-resistant MFA: </strong>Credential compromise has served as both an entry point and a way to move deeper into victim environments in Settra cases, making phishing-resistant MFA one of the most direct ways to close that gap. </li><li><strong>Watch for credential-dumping activity: </strong>Procdump and Mimikatz both leave a detectable footprint when used against credential material in memory. Monitoring and alerting on unusual access to processes like LSASS is a direct way to catch this stage in progress.</li><li><strong>Monitor for dual-use administrative tools: </strong>NetExec, PAExec, and Mesh Agent are legitimate administrative and red-team tools, which is exactly what makes them effective in the wrong hands. Implement strict &quot;default deny&quot; lists for approved RMM tools using EDR rules or web filtering to alert or block unexpected and unapproved tools. </li><li><strong>Guard against vulnerable-driver abuse: </strong>Settra has used a known vulnerable driver to disable security tooling and escalate privileges. Blocklisting known vulnerable drivers, including STProcessMonitor_v114.sys, and monitoring for unusual driver installation activity closes this specific path.</li><li><strong>Forward logs where attackers can&#x27;t reach them: </strong>Settra has been observed manually clearing Windows event logs to cover its tracks. Centralized log forwarding preserves visibility even when local logs are deleted.</li><li><strong>Detect exfiltration before encryption: </strong>Data theft typically precedes encryption in double extortion intrusions, which gives defenders a window to catch an attack before it reaches its most damaging phase. Watching for unusually large outbound transfers, especially to unfamiliar cloud storage or file-sync destinations, can surface that activity while it&#x27;s still happening rather than after the fact. Detection built around encryption events alone risks missing that earlier window entirely.</li><li><strong>Protect backup infrastructure: </strong>Offline, immutable backups that are not accessible through domain accounts remain one of the most reliable paths to recovery, regardless of which specific techniques a given group uses against production systems.</li></ul><h2>MOXFIVE&#x27;s Approach</h2><p>MOXFIVE is actively responding to incidents involving Settra. Our incident response teams work across the legal, insurance, executive, and technical stakeholders involved in a cyber incident, helping organizations make informed decisions under pressure and restore operations with confidence.</p><p>If your organization has questions about Settra or believes it may be affected, MOXFIVE is available to help. Our team has handled hundreds of ransomware cases against some of the most advanced and active operations, aligning preventive, detective, and recovery controls to current threat actor TTPs. Contact us at 833-568-6695 or email our team at incident@moxfive.com.</p></div><div class="div-block-121"></div><div class="share-container"><a id="twitter-share" href="#" class="blog-share-button w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/61096cf298a04c8114134ec5_Twitter.svg" loading="lazy" alt="" class="image-40 twitter-logo"/><div class="text-block-71">Twitter</div></a><a id="linkedin-share" href="#" class="blog-share-button linkedin-share w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/61096cf28610a0039dd725b5_Linkedin.svg" loading="lazy" alt="" class="image-40"/><div class="text-block-71 linkedin-share-text">LinkedIn</div></a></div><div class="blog-author-bio-wrap w-dyn-list"><div role="list" class="blog-author-bio-list w-dyn-items"><div role="listitem" class="blog-author-bio w-dyn-item"><div class="blog-author-bio-media"><img src="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a5f61d631f705736917ed55_Luke_Moran_BW.png" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 939px" srcset="https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a5f61d631f705736917ed55_Luke_Moran_BW-p-500.png 500w, https://cdn.prod.website-files.com/6020489cbe60323b70b4d5e8/6a5f61d631f705736917ed55_Luke_Moran_BW.png 745w" class="blog-author-bio-image"/></div><div class="blog-author-bio-text"><h4 class="blog-author-bio-name">Luke Moran</h4><p class="blog-author-bio-summary">Luke is an IT and cybersecurity professional specializing in complex ransomware recovery and Cloud/SaaS investigations. He applies his deep hands-on experience running IT operations to his role leading restoration teams in recovering business operations following ransomware attacks. At MOXFIVE, Luke has led containment and remediation responses for some of the largest incidents worldwide. Luke’s incident response leadership includes responding to cutting-edge Cloud and SaaS incidents including AWS/Azure/GCP, Salesforce, Snowflake, GitHub, and CI/CD compromises.​</p></div></div></div></div></div><div class="div-block-120"></div></div><div class="section-38"><div class="w-container"><div class="div-block-100"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/60173c9d7cad0924a00d3afb_quotes.png" loading="lazy" width="80" alt="" class="image-30"/><div class="text-block-58">Experts predict <span class="text-span-59">there will be a ransomware <br/>attack every 11</span> seconds in 2021.</div><div class="text-block-59">from Cybercrime Magazine</div></div></div></div><div class="home-help"><div class="container-9 w-container"><div class="div-block-59"><h3 class="text-block-14">Our mission is to <span class="text-span-52">minimize the business impact</span> of cyber attacks. </h3><h2 data-w-id="94251cde-08c2-79b3-9ad0-9232b72bf1ce" class="heading-9 tail-right">HOW WE CAN HELP</h2></div><div class="w-layout-grid grid-7"><div class="div-block-60"><div class="div-block-61"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/67232a2a5bb26957a6293400_incident-management.webp" loading="lazy" alt="" class="image-17"/></div><div class="div-block-62"><h3 class="heading-10 heading-left">Incident Response</h3><p class="paragraph-12">MOXFIVE provides the clarity and peace of mind needed for attack victims during the incident response process. <span class="text-span-46">Our platform approach enables victims of attacks to work with a Technical Advisor </span> who provides the expertise and guidance needed in a time of crisis, and facilitates the delivery of all technical needs required, consistently and efficiently. </p><a href="/services#incident-response" class="btn-hollow w-button">Learn More</a></div></div><div class="div-block-104"><div data-w-id="Div Block 3" class="div-block-105"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/67232a2add79bcb665838334_business-resilience.webp" loading="lazy" alt="" class="image-18"/></div><div class="div-block-64"><h3 class="heading-10 heading-left">Business Resilience</h3><p class="paragraph-12">With experience on the front lines responding to incidents daily, MOXFIVE Technical Advisors have the unique ability to <span class="text-span-47">connect the dots between business, information technology, and security objectives</span> to help you quickly identify the gaps and build a more resilient environment.<br/>‍</p><a href="/services#business-resilience" class="btn-hollow w-button">Learn More</a></div></div></div></div></div><footer class="section footer"><div class="container w-container"><div class="footer-menu"><div class="footer-left"><a href="/" aria-label="Footer Logo" class="footer-brand w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/67232a2a875170c31d663c4e_logo.webp" loading="lazy" width="150" alt=""/></a><ul role="list" class="footer-links w-list-unstyled"><li class="footer-link-outer"><a href="/about-us" class="footer-link">About</a></li><li class="footer-link-outer"><a href="/services" class="footer-link">Services</a></li><li class="footer-link-outer"><a href="/marketplace" class="footer-link">Marketplace</a></li><li class="footer-link-outer"><a href="/blog" class="footer-link">Blog</a></li><li class="footer-link-outer"><a href="/career" class="footer-link">Careers</a></li><li class="footer-link-outer"><a href="/contact" class="footer-link">Contact</a></li></ul></div><div class="footer-column"><div class="footer-social"><a href="https://www.linkedin.com/company/35638889" class="w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/6003bcfb69bd097fd83d720f_Linkedin.svg" loading="lazy" width="20" height="20" alt="Link to MOXFIVE on LinkedIn" class="image-427"/></a><a href="https://twitter.com/mox_five" class="w-inline-block"><img src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/6003bcfb60565a1d2bd46a79_Twitter.svg" loading="lazy" width="24" height="24" alt="Link to MOXFIVE on X.com" class="image-3"/></a></div><div class="text-block-2">www.<strong>moxfive</strong>.com<br/></div><div class="text-block-2"><a href="tel:8335686695" class="link-7">833-568-6695</a></div></div></div><div><div class="text-block-3">© 2026 MOXFIVE LLC. All Rights Reserved. | <a href="/privacy-policy" class="link-14">Privacy Policy</a></div></div></div></footer><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5ff346f64ac6783fa467a060" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/js/webflow.schunk.36b8fb49256177c8.js" type="text/javascript" integrity="sha384-4abIlA5/v7XaW1HMXKBgnUuhnjBYJ/Z9C1OSg4OhmVw9O3QeHJ/qJqFBERCDPv7G" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/js/webflow.schunk.bff3737066dc55db.js" type="text/javascript" integrity="sha384-IO+BBIO85zcWwvlIgW13BwGPHAhpO0W3CZMhUckk2wuFr33Vqwu8mwEQSolbJeEe" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/5ff346f64ac6783fa467a060/js/webflow.2ab0ad10.cc6e39bc7123edcd.js" type="text/javascript" integrity="sha384-xND5x2Hq5W9DUu6k+KfP76//Ol+iJuj5u6ryxqr5Pl6Qqk+iCo+zJ0y283njCn8j" crossorigin="anonymous"></script><!--
+<script>
+  $('body').addClass('fs-unmask');
+</script>
+<script>
+  window['_fs_host'] = 'fullstory.com';
+  window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+  window['_fs_org'] = 'o-1D6E2S-na1';
+  window['_fs_namespace'] = 'FS';
+  (function(m,n,e,t,l,o,g,y){
+  if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+  g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+  o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+  y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+  g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+  g.anonymize=function(){g.identify(!!0)};
+  g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+  g.log = function(a,b){g("log",[a,b])};
+  g.consent=function(a){g("consent",!arguments.length||a)};
+  g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+  g.clearUserCookie=function(){};
+  g.setVars=function(n, p){g('setVars',[n,p]);};
+  g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+  if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+  g._v="1.3.0";
+  })(window,document,window['_fs_namespace'],'script','user');
+</script>
+-->
+<!--
+<script type="text/javascript">
+_linkedin_partner_id = "4254244";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;b.defer = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+-->
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=4254244&fmt=gif" />
+</noscript>
+<!--
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"  media="print" onload="this.media='all'">
+
+<script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script defer charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+-->
+<script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init(); }; h.appendChild(s); })(); </script><script>
+  var share_url = window.location.href;
+  var share_heading = jQuery('.heading-42').text();
+  var post_text = jQuery('.rich-text-block-2 p:first-child').text();
+  var share_text = jQuery.trim(post_text).substring(0, 200).trim(this) + "...";
+  var share_link = '';
+  
+  var twitter_button = jQuery('#twitter-share');
+  if (twitter_button.length){
+    share_link += '&url='+share_url;
+    share_link += !!share_text ? '&text='+share_text : '';
+    twitter_button.attr({
+      'target': '_blank',
+      'href': 'https://twitter.com/share?' + share_link
+    });
+  }
+  var linkedin_button = jQuery('#linkedin-share');
+  if (linkedin_button.length){
+    share_link += '&url='+share_url;
+    share_link += !!share_heading ? '&title='+share_heading : '';
+    share_link += !!share_text ? '&summary='+share_text : '';
+    linkedin_button.attr({
+      'target': '_blank',
+      'href': 'https://www.linkedin.com/shareArticle?mini=true' + share_link
+    });
+  }
+  
+</script></body></html>

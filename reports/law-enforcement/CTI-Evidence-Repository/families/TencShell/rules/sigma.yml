@@ -1,0 +1,12 @@
+title: ETW Placeholder Do Not Deploy — TencShell
+status: experimental
+description: Placeholder Sigma — not validated
+logsource:
+    product: windows
+detection:
+    selection:
+        EventID: 0
+    condition: selection
+falsepositives:
+    - Placeholder always matches nothing useful
+level: informational

@@ -1,0 +1,2 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+sha256,00ba0d5aea129f098b5a609633ac77cd642fddba8b64f6332e49e6d33294992e,unspecified,2026-09-19T19:05:00Z,Moderate,PRIMARY-SOURCE,RAT-IND-0040,First listed APK hash in Zimperium apks.csv (representative; 162 total) | UNVERIFIED pending passive checks where applicable. NOT malware download.

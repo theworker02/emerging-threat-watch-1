@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/passive-observation.schema.json",
+  "title": "PassiveObservation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "family",
+    "collected_utc",
+    "collection_mechanism",
+    "originating_service",
+    "original_query",
+    "raw_response_ref",
+    "sha256",
+    "provenance",
+    "confidence",
+    "relationship_type"
+  ],
+  "properties": {
+    "evidence_id": { "type": "string", "pattern": "^(RAP|SET|RAT|NRB)-PO-[0-9]{4}$" },
+    "family": { "type": "string", "enum": ["Rapuncel", "Settra", "RatHat", "NodeRabbit"] },
+    "indicator": { "type": "string" },
+    "observation_type": {
+      "type": "string",
+      "enum": ["ct", "pdns", "rdap", "urlscan", "github", "archive", "sample_metadata", "ti_feed", "other"]
+    },
+    "value": { "type": "string" },
+    "collected_utc": { "type": "string", "format": "date-time" },
+    "collection_mechanism": { "type": "string" },
+    "originating_service": { "type": "string" },
+    "original_query": { "type": "string" },
+    "raw_response_ref": { "type": "string" },
+    "sha256": { "type": "string", "pattern": "^[a-fA-F0-9]{64}$" },
+    "provenance": {
+      "type": "string",
+      "enum": [
+        "OBSERVED_PASSIVE",
+        "PRIMARY-SOURCE",
+        "CORROBORATED",
+        "SECONDARY",
+        "INFERRED",
+        "UNVERIFIED",
+        "CONTRADICTED",
+        "ASSOCIATION_ONLY",
+        "INFRASTRUCTURE_OVERLAP"
+      ]
+    },
+    "confidence": { "type": "string", "enum": ["High", "Moderate", "Low"] },
+    "relationship_type": {
+      "type": "string",
+      "enum": [
+        "OBSERVED_PASSIVE",
+        "PRIMARY-SOURCE",
+        "CORROBORATED",
+        "ASSOCIATION_ONLY",
+        "INFRASTRUCTURE_OVERLAP",
+        "NOT_ESTABLISHED"
+      ]
+    },
+    "first_seen": { "type": ["string", "null"] },
+    "last_seen": { "type": ["string", "null"] },
+    "asn": { "type": ["string", "null"] },
+    "notes": { "type": "string" }
+  }
+}

@@ -1,0 +1,3 @@
+source_id,title,url,organization_or_author,publication_date,retrieval_date,source_tier,case_ids,notes
+SOURCE-POL-001,Mirage Kitten switches to Node.js and JavaScript malware,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,Kaspersky / Omar Amin,2026-09-01,2026-09-19,PRIMARY,pollcat,"Dual-listed with NodeRabbit PS-NRB-001; same HTML artifact; do not merge cases"
+SOURCE-POL-002,Mirage Kitten NightLedger (ops context only),https://securelist.com/mirage-kitten-new-tools/120811/,Kaspersky,2026-07-28,2026-09-19,PRIMARY,pollcat,"Attribution/context for Mirage Kitten ops — NOT proof PollCat≡NodeRabbit lineage; dual-ref local archive PS-NRB-002 under noderabbit/"

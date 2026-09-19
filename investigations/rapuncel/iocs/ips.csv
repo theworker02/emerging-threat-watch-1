@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+2.26.126.50,ip,,,BleepingComputer citing LastPass/Delphos,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Reported exfil; treat as HISTORICAL until revalidated,rapuncel

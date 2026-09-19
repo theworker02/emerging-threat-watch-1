@@ -1,0 +1,21 @@
+{
+  "evidence_id": "PS-RAP-001",
+  "source_id": "SOURCE-RAP-001",
+  "original_url": "https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer",
+  "retrieved_utc": "2026-09-19T18:39:56Z",
+  "sha256": "fb3962584160d63fd7c7444cd3de166e20a0c00835d554bb497b6d1ad6495efc",
+  "http_status": 200,
+  "bytes": 37727,
+  "content_verified": true,
+  "frozen": false,
+  "collection_method": "Cursor WebFetch (normalized markdown); direct urllib HTTP was 403",
+  "verify_hits": [
+    "ea8c31a86fa785ab514022c278a2f6e571c86aac9283745a96605c44d88382d6",
+    "albinofennel",
+    "edgarcostartqd",
+    "dallikilic54",
+    "September 10",
+    "MSRC",
+    "0/72"
+  ]
+}

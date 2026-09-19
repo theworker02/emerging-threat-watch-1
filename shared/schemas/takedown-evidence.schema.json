@@ -1,0 +1,158 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/takedown-evidence.schema.json",
+  "title": "TakedownEvidencePackageMeta",
+  "description": "Minimal metadata for an Emerging Threat Watch hosting/registrar/platform takedown evidence package. Does not embed PCAP or binary content.",
+  "type": "object",
+  "required": [
+    "package_id",
+    "family",
+    "target_type",
+    "prepared_date_utc",
+    "provenance_summary",
+    "human_reviewed",
+    "malware_executed_by_autonomous_agent"
+  ],
+  "properties": {
+    "package_id": {
+      "type": "string",
+      "pattern": "^ETW-[A-Z]{3}-TD-[0-9]{8}(-[0-9]+)?$",
+      "description": "e.g. ETW-SET-TD-20260919"
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "rapuncel",
+        "settra",
+        "rathat",
+        "noderabbit",
+        "pollcat",
+        "synkloader",
+        "showboat",
+        "cruciferra",
+        "other"
+      ]
+    },
+    "case_code": {
+      "type": ["string", "null"],
+      "description": "Related LE package code, e.g. ETW-SET-IC3"
+    },
+    "target_type": {
+      "type": "string",
+      "enum": ["c2_hosting", "registrar_dns", "discord_telegram", "other"]
+    },
+    "prepared_date_utc": {
+      "type": "string",
+      "format": "date"
+    },
+    "intended_recipient": {
+      "type": ["string", "null"],
+      "description": "Hosting abuse, registrar, Discord T&S, Telegram, ISAC, etc."
+    },
+    "related_ic3_number": {
+      "type": ["string", "null"]
+    },
+    "provenance_summary": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "OBSERVED",
+          "OBSERVED_PASSIVE",
+          "PRIMARY-SOURCE",
+          "CORROBORATED",
+          "SECONDARY",
+          "INFERRED",
+          "UNVERIFIED",
+          "ASSOCIATION_ONLY",
+          "INFRASTRUCTURE_OVERLAP"
+        ]
+      }
+    },
+    "sample_sha256": {
+      "type": ["string", "null"],
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "indicators": {
+      "type": "object",
+      "properties": {
+        "ip": { "type": ["string", "null"] },
+        "port": { "type": ["integer", "null"], "minimum": 1, "maximum": 65535 },
+        "domain": { "type": ["string", "null"] },
+        "chat_platform": {
+          "type": ["string", "null"],
+          "enum": ["discord", "telegram", "other", null]
+        },
+        "server_id": { "type": ["string", "null"] },
+        "channel_id": { "type": ["string", "null"] },
+        "user_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "pcap_retained": {
+      "type": "boolean",
+      "description": "True if timed PCAP from human lab or licensed sandbox is retained offline"
+    },
+    "pcap_evidence_ref": {
+      "type": ["string", "null"],
+      "description": "Path or licensed-platform task URL — not the PCAP bytes"
+    },
+    "c2_config_extracted": {
+      "type": "boolean"
+    },
+    "sandbox": {
+      "type": ["object", "null"],
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["anyrun", "triage", "hybrid_analysis", "capev2", "cuckoo", "other"]
+        },
+        "operator": { "type": "string" },
+        "report_url": { "type": ["string", "null"], "format": "uri" },
+        "run_date_utc": { "type": ["string", "null"] }
+      },
+      "required": ["platform", "operator"],
+      "additionalProperties": false
+    },
+    "collaboration": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["channel", "shared"],
+        "properties": {
+          "channel": {
+            "type": "string",
+            "enum": [
+              "abuse_ch_threatfox",
+              "abuse_ch_urlhaus",
+              "abuse_ch_malwarebazaar",
+              "isac",
+              "stix_taxii",
+              "hosting_abuse",
+              "registrar",
+              "discord_ts",
+              "telegram_ts",
+              "other"
+            ]
+          },
+          "submission_id": { "type": ["string", "null"] },
+          "shared": { "type": "boolean" },
+          "date_utc": { "type": ["string", "null"], "format": "date" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "human_reviewed": { "type": "boolean" },
+    "malware_executed_by_autonomous_agent": {
+      "type": "boolean",
+      "const": false,
+      "description": "Must always be false under ETW policy"
+    },
+    "notes": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}

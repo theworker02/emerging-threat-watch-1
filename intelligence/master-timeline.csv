@@ -1,0 +1,10 @@
+event_id,timestamp_utc,case_id,event_type,summary,source,provenance,confidence
+XT-TL-0001,2026-06-01T00:00:00Z,settra,first_seen_reported,Settra first identified / first seen (approx. June 2026 per Cynet/Huntress),Cynet; Huntress,SECONDARY,Moderate
+XT-TL-0002,2026-08-13T00:00:00Z,rapuncel,discovery,LastPass TIME identified fraudulent GitHub org impersonating LastPass Authenticator,IBT / CyberInsider citing LastPass,PRIMARY-SOURCE,High
+XT-TL-0003,2026-08-19T00:00:00Z,rapuncel,vendor_report,Delphos Labs reported Alinubx.sys to MSRC (per TechTimes citing joint report),TechTimes,SECONDARY,Moderate
+XT-TL-0004,2026-09-01T00:00:00Z,noderabbit,disclosure,Kaspersky publishes NodeRabbit/PollCat / Mirage Kitten research,Securelist,PRIMARY-SOURCE,High
+XT-TL-0005,2026-09-16T00:00:00Z,rathat,disclosure,Zimperium zLabs publishes RatHat research,Zimperium blog,PRIMARY-SOURCE,High
+XT-TL-0006,2026-09-17T00:00:00Z,rapuncel,disclosure,LastPass TIME / Delphos Labs joint Rapuncel analysis dated,DEV Community / Clarity citing original title,PRIMARY-SOURCE,High
+XT-TL-0007,2026-09-17T00:00:00Z,settra,disclosure,Cynet publishes Settra reverse-engineering investigation,Cynet blog,PRIMARY-SOURCE,High
+XT-TL-0008,2026-09-18T00:00:00Z,rapuncel,secondary_coverage,BleepingComputer summarizes Rapuncel campaign,BleepingComputer,SECONDARY,High
+XT-TL-0009,2026-09-19T00:00:00Z,landscape,program_start,emerging-threat-watch Phase 1 scaffolding begins,ETW,OBSERVED,High

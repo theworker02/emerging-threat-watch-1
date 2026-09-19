@@ -1,0 +1,5 @@
+source_id,title,url,organization_or_author,publication_date,retrieval_date,source_tier,case_ids,notes
+RAT-SRC-0001,RatHat: AI-Powered Mobile Threat...,https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts,Zimperium zLabs,2026-09-16,2026-09-19,PRIMARY,rathat,Primary
+RAT-SRC-0002,New RatHat Android malware uses AI to automate device control,https://www.bleepingcomputer.com/news/security/new-rathat-android-malware-uses-ai-to-automate-device-control/,BleepingComputer,2026-09,2026-09-19,JOURNALISM,rathat,Secondary
+RAT-SRC-0003,RatHat Android Malware Abuses ADB to Retain Shell Access After Uninstall,https://thehackernews.com/2026/09/rathat-android-malware-abuses-adb-to.html,The Hacker News,2026-09,2026-09-19,JOURNALISM,rathat,Secondary citing Zimperium
+RAT-SRC-0004,New Android malware uses AI to steal bank logins and PINs,https://www.malwarebytes.com/blog/news/2026/09/new-android-malware-uses-ai-to-steal-bank-logins-and-pins,Malwarebytes,2026-09,2026-09-19,JOURNALISM,rathat,Secondary

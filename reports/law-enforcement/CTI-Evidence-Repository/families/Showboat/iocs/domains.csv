@@ -1,0 +1,6 @@
+indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
+domain,telecom.webredirect.org,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,,Decrypted config SERVER_ADDRESS. NOT OBSERVED ownership.
+domain,singtelcom.site,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,,Telecom impersonation domain.
+domain,kaztelecom.shop,unspecified,2026-09-19T19:05:00Z,High,PRIMARY-SOURCE,,Telecom impersonation domain.
+filename,ukpkmkk.c,unspecified,2026-09-19T19:10:00Z,Moderate,SECONDARY,,Pastebin-fetched hide source per Picus. Companion to BLL ukpkmkk.bin hosts.
+filename,ukpkmkk.so,unspecified,2026-09-19T19:10:00Z,Moderate,SECONDARY,,Compiled shared object for ld.so.preload abuse.

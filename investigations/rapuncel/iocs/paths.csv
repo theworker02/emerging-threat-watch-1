@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+C:\Windows\System32\drivers\nvfsflt64.sys,path,,,secondary reporting,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Reported drop path,rapuncel

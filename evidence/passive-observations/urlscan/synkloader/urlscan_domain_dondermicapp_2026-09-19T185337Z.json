@@ -1,0 +1,93 @@
+{
+  "results": [
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "dondermicapp.net"
+        },
+        "page": {
+          "url": "dondermicapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "dondermicapp.net",
+        "apexDomain": "dondermicapp.net",
+        "time": "2026-08-27T08:52:20.203Z",
+        "uuid": "01a0426b-17c5-755d-8392-a9178378dec0",
+        "url": "http://dondermicapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 0,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "page": {
+        "domainAgeDays": 58,
+        "domain": "dondermicapp.net",
+        "apexDomainAgeDays": 58,
+        "apexDomain": "dondermicapp.net",
+        "url": "http://dondermicapp.net/"
+      },
+      "labels": [],
+      "_id": "01a0426b-17c5-755d-8392-a9178378dec0",
+      "_score": null,
+      "sort": [
+        1787820740203,
+        "01a0426b-17c5-755d-8392-a9178378dec0"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a0426b-17c5-755d-8392-a9178378dec0/",
+      "screenshot": "https://urlscan.io/screenshots/01a0426b-17c5-755d-8392-a9178378dec0.png"
+    },
+    {
+      "submitter": {},
+      "canonical": {
+        "task": {
+          "url": "dondermicapp.net"
+        },
+        "page": {
+          "url": "dondermicapp.net"
+        }
+      },
+      "task": {
+        "visibility": "public",
+        "method": "api",
+        "domain": "dondermicapp.net",
+        "apexDomain": "dondermicapp.net",
+        "time": "2026-08-21T08:37:36.004Z",
+        "uuid": "01a02377-72d8-7644-ba4d-9a0a613321d1",
+        "url": "http://dondermicapp.net/"
+      },
+      "stats": {
+        "uniqIPs": 1,
+        "uniqCountries": 0,
+        "dataLength": 0,
+        "encodedDataLength": 0,
+        "requests": 1
+      },
+      "page": {
+        "domainAgeDays": 52,
+        "domain": "dondermicapp.net",
+        "apexDomainAgeDays": 52,
+        "apexDomain": "dondermicapp.net",
+        "url": "http://dondermicapp.net/"
+      },
+      "labels": [],
+      "_id": "01a02377-72d8-7644-ba4d-9a0a613321d1",
+      "_score": null,
+      "sort": [
+        1787301456004,
+        "01a02377-72d8-7644-ba4d-9a0a613321d1"
+      ],
+      "result": "https://urlscan.io/api/v1/result/01a02377-72d8-7644-ba4d-9a0a613321d1/",
+      "screenshot": "https://urlscan.io/screenshots/01a02377-72d8-7644-ba4d-9a0a613321d1.png"
+    }
+  ],
+  "total": 2,
+  "took": 339,
+  "has_more": false
+}

@@ -1,0 +1,7 @@
+event_id,timestamp_utc,event_type,summary,source,provenance,confidence,evidence_id
+RAP-TL-0001,2026-08-13T00:00:00Z,discovery,LastPass TIME identifies fraudulent GitHub organization impersonating LastPass Authenticator,IBT/CyberInsider citing LastPass,PRIMARY-SOURCE,High,RAP-EV-0007
+RAP-TL-0002,2026-08-19T00:00:00Z,vendor_report,Alinubx.sys reported to MSRC (as cited),TechTimes,SECONDARY,Moderate,RAP-EV-0004
+RAP-TL-0003,2026-08-20T00:00:00Z,research,Delphos blocklist check date cited for driver samples,TechTimes,SECONDARY,Moderate,RAP-EV-0004
+RAP-TL-0004,2026-09-17T00:00:00Z,disclosure,Joint LastPass/Delphos Rapuncel analysis dated,DEV/Clarity citing title,PRIMARY-SOURCE,High,RAP-EV-0001
+RAP-TL-0005,2026-09-18T00:00:00Z,secondary_coverage,BleepingComputer article published,BleepingComputer,SECONDARY,High,RAP-EV-0002
+RAP-TL-0006,2026-09-19T00:00:00Z,etw_phase1,ETW Phase 1 baseline acquisition for Rapuncel,ETW,OBSERVED,High,

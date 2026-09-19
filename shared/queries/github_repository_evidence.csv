@@ -1,0 +1,8 @@
+family,artifact,url,role,status,provenance,confidence,notes
+Rapuncel,LastPass-Authenticator,https://github.com/LastPass-Authenticator,fraudulent organization,PRIMARY-REPORTED,PRIMARY-SOURCE,High,pk-sharma: 404 as of 2026-09-19
+Rapuncel,LastPass-S,https://github.com/LastPass-S,related fraudulent organization,PRIMARY-REPORTED,PRIMARY-SOURCE,High,pk-sharma: 404 as of 2026-09-19
+Rapuncel,lastpass-authenticator.github.io,https://lastpass-authenticator.github.io/,fake landing/download,PRIMARY-REPORTED,PRIMARY-SOURCE,High,404 post-disclosure per pk-sharma
+Rapuncel,edgarcostartqd.github.io,https://edgarcostartqd.github.io/,redirector,PRIMARY-REPORTED,PRIMARY-SOURCE,High,
+Rapuncel,dallikilic54.github.io,https://dallikilic54.github.io/,redirector,PRIMARY-REPORTED,PRIMARY-SOURCE,High,
+RatHat,fatedier/frp,https://github.com/fatedier/frp,legitimate upstream FRP,DUAL-USE,PRIMARY-SOURCE,High,Not attacker infrastructure; libmedia_codec.so FRP-derived
+NodeRabbit,(none identified),,attacker GitHub repo,NOT_IDENTIFIED,PRIMARY-SOURCE,High,Kaspersky delivery via recruiter archives/cloud hosting

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://emerging-threat-watch.local/schemas/claim.schema.json",
+  "title": "ClaimLedgerRow",
+  "description": "Claim-centric evidence record. Every future report sentence should trace Report → Claim → Evidence → Original source.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "claim_id",
+    "family",
+    "case_id",
+    "claim",
+    "source_organization",
+    "source_title",
+    "source_url",
+    "published",
+    "source_type",
+    "status",
+    "confidence",
+    "independently_verified",
+    "retrieval_date_utc",
+    "cutoff_applies"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^(RAP|SET|RAT|NRB)-CLAIM-[0-9]{4}$"
+    },
+    "family": {
+      "type": "string",
+      "enum": ["Rapuncel", "Settra", "RatHat", "NodeRabbit"]
+    },
+    "case_id": {
+      "type": "string",
+      "enum": ["RAP", "SET", "RAT", "NRB"]
+    },
+    "claim": { "type": "string", "minLength": 1 },
+    "source_organization": { "type": "string" },
+    "source_team": { "type": ["string", "null"] },
+    "source_title": { "type": "string" },
+    "source_url": { "type": "string" },
+    "published": { "type": "string", "description": "Publication date YYYY-MM-DD or UNKNOWN" },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "PRIMARY",
+        "INDEPENDENT_CORROBORATION",
+        "SECONDARY",
+        "UNVERIFIED"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_SOURCE",
+        "SECONDARY",
+        "CORROBORATED",
+        "UNVERIFIED",
+        "CONTRADICTED",
+        "INFERRED"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["High", "Moderate", "Low"]
+    },
+    "independently_verified": { "type": "boolean" },
+    "evidence_tags": {
+      "type": "string",
+      "description": "Pipe-separated tags (e.g. stealer|GitHub/SEO|infra)"
+    },
+    "related_evidence_ids": {
+      "type": ["string", "null"],
+      "description": "Pipe-separated evidence IDs"
+    },
+    "derives_from": {
+      "type": ["string", "null"],
+      "description": "Upstream source_id when this claim's source is secondary/reprint"
+    },
+    "notes": { "type": ["string", "null"] },
+    "retrieval_date_utc": {
+      "type": "string",
+      "description": "ISO-8601 UTC retrieval timestamp"
+    },
+    "cutoff_applies": {
+      "type": "boolean",
+      "const": true,
+      "description": "Must be true for v1 corpus freeze (research cutoff 2026-09-19)"
+    }
+  }
+}

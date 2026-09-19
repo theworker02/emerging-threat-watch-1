@@ -1,0 +1,112 @@
+name: CTI Evidence Repository Validation
+
+on:
+  push:
+    paths:
+      - "reports/law-enforcement/CTI-Evidence-Repository/**"
+      - "shared/tooling/build_cti_evidence_repository.py"
+      - "shared/tooling/rebuild_stix_bundles.py"
+      - ".github/workflows/cti-evidence-validate.yml"
+  pull_request:
+    paths:
+      - "reports/law-enforcement/CTI-Evidence-Repository/**"
+      - "shared/tooling/build_cti_evidence_repository.py"
+      - "shared/tooling/rebuild_stix_bundles.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install validators
+        run: pip install stix2 plyara
+
+      - name: Verify IOC CSV headers
+        run: |
+          python - <<'PY'
+          import csv, sys
+          from pathlib import Path
+          root = Path("reports/law-enforcement/CTI-Evidence-Repository/families")
+          need = ["indicator_type","value","first_seen_utc","last_seen_utc","confidence","provenance","evidence_id","notes"]
+          bad = []
+          for csv_path in root.rglob("iocs/*.csv"):
+              with csv_path.open(newline="", encoding="utf-8") as f:
+                  r = csv.DictReader(f)
+                  if list(r.fieldnames or []) != need:
+                      bad.append((str(csv_path), r.fieldnames))
+          if bad:
+              print("HEADER MISMATCH", bad)
+              sys.exit(1)
+          print("CSV headers OK", len(list(root.rglob('iocs/*.csv'))), "files")
+          PY
+
+      - name: Structural STIX parse (stix2 library)
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          from stix2 import parse
+          failed = False
+          for p in sorted(Path("reports/law-enforcement/CTI-Evidence-Repository/families").glob("*/stix_bundle.json")):
+              try:
+                  obj = parse(p.read_text(encoding="utf-8"), allow_custom=True)
+                  assert obj["type"] == "bundle"
+                  print(p.parent.name, "OK", "objects", len(obj["objects"]))
+              except Exception as e:
+                  print(p, "FAIL", e)
+                  failed = True
+          sys.exit(1 if failed else 0)
+          PY
+
+      - name: Lint YARA rules
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+          import plyara
+          parser = plyara.Plyara()
+          failed = False
+          for p in Path("reports/law-enforcement/CTI-Evidence-Repository/families").glob("*/rules/yara.yar"):
+              text = p.read_text(encoding="utf-8")
+              try:
+                  rules = parser.parse_string(text)
+                  print(p, "OK", len(rules), "rules")
+              except Exception as e:
+                  print(p, "FAIL", e)
+                  failed = True
+              parser.clear()
+          sys.exit(1 if failed else 0)
+          PY
+
+      - name: Verify CHECKSUMS.sha256
+        run: |
+          cd reports/law-enforcement/CTI-Evidence-Repository
+          # Recompute checksums for listed text artifacts after STIX rebuild drift
+          python - <<'PY'
+          import hashlib, sys
+          from pathlib import Path
+          root = Path(".")
+          bad = False
+          for line in Path("CHECKSUMS.sha256").read_text(encoding="utf-8").splitlines():
+              line = line.strip()
+              if not line:
+                  continue
+              digest, path = line.split(None, 1)
+              p = root / path
+              if not p.exists():
+                  print("MISSING", path); bad = True; continue
+              h = hashlib.sha256(p.read_bytes()).hexdigest()
+              if h != digest:
+                  print("MISMATCH", path)
+                  print("  expect", digest)
+                  print("  got   ", h)
+                  bad = True
+              else:
+                  print("OK", path)
+          sys.exit(1 if bad else 0)
+          PY

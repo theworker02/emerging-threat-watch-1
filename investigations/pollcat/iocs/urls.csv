@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate,url,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP validate; do not probe,pollcat

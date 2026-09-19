@@ -1,0 +1,46 @@
+collected_utc,family,service,query,disposition,ioc_count,notes,raw_response_ref
+2026-09-19T190837Z,Rapuncel,ThreatFox-API,tag:Rapuncel,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Settra,ThreatFox-API,tag:Settra,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,RatHat,ThreatFox-API,tag:RatHat,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,NodeRabbit,ThreatFox-API,tag:NodeRabbit,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,PollCat,ThreatFox-API,tag:PollCat,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,SynkLoader,ThreatFox-API,tag:SynkLoader,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Showboat,ThreatFox-API,tag:Showboat,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Cruciferra,ThreatFox-API,tag:Cruciferra,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,PUROSANGUE,ThreatFox-API,tag:PUROSANGUE,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Rapuncel,MalwareBazaar-API,tag:Rapuncel,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Settra,MalwareBazaar-API,tag:Settra,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,RatHat,MalwareBazaar-API,tag:RatHat,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,NodeRabbit,MalwareBazaar-API,tag:NodeRabbit,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,PollCat,MalwareBazaar-API,tag:PollCat,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,SynkLoader,MalwareBazaar-API,tag:SynkLoader,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Showboat,MalwareBazaar-API,tag:Showboat,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,Cruciferra,MalwareBazaar-API,tag:Cruciferra,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190837Z,PUROSANGUE,MalwareBazaar-API,tag:PUROSANGUE,BLOCKED_AUTH_REQUIRED,0,HTTP 401 Unauthorized — abuse.ch Auth-Key required. No IOC claim.,
+2026-09-19T190912Z,Rapuncel,ThreatFox-browse,tag:Rapuncel,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_Rapuncel_2026-09-19T190912Z.html
+2026-09-19T190912Z,Rapuncel,MalwareBazaar-browse,tag:Rapuncel,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_Rapuncel_2026-09-19T190912Z.html
+2026-09-19T190912Z,Rapuncel,URLhaus-browse,tag:Rapuncel,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_Rapuncel_2026-09-19T190912Z.html
+2026-09-19T190912Z,Settra,ThreatFox-browse,tag:Settra,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_Settra_2026-09-19T190912Z.html
+2026-09-19T190912Z,Settra,MalwareBazaar-browse,tag:Settra,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_Settra_2026-09-19T190912Z.html
+2026-09-19T190912Z,Settra,URLhaus-browse,tag:Settra,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_Settra_2026-09-19T190912Z.html
+2026-09-19T190912Z,RatHat,ThreatFox-browse,tag:RatHat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_RatHat_2026-09-19T190912Z.html
+2026-09-19T190912Z,RatHat,MalwareBazaar-browse,tag:RatHat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_RatHat_2026-09-19T190912Z.html
+2026-09-19T190912Z,RatHat,URLhaus-browse,tag:RatHat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_RatHat_2026-09-19T190912Z.html
+2026-09-19T190912Z,NodeRabbit,ThreatFox-browse,tag:NodeRabbit,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_NodeRabbit_2026-09-19T190912Z.html
+2026-09-19T190912Z,NodeRabbit,MalwareBazaar-browse,tag:NodeRabbit,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_NodeRabbit_2026-09-19T190912Z.html
+2026-09-19T190912Z,NodeRabbit,URLhaus-browse,tag:NodeRabbit,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_NodeRabbit_2026-09-19T190912Z.html
+2026-09-19T190912Z,PollCat,ThreatFox-browse,tag:PollCat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_PollCat_2026-09-19T190912Z.html
+2026-09-19T190912Z,PollCat,MalwareBazaar-browse,tag:PollCat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_PollCat_2026-09-19T190912Z.html
+2026-09-19T190912Z,PollCat,URLhaus-browse,tag:PollCat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_PollCat_2026-09-19T190912Z.html
+2026-09-19T190912Z,SynkLoader,ThreatFox-browse,tag:SynkLoader,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_SynkLoader_2026-09-19T190912Z.html
+2026-09-19T190912Z,SynkLoader,MalwareBazaar-browse,tag:SynkLoader,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_SynkLoader_2026-09-19T190912Z.html
+2026-09-19T190912Z,SynkLoader,URLhaus-browse,tag:SynkLoader,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_SynkLoader_2026-09-19T190912Z.html
+2026-09-19T190912Z,Showboat,ThreatFox-browse,tag:Showboat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_Showboat_2026-09-19T190912Z.html
+2026-09-19T190912Z,Showboat,MalwareBazaar-browse,tag:Showboat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_Showboat_2026-09-19T190912Z.html
+2026-09-19T190912Z,Showboat,URLhaus-browse,tag:Showboat,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_Showboat_2026-09-19T190912Z.html
+2026-09-19T190912Z,Cruciferra,ThreatFox-browse,tag:Cruciferra,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_Cruciferra_2026-09-19T190912Z.html
+2026-09-19T190912Z,Cruciferra,MalwareBazaar-browse,tag:Cruciferra,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_Cruciferra_2026-09-19T190912Z.html
+2026-09-19T190912Z,Cruciferra,URLhaus-browse,tag:Cruciferra,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_Cruciferra_2026-09-19T190912Z.html
+2026-09-19T190912Z,PUROSANGUE,ThreatFox-browse,tag:PUROSANGUE,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/threatfox_browse_PUROSANGUE_2026-09-19T190912Z.html
+2026-09-19T190912Z,PUROSANGUE,MalwareBazaar-browse,tag:PUROSANGUE,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/malwarebazaar_browse_PUROSANGUE_2026-09-19T190912Z.html
+2026-09-19T190912Z,PUROSANGUE,URLhaus-browse,tag:PUROSANGUE,BLOCKED_CAPTCHA,0,hCaptcha interstitial archived — not a confirmed empty-tag result.,evidence/passive-observations/trackers/urlhaus_browse_PUROSANGUE_2026-09-19T190912Z.html

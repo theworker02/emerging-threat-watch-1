@@ -1,0 +1,228 @@
+﻿[
+    {
+        "domain":  "adidasabc.com",
+        "certCount":  0,
+        "ctSha":  "f17a56fba4bb4c000c1dc9ad5533972b992338a27ebbc3a60b84d34443016a45",
+        "rdSha":  "bf63264886415dc1cf6b3138a49c57dc5b8dff36fbef9868336b27888b0b96ed",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_adidasabc.com_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_adidasabc.com_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "xiongmaocs.help",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "0907ea7eda205a60c0d88625e6c0a50c6b109ff3d2e56f2be1ec37a9c8e6b1d6",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_xiongmaocs.help_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_xiongmaocs.help_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "uuokxx.com",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "ccdf08fa0f48a98d9c1284b48b582e42ed75ff2016ee49d1229267b263417688",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_uuokxx.com_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_uuokxx.com_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "andxxxo.com",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "103f988ec0c164a170dcde26a0349c42a7d72492f2ade52d72b8b30597ccdeda",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_andxxxo.com_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_andxxxo.com_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "blackcat880.shop",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "0d7a2afd075c985ac1b93ed1cb0882ec3cb1465e64472e8ab709775d4951b428",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_blackcat880.shop_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_blackcat880.shop_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "cheng770.cyou",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "493ad377e6c8e9bcdffab1177ddfc635c1c718bd1440cda261841ef4988e0038",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_cheng770.cyou_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_cheng770.cyou_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "xiongmaocs.mom",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "d950b02577acb5d275c09836c47c65569243059bac3d38adcf7243c58f28b93a",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_xiongmaocs.mom_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_xiongmaocs.mom_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "xiongmaocs.pics",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "37a9d21a12376ce8cdba7147ee8a0924c6d9400fad5c78dad94793fcaf796af3",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_xiongmaocs.pics_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_xiongmaocs.pics_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "fjbjwgyuyftg.qpon",
+        "certCount":  2,
+        "ctSha":  "f15d8c1d787a8e3434baf61acfb8ce1c8ee9d7c47cab23745ac319edaccca789",
+        "rdSha":  "58dd02ed0684bcdbac6ae1e84d84e09451c8e6121d913e9280cd933f02511151",
+        "rdOk":  true,
+        "sampleIds":  "28883286090,28966538823",
+        "firstSeen":  "2026-08-15T15:41:29",
+        "lastSeen":  {
+
+                     },
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_fjbjwgyuyftg.qpon_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_fjbjwgyuyftg.qpon_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "niaotong2.top",
+        "certCount":  8,
+        "ctSha":  "2bc0941afae15d79595d69d43ae29fb44aab55c2603920b3a739e64fd6a59a68",
+        "rdSha":  "6eba65fb31e56ecd2239cf0420a5c18b5dd3cce9f41b2faeddf9ce65d3e461f4",
+        "rdOk":  true,
+        "sampleIds":  "28150412056,28150401690,25800510737,25800443204,25800212226",
+        "firstSeen":  "2026-04-26T03:08:37",
+        "lastSeen":  {
+
+                     },
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_niaotong2.top_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_niaotong2.top_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "heilongyk.top",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "1ca8a0bd7b5cc798670b52b904ec2721d88fda60cd8f2f7d01b47bfd6141a2bd",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_heilongyk.top_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_heilongyk.top_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "gpgmk.com",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "07fd6eee1e616450e1827d1af21ec15daead9cc93e8cd629739b302c2037fcc0",
+        "rdOk":  true,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_gpgmk.com_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_gpgmk.com_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "jrgdef.cn",
+        "certCount":  0,
+        "ctSha":  "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "rdSha":  "d0c3b1e47dc26d893e10380845ab877cfd11d34bb98fa44c8798c5c79abac0d9",
+        "rdOk":  false,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_jrgdef.cn_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_jrgdef.cn_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "etlva.cn",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "d0c3b1e47dc26d893e10380845ab877cfd11d34bb98fa44c8798c5c79abac0d9",
+        "rdOk":  false,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_etlva.cn_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_etlva.cn_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "terh5.cn",
+        "certCount":  0,
+        "ctSha":  "9f47181597b90436500e5e62d99b0b87352599a88937f5c888b746adc01b8200",
+        "rdSha":  "d0c3b1e47dc26d893e10380845ab877cfd11d34bb98fa44c8798c5c79abac0d9",
+        "rdOk":  false,
+        "sampleIds":  "",
+        "firstSeen":  "",
+        "lastSeen":  "",
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_terh5.cn_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_terh5.cn_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "kingbss.com",
+        "certCount":  4,
+        "ctSha":  "158d272a7fdb360a31f68ae3526f174e6d71d2ce92b59f8c6841c6a4871b2c34",
+        "rdSha":  "a26ecba03fb94a02deb86da68752b2a67a3aad24dc60254a15826ef7d430b3fc",
+        "rdOk":  true,
+        "sampleIds":  "28405857402,28405858849,28405883618,28474917821",
+        "firstSeen":  "2026-07-31T09:53:01",
+        "lastSeen":  {
+
+                     },
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_kingbss.com_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_kingbss.com_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "tmgg01.top",
+        "certCount":  3,
+        "ctSha":  "8ba84cb8da0eb4a88f0f48b973f21991f6369cbd82ef5ab116d50d21c8b11e88",
+        "rdSha":  "a41a19754a6681bd402a1a4b198395b6327d19d5bfc3ae5884619ad1427c2a21",
+        "rdOk":  true,
+        "sampleIds":  "28188819044,28193409039,26226278963",
+        "firstSeen":  "2026-05-10T00:00:00",
+        "lastSeen":  {
+
+                     },
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_tmgg01.top_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_tmgg01.top_2026-09-19T185319Z.json"
+    },
+    {
+        "domain":  "primevoria.com",
+        "certCount":  7,
+        "ctSha":  "a10be48b23eeaf06395b1cb63fe84fb7e3298e5438773b31b58ede356676df4c",
+        "rdSha":  "514d5f66bbf436e478203c1a196ae074ed5f7b13f5805645f8c689a094c9135f",
+        "rdOk":  true,
+        "sampleIds":  "29154762013,29158501222,29142969402,27468718500,27468719581",
+        "firstSeen":  "2026-06-25T04:50:29",
+        "lastSeen":  {
+
+                     },
+        "ctOut":  "evidence\\passive-observations\\certificate-transparency\\rathat\\ct_primevoria.com_2026-09-19T185319Z.json",
+        "rdOut":  "evidence\\passive-observations\\rdap\\rathat\\rdap_primevoria.com_2026-09-19T185319Z.json"
+    }
+]

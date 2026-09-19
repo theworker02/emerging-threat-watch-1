@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+telecom.webredirect.org,domain,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Config SERVER_ADDRESS,showboat
+singtelcom.site,domain,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Telecom impersonation,showboat
+kaztelecom.shop,domain,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Telecom impersonation,showboat

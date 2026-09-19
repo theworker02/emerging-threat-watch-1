@@ -1,0 +1,15 @@
+{
+  "evidence_id": "PS-POL-001",
+  "source_id": "SOURCE-POL-001",
+  "original_url": "https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/",
+  "retrieved_utc": "2026-09-19T18:39:24Z",
+  "sha256": "9d9d39e81a906afcddd3381977e50c335179878db07b00bde70e85e6e897c111",
+  "http_status": 200,
+  "bytes": 260700,
+  "content_verified": true,
+  "frozen": false,
+  "dual_reference_of": "PS-NRB-001",
+  "artifact_path": "evidence/primary-sources/noderabbit/securelist-noderabbit-2026-09-01.html",
+  "verify_hits": ["PollCat", "RankChallenge-react", "requireObjects.js"],
+  "notes": "Same HTML artifact as NodeRabbit; dual-listed; cases remain isolated."
+}

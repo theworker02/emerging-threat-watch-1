@@ -1,0 +1,14 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+telecom.webredirect.org,domain,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Config SERVER_ADDRESS,showboat
+singtelcom.site,domain,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Telecom impersonation,showboat
+kaztelecom.shop,domain,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Telecom impersonation,showboat
+139.84.227.139,ip,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Primary C2 IP,showboat
+194.135.25.132,ip,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Second C2 IP,showboat
+23.27.201.160,ip,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,singtelcom.site host,showboat
+101.36.105.222,ip,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,kaztelecom.shop host,showboat
+d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011,sha256,2025-05,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Linux ELF sample,showboat
+8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165,sha256,,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Windows sample,showboat
+253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56,sha256,,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Windows sample,showboat
+27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677,x509_sha256,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Primary cluster cert fingerprint,showboat
+103.10.145.129,ip,2023-04-04,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,ukpkmkk.bin host; historical,showboat
+114.116.239.178,ip,2024-11-01,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,ukpkmkk.bin host,showboat

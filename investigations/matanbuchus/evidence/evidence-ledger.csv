@@ -1,0 +1,2 @@
+evidence_id,family,artifact_type,path_or_ref,retrieved_date_utc,sha256,provenance,notes
+MAT-EV-0000,Matanbuchus,stub_note,investigations/matanbuchus/README.md,2026-09-19T20:30:00Z,,INTERNAL,Candidate skeleton only

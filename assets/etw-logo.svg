@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="etwTitle etwDesc">
+  <title id="etwTitle">Emerging Threat Watch</title>
+  <desc id="etwDesc">Official logo: radar eye over a shield on a dark field with Emerging Threat Watch wordmark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="55%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#3B82F6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0B1220" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="720" height="720" rx="72" fill="url(#bg)"/>
+  <rect x="18" y="18" width="684" height="684" rx="58" fill="none" stroke="#1E293B" stroke-width="2"/>
+  <circle cx="360" cy="300" r="210" fill="url(#glow)"/>
+
+  <!-- Shield -->
+  <path d="M360 118
+           C430 118 498 138 530 158
+           V292
+           C530 392 460 468 360 512
+           C260 468 190 392 190 292
+           V158
+           C222 138 290 118 360 118Z"
+        fill="#0F172A" stroke="url(#blue)" stroke-width="8"/>
+  <path d="M360 148
+           C418 148 472 164 498 180
+           V288
+           C498 368 442 430 360 466
+           C278 430 222 368 222 288
+           V180
+           C248 164 302 148 360 148Z"
+        fill="#020617" stroke="#334155" stroke-width="2"/>
+
+  <!-- Radar arcs -->
+  <circle cx="360" cy="292" r="118" fill="none" stroke="#1E3A5F" stroke-width="3"/>
+  <circle cx="360" cy="292" r="88" fill="none" stroke="#164E63" stroke-width="2.5" stroke-dasharray="6 8"/>
+  <circle cx="360" cy="292" r="58" fill="none" stroke="url(#cyan)" stroke-width="3" opacity="0.85"/>
+  <path d="M360 292 L458 214" stroke="url(#cyan)" stroke-width="4" stroke-linecap="round" opacity="0.95"/>
+  <path d="M360 292 L430 248 A88 88 0 0 0 372 204" fill="url(#cyan)" opacity="0.18"/>
+
+  <!-- Watchful eye / pupil -->
+  <ellipse cx="360" cy="292" rx="34" ry="22" fill="#0B1220" stroke="url(#cyan)" stroke-width="3"/>
+  <circle cx="360" cy="292" r="11" fill="url(#cyan)"/>
+  <circle cx="364" cy="288" r="3.5" fill="#ECFEFF"/>
+
+  <!-- Crosshair ticks -->
+  <path d="M360 168 V188 M360 396 V416 M246 292 H266 M454 292 H474"
+        stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Wordmark -->
+  <text x="360" y="580" text-anchor="middle"
+        font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+        font-size="34" font-weight="700" letter-spacing="4"
+        fill="#E2E8F0">EMERGING</text>
+  <text x="360" y="622" text-anchor="middle"
+        font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+        font-size="34" font-weight="800" letter-spacing="5"
+        fill="url(#cyan)">THREAT</text>
+  <text x="360" y="664" text-anchor="middle"
+        font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+        font-size="34" font-weight="700" letter-spacing="4"
+        fill="#E2E8F0">WATCH</text>
+</svg>

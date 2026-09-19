@@ -1,0 +1,10 @@
+DRAFT — DO NOT PASTE INTO IC3
+
+Family: MiniFast
+Package: ETW-MNF-IC3
+Status: CANDIDATE
+
+Emerging Threat Watch maintains a candidate/comparator case folder for MiniFast based on public vendor disclosure framing (Check Point May 2026).
+No independently observed infrastructure is claimed.
+No indicators are included in this stub to avoid inventing hashes, domains, or C2 hosts.
+Primary URL freeze and human review are required before any filing.
