@@ -16,7 +16,6 @@ Cross-platform spyware targeting MEA developer environments; Azure/Cloudflare-ba
 - Non-Azure domains: visitfinancedentists.com; healthcomfsdpower.com; msmanagementgrp.com; msmanagementgrpmedia.com
 - Multiple *.azurewebsites.net hosts (see 03_INDICATORS.csv)
 - NameCheap pattern assets NRB-IND-0029–0039 (ASSOCIATION_ONLY); PolySwarm RELATED_SAMPLE SHA-256 NRB-IND-0040–0041
-- Local-bundle npm launchers NRB-IND-0042–0044: `colorized_terminal@2.1.0`, `pretty-log@2.1.0`, `node_modules/.cache/.320697f1/index.js` (not PollCat; not public `pretty-log@0.1.0`)
 - Host pivots: shepherd-persist Git hooks; fake GitHub Copilot Helper VS Code extension; Linux paths under ~/.config/microsoft-edge-update and ~/.config/intel-dsa
 
 Full table: `03_INDICATORS.csv`
@@ -29,7 +28,6 @@ Full table: `03_INDICATORS.csv`
 - agent:servers can replace C2 lists — domain IOCs are perishable; prefer host artifacts.
 - Azure/Cloudflare edge IPs are not actor-owned infrastructure.
 - RankChallenge-react MD5 (795e053a…) is PollCat — NRB-IND-0011 is CROSS_REF_POLLCAT only; do not treat as NodeRabbit IOC.
-- `colorized_terminal` / `pretty-log@2.1.0` are NodeRabbit local-bundle launchers (NRB-IND-0042–0044) — not PollCat; do not treat registry `pretty-log@0.1.0` as IOC.
 - Pattern-based NameCheap domains (NRB-IND-0029–0039) and PolySwarm SHA-256s (NRB-IND-0040–0041) are ASSOCIATION_ONLY / RELATED_SAMPLE — not sample-bound NodeRabbit implant proof.
 - COMMON TECHNIQUE overlap with PollCat (recruiter ZIP / Azure-CF C2) is Moderate; implant divergence is High — see shared/lineage/pollcat-noderabbit-lineage-note.md. Do not merge authorship.
 

@@ -8,7 +8,6 @@
 - IPv4/domain/hash rows are PRIMARY-SOURCE from Lumen article and BLL Showboat_IOCs.txt — not ETW live contact.
 - 116.169.244.208 is ASSOCIATION_ONLY (possible upstream/dev) — not confirmed actor-owned C2.
 - CDN demotion N/A for these BLL/Lumen-listed hosts; author identity remains NOT_ESTABLISHED (vendor cites PRC-aligned clusters — ETW does not independently establish).
-- Hide-command strings SHO-IND-0023–0026 (`ukpkmkk.c` / `ukpkmkk.so` / `kworkers|dbus|autoupdate` / `/etc/ld.so.preload`) are **SECONDARY** (Picus; SHO-CLAIM-0009/0010) — corroborate Lumen Pastebin dead-drop class; prefer ETW paste retrieval before elevating to OBSERVED_PASSIVE.
 - Do not invent additional telecom victim names or backdate beyond published ranges.
 
 ## This package does **not** claim

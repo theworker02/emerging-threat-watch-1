@@ -15,8 +15,6 @@ Kaspersky GReAT / Securelist (primary); Kaspersky press (campaign summary)
 ## Lineage note
 
 - `shared/lineage/pollcat-noderabbit-lineage-note.md` — Moderate delivery overlap / High implant divergence; do not merge authorship with PollCat.
-- Local-bundle npm (`colorized_terminal` / `pretty-log@2.1.0`) = NodeRabbit (NRB-IND-0042–0044); registry negatives NRB-PO-0200/0201 / NRB-CLAIM-0021–0022. Not PollCat; not `pretty-log@0.1.0`.
-
 ## Provenance rule
 
 These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.

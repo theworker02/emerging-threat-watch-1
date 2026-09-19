@@ -17,7 +17,6 @@ Telecom-oriented Linux post-exploitation; historical activity may predate 2026 p
 - Linux sample SHA-256: d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011
 - Historical hosting: 103.10.145.129 (first_seen 2023-04-04); Pastebin hide-code Jan 2022
 - BLL C2 table IPv4 set plus secondary cluster 192.9.141.111 / 64.176.43.209
-- Picus SECONDARY hide strings SHO-IND-0023–0026: `ukpkmkk.c` / `ukpkmkk.so` / `kworkers|dbus|autoupdate` / `/etc/ld.so.preload`
 - See 03_INDICATORS.csv (SHO-IND-0001–0026)
 
 Full table: `03_INDICATORS.csv`
@@ -28,7 +27,6 @@ Full table: `03_INDICATORS.csv`
 - IPv4/domain/hash rows are PRIMARY-SOURCE from Lumen article and BLL Showboat_IOCs.txt — not ETW live contact.
 - 116.169.244.208 is ASSOCIATION_ONLY (possible upstream/dev) — not confirmed actor-owned C2.
 - CDN demotion N/A for these BLL/Lumen-listed hosts; author identity remains NOT_ESTABLISHED (vendor cites PRC-aligned clusters — ETW does not independently establish).
-- SHO-IND-0023–0026 hide strings are Picus SECONDARY (SHO-CLAIM-0009/0010) — not Lumen PRIMARY; do not elevate without independent paste freeze.
 - Do not invent additional telecom victim names or backdate beyond published ranges.
 
 ## Suggested handling

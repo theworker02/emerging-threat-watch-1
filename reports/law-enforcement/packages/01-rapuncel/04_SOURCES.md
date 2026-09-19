@@ -4,7 +4,7 @@
 
 ## Organizations
 
-LastPass TIME + Delphos (primary); eSentire / Proofpoint (Cruciferra crypter context); Trend Micro (BoryptGrab comparator only); LOLDrivers (CcProtect baseline)
+LastPass TIME + Delphos (primary); eSentire / Proofpoint (Cruciferra crypter context); Trend Micro (BoryptGrab comparator only)
 
 ## Copy-pasteable URLs
 
@@ -18,4 +18,4 @@ LastPass TIME + Delphos (primary); eSentire / Proofpoint (Cruciferra crypter con
 
 ## Provenance rule
 
-These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation. Cruciferra IOC/sideload and LOLDrivers CcProtect materials are lineage comparators — not Rapuncel-author identity.
+These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.
