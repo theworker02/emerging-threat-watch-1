@@ -228,7 +228,7 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 |----------|------|
 | **FBI / IC3 filing packages (canonical)** | [`reports/law-enforcement/`](reports/law-enforcement/) |
 | **STIX evidentiary repository (LE ingest)** | [`reports/law-enforcement/CTI-Evidence-Repository/`](reports/law-enforcement/CTI-Evidence-Repository/) |
-| Rapuncel | `reports/law-enforcement/packages/01-rapuncel/` (`ETW-RAP-IC3`) |
+| Rapuncel | `reports/law-enforcement/packages/01-rapuncel/` (`ETW-RAP-IC3`) — **FILED_IC3** `208b747c6f7445f0af2b69a9d63acc36` (2026-09-19 4:44:37 PM EST) |
 | Settra | `reports/law-enforcement/packages/02-settra/` (`ETW-SET-IC3`) |
 | RatHat | `reports/law-enforcement/packages/03-rathat/` (`ETW-RAT-IC3`) |
 | NodeRabbit | `reports/law-enforcement/packages/04-noderabbit/` (`ETW-NRB-IC3`) |
