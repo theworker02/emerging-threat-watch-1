@@ -230,7 +230,7 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | **STIX evidentiary repository (LE ingest)** | [`reports/law-enforcement/CTI-Evidence-Repository/`](reports/law-enforcement/CTI-Evidence-Repository/) |
 | Rapuncel | `reports/law-enforcement/packages/01-rapuncel/` (`ETW-RAP-IC3`) — **FILED_IC3** `208b747c6f7445f0af2b69a9d63acc36` (2026-09-19 4:44:37 PM EST) |
 | Settra | `reports/law-enforcement/packages/02-settra/` (`ETW-SET-IC3`) — **FILED_IC3** `631d8b4800d04bc19cdbfc6662e5c52c` (2026-09-19 4:59:46 PM EST) |
-| RatHat | `reports/law-enforcement/packages/03-rathat/` (`ETW-RAT-IC3`) |
+| RatHat | `reports/law-enforcement/packages/03-rathat/` (`ETW-RAT-IC3`) — **FILED_IC3** `f92c4c2f0dd3481f898fdd125e728adf` (2026-09-19 5:08:29 PM EST) |
 | NodeRabbit | `reports/law-enforcement/packages/04-noderabbit/` (`ETW-NRB-IC3`) |
 | PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) |
 | SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) |
