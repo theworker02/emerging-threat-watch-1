@@ -1,6 +1,6 @@
 # Rapuncel — FBI / Field-Office Summary
 
-**Package:** `ETW-RAP-IC3` · **Status:** DRAFT · **Cutoff:** 2026-09-19
+**Package:** `ETW-RAP-IC3` · **Status:** FILED_IC3 (Submission ID recorded) · **Cutoff:** 2026-09-19
 
 ## One-paragraph summary
 
@@ -44,5 +44,16 @@ Full table: `03_INDICATORS.csv`
 | Organization (if any) | _[TO BE FILLED]_ |
 | Email / phone | _[TO BE FILLED]_ |
 | Preferred contact method | _[TO BE FILLED]_ |
-| Related IC3 complaint number(s) | _[IF ANY]_ |
+| Related IC3 complaint number(s) | 208b747c6f7445f0af2b69a9d63acc36 (filed 2026-09-19 4:44:37 PM EST) |
 | Related FBI tip / case number(s) | _[IF ANY]_ |
+
+## Filing record
+
+| Field | Value |
+|-------|-------|
+| Channel | IC3 (ic3.gov) |
+| Submission ID | 208b747c6f7445f0af2b69a9d63acc36 |
+| Date filed | 2026-09-19 4:44:37 PM EST |
+| Family scope | Rapuncel only (ETW-RAP-IC3) |
+| Personal victimization / dollar loss claimed | No |
+| Follow-up | Optional FBI tips.fbi.gov referencing this Submission ID |
