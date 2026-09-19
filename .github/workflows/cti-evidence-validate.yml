@@ -86,7 +86,7 @@ jobs:
       - name: Verify CHECKSUMS.sha256
         run: |
           cd reports/law-enforcement/CTI-Evidence-Repository
-          # Recompute checksums for listed text artifacts after STIX rebuild drift
+          # Hash LF-normalized bytes so Windows CRLF checkouts match Linux CI / git blobs
           python - <<'PY'
           import hashlib, sys
           from pathlib import Path
@@ -100,7 +100,8 @@ jobs:
               p = root / path
               if not p.exists():
                   print("MISSING", path); bad = True; continue
-              h = hashlib.sha256(p.read_bytes()).hexdigest()
+              data = p.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+              h = hashlib.sha256(data).hexdigest()
               if h != digest:
                   print("MISMATCH", path)
                   print("  expect", digest)

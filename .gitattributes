@@ -1,0 +1,8 @@
+# Normalize text in CTI evidence packages so CHECKSUMS.sha256 is stable
+# across Windows (CRLF checkout) and Linux CI (LF).
+reports/law-enforcement/CTI-Evidence-Repository/** text eol=lf
+reports/law-enforcement/CTI-Evidence-Repository/**/*.csv text eol=lf
+reports/law-enforcement/CTI-Evidence-Repository/**/*.json text eol=lf
+reports/law-enforcement/CTI-Evidence-Repository/**/*.md text eol=lf
+reports/law-enforcement/CTI-Evidence-Repository/**/*.yar text eol=lf
+reports/law-enforcement/CTI-Evidence-Repository/CHECKSUMS.sha256 text eol=lf

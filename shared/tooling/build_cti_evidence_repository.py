@@ -295,11 +295,13 @@ def ensure_placeholders(fam_dir: Path, family: str) -> None:
 
 
 def sha256_file(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as f:
-        for chunk in iter(lambda: f.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
+    """SHA-256 of file bytes with CRLF normalized to LF.
+
+    Working trees on Windows often checkout text as CRLF while git stores LF.
+    CI (Linux) and the committed CHECKSUMS.sha256 must agree on LF bytes.
+    """
+    data = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(data).hexdigest()
 
 
 def main() -> None:
