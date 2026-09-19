@@ -1,6 +1,6 @@
 package_id,family,folder,threat_type,status,ic3_complaint_number,fbi_tip_or_case_number,reviewer,review_date_utc,filed_date_utc,notes
 ETW-RAP-IC3,Rapuncel,packages/01-rapuncel,Windows stealer / GitHub-SEO distribution,FILED_IC3,208b747c6f7445f0af2b69a9d63acc36,,,2026-09-19T20:44:37Z,2026-09-19T20:44:37Z,IC3 Submission ID 208b747c6f7445f0af2b69a9d63acc36 filed 2026-09-19 4:44:37 PM EST; Rapuncel-only; 36 INDs; no personal loss claim
-ETW-SET-IC3,Settra,packages/02-settra,Enterprise ransomware + operator intrusion,DRAFT,,,,,,16 INDs; WIN-LIVFRVQFMKO lead not exclusive; MeshCentral/Rapid Seedbox chronology; handoff 2026-09-19T202601Z
+ETW-SET-IC3,Settra,packages/02-settra,Enterprise ransomware + operator intrusion,FILED_IC3,631d8b4800d04bc19cdbfc6662e5c52c,,,2026-09-19T20:59:46Z,2026-09-19T20:59:46Z,IC3 Submission ID 631d8b4800d04bc19cdbfc6662e5c52c filed 2026-09-19 4:59:46 PM EST; Settra-only; 16 INDs; separate from Rapuncel 208b747c6f7445f0af2b69a9d63acc36; no shared-operator claim
 ETW-RAT-IC3,RatHat,packages/03-rathat,Android Accessibility/ADB RAT,DRAFT,,,,,,40 RAT-IND; package names still open — do not invent; handoff 2026-09-19T202601Z
 ETW-NRB-IC3,NodeRabbit,packages/04-noderabbit,Cross-platform developer-targeted RAT,DRAFT,,,,,,44 INDs; Mirage Kitten = Kaspersky assessment; Git hooks = local persistence; handoff 2026-09-19T202601Z
 ETW-POL-IC3,PollCat,packages/05-pollcat,Cross-platform obfuscated JavaScript RAT (coding-challenge delivery),DRAFT,,,,,,15 POL-IND; RankChallenge MD5 is PollCat; do not merge with NodeRabbit; handoff 2026-09-19T202601Z

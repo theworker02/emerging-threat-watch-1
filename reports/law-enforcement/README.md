@@ -31,7 +31,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
 | 1 | Rapuncel | `ETW-RAP-IC3` | Windows stealer / GitHub-SEO distribution | [`packages/01-rapuncel/`](packages/01-rapuncel/) — **FILED_IC3** `208b747c6f7445f0af2b69a9d63acc36` (2026-09-19 4:44:37 PM EST); [`IC3_FILING_RECORD.md`](packages/01-rapuncel/IC3_FILING_RECORD.md) |
-| 2 | Settra | `ETW-SET-IC3` | Enterprise ransomware + operator intrusion | [`packages/02-settra/`](packages/02-settra/) |
+| 2 | Settra | `ETW-SET-IC3` | Enterprise ransomware + operator intrusion | [`packages/02-settra/`](packages/02-settra/) — **FILED_IC3** `631d8b4800d04bc19cdbfc6662e5c52c` (2026-09-19 4:59:46 PM EST); [`IC3_FILING_RECORD.md`](packages/02-settra/IC3_FILING_RECORD.md) |
 | 3 | RatHat | `ETW-RAT-IC3` | Android Accessibility → Wireless ADB RAT | [`packages/03-rathat/`](packages/03-rathat/) |
 | 4 | NodeRabbit | `ETW-NRB-IC3` | Cross-platform developer-targeted RAT | [`packages/04-noderabbit/`](packages/04-noderabbit/) |
 | 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) |
