@@ -551,6 +551,9 @@ Research cutoff: 2026-09-19. This report is based on publicly published vendor/r
 def write_package(fam: dict) -> None:
     d = PACKAGES / fam["id"]
     d.mkdir(parents=True, exist_ok=True)
+    # IC3 form-fill scaffolding stays local/private — not in the public package tree.
+    helpers = LE / "private" / "filing-helpers" / fam["id"]
+    helpers.mkdir(parents=True, exist_ok=True)
 
     cover = f"""# {fam['family']} — Law Enforcement Package Cover Sheet
 
@@ -569,52 +572,60 @@ def write_package(fam: dict) -> None:
 | **Primary research orgs** | {fam['primary_orgs']} |
 | **Primary publication window** | {fam['pub_date']} |
 
-## Package contents (file in this order)
+## Public package contents (repo)
 
-| # | File | Purpose |
-|---|------|---------|
-| 00 | `00_COVER_SHEET.md` | This sheet |
-| 01 | `01_NARRATIVE_PASTE.txt` | Plain-text paste into IC3 complaint description |
-| 02 | `02_FBI_SUMMARY.md` | Short FBI / field-office oriented summary |
-| 03 | `03_INDICATORS.csv` | Source-attributed indicators (PRIMARY-SOURCE; not OBSERVED) |
-| 04 | `04_SOURCES.md` | Exact public URLs and roles |
-| 05 | `05_CAVEATS_AND_LIMITS.md` | What this package does **not** claim |
-| 06 | `06_EVIDENCE_RETAINED.md` | What the reporter should retain locally |
+| File | Purpose |
+|------|---------|
+| `02_FBI_SUMMARY.md` | Short investigator-facing summary |
+| `03_INDICATORS.csv` | Source-attributed indicators |
+| `04_SOURCES.md` | Exact public research URLs |
+| `05_CAVEATS_AND_LIMITS.md` | What this package does **not** claim |
+| `IC3_FILING_RECORD.md` | Present only after an IC3 filing is recorded |
+
+## Local-only helpers (gitignored)
+
+| File | Purpose |
+|------|---------|
+| `00_COVER_SHEET.md` | Filing identity / integrity gate |
+| `01_NARRATIVE_PASTE.txt` | Plain text for IC3 complaint description |
+| `06_EVIDENCE_RETAINED.md` | Local retention checklist |
 
 ## Filing rule
 
 Submit **this package alone**. Do **not** combine with other Emerging Threat Watch family filings unless a human reviewer documents linkage evidence and decides a joint filing is appropriate.
-
-## Integrity gate (must all pass)
-
-- [ ] Narrative uses "researchers reported" / "I retained" language — not "I discovered" unless true
-- [ ] No unsupported victimization or dollar-loss claims
-- [ ] No fabricated hashes, domains, or C2 hosts
-- [ ] Attribution provenance preserved (vendor assessment vs ETW conclusion)
-- [ ] Current vs historical infrastructure distinguished
-- [ ] Human reviewer name/date recorded before submit
 """
-    (d / "00_COVER_SHEET.md").write_text(cover, encoding="utf-8")
+    (helpers / "00_COVER_SHEET.md").write_text(cover, encoding="utf-8")
 
-    (d / "01_NARRATIVE_PASTE.txt").write_text(
+    (helpers / "01_NARRATIVE_PASTE.txt").write_text(
         fam["narrative"].strip() + "\n\n" + ADDENDUM + "\n", encoding="utf-8"
     )
 
+    # Remove obsolete public form-kit files if a prior build left them behind.
+    for obsolete in (
+        "00_COVER_SHEET.md",
+        "01_NARRATIVE_PASTE.txt",
+        "06_EVIDENCE_RETAINED.md",
+        "07_IC3_FILING_RECORD.md",
+    ):
+        p = d / obsolete
+        if p.exists():
+            p.unlink()
+
     bullets = "\n".join(f"- {x}" for x in fam["key_indicators_highlight"])
     caveats = "\n".join(f"- {x}" for x in fam["key_caveats"])
-    fbi = f"""# {fam['family']} — FBI / Field-Office Summary
+    fbi = f"""# {fam['family']} — Summary
 
 **Package:** `{fam['case_code']}` · **Status:** DRAFT · **Cutoff:** 2026-09-19
 
-## One-paragraph summary
+## Overview
 
 {fam['narrative'].strip()}
 
-## Why this may matter to FBI cyber / IC3 correlation
+## Why this may matter for FBI cyber / IC3 correlation
 
 {fam['fbi_relevance']}
 
-## Highest-value indicators (primary-source; not ETW-observed)
+## Highest-value indicators
 
 {bullets}
 
@@ -627,22 +638,16 @@ Full table: `03_INDICATORS.csv`
 ## Suggested handling
 
 1. Treat as **defensive threat-intelligence referral**, not a completed criminal case file.
-2. Correlate MeshAgent / domain / hash / URI-path indicators against existing FBI/IC3 holdings.
+2. Correlate published domain / hash / URI-path indicators against existing holdings.
 3. Request sample acquisition through normal vendor/legal channels if needed — this package does not contain malware binaries.
 4. Keep this family **separate** from other Emerging Threat Watch packages unless linkage evidence appears.
-
-## Contact block (reporter fills before filing)
-
-| Field | Value |
-|-------|-------|
-| Reporter name | _[TO BE FILLED]_ |
-| Organization (if any) | _[TO BE FILLED]_ |
-| Email / phone | _[TO BE FILLED]_ |
-| Preferred contact method | _[TO BE FILLED]_ |
-| Related IC3 complaint number(s) | _[IF ANY]_ |
-| Related FBI tip / case number(s) | _[IF ANY]_ |
 """
-    (d / "02_FBI_SUMMARY.md").write_text(fbi, encoding="utf-8")
+    # Preserve an existing public filing record / status if already filed.
+    existing_fbi = d / "02_FBI_SUMMARY.md"
+    if existing_fbi.exists() and "FILED_IC3" in existing_fbi.read_text(encoding="utf-8"):
+        pass  # do not overwrite filed package summary
+    else:
+        existing_fbi.write_text(fbi, encoding="utf-8")
 
     shutil.copy2(fam["indicators_path"], d / "03_INDICATORS.csv")
 
@@ -659,7 +664,7 @@ Full table: `03_INDICATORS.csv`
 
 {fam['primary_orgs']}
 
-## Copy-pasteable URLs
+## URLs
 
 {urls}
 
@@ -689,7 +694,7 @@ These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them doe
 
 {fam['impact']}
 
-## Provenance vocabulary (for reviewers)
+## Provenance vocabulary
 
 | Label | Meaning in this package |
 |-------|-------------------------|
@@ -712,7 +717,7 @@ No malware was executed and no suspected command-and-control system was contacte
         lineage_row = (
             "| Lineage note | `shared/lineage/pollcat-noderabbit-lineage-note.md` |\n"
         )
-    (d / "06_EVIDENCE_RETAINED.md").write_text(
+    (helpers / "06_EVIDENCE_RETAINED.md").write_text(
         f"""# {fam['family']} — Evidence Retained (Reporter Checklist)
 
 **Package:** `{fam['case_code']}`
@@ -720,7 +725,7 @@ No malware was executed and no suspected command-and-control system was contacte
 Retain locally (do not upload malware binaries to IC3 web forms):
 
 - [ ] Saved copies / screenshots of primary research pages listed in `04_SOURCES.md` (HTML + timestamp)
-- [ ] This package folder (all seven files)
+- [ ] This package folder (public files) plus local filing helpers
 - [ ] Full ETW investigation folder if available: `investigations/{slug}/`
 - [ ] Any **independent** OBSERVED validation results (CT/pDNS/hash enrichment) — label clearly as OBSERVED with date/method
 - [ ] Reporter contact information and any related complaint/tip numbers
@@ -739,8 +744,7 @@ Retain locally (do not upload malware binaries to IC3 web forms):
 | Indicators | `investigations/{slug}/evidence/published-indicators.csv` |
 | Claims | `investigations/{slug}/claims/claims-ledger.csv` |
 | Gaps | `investigations/{slug}/gaps/priority-gaps.csv` |
-{lineage_row}| IC3 draft (repo) | `reports/{slug}/{fam['family'].upper()}_IC3_BRIEF.md` |
-| This LE package | `reports/law-enforcement/packages/{fam['id']}/` |
+{lineage_row}| This LE package | `reports/law-enforcement/packages/{fam['id']}/` |
 """,
         encoding="utf-8",
     )

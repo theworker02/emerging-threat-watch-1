@@ -1,4 +1,4 @@
-# Rapuncel — IC3 Filing Record (public)
+# Rapuncel — IC3 Filing Record
 
 **Package ID:** `ETW-RAP-IC3`  
 **Family:** Rapuncel only (case-isolated)
@@ -18,15 +18,14 @@
 
 ## Investigator note
 
-This Submission ID identifies the IC3 complaint that transmitted the Emerging Threat Watch Rapuncel defensive threat-intelligence package (`ETW-RAP-IC3`), including narrative, PRIMARY-SOURCE indicators, and source URLs. Full indicator table: `03_INDICATORS.csv`. Master index row: `reports/law-enforcement/MASTER_INDEX.csv`.
+This Submission ID identifies the IC3 complaint that transmitted the Emerging Threat Watch Rapuncel defensive threat-intelligence package (`ETW-RAP-IC3`). Full indicator table: `03_INDICATORS.csv`. Master index: `reports/law-enforcement/MASTER_INDEX.csv`.
 
-## Related public records in this repository
+## Related public records
 
 | Artifact | Path |
 |----------|------|
-| Cover sheet | `00_COVER_SHEET.md` |
-| Narrative used | `01_NARRATIVE_PASTE.txt` |
-| FBI summary | `02_FBI_SUMMARY.md` |
+| Summary | `02_FBI_SUMMARY.md` |
 | Indicators | `03_INDICATORS.csv` |
 | Sources | `04_SOURCES.md` |
+| Caveats | `05_CAVEATS_AND_LIMITS.md` |
 | Master index | `../../MASTER_INDEX.csv` |

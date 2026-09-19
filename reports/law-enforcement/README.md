@@ -1,39 +1,36 @@
 # Law Enforcement Handoff — FBI & IC3
 
-**Status:** DRAFT packages · Human review required before any filing  
+**Status:** Active LE packages · Rapuncel `FILED_IC3` · others DRAFT until filed  
 **Research cutoff:** 2026-09-19  
-**Corpus retrieval:** 2026-09-19T18:07:48Z  
-**Independently observed infrastructure by ETW:** none
+**Independently observed campaign ownership by ETW:** none
 
-This folder is the **only** place to assemble materials for IC3 complaints and FBI cyber referrals from Emerging Threat Watch. Investigation notebooks, claim ledgers, and landscape outlines stay elsewhere; this tree is the filing surface.
+This folder holds **investigator-facing** law-enforcement materials for Emerging Threat Watch. IC3 form-fill helpers (cover sheets, narrative pastes, retention checklists) are **local-only** under `private/filing-helpers/` (gitignored).
 
 Comprehensive local submission dossier: `SUBMISSION_REPORT.md` (gitignored; see TEMPLATE if present).
 
 **Machine-ingestible LE evidence tree (STIX + IOC CSVs + TLP):** [`CTI-Evidence-Repository/`](CTI-Evidence-Repository/) — rebuild with `python shared/tooling/build_cti_evidence_repository.py`.
 
-External tips that may strengthen these packages: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
+External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 
 ## Start here
 
 | Step | Document |
 |------|----------|
-| 1 | Read [`HOW_TO_FILE.md`](HOW_TO_FILE.md) — IC3 vs FBI channels **and** hosting/registrar takedown packages (different audiences; both need technical telemetry) |
-| 2 | Complete [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md) per package |
-| 3 | Open **one** family package under [`packages/`](packages/) |
-| 4 | Paste `01_NARRATIVE_PASTE.txt` into IC3; attach or reference `03_INDICATORS.csv` + `04_SOURCES.md` |
-| 5 | Use `02_FBI_SUMMARY.md` if referring to an FBI field office / tips channel |
-| 6 | For hosting/registrar/chat abuse (not IC3 narrative): [`TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md`](TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md) + [`shared/methodology/TAKEDOWN_AND_ENFORCEMENT_EVIDENCE.md`](../../shared/methodology/TAKEDOWN_AND_ENFORCEMENT_EVIDENCE.md) |
-| 7 | For STIX/CSV evidentiary repo (FBI/HSI/CISA ingest): [`CTI-Evidence-Repository/README.md`](CTI-Evidence-Repository/README.md) |
+| 1 | Read [`HOW_TO_FILE.md`](HOW_TO_FILE.md) — IC3 vs FBI vs hosting/registrar takedown |
+| 2 | Open **one** family package under [`packages/`](packages/) |
+| 3 | Use `02_FBI_SUMMARY.md` + `03_INDICATORS.csv` + `04_SOURCES.md` + `05_CAVEATS_AND_LIMITS.md` |
+| 4 | If filing IC3 yourself: local helpers in `private/filing-helpers/<package>/` (not in git) |
+| 5 | STIX/CSV evidentiary repo: [`CTI-Evidence-Repository/README.md`](CTI-Evidence-Repository/README.md) |
 
-**Enforcement readiness (what each family has vs lacks for takedown):** [`docs/ENFORCEMENT_READINESS.md`](../../docs/ENFORCEMENT_READINESS.md).
+**Enforcement readiness:** [`docs/ENFORCEMENT_READINESS.md`](../../docs/ENFORCEMENT_READINESS.md).
 
-## Fifteen packages (7 active drafts + 8 candidate stubs — do not merge)
+## Fifteen packages (7 active + 8 candidate stubs — do not merge)
 
-### Active (may become filing-ready after human review)
+### Active
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
-| 1 | Rapuncel | `ETW-RAP-IC3` | Windows stealer / GitHub-SEO distribution | [`packages/01-rapuncel/`](packages/01-rapuncel/) — **FILED_IC3** `208b747c6f7445f0af2b69a9d63acc36` (2026-09-19 4:44:37 PM EST); see [`07_IC3_FILING_RECORD.md`](packages/01-rapuncel/07_IC3_FILING_RECORD.md) |
+| 1 | Rapuncel | `ETW-RAP-IC3` | Windows stealer / GitHub-SEO distribution | [`packages/01-rapuncel/`](packages/01-rapuncel/) — **FILED_IC3** `208b747c6f7445f0af2b69a9d63acc36` (2026-09-19 4:44:37 PM EST); [`IC3_FILING_RECORD.md`](packages/01-rapuncel/IC3_FILING_RECORD.md) |
 | 2 | Settra | `ETW-SET-IC3` | Enterprise ransomware + operator intrusion | [`packages/02-settra/`](packages/02-settra/) |
 | 3 | RatHat | `ETW-RAT-IC3` | Android Accessibility → Wireless ADB RAT | [`packages/03-rathat/`](packages/03-rathat/) |
 | 4 | NodeRabbit | `ETW-NRB-IC3` | Cross-platform developer-targeted RAT | [`packages/04-noderabbit/`](packages/04-noderabbit/) |
@@ -41,7 +38,7 @@ External tips that may strengthen these packages: [`docs/SUBMIT_INTEL.md`](../..
 | 6 | SynkLoader | `ETW-SYN-IC3` | Modular mixed-language loader / Teams phishing | [`packages/06-synkloader/`](packages/06-synkloader/) |
 | 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) |
 
-### Candidate / comparator stubs (**NOT READY TO FILE** — empty IOC ledgers)
+### Candidate / comparator stubs (**NOT READY TO FILE**)
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
@@ -60,27 +57,27 @@ External tips that may strengthen these packages: [`docs/SUBMIT_INTEL.md`](../..
 
 Master status table: [`MASTER_INDEX.csv`](MASTER_INDEX.csv)
 
-## Standard file layout (every package)
+## Standard public package layout
 
 ```
 packages/0N-family/
-├── 00_COVER_SHEET.md          ← identity, crime-type language, integrity gate
-├── 01_NARRATIVE_PASTE.txt     ← plain text for IC3 complaint description
-├── 02_FBI_SUMMARY.md          ← short FBI / field-office brief + contact block
-├── 03_INDICATORS.csv          ← PRIMARY-SOURCE indicators (not OBSERVED)
+├── 02_FBI_SUMMARY.md          ← investigator-facing summary
+├── 03_INDICATORS.csv          ← PRIMARY-SOURCE / labeled OBSERVED_PASSIVE indicators
 ├── 04_SOURCES.md              ← exact public research URLs
-├── 05_CAVEATS_AND_LIMITS.md   ← what you must not claim
-└── 06_EVIDENCE_RETAINED.md    ← local retention checklist
+├── 05_CAVEATS_AND_LIMITS.md   ← what this package does not claim
+└── IC3_FILING_RECORD.md       ← only after an IC3 filing is recorded (Rapuncel has this)
 ```
+
+Local filing helpers (gitignored): `private/filing-helpers/0N-family/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`).
 
 ## Hard rules
 
 1. **One family = one filing** unless a human reviewer documents linkage evidence.  
-2. **Never auto-submit.** These are drafts.  
-3. Language must distinguish *“researchers reported”* from *“I observed.”* Baseline infrastructure is **PRIMARY-SOURCE**, not `OBSERVED`.  
-4. **No malware binaries** in IC3 web forms. Retain samples offline if you have authorized access.  
+2. **Never auto-submit.**  
+3. Language must distinguish *“researchers reported”* from *“I observed.”*  
+4. **No malware binaries** in IC3 web forms.  
 5. **No invented dollar losses, victim names, hashes, or C2 hosts.**  
-6. Rebuild packages after indicator changes: `python shared/tooling/build_le_packages.py`  
+6. Rebuild public packages after indicator changes: `python shared/tooling/build_le_packages.py`  
 7. **Candidate stubs (08–15)** must not be filed until primary URL freeze + human promotion.
 
 ## Relationship to other repo paths
@@ -98,3 +95,4 @@ packages/0N-family/
 | Per-family enforcement readiness | `docs/ENFORCEMENT_READINESS.md` |
 | Narrative dossier template | `reports/law-enforcement/SUBMISSION_REPORT.TEMPLATE.md` |
 | Gated autonomy (Tier 1 lab) | `shared/methodology/GATED_AUTONOMY.md` |
+| Local IC3 form helpers | `reports/law-enforcement/private/filing-helpers/` (gitignored) |

@@ -35,14 +35,3 @@ Full table: `03_INDICATORS.csv`
 2. Correlate MeshAgent / domain / hash / URI-path indicators against existing FBI/IC3 holdings.
 3. Request sample acquisition through normal vendor/legal channels if needed — this package does not contain malware binaries.
 4. Keep this family **separate** from other Emerging Threat Watch packages unless linkage evidence appears.
-
-## Contact block (reporter fills before filing)
-
-| Field | Value |
-|-------|-------|
-| Reporter name | _[TO BE FILLED]_ |
-| Organization (if any) | _[TO BE FILLED]_ |
-| Email / phone | _[TO BE FILLED]_ |
-| Preferred contact method | _[TO BE FILLED]_ |
-| Related IC3 complaint number(s) | _[IF ANY]_ |
-| Related FBI tip / case number(s) | _[IF ANY]_ |

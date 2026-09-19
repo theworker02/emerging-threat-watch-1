@@ -19,6 +19,8 @@ Complete **one checklist per package**. Print or copy into the package folder as
 - [ ] Does **not** label infrastructure `OBSERVED` unless an OBSERVED row exists with method + timestamp
 - [ ] Vendor attribution (e.g., Mirage Kitten) is labeled as **that vendor’s assessment**
 
+
+
 ## C. Facts vs speculation
 
 - [ ] No dollar-loss figure unless the reporter can document it
@@ -26,6 +28,8 @@ Complete **one checklist per package**. Print or copy into the package folder as
 - [ ] No fabricated SHA-256 / domains / C2 hosts
 - [ ] Historical leads (e.g., WIN-LIVFRVQFMKO) are labeled leads, not confirmed campaign history
 - [ ] Analytical caveats in `05_CAVEATS_AND_LIMITS.md` were read and accepted
+
+
 
 ## D. Package completeness
 
@@ -36,11 +40,15 @@ Complete **one checklist per package**. Print or copy into the package folder as
 - [ ] `04_SOURCES.md` URLs verified reachable or archived locally
 - [ ] `06_EVIDENCE_RETAINED.md` retention items completed
 
+
+
 ## E. Safety
 
 - [ ] No malware binary attached to the web form
 - [ ] No C2 interaction was performed to “confirm” indicators
 - [ ] No credentials / private keys / session tokens included
+
+
 
 ## F. After filing
 

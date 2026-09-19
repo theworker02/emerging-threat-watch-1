@@ -23,12 +23,12 @@ Many reporters file **IC3 first** (get a complaint number), then send the same p
 
 ## Recommended order per family
 
-1. Open `packages/0N-<family>/00_COVER_SHEET.md` and confirm case isolation.  
-2. Fill the contact block in `02_FBI_SUMMARY.md`.  
-3. Run through `../SUBMISSION_CHECKLIST.md`.  
-4. **IC3:** paste `01_NARRATIVE_PASTE.txt` into the complaint description. Add high-value indicators from `03_INDICATORS.csv` only if the form has space — otherwise state that a CSV is retained and available on request. List primary URLs from `04_SOURCES.md` in the additional-information field.  
-5. Save the IC3 confirmation / complaint number into `02_FBI_SUMMARY.md` and `MASTER_INDEX.csv`.  
-6. **FBI (optional):** submit or email `02_FBI_SUMMARY.md` + `03_INDICATORS.csv` + `04_SOURCES.md` + `05_CAVEATS_AND_LIMITS.md`, citing the IC3 number if you have one.
+1. Open `packages/0N-<family>/` and read `02_FBI_SUMMARY.md` + `05_CAVEATS_AND_LIMITS.md`.  
+2. Confirm case isolation (one family only).  
+3. Run through `../SUBMISSION_CHECKLIST.md` if filing.  
+4. **IC3:** use the local narrative helper at `private/filing-helpers/0N-<family>/01_NARRATIVE_PASTE.txt` (gitignored). Add high-value indicators from `03_INDICATORS.csv` only if the form has space — otherwise state that a CSV is retained and available on request. List primary URLs from `04_SOURCES.md` in the additional-information field.  
+5. Save the IC3 confirmation / Submission ID into `IC3_FILING_RECORD.md`, `02_FBI_SUMMARY.md`, and `MASTER_INDEX.csv`.  
+6. **FBI (optional):** submit or email `02_FBI_SUMMARY.md` + `03_INDICATORS.csv` + `04_SOURCES.md` + `05_CAVEATS_AND_LIMITS.md`, citing the IC3 Submission ID if you have one.
 
 ## What to say in the form (safe phrasing)
 
