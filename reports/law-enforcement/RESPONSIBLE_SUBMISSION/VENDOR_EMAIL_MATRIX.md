@@ -31,4 +31,4 @@ Vendor research teams (Cato, Hunt.io, Check Point, Unit 42, Cisco Talos research
 
 1. Provide a domain you control (e.g. `yourdomain.com`).
 2. Agent creates the Resend domain and shows DNS records.
-3. You add DNS → verify → agent can send with `from: reports@yourdomain.com` and `replyTo: matthewlooney5@gmail.com` (reply-to only after you confirm).
+3. You add DNS → verify → agent can send with `from: reports@yourdomain.com` and `replyTo:` from the gitignored complainant profile (confirm reply-to before first send).
