@@ -13,7 +13,7 @@ One-report / obscure families are high-value for autonomous CT / pDNS / archive 
 | PollCat | Kaspersky Sept 2026 | JS RAT; co-disclosed with NodeRabbit; extremely sparse corpus | **ADDED** |
 | SynkLoader | Expel Aug 2026 | Modular mixed-language loader; Teams/IT-helpdesk enterprise intrusion | **ADDED** |
 | Showboat | Lumen BLL 2026 | Linux modular post-ex; telecoms; possible activity ≥2022 | **ADDED** |
-| Abyssos | Zscaler Aug 2026 | Modular RAT; young corpus | **ADDED** (primary freeze 2026-09-20; IC3 package `ETW-ABY-IC3`) |
+| Abyssos | Zscaler Aug 2026 | Modular RAT; young corpus | **ADDED / FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
 | SharkLoader | Kaspersky June 2026 | Custom loader → Cobalt Strike | CANDIDATE |
 | TencShell | Cato CTRL 2026 | Go implant; Rshell OSS lineage problem | CANDIDATE |
 | MiniFast | Check Point May 2026 | Nimbus Manticore; Zoom installer trust abuse | CANDIDATE |

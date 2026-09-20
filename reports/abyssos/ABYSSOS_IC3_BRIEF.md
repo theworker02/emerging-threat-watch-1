@@ -2,8 +2,9 @@
 
 **Canonical filing package:** [`../law-enforcement/packages/08-abyssos/`](../law-enforcement/packages/08-abyssos/)  
 **Package ID:** `ETW-ABY-IC3`  
-**Status:** DRAFT — ready for human IC3 filing · do not auto-submit · **Primary freeze:** 2026-09-20  
-**Independently observed by ETW:** none
+**Status:** `FILED_IC3` · Submission ID `a23f0a9d6799480e994284416d354713` · filed 2026-09-19 10:20:50 PM EST · **Primary freeze:** 2026-09-20  
+**Independently observed by ETW:** none  
+**Filing record:** [`../law-enforcement/packages/08-abyssos/IC3_FILING_RECORD.md`](../law-enforcement/packages/08-abyssos/IC3_FILING_RECORD.md)
 
 | Need | File |
 |------|------|

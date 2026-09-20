@@ -22,4 +22,4 @@
 
 ## Status
 
-Primary URL frozen; **10 ABY-IND rows** transcribed. IC3 package ready for human filing — see [`reports/law-enforcement/packages/08-abyssos/`](../../reports/law-enforcement/packages/08-abyssos/).
+Primary URL frozen; **10 ABY-IND rows** transcribed. **IC3 package `ETW-ABY-IC3` filed** — Submission ID `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST). See [`reports/law-enforcement/packages/08-abyssos/IC3_FILING_RECORD.md`](../../reports/law-enforcement/packages/08-abyssos/IC3_FILING_RECORD.md).

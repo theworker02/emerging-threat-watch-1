@@ -92,7 +92,7 @@ Seven remaining **UNVERIFIED** stubs share the same folder skeleton until primar
 
 | Family | Kind | Why tracked |
 |--------|------|-------------|
-| **Abyssos** | Promoted (was candidate) | Modular RAT — Zscaler primary frozen 2026-09-20; `ETW-ABY-IC3` next filing |
+| **Abyssos** | Filed (promoted from candidate) | Modular RAT — Zscaler primary frozen 2026-09-20; `ETW-ABY-IC3` **FILED_IC3** `a23f0a9d6799480e994284416d354713` |
 | **SharkLoader** | Candidate | Custom loader → Cobalt Strike (Kaspersky June 2026 framing) |
 | **TencShell** | Candidate | Go implant; Rshell OSS lineage problem (Cato CTRL 2026) |
 | **MiniFast** | Candidate | Zoom installer trust abuse; PollCat context only — **not merged** |
@@ -235,7 +235,7 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST) |
 | SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST) |
 | Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST) |
-| Abyssos | `reports/law-enforcement/packages/08-abyssos/` (`ETW-ABY-IC3`) — **next to file** (primary frozen 2026-09-20) |
+| Abyssos | `reports/law-enforcement/packages/08-abyssos/` (`ETW-ABY-IC3`) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
 | SharkLoader … StarlandRAT stubs | `packages/09`–`15` — **not filing-ready** |
 | Landscape comparison | `reports/landscape/EMERGING_THREAT_LANDSCAPE_REPORT.pdf` |
 

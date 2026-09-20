@@ -1,9 +1,7 @@
 # IC3 / FBI Full Complaint Package — Abyssos
 
-**Package ID:** `ETW-ABY-IC3`  
+**Status:** `FILED_IC3` · Submission ID `a23f0a9d6799480e994284416d354713` · **Primary freeze:** 2026-09-20  
 **Family:** Abyssos only (case-isolated)  
-**Status:** DRAFT — ready for human IC3 filing · do not auto-submit  
-**Primary freeze:** 2026-09-20 · Research cutoff baseline: 2026-09-19  
 **Portal:** https://www.ic3.gov/
 
 ---
@@ -32,7 +30,7 @@
 | PollCat | `ETW-POL-IC3` | `98a4444754324e539dbbffcb10c70637` |
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
-| **Abyssos (this filing)** | `ETW-ABY-IC3` | *not yet filed* |
+| **Abyssos (this filing)** | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
 
 ---
 

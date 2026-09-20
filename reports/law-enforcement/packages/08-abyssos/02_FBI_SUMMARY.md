@@ -1,23 +1,20 @@
 # Abyssos — Summary
 
-**Package:** `ETW-ABY-IC3` · **Status:** DRAFT — ready for human IC3 filing · **Primary freeze:** 2026-09-20
+**Package:** `ETW-ABY-IC3` · **Status:** FILED_IC3 · **Primary freeze:** 2026-09-20
 
 ## Overview
 
 Defensive threat-intelligence package concerning Abyssos as publicly documented by Zscaler ThreatLabz (2026-08-10). Zscaler describes a modular C++ RAT identified in late June 2026 with credential theft, file exfiltration, HVNC remote access, browser-session hijacking, and downloadable modules over a custom AES-GCM TCP protocol. **Author identity remains NOT_ESTABLISHED.** Initial delivery vector is not established in the primary report.
 
-## Pre-filing cross-references (separate IC3 complaints — no shared-operator claim)
+## IC3 filing
 
-| Family | Package | Submission ID |
-|--------|---------|---------------|
-| Rapuncel | `ETW-RAP-IC3` | `208b747c6f7445f0af2b69a9d63acc36` |
-| Settra | `ETW-SET-IC3` | `631d8b4800d04bc19cdbfc6662e5c52c` |
-| RatHat | `ETW-RAT-IC3` | `f92c4c2f0dd3481f898fdd125e728adf` |
-| NodeRabbit | `ETW-NRB-IC3` | `dded86972e9347e0be27a6597b4cf08a` |
-| PollCat | `ETW-POL-IC3` | `98a4444754324e539dbbffcb10c70637` |
-| SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
-| Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
-| **Abyssos (this package)** | `ETW-ABY-IC3` | *not yet filed* |
+| Field | Value |
+|-------|-------|
+| Submission ID | `a23f0a9d6799480e994284416d354713` |
+| Date filed | 2026-09-19 10:20:50 PM EST |
+| Date filed (UTC) | 2026-09-20T02:20:50Z |
+| Record | [`IC3_FILING_RECORD.md`](IC3_FILING_RECORD.md) |
+| Separate related filings | Rapuncel `208b747c6f7445f0af2b69a9d63acc36`; Settra `631d8b4800d04bc19cdbfc6662e5c52c`; RatHat `f92c4c2f0dd3481f898fdd125e728adf`; NodeRabbit `dded86972e9347e0be27a6597b4cf08a`; PollCat `98a4444754324e539dbbffcb10c70637`; SynkLoader `3440d0c64dc240499ff66deaa3311a0b`; Showboat `db42033f319844c08ad103befebfca08` (no shared-operator claim) |
 
 ## Highest-value indicators
 
@@ -38,4 +35,3 @@ Full table: `03_INDICATORS.csv` (10 ABY-IND rows). Dossier: `IC3_FULL_PACKAGE.md
 
 1. Treat as defensive threat-intelligence referral.
 2. Keep **separate** from other ETW packages.
-3. After filing: record Submission ID in `IC3_FILING_RECORD.md`, this summary, `MASTER_INDEX.csv`, and root `README.md`.
