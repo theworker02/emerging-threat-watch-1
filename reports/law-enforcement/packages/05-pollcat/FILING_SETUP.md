@@ -31,13 +31,16 @@ Optional local add-on (not produced by the builder): `07_IC3_FORM_FIELDS.md` —
 
 | File | Purpose |
 |------|---------|
+| [`IC3_FULL_PACKAGE.md`](IC3_FULL_PACKAGE.md) | **Complete structured dossier** — narrative + all hashes/domains/URLs/paths/protocol + gaps |
 | [`02_FBI_SUMMARY.md`](02_FBI_SUMMARY.md) | Investigator summary + prior IC3 cross-refs |
-| [`03_INDICATORS.csv`](03_INDICATORS.csv) | 15 PRIMARY-SOURCE POL-IND rows |
+| [`03_INDICATORS.csv`](03_INDICATORS.csv) | 15 PRIMARY-SOURCE POL-IND rows (machine-readable) |
 | [`04_SOURCES.md`](04_SOURCES.md) | Securelist primary URL |
 | [`05_CAVEATS_AND_LIMITS.md`](05_CAVEATS_AND_LIMITS.md) | Non-claims / lineage limits |
 | [`REVIEW_CHECKLIST.md`](REVIEW_CHECKLIST.md) | Pre-submit review |
 
-Pointer brief: [`../../../reports/pollcat/POLLCAT_IC3_BRIEF.md`](../../pollcat/POLLCAT_IC3_BRIEF.md)
+Pointer brief: [`../../pollcat/POLLCAT_IC3_BRIEF.md`](../../pollcat/POLLCAT_IC3_BRIEF.md)
+
+**Hash reality check:** corpus has **one MD5** (`795e053a990a1569ffdcb57f48f6d085`). **No SHA-256. No C2 IPs.** Do not invent them for the form.
 
 ## 3. IC3 form field map
 
