@@ -1,6 +1,6 @@
 # IC3 / FBI Full Complaint Package — SharkLoader
 
-**Status:** `PRIMARY_FROZEN` — **not filed** (primary frozen; ready for human filing review) · **Primary freeze:** 2026-09-20  
+**Status:** `FILED_IC3` · Submission ID `6ed57963d0c64750aa14b6fcbaa2e576` · **Primary freeze:** 2026-09-20  
 **Family:** SharkLoader only (case-isolated)  
 **Portal:** https://www.ic3.gov/
 
@@ -31,7 +31,7 @@
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 | Abyssos | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
-| **SharkLoader (this package)** | `ETW-SHK-IC3` | *not filed* |
+| **SharkLoader (this filing)** | `ETW-SHK-IC3` | `6ed57963d0c64750aa14b6fcbaa2e576` |
 
 ---
 

@@ -3,7 +3,7 @@ PollCat,Kaspersky Sept 2026,Cross-platform JS RAT; co-disclosed with NodeRabbit;
 SynkLoader,Expel Aug 2026,Modular mixed-language loader; Teams/IT-helpdesk enterprise intrusion surface,ADDED,SynkLoader,investigations/synkloader/ — Matanbuchus is technique comparator only (Teams+ChaCha20); authorship NOT_ESTABLISHED
 Showboat,Lumen BLL May 2026,Linux modular post-ex targeting telecoms; activity ≥2022 (Pastebin Jan 2022; BLL IPs from 2023-04),ADDED,Showboat;EvaRAT,investigations/showboat/ — PS-SHO-001/002 frozen; SHO-IND filled
 Abyssos,Zscaler Aug 2026,Modular RAT; young corpus,ADDED,Abyssos,investigations/abyssos/ — PS-ABY-001 frozen 2026-09-20; ABY-IND-0001–0010; ETW-ABY-IC3 filing package ready
-SharkLoader,Kaspersky June 2026,Custom loader → Cobalt Strike,ADDED,SharkLoader,investigations/sharkloader/ — PS-SHK-001 frozen 2026-09-20; 19 SHK-IND; PRIMARY_FROZEN not filed
+SharkLoader,Kaspersky June 2026,Custom loader → Cobalt Strike,ADDED,SharkLoader,investigations/sharkloader/ — PS-SHK-001 frozen; 19 SHK-IND; FILED_IC3 6ed57963d0c64750aa14b6fcbaa2e576 (2026-09-19 10:43:18 PM EST)
 TencShell,Cato CTRL 2026,Go implant from Rshell OSS lineage problem,ADDED,TencShell,investigations/tencshell/ — PS-TEN-001 frozen 2026-09-20; 15 TEN-IND; PRIMARY_FROZEN not filed; OSS Rshell ≠ IOC
 MiniFast,Check Point May 2026,Nimbus Manticore; Zoom installer trust abuse; PollCat C2 structural overlap per Kaspersky Sept 2026,ADDED,MiniFast;Retrograde,investigations/minifast/ — PS-MNF-001 frozen 2026-09-20; 30 MNF-IND; do NOT merge into POL
 Argamal,Kaspersky June 2026,Trojanized adult games RAT,ADDED,Argamal,investigations/argamal/ — PS-ARG-001 frozen 2026-09-20; 22 ARG-IND; PRIMARY_FROZEN not filed

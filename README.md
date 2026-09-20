@@ -93,7 +93,7 @@ Former empty stubs **09–15** now have frozen primaries and transcribed IOCs (`
 | Family | Kind | Why tracked |
 |--------|------|-------------|
 | **Abyssos** | Filed (promoted from candidate) | Modular RAT — Zscaler primary frozen 2026-09-20; `ETW-ABY-IC3` **FILED_IC3** `a23f0a9d6799480e994284416d354713` |
-| **SharkLoader** | Primary-frozen | StrikeShark / Cobalt Strike loader — Securelist 2026-06-24; 19 SHK-IND |
+| **SharkLoader** | Filed | StrikeShark / Cobalt Strike loader — Securelist 2026-06-24; `ETW-SHK-IC3` **FILED_IC3** `6ed57963d0c64750aa14b6fcbaa2e576` |
 | **TencShell** | Primary-frozen | Customized Rshell Go implant — Cato CTRL; 15 TEN-IND |
 | **MiniFast** | Primary-frozen | Zoom trust abuse / Nimbus Manticore — Check Point; 30 MNF-IND; PollCat context only — **not merged** |
 | **Argamal** | Primary-frozen | Trojanized adult games RAT — Securelist 2026-06-03; 22 ARG-IND |
@@ -236,7 +236,7 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST) |
 | Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST) |
 | Abyssos | `reports/law-enforcement/packages/08-abyssos/` (`ETW-ABY-IC3`) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
-| SharkLoader | `packages/09-sharkloader/` (`ETW-SHK-IC3`) — **PRIMARY_FROZEN** 19 SHK-IND |
+| SharkLoader | `packages/09-sharkloader/` (`ETW-SHK-IC3`) — **FILED_IC3** `6ed57963d0c64750aa14b6fcbaa2e576` (2026-09-19 10:43:18 PM EST) |
 | TencShell | `packages/10-tencshell/` (`ETW-TEN-IC3`) — **PRIMARY_FROZEN** 15 TEN-IND |
 | MiniFast | `packages/11-minifast/` (`ETW-MNF-IC3`) — **PRIMARY_FROZEN** 30 MNF-IND |
 | Argamal | `packages/12-argamal/` (`ETW-ARG-IC3`) — **PRIMARY_FROZEN** 22 ARG-IND |
@@ -260,7 +260,7 @@ Start at [`reports/law-enforcement/README.md`](reports/law-enforcement/README.md
 **Phase 1 — Evidence acquisition & claim corpus**  
 **v1 freeze cutoff:** **2026-09-19**  
 **Final threat-report PDFs:** deferred  
-**Scale:** **8** filed families + **7** primary-frozen packages = **15** family folders
+**Scale:** **9** filed families + **6** primary-frozen packages = **15** family folders
 
 Operational pointers:
 

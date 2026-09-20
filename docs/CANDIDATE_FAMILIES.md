@@ -14,7 +14,7 @@ One-report / obscure families are high-value for autonomous CT / pDNS / archive 
 | SynkLoader | Expel Aug 2026 | Modular mixed-language loader; Teams/IT-helpdesk enterprise intrusion | **ADDED** |
 | Showboat | Lumen BLL 2026 | Linux modular post-ex; telecoms; possible activity ≥2022 | **ADDED** |
 | Abyssos | Zscaler Aug 2026 | Modular RAT; young corpus | **ADDED / FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
-| SharkLoader | Kaspersky June 2026 | Custom loader → Cobalt Strike | **ADDED / PRIMARY_FROZEN** (19 SHK-IND; Securelist 2026-06-24) |
+| SharkLoader | Kaspersky June 2026 | Custom loader → Cobalt Strike | **ADDED / FILED_IC3** `6ed57963d0c64750aa14b6fcbaa2e576` (2026-09-19 10:43:18 PM EST) |
 | TencShell | Cato CTRL 2026 | Go implant; Rshell OSS lineage problem | **ADDED / PRIMARY_FROZEN** (15 TEN-IND; Cato CTRL) |
 | MiniFast | Check Point May 2026 | Nimbus Manticore; Zoom installer trust abuse | **ADDED / PRIMARY_FROZEN** (30 MNF-IND; do not merge with PollCat) |
 | Argamal | Kaspersky June 2026 | Trojanized adult games RAT | **ADDED / PRIMARY_FROZEN** (22 ARG-IND; Securelist 2026-06-03) |

@@ -1,6 +1,6 @@
 # SharkLoader — IC3 Filing Setup (`ETW-SHK-IC3`)
 
-**Status:** `PRIMARY_FROZEN` — ready to file  
+**Status:** `FILED_IC3` · Submission ID `6ed57963d0c64750aa14b6fcbaa2e576` · 2026-09-19 10:43:18 PM EST  
 **Primary freeze:** 2026-09-20  
 **Primary:** https://securelist.com/strikeshark-campaign/120326/
 

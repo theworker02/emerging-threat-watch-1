@@ -1,5 +1,6 @@
 # SharkLoader — IC3 Paste-Ready Pack (`ETW-SHK-IC3`)
 
+**Status:** `FILED_IC3` · Submission ID `6ed57963d0c64750aa14b6fcbaa2e576` · filed 2026-09-19 10:43:18 PM EST  
 **Portal:** https://www.ic3.gov/
 
 Copy each section into the matching IC3 form field. Counts are under typical IC3 limits (description ≈3,500 · technical ≈5,000 · witnesses ≈1,000).

@@ -2,7 +2,7 @@
 
 **Case ID slug:** `sharkloader`  
 **Package:** `ETW-SHK-IC3`  
-**Status:** `PRIMARY_FROZEN`  
+**Status:** `FILED_IC3` · `6ed57963d0c64750aa14b6fcbaa2e576`  
 **Category:** Custom loader → Cobalt Strike (StrikeShark campaign)  
 **TLP:** TLP:AMBER+STRICT  
 **Generated:** 2026-09-20T02:25:00Z  

@@ -1,23 +1,18 @@
 # SharkLoader Investigation
 
-**Status:** PRIMARY frozen — promoted for package `ETW-SHK-IC3`  
+**Status:** PRIMARY frozen — **IC3 package `ETW-SHK-IC3` filed**  
 **Case ID:** `sharkloader`  
 **Case code:** `SHK` / `ETW-SHK-IC3`  
-**Kind:** `candidate`  
-**Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
+**Independence:** Isolated from all other ETW families. Loader→CS is COMMON TECHNIQUE only vs other loaders.  
+**IOC policy:** PRIMARY-SOURCE transcription from Kaspersky Securelist only — no invented IOCs.
 
 ## Research thesis
 
-- First/major disclosure: **Kaspersky GReAT / Securelist 2026-06-24**
-- Why it fits Emerging Threat Watch: Custom loader → Cobalt Strike (StrikeShark campaign)
+- First major disclosure: **Kaspersky GReAT Securelist 2026-06-24** (StrikeShark)
+- Custom loader → Cobalt Strike Beacon (SystemSettings.dll / DscCoreR.mui / SyncRes.dat)
 - Primary URL: https://securelist.com/strikeshark-campaign/120326/
 - Local freeze: `evidence/primary-sources/sharkloader/securelist-strikeshark-2026-06-24.html` (PS-SHK-001)
 
-## Research emphasis
-
-Standalone candidate promoted after primary freeze. Loader→CS is COMMON TECHNIQUE class only vs other loaders.
-
 ## Status
 
-Primary URL frozen; **19 SHK-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/09-sharkloader/`](../../reports/law-enforcement/packages/09-sharkloader/).
+Primary URL frozen; **19 SHK-IND rows** transcribed. **IC3 package `ETW-SHK-IC3` filed** — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576` (2026-09-19 10:43:18 PM EST). See [`reports/law-enforcement/packages/09-sharkloader/IC3_FILING_RECORD.md`](../../reports/law-enforcement/packages/09-sharkloader/IC3_FILING_RECORD.md).

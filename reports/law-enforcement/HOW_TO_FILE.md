@@ -56,7 +56,7 @@ IC3 web forms often limit uploads. Prefer:
 
 If a field office requests files, send the entire `packages/0N-<family>/` folder (still no malware binaries).
 
-## Eight active filings, not one
+## Nine active filings, not one
 
 | Package ID | Family | Why separate | Status |
 |------------|--------|--------------|--------|
@@ -68,6 +68,7 @@ If a field office requests files, send the entire `packages/0N-<family>/` folder
 | ETW-SYN-IC3 | SynkLoader | Teams IT-helpdesk phishing / modular loader / PhishLocker | `FILED_IC3` `3440d0c64dc240499ff66deaa3311a0b` |
 | ETW-SHO-IC3 | Showboat | Linux telecom post-exploitation; historical activity may predate 2026 disclosure | `FILED_IC3` `db42033f319844c08ad103befebfca08` |
 | ETW-ABY-IC3 | Abyssos | Modular Windows C++ RAT (HVNC / credential theft); Zscaler primary | `FILED_IC3` `a23f0a9d6799480e994284416d354713` |
+| ETW-SHK-IC3 | SharkLoader | Custom loader → Cobalt Strike (StrikeShark / Kaspersky) | `FILED_IC3` `6ed57963d0c64750aa14b6fcbaa2e576` |
 
 There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly.
 
@@ -75,7 +76,6 @@ There is **no** evidence in this repository establishing that these campaigns sh
 
 | Package ID | Family | IND rows | Status |
 |------------|--------|----------|--------|
-| ETW-SHK-IC3 | SharkLoader | 19 | `PRIMARY_FROZEN` |
 | ETW-TEN-IC3 | TencShell | 15 | `PRIMARY_FROZEN` |
 | ETW-MNF-IC3 | MiniFast | 30 | `PRIMARY_FROZEN` |
 | ETW-ARG-IC3 | Argamal | 22 | `PRIMARY_FROZEN` |
@@ -83,4 +83,4 @@ There is **no** evidence in this repository establishing that these campaigns sh
 | ETW-MAT-IC3 | Matanbuchus | 15 | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
 | ETW-STR-IC3 | StarlandRAT | 17 | `PRIMARY_FROZEN` |
 
-Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`.
+Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`. SharkLoader (`ETW-SHK-IC3`) filed — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576`.

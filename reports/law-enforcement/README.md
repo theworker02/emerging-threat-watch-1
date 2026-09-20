@@ -24,7 +24,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 
 **Enforcement readiness:** [`docs/ENFORCEMENT_READINESS.md`](../../docs/ENFORCEMENT_READINESS.md).
 
-## Fifteen packages (8 filed + 7 primary-frozen — do not merge)
+## Fifteen packages (9 filed + 6 primary-frozen — do not merge)
 
 ### Filed
 
@@ -39,11 +39,13 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST); [`IC3_FILING_RECORD.md`](packages/07-showboat/IC3_FILING_RECORD.md) |
 | 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (Zscaler) | [`packages/08-abyssos/`](packages/08-abyssos/) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST); [`IC3_FILING_RECORD.md`](packages/08-abyssos/IC3_FILING_RECORD.md) |
 
-### Primary-frozen (IOCs transcribed — **not IC3-filed**)
+### Filed (continued) / Primary-frozen remainder
+
+#### Primary-frozen (IOCs transcribed — **not IC3-filed**)
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
-| 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (StrikeShark) | [`packages/09-sharkloader/`](packages/09-sharkloader/) — **PRIMARY_FROZEN** 19 SHK-IND · [`IC3_FULL_PACKAGE.md`](packages/09-sharkloader/IC3_FULL_PACKAGE.md) |
+| 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (StrikeShark) | [`packages/09-sharkloader/`](packages/09-sharkloader/) — **FILED_IC3** `6ed57963d0c64750aa14b6fcbaa2e576` (2026-09-19 10:43:18 PM EST); [`IC3_FILING_RECORD.md`](packages/09-sharkloader/IC3_FILING_RECORD.md) |
 | 10 | TencShell | `ETW-TEN-IC3` | Go implant / customized Rshell | [`packages/10-tencshell/`](packages/10-tencshell/) — **PRIMARY_FROZEN** 15 TEN-IND · [`IC3_FULL_PACKAGE.md`](packages/10-tencshell/IC3_FULL_PACKAGE.md) |
 | 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) — **PRIMARY_FROZEN** 30 MNF-IND · [`IC3_FULL_PACKAGE.md`](packages/11-minifast/IC3_FULL_PACKAGE.md) |
 | 12 | Argamal | `ETW-ARG-IC3` | Trojanized adult games RAT | [`packages/12-argamal/`](packages/12-argamal/) — **PRIMARY_FROZEN** 22 ARG-IND · [`IC3_FULL_PACKAGE.md`](packages/12-argamal/IC3_FULL_PACKAGE.md) |
