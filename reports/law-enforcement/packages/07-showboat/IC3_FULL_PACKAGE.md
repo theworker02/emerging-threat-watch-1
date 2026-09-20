@@ -1,9 +1,7 @@
 # IC3 / FBI Full Complaint Package — Showboat
 
-**Package ID:** `ETW-SHO-IC3`  
+**Status:** `FILED_IC3` · Submission ID `db42033f319844c08ad103befebfca08` · **Cutoff:** 2026-09-19  
 **Family:** Showboat only (case-isolated)  
-**Status:** DRAFT — ready for human IC3 filing · do not auto-submit  
-**Research cutoff:** 2026-09-19  
 **Portal:** https://www.ic3.gov/
 
 ---

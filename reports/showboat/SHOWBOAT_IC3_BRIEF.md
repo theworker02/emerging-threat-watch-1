@@ -2,8 +2,9 @@
 
 **Canonical filing package:** [`../law-enforcement/packages/07-showboat/`](../law-enforcement/packages/07-showboat/)  
 **Package ID:** `ETW-SHO-IC3`  
-**Status:** DRAFT — ready for human IC3 filing · do not auto-submit · **Cutoff:** 2026-09-19  
-**Independently observed by ETW:** none
+**Status:** `FILED_IC3` · Submission ID `db42033f319844c08ad103befebfca08` · filed 2026-09-19 10:13:28 PM EST · **Cutoff:** 2026-09-19  
+**Independently observed by ETW:** none  
+**Filing record:** [`../law-enforcement/packages/07-showboat/IC3_FILING_RECORD.md`](../law-enforcement/packages/07-showboat/IC3_FILING_RECORD.md)
 
 | Need | File |
 |------|------|

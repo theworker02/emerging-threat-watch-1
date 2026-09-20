@@ -20,4 +20,4 @@
 
 ## Status
 
-Phase 1 package stub. Primary URL frozen; claim corpus intentionally thin until deeper extraction.
+Phase 1 package with Lumen/BLL primary freeze and 26 SHO-IND rows. **IC3 package `ETW-SHO-IC3` filed** — Submission ID `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST). See [`reports/law-enforcement/packages/07-showboat/IC3_FILING_RECORD.md`](../../reports/law-enforcement/packages/07-showboat/IC3_FILING_RECORD.md).
