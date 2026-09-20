@@ -98,4 +98,4 @@ Standalone candidate. Case-isolated from all active families.
 
 ## 5. Sources
 
-See [`04_SOURCES.md`](04_SOURCES.md). Local freeze: `evidence/primary-sources/argamal/securelist-argamal-2026.html` SHA-256 `d3aa8cee046058d5c449ac23b759e8a6c2e26c2c0105d55d1f95a9d6e976e7ef`.
+See [`04_SOURCES.md`](04_SOURCES.md). Primary freezes: Securelist (PS-ARG-001) + Kaspersky blog/press (PS-ARG-002/003).

@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Technical indicator appendix (OKO-IND-0001–0030)
+## 2. Technical indicator appendix (OKO-IND-0001–0033)
 
 ### Compact paste block
 
@@ -100,4 +100,4 @@ Standalone candidate. Case-isolated from all active families.
 
 ## 5. Sources
 
-See [`04_SOURCES.md`](04_SOURCES.md). Local freeze: `evidence/primary-sources/okobot/securelist-okobot-2026.html` SHA-256 `04eb0610ddb6e36d4cb0c12917e90424741162b091b87426a5c4c3cc1bf431ec`.
+See [`04_SOURCES.md`](04_SOURCES.md). Primary freezes: Securelist (PS-OKO-001) + Kaspersky press (PS-OKO-002) + Gridinsoft TookPS C2 (PS-OKO-003).

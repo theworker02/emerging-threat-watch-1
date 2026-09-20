@@ -76,11 +76,11 @@ There is **no** evidence in this repository establishing that these campaigns sh
 
 | Package ID | Family | IND rows | Status |
 |------------|--------|----------|--------|
-| ETW-TEN-IC3 | TencShell | 15 | `PRIMARY_FROZEN` |
-| ETW-MNF-IC3 | MiniFast | 30 | `PRIMARY_FROZEN` |
+| ETW-TEN-IC3 | TencShell | 30 | `PRIMARY_FROZEN` |
+| ETW-MNF-IC3 | MiniFast | 44 | `PRIMARY_FROZEN` |
 | ETW-ARG-IC3 | Argamal | 22 | `PRIMARY_FROZEN` |
-| ETW-OKO-IC3 | Okobot | 30 | `PRIMARY_FROZEN` |
-| ETW-MAT-IC3 | Matanbuchus | 15 | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
-| ETW-STR-IC3 | StarlandRAT | 17 | `PRIMARY_FROZEN` |
+| ETW-OKO-IC3 | Okobot | 33 | `PRIMARY_FROZEN` |
+| ETW-MAT-IC3 | Matanbuchus | 28 | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
+| ETW-STR-IC3 | StarlandRAT | 35 | `PRIMARY_FROZEN` |
 
 Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`. SharkLoader (`ETW-SHK-IC3`) filed — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576`.

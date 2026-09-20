@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Technical indicator appendix (MNF-IND-0001–0030)
+## 2. Technical indicator appendix (MNF-IND-0001–0044)
 
 ### Compact paste block
 
@@ -100,4 +100,4 @@ Context for PollCat lineage assessment only — do NOT auto-merge into POL case.
 
 ## 5. Sources
 
-See [`04_SOURCES.md`](04_SOURCES.md). Local freeze: `evidence/primary-sources/minifast/checkpoint-nimbus-manticore-minifast-2026.html` SHA-256 `a3d4d4a8346aaef3b9af65ac6a6290da63e1d85cc961d4b8fca7b50b065e93e9`.
+See [`04_SOURCES.md`](04_SOURCES.md). Primary freezes: Check Point (PS-MNF-001) + Unit 42 Screening Serpens / MiniUpdate (PS-MNF-002).

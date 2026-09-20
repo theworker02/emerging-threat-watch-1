@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Technical indicator appendix (MAT-IND-0001–0015)
+## 2. Technical indicator appendix (MAT-IND-0001–0028)
 
 ### Compact paste block
 
@@ -87,4 +87,4 @@ COMMON TECHNIQUE comparator for SynkLoader only. authorship_link SynkLoader=NOT_
 
 ## 5. Sources
 
-See [`04_SOURCES.md`](04_SOURCES.md). Local freeze: `evidence/primary-sources/matanbuchus/huntress-matanbuchus-astarionrat.html` SHA-256 `61db6ae84078463576b58b48bcf79d489adeeb5b05f4658fdb29e840a07904e7`.
+See [`04_SOURCES.md`](04_SOURCES.md). Primary freezes: Huntress (PS-MAT-001) + Zscaler (PS-MAT-002) + Morphisec Teams (PS-MAT-003) + eSentire (PS-MAT-004).

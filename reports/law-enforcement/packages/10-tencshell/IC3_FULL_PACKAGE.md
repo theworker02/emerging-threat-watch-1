@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Technical indicator appendix (TEN-IND-0001–0015)
+## 2. Technical indicator appendix (TEN-IND-0001–0030)
 
 ### Compact paste block
 
@@ -85,4 +85,4 @@ OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED. Standal
 
 ## 5. Sources
 
-See [`04_SOURCES.md`](04_SOURCES.md). Local freeze: `evidence/primary-sources/tencshell/cato-tencshell-2026.md.txt` SHA-256 `742dedea94fc4a0d35a1c549447d3dc21f65f903ca41c33543fce471d5259c28`.
+See [`04_SOURCES.md`](04_SOURCES.md). Primary freezes: Cato CTRL (PS-TEN-001) + Hunt.io follow-on (PS-TEN-002/003).

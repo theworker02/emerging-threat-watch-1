@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien | CyberVeille</title>
+<meta name="keywords" content="APT, IOC, IRGC, InitInstall.dll, Iran, MiniFast, MiniJunk, Nimbus Manticore, TTP, Updater.dll, backdoor, uevmonitor.dll">
+<meta name="description" content="🌐 Contexte
+Publié le 22 mai 2026 par Check Point Research, cet article documente les opérations du groupe de menace Nimbus Manticore (également suivi sous le nom UNC1549), affilié aux Gardiens de la Révolution iraniens (IRGC), durant la période de tensions militaires liées à l&rsquo;Opération Epic Fury (campagne militaire américaine contre l&rsquo;Iran lancée le 28 février 2026).
+🎯 Acteur et ciblage
+Nimbus Manticore est un acteur sophistiqué ciblant principalement les secteurs défense, aviation et télécommunications. Lors de cette campagne, les cibles incluent des organisations dans les secteurs aviation et développement logiciel en États-Unis, Europe, Moyen-Orient (Arabie Saoudite, Israël, Émirats Arabes Unis) et Australie.">
+<meta name="author" content="">
+<link rel="canonical" href="https://cyberveille.ch/posts/2026-05-26-nimbus-manticore-unc1549-nouvelles-techniques-et-backdoor-minifast-durant-le-conflit-iranien/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://cyberveille.ch/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cyberveille.ch/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cyberveille.ch/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cyberveille.ch/apple-touch-icon.png">
+<link rel="mask-icon" href="https://cyberveille.ch/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="fr" href="https://cyberveille.ch/posts/2026-05-26-nimbus-manticore-unc1549-nouvelles-techniques-et-backdoor-minifast-durant-le-conflit-iranien/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<script src="https://tinylytics.app/embed/C_x_W2iQUtx2sXPZDKoM.js?hits&kudos=%f0%9f%91%8d" defer></script>
+
+<link rel="me" href="https://infosec.exchange/@decio">
+
+<meta property="og:url" content="https://cyberveille.ch/posts/2026-05-26-nimbus-manticore-unc1549-nouvelles-techniques-et-backdoor-minifast-durant-le-conflit-iranien/">
+  <meta property="og:site_name" content="CyberVeille">
+  <meta property="og:title" content="Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien">
+  <meta property="og:description" content="🌐 Contexte Publié le 22 mai 2026 par Check Point Research, cet article documente les opérations du groupe de menace Nimbus Manticore (également suivi sous le nom UNC1549), affilié aux Gardiens de la Révolution iraniens (IRGC), durant la période de tensions militaires liées à l’Opération Epic Fury (campagne militaire américaine contre l’Iran lancée le 28 février 2026).
+🎯 Acteur et ciblage Nimbus Manticore est un acteur sophistiqué ciblant principalement les secteurs défense, aviation et télécommunications. Lors de cette campagne, les cibles incluent des organisations dans les secteurs aviation et développement logiciel en États-Unis, Europe, Moyen-Orient (Arabie Saoudite, Israël, Émirats Arabes Unis) et Australie.">
+  <meta property="og:locale" content="fr-fr">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-05-26T00:00:00+02:00">
+    <meta property="article:modified_time" content="2026-05-26T00:00:00+02:00">
+    <meta property="article:tag" content="APT">
+    <meta property="article:tag" content="IOC">
+    <meta property="article:tag" content="IRGC">
+    <meta property="article:tag" content="InitInstall.dll">
+    <meta property="article:tag" content="Iran">
+    <meta property="article:tag" content="MiniFast">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien">
+<meta name="twitter:description" content="🌐 Contexte
+Publié le 22 mai 2026 par Check Point Research, cet article documente les opérations du groupe de menace Nimbus Manticore (également suivi sous le nom UNC1549), affilié aux Gardiens de la Révolution iraniens (IRGC), durant la période de tensions militaires liées à l&rsquo;Opération Epic Fury (campagne militaire américaine contre l&rsquo;Iran lancée le 28 février 2026).
+🎯 Acteur et ciblage
+Nimbus Manticore est un acteur sophistiqué ciblant principalement les secteurs défense, aviation et télécommunications. Lors de cette campagne, les cibles incluent des organisations dans les secteurs aviation et développement logiciel en États-Unis, Europe, Moyen-Orient (Arabie Saoudite, Israël, Émirats Arabes Unis) et Australie.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://cyberveille.ch/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien",
+      "item": "https://cyberveille.ch/posts/2026-05-26-nimbus-manticore-unc1549-nouvelles-techniques-et-backdoor-minifast-durant-le-conflit-iranien/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien",
+  "name": "Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien",
+  "description": "🌐 Contexte Publié le 22 mai 2026 par Check Point Research, cet article documente les opérations du groupe de menace Nimbus Manticore (également suivi sous le nom UNC1549), affilié aux Gardiens de la Révolution iraniens (IRGC), durant la période de tensions militaires liées à l\u0026rsquo;Opération Epic Fury (campagne militaire américaine contre l\u0026rsquo;Iran lancée le 28 février 2026).\n🎯 Acteur et ciblage Nimbus Manticore est un acteur sophistiqué ciblant principalement les secteurs défense, aviation et télécommunications. Lors de cette campagne, les cibles incluent des organisations dans les secteurs aviation et développement logiciel en États-Unis, Europe, Moyen-Orient (Arabie Saoudite, Israël, Émirats Arabes Unis) et Australie.\n",
+  "keywords": [
+    "APT", "IOC", "IRGC", "InitInstall.dll", "Iran", "MiniFast", "MiniJunk", "Nimbus Manticore", "TTP", "Updater.dll", "backdoor", "uevmonitor.dll"
+  ],
+  "articleBody": "🌐 Contexte Publié le 22 mai 2026 par Check Point Research, cet article documente les opérations du groupe de menace Nimbus Manticore (également suivi sous le nom UNC1549), affilié aux Gardiens de la Révolution iraniens (IRGC), durant la période de tensions militaires liées à l’Opération Epic Fury (campagne militaire américaine contre l’Iran lancée le 28 février 2026).\n🎯 Acteur et ciblage Nimbus Manticore est un acteur sophistiqué ciblant principalement les secteurs défense, aviation et télécommunications. Lors de cette campagne, les cibles incluent des organisations dans les secteurs aviation et développement logiciel en États-Unis, Europe, Moyen-Orient (Arabie Saoudite, Israël, Émirats Arabes Unis) et Australie.\n📋 Trois vagues d’activité Campagne 1 – Février 2026 (Rising Tension) Leurres de phishing imitant des offres d’emploi Accenture Introduction de l’AppDomain Hijacking via un fichier .config XML trojanisé Chaîne : Setup.exe (signé Microsoft) → Setup.exe.config → uevmonitor.dll (dropper) → nouvelle version MiniJunk Fichiers hébergés sur la plateforme OnlyOffice Cibles : Arabie Saoudite, Australie Campagne 2 – Durant l’Opération Epic Fury Leurres imitant une compagnie aérienne américaine + installateur Zoom trojanisé (Zoominstall64.zip) Chaîne d’infection multi-étages avec AppDomain Hijacking à chaque étape Hijacking de tâche planifiée Zoom (ZoomUpdateTaskUser-) pour la persistance Introduction du nouveau backdoor MiniFast (UpdateChecker.dll) Fichiers signés numériquement via SSL.com (certificats : Gray Matter Software S.R.L. et Kirubel Kerie Negeya) Développement assisté par IA (LLM) : gestion d’erreurs excessive, nommage verbeux, code modulaire Campagne 3 – Avril 2026 (Post-Cessez-le-feu) SEO poisoning : faux site getsqldeveloper[.]com imitant la page de téléchargement de SQL Developer Enregistrement de dizaines de domaines pour booster le référencement (link-based reputation) Keyword stuffing sur les pages malveillantes Payload final : backdoor MiniFast 🔬 Analyse technique – MiniFast MiniFast est un backdoor Windows PE 64 bits (DLL) avec un export unique CheckForUpdates :\nCommunication C2 via HTTP/JSON avec User-Agent Chrome hardcodé : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Endpoints C2 : /rg (POST), /agent/init (POST), /agent/poll?token= (GET), /agent/result (POST), /upload/ (PUT), /files/ (GET) Tâches encodées en Base64 avec structure opcode binaire Capacités : listing/déplacement/suppression de fichiers, exécution de commandes shell, énumération processus/disques, kill process, chargement DLL dynamique, élévation UAC, persistance via tâche planifiée (WindowsSecurityUpdate), exfiltration de fichiers Validation anti-sandbox : vérifie que le processus hôte est update.exe avec parent svchost.exe Persistance via tâche planifiée nommée WindowsSecurityUpdate Déchiffrement de chaînes à l’exécution : ROT13 + inversion de chaîne 📁 Type d’article Il s’agit d’une publication de recherche technique produite par Check Point Research, visant à documenter les TTPs, l’outillage et les IOCs d’une campagne active d’un acteur étatique iranien dans un contexte de conflit armé.\n🧠 TTPs et IOCs détectés Acteurs de menace Nimbus Manticore (state-sponsored) — orkl.eu · Malpedia TTP T1566.002 — Phishing: Spearphishing Link (Initial Access) T1566.001 — Phishing: Spearphishing Attachment (Initial Access) T1608.006 — Stage Capabilities: SEO Poisoning (Resource Development) T1574.002 — Hijack Execution Flow: DLL Side-Loading (Persistence) T1574 — Hijack Execution Flow: AppDomain Hijacking (Persistence) T1053.005 — Scheduled Task/Job: Scheduled Task (Persistence) T1036.005 — Masquerading: Match Legitimate Name or Location (Defense Evasion) T1027 — Obfuscated Files or Information (Defense Evasion) T1140 — Deobfuscate/Decode Files or Information (Defense Evasion) T1497.001 — Virtualization/Sandbox Evasion: System Checks (Defense Evasion) T1071.001 — Application Layer Protocol: Web Protocols (Command and Control) T1132.001 — Data Encoding: Standard Encoding (Command and Control) T1041 — Exfiltration Over C2 Channel (Exfiltration) T1082 — System Information Discovery (Discovery) T1057 — Process Discovery (Discovery) T1083 — File and Directory Discovery (Discovery) T1548.002 — Abuse Elevation Control Mechanism: Bypass User Account Control (Privilege Escalation) T1553.002 — Subvert Trust Controls: Code Signing (Defense Evasion) T1059.003 — Command and Scripting Interpreter: Windows Command Shell (Execution) IOC Domaines : business-startup.org — VT · URLhaus · ThreatFox Domaines : business-startup.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : businessstartup.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : buisness-centeral.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : buisness-centeral-transportation.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : buisness-centeral-transportation.com — VT · URLhaus · ThreatFox Domaines : licencemanagers.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : licencesupporting.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : peerdistsvcmanagers.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : nanomatrix.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : PremierHealthAdvisory.com — VT · URLhaus · ThreatFox Domaines : PremierHealthAdvisory.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : Premier-HealthAdvisory.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : ramiltonsfinance.com — VT · URLhaus · ThreatFox Domaines : ramiltonsfinance.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : ramiltons-finance.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : globalitconsultants.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : globalit-consultants.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : global-it-consultants.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : global-it-checkers.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : global-it-checkbusiness.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : global-check-itbusiness.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : global-check-business-it.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : globalbusiness-checkers-it.azurewebsites.net — VT · URLhaus · ThreatFox Domaines : getsqldeveloper.com — VT · URLhaus · ThreatFox SHA256 : 10fd541674adadfbba99b54280f7e59732746faf2b10ce68521866f737f1e46d — VT · MalwareBazaar SHA256 : eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71 — VT · MalwareBazaar SHA256 : 781605ce9d4a9869e846f6c9657d71437cb6240ab27ffbc4cd550c0e06996690 — VT · MalwareBazaar SHA256 : 2c214494fd0bad31473ca8adce78a4f50847876584571e66aadeae70827ec2dc — VT · MalwareBazaar SHA256 : f08b17856616d66492a24dced27f788e235f35f42fa7cd10f315000d3a2f4c03 — VT · MalwareBazaar SHA256 : a57ffb819fe8d98ff925c5d7b239598fe302acf5a13193d7a535040a71298fdf — VT · MalwareBazaar SHA256 : 63d0d3c4a7f71bdbca720903d6a99b832089cc093c64d2938e7e001e56c17ab4 — VT · MalwareBazaar SHA256 : 74882085db2088356ed7f72f01e0404a0a98cda88ef56fb15ce74c1f36b26d27 — VT · MalwareBazaar SHA256 : bc3b44154518c5794ce639108e7b9c5fecb0c189607a26de1aaed518d890c7ad — VT · MalwareBazaar SHA256 : ecaf493c320d201d285ef5f61d75744216e47cf1115b4af528f9a78883cc446e — VT · MalwareBazaar SHA256 : 44f4f7aca7f1d9bfdaf7b3736934cbe19f851a707662f8f0b0c49b383e054250 — VT · MalwareBazaar SHA256 : 0db36a04d304ad96f9e6f97b531934594cd95a5cea9ff2c9af249201089dc864 — VT · MalwareBazaar SHA256 : 485f182f7b74ea4013b2539275a95d21e3a9bf0082c331937af9353a324b36f3 — VT · MalwareBazaar SHA256 : 64530d7e6ee30e4a66d9eeed6b8595c33fd72f5f73409133ca40539e5695df4c — VT · MalwareBazaar SHA256 : 332ba2f0297dfb1599adecc3e9067893e7cf243aa23aedce4906ca4c4a805740 — VT · MalwareBazaar SHA256 : 9e4a658e6d831c9e9bdfe11884a75b7c64812ed0a80e8495ddf6b316505acac1 — VT · MalwareBazaar SHA256 : 43dc62cef52ebdd69e79f10015b3e13890f26c058325c0ff139c70f8d8eadcfa — VT · MalwareBazaar SHA256 : 8808c794c243674384f183e4be94187f6f1d3ecd0c8db2eb43b10d238084d1d2 — VT · MalwareBazaar SHA256 : 5c3362d202295c97dd11380f56d1fe2eba3e9647fb6afaed7be8392a7abcd1f8 — VT · MalwareBazaar SHA256 : 0291ef318576953f7f3fe287e7775ed1d7c3206119dc7b9cd6d85c02779e6e40 — VT · MalwareBazaar SHA256 : d4a7e9f107fe40c1a5d0139c6c6e25bf6bf57f61feff090bee28f476bb3cc3c2 — VT · MalwareBazaar SHA256 : 38bd137c672bd58d08c4f0502f993a6561e2c3411773d1ae57ee0151a0a9d11d — VT · MalwareBazaar SHA256 : f54cd38632ac9da3af3533ae93e92625cbcb04df521dbf1b6acfaa81218f9e8c — VT · MalwareBazaar SHA256 : b19e06da580cf91691eda066ac9ee4b09c6e5dc26c367af12660fe1f9306eec4 — VT · MalwareBazaar SHA256 : 9cf029daca89523d917dafed0568d11d00e45ec96b5b90b4a1f7fd4018c7da84 — VT · MalwareBazaar SHA256 : a13ba3c5aff46e9daf2d23df4b3e3d49dc7236c207c56f0a1433051f3450d441 — VT · MalwareBazaar SHA256 : dfa1e3137a032ee8561a1cd5e1a0f71a10bebb36aef7c336c878638a9c1239ee — VT · MalwareBazaar Fichiers : Setup.exe Fichiers : Setup.exe.config Fichiers : uevmonitor.dll Fichiers : Interop.TaskScheduler.dll Fichiers : Zoominstall64.zip Fichiers : InitInstall.dll Fichiers : Zoom_cm.exe Fichiers : UpdateConfig.xml Fichiers : Updater.dll Fichiers : UpdateChecker.dll Chemins : C:\\Users\\\\AppData\\Local\\Packages\\ Chemins : C:\\Users\\\\AppData\\Local\\Zoom\\bin\\update Malware / Outils MiniFast (backdoor) MiniJunk (backdoor) uevmonitor.dll (loader) InitInstall.dll (loader) Updater.dll (loader) 🟢 Indice de vérification factuelle : 95/100 (haute) ✅ research.checkpoint.com — source reconnue (liste interne) (20pts) ✅ 26776 chars — texte complet (fulltext extrait) (15pts) ✅ 64 IOCs dont des hashes (15pts) ✅ 5/6 IOCs confirmés (MalwareBazaar, ThreatFox, URLhaus, VirusTotal) (15pts) ✅ 19 TTPs MITRE identifiées (15pts) ✅ date extraite du HTML source (10pts) ✅ acteur(s) identifié(s) : Nimbus Manticore (5pts) ⬜ pas de CVE à vérifier (0pts) IOCs confirmés externellement :\neee657ffdb2af8ed… (sha256) → VT (12/76 détections) 781605ce9d4a9869… (sha256) → VT (9/76 détections) business-startup.org (domain) → VT (17/91 détections) business-startup.azurewebsites.net (domain) → VT (9/91 détections) businessstartup.azurewebsites.net (domain) → VT (8/91 détections) 🔗 Source originale : https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/\n",
+  "wordCount" : "1167",
+  "inLanguage": "fr",
+  "datePublished": "2026-05-26T00:00:00+02:00",
+  "dateModified": "2026-05-26T00:00:00+02:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://cyberveille.ch/posts/2026-05-26-nimbus-manticore-unc1549-nouvelles-techniques-et-backdoor-minifast-durant-le-conflit-iranien/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CyberVeille",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cyberveille.ch/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://cyberveille.ch/" accesskey="h" title="CyberVeille (Alt + H)">
+                <img src="https://cyberveille.ch/images/cyberveille_logo_tr.png" alt="" aria-label="logo"
+                    height="100">CyberVeille</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://cyberveille.ch/pays/" title="🌍 Pays">
+                    <span>🌍 Pays</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/map/" title="🌍 Pew Pew">
+                    <span>🌍 Pew Pew</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/categories/" title="📂 Catégories">
+                    <span>📂 Catégories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/tags/" title="🏷️ Tags">
+                    <span>🏷️ Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/archives/" title="🗃️ Archives">
+                    <span>🗃️ Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/search/" title="🔍 Recherche (Alt &#43; /)" accesskey=/>
+                    <span>🔍 Recherche</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/about/" title="ℹ️ À propos">
+                    <span>ℹ️ À propos</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cyberveille.ch/cti/" title="🔗 CTI">
+                    <span>🔗 CTI</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single" data-pagefind-body>
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://cyberveille.ch/">Accueil</a>&nbsp;»&nbsp;<a href="https://cyberveille.ch/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Nimbus Manticore (UNC1549) : nouvelles techniques et backdoor MiniFast durant le conflit iranien
+    </h1>
+    <div class="post-meta"><span title='2026-05-26 00:00:00 +0200 CEST'>26 mai 2026</span>&nbsp;·&nbsp;6 min
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table des matières</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#-contexte" aria-label="🌐 Contexte">🌐 Contexte</a></li>
+                <li>
+                    <a href="#-acteur-et-ciblage" aria-label="🎯 Acteur et ciblage">🎯 Acteur et ciblage</a></li>
+                <li>
+                    <a href="#-trois-vagues-dactivit%c3%a9" aria-label="📋 Trois vagues d&rsquo;activité">📋 Trois vagues d&rsquo;activité</a><ul>
+                        
+                <li>
+                    <a href="#campagne-1--f%c3%a9vrier-2026-rising-tension" aria-label="Campagne 1 – Février 2026 (Rising Tension)">Campagne 1 – Février 2026 (Rising Tension)</a></li>
+                <li>
+                    <a href="#campagne-2--durant-lop%c3%a9ration-epic-fury" aria-label="Campagne 2 – Durant l&rsquo;Opération Epic Fury">Campagne 2 – Durant l&rsquo;Opération Epic Fury</a></li>
+                <li>
+                    <a href="#campagne-3--avril-2026-post-cessez-le-feu" aria-label="Campagne 3 – Avril 2026 (Post-Cessez-le-feu)">Campagne 3 – Avril 2026 (Post-Cessez-le-feu)</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-analyse-technique--minifast" aria-label="🔬 Analyse technique – MiniFast">🔬 Analyse technique – MiniFast</a></li>
+                <li>
+                    <a href="#-type-darticle" aria-label="📁 Type d&rsquo;article">📁 Type d&rsquo;article</a></li>
+                <li>
+                    <a href="#-ttps-et-iocs-d%c3%a9tect%c3%a9s" aria-label="🧠 TTPs et IOCs détectés">🧠 TTPs et IOCs détectés</a><ul>
+                        
+                <li>
+                    <a href="#acteurs-de-menace" aria-label="Acteurs de menace">Acteurs de menace</a></li>
+                <li>
+                    <a href="#ttp" aria-label="TTP">TTP</a></li>
+                <li>
+                    <a href="#ioc" aria-label="IOC">IOC</a></li>
+                <li>
+                    <a href="#malware--outils" aria-label="Malware / Outils">Malware / Outils</a></li></ul>
+                </li>
+                <li>
+                    <a href="#-indice-de-v%c3%a9rification-factuelle--95100-haute" aria-label="🟢 Indice de vérification factuelle : 95/100 (haute)">🟢 Indice de vérification factuelle : 95/100 (haute)</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+<div class="confidence-badge" style="margin: 0.8em 0; padding: 0.5em 0.8em; border-radius: 6px; display: inline-block; font-size: 0.9em; background: #e6f9e6; border: 1px solid #4caf50; color: #2e7d32;">
+  🟢 Vérification factuelle : <strong>95/100</strong> (haute)
+</div>
+
+  <div class="post-content"><h2 id="-contexte">🌐 Contexte<a hidden class="anchor" aria-hidden="true" href="#-contexte">#</a></h2>
+<p>Publié le 22 mai 2026 par Check Point Research, cet article documente les opérations du groupe de menace <strong>Nimbus Manticore</strong> (également suivi sous le nom <strong>UNC1549</strong>), affilié aux Gardiens de la Révolution iraniens (IRGC), durant la période de tensions militaires liées à <strong>l&rsquo;Opération Epic Fury</strong> (campagne militaire américaine contre l&rsquo;Iran lancée le 28 février 2026).</p>
+<h2 id="-acteur-et-ciblage">🎯 Acteur et ciblage<a hidden class="anchor" aria-hidden="true" href="#-acteur-et-ciblage">#</a></h2>
+<p><strong>Nimbus Manticore</strong> est un acteur sophistiqué ciblant principalement les secteurs <strong>défense, aviation et télécommunications</strong>. Lors de cette campagne, les cibles incluent des organisations dans les secteurs <strong>aviation et développement logiciel</strong> en <strong>États-Unis, Europe, Moyen-Orient</strong> (Arabie Saoudite, Israël, Émirats Arabes Unis) et <strong>Australie</strong>.</p>
+<h2 id="-trois-vagues-dactivité">📋 Trois vagues d&rsquo;activité<a hidden class="anchor" aria-hidden="true" href="#-trois-vagues-dactivité">#</a></h2>
+<h3 id="campagne-1--février-2026-rising-tension">Campagne 1 – Février 2026 (Rising Tension)<a hidden class="anchor" aria-hidden="true" href="#campagne-1--février-2026-rising-tension">#</a></h3>
+<ul>
+<li>Leurres de phishing imitant des <strong>offres d&rsquo;emploi Accenture</strong></li>
+<li>Introduction de l&rsquo;<strong>AppDomain Hijacking</strong> via un fichier <code>.config</code> XML trojanisé</li>
+<li>Chaîne : <code>Setup.exe</code> (signé Microsoft) → <code>Setup.exe.config</code> → <code>uevmonitor.dll</code> (dropper) → nouvelle version <strong>MiniJunk</strong></li>
+<li>Fichiers hébergés sur la plateforme <strong>OnlyOffice</strong></li>
+<li>Cibles : Arabie Saoudite, Australie</li>
+</ul>
+<h3 id="campagne-2--durant-lopération-epic-fury">Campagne 2 – Durant l&rsquo;Opération Epic Fury<a hidden class="anchor" aria-hidden="true" href="#campagne-2--durant-lopération-epic-fury">#</a></h3>
+<ul>
+<li>Leurres imitant une <strong>compagnie aérienne américaine</strong> + <strong>installateur Zoom trojanisé</strong> (<code>Zoominstall64.zip</code>)</li>
+<li>Chaîne d&rsquo;infection multi-étages avec <strong>AppDomain Hijacking</strong> à chaque étape</li>
+<li><strong>Hijacking de tâche planifiée Zoom</strong> (<code>ZoomUpdateTaskUser-&lt;SID&gt;</code>) pour la persistance</li>
+<li>Introduction du nouveau backdoor <strong>MiniFast</strong> (<code>UpdateChecker.dll</code>)</li>
+<li>Fichiers signés numériquement via <strong>SSL.com</strong> (certificats : <em>Gray Matter Software S.R.L.</em> et <em>Kirubel Kerie Negeya</em>)</li>
+<li><strong>Développement assisté par IA</strong> (LLM) : gestion d&rsquo;erreurs excessive, nommage verbeux, code modulaire</li>
+</ul>
+<h3 id="campagne-3--avril-2026-post-cessez-le-feu">Campagne 3 – Avril 2026 (Post-Cessez-le-feu)<a hidden class="anchor" aria-hidden="true" href="#campagne-3--avril-2026-post-cessez-le-feu">#</a></h3>
+<ul>
+<li><strong>SEO poisoning</strong> : faux site <code>getsqldeveloper[.]com</code> imitant la page de téléchargement de SQL Developer</li>
+<li>Enregistrement de dizaines de domaines pour booster le référencement (link-based reputation)</li>
+<li>Keyword stuffing sur les pages malveillantes</li>
+<li>Payload final : backdoor <strong>MiniFast</strong></li>
+</ul>
+<h2 id="-analyse-technique--minifast">🔬 Analyse technique – MiniFast<a hidden class="anchor" aria-hidden="true" href="#-analyse-technique--minifast">#</a></h2>
+<p><strong>MiniFast</strong> est un backdoor Windows PE 64 bits (DLL) avec un export unique <code>CheckForUpdates</code> :</p>
+<ul>
+<li>Communication C2 via <strong>HTTP/JSON</strong> avec User-Agent Chrome hardcodé : <code>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36</code></li>
+<li>Endpoints C2 : <code>/rg</code> (POST), <code>/agent/init</code> (POST), <code>/agent/poll?token=</code> (GET), <code>/agent/result</code> (POST), <code>/upload/</code> (PUT), <code>/files/</code> (GET)</li>
+<li>Tâches encodées en <strong>Base64</strong> avec structure opcode binaire</li>
+<li>Capacités : listing/déplacement/suppression de fichiers, exécution de commandes shell, énumération processus/disques, kill process, chargement DLL dynamique, élévation UAC, persistance via tâche planifiée (<code>WindowsSecurityUpdate</code>), exfiltration de fichiers</li>
+<li>Validation anti-sandbox : vérifie que le processus hôte est <code>update.exe</code> avec parent <code>svchost.exe</code></li>
+<li>Persistance via tâche planifiée nommée <strong>WindowsSecurityUpdate</strong></li>
+<li>Déchiffrement de chaînes à l&rsquo;exécution : <strong>ROT13 + inversion de chaîne</strong></li>
+</ul>
+<h2 id="-type-darticle">📁 Type d&rsquo;article<a hidden class="anchor" aria-hidden="true" href="#-type-darticle">#</a></h2>
+<p>Il s&rsquo;agit d&rsquo;une <strong>publication de recherche technique</strong> produite par Check Point Research, visant à documenter les TTPs, l&rsquo;outillage et les IOCs d&rsquo;une campagne active d&rsquo;un acteur étatique iranien dans un contexte de conflit armé.</p>
+<h2 id="-ttps-et-iocs-détectés">🧠 TTPs et IOCs détectés<a hidden class="anchor" aria-hidden="true" href="#-ttps-et-iocs-détectés">#</a></h2>
+<h3 id="acteurs-de-menace">Acteurs de menace<a hidden class="anchor" aria-hidden="true" href="#acteurs-de-menace">#</a></h3>
+<ul>
+<li><strong>Nimbus Manticore</strong> (state-sponsored) — <a href="https://orkl.eu/taEntry/0dc20eeb-81e3-48ef-9a12-7b38fdcf07b1">orkl.eu</a> · <a href="https://malpedia.caad.fkie.fraunhofer.de/actor/unc1549">Malpedia</a></li>
+</ul>
+<h3 id="ttp">TTP<a hidden class="anchor" aria-hidden="true" href="#ttp">#</a></h3>
+<ul>
+<li><strong>T1566.002</strong> — Phishing: Spearphishing Link (Initial Access)</li>
+<li><strong>T1566.001</strong> — Phishing: Spearphishing Attachment (Initial Access)</li>
+<li><strong>T1608.006</strong> — Stage Capabilities: SEO Poisoning (Resource Development)</li>
+<li><strong>T1574.002</strong> — Hijack Execution Flow: DLL Side-Loading (Persistence)</li>
+<li><strong>T1574</strong> — Hijack Execution Flow: AppDomain Hijacking (Persistence)</li>
+<li><strong>T1053.005</strong> — Scheduled Task/Job: Scheduled Task (Persistence)</li>
+<li><strong>T1036.005</strong> — Masquerading: Match Legitimate Name or Location (Defense Evasion)</li>
+<li><strong>T1027</strong> — Obfuscated Files or Information (Defense Evasion)</li>
+<li><strong>T1140</strong> — Deobfuscate/Decode Files or Information (Defense Evasion)</li>
+<li><strong>T1497.001</strong> — Virtualization/Sandbox Evasion: System Checks (Defense Evasion)</li>
+<li><strong>T1071.001</strong> — Application Layer Protocol: Web Protocols (Command and Control)</li>
+<li><strong>T1132.001</strong> — Data Encoding: Standard Encoding (Command and Control)</li>
+<li><strong>T1041</strong> — Exfiltration Over C2 Channel (Exfiltration)</li>
+<li><strong>T1082</strong> — System Information Discovery (Discovery)</li>
+<li><strong>T1057</strong> — Process Discovery (Discovery)</li>
+<li><strong>T1083</strong> — File and Directory Discovery (Discovery)</li>
+<li><strong>T1548.002</strong> — Abuse Elevation Control Mechanism: Bypass User Account Control (Privilege Escalation)</li>
+<li><strong>T1553.002</strong> — Subvert Trust Controls: Code Signing (Defense Evasion)</li>
+<li><strong>T1059.003</strong> — Command and Scripting Interpreter: Windows Command Shell (Execution)</li>
+</ul>
+<h3 id="ioc">IOC<a hidden class="anchor" aria-hidden="true" href="#ioc">#</a></h3>
+<ul>
+<li><strong>Domaines</strong> : <code>business-startup.org</code> — <a href="https://www.virustotal.com/gui/domain/business-startup.org">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=business-startup.org">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Abusiness-startup.org">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>business-startup.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/business-startup.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=business-startup.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Abusiness-startup.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>businessstartup.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/businessstartup.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=businessstartup.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Abusinessstartup.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>buisness-centeral.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/buisness-centeral.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=buisness-centeral.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Abuisness-centeral.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>buisness-centeral-transportation.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/buisness-centeral-transportation.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=buisness-centeral-transportation.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Abuisness-centeral-transportation.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>buisness-centeral-transportation.com</code> — <a href="https://www.virustotal.com/gui/domain/buisness-centeral-transportation.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=buisness-centeral-transportation.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Abuisness-centeral-transportation.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>licencemanagers.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/licencemanagers.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=licencemanagers.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Alicencemanagers.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>licencesupporting.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/licencesupporting.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=licencesupporting.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Alicencesupporting.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>peerdistsvcmanagers.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/peerdistsvcmanagers.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=peerdistsvcmanagers.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Apeerdistsvcmanagers.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>nanomatrix.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/nanomatrix.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=nanomatrix.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Ananomatrix.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>PremierHealthAdvisory.com</code> — <a href="https://www.virustotal.com/gui/domain/PremierHealthAdvisory.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=PremierHealthAdvisory.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3APremierHealthAdvisory.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>PremierHealthAdvisory.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/PremierHealthAdvisory.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=PremierHealthAdvisory.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3APremierHealthAdvisory.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>Premier-HealthAdvisory.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/Premier-HealthAdvisory.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=Premier-HealthAdvisory.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3APremier-HealthAdvisory.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>ramiltonsfinance.com</code> — <a href="https://www.virustotal.com/gui/domain/ramiltonsfinance.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=ramiltonsfinance.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aramiltonsfinance.com">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>ramiltonsfinance.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/ramiltonsfinance.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=ramiltonsfinance.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aramiltonsfinance.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>ramiltons-finance.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/ramiltons-finance.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=ramiltons-finance.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aramiltons-finance.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>globalitconsultants.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/globalitconsultants.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=globalitconsultants.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobalitconsultants.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>globalit-consultants.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/globalit-consultants.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=globalit-consultants.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobalit-consultants.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>global-it-consultants.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/global-it-consultants.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=global-it-consultants.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobal-it-consultants.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>global-it-checkers.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/global-it-checkers.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=global-it-checkers.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobal-it-checkers.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>global-it-checkbusiness.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/global-it-checkbusiness.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=global-it-checkbusiness.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobal-it-checkbusiness.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>global-check-itbusiness.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/global-check-itbusiness.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=global-check-itbusiness.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobal-check-itbusiness.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>global-check-business-it.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/global-check-business-it.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=global-check-business-it.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobal-check-business-it.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>globalbusiness-checkers-it.azurewebsites.net</code> — <a href="https://www.virustotal.com/gui/domain/globalbusiness-checkers-it.azurewebsites.net">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=globalbusiness-checkers-it.azurewebsites.net">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Aglobalbusiness-checkers-it.azurewebsites.net">ThreatFox</a></li>
+<li><strong>Domaines</strong> : <code>getsqldeveloper.com</code> — <a href="https://www.virustotal.com/gui/domain/getsqldeveloper.com">VT</a> · <a href="https://urlhaus.abuse.ch/browse.php?search=getsqldeveloper.com">URLhaus</a> · <a href="https://threatfox.abuse.ch/browse.php?search=ioc%3Agetsqldeveloper.com">ThreatFox</a></li>
+<li><strong>SHA256</strong> : <code>10fd541674adadfbba99b54280f7e59732746faf2b10ce68521866f737f1e46d</code> — <a href="https://www.virustotal.com/gui/search/10fd541674adadfbba99b54280f7e59732746faf2b10ce68521866f737f1e46d">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A10fd541674adadfbba99b54280f7e59732746faf2b10ce68521866f737f1e46d">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71</code> — <a href="https://www.virustotal.com/gui/search/eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Aeee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>781605ce9d4a9869e846f6c9657d71437cb6240ab27ffbc4cd550c0e06996690</code> — <a href="https://www.virustotal.com/gui/search/781605ce9d4a9869e846f6c9657d71437cb6240ab27ffbc4cd550c0e06996690">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A781605ce9d4a9869e846f6c9657d71437cb6240ab27ffbc4cd550c0e06996690">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>2c214494fd0bad31473ca8adce78a4f50847876584571e66aadeae70827ec2dc</code> — <a href="https://www.virustotal.com/gui/search/2c214494fd0bad31473ca8adce78a4f50847876584571e66aadeae70827ec2dc">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A2c214494fd0bad31473ca8adce78a4f50847876584571e66aadeae70827ec2dc">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>f08b17856616d66492a24dced27f788e235f35f42fa7cd10f315000d3a2f4c03</code> — <a href="https://www.virustotal.com/gui/search/f08b17856616d66492a24dced27f788e235f35f42fa7cd10f315000d3a2f4c03">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Af08b17856616d66492a24dced27f788e235f35f42fa7cd10f315000d3a2f4c03">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>a57ffb819fe8d98ff925c5d7b239598fe302acf5a13193d7a535040a71298fdf</code> — <a href="https://www.virustotal.com/gui/search/a57ffb819fe8d98ff925c5d7b239598fe302acf5a13193d7a535040a71298fdf">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Aa57ffb819fe8d98ff925c5d7b239598fe302acf5a13193d7a535040a71298fdf">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>63d0d3c4a7f71bdbca720903d6a99b832089cc093c64d2938e7e001e56c17ab4</code> — <a href="https://www.virustotal.com/gui/search/63d0d3c4a7f71bdbca720903d6a99b832089cc093c64d2938e7e001e56c17ab4">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A63d0d3c4a7f71bdbca720903d6a99b832089cc093c64d2938e7e001e56c17ab4">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>74882085db2088356ed7f72f01e0404a0a98cda88ef56fb15ce74c1f36b26d27</code> — <a href="https://www.virustotal.com/gui/search/74882085db2088356ed7f72f01e0404a0a98cda88ef56fb15ce74c1f36b26d27">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A74882085db2088356ed7f72f01e0404a0a98cda88ef56fb15ce74c1f36b26d27">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>bc3b44154518c5794ce639108e7b9c5fecb0c189607a26de1aaed518d890c7ad</code> — <a href="https://www.virustotal.com/gui/search/bc3b44154518c5794ce639108e7b9c5fecb0c189607a26de1aaed518d890c7ad">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Abc3b44154518c5794ce639108e7b9c5fecb0c189607a26de1aaed518d890c7ad">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>ecaf493c320d201d285ef5f61d75744216e47cf1115b4af528f9a78883cc446e</code> — <a href="https://www.virustotal.com/gui/search/ecaf493c320d201d285ef5f61d75744216e47cf1115b4af528f9a78883cc446e">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Aecaf493c320d201d285ef5f61d75744216e47cf1115b4af528f9a78883cc446e">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>44f4f7aca7f1d9bfdaf7b3736934cbe19f851a707662f8f0b0c49b383e054250</code> — <a href="https://www.virustotal.com/gui/search/44f4f7aca7f1d9bfdaf7b3736934cbe19f851a707662f8f0b0c49b383e054250">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A44f4f7aca7f1d9bfdaf7b3736934cbe19f851a707662f8f0b0c49b383e054250">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>0db36a04d304ad96f9e6f97b531934594cd95a5cea9ff2c9af249201089dc864</code> — <a href="https://www.virustotal.com/gui/search/0db36a04d304ad96f9e6f97b531934594cd95a5cea9ff2c9af249201089dc864">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A0db36a04d304ad96f9e6f97b531934594cd95a5cea9ff2c9af249201089dc864">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>485f182f7b74ea4013b2539275a95d21e3a9bf0082c331937af9353a324b36f3</code> — <a href="https://www.virustotal.com/gui/search/485f182f7b74ea4013b2539275a95d21e3a9bf0082c331937af9353a324b36f3">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A485f182f7b74ea4013b2539275a95d21e3a9bf0082c331937af9353a324b36f3">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>64530d7e6ee30e4a66d9eeed6b8595c33fd72f5f73409133ca40539e5695df4c</code> — <a href="https://www.virustotal.com/gui/search/64530d7e6ee30e4a66d9eeed6b8595c33fd72f5f73409133ca40539e5695df4c">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A64530d7e6ee30e4a66d9eeed6b8595c33fd72f5f73409133ca40539e5695df4c">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>332ba2f0297dfb1599adecc3e9067893e7cf243aa23aedce4906ca4c4a805740</code> — <a href="https://www.virustotal.com/gui/search/332ba2f0297dfb1599adecc3e9067893e7cf243aa23aedce4906ca4c4a805740">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A332ba2f0297dfb1599adecc3e9067893e7cf243aa23aedce4906ca4c4a805740">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>9e4a658e6d831c9e9bdfe11884a75b7c64812ed0a80e8495ddf6b316505acac1</code> — <a href="https://www.virustotal.com/gui/search/9e4a658e6d831c9e9bdfe11884a75b7c64812ed0a80e8495ddf6b316505acac1">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A9e4a658e6d831c9e9bdfe11884a75b7c64812ed0a80e8495ddf6b316505acac1">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>43dc62cef52ebdd69e79f10015b3e13890f26c058325c0ff139c70f8d8eadcfa</code> — <a href="https://www.virustotal.com/gui/search/43dc62cef52ebdd69e79f10015b3e13890f26c058325c0ff139c70f8d8eadcfa">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A43dc62cef52ebdd69e79f10015b3e13890f26c058325c0ff139c70f8d8eadcfa">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>8808c794c243674384f183e4be94187f6f1d3ecd0c8db2eb43b10d238084d1d2</code> — <a href="https://www.virustotal.com/gui/search/8808c794c243674384f183e4be94187f6f1d3ecd0c8db2eb43b10d238084d1d2">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A8808c794c243674384f183e4be94187f6f1d3ecd0c8db2eb43b10d238084d1d2">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>5c3362d202295c97dd11380f56d1fe2eba3e9647fb6afaed7be8392a7abcd1f8</code> — <a href="https://www.virustotal.com/gui/search/5c3362d202295c97dd11380f56d1fe2eba3e9647fb6afaed7be8392a7abcd1f8">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A5c3362d202295c97dd11380f56d1fe2eba3e9647fb6afaed7be8392a7abcd1f8">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>0291ef318576953f7f3fe287e7775ed1d7c3206119dc7b9cd6d85c02779e6e40</code> — <a href="https://www.virustotal.com/gui/search/0291ef318576953f7f3fe287e7775ed1d7c3206119dc7b9cd6d85c02779e6e40">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A0291ef318576953f7f3fe287e7775ed1d7c3206119dc7b9cd6d85c02779e6e40">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>d4a7e9f107fe40c1a5d0139c6c6e25bf6bf57f61feff090bee28f476bb3cc3c2</code> — <a href="https://www.virustotal.com/gui/search/d4a7e9f107fe40c1a5d0139c6c6e25bf6bf57f61feff090bee28f476bb3cc3c2">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Ad4a7e9f107fe40c1a5d0139c6c6e25bf6bf57f61feff090bee28f476bb3cc3c2">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>38bd137c672bd58d08c4f0502f993a6561e2c3411773d1ae57ee0151a0a9d11d</code> — <a href="https://www.virustotal.com/gui/search/38bd137c672bd58d08c4f0502f993a6561e2c3411773d1ae57ee0151a0a9d11d">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A38bd137c672bd58d08c4f0502f993a6561e2c3411773d1ae57ee0151a0a9d11d">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>f54cd38632ac9da3af3533ae93e92625cbcb04df521dbf1b6acfaa81218f9e8c</code> — <a href="https://www.virustotal.com/gui/search/f54cd38632ac9da3af3533ae93e92625cbcb04df521dbf1b6acfaa81218f9e8c">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Af54cd38632ac9da3af3533ae93e92625cbcb04df521dbf1b6acfaa81218f9e8c">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>b19e06da580cf91691eda066ac9ee4b09c6e5dc26c367af12660fe1f9306eec4</code> — <a href="https://www.virustotal.com/gui/search/b19e06da580cf91691eda066ac9ee4b09c6e5dc26c367af12660fe1f9306eec4">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Ab19e06da580cf91691eda066ac9ee4b09c6e5dc26c367af12660fe1f9306eec4">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>9cf029daca89523d917dafed0568d11d00e45ec96b5b90b4a1f7fd4018c7da84</code> — <a href="https://www.virustotal.com/gui/search/9cf029daca89523d917dafed0568d11d00e45ec96b5b90b4a1f7fd4018c7da84">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3A9cf029daca89523d917dafed0568d11d00e45ec96b5b90b4a1f7fd4018c7da84">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>a13ba3c5aff46e9daf2d23df4b3e3d49dc7236c207c56f0a1433051f3450d441</code> — <a href="https://www.virustotal.com/gui/search/a13ba3c5aff46e9daf2d23df4b3e3d49dc7236c207c56f0a1433051f3450d441">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Aa13ba3c5aff46e9daf2d23df4b3e3d49dc7236c207c56f0a1433051f3450d441">MalwareBazaar</a></li>
+<li><strong>SHA256</strong> : <code>dfa1e3137a032ee8561a1cd5e1a0f71a10bebb36aef7c336c878638a9c1239ee</code> — <a href="https://www.virustotal.com/gui/search/dfa1e3137a032ee8561a1cd5e1a0f71a10bebb36aef7c336c878638a9c1239ee">VT</a> · <a href="https://bazaar.abuse.ch/browse.php?search=sha256%3Adfa1e3137a032ee8561a1cd5e1a0f71a10bebb36aef7c336c878638a9c1239ee">MalwareBazaar</a></li>
+<li><strong>Fichiers</strong> : <code>Setup.exe</code></li>
+<li><strong>Fichiers</strong> : <code>Setup.exe.config</code></li>
+<li><strong>Fichiers</strong> : <code>uevmonitor.dll</code></li>
+<li><strong>Fichiers</strong> : <code>Interop.TaskScheduler.dll</code></li>
+<li><strong>Fichiers</strong> : <code>Zoominstall64.zip</code></li>
+<li><strong>Fichiers</strong> : <code>InitInstall.dll</code></li>
+<li><strong>Fichiers</strong> : <code>Zoom_cm.exe</code></li>
+<li><strong>Fichiers</strong> : <code>UpdateConfig.xml</code></li>
+<li><strong>Fichiers</strong> : <code>Updater.dll</code></li>
+<li><strong>Fichiers</strong> : <code>UpdateChecker.dll</code></li>
+<li><strong>Chemins</strong> : <code>C:\Users\&lt;USER&gt;\AppData\Local\Packages\</code></li>
+<li><strong>Chemins</strong> : <code>C:\Users\&lt;USER&gt;\AppData\Local\Zoom\bin\update</code></li>
+</ul>
+<h3 id="malware--outils">Malware / Outils<a hidden class="anchor" aria-hidden="true" href="#malware--outils">#</a></h3>
+<ul>
+<li><strong>MiniFast</strong> (backdoor)</li>
+<li><strong>MiniJunk</strong> (backdoor)</li>
+<li><strong>uevmonitor.dll</strong> (loader)</li>
+<li><strong>InitInstall.dll</strong> (loader)</li>
+<li><strong>Updater.dll</strong> (loader)</li>
+</ul>
+<hr>
+<h2 id="-indice-de-vérification-factuelle--95100-haute">🟢 Indice de vérification factuelle : 95/100 (haute)<a hidden class="anchor" aria-hidden="true" href="#-indice-de-vérification-factuelle--95100-haute">#</a></h2>
+<ul>
+<li>✅ research.checkpoint.com — source reconnue (liste interne) (20pts)</li>
+<li>✅ 26776 chars — texte complet (fulltext extrait) (15pts)</li>
+<li>✅ 64 IOCs dont des hashes (15pts)</li>
+<li>✅ 5/6 IOCs confirmés (MalwareBazaar, ThreatFox, URLhaus, VirusTotal) (15pts)</li>
+<li>✅ 19 TTPs MITRE identifiées (15pts)</li>
+<li>✅ date extraite du HTML source (10pts)</li>
+<li>✅ acteur(s) identifié(s) : Nimbus Manticore (5pts)</li>
+<li>⬜ pas de CVE à vérifier (0pts)</li>
+</ul>
+<p><strong>IOCs confirmés externellement :</strong></p>
+<ul>
+<li><code>eee657ffdb2af8ed…</code> (sha256) → VT (12/76 détections)</li>
+<li><code>781605ce9d4a9869…</code> (sha256) → VT (9/76 détections)</li>
+<li><code>business-startup.org</code> (domain) → VT (17/91 détections)</li>
+<li><code>business-startup.azurewebsites.net</code> (domain) → VT (9/91 détections)</li>
+<li><code>businessstartup.azurewebsites.net</code> (domain) → VT (8/91 détections)</li>
+</ul>
+<hr>
+<p><strong>🔗 Source originale</strong> : <a href="https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/">https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/</a></p>
+
+
+  </div>
+
+  
+  <span data-pagefind-filter="tag" style="display:none;">APT</span>
+  <span data-pagefind-filter="tag" style="display:none;">IOC</span>
+  <span data-pagefind-filter="tag" style="display:none;">IRGC</span>
+  <span data-pagefind-filter="tag" style="display:none;">InitInstall.dll</span>
+  <span data-pagefind-filter="tag" style="display:none;">Iran</span>
+  <span data-pagefind-filter="tag" style="display:none;">MiniFast</span>
+  <span data-pagefind-filter="tag" style="display:none;">MiniJunk</span>
+  <span data-pagefind-filter="tag" style="display:none;">Nimbus Manticore</span>
+  <span data-pagefind-filter="tag" style="display:none;">TTP</span>
+  <span data-pagefind-filter="tag" style="display:none;">Updater.dll</span>
+  <span data-pagefind-filter="tag" style="display:none;">backdoor</span>
+  <span data-pagefind-filter="tag" style="display:none;">uevmonitor.dll</span>
+  <span data-pagefind-filter="catégorie" style="display:none;">analyse technique</span>
+  <span data-pagefind-filter="pays" style="display:none;">[International]</span>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://cyberveille.ch/tags/apt/">APT</a></li>
+      <li><a href="https://cyberveille.ch/tags/ioc/">IOC</a></li>
+      <li><a href="https://cyberveille.ch/tags/irgc/">IRGC</a></li>
+      <li><a href="https://cyberveille.ch/tags/initinstall.dll/">InitInstall.dll</a></li>
+      <li><a href="https://cyberveille.ch/tags/iran/">Iran</a></li>
+      <li><a href="https://cyberveille.ch/tags/minifast/">MiniFast</a></li>
+      <li><a href="https://cyberveille.ch/tags/minijunk/">MiniJunk</a></li>
+      <li><a href="https://cyberveille.ch/tags/nimbus-manticore/">Nimbus Manticore</a></li>
+      <li><a href="https://cyberveille.ch/tags/ttp/">TTP</a></li>
+      <li><a href="https://cyberveille.ch/tags/updater.dll/">Updater.dll</a></li>
+      <li><a href="https://cyberveille.ch/tags/backdoor/">Backdoor</a></li>
+      <li><a href="https://cyberveille.ch/tags/uevmonitor.dll/">Uevmonitor.dll</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://cyberveille.ch/posts/2026-05-26-megalodon-5-561-depots-github-backdoores-via-des-workflows-ci-cd-malveillants/">
+    <span class="title">« Précédent</span>
+    <br>
+    <span>Megalodon : 5 561 dépôts GitHub backdoorés via des workflows CI/CD malveillants</span>
+  </a>
+  <a class="next" href="https://cyberveille.ch/posts/2026-05-26-teampcp-escalade-sa-campagne-supply-chain-jusqu-a-la-compromission-directe-de-github-en-mai-2026/">
+    <span class="title">Suivant »</span>
+    <br>
+    <span>TeamPCP escalade sa campagne supply chain jusqu&#39;à la compromission directe de GitHub en mai 2026</span>
+  </a>
+</nav>
+
+  </footer>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>Cyberveille <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span> · 
+        Fait avec ❤️&amp;🍺 par <a href="https://infosec.exchange/@decio">Decio</a> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a><div style="font-size: 0.9rem; text-align: center; color: red;">Dernière mise à jour le: 19 septembre 2026
+  <span>📝</span> 
+</div>
+
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'Copier';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'Copié !';
+            setTimeout(() => {
+                copybutton.innerHTML = 'Copier';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -35,7 +35,7 @@
 
 ---
 
-## 2. Technical indicator appendix (STR-IND-0001–0017)
+## 2. Technical indicator appendix (STR-IND-0001–0035)
 
 ### Compact paste block
 
@@ -87,4 +87,4 @@ WLDR Agent companion tracking under this case folder until distinct corpus warra
 
 ## 5. Sources
 
-See [`04_SOURCES.md`](04_SOURCES.md). Local freeze: `evidence/primary-sources/starlandrat/talos-uat-11795-starland-wldr.html` SHA-256 `0eff5ee5f2e32d8cc50ea58a9a4f6bf94b4919a9f997112d88f199e6a735eb84`.
+See [`04_SOURCES.md`](04_SOURCES.md). Primary freezes: Talos blog (PS-STR-001) + Talos IOC appendix (PS-STR-002).
