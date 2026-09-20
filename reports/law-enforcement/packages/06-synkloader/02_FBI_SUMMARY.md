@@ -1,39 +1,48 @@
-# SynkLoader — FBI / Field-Office Summary
+# SynkLoader — Summary
 
-**Package:** `ETW-SYN-IC3` · **Status:** DRAFT · **Cutoff:** 2026-09-19
+**Package:** `ETW-SYN-IC3` · **Status:** DRAFT — ready for human IC3 filing · **Cutoff:** 2026-09-19
 
-## One-paragraph summary
+## Overview
 
-I am reporting defensive threat-intelligence information concerning SynkLoader as publicly documented by Expel on August 20, 2026. Expel describes a modular mixed-language loader delivered through Microsoft Teams phishing posing as IT helpdesk (external *.onmicrosoft.com tenant, display name IT Service Desk), with initial MSI hosted on Azure Blob Storage (filereserve.blob.core.windows.net/.../331.msi, product name PowershellCleaner). Expel reports nested PowerShell decryption into an in-memory Python loader (ss.py), fake Visual C++ DLLs (msvcp150.dll / msvcp160.dll), a fake Windows 11 lock-screen credential-theft module (PhishLocker), and additional modules including TrafficRedirector and StreamMaster VNC. Expel published loader C2 domains neversoftmain.net, rootfarmapp.net, and tripinupdate.net; TrafficRedirector C2 dondermicapp.net; StreamMaster C2 aroclenetapp.net; and modified ChaCha20 sigma constants mlswgtppayebtezk / lwifnrfiosmfrubf. I have retained the public research and indicator records. Passive DNS A mappings for selected published domains are labeled OBSERVED_PASSIVE and are not live command-and-control contact. I have not executed malware samples and have not contacted suspected command-and-control systems.
+Defensive threat-intelligence package concerning SynkLoader as publicly documented by Expel (2026-08-20, Marcus Hutchins). Expel describes a modular mixed-language loader delivered through Microsoft Teams phishing posing as IT helpdesk (external `*.onmicrosoft.com` tenant, display name IT Service Desk), with initial MSI hosted on Azure Blob Storage (`filereserve.blob.core.windows.net/.../331.msi`, product name PowershellCleaner). Expel reports nested PowerShell decryption into an in-memory Python loader (`ss.py`), fake Visual C++ DLLs (`msvcp150.dll` / `msvcp160.dll`), a fake Windows 11 lock-screen credential-theft module (PhishLocker), and additional modules including TrafficRedirector and StreamMaster VNC. **Author identity remains NOT_ESTABLISHED.** Matanbuchus is a technique comparator only — do not file jointly.
 
-## Why this may matter to FBI cyber / IC3 correlation
+## Pre-filing cross-references (separate IC3 complaints — no shared-operator claim)
+
+| Family | Package | Submission ID |
+|--------|---------|---------------|
+| Rapuncel | `ETW-RAP-IC3` | `208b747c6f7445f0af2b69a9d63acc36` |
+| Settra | `ETW-SET-IC3` | `631d8b4800d04bc19cdbfc6662e5c52c` |
+| RatHat | `ETW-RAT-IC3` | `f92c4c2f0dd3481f898fdd125e728adf` |
+| NodeRabbit | `ETW-NRB-IC3` | `dded86972e9347e0be27a6597b4cf08a` |
+| PollCat | `ETW-POL-IC3` | `98a4444754324e539dbbffcb10c70637` |
+| **SynkLoader (this package)** | `ETW-SYN-IC3` | *not yet filed* |
+
+## Why this may matter for FBI cyber / IC3 correlation
 
 Teams helpdesk phishing with fake lock-screen credential theft and tunneling into enterprise environments.
 
-## Highest-value indicators (primary-source; not ETW-observed)
+## Highest-value indicators
 
-- Delivery URL (Expel): https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi
-- SHA-256 (Expel): 331.msi; cleaner.ps1; archive6.zip; ss.py; msvcp150/160.dll; module loaders — see 03_INDICATORS.csv
-- C2 domains (Expel PRIMARY): neversoftmain.net; rootfarmapp.net; tripinupdate.net; dondermicapp.net; aroclenetapp.net
-- C2 IPv4 (OBSERVED_PASSIVE A): 149.248.76.220; 162.33.177.8; 216.245.184.14; 64.94.85.67
-- ChaCha sigma constants (Expel): mlswgtppayebtezk; lwifnrfiosmfrubf
-- PDB path (Expel): C:\Users\genry\source\repos\pwshnewdll\...\pwshnewdll.pdb
-- See 03_INDICATORS.csv (SYN-IND-0001–0029)
+- Delivery URL: `https://filereserve.blob.core.windows.net/vgnghuyk/331/331.msi`
+- SHA-256 `331.msi`: `151d2a7f52f047638ca8ad80c859c6bfe04d7510fb10933817fa0e3ba5d07a11` (+ 10 more module hashes — see CSV)
+- Domains: `neversoftmain.net`; `rootfarmapp.net`; `tripinupdate.net`; `dondermicapp.net`; `aroclenetapp.net`
+- OBSERVED_PASSIVE A: `149.248.76.220`; `162.33.177.8`; `216.245.184.14`; `64.94.85.67`
+- ChaCha sigma: `mlswgtppayebtezk` / `lwifnrfiosmfrubf`
+- PDB (build artifact only): `C:\Users\genry\source\repos\pwshnewdll\...\pwshnewdll.pdb`
 
-Full table: `03_INDICATORS.csv`
+Full table: `03_INDICATORS.csv` (29 rows). Structured dossier: `IC3_FULL_PACKAGE.md`.
 
 ## Critical analytical caveats
 
-- Domain/hash/URL rows are PRIMARY-SOURCE (Expel); IPv4 rows SYN-IND-0026–0029 are OBSERVED_PASSIVE DNS A mappings — not live C2 contact.
-- CDN demotion N/A for these non-CDN C2 A records; author identity remains NOT_ESTABLISHED.
-- Shared ASN AS399629 across multiple apexes is INFRASTRUCTURE_OVERLAP candidate only — not operator identity.
-- Azure Blob MSI host edge IP is ASSOCIATION_ONLY (not actor-owned).
-- Secondary ransomware-follow-on / IAB framing is Expel low–medium confidence or secondary press — not established by ETW.
-- Resolving a published domain != proof C2 is currently active.
+- Domain/hash/URL rows are PRIMARY-SOURCE (Expel); IPv4 rows SYN-IND-0026–0029 are OBSERVED_PASSIVE DNS A — not live C2 contact.
+- Shared ASN AS399629 is INFRASTRUCTURE_OVERLAP candidate only — not operator identity.
+- Azure Blob MSI host edge IP is ASSOCIATION_ONLY.
+- Secondary ransomware-follow-on / IAB framing is not established by ETW.
+- Resolving a published domain ≠ proof C2 is currently active.
 
 ## Suggested handling
 
-1. Treat as **defensive threat-intelligence referral**, not a completed criminal case file.
-2. Correlate MeshAgent / domain / hash / URI-path indicators against existing FBI/IC3 holdings.
-3. Request sample acquisition through normal vendor/legal channels if needed — this package does not contain malware binaries.
-4. Keep this family **separate** from other Emerging Threat Watch packages unless linkage evidence appears.
+1. Treat as defensive threat-intelligence referral, not a completed criminal case file.
+2. Correlate hashes / domains / OBSERVED_PASSIVE IPs against existing holdings.
+3. Keep **separate** from other ETW packages unless linkage evidence appears.
+4. After filing: record Submission ID in `IC3_FILING_RECORD.md`, this summary, `MASTER_INDEX.csv`, and root `README.md`.

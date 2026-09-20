@@ -1,0 +1,20 @@
+# SYNKLOADER — IC3 / FBI Brief (Pointer)
+
+**Canonical filing package:** [`../law-enforcement/packages/06-synkloader/`](../law-enforcement/packages/06-synkloader/)  
+**Package ID:** `ETW-SYN-IC3`  
+**Status:** DRAFT — ready for human IC3 filing · do not auto-submit · **Cutoff:** 2026-09-19  
+**Independently observed by ETW:** OBSERVED_PASSIVE DNS A only (four C2 apexes) — not campaign ownership
+
+| Need | File |
+|------|------|
+| **Full structured dossier** | [`IC3_FULL_PACKAGE.md`](../law-enforcement/packages/06-synkloader/IC3_FULL_PACKAGE.md) |
+| Paste into IC3 description | local `private/filing-helpers/06-synkloader/01_NARRATIVE_PASTE.txt` |
+| Indicators CSV | `03_INDICATORS.csv` (29 SYN-IND rows) |
+| Sources | `04_SOURCES.md` |
+| Caveats | `05_CAVEATS_AND_LIMITS.md` |
+
+**Filing guide:** [`../law-enforcement/HOW_TO_FILE.md`](../law-enforcement/HOW_TO_FILE.md)
+
+## Case isolation
+
+Do **not** merge with prior ETW IC3 filings (Rapuncel / Settra / RatHat / NodeRabbit / PollCat). Matanbuchus is technique-comparator only.

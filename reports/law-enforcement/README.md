@@ -1,6 +1,6 @@
 # Law Enforcement Handoff — FBI & IC3
 
-**Status:** Rapuncel, Settra, RatHat, NodeRabbit, PollCat `FILED_IC3` · SynkLoader / Showboat / candidates remain unfiled  
+**Status:** Rapuncel, Settra, RatHat, NodeRabbit, PollCat `FILED_IC3` · **SynkLoader `ETW-SYN-IC3` next to file** · Showboat / candidates remain unfiled  
 **Research cutoff:** 2026-09-19  
 **Independently observed campaign ownership by ETW:** none
 
