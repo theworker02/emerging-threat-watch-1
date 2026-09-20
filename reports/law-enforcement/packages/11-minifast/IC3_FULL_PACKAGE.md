@@ -31,6 +31,7 @@
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 | Abyssos | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
+| SharkLoader | `ETW-SHK-IC3` | `6ed57963d0c64750aa14b6fcbaa2e576` |
 | **MiniFast (this package)** | `ETW-MNF-IC3` | *not filed* |
 
 ---
@@ -53,6 +54,14 @@ bc3b44154518c5794ce639108e7b9c5fecb0c189607a26de1aaed518d890c7ad
 ecaf493c320d201d285ef5f61d75744216e47cf1115b4af528f9a78883cc446e
 44f4f7aca7f1d9bfdaf7b3736934cbe19f851a707662f8f0b0c49b383e054250
 0db36a04d304ad96f9e6f97b531934594cd95a5cea9ff2c9af249201089dc864
+332ba2f0297dfb1599adecc3e9067893e7cf243aa23aedce4906a4c480574c17
+38bd137c672bd58d08c4f0502f993a6561e2c3411773d1ae57ee0151a0a9d11d
+d4a7e9f107fe40c1a5d0139c6c6e25bf6bf57f61feff090bee28f476bb3cc3c2
+9cf029daca89523d917dafed0568d11d00e45ec96b5b90b4a1f7fd4018c7da84
+B19e06da580cf91691eda066ac9ee4b09c6e5dc26c367af12660fe1f9306eec4
+8808c794c24367438f183e4be941876f1d3ecd0c8d2eb43b10d2380841d2283b
+43dc62cef52ebdd69e79f10015b3e13890f26c058325c0ff139c70f8d8eadcfa
+9e4a658e6d831c9e9bdfe11884a75b7c64812ed0a80e8495ddf6b316505acac1
 
 === DOMAIN ===
 business-startup.org
@@ -68,9 +77,12 @@ nanomatrix.azurewebsites.net
 PremierHealthAdvisory.com
 ramiltonsfinance.com
 getsqldeveloper.com
-
-=== PATH ===
-%LOCALAPPDATA%\Zoom\bin\update
+QuantumWeave.azurewebsites.net
+ElementShift.azurewebsites.net
+ThemesManagers.azurewebsites.net
+ThemesProviderManagers.azurewebsites.net
+docspace-twpf0e.onlyoffice.com
+2117.filemail.com
 
 === FILENAME ===
 UpdateChecker.dll
@@ -79,6 +91,9 @@ Zoominstall64.zip
 === STRING ===
 CheckForUpdates
 ZoomUpdateTaskUser
+
+=== PATH ===
+%LOCALAPPDATA%\Zoom\bin\update
 
 ```
 

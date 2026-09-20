@@ -31,6 +31,7 @@
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 | Abyssos | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
+| SharkLoader | `ETW-SHK-IC3` | `6ed57963d0c64750aa14b6fcbaa2e576` |
 | **Matanbuchus (this package)** | `ETW-MAT-IC3` | *not filed* |
 
 ---
@@ -40,6 +41,24 @@
 ### Compact paste block
 
 ```
+=== URL ===
+http://binclloudapp.com/466943
+https://marle.io/check/updprofile.aspx
+
+=== DOMAIN ===
+www.ndibstersoft.com
+binclloudapp.com
+fixuplink.com
+bretux.com
+nicewk.com
+emorista.org
+notepad-plus-plu.org
+treasuryfinance.org
+
+=== STRING ===
+/intake/organizations/events?channel=app
+EventLogBackupTask
+
 === SHA256 ===
 de81e2155d797ff729ed3112fd271aa2728e75fc71b023d0d9bb0f62663f33b3
 6ffae128e0dbf14c00e35d9ca17c9d6c81743d1fc5f8dd4272a03c66ecc1ad1f
@@ -49,23 +68,18 @@ de81e2155d797ff729ed3112fd271aa2728e75fc71b023d0d9bb0f62663f33b3
 c31c8edbf94c85cc9bc46a5665c45a3556c48d5ad615c0a44e14e5406d80df12
 eecc83add16f3d513a9701e9a646b1885014229ac6f86addd6b10afb64d1d2af
 ea378496135318ac5ad667a032fa4a9686add9d27fe4a7c549c937611b5099e5
-
-=== IPV4 ===
-192.121.23.146
-
-=== DOMAIN ===
-www.ndibstersoft.com
-binclloudapp.com
-
-=== URL ===
-http://binclloudapp.com/466943
-https://marle.io/check/updprofile.aspx
+da9585d578f367cd6cd4b0e6821e67ff02eab731ae78593ab69674f649514872
+2ee3a202233625cdcdec9f687d74271ac0f9cb5877c96cf08cf1ae88087bec2e
+19fb41244558f3a7d469b79b9d91cd7d321b6c82d1660738256ecf39fe3c8421
+211cea7a5fe12205fee4e72837279409ace663567c5b8c36828a3818aabef456
+0f41536cd9982a5c1d6993fac8cd5eb4e7f8304627f2019a17e1aa283ac3f47c
 
 === PATH ===
 %LOCALAPPDATA%\Temp\ndvyxgdriggmarrf
 
-=== STRING ===
-/intake/organizations/events?channel=app
+=== IPV4 ===
+192.121.23.146
+94.159.113.33
 
 ```
 

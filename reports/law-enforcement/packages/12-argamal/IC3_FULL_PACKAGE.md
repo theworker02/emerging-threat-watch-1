@@ -31,6 +31,7 @@
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 | Abyssos | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
+| SharkLoader | `ETW-SHK-IC3` | `6ed57963d0c64750aa14b6fcbaa2e576` |
 | **Argamal (this package)** | `ETW-ARG-IC3` | *not filed* |
 
 ---
@@ -50,22 +51,14 @@ d2cb0d7a9ad2b5d4ea7c2da8aec62beb37cf36d6
 9803604ec45f31f9ef75bcca1e1310d8ac1fc3a6
 02819d200d1424882af81cb504b3e8614b32397a
 
-=== IPV4 ===
-186.158.223.35
-181.116.218.56
-
 === DOMAIN ===
 asper1.freeddns.org
 Winst0.kozow.com
 country1.ignorelist.com
 
-=== URL ===
-github.com/gmz159/u
-github.com/DnyP/files
-github.com/mgzv/p
-
-=== PATH ===
-HKCU\SOFTWARE\Classes\CLSID\{B210D694-C8DF-490D-9576-9E20CDBC20BD}
+=== IPV4 ===
+186.158.223.35
+181.116.218.56
 
 === FILENAME ===
 natives2_blob.bin
@@ -73,6 +66,14 @@ zaesdl.dat
 
 === CRYPTO_CONSTANT ===
 zbcd1j9234r670eh
+
+=== PATH ===
+HKCU\SOFTWARE\Classes\CLSID\{B210D694-C8DF-490D-9576-9E20CDBC20BD}
+
+=== URL ===
+github.com/gmz159/u
+github.com/DnyP/files
+github.com/mgzv/p
 
 === PORT ===
 57441

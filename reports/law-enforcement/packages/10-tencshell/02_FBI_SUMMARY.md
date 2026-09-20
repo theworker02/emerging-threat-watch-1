@@ -17,7 +17,7 @@ Defensive threat-intelligence package concerning TencShell as publicly documente
 - `37facbbd0047c19f4efdea75ccb9e3ec793cb9b1d7846afa4fb8e900d6e9ed95` (sha256) — Cato CTRL published sample hash
 - `01dc3e7e673b4f2682f29b19ecabf9a6ec9c3042c9b1cfb39dbdddf1dda680ab` (sha256) — Cato CTRL published sample hash
 
-Full table: `03_INDICATORS.csv` (15 TEN-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
+Full table: `03_INDICATORS.csv` (30 TEN-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
 
 ## Critical analytical caveats
 
@@ -25,7 +25,7 @@ Full table: `03_INDICATORS.csv` (15 TEN-IND rows). Dossier: `IC3_FULL_PACKAGE.md
 - HTML freeze blocked by Incapsula; markdown content freeze retained from vendor page retrieval (PS-TEN-001).
 - OSS Rshell similarity ≠ shared operators; do not treat public Rshell repos as TencShell IOCs.
 - China-linked assessment is suspected/not confirmed by Cato — ETW does not independently establish attribution.
-- Additional published SHA-256s exist in primary; ledger prioritizes network + distinctive host artifacts + representative hashes.
+- Hunt.io follow-on (PS-TEN-002/003) expands HK cluster IPs; ARM/Gshell rows are infra-pivot related, not confirmed Windows TencShell code matches.
 
 ## Suggested handling
 

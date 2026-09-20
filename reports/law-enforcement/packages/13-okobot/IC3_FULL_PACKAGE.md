@@ -31,6 +31,7 @@
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 | Abyssos | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
+| SharkLoader | `ETW-SHK-IC3` | `6ed57963d0c64750aa14b6fcbaa2e576` |
 | **Okobot (this package)** | `ETW-OKO-IC3` | *not filed* |
 
 ---
@@ -57,11 +58,6 @@ DD52F5108A176C62AD807C327734AD12
 AC93A821617AEA1F56D4BC0BEF4AF327
 11DBC8A2BEA04B15F8F68F3F01E8FAF9
 
-=== IPV4 ===
-104.243.43.16
-104.243.32.213
-62.210.188.209
-
 === DOMAIN ===
 2baserec2.guru
 recavb22.online
@@ -70,6 +66,12 @@ coffeesaloon.online
 livewallpapers.online
 thatwascringe.com
 moonsand.store
+22tuk.digital
+
+=== IPV4 ===
+104.243.43.16
+104.243.32.213
+62.210.188.209
 
 === PATH ===
 %PROGRAMDATA%\HDVideo\HDUtil.exe
@@ -79,6 +81,10 @@ moonsand.store
 
 === STRING ===
 ir-post.php
+\GDrive Backup Sync
+
+=== URL ===
+https://22tuk.digital/online/took.php
 
 ```
 

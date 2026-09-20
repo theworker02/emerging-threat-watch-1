@@ -72,15 +72,15 @@ If a field office requests files, send the entire `packages/0N-<family>/` folder
 
 There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly.
 
-### Primary-frozen packages (09–15) — IOCs ready; not yet filed
+### Primary-frozen packages (10–15) — paste packs ready; not yet filed
 
-| Package ID | Family | IND rows | Status |
-|------------|--------|----------|--------|
-| ETW-TEN-IC3 | TencShell | 30 | `PRIMARY_FROZEN` |
-| ETW-MNF-IC3 | MiniFast | 44 | `PRIMARY_FROZEN` |
-| ETW-ARG-IC3 | Argamal | 22 | `PRIMARY_FROZEN` |
-| ETW-OKO-IC3 | Okobot | 33 | `PRIMARY_FROZEN` |
-| ETW-MAT-IC3 | Matanbuchus | 28 | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
-| ETW-STR-IC3 | StarlandRAT | 35 | `PRIMARY_FROZEN` |
+| Package ID | Family | IND rows | Paste pack | Status |
+|------------|--------|----------|------------|--------|
+| ETW-TEN-IC3 | TencShell | 30 | [`IC3_PASTE_READY.md`](packages/10-tencshell/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
+| ETW-MNF-IC3 | MiniFast | 44 | [`IC3_PASTE_READY.md`](packages/11-minifast/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
+| ETW-ARG-IC3 | Argamal | 22 | [`IC3_PASTE_READY.md`](packages/12-argamal/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
+| ETW-OKO-IC3 | Okobot | 33 | [`IC3_PASTE_READY.md`](packages/13-okobot/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
+| ETW-MAT-IC3 | Matanbuchus | 28 | [`IC3_PASTE_READY.md`](packages/14-matanbuchus/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
+| ETW-STR-IC3 | StarlandRAT | 35 | [`IC3_PASTE_READY.md`](packages/15-starlandrat/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
 
 Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`. SharkLoader (`ETW-SHK-IC3`) filed — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576`.

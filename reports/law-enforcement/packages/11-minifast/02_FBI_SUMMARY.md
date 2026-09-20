@@ -17,7 +17,7 @@ Defensive threat-intelligence package concerning MiniFast as publicly documented
 - `63d0d3c4a7f71bdbca720903d6a99b832089cc093c64d2938e7e001e56c17ab4` (sha256) — Check Point MiniFast / Nimbus Manticore campaign sample
 - `74882085db2088356ed7f72f01e0404a0a98cda88ef56fb15ce74c1f36b26d27` (sha256) — Check Point MiniFast / Nimbus Manticore campaign sample
 
-Full table: `03_INDICATORS.csv` (30 MNF-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
+Full table: `03_INDICATORS.csv` (44 MNF-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
 
 ## Critical analytical caveats
 

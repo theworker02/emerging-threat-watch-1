@@ -17,7 +17,7 @@ Defensive threat-intelligence package concerning the OkoBot framework as publicl
 - `2157D2429124AD28DB7A26F2477CB985` (md5) — Plugin environment enumerator
 - `77CECF5E2A622AE07D8AE9913457AB57` (md5) — Plugin dropper
 
-Full table: `03_INDICATORS.csv` (30 OKO-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
+Full table: `03_INDICATORS.csv` (33 OKO-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
 
 ## Critical analytical caveats
 

@@ -46,12 +46,12 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
 | 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (StrikeShark) | [`packages/09-sharkloader/`](packages/09-sharkloader/) — **FILED_IC3** `6ed57963d0c64750aa14b6fcbaa2e576` (2026-09-19 10:43:18 PM EST); [`IC3_FILING_RECORD.md`](packages/09-sharkloader/IC3_FILING_RECORD.md) |
-| 10 | TencShell | `ETW-TEN-IC3` | Go implant / customized Rshell | [`packages/10-tencshell/`](packages/10-tencshell/) — **PRIMARY_FROZEN** 30 TEN-IND · [`IC3_FULL_PACKAGE.md`](packages/10-tencshell/IC3_FULL_PACKAGE.md) |
-| 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) — **PRIMARY_FROZEN** 44 MNF-IND · [`IC3_FULL_PACKAGE.md`](packages/11-minifast/IC3_FULL_PACKAGE.md) |
-| 12 | Argamal | `ETW-ARG-IC3` | Trojanized adult games RAT | [`packages/12-argamal/`](packages/12-argamal/) — **PRIMARY_FROZEN** 22 ARG-IND · [`IC3_FULL_PACKAGE.md`](packages/12-argamal/IC3_FULL_PACKAGE.md) |
-| 13 | Okobot | `ETW-OKO-IC3` | Multi-payload / OkoSpyware | [`packages/13-okobot/`](packages/13-okobot/) — **PRIMARY_FROZEN** 33 OKO-IND · [`IC3_FULL_PACKAGE.md`](packages/13-okobot/IC3_FULL_PACKAGE.md) |
-| 14 | Matanbuchus | `ETW-MAT-IC3` | SynkLoader technique comparator (MaaS) | [`packages/14-matanbuchus/`](packages/14-matanbuchus/) — **PRIMARY_FROZEN** 28 MAT-IND · [`IC3_FULL_PACKAGE.md`](packages/14-matanbuchus/IC3_FULL_PACKAGE.md) |
-| 15 | StarlandRAT | `ETW-STR-IC3` | Python RAT / WLDR companion | [`packages/15-starlandrat/`](packages/15-starlandrat/) — **PRIMARY_FROZEN** 35 STR-IND · [`IC3_FULL_PACKAGE.md`](packages/15-starlandrat/IC3_FULL_PACKAGE.md) |
+| 10 | TencShell | `ETW-TEN-IC3` | Go implant / customized Rshell | [`packages/10-tencshell/`](packages/10-tencshell/) — **PRIMARY_FROZEN** 30 TEN-IND · [`IC3_PASTE_READY.md`](packages/10-tencshell/IC3_PASTE_READY.md) · [`IC3_FULL_PACKAGE.md`](packages/10-tencshell/IC3_FULL_PACKAGE.md) |
+| 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) — **PRIMARY_FROZEN** 44 MNF-IND · [`IC3_PASTE_READY.md`](packages/11-minifast/IC3_PASTE_READY.md) · [`IC3_FULL_PACKAGE.md`](packages/11-minifast/IC3_FULL_PACKAGE.md) |
+| 12 | Argamal | `ETW-ARG-IC3` | Trojanized adult games RAT | [`packages/12-argamal/`](packages/12-argamal/) — **PRIMARY_FROZEN** 22 ARG-IND · [`IC3_PASTE_READY.md`](packages/12-argamal/IC3_PASTE_READY.md) · [`IC3_FULL_PACKAGE.md`](packages/12-argamal/IC3_FULL_PACKAGE.md) |
+| 13 | Okobot | `ETW-OKO-IC3` | Multi-payload / OkoSpyware | [`packages/13-okobot/`](packages/13-okobot/) — **PRIMARY_FROZEN** 33 OKO-IND · [`IC3_PASTE_READY.md`](packages/13-okobot/IC3_PASTE_READY.md) · [`IC3_FULL_PACKAGE.md`](packages/13-okobot/IC3_FULL_PACKAGE.md) |
+| 14 | Matanbuchus | `ETW-MAT-IC3` | SynkLoader technique comparator (MaaS) | [`packages/14-matanbuchus/`](packages/14-matanbuchus/) — **PRIMARY_FROZEN** 28 MAT-IND · [`IC3_PASTE_READY.md`](packages/14-matanbuchus/IC3_PASTE_READY.md) · [`IC3_FULL_PACKAGE.md`](packages/14-matanbuchus/IC3_FULL_PACKAGE.md) |
+| 15 | StarlandRAT | `ETW-STR-IC3` | Python RAT / WLDR companion | [`packages/15-starlandrat/`](packages/15-starlandrat/) — **PRIMARY_FROZEN** 35 STR-IND · [`IC3_PASTE_READY.md`](packages/15-starlandrat/IC3_PASTE_READY.md) · [`IC3_FULL_PACKAGE.md`](packages/15-starlandrat/IC3_FULL_PACKAGE.md) |
 
 **PollCat and NodeRabbit** share a dual-referenced Securelist primary artifact but remain **separate** IC3 packages. Do not merge.
 

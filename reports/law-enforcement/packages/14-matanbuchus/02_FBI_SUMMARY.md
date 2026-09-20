@@ -17,14 +17,14 @@ Defensive threat-intelligence package concerning Matanbuchus 3.0 / AstarionRAT a
 - `68858d3cbc9b8abaed14e85fc9825bc4fffc54e8f36e96ddda09e853a47e3e31` (sha256) — jli.dll stage-2 loader
 - `03c624d251e9143e1c8d90ba9b7fa1f2c5dc041507fd0955bdd4048a0967a829` (sha256) — SySUpd XOR-encrypted Lua script
 
-Full table: `03_INDICATORS.csv` (15 MAT-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
+Full table: `03_INDICATORS.csv` (28 MAT-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
 
 ## Critical analytical caveats
 
 - PRIMARY-SOURCE indicators only — no ETW live C2 contact.
 - TECHNIQUE COMPARATOR for SynkLoader only — COMMON TECHNIQUE / ASSOCIATION_ONLY. Do not claim shared operators.
 - AstarionRAT IOCs are companion-chain notes under this comparator folder — not merged into SynkLoader.
-- Companion freeze: evidence/primary-sources/matanbuchus/zscaler-matanbuchus-3-0.html (PS-MAT-002).
+- Companion freezes: Zscaler (PS-MAT-002), Morphisec Teams (PS-MAT-003), eSentire (PS-MAT-004).
 
 ## Suggested handling
 

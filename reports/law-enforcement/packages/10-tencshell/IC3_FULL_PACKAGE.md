@@ -31,6 +31,7 @@
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 | Showboat | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 | Abyssos | `ETW-ABY-IC3` | `a23f0a9d6799480e994284416d354713` |
+| SharkLoader | `ETW-SHK-IC3` | `6ed57963d0c64750aa14b6fcbaa2e576` |
 | **TencShell (this package)** | `ETW-TEN-IC3` | *not filed* |
 
 ---
@@ -40,6 +41,27 @@
 ### Compact paste block
 
 ```
+=== IPV4 ===
+45.64.52.242
+192.238.134.166
+45.115.38.27
+112.213.124.132
+112.213.124.159
+112.213.124.163
+45.64.52.245
+45.64.52.246
+134.122.200.153
+134.122.200.154
+134.122.200.155
+192.229.115.229
+192.229.115.230
+38.55.105.143
+192.163.167.5
+134.122.200.114
+
+=== DOMAIN ===
+gin-tne-fahcesmukw.cn-hangzhou.fcapp.run
+
 === SHA256 ===
 c3ecb90c9915daa23aec51f93ff8665778866f0592b2413578c8ba9708df6091
 660af53acdc505f333f6d4f4269cec740a5eb05e41a4c7926742606b18f22d33
@@ -49,21 +71,15 @@ c3ecb90c9915daa23aec51f93ff8665778866f0592b2413578c8ba9708df6091
 12f76f48727916d6c05f53f8cd94915db5de5ffcbfa02c4807c27e090cfa47c1
 4ae8de40153c66455d972e6e98fe06fb68db7301ba126557e96599527bc5509c
 1ba73df60e12b3feb8b5574e65cfceb6910460ab7fae2cf5554769fafdad049e
-
-=== IPV4 ===
-45.64.52.242
-192.238.134.166
-45.115.38.27
-
-=== DOMAIN ===
-gin-tne-fahcesmukw.cn-hangzhou.fcapp.run
-
-=== FILENAME ===
-.woff
+90b7b2c6f3d05234dc55678243039d7e51f0d54190239e5234a0005533337dc8
+643de2a1cf9148b896efecf560c9476fa56118ec477c4e15eb5c2da4b318061f
 
 === STRING ===
 OneDriveHealthTask
 Reacon
+
+=== FILENAME ===
+.woff
 
 ```
 

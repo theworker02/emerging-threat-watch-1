@@ -17,12 +17,12 @@ Defensive threat-intelligence package concerning Starland RAT and the companion 
 - `0x6ae382ed2154cc84c6672e4e908cd2c69c1b35ba` (crypto_constant) — Polygon smart-contract address for XOR-encrypted fallback C2
 - `polygon-rpc.com` (domain) — Public Polygon JSON-RPC used for fallback domain retrieval
 
-Full table: `03_INDICATORS.csv` (17 STR-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
+Full table: `03_INDICATORS.csv` (35 STR-IND rows). Dossier: `IC3_FULL_PACKAGE.md`.
 
 ## Critical analytical caveats
 
 - PRIMARY-SOURCE indicators only — no ETW live C2 contact.
-- Talos public article emphasizes infrastructure/host artifacts; sample SHA hashes were not published in the primary HTML freeze — do not invent hashes.
+- Sample SHA-256s are transcribed from the Talos IOC appendix (PS-STR-002); do not invent hashes beyond primary freezes.
 - UAT-11795 Russian-speaking financially motivated framing is Talos assessment only.
 - Standalone — do not attribute to active ETW families without primary linkage evidence.
 
