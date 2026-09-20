@@ -1,0 +1,153 @@
+family,technique_id,technique_name,tactic,documented_behavior,confidence,platform,source_note,package_status,matrix,mapped_utc
+rapuncel,T1189,Drive-by Compromise,Initial Access,SEO-oriented fraudulent GitHub/Pages lures directing users to stealer downloads,High,Windows,PRIMARY LastPass/Delphos,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1204.002,User Execution: Malicious File,Execution,Victim runs delivered installer/payload from GitHub SEO lure chain,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1574.002,Hijack Execution Flow: DLL Side-Loading,Defense Evasion/Execution,Legitimate Microsoft vsdbg.exe loads malicious vsdbg.dll,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1027,Obfuscated Files or Information,Defense Evasion,Cruciferra/PUROSANGUE-class crypter/loader context (tooling; not Rapuncel authorship),Moderate,Windows,PRIMARY lineage note,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1068,Exploitation for Privilege Escalation,Privilege Escalation,Alinubx.sys / CcProtect-class BYOVD-style signed-driver abuse assessed in primary lineage analysis,Moderate,Windows,PRIMARY / LOLDrivers companion,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1562.001,Impair Defenses: Disable or Modify Tools,Defense Evasion,Kernel process terminate of security products via abused signed driver path,Moderate,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1555.003,Credentials from Password Stores: Credentials from Web Browsers,Credential Access,Browser credential theft as stealer capability (wording per primary),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1041,Exfiltration Over C2 Channel,Exfiltration,Published exfil/C2 destinations including 2.26.126.50 in PRIMARY indicators,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rapuncel,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,HTTPS/web C2 and delivery domains published by researchers,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1497,Virtualization/Sandbox Evasion,Defense Evasion,Debugger checks; inert exit without --pass (encryptor),High,Windows,Cynet malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1027,Obfuscated Files or Information,Defense Evasion,~1.4MB encrypted blob; AES-256-CTR after iterated SHA-256,High,Windows,Cynet malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1055,Process Injection,Defense Evasion,Process hollowing of inner encryptor (reported),Moderate,Windows,Cynet malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1486,Data Encrypted for Impact,Impact,Per-file keys + 4096-bit RSA wrap; .locked extensions,High,Windows,Cynet/Huntress malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1490,Inhibit System Recovery,Impact,reagentc/diskpart/cipher; WinRE/VSS/System Restore interference,High,Windows,Cynet/Huntress malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1489,Service Stop,Impact,Hyper-V VM power-off / recovery inhibition patterns,High,Windows,Cynet malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1070.001,Indicator Removal: Clear Windows Event Logs,Defense Evasion,Clears multiple event logs,High,Windows,Cynet malware,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1078,Valid Accounts,Initial Access/Persistence,Compromised VPN / valid credentials (operator IR),High,Windows,MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1046,Network Service Discovery,Discovery,NetExec / Netscan mapping,High,Windows,MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1003,OS Credential Dumping,Credential Access,Procdump / Mimikatz observed in IR (operator tooling — not Settra.exe),High,Windows,MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1021,Remote Services,Lateral Movement,PAExec / NetExec lateral movement,High,Windows,MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1219,Remote Access Software,Command and Control,MeshAgent RMM abuse (45.13.122.7 / 193.5.65.114),High,Windows,Huntress/MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1562,Impair Defenses,Defense Evasion,edr_blind; BYOVD drivers (gdrv.sys / STProcessMonitor) in operator stage,High,Windows,Huntress/MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+settra,T1657,Financial Theft,Impact,Tor leak site + Tox negotiations (extortion workflow),Moderate,Network,MOXFIVE operator,ACTIVE,enterprise,2026-09-20T16:03:04Z
+rathat,T1626.001,Abuse Elevation Control Mechanism: Device Administrator/Accessibility,Privilege Escalation,Accessibility service (SystemHelperService) abused to control device settings,High,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1516,Input Injection,Execution,Accessibility-driven UI automation to enable Wireless Debugging and pair,High,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1424,Software Discovery / Debug Abuse,Discovery/Execution,Wireless ADB self-pair using scraped PIN; shell UID via adbd,High,Android,PRIMARY — map as ADB abuse,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1407,Download New Code at Runtime,Persistence/Execution,Native Go components staged outside ordinary APK lifecycle,High,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1575,Native Code,Defense Evasion,Native libs (e.g. liblocal-service.so) for post-APK capabilities,High,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1521,Encrypted Channel,Command and Control,FRP-derived reverse-tunnel component for remote access,High,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1417.001,Input Capture: Keylogging,Collection,Credential/PIN reconstruction via getevent / locateValues.json patterns,High,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+rathat,T1636,Protected User Data,Collection,Banking/credential targeting per Zimperium narrative,Moderate,Android,PRIMARY,ACTIVE,mobile,2026-09-20T16:03:04Z
+noderabbit,T1566.003,Phishing: Spearphishing via Service,Initial Access,Recruiter-posed coding assessments delivering malware,High,Windows/Linux/macOS,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1204.002,User Execution: Malicious File,Execution,Victim executes coding-challenge archive / Node components,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1059.007,Command and Scripting Interpreter: JavaScript,Execution,Node.js RAT components,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1546,Event Triggered Execution,Persistence,Local Git hook persistence,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1547,Boot or Logon Autostart Execution,Persistence,WSL / platform persistence variants reported,Moderate,Windows/Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1036,Masquerading,Defense Evasion,Fake local VS Code extension (“GitHub Copilot Helper”),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1573,Encrypted Channel,Command and Control,Mutable C2 configuration; enterprise-proxy support in later variants,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,Azure / web C2 hosts published,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+noderabbit,T1082,System Information Discovery,Discovery,Host profiling for developer/enterprise environments,Moderate,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1566.003,Phishing: Spearphishing via Service,Initial Access,RankChallenge-react coding-challenge delivery,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1204.002,User Execution: Malicious File,Execution,Victim opens RankChallenge archive (MD5 795e053a…),High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1059.007,Command and Scripting Interpreter: JavaScript,Execution,Obfuscated JavaScript RAT,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1027,Obfuscated Files or Information,Defense Evasion,Heavy JS obfuscation,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1053.005,Scheduled Task/Job: Scheduled Task,Persistence,NetSync scheduled tasks (Windows),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1543,Create or Modify System Process,Persistence,requireObject.js under AppData; com.harsh.requireobject.plist (macOS); ~/.node_packages,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+pollcat,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,sahi-finance.com; Azure Web Apps; lifespotify.com OTP validation,High,cross-platform,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1566.002,Phishing: Spearphishing Link,Initial Access,Microsoft Teams IT-helpdesk phishing (external *.onmicrosoft.com tenant),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1204.002,User Execution: Malicious File,Execution,Victim runs MSI (PowershellCleaner) from Azure Blob,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1059.001,Command and Scripting Interpreter: PowerShell,Execution,Nested PowerShell decryption into in-memory Python loader (ss.py),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1059.006,Command and Scripting Interpreter: Python,Execution,In-memory Python loader,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1036.005,Masquerading: Match Legitimate Name or Location,Defense Evasion,Fake VC++ DLLs msvcp150.dll / msvcp160.dll,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1056.002,Input Capture: GUI Input Capture,Credential Access,PhishLocker fake Windows 11 lock-screen credential theft,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1219,Remote Access Software,Command and Control,StreamMaster VNC module,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1090,Proxy,Command and Control,TrafficRedirector tunneling module,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+synkloader,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,Modular C2 over HTTPS to published domains/IPs,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+showboat,T1190,Exploit Public-Facing Application,Initial Access,Post-exploitation framework against telecom (initial access may vary; historical activity noted),Moderate,Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+showboat,T1105,Ingress Tool Transfer,Command and Control,Modular post-exploitation component download,High,Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+showboat,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,C2 to published IPs/domains (telecom.webredirect-class),High,Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+showboat,T1027,Obfuscated Files or Information,Defense Evasion,Modular Linux implant design with staging (Pastebin historical hide-code noted),Moderate,Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+showboat,T1041,Exfiltration Over C2 Channel,Exfiltration,Post-exploitation data access capabilities implied by framework class,Moderate,Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+showboat,T1082,System Information Discovery,Discovery,Host/network discovery typical of modular post-ex frameworks,Moderate,Linux,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1204.002,User Execution: Malicious File,Execution,Delivery vector under investigation; execution of modular C++ RAT,Moderate,Windows,PRIMARY — delivery not established,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1055,Process Injection,Defense Evasion,Modular C++ RAT capabilities including stealthy module load,Moderate,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1555,Credentials from Password Stores,Credential Access,Credential theft modules,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1550,Use Alternate Authentication Material,Credential Access,Browser-session hijacking,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1021,Remote Services,Lateral Movement/C2,HVNC remote access,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1041,Exfiltration Over C2 Channel,Exfiltration,File exfiltration over custom AES-GCM TCP protocol,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1573.002,Encrypted Channel: Asymmetric Cryptography,Command and Control,Custom AES-GCM TCP C2 protocol,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+abyssos,T1105,Ingress Tool Transfer,Command and Control,Downloadable modules,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1190,Exploit Public-Facing Application,Initial Access,Exploitation of internet-facing apps (Exchange/SharePoint/Openfire-class CVEs cited),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1204.002,User Execution: Malicious File,Execution,Malicious droppers posing as Google Update / Cisco AnyConnect / PDF decoys,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1574.002,Hijack Execution Flow: DLL Side-Loading,Defense Evasion/Execution,SystemSettings.exe sideloads SystemSettings.dll (SharkLoader); alt msedge/PrintDialog/miracastview,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1027.002,Obfuscated Files or Information: Software Packing,Defense Evasion,Encrypted modules DscCoreR.mui (Blowfish) / SyncRes.dat (AES-128),High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1055,Process Injection,Defense Evasion,Reflective load of Cobalt Strike Beacon in memory,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1562.006,Impair Defenses: Indicator Blocking,Defense Evasion,ETW-related evasion; Detours/MinHook API hooks; sleep memory-permission flipping,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1134.004,Access Token Manipulation: Parent PID Spoofing,Defense Evasion,PPID spoofing documented,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1547.001,Boot or Logon Autostart Execution: Registry Run Keys,Persistence,HKCU Run value MFUpdate,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1053.005,Scheduled Task/Job: Scheduled Task,Persistence,\Microsoft\Windows\Edge\Edgeupdate and OneDrive/MicrosoftUpdate-style tasks,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,Domains connect-microsoft.com; ms-record.com; ms-record.top; ms-tray.top,High,Windows,PRIMARY,ACTIVE,enterprise,2026-09-20T16:03:04Z
+sharkloader,T1003,OS Credential Dumping,Credential Access,Post-compromise AD enumeration tooling context (Beacon follow-on),Moderate,Windows,PRIMARY post-ex,ACTIVE,enterprise,2026-09-20T16:03:04Z
+tencshell,T1199,Trusted Relationship,Initial Access,Third-party user connection into manufacturer environment (India site),High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1204.002,User Execution: Malicious File,Execution,Dropper → masqueraded .woff Donut shellcode chain,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1055,Process Injection,Defense Evasion,Reflective / in-memory load of Go implant,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1036.005,Masquerading: Match Legitimate Name or Location,Defense Evasion,Masqueraded .woff web-font staging; Tencent-like API path impersonation,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1548.002,Abuse Elevation Control Mechanism: Bypass User Account Control,Privilege Escalation,UAC_BYPASS opcode/module,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1547.001,Boot or Logon Autostart Execution: Registry Run Keys,Persistence,Run value OneDriveHealthTask,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1113,Screen Capture,Collection,Screen capture / live screen streaming over WebSocket,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1056.001,Input Capture: Keylogging,Collection,Keyboard/mouse simulation and input routines,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1555.003,Credentials from Password Stores: Credentials from Web Browsers,Credential Access,Chrome/Edge artifact access (sessions/cookies/logins),High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1090,Proxy,Command and Control,SOCKS5 proxying,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,Web/API-like C2; Tencent-themed paths; Hunt.io port 1111 cluster,High,Windows,Cato + Hunt.io,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+tencshell,T1105,Ingress Tool Transfer,Command and Control,In-memory payload execution / additional tooling path,High,Windows,Cato PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1566.001,Phishing: Spearphishing Attachment,Initial Access,Career/aviation lures; trojanized Zoominstall64.zip,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1608.006,Stage Capabilities: SEO Poisoning,Resource Development/Initial Access,SEO-poisoned SQL Developer lure getsqldeveloper.com,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1204.002,User Execution: Malicious File,Execution,Victim runs trojanized installer,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1574.014,Hijack Execution Flow: AppDomainManager,Defense Evasion/Execution,AppDomain hijacking via .config / UpdateConfig.xml,High,Windows,Check Point / Unit 42,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1553.002,Subvert Trust Controls: Code Signing,Defense Evasion,SSL.com-issued code-signing certificates abused (Gray Matter / Kirubel),High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1053.005,Scheduled Task/Job: Scheduled Task,Persistence,Hijack ZoomUpdateTaskUser-*; WindowsSecurityUpdate persistence,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1548.002,Abuse Elevation Control Mechanism: Bypass UAC,Privilege Escalation,UAC elevation opcode in MiniFast command set,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1105,Ingress Tool Transfer,Command and Control,DLL load / file download commands,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,"JSON HTTPS C2 (/agent/init,/agent/poll,/upload/) + Azure Web Apps",High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+minifast,T1036,Masquerading,Defense Evasion,UpdateChecker.dll / CheckForUpdates export; Chrome UA impersonation,High,Windows,Check Point,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1189,Drive-by Compromise,Initial Access,Trojanized adult/hentai games via catalogue sites→PixelDrain and torrents,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1204.002,User Execution: Malicious File,Execution,Victim launches infected game loading modified ffmpeg.dll,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1574.001,Hijack Execution Flow: DLL Search Order Hijacking,Defense Evasion/Execution,Modified FFmpeg DLL loaded by legitimate game,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1059.001,Command and Scripting Interpreter: PowerShell,Execution,natives2_blob.bin PowerShell stages,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1546.015,Event Triggered Execution: Component Object Model Hijacking,Persistence,COM hijack InprocServer32 CLSID used by Windows Color System Calibration Loader task,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1027.013,Obfuscated Files or Information: Encrypted/Encoded File,Defense Evasion,AES-CBC payload decrypt,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1071,Application Layer Protocol,Command and Control,UDP heartbeats (57441/63559) and TCP RAT mode (3747),High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+argamal,T1555,Credentials from Password Stores,Credential Access,Credential/data theft goals per Kaspersky,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1204.002,User Execution: Malicious File,Execution,ClickFix / fake software (e.g. SSMS) / GitHub lures executing TookPS,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1059.001,Command and Scripting Interpreter: PowerShell,Execution,TookPS PowerShell downloader; Gridinsoft 22tuk.digital/online/took.php → iex,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1053.005,Scheduled Task/Job: Scheduled Task,Persistence,\GDrive Backup Sync; Apple Sync RDP tunnel rebuild task,High,Windows,PRIMARY/Gridinsoft,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1572,Protocol Tunneling,Command and Control,Reverse SSH tunnel orchestration for module delivery,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1021.004,Remote Services: SSH,Lateral Movement/C2,SSH bot / reverse tunnel to published IPs,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1021.001,Remote Services: Remote Desktop Protocol,Lateral Movement,RDP enablement + patched termsrv.dll concurrent sessions,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1548.002,Abuse Elevation Control Mechanism: Bypass UAC,Privilege Escalation,Windows RPC UAC bypass (HDUtil),High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1176,Browser Extensions,Persistence/Collection,Hidden Chromium extension loader (Rilide stealer),High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1055,Process Injection,Defense Evasion,SeedHunter injects into Trezor/Ledger Electron apps,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1056.001,Input Capture: Keylogging,Collection,MC Keylogger; OkoSpyware keystrokes,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1113,Screen Capture,Collection,OkoSpyware FFmpeg video of wallet/password-manager windows; screenshots,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1555,Credentials from Password Stores,Credential Access,"Wallet files, cookies, credentials; seed-phrase phishing overlays",High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1562.001,Impair Defenses: Disable or Modify Tools,Defense Evasion,Disable Windows Defender notifications (registry),High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+okobot,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,TookPS/Volume2/SeedHunter domains; ir-post.php exfil,High,Windows,PRIMARY,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1204.001,User Execution: Malicious Link,Execution,ClickFix social engineering prompting victim to run installer command,High,Windows,Huntress,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1566.002,Phishing: Spearphishing Link,Initial Access,Teams IT-helpdesk / Quick Assist social engineering (Morphisec campaign),High,Windows,Morphisec,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1218.005,System Binary Proxy Execution: Mshta / MSI,Execution,Silent MSI install path (Huntress); scripted archive unpack (Morphisec),High,Windows,Huntress/Morphisec,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1574.002,Hijack Execution Flow: DLL Side-Loading,Defense Evasion/Execution,Zillya-style / Notepad++ GUP sideload of malicious libcurl.dll / jli.dll,High,Windows,Huntress/Morphisec,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1053.005,Scheduled Task/Job: Scheduled Task,Persistence,EventLogBackupTask (Morphisec),High,Windows,Morphisec,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1027,Obfuscated Files or Information,Defense Evasion,ChaCha20 Matanbuchus 3.0; encrypted main module from marle.io,High,Windows,Huntress/Zscaler,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1055,Process Injection,Defense Evasion,Reflective PE loader → AstarionRAT,High,Windows,Huntress,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1056,Input Capture,Credential Access,AstarionRAT credential theft / impersonation commands,High,Windows,Huntress,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1090,Proxy,Command and Control,AstarionRAT SOCKS5 proxy,High,Windows,Huntress,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1046,Network Service Discovery,Discovery,AstarionRAT port scanning,High,Windows,Huntress,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+matanbuchus,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,marle.io; ndibstersoft.com telemetry-like path; fixuplink.com,High,Windows,Huntress/Morphisec,PRIMARY_FROZEN_COMPARATOR,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1204.001,User Execution: Malicious Link,Execution,ClickFix → mshta HTA staging,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1204.002,User Execution: Malicious File,Execution,Trojanized NSIS installers (WebEx/Zoom/MobaXterm/DBeaver/FACEIT),High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1218.005,System Binary Proxy Execution: Mshta,Execution,mshta.exe fetches weaponized HTA,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1059.006,Command and Scripting Interpreter: Python,Execution,pythonw.exe loads LICENSE.txt Python loader → Starland RAT in memory,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1059.001,Command and Scripting Interpreter: PowerShell,Execution,WLDR PowerShell stager/loader/agent chain,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1547.001,Boot or Logon Autostart Execution: Registry Run Keys,Persistence,HKCU Run\MyApp → mshta.exe,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1053.005,Scheduled Task/Job: Scheduled Task,Persistence,PythonLauncher-* AtLogOn Highest,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1547.001,Startup Folder,Persistence,Startup LNK launching pythonw.exe with LICENSE.txt,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1497.001,Virtualization/Sandbox Evasion: System Checks,Defense Evasion,Sandbox username/hostname checks; Zone.Identifier ADS check,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1562.001,Impair Defenses: Disable or Modify Tools,Defense Evasion,AMSI/ETW patching before shellcode inject,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1055,Process Injection,Defense Evasion,APC-based shellcode injection; reflective CastleStealer/Remcos,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1555,Credentials from Password Stores,Credential Access,Browser + 40+ crypto wallet recon/theft,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1113,Screen Capture,Collection,Desktop screenshots,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1071.001,Application Layer Protocol: Web Protocols,Command and Control,Primary C2 domains; WLDR encrypted HTTPS beaconing,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1102,Web Service,Command and Control,Telegram bot notification/beacon path,High,Windows,Talos,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
+starlandrat,T1608,Stage Capabilities,Resource Development,Polygon smart-contract dead-drop for fallback C2 domain,High,Windows,Talos — novel resolver,PRIMARY_FROZEN,enterprise,2026-09-20T16:03:04Z
