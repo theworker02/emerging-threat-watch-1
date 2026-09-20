@@ -1,29 +1,42 @@
-# Vendor / CERT email matrix (non-PII)
+# Vendor / CERT contact matrix (non-PII)
 
-**Status:** Gmail MCP sends completed (Rounds 1–4). See [`VENDOR_SUBMISSION_STATUS.md`](VENDOR_SUBMISSION_STATUS.md).  
-**Resend:** Unused (Gmail auth succeeded).
+Verified public intakes used for defensive TI referrals. Detailed family briefs: [`briefs/`](briefs/). Full contact notes: [`VENDOR_CONTACTS.md`](VENDOR_CONTACTS.md).
 
-## Confirmed public reporting addresses used
+## Confirmed public reporting addresses
 
-| Recipient | Channel purpose | Draft IDs / rounds | Confidence |
-|-----------|-----------------|---------------------|------------|
-| `intelreports@kaspersky.com` | Kaspersky TI Reporting (PRIMARY articles cite this) | Round 1 family packs | High — published mailto on Securelist |
-| `central@cisa.dhs.gov` | CISA Central defensive TI / incident share | Round 1 corpus | High — CISA public contact |
-| `Contact@mail.cisa.dhs.gov` | CISA 24/7 cyber reporting mailbox | Round 1–2 family packs | High — CISA contact page |
-| `cert@cert.org` | CERT/CC coordination pointer | Round 1–2 | High — longstanding CERT/CC address |
-| `cpr@checkpoint.com` | Check Point Research MiniFast | Round 2 | High — published CPR contact |
-| `security@github.com` | GitHub SIRT / Trust & Safety | Round 2 Rapuncel | High — GitHub security contact |
-| `securitydisclosure@lastpass.com` | LastPass / Delphos Rapuncel dossier | Round 3 | High — LastPass disclosure mailbox |
-| `security@esentire.com` | eSentire Matanbuchus / Cruciferra | Round 3 | High — published security contact |
-| `unit42-investigations@paloaltonetworks.com` | Unit 42 MiniFast awareness (not breach) | Round 3 | High — Unit 42 investigations alias |
-| `security@cymru.com` | Team Cymru community TI correlation | Round 3 | High — Team Cymru security |
-| `abuse@shadowserver.org` | Shadowserver network reporting correlation | Round 3 | High — Shadowserver abuse |
-| `support@cynet.com` | Cynet Settra detection feedback | Round 3 | High — Cynet RD page guidance |
-| `security@android.com` | Android malware (Okobot) | Round 4 | High — Android Security FAQ |
-| `samples@eset.com` | ESET Research Lab IOC / suspicious-site dossier | Round 5 | High — ESET KB141 |
-| `labs@sentinelone.com` | SentinelLabs researcher TI dossier | Round 5 | High — SentinelLabs GitHub org email |
+| Recipient | Purpose | Confidence |
+|-----------|---------|------------|
+| `intelreports@kaspersky.com` | Kaspersky TI Reporting | High — Securelist mailto |
+| `central@cisa.dhs.gov` | CISA Central TI share | High — CISA public contact |
+| `Contact@mail.cisa.dhs.gov` | CISA cyber reporting mailbox | High — CISA contact page |
+| `cert@cert.org` | CERT/CC coordination | High |
+| `cpr@checkpoint.com` | Check Point Research | High |
+| `security@github.com` | GitHub Security / Trust & Safety | High |
+| `securitydisclosure@lastpass.com` | LastPass / Delphos Rapuncel context | High |
+| `security@esentire.com` | eSentire Matanbuchus / Cruciferra | High |
+| `unit42-investigations@paloaltonetworks.com` | Unit 42 MiniFast awareness (not breach) | High |
+| `security@cymru.com` | Team Cymru community TI | High |
+| `abuse@shadowserver.org` | Shadowserver network correlation | High |
+| `support@cynet.com` | Cynet Settra detection feedback | High |
+| `security@android.com` | Android malware (Okobot) | High — Android Security FAQ |
+| `samples@eset.com` | ESET Research Lab IOC dossier | High — KB141 |
+| `labs@sentinelone.com` | SentinelLabs research | High |
+| `cert@sekoia.com` / `tdr@sekoia.io` | Sekoia CERT / TDR | High — RFC 2350 + TDR |
+| `securitylabs@datadoghq.com` | Datadog Security Labs | High |
+| `response@cert-gib.com` | CERT-GIB / Group-IB | High — FIRST |
+| `reportthreat@infoblox.com` | Infoblox malicious domain/IP | High |
+| `csirt@gdata.de` | G DATA CSIRT | High |
+| `security@expel.io` | Expel TI (SynkLoader publisher) | High — security.txt |
+| `newvirus@any.run` | ANY.RUN new-threat awareness | High |
+| `labs@greynoise.io` / `research@greynoise.io` | GreyNoise Labs / Research | High |
+| `cert-contact.ocd@orange.com` | Orange Cyberdefense CERT | High — FIRST |
+| `virus@gridinsoft.com` / `antimalware@gridinsoft.com` | Gridinsoft malware TI | High |
+| `xfe@us.ibm.com` | IBM X-Force Exchange awareness | High |
+| `security@cybereason.com` | Cybereason security liaison | Medium — confirm research routing |
+| `contact@harfanglab.fr` | HarfangLab (request CTR forward) | Medium — general intake |
+| `virus_submission@bitdefender.com` | Bitdefender Labs | Medium — portal preferred for samples |
 
-## Portals (prefer over inventing vendor inboxes)
+## Portals (no email intake or account-gated)
 
 | Portal | Use |
 |--------|-----|
@@ -31,15 +44,11 @@
 | https://tips.fbi.gov/ | Optional FBI tip after IC3 |
 | https://www.cisa.gov/report | CISA incident/malware report |
 | https://www.cisa.gov/forms/share-indicators | Encrypted indicator share |
-| https://threatfox.abuse.ch/share/ | IOC share (abuse.ch login + Auth-Key) |
+| https://www.microsoft.com/en-us/wdsi/filesubmission | Microsoft malware analysis (no email) |
+| https://talosintelligence.com/reputation_center/ | Cisco Talos reputation tickets (Cisco login) |
+| https://threatfox.abuse.ch/share/ | IOC share (Auth-Key) |
 | https://urlhaus.abuse.ch/ | Malware URL share |
 
-## Not emailed from agent (no suitable public TI mailbox / wrong channel)
+## Intentionally not emailed
 
-Remaining PRIMARY publishers without a verified **malware-TI** intake (Expel, Zscaler ThreatLabz, Huntress VDP, Morphisec, Cisco Talos ESA sample aliases, Cato CNA, Hunt.io): use their web forms / PSIRT only when the channel matches product vulns or sample portals — do **not** guess `security@` or misuse VDP. Microsoft WDSI is portal-only (no email). Hosting/ASN abuse remains blocked without ETW PCAP + SHA-256.
-
-## To enable auto-send via Resend
-
-1. Provide a domain you control (e.g. `yourdomain.com`).
-2. Agent creates the Resend domain and shows DNS records.
-3. You add DNS → verify → agent can send with `from: reports@yourdomain.com` and `replyTo:` from the gitignored complainant profile (confirm reply-to before first send).
+Product VDP / PSIRT-only mailboxes (Acronis HackerOne, Arctic Wolf VDP, F-Secure VRP, Huntress VDP, Morphisec VDP, Cato CNA, Netskope PSIRT, Dragos PSIRT, IBM `psirt@`, etc.), OT-only desks without ETW ICS scope, and vendors with web forms only (Fortra, ReversingLabs customer portals, VMRay IR mailbox, Netcraft contact form, Censys research-access program). Hosting/ASN abuse remains blocked without ETW PCAP + SHA-256.

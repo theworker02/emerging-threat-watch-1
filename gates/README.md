@@ -1,9 +1,13 @@
-# Security gates (Tier 1)
+# Internal job gates
 
-See `shared/methodology/GATED_AUTONOMY.md`.
+Operational queue for gated research jobs. Not part of the law-enforcement handoff surface.
 
-- `queue/` — pending your approval
-- `approved/` — approved, ready to run
-- `denied/` — rejected
-- `completed/` — finished runs
-- `payloads/` — job-specific JSON/YAML referenced by jobs
+See `shared/methodology/GATED_AUTONOMY.md` for policy.
+
+| Directory | Meaning |
+|-----------|---------|
+| `queue/` | Pending approval |
+| `approved/` | Approved |
+| `denied/` | Rejected |
+| `completed/` | Finished |
+| `payloads/` | Job-specific JSON/YAML |

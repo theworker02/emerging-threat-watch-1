@@ -6,7 +6,7 @@
 
 Cisco Talos (+ BleepingComputer / Security Affairs secondaries)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/
 - https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2026/07/new-starland-rat-and-WLDR-implant-campaign.txt

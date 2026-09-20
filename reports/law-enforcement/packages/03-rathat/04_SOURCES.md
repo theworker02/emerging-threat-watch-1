@@ -6,7 +6,7 @@
 
 Zimperium zLabs
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://zimperium.com/blog/rathat-ai-powered-mobile-threat-is-here-for-your-credentials-bank-accounts
 - https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat

@@ -6,7 +6,7 @@
 
 Kaspersky GReAT / Securelist · Kaspersky Blog · Kaspersky Press
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/
 - https://www.kaspersky.com/blog/argamal-hentai-games-rat-trojan/55944/

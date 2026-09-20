@@ -9,7 +9,7 @@
 | Need | File |
 |------|------|
 | **Full structured dossier** | [`IC3_FULL_PACKAGE.md`](../law-enforcement/packages/09-sharkloader/IC3_FULL_PACKAGE.md) |
-| **Paste pack** | [`IC3_PASTE_READY.md`](../law-enforcement/packages/09-sharkloader/IC3_PASTE_READY.md) |
+| **structured dossier** | [`IC3_PASTE_READY.md`](../law-enforcement/packages/09-sharkloader/IC3_PASTE_READY.md) |
 | Indicators CSV | `03_INDICATORS.csv` (19 SHK-IND rows) |
 | Sources | `04_SOURCES.md` |
 | Caveats | `05_CAVEATS_AND_LIMITS.md` |

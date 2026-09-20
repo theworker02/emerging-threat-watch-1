@@ -6,7 +6,7 @@
 
 Check Point Research · Palo Alto Networks Unit 42 (+ CyberVeille / The Hacker News secondaries)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/
 - https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/

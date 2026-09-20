@@ -1,7 +1,7 @@
 # Vendor / CERT / infra brief — TencShell (`ETW-TEN-IC3`)
 
 **Audience:** Vendor PSIRT / CERT / hosting abuse (after IC3)  
-**IC3 paste pack:** [`../../packages/10-tencshell/IC3_PASTE_READY.md`](../../packages/10-tencshell/IC3_PASTE_READY.md)  
+**Structured dossier:** see package `IC3_FULL_PACKAGE.md` + `02_FBI_SUMMARY.md`
 **PRIMARY:** Cato CTRL; Hunt.io follow-on  
 **Case isolation:** TencShell only — no shared-operator claim with other ETW families.
 

@@ -6,7 +6,7 @@
 
 LastPass TIME + Delphos (primary); eSentire / Proofpoint (Cruciferra crypter context); Trend Micro (BoryptGrab comparator only)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer
 - https://www.esentire.com/blog/malware-as-a-service-cocktail-errtraffic-and-cruciferra-killing-your-edr-since-2025

@@ -1,63 +1,47 @@
 # Pre-Submission Checklist — FBI / IC3
 
-Complete **one checklist per package**. Print or copy into the package folder as `REVIEW_<date>.md` if desired.
+Complete **one checklist per package**. Keep completed checklists offline if they contain complainant PII.
 
-**Package ID:** _______________ (`ETW-RAP-IC3` / `ETW-SET-IC3` / `ETW-RAT-IC3` / `ETW-NRB-IC3` / `ETW-POL-IC3`)  
+**Package ID:** _______________  
 **Reviewer name:** _______________  
 **Review date (UTC):** _______________
-
-> **Next active filing:** PollCat `ETW-POL-IC3` — local helpers under `private/filing-helpers/05-pollcat/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`, `07_IC3_FORM_FIELDS.md`).
 
 ## A. Case isolation
 
 - [ ] This filing covers **one family only**
 - [ ] No indicators or attribution copied from another ETW family without linkage evidence
-- [ ] Landscape / trust-surface notes were **not** pasted as shared-operator claims
+- [ ] Landscape / trust-surface notes were **not** used as shared-operator claims
 
 ## B. Provenance language
 
 - [ ] Narrative uses “researchers reported” / “I retained” where appropriate
 - [ ] Does **not** claim ETW independently discovered the family (unless true)
 - [ ] Does **not** label infrastructure `OBSERVED` unless an OBSERVED row exists with method + timestamp
-- [ ] Vendor attribution (e.g., Mirage Kitten) is labeled as **that vendor’s assessment**
-
-
+- [ ] Vendor attribution is labeled as **that vendor’s assessment**
 
 ## C. Facts vs speculation
 
 - [ ] No dollar-loss figure unless the reporter can document it
 - [ ] No invented victim names or victim counts
 - [ ] No fabricated SHA-256 / domains / C2 hosts
-- [ ] Historical leads (e.g., WIN-LIVFRVQFMKO) are labeled leads, not confirmed campaign history
 - [ ] Analytical caveats in `05_CAVEATS_AND_LIMITS.md` were read and accepted
-
-
 
 ## D. Package completeness
 
-- [ ] `00_COVER_SHEET.md` reviewed
-- [ ] `01_NARRATIVE_PASTE.txt` matches approved wording
-- [ ] `02_FBI_SUMMARY.md` contact block filled
-- [ ] `03_INDICATORS.csv` present and current
-- [ ] `04_SOURCES.md` URLs verified reachable or archived locally
-- [ ] `06_EVIDENCE_RETAINED.md` retention items completed
+- [ ] `02_FBI_SUMMARY.md` reviewed
+- [ ] `03_INDICATORS.csv` present and PRIMARY-SOURCE labeled
+- [ ] `04_SOURCES.md` lists exact primary URLs
+- [ ] `05_CAVEATS_AND_LIMITS.md` accepted
+- [ ] `IC3_FULL_PACKAGE.md` narrative reviewed
+- [ ] No malware binaries included
 
+## E. Channel choice
 
-
-## E. Safety
-
-- [ ] No malware binary attached to the web form
-- [ ] No C2 interaction was performed to “confirm” indicators
-- [ ] No credentials / private keys / session tokens included
-
-
+- [ ] IC3 vs FBI tips vs hosting abuse roles understood ([`HOW_TO_FILE.md`](HOW_TO_FILE.md))
+- [ ] Hosting abuse **not** attempted without PCAP + SHA-256 gate
 
 ## F. After filing
 
-- [ ] IC3 complaint number recorded in `MASTER_INDEX.csv` and `02_FBI_SUMMARY.md`
-- [ ] FBI tip / case number recorded if any
-- [ ] Local archive of what was submitted (PDF/screenshot of confirmation)
-
-**Decision:** ☐ Ready to file · ☐ Needs revision · ☐ Hold (gaps too material)
-
-**Reviewer signature / initials:** _______________
+- [ ] IC3 Submission ID recorded in `IC3_FILING_RECORD.md`
+- [ ] `MASTER_INDEX.csv` updated
+- [ ] Optional FBI tip cites the IC3 ID

@@ -6,7 +6,7 @@
 
 Kaspersky GReAT / Securelist
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://securelist.com/strikeshark-campaign/120326/
 
