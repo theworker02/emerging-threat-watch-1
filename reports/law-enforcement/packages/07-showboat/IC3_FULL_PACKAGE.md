@@ -29,7 +29,7 @@
 | NodeRabbit | `ETW-NRB-IC3` | `dded86972e9347e0be27a6597b4cf08a` |
 | PollCat | `ETW-POL-IC3` | `98a4444754324e539dbbffcb10c70637` |
 | SynkLoader | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
-| **Showboat (this filing)** | `ETW-SHO-IC3` | *not yet filed* |
+| **Showboat (this filing)** | `ETW-SHO-IC3` | `db42033f319844c08ad103befebfca08` |
 
 ---
 
