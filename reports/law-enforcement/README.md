@@ -1,6 +1,6 @@
 # Law Enforcement Handoff — FBI & IC3
 
-**Status:** Rapuncel, Settra, RatHat, NodeRabbit, PollCat, SynkLoader `FILED_IC3` · Showboat / candidates remain unfiled  
+**Status:** Rapuncel, Settra, RatHat, NodeRabbit, PollCat, SynkLoader `FILED_IC3` · **Showboat `ETW-SHO-IC3` next to file** · candidates remain unfiled  
 **Research cutoff:** 2026-09-19  
 **Independently observed campaign ownership by ETW:** none
 
@@ -36,7 +36,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | 4 | NodeRabbit | `ETW-NRB-IC3` | Cross-platform developer-targeted RAT | [`packages/04-noderabbit/`](packages/04-noderabbit/) — **FILED_IC3** `dded86972e9347e0be27a6597b4cf08a` (2026-09-19 5:15:51 PM EST); [`IC3_FILING_RECORD.md`](packages/04-noderabbit/IC3_FILING_RECORD.md) |
 | 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST); [`IC3_FILING_RECORD.md`](packages/05-pollcat/IC3_FILING_RECORD.md) · pointer [`reports/pollcat/POLLCAT_IC3_BRIEF.md`](../pollcat/POLLCAT_IC3_BRIEF.md) |
 | 6 | SynkLoader | `ETW-SYN-IC3` | Modular mixed-language loader / Teams phishing | [`packages/06-synkloader/`](packages/06-synkloader/) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST); [`IC3_FILING_RECORD.md`](packages/06-synkloader/IC3_FILING_RECORD.md) |
-| 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) — **next IC3 filing** |
+| 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) — **next IC3 filing**; [`IC3_FULL_PACKAGE.md`](packages/07-showboat/IC3_FULL_PACKAGE.md) |
 
 ### Candidate / comparator stubs (**NOT READY TO FILE**)
 

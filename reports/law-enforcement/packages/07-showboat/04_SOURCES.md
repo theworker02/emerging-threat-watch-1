@@ -6,7 +6,7 @@
 
 Lumen Black Lotus Labs
 
-## Copy-pasteable URLs
+## URLs
 
 - https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms
 - https://raw.githubusercontent.com/blacklotuslabs/IOCs/main/Showboat_IOCs.txt

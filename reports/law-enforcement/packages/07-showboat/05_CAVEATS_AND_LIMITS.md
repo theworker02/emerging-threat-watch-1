@@ -22,7 +22,7 @@
 
 Persistent unauthorized access in Linux telecom/ISP environments, per Lumen framing.
 
-## Provenance vocabulary (for reviewers)
+## Provenance vocabulary
 
 | Label | Meaning in this package |
 |-------|-------------------------|
