@@ -1,9 +1,7 @@
 # IC3 / FBI Full Complaint Package — SynkLoader
 
-**Package ID:** `ETW-SYN-IC3`  
+**Status:** `FILED_IC3` · Submission ID `3440d0c64dc240499ff66deaa3311a0b` · **Cutoff:** 2026-09-19  
 **Family:** SynkLoader only (case-isolated)  
-**Status:** DRAFT — human review required · do not auto-submit  
-**Research cutoff:** 2026-09-19  
 **Portal:** https://www.ic3.gov/
 
 ---

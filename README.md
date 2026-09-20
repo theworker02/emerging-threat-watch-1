@@ -233,7 +233,7 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | RatHat | `reports/law-enforcement/packages/03-rathat/` (`ETW-RAT-IC3`) — **FILED_IC3** `f92c4c2f0dd3481f898fdd125e728adf` (2026-09-19 5:08:29 PM EST) |
 | NodeRabbit | `reports/law-enforcement/packages/04-noderabbit/` (`ETW-NRB-IC3`) — **FILED_IC3** `dded86972e9347e0be27a6597b4cf08a` (2026-09-19 5:15:51 PM EST) |
 | PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST) |
-| SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) |
+| SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST) |
 | Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) |
 | Abyssos … StarlandRAT stubs | `packages/08`–`15` — **not filing-ready** |
 | Landscape comparison | `reports/landscape/EMERGING_THREAT_LANDSCAPE_REPORT.pdf` |

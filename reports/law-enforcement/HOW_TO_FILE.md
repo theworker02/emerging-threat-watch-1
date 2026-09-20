@@ -56,7 +56,7 @@ IC3 web forms often limit uploads. Prefer:
 
 If a field office requests files, send the entire `packages/0N-<family>/` folder (still no malware binaries).
 
-## Five active filings, not one
+## Six active filings, not one
 
 | Package ID | Family | Why separate | Status |
 |------------|--------|--------------|--------|
@@ -65,5 +65,6 @@ If a field office requests files, send the entire `packages/0N-<family>/` folder
 | ETW-RAT-IC3 | RatHat | Android Accessibility/ADB chain | `FILED_IC3` |
 | ETW-NRB-IC3 | NodeRabbit | Developer-targeted Node.js RAT; Mirage Kitten is Kaspersky’s attribution | `FILED_IC3` |
 | ETW-POL-IC3 | PollCat | Obfuscated JS RAT; RankChallenge lure; co-disclosed with NodeRabbit but **separate implant** | `FILED_IC3` `98a4444754324e539dbbffcb10c70637` |
+| ETW-SYN-IC3 | SynkLoader | Teams IT-helpdesk phishing / modular loader / PhishLocker | `FILED_IC3` `3440d0c64dc240499ff66deaa3311a0b` |
 
-There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge.
+There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly. Next active draft: Showboat (`ETW-SHO-IC3`).

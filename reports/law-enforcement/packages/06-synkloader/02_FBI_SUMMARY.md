@@ -1,21 +1,21 @@
 # SynkLoader — Summary
 
-**Package:** `ETW-SYN-IC3` · **Status:** DRAFT — ready for human IC3 filing · **Cutoff:** 2026-09-19
+**Package:** `ETW-SYN-IC3` · **Status:** FILED_IC3 · **Cutoff:** 2026-09-19
 
 ## Overview
 
 Defensive threat-intelligence package concerning SynkLoader as publicly documented by Expel (2026-08-20, Marcus Hutchins). Expel describes a modular mixed-language loader delivered through Microsoft Teams phishing posing as IT helpdesk (external `*.onmicrosoft.com` tenant, display name IT Service Desk), with initial MSI hosted on Azure Blob Storage (`filereserve.blob.core.windows.net/.../331.msi`, product name PowershellCleaner). Expel reports nested PowerShell decryption into an in-memory Python loader (`ss.py`), fake Visual C++ DLLs (`msvcp150.dll` / `msvcp160.dll`), a fake Windows 11 lock-screen credential-theft module (PhishLocker), and additional modules including TrafficRedirector and StreamMaster VNC. **Author identity remains NOT_ESTABLISHED.** Matanbuchus is a technique comparator only — do not file jointly.
 
-## Pre-filing cross-references (separate IC3 complaints — no shared-operator claim)
+## IC3 filing
 
-| Family | Package | Submission ID |
-|--------|---------|---------------|
-| Rapuncel | `ETW-RAP-IC3` | `208b747c6f7445f0af2b69a9d63acc36` |
-| Settra | `ETW-SET-IC3` | `631d8b4800d04bc19cdbfc6662e5c52c` |
-| RatHat | `ETW-RAT-IC3` | `f92c4c2f0dd3481f898fdd125e728adf` |
-| NodeRabbit | `ETW-NRB-IC3` | `dded86972e9347e0be27a6597b4cf08a` |
-| PollCat | `ETW-POL-IC3` | `98a4444754324e539dbbffcb10c70637` |
-| **SynkLoader (this package)** | `ETW-SYN-IC3` | *not yet filed* |
+| Field | Value |
+|-------|-------|
+| Submission ID | `3440d0c64dc240499ff66deaa3311a0b` |
+| Date filed | 2026-09-19 10:04:35 PM EST |
+| Date filed (UTC) | 2026-09-20T02:04:35Z |
+| Record | [`IC3_FILING_RECORD.md`](IC3_FILING_RECORD.md) |
+| Separate related filings | Rapuncel `208b747c6f7445f0af2b69a9d63acc36`; Settra `631d8b4800d04bc19cdbfc6662e5c52c`; RatHat `f92c4c2f0dd3481f898fdd125e728adf`; NodeRabbit `dded86972e9347e0be27a6597b4cf08a`; PollCat `98a4444754324e539dbbffcb10c70637` (no shared-operator claim) |
+| Not merged | Matanbuchus (`ETW-MAT-IC3`) — technique comparator only |
 
 ## Why this may matter for FBI cyber / IC3 correlation
 
@@ -45,4 +45,3 @@ Full table: `03_INDICATORS.csv` (29 rows). Structured dossier: `IC3_FULL_PACKAGE
 1. Treat as defensive threat-intelligence referral, not a completed criminal case file.
 2. Correlate hashes / domains / OBSERVED_PASSIVE IPs against existing holdings.
 3. Keep **separate** from other ETW packages unless linkage evidence appears.
-4. After filing: record Submission ID in `IC3_FILING_RECORD.md`, this summary, `MASTER_INDEX.csv`, and root `README.md`.
