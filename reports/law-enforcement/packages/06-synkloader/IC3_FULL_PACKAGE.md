@@ -28,7 +28,7 @@
 | RatHat | `ETW-RAT-IC3` | `f92c4c2f0dd3481f898fdd125e728adf` |
 | NodeRabbit | `ETW-NRB-IC3` | `dded86972e9347e0be27a6597b4cf08a` |
 | PollCat | `ETW-POL-IC3` | `98a4444754324e539dbbffcb10c70637` |
-| **SynkLoader (this filing)** | `ETW-SYN-IC3` | *not yet filed* |
+| **SynkLoader (this filing)** | `ETW-SYN-IC3` | `3440d0c64dc240499ff66deaa3311a0b` |
 
 ---
 
