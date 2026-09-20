@@ -56,13 +56,17 @@ IC3 web forms often limit uploads. Prefer:
 
 If a field office requests files, send the entire `packages/0N-<family>/` folder (still no malware binaries).
 
-## Four filings, not one
+## Seven active filings, not one
 
-| Package ID | Family | Why separate |
-|------------|--------|--------------|
-| ETW-RAP-IC3 | Rapuncel | Stealer + GitHub distribution; Cruciferra is shared tooling |
-| ETW-SET-IC3 | Settra | Ransomware encryptor ≠ operator intrusion tooling |
-| ETW-RAT-IC3 | RatHat | Android Accessibility/ADB chain |
-| ETW-NRB-IC3 | NodeRabbit | Developer-targeted Node.js RAT; Mirage Kitten is Kaspersky’s attribution |
+| Package ID | Family | Why separate | Status |
+|------------|--------|--------------|--------|
+| ETW-RAP-IC3 | Rapuncel | Stealer + GitHub distribution; Cruciferra is shared tooling | `FILED_IC3` |
+| ETW-SET-IC3 | Settra | Ransomware encryptor ≠ operator intrusion tooling | `FILED_IC3` |
+| ETW-RAT-IC3 | RatHat | Android Accessibility/ADB chain | `FILED_IC3` |
+| ETW-NRB-IC3 | NodeRabbit | Developer-targeted Node.js RAT; Mirage Kitten is Kaspersky’s attribution | `FILED_IC3` |
+| ETW-POL-IC3 | PollCat | Obfuscated JS RAT; RankChallenge lure; co-disclosed with NodeRabbit but **separate implant** | `FILED_IC3` `98a4444754324e539dbbffcb10c70637` |
+| ETW-SYN-IC3 | SynkLoader | Teams IT-helpdesk phishing / modular loader / PhishLocker | `FILED_IC3` `3440d0c64dc240499ff66deaa3311a0b` |
+| ETW-SHO-IC3 | Showboat | Linux telecom post-exploitation; historical activity may predate 2026 disclosure | `FILED_IC3` `db42033f319844c08ad103befebfca08` |
+| ETW-ABY-IC3 | Abyssos | Modular Windows C++ RAT (HVNC / credential theft); Zscaler primary | `FILED_IC3` `a23f0a9d6799480e994284416d354713` |
 
-There is **no** evidence in this repository establishing that these four campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears.
+There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly. Candidate stubs (09–15) remain **not filing-ready**. Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`.

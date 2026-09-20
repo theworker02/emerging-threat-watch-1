@@ -88,11 +88,11 @@ Seven **active** investigation trees under `investigations/`:
 
 ## Candidate / comparator stubs
 
-Eight **UNVERIFIED** stubs share the same folder skeleton. IOC ledgers stay empty / UNVERIFIED until primary URL freeze. **Candidate stub packages are not filing-ready.**
+Seven remaining **UNVERIFIED** stubs share the same folder skeleton until primary URL freeze. **Candidate stub packages are not filing-ready** (except Abyssos, now primary-frozen / IC3-ready).
 
 | Family | Kind | Why tracked |
 |--------|------|-------------|
-| **Abyssos** | Candidate | Modular RAT; young corpus (Zscaler Aug 2026 framing) |
+| **Abyssos** | Filed (promoted from candidate) | Modular RAT — Zscaler primary frozen 2026-09-20; `ETW-ABY-IC3` **FILED_IC3** `a23f0a9d6799480e994284416d354713` |
 | **SharkLoader** | Candidate | Custom loader → Cobalt Strike (Kaspersky June 2026 framing) |
 | **TencShell** | Candidate | Go implant; Rshell OSS lineage problem (Cato CTRL 2026) |
 | **MiniFast** | Candidate | Zoom installer trust abuse; PollCat context only — **not merged** |
@@ -232,10 +232,11 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | Settra | `reports/law-enforcement/packages/02-settra/` (`ETW-SET-IC3`) — **FILED_IC3** `631d8b4800d04bc19cdbfc6662e5c52c` (2026-09-19 4:59:46 PM EST) |
 | RatHat | `reports/law-enforcement/packages/03-rathat/` (`ETW-RAT-IC3`) — **FILED_IC3** `f92c4c2f0dd3481f898fdd125e728adf` (2026-09-19 5:08:29 PM EST) |
 | NodeRabbit | `reports/law-enforcement/packages/04-noderabbit/` (`ETW-NRB-IC3`) — **FILED_IC3** `dded86972e9347e0be27a6597b4cf08a` (2026-09-19 5:15:51 PM EST) |
-| PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) |
-| SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) |
-| Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) |
-| Abyssos … StarlandRAT stubs | `packages/08`–`15` — **not filing-ready** |
+| PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST) |
+| SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST) |
+| Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST) |
+| Abyssos | `reports/law-enforcement/packages/08-abyssos/` (`ETW-ABY-IC3`) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
+| SharkLoader … StarlandRAT stubs | `packages/09`–`15` — **not filing-ready** |
 | Landscape comparison | `reports/landscape/EMERGING_THREAT_LANDSCAPE_REPORT.pdf` |
 
 **Rules:**

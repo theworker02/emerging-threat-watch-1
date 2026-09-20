@@ -24,4 +24,4 @@
 
 ## Status
 
-Phase 1 package stub seeded from Kaspersky Securelist primary (dual-referenced with NodeRabbit artifact `PS-NRB-001`). Cases remain separate.
+Phase 1 package seeded from Kaspersky Securelist primary (dual-referenced with NodeRabbit artifact `PS-NRB-001`). Cases remain separate. **IC3 package `ETW-POL-IC3` filed** — Submission ID `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST). See [`reports/law-enforcement/packages/05-pollcat/IC3_FILING_RECORD.md`](../../reports/law-enforcement/packages/05-pollcat/IC3_FILING_RECORD.md).

@@ -6,7 +6,7 @@
 
 Kaspersky GReAT / Securelist
 
-## Copy-pasteable URLs
+## URLs
 
 - https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/
 

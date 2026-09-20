@@ -23,7 +23,7 @@
 
 Credential theft and potential tunnel-enabled access to internal/external systems via the infected host, per Expel framing.
 
-## Provenance vocabulary (for reviewers)
+## Provenance vocabulary
 
 | Label | Meaning in this package |
 |-------|-------------------------|

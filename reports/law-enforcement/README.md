@@ -1,6 +1,6 @@
 # Law Enforcement Handoff — FBI & IC3
 
-**Status:** Rapuncel, Settra, RatHat, NodeRabbit `FILED_IC3` · PollCat / SynkLoader / Showboat / candidates remain unfiled  
+**Status:** Rapuncel–Showboat + Abyssos `FILED_IC3` · remaining candidates (09–15) unfiled  
 **Research cutoff:** 2026-09-19  
 **Independently observed campaign ownership by ETW:** none
 
@@ -34,15 +34,15 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | 2 | Settra | `ETW-SET-IC3` | Enterprise ransomware + operator intrusion | [`packages/02-settra/`](packages/02-settra/) — **FILED_IC3** `631d8b4800d04bc19cdbfc6662e5c52c` (2026-09-19 4:59:46 PM EST); [`IC3_FILING_RECORD.md`](packages/02-settra/IC3_FILING_RECORD.md) |
 | 3 | RatHat | `ETW-RAT-IC3` | Android Accessibility → Wireless ADB RAT | [`packages/03-rathat/`](packages/03-rathat/) — **FILED_IC3** `f92c4c2f0dd3481f898fdd125e728adf` (2026-09-19 5:08:29 PM EST); [`IC3_FILING_RECORD.md`](packages/03-rathat/IC3_FILING_RECORD.md) |
 | 4 | NodeRabbit | `ETW-NRB-IC3` | Cross-platform developer-targeted RAT | [`packages/04-noderabbit/`](packages/04-noderabbit/) — **FILED_IC3** `dded86972e9347e0be27a6597b4cf08a` (2026-09-19 5:15:51 PM EST); [`IC3_FILING_RECORD.md`](packages/04-noderabbit/IC3_FILING_RECORD.md) |
-| 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) |
-| 6 | SynkLoader | `ETW-SYN-IC3` | Modular mixed-language loader / Teams phishing | [`packages/06-synkloader/`](packages/06-synkloader/) |
-| 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) |
+| 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST); [`IC3_FILING_RECORD.md`](packages/05-pollcat/IC3_FILING_RECORD.md) · pointer [`reports/pollcat/POLLCAT_IC3_BRIEF.md`](../pollcat/POLLCAT_IC3_BRIEF.md) |
+| 6 | SynkLoader | `ETW-SYN-IC3` | Modular mixed-language loader / Teams phishing | [`packages/06-synkloader/`](packages/06-synkloader/) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST); [`IC3_FILING_RECORD.md`](packages/06-synkloader/IC3_FILING_RECORD.md) |
+| 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST); [`IC3_FILING_RECORD.md`](packages/07-showboat/IC3_FILING_RECORD.md) |
 
 ### Candidate / comparator stubs (**NOT READY TO FILE**)
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
-| 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (candidate) | [`packages/08-abyssos/`](packages/08-abyssos/) |
+| 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (Zscaler) | [`packages/08-abyssos/`](packages/08-abyssos/) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST); [`IC3_FILING_RECORD.md`](packages/08-abyssos/IC3_FILING_RECORD.md) |
 | 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (candidate) | [`packages/09-sharkloader/`](packages/09-sharkloader/) |
 | 10 | TencShell | `ETW-TEN-IC3` | Go implant / Rshell lineage problem (candidate) | [`packages/10-tencshell/`](packages/10-tencshell/) |
 | 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) |
@@ -65,10 +65,12 @@ packages/0N-family/
 ├── 03_INDICATORS.csv          ← PRIMARY-SOURCE / labeled OBSERVED_PASSIVE indicators
 ├── 04_SOURCES.md              ← exact public research URLs
 ├── 05_CAVEATS_AND_LIMITS.md   ← what this package does not claim
-└── IC3_FILING_RECORD.md       ← only after an IC3 filing is recorded (Rapuncel has this)
+├── FILING_SETUP.md            ← optional; present for PollCat (next active filing)
+├── REVIEW_CHECKLIST.md        ← optional; pre-submit review copy
+└── IC3_FILING_RECORD.md       ← only after an IC3 filing is recorded (Rapuncel–NodeRabbit have this)
 ```
 
-Local filing helpers (gitignored): `private/filing-helpers/0N-family/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`).
+Local filing helpers (gitignored): `private/filing-helpers/0N-family/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`). Regenerate with `python shared/tooling/build_le_packages.py`.
 
 ## Hard rules
 

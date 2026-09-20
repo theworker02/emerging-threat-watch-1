@@ -22,4 +22,4 @@
 
 ## Status
 
-Phase 1 package stub. Primary URL frozen in source-index; claim corpus intentionally thin until deeper extraction.
+Phase 1 package with Expel primary freeze and 29 SYN-IND rows. **IC3 package `ETW-SYN-IC3` filed** — Submission ID `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST). See [`reports/law-enforcement/packages/06-synkloader/IC3_FILING_RECORD.md`](../../reports/law-enforcement/packages/06-synkloader/IC3_FILING_RECORD.md).

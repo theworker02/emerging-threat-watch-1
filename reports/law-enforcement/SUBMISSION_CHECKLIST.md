@@ -2,9 +2,11 @@
 
 Complete **one checklist per package**. Print or copy into the package folder as `REVIEW_<date>.md` if desired.
 
-**Package ID:** _______________ (`ETW-RAP-IC3` / `ETW-SET-IC3` / `ETW-RAT-IC3` / `ETW-NRB-IC3`)  
+**Package ID:** _______________ (`ETW-RAP-IC3` / `ETW-SET-IC3` / `ETW-RAT-IC3` / `ETW-NRB-IC3` / `ETW-POL-IC3`)  
 **Reviewer name:** _______________  
 **Review date (UTC):** _______________
+
+> **Next active filing:** PollCat `ETW-POL-IC3` — local helpers under `private/filing-helpers/05-pollcat/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`, `07_IC3_FORM_FIELDS.md`).
 
 ## A. Case isolation
 

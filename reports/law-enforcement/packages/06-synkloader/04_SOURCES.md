@@ -6,7 +6,7 @@
 
 Expel
 
-## Copy-pasteable URLs
+## URLs
 
 - https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
 

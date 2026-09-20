@@ -23,7 +23,7 @@
 
 Unauthorized access to developer workstations via coding-challenge social engineering, per Kaspersky framing.
 
-## Provenance vocabulary (for reviewers)
+## Provenance vocabulary
 
 | Label | Meaning in this package |
 |-------|-------------------------|
