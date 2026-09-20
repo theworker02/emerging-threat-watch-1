@@ -16,6 +16,12 @@ Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **Argamal**
 - Caveats: `05_CAVEATS_AND_LIMITS.md`
 - Repo: https://github.com/theworker02/emerging-threat-watch-1
 
+## Preferred public contacts
+
+- Kaspersky Intelligence Reporting: `intelreports@kaspersky.com` (Securelist footnote)
+- CERT/CC: `cert@cert.org` · CISA Central: `Contact@mail.cisa.dhs.gov`
+- Draft: [`../email-drafts/12-argamal.txt`](../email-drafts/12-argamal.txt) · private pack: `../../private/vendor-submissions/12-argamal/`
+
 ## Hosting abuse gate
 
 Limited published IPv4; prefer domains + hash when available. PCAP still required for strong ASN packages.

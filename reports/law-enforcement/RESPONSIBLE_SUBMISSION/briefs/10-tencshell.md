@@ -16,6 +16,13 @@ Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **TencShell
 - Caveats: `05_CAVEATS_AND_LIMITS.md`
 - Repo: https://github.com/theworker02/emerging-threat-watch-1
 
+## Preferred public contacts
+
+- CERT/CC: `cert@cert.org`
+- CISA Central: `Contact@mail.cisa.dhs.gov`
+- Do **not** use Cato `vulnerability-report@catonetworks.com` for this TI referral (product CNA only)
+- Draft: [`../email-drafts/10-tencshell.txt`](../email-drafts/10-tencshell.txt) · private pack: `../../private/vendor-submissions/10-tencshell/`
+
 ## Hosting abuse gate
 
 Require non-CDN IP + port + timed PCAP + sample SHA-256 before ASN tickets. See [`docs/ENFORCEMENT_READINESS.md`](../../../../docs/ENFORCEMENT_READINESS.md).

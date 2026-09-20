@@ -17,6 +17,11 @@ Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **Matanbuch
 - Comparator: `docs/TECHNIQUE_COMPARATORS.md` / `intelligence/technique-comparators.csv`
 - Repo: https://github.com/theworker02/emerging-threat-watch-1
 
+## Preferred public contacts
+
+- CERT/CC: `cert@cert.org` · CISA Central: `Contact@mail.cisa.dhs.gov`
+- Draft: [`../email-drafts/14-matanbuchus.txt`](../email-drafts/14-matanbuchus.txt) · private pack: `../../private/vendor-submissions/14-matanbuchus/`
+
 ## Hosting abuse gate
 
 Require non-CDN IP + port + timed PCAP + SHA-256. Keep SynkLoader tickets analytically separate.

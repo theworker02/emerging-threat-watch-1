@@ -16,6 +16,12 @@ Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **StarlandR
 - Caveats: `05_CAVEATS_AND_LIMITS.md`
 - Repo: https://github.com/theworker02/emerging-threat-watch-1
 
+## Preferred public contacts
+
+- CERT/CC: `cert@cert.org` · CISA Central: `Contact@mail.cisa.dhs.gov`
+- Do **not** use Cisco PSIRT / Talos ESA sample inboxes for this campaign TI referral
+- Draft: [`../email-drafts/15-starlandrat.txt`](../email-drafts/15-starlandrat.txt) · private pack: `../../private/vendor-submissions/15-starlandrat/`
+
 ## Hosting abuse gate
 
 Multiple published IPv4 exist; still require timed PCAP + sample SHA-256 for strong ASN packages. Crypto-contract address is CAMPAIGN_ASSOCIATED metadata, not a hosting takedown target by itself.

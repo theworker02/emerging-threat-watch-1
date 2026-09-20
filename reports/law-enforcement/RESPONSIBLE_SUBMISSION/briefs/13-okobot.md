@@ -16,6 +16,12 @@ Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **Okobot** 
 - Caveats: `05_CAVEATS_AND_LIMITS.md`
 - Repo: https://github.com/theworker02/emerging-threat-watch-1
 
+## Preferred public contacts
+
+- Kaspersky Intelligence Reporting: `intelreports@kaspersky.com`
+- CERT/CC: `cert@cert.org` · CISA Central: `Contact@mail.cisa.dhs.gov`
+- Draft: [`../email-drafts/13-okobot.txt`](../email-drafts/13-okobot.txt) · private pack: `../../private/vendor-submissions/13-okobot/`
+
 ## Hosting abuse gate
 
 Published IPv4 exist in package CSV; still require timed PCAP + SHA-256 for ASN abuse packages.

@@ -12,7 +12,7 @@
 | **FBI tips / field office** | tips.fbi.gov or local cyber squad | After IC3 ID (preferred) | `02_FBI_SUMMARY.md` + CSV + sources + IC3 ID | Optional follow-on |
 | **Hosting / ASN abuse** | ISP / VPS / cloud abuse desks | Non-CDN IP + port + timed PCAP + SHA-256 | See takedown template | **Blocked** — no ETW lab PCAP yet |
 | **Registrar / DNS** | Domain registrar abuse | Domain + active/pDNS + sample hash showing check-in | Domain list + hash | Partial for some families |
-| **Vendor / CERT coordination** | Vendor PSIRT / national CERTs | Public research confirmation; infra still live | Pointer to PRIMARY article + ETW CSV | Briefs under `briefs/` |
+| **Vendor / CERT coordination** | Vendor PSIRT / national CERTs | Public research confirmation; infra still live | Pointer to PRIMARY article + ETW CSV | Briefs under `briefs/` · contacts [`VENDOR_CONTACTS.md`](VENDOR_CONTACTS.md) · status [`VENDOR_SUBMISSION_STATUS.md`](VENDOR_SUBMISSION_STATUS.md) · drafts `email-drafts/` · private packs `../private/vendor-submissions/` |
 | **Platform Trust & Safety** | GitHub / Discord / Telegram / etc. | Platform-hosted lure or seller channel with IDs | Repo/URL/IDs + timestamps | Family-specific when PRIMARY has them |
 | **Cybercrime trackers** | abuse.ch / ThreatFox / URLhaus (Auth-Key) | PRIMARY or OBSERVED with clear provenance | Hash / URL / IP per tracker rules | When Auth-Key available |
 
@@ -30,13 +30,20 @@
 
 | Package | Family | IC3 | Vendor/CERT brief | Hosting abuse | Notes |
 |---------|--------|-----|-------------------|---------------|-------|
-| 01–09 | (filed) | `FILED_IC3` | Optional update only | Gap: PCAP | Do not re-file same family without update flag |
+| 04 | NodeRabbit | `FILED_IC3` | `briefs/04-noderabbit.md` | Gap: PCAP | Kaspersky intelreports / CERT |
+| 05 | PollCat | `FILED_IC3` | `briefs/05-pollcat.md` | Gap: PCAP | ≠ MiniFast |
+| 06 | SynkLoader | `FILED_IC3` | `briefs/06-synkloader.md` | Gap: PCAP | ≠ Matanbuchus |
+| 08 | Abyssos | `FILED_IC3` | `briefs/08-abyssos.md` | Gap: PCAP | |
+| 09 | SharkLoader | `FILED_IC3` | `briefs/09-sharkloader.md` | Gap: PCAP | |
+| 01–03, 07 | (filed) | `FILED_IC3` | Optional update | Gap: PCAP | Do not re-file without update flag |
 | 10 | TencShell | Paste-ready | `briefs/10-tencshell.md` | IPs published; PCAP lack | |
 | 11 | MiniFast | Paste-ready | `briefs/11-minifast.md` | Azure hostnames; few IPv4 | Do not merge PollCat |
 | 12 | Argamal | Paste-ready | `briefs/12-argamal.md` | Limited IPv4 | |
 | 13 | Okobot | Paste-ready | `briefs/13-okobot.md` | IPs published; PCAP lack | |
 | 14 | Matanbuchus | Paste-ready | `briefs/14-matanbuchus.md` | Comparator ≠ SynkLoader | Separate from SynkLoader filing |
 | 15 | StarlandRAT | Paste-ready | `briefs/15-starlandrat.md` | Multiple IPs; PCAP lack | |
+
+**Send status (2026-09-20):** Resend MCP had no verified domain/API key — all vendor emails are **prepared only**. See [`VENDOR_SUBMISSION_STATUS.md`](VENDOR_SUBMISSION_STATUS.md) · [`VENDOR_EMAIL_MATRIX.md`](VENDOR_EMAIL_MATRIX.md) · [`VENDOR_CONTACTS.md`](VENDOR_CONTACTS.md) · non-PII drafts [`email-drafts/`](email-drafts/) · private Gmail launcher `../private/vendor-submissions/GMAIL_LAUNCHER.html`.
 
 ## Safe phrasing (all channels)
 
@@ -47,6 +54,10 @@
 
 ## Related
 
+- [`VENDOR_CONTACTS.md`](VENDOR_CONTACTS.md)
+- [`VENDOR_EMAIL_MATRIX.md`](VENDOR_EMAIL_MATRIX.md)
+- [`VENDOR_SUBMISSION_STATUS.md`](VENDOR_SUBMISSION_STATUS.md)
+- [`THREATFOX_AND_HOSTING.md`](THREATFOX_AND_HOSTING.md)
 - [`../HOW_TO_FILE.md`](../HOW_TO_FILE.md)
 - [`../SUBMISSION_CHECKLIST.md`](../SUBMISSION_CHECKLIST.md)
 - [`../TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md`](../TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md)

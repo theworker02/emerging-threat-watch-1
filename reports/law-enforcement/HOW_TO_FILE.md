@@ -87,4 +87,15 @@ There is **no** evidence in this repository establishing that these campaigns sh
 
 Complainant name / phone / email / address for all IC3 forms: `private/COMPLAINANT_PROFILE.md` (gitignored).
 
+### Vendor / CERT coordination (parallel to IC3)
+
+Do **not** auto-email from agents without a verified sending domain. Ready packs:
+
+- Contacts: [`RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md`](RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md)
+- Email matrix: [`RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md`](RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md)
+- Status (sent vs prepared): [`RESPONSIBLE_SUBMISSION/VENDOR_SUBMISSION_STATUS.md`](RESPONSIBLE_SUBMISSION/VENDOR_SUBMISSION_STATUS.md)
+- Non-PII drafts: `RESPONSIBLE_SUBMISSION/email-drafts/`
+- Full drafts + Reply-To + Gmail launcher: `private/vendor-submissions/` (gitignored; start with `GMAIL_LAUNCHER.html`)
+- Private send log: `private/vendor-submissions/SEND_LOG.md` / `private/VENDOR_SUBMISSION_LOG.md`
+
 Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`. SharkLoader (`ETW-SHK-IC3`) filed — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576`.

@@ -16,6 +16,12 @@ Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **MiniFast*
 - Caveats: `05_CAVEATS_AND_LIMITS.md`
 - Repo: https://github.com/theworker02/emerging-threat-watch-1
 
+## Preferred public contacts
+
+- CERT/CC: `cert@cert.org`
+- CISA Central: `Contact@mail.cisa.dhs.gov`
+- Draft: [`../email-drafts/11-minifast.txt`](../email-drafts/11-minifast.txt) · private pack: `../../private/vendor-submissions/11-minifast/`
+
 ## Hosting abuse gate
 
 Azure Web App hostnames dominate public IOCs; standalone C2 IPv4 may be sparse. Require SHA-256 + timed check-in evidence before provider tickets.
