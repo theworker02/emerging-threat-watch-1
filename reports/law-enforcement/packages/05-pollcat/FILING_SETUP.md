@@ -1,10 +1,10 @@
 # PollCat — IC3 Filing Setup (`ETW-POL-IC3`)
 
-**Status:** DRAFT — helpers generated; human review required before submit  
+**Status:** `FILED_IC3` · Submission ID `98a4444754324e539dbbffcb10c70637` · 2026-09-19 9:52:51 PM EST  
 **Cutoff:** 2026-09-19  
-**Next after:** NodeRabbit `ETW-NRB-IC3` (`dded86972e9347e0be27a6597b4cf08a`)
+**Record:** [`IC3_FILING_RECORD.md`](IC3_FILING_RECORD.md)
 
-This is the **setup sheet** for filing PollCat as a separate IC3 complaint. Do not auto-submit.
+PollCat was filed as a separate IC3 complaint after NodeRabbit `ETW-NRB-IC3` (`dded86972e9347e0be27a6597b4cf08a`).
 
 ## 1. Regenerate local (gitignored) helpers
 

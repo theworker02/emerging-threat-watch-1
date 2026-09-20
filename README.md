@@ -232,7 +232,7 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | Settra | `reports/law-enforcement/packages/02-settra/` (`ETW-SET-IC3`) — **FILED_IC3** `631d8b4800d04bc19cdbfc6662e5c52c` (2026-09-19 4:59:46 PM EST) |
 | RatHat | `reports/law-enforcement/packages/03-rathat/` (`ETW-RAT-IC3`) — **FILED_IC3** `f92c4c2f0dd3481f898fdd125e728adf` (2026-09-19 5:08:29 PM EST) |
 | NodeRabbit | `reports/law-enforcement/packages/04-noderabbit/` (`ETW-NRB-IC3`) — **FILED_IC3** `dded86972e9347e0be27a6597b4cf08a` (2026-09-19 5:15:51 PM EST) |
-| PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) |
+| PollCat | `reports/law-enforcement/packages/05-pollcat/` (`ETW-POL-IC3`) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST) |
 | SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) |
 | Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) |
 | Abyssos … StarlandRAT stubs | `packages/08`–`15` — **not filing-ready** |

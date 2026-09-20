@@ -64,6 +64,6 @@ If a field office requests files, send the entire `packages/0N-<family>/` folder
 | ETW-SET-IC3 | Settra | Ransomware encryptor ≠ operator intrusion tooling | `FILED_IC3` |
 | ETW-RAT-IC3 | RatHat | Android Accessibility/ADB chain | `FILED_IC3` |
 | ETW-NRB-IC3 | NodeRabbit | Developer-targeted Node.js RAT; Mirage Kitten is Kaspersky’s attribution | `FILED_IC3` |
-| ETW-POL-IC3 | PollCat | Obfuscated JS RAT; RankChallenge lure; co-disclosed with NodeRabbit but **separate implant** | **Next to file** (`DRAFT`) |
+| ETW-POL-IC3 | PollCat | Obfuscated JS RAT; RankChallenge lure; co-disclosed with NodeRabbit but **separate implant** | `FILED_IC3` `98a4444754324e539dbbffcb10c70637` |
 
 There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge.

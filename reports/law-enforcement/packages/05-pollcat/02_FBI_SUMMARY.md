@@ -1,20 +1,21 @@
 # PollCat — Summary
 
-**Package:** `ETW-POL-IC3` · **Status:** DRAFT — ready for human IC3 filing · **Cutoff:** 2026-09-19
+**Package:** `ETW-POL-IC3` · **Status:** FILED_IC3 · **Cutoff:** 2026-09-19
 
 ## Overview
 
 Defensive threat-intelligence package concerning the PollCat malware documented by Kaspersky GReAT (2026-09-01) in the same Securelist article that covers NodeRabbit. Kaspersky describes PollCat as a cross-platform obfuscated JavaScript RAT delivered through the RankChallenge-react coding-challenge archive (MD5 `795e053a990a1569ffdcb57f48f6d085`). Kaspersky reports registration C2 hosts including `sahi-finance.com` and Azure Web App hostnames, OTP validation via `lifespotify.com`, and persistence markers such as NetSync scheduled tasks, `requireObject.js` under AppData, `com.harsh.requireobject.plist`, and `~/.node_packages`. Kaspersky states PollCat's structure is substantially different from NodeRabbit. **This package is PollCat-only.** Co-disclosure and shared recruiter/coding-challenge delivery are COMMON TECHNIQUE only — not proof of shared implant authorship. **Mirage Kitten attribution is Kaspersky's assessment, not independently established by ETW.**
 
-## Pre-filing cross-references (separate IC3 complaints — no shared-operator claim)
+## IC3 filing
 
-| Family | Package | Submission ID |
-|--------|---------|---------------|
-| Rapuncel | `ETW-RAP-IC3` | `208b747c6f7445f0af2b69a9d63acc36` |
-| Settra | `ETW-SET-IC3` | `631d8b4800d04bc19cdbfc6662e5c52c` |
-| RatHat | `ETW-RAT-IC3` | `f92c4c2f0dd3481f898fdd125e728adf` |
-| NodeRabbit | `ETW-NRB-IC3` | `dded86972e9347e0be27a6597b4cf08a` |
-| **PollCat (this package)** | `ETW-POL-IC3` | *not yet filed* |
+| Field | Value |
+|-------|-------|
+| Submission ID | `98a4444754324e539dbbffcb10c70637` |
+| Date filed | 2026-09-19 9:52:51 PM EST |
+| Date filed (UTC) | 2026-09-20T01:52:51Z |
+| Record | [`IC3_FILING_RECORD.md`](IC3_FILING_RECORD.md) |
+| Separate related filings | Rapuncel `208b747c6f7445f0af2b69a9d63acc36`; Settra `631d8b4800d04bc19cdbfc6662e5c52c`; RatHat `f92c4c2f0dd3481f898fdd125e728adf`; NodeRabbit `dded86972e9347e0be27a6597b4cf08a` (no shared-operator claim) |
+| Not merged | NodeRabbit (`ETW-NRB-IC3`) |
 
 ## Why this may matter for FBI cyber / IC3 correlation
 
@@ -44,5 +45,4 @@ Full table: `03_INDICATORS.csv` (15 rows, `POL-IND-0001`–`0015`).
 1. Treat as **defensive threat-intelligence referral**, not a completed criminal case file.
 2. Correlate published domain / hash / URI-path indicators against existing FBI/IC3 holdings.
 3. Request sample acquisition through normal vendor/legal channels if needed — this package does not contain malware binaries.
-4. Keep this family **separate** from other Emerging Threat Watch packages (especially NodeRabbit `ETW-NRB-IC3`) unless linkage evidence appears.
-5. After filing: record Submission ID in `IC3_FILING_RECORD.md`, this summary, and `MASTER_INDEX.csv`.
+4. Keep this family **separate** from other Emerging Threat Watch packages (especially NodeRabbit `ETW-NRB-IC3` / `dded86972e9347e0be27a6597b4cf08a`) unless linkage evidence appears.

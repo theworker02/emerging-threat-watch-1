@@ -2,8 +2,9 @@
 
 **Canonical filing package:** [`../law-enforcement/packages/05-pollcat/`](../law-enforcement/packages/05-pollcat/)  
 **Package ID:** `ETW-POL-IC3`  
-**Status:** DRAFT — ready for human IC3 filing · do not auto-submit · **Cutoff:** 2026-09-19  
-**Independently observed by ETW:** none
+**Status:** `FILED_IC3` · Submission ID `98a4444754324e539dbbffcb10c70637` · filed 2026-09-19 9:52:51 PM EST · **Cutoff:** 2026-09-19  
+**Independently observed by ETW:** none  
+**Filing record:** [`../law-enforcement/packages/05-pollcat/IC3_FILING_RECORD.md`](../law-enforcement/packages/05-pollcat/IC3_FILING_RECORD.md)
 
 Use the law-enforcement package for all FBI/IC3 work. This file is a short index only.
 
