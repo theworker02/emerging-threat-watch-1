@@ -1,0 +1,393 @@
+Suspected China-Linked Threat Actor Targets Global Manufacturer| Cato Networks
+
+ May 13, 2026 13m read 
+
+# Cato CTRL Threat Research: Suspected China-Linked Threat Actor Targets Global Manufacturer with Undocumented TencShell Malware
+
+ 
+
+ Idan Tarab , Dr. Guy Waizel , Zohar Buber , Shani Kurtzberg 
+
+### Table of Contents
+
+- 1. Executive Summary 
+- 2. Why This Matters 
+- 3. From Rshell to TencShell: Customization and Operational Context 
+- 4. Technical Details: TencShell Infection Chain 
+- 5. Cato Protections 
+- 6. Conclusion 
+- 7. Indicators of Compromise 
+
+## Executive Summary
+
+In April 2026, Cato CTRL identified and blocked an attempted intrusion against a global manufacturing customer involving TencShell, a previously undocumented, Go-based implant derived from the open-source Rshell C2 framework.
+
+The activity appeared in traffic associated with a third-party user connected to the customer environment.
+
+The attack chain used a first-stage dropper, Donut shellcode, a masqueraded .woff web-font resource, memory injection, and web-like C2 communication. We assess the activity as suspected China-linked based on the apparent Rshell lineage, Tencent-themed API impersonation, and infrastructure patterns, While this pattern is relevant to our suspected China-linked assessment, it is not sufficient on its own for attribution.
+
+If successful, TencShell could have given the attacker remote command execution, in-memory payload execution, proxying, pivoting, system profiling, and a path to deploy additional tooling. We blocked the attempt before the attacker could establish durable remote control.
+
+## Why This Matters
+
+A C2 framework deployed through third-party access can turn a trusted business connection into an attacker-controlled bridge. If TencShell had installed successfully, the attacker could potentially execute commands, inspect files, steal credentials or session material, stage additional tools, proxy traffic through the endpoint, and move toward internal systems that are not directly exposed to the internet.
+
+For a global manufacturer, the business risk extends beyond one host. A compromised endpoint connected to a regional site can expose supplier relationships, production workflows, intellectual property, customer data, logistics processes, and business continuity. The first payload does not need to be destructive to be dangerous, a C2 framework gives the attacker the control needed to decide what comes next.
+
+## From Rshell to TencShell: Customization and Operational Context
+
+The activity was observed in a global manufacturing environment with multiple regional sites, specifically at the customer’s India site. It was associated with a third-party user connected to the customer environment. The intrusion attempt became clear once we correlated the full picture: suspicious external infrastructure, host-level artifacts, payload-staging behavior, and C2-like communication. Together, those signals showed an attempted malware execution chain rather than an isolated suspicious request.
+
+TencShell is the name we use to track the customized implant observed in this investigation. We named it TencShell because it combines shell-style remote-control capabilities with C2 communication that imitates Tencent-like web service paths. Tencent is a major Chinese technology company, and attackers sometimes mimic well-known service patterns to make malicious traffic look like normal application/API activity. In simple terms, “Tenc” refers to the Tencent-looking C2 paths, and “Shell” refers to the remote shell/RAT behavior.
+
+TencShell is derived from Rshell, an open-source Go-based C2 framework designed for cross-platform offensive security use. The original Rshell project includes remote command execution, file and process management, terminal access, in-memory payload execution, multiple C2 transports, and an MCP server. The version we observed was customized and repackaged for this operation, with communication and delivery changes that made it more suitable for the attacker’s campaign.
+
+Embedded Go source paths in TencShell exposed the Reacon project structure and the threat actor user, as shown in Figure 1.
+
+Figure 1. TencShell Go paths revealing the threat actor’s REACON project
+
+## Technical Details: TencShell Infection Chain
+
+The initial infection vector remains unknown. It may have involved phishing, a malicious download, or another web-based delivery method. The infection chain we observed following initial access starts from the 1st-stage dropper payload.
+
+As shown in Figure 2, the observed chain continues from the 1st-stage dropper payload to Donut shellcode retrieval through a masqueraded .woff resource, reflective shellcode execution, in-memory loading of the customized Rshell-derived framework, and attempted C2 communication with attacker-controlled infrastructure.
+
+Figure 2. TencShell infection chain
+
+The following sections break down each observed stage of the infection chain, starting from the first executable payload we identified.
+
+### Stage 1: 1st-Stage Dropper Payload
+
+The first executable stage we observed was a 1st-stage dropper payload. As shown in Figures 3 and 4, this stage preceded the Donut shellcode retrieval and initiated the follow-on payload chain.
+
+Instead of deploying the full C2 framework immediately, the attacker used a smaller first-stage component to retrieve or trigger the next phase of execution. This approach gives the operator flexibility: the initial component can remain lightweight, while later-stage payloads can be hosted separately, changed, or updated without modifying the first-stage payload.
+
+In this case, the dropper did not represent the full attacker capability. It was an initial execution component that enabled the follow-on stages leading to Donut shellcode execution and in-memory loading of TencShell.
+
+Figure 3. 1st-stage dropper communication with attacker-controlled IP
+
+Figure 4. 1st-stage dropper HTTP request with fake User-Agent
+
+### Stage 2: Masqueraded .woff Binary
+
+The next stage involved retrieving Donut shellcode through a masqueraded .woff resource. The request also used a fake or customized User-Agent, making the payload retrieval look more like normal browser or application traffic.
+
+Donut is an open-source shellcode generation framework designed for in-memory execution. It can generate position-independent shellcode that loads and executes Windows payloads, including .NET assemblies, PE files, DLLs, and scripts, directly from memory. In this attack chain, Donut appears to have been used as the bridge between the staged payload and in-memory execution of the customized C2 framework.
+
+A .woff file is normally a Web Open Font Format file. Websites use WOFF files to load custom fonts in a browser. In ordinary web traffic, requests for .woff files are common and usually benign, just like requests for images, CSS, or JavaScript.
+
+That is why this technique is useful for attackers. By placing malicious content behind a font-looking path or extension, the attacker makes the payload request appear like a routine static web asset. The file does not need to be a legitimate font. The value is in the disguise: a security analyst or automated control may see a “font” request when the content is actually part of a shellcode delivery chain.
+
+As shown in Figure 5, VirusTotal telemetry shows detections and URL submissions for the observed .woff payload paths, reinforcing that these resources were used as payload delivery locations rather than legitimate web-font assets.
+
+Figure 5. VirusTotal telemetry for observed .woff payload URLs
+
+In this case, the .woff resource functioned as a masqueraded payload container. It used the appearance of a normal web font request to stage content that supported execution of the next malware phase. This helped the attacker blend payload delivery into ordinary web traffic and reduce obvious file-based visibility.
+
+### Stage 3: Reflective Shellcode Execution
+
+After the masqueraded .woff payload was retrieved, the loader moved into a memory-resident execution workflow used to bootstrap the embedded Donut shellcode and deploy TencShell in memory.
+
+The loader allocated a local memory region, copied the downloaded buffer into it, changed the memory protections to executable, and transferred execution through a newly created thread pointing to the staged shellcode. Execution remained inside the originating process, with no evidence of remote process injection or cross-process memory operations.
+
+Once execution entered the shellcode region, the Donut runtime took control and reflectively loaded the embedded PE payload. This included dynamic API resolution, payload unpacking, relocation handling, import reconstruction, and manual PE mapping before invoking the TencShell entry point directly from memory.
+
+As shown in Figure 6, the execution function is responsible for loading and executing the staged shellcode in memory.
+
+Figure 6. TencShell memory injection function
+
+### Stage 4: TencShell Loaded in Memory
+
+After reflective shellcode execution, the customized Rshell-derived implant, which we track as TencShell, was loaded into memory. This confirmed that the payload chain successfully reached the final C2 framework stage rather than stopping at shellcode execution.
+
+Recovered artifacts reference Reacon, helping link the in-memory payload to the customized framework derived from Rshell, the original open-source C2 framework. Throughout this report, we refer to the observed customized C2 framework as TencShell.
+
+As shown in Figure 7, we observed the customized framework loaded inside memory.
+
+Figure 7. Debugger view showing TencShell/Reacon artifacts loaded in memory
+
+As shown in Figure 7, the recovered artifact name Reacon appears in the customized sample. This artifact helps link the in-memory payload to the customized framework derived from Rshell, the original open-source C2 framework shown in Figure 8.
+
+Figure 8. Rshell Github Project
+
+Recovered project artifacts showed a modular Go framework:
+
+Reacon
+
+├pkg/communication/ ├pkg/commands/ ├pkg/services/ ├pkg/win32/ ├pkg/sysinfo/ └main.go
+
+This structure is consistent with a full operator framework rather than a single-purpose backdoor. The modules indicate separation between communication, commands, services, Windows interaction, and system profiling.
+
+### Stage 5: C2 Communication
+
+The final stage was attempted command-and-control communication. TencShell used web-like communication patterns designed to make malicious traffic harder to distinguish from normal application traffic. Instead of using obvious malware callback paths, the implant attempted to communicate through structured API-like endpoints that resembled backend service requests. As shown in figure 9 below, VirusTotal telemetry shows repeated use of Tencent-like C2 paths across attacker-controlled infrastructure. This supports the assessment that the communication pattern was not random, but part of a structured C2 design intended to resemble normal web/API activity.
+
+Figure 9. Tencent-like C2 paths in VirusTotal
+
+As shown in Figure 10, the network traffic captures the attempted communication between the endpoint and attacker-controlled C2 infrastructure. This is the point in the chain where the implant attempts to establish an operator-controlled channel for tasking, command execution, and follow-on activity.
+
+Figure 10. Wireshark capture showing attempted TencShell C2 communication
+
+Some of the observed C2 paths used Tencent-like naming, This type of naming can help attacker-controlled traffic blend into normal web/API activity. As shown in Figure 11, the C2 panel provides the operator-side interface used to manage infected clients and issue commands. This confirms that the observed activity was part of a broader remote-control framework, not simply payload retrieval.
+
+Figure 11. TencShell C2 panel used to manage infected clients and operator activity
+
+The repeated use of similar URI structures and ports across attacker-controlled infrastructure suggests a broader operational setup, potentially supporting a wider campaign rather than a single opportunistic intrusion. The list of observed C2 and infrastructure is available in the IOC section.
+
+### Post-exploitation Capabilities
+
+TencShell includes capabilities commonly associated with mature post-exploitation frameworks. Recovered Go module names indicate support for several high-risk operator actions, including in-memory execution, BOF-style module execution, proxying and tunneling, WebSocket-based C2, and remote interaction.
+
+Examples of recovered components include:
+
+| Recovered Component | Indicated Capability |
+| --- | --- |
+| execute-assembly_windows.go | Run .NET assemblies from memory |
+| inline-bin_windows.go | Load and execute additional binaries |
+| bof_windows.go | Run BOF-style lightweight post-exploitation modules |
+| pkg/services/proxy/socks5.go | Proxy traffic through the compromised host |
+| pkg/services/proxy/mux/ | Multiplex traffic for tunneling or pivoting |
+| pkg/communication/websocket.go | Maintain interactive WebSocket-based C2 |
+| pkg/services/screen.go | Support screen or remote interaction features |
+
+Figure 12 shows extracted TencShell function names and package paths related to command communication and remote interaction. The communication package includes functions for pulling commands, pushing results, parsing HTTP responses, and opening a screen WebSocket. The win32 package includes functions for retrieving screen metrics and simulating keyboard and mouse input, such as SendInput, MouseClick, and KeyTap. Together, these recovered names support the assessment that TencShell includes interactive remote-control capabilities in addition to standard C2 communication.
+
+Figure 12. Extracted TencShell package paths and function names
+
+The presence of functions such as PullCommand, PushResult, GetScreenWebSocket, SendInput, MouseClick, and KeyTap indicates that the implant supports operator-driven remote interaction in addition to standard command execution.
+
+Beyond the recovered Go module names, TencShell exposes a broader operator toolkit. The implant includes capabilities for remote shell and native OS command execution, file and process manipulation, persistence and defense evasion, UAC bypass, screen capture or remote interaction, browser artifact access, polling-based tasking, structured C2 reporting, and SOCKS5-based proxying for pivoting.
+
+In practical terms, this functionality could allow an attacker to execute tools with minimal file-system artifacts, run commands, profile the endpoint, tunnel traffic into internal systems, and maintain interactive control while blending C2 communication into normal web traffic. This makes TencShell more than a simple backdoor; it functions as a flexible operator framework that could support lateral movement, credential access, data theft, and follow-on payload deployment.
+
+The opcode structure in Table 1 further reinforces this assessment. It shows a broad post-compromise command set spanning remote interaction, file access, execution, reconnaissance, persistence, and cleanup.
+
+Table 1: Opcode-Based Capability Mapping
+
+| Category | Opcode | Command | Capability |
+| --- | --- | --- | --- |
+| File system | 0x0A | FILE_BROWSE | Browse/list filesystem contents |
+| Execution | 0x0B | EXECUTE_COMMAND | Execute system command |
+| Process | 0x0C | PROCESS_ENUMERATION | Enumerate running processes |
+| Process | 0x0D | PROCESS_TERMINATION | Kill process |
+| Discovery | 0x0E | DRIVE_ENUMERATION | Enumerate logical drives |
+| File system | 0x0F | CREATE_DIRECTORY | Create directory |
+| File system | 0x10 | REMOVE_FILE | Delete file/directory |
+| File system | 0x11 | COPY_FILE | Copy file |
+| File system | 0x12 | MOVE_FILE | Move file |
+| Collection | 0x13 | READ_FILE_CONTENT | Read/extract file contents |
+| Proxy / Pivot | 0x14 | SOCKS_CONNECT | Establish SOCKS proxy connection |
+| Runtime control | 0x15 | SET_SLEEP_TIMER | Modify beacon sleep interval |
+| Runtime control | 0x16 | PAUSE_EXECUTION | Pause task execution |
+| Execution | 0x17 | INTERACTIVE_SHELL | Launch shell session |
+| File transfer | 0x18 | UPLOAD_FILE | Upload file (mode 1) |
+| File transfer | 0x19 | UPLOAD_FILE_EXTENDED | Upload file (mode 2) |
+| File transfer | 0x1A | DOWNLOAD_FILE | Download remote file |
+| Cleanup | 0x1B | SELF_DELETE | Remove implant from disk |
+| File system | 0x1C | CHANGE_DIRECTORY | Change working directory |
+| File system | 0x1D | PRINT_WORKING_DIRECTORY | Retrieve current directory |
+| Proxy / Pivot | 0x1E | STOP_SOCKS_PROXY | Terminate SOCKS5 proxy |
+| File system | 0x20 | RENAME_FILE | Rename file |
+| File transfer | 0x21 | REMOTE_UPLOAD | Remote upload operation |
+| Browser artifact | 0x22 | CHROME_CLEANUP | Chrome artifact cleanup |
+| Browser artifact | 0x23 | CHROME_BACKUP | Chrome artifact backup |
+| Payload execution | 0x24 | INLINE_EXECUTION | Execute inline payload |
+| Environment check | 0x25 | CHECK_WORKSTATION_STATE | Validate workstation/session state |
+| Runtime control | 0x26 | PROCESS_RESTART | Restart implant process |
+| Migration | 0x27 | PROCESS_MIGRATION | Migrate execution context |
+| Environment check | 0x28 | CHECK_EDGE_STATE | Validate Edge-related session state |
+| Environment check | 0x29 | CHECK_PROGRAM_STATE | Validate program/window state |
+| Browser artifact | 0x2A | EDGE_CLEANUP | Edge artifact cleanup |
+| Browser artifact | 0x2B | EDGE_BACKUP | Edge artifact backup |
+| Payload execution | 0x2C | DLL_LOAD | Load DLL payload |
+| Payload execution | 0x2D | EXECUTE_ASSEMBLY | Execute .NET assembly |
+| Payload execution | 0x2E | INLINE_BINARY_EXECUTION | Execute inline binary payload |
+| File system | 0x30 | MOUNT_FILES | Mount/expose remote files |
+| Privilege escalation | 0x31 | UAC_BYPASS | Attempt UAC bypass |
+| Remote interaction | 0x46 | START_REMOTE_SCREEN | Start remote screen streaming |
+| Remote interaction | 0x47 | STOP_REMOTE_SCREEN | Stop remote screen streaming |
+| Remote interaction | 0x48 | SCREEN_CONTROL | Handle remote screen interaction |
+| Persistence | 0x64 | PERSISTENCE_UPLOAD | Deploy persistence component |
+
+In practical terms, these capabilities allow an operator to remotely control the host, collect sensitive data, maintain access, and remove forensic traces.
+
+### Persistence Mechanism
+
+In addition to the post-exploitation capabilities described above, analysis of TencShell identified a persistence routine designed to establish autorun execution through the Windows Registry Run key:\Software\Microsoft\Windows\CurrentVersion\Run
+
+During execution, TencShell invokes Windows Registry APIs through Go runtime wrappers to access and modify registry values. The routine references the value name: OneDriveHealthTask
+
+This name appears designed to blend in with legitimate Microsoft or Windows-related components during casual inspection. The execution flow also indicates that TencShell checks whether the persistence entry already exists before creating it, suggesting the routine supports persistence validation or reinstallation rather than a simple one-time registry modification.
+
+As shown in Figure 13, the persistence routine references the Windows Run key and the OneDriveHealthTask value used for autorun execution.
+
+Figure 13. TencShell registry autorun persistence using the Windows Run key
+
+## Cato Protections
+
+We blocked the attempted intrusion before the attacker could establish durable control.
+
+The detection was based on correlation across multiple signals:
+
+- Suspicious attacker-controlled URL
+- Payload-staging behavior
+- Font-like masqueraded resource
+- Reuse of suspicious infrastructure and URI patterns
+
+As shown in Figure 14, XOps surfaced the activity as a security story, connecting the suspicious destination, malware classification, source host, target actions, geolocation, and attack distribution. Figure 15 shows the related events behind the story, including repeated outbound GET requests to the same destination and URI path.
+
+Cato MDR investigation helped confirm that the activity represented an attempted intrusion rather than isolated suspicious browsing or a benign download.
+
+Figure 14. XOps security story for the detected malware activity
+
+Figure 15. XOps related events showing repeated outbound requests
+
+Relevant protections included:
+
+- Blocking attacker-controlled URLs and destinations
+- Detecting suspicious payload staging
+- Providing visibility into parts of the attack chain through XOps
+- Supporting MDR-led investigation and response
+
+## Conclusion
+
+Attackers no longer need custom malware development pipelines to conduct sophisticated intrusions. Adaptable open-source tooling is often enough.
+
+In this case, TencShell appears to have been customized from Rshell into a practical post-exploitation implant with web-like C2 communication, payload masquerading, in-memory execution, and pivoting capabilities. Rather than building a completely new malware family, the attacker adapted available offensive tooling and attempted to blend the activity into normal enterprise traffic.
+
+We blocked the attempt before the attacker could establish durable control. This case highlights how adaptable open-source offensive frameworks can be repurposed into effective intrusion tooling in real-world enterprise environments.
+
+## Indicators of Compromise
+
+Network Indicators
+
+IP addresses 45[.]64[.]52[.]242
+
+192[.]238[.]134[.]166
+
+45[.]115[.]38[.]27
+
+Domain: gin-tne-fahcesmukw[.]cn-hangzhou[.]fcapp[.]run
+
+Hashes
+
+c3ecb90c9915daa23aec51f93ff8665778866f0592b2413578c8ba9708df6091 660af53acdc505f333f6d4f4269cec740a5eb05e41a4c7926742606b18f22d33 37facbbd0047c19f4efdea75ccb9e3ec793cb9b1d7846afa4fb8e900d6e9ed95 01dc3e7e673b4f2682f29b19ecabf9a6ec9c3042c9b1cfb39dbdddf1dda680ab
+
+750a707084839fe970266964957b8eaa7e25b4d9ca1050cd7ab19e4a2add707d
+
+12f76f48727916d6c05f53f8cd94915db5de5ffcbfa02c4807c27e090cfa47c1
+
+4ae8de40153c66455d972e6e98fe06fb68db7301ba126557e96599527bc5509c
+
+1ba73df60e12b3feb8b5574e65cfceb6910460ab7fae2cf5554769fafdad049e
+
+5eff99959683480d2280c931e433af836adf6a8b7a8489b1af17cddcf480cf63
+
+0fe91200a2bb4aed13b1a1ba4ec8fd4454566f5929ffed4f537d9a87c1bf1187
+
+7f6bec5dd217151fcd03087a6e7ba1070f0fa603801fb128a4097076c9976d36
+
+ed6058f0b0735ba56b781dea39353625fcb56bc3e77bf2d26a648511d754d216
+
+710539554f065fe9a0bf6a6e32d3ea73ab3c797a033f8bfef57ad929bcdf9195
+
+79340e589a69f5dc204d4073341a07e98a588d0401d18f34991d14b71a475063
+
+8363ff6bddfaf247318308f215ad53f3c77f218d4a6562b537aeaf7e9135d10f
+
+df5f74e1e0e5b0a0748de2efd86358293b4d368d171a926af6f14880d55adb57
+
+b7a5192a90c14a9a36e5a3565fed46becffa88dbc719e8ee396a0c9d46f5dde4
+
+b77c8531ee45ffdfd63ef19aa1f1ae8b603b274f6951f7d8f4e725130bfca06d
+
+6de4da7919185f84212d02011e955530011b08c389408f2a012b81757c3d0c0f
+
+31635e4667eba1ba3588e1bc9c05d18a78d9693c801e5176e6cddf74e0d5bcc2
+
+d252aeabbf4cd9f336e83d1fa0042fcc2f74f45d4b8cbe2a8bfe790d4db0580d
+
+7170f3051cc9f4520e84f1ea3b599616d82be8e5087f19d8e2951fa6848924b3
+
+aaf49281b2f65390adc2e763af37fc4e3fe03b94af550927fc91141e0d6347db
+
+1d2e37b41d616ecb32b8bd2f2a52c792f1808fdc938574fc366d737b6f643c61
+
+7abc129482ccdf787b35b92b7d5b7ff2478e72fe516f4ceca0c02e23a1d34314
+
+147f86854690ba096f3797c623b66365d6adbf7140d7d7c3dcf746b83a4b6dac
+
+943f952652fbc16923c0519449feeee11698304dac51268d4e6065146dcad69e
+
+73c24bafba21f871cc9d28de92ee7e4b9f9c8ec337279c14c1facdb9feeb7af4
+
+905ae6ac24225db221da346a1695e443ba4c57ea1c9066e8bac3e5fcb4156fc7
+
+5c02115b3f090551393cca3ce91fe837727d1c4586164c580759eb94387dba10
+
+12c6d0e603386b81751d95b32d1698d794c99343abb06d066b0f6060e8690aca
+
+1329be66458962dabfa20185c230439c57d32b90a20de791afdce9c15226fccb
+
+2a010bd1061e11da6f5cf951a3ebd23503916e159e3d486cc722b4b8b4a099c9
+
+746c4cd5fe3a8edd37d4b37b23af64b1086b5ea7c1ab0bcfd9c47e4e2e986518
+
+5ef76098be5ed1559b71ebd8d29cb32c1825991824051d8a641746e08bf9e1b3
+
+5ac484ec0846fff8f099b234dfd1602864300da8c68b01822c6036eb709fc584
+
+976f890ab0ee8aac613da2458d0069f00d0ebabc76f1fceb63e05b2113f6a449
+
+065f5a605ac04d5f443089b65aa1393414ee38c4ee8f780e7d78c06b46504ae4
+
+cdb9d76093d0938f30d93bcce4f58b13b4b21c9188eea387c6d9ec6f4cb4aad4
+
+b5e0866368873b4c5eacc6df01114fc749cc32f507e9324bc6d763999371777d
+
+75b36769f0d36c05be74d41610d4af3f73397983ba746f8c569de6f23ee130e0
+
+64944d2a6129631ff675c6dcfdd57a7e99a1e4dc41802cbd0eabcef3eb3e81c3
+
+921e41190fed3437ca7a0d53e7590ccb0f1ab5d667532778fbda5664c657d712
+
+5d19c07e3fb7ac4ff56a23f6e658d691f381442b1db2f8c5f345563c1cdc8998
+
+3ffe3a6f328a6459624bd93edd206e2256b2753e17137cbc1530b91fa325ecac
+
+2012ff4d7c36e42d256d78c265f242d29a305af66686866c581ee96c2b05d5a6
+
+fdb5eca8f00e1802f3c9c0ca79f93a8419353f4ef2a0606bec39c4497da91035
+
+065c54893e4777d52be6b7bf30b832d5ffd9d96fd178642a5828a364c0e904a0
+
+8f5f4408998bbfc6987d9cb39216071c57c7b087f2867a504e83414ee5cfcd08
+
+06776635e386d536b1b0fc21e6aa41865d44d83dae5e9b109868d71ca309eeaa
+
+94f67819c0f7e200abf4b39fad2fd6fef227da15d939f21a657d1717ca2b3014
+
+| Tactic | Technique / Sub-technique | ID |
+| --- | --- | --- |
+| Defense Evasion | Masquerading: Masquerade File Type | T1036.008 |
+| Command and Control | Ingress Tool Transfer | T1105 |
+| Defense Evasion | Reflective Code Loading | T1620 |
+| Command and Control | Application Layer Protocol: Web Protocols | T1071.001 |
+| Command and Control | Non-Standard Port | T1571 |
+| Command and Control | Proxy: Internal Proxy | T1090.001 |
+| Discovery | System Information Discovery | T1082 |
+| Discovery | Process Discovery | T1057 |
+| Discovery | File and Directory Discovery | T1083 |
+| Execution | Command and Scripting Interpreter: Windows Command Shell | T1059.003 |
+| Execution | Native API | T1106 |
+| Defense Evasion | Process Injection | T1055 |
+| Persistence | Registry Run Keys / Startup Folder: Registry Run Keys | T1547.001 |
+| Privilege Escalation | Abuse Elevation Control Mechanism: Bypass User Account Control | T1548.002 |
+| Collection | Data from Local System | T1005 |
+| Collection | Screen Capture | T1113 |
+| Command and Control | Web Service | T1102 |
+| Defense Evasion | Indicator Removal on Host: File Deletion | T1070.004 |
+| Exfiltration | Exfiltration Over C2 Channel | T1041 |
+| Execution | Shared Modules | T1129 |
+
+## Idan Tarab

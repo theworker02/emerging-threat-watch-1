@@ -1,13 +1,20 @@
-# SharkLoader — Sources
+# SharkLoader — Primary Sources
 
-**Status:** `CANDIDATE`
+**Package:** `ETW-SHK-IC3`
 
-| ID | Role | URL / path |
-|----|------|------------|
-| CAT-001 | Candidate catalog | `docs/CANDIDATE_FAMILIES.md` |
-| CAT-002 | Machine-readable candidates | `intelligence/candidate-families.csv` |
-| CMP-001 | Technique comparators (if applicable) | `docs/TECHNIQUE_COMPARATORS.md` |
+## Organizations
 
-Primary vendor URL: **UNVERIFIED — freeze primary URL before IOC ingest**
+Kaspersky GReAT / Securelist
 
-Organization framing: Kaspersky
+## Copy-pasteable URLs
+
+- https://securelist.com/strikeshark-campaign/120326/
+
+## Local archive
+
+- `evidence/primary-sources/sharkloader/securelist-strikeshark-2026-06-24.html` (PS-SHK-001)
+  - SHA-256: `c5af7fb5acf172632f63b9763e511d756564027cff5cf0ce8a6ffe2fa90934b2`
+
+## Provenance rule
+
+These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.

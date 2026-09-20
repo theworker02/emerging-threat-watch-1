@@ -1,2 +1,14 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for MiniFast
+business-startup.org,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+business-startup.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+businessstartup.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+buisness-centeral.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+buisness-centeral-transportation.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+buisness-centeral-transportation.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+licencemanagers.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+licencesupporting.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+peerdistsvcmanagers.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+nanomatrix.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+PremierHealthAdvisory.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+ramiltonsfinance.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+getsqldeveloper.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast

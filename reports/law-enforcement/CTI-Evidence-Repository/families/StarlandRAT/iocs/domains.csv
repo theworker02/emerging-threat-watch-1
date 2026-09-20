@@ -1,2 +1,8 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No domains — UNVERIFIED candidate stub (StarlandRAT)
+value,notes
+eorthopaedics.com,Staging / HWID C2 (Talos; possibly hijacked) NOT OBSERVED by ETW.
+sastoro.com,Parallel staging / HWID C2 under /alpha/ NOT OBSERVED by ETW.
+web-devtools.com,Shellcode staging (/starlandfox /x32remka /dopfile) NOT OBSERVED by ETW.
+zynaris.io,HTA stager / trojanized installer lures NOT OBSERVED by ETW.
+windowscreenrepairnearme.com,Primary Starland RAT C2 (possibly hijacked) NOT OBSERVED by ETW.
+aipythondevs.com,Primary Starland RAT C2 NOT OBSERVED by ETW.
+polygon-rpc.com,Public Polygon JSON-RPC used for fallback domain retrieval NOT OBSERVED by ETW.

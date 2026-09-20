@@ -1,13 +1,20 @@
-# Argamal — Sources
+# Argamal — Primary Sources
 
-**Status:** `CANDIDATE`
+**Package:** `ETW-ARG-IC3`
 
-| ID | Role | URL / path |
-|----|------|------------|
-| CAT-001 | Candidate catalog | `docs/CANDIDATE_FAMILIES.md` |
-| CAT-002 | Machine-readable candidates | `intelligence/candidate-families.csv` |
-| CMP-001 | Technique comparators (if applicable) | `docs/TECHNIQUE_COMPARATORS.md` |
+## Organizations
 
-Primary vendor URL: **UNVERIFIED — freeze primary URL before IOC ingest**
+Kaspersky GReAT / Securelist
 
-Organization framing: Kaspersky
+## Copy-pasteable URLs
+
+- https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/
+
+## Local archive
+
+- `evidence/primary-sources/argamal/securelist-argamal-2026.html` (PS-ARG-001)
+  - SHA-256: `d3aa8cee046058d5c449ac23b759e8a6c2e26c2c0105d55d1f95a9d6e976e7ef`
+
+## Provenance rule
+
+These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.

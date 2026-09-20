@@ -1,13 +1,20 @@
-# MiniFast — Sources
+# MiniFast — Primary Sources
 
-**Status:** `CANDIDATE`
+**Package:** `ETW-MNF-IC3`
 
-| ID | Role | URL / path |
-|----|------|------------|
-| CAT-001 | Candidate catalog | `docs/CANDIDATE_FAMILIES.md` |
-| CAT-002 | Machine-readable candidates | `intelligence/candidate-families.csv` |
-| CMP-001 | Technique comparators (if applicable) | `docs/TECHNIQUE_COMPARATORS.md` |
+## Organizations
 
-Primary vendor URL: **UNVERIFIED — freeze primary URL before IOC ingest**
+Check Point Research
 
-Organization framing: Check Point
+## Copy-pasteable URLs
+
+- https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/
+
+## Local archive
+
+- `evidence/primary-sources/minifast/checkpoint-nimbus-manticore-minifast-2026.html` (PS-MNF-001)
+  - SHA-256: `a3d4d4a8346aaef3b9af65ac6a6290da63e1d85cc961d4b8fca7b50b065e93e9`
+
+## Provenance rule
+
+These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.

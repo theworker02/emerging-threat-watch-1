@@ -1,41 +1,32 @@
-# SharkLoader — Family Summary (CANDIDATE STUB)
+# SharkLoader — Family Summary
 
 **Case ID slug:** `sharkloader`  
 **Package:** `ETW-SHK-IC3`  
-**Status:** `CANDIDATE`  
-**Category:** Custom loader → Cobalt Strike  
+**Status:** `PRIMARY_FROZEN`  
+**Category:** Custom loader → Cobalt Strike (StrikeShark campaign)  
 **TLP:** TLP:AMBER+STRICT  
-**Generated:** 2026-09-19T20:30:00Z  
-**Source:** Candidate catalog only — **no invented IOCs**
+**Generated:** 2026-09-20T02:25:00Z  
+**Source:** PRIMARY freeze `PS-SHK-001`
 
 ## Executive overview
 
-Defensive placeholder package for **SharkLoader**. This folder exists so the CTI tree mirrors investigation stubs.  
-**PRIMARY indicator counts in this build: 0.** Author personal identity / home IP is **NOT ESTABLISHED**.
+Defensive threat-intelligence package concerning SharkLoader as publicly documented by Kaspersky GReAT (Securelist 2026-06-24) in the StrikeShark campaign. Kaspersky describes a multi-component custom loader that DLL-sideloads via abused legitimate binaries (commonly SystemSettings.exe → SystemSettings.dll), decrypts DscCoreR.mui / SyncRes.dat modules, installs API hooks (Detours/MinHook), and executes Cobalt Strike Beacon in memory. Delivery includes exploitation of internet-facing apps and malicious droppers. Kaspersky does not attribute StrikeShark to a known APT with high confidence. Author identity remains NOT_ESTABLISHED.
 
 ## Indicator counts (this build)
 
 | Class | Count |
 |-------|------:|
-| Domains / URLs | 0 |
+| Domains / URLs | 4 |
 | IPs | 0 |
-| Hashes | 0 |
-
-## Evidence folders (placeholders)
-
-| Folder | Status |
-|--------|--------|
-| `network_captures/` | Empty — lab PCAP only after approved Tier-1 gate |
-| `memory_dumps/` | Empty |
-| `rules/` | Stub YARA/Sigma placeholders — not deployable |
-| `actors_and_finance/` | No crypto wallets established |
+| Hashes | 8 |
+| Total IND rows | 19 |
 
 ## Case isolation
 
-Standalone candidate. Loader→CS is COMMON TECHNIQUE class only vs other loaders.
+Standalone candidate promoted after primary freeze. Loader→CS is COMMON TECHNIQUE class only vs other loaders.
 
 ## Cross-references
 
 - Investigation: `investigations/sharkloader/`
-- LE stub package: `reports/law-enforcement/packages/09-sharkloader/`
+- LE package: `reports/law-enforcement/packages/09-sharkloader/`
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`

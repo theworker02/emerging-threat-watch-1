@@ -1,25 +1,23 @@
-# TencShell Investigation (Candidate Stub)
+# TencShell Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for package `ETW-TEN-IC3`  
 **Case ID:** `tencshell`  
 **Case code:** `TEN` / `ETW-TEN-IC3`  
 **Kind:** `candidate`  
 **Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Cato CTRL 2026**
-- Why it fits Emerging Threat Watch: Go implant; Rshell OSS lineage problem
-- Primary research org (candidate catalog): Cato CTRL
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED.
+- First/major disclosure: **Cato CTRL 2026-04/2026-05**
+- Why it fits Emerging Threat Watch: Go implant / customized Rshell C2 (Tencent-like paths)
+- Primary URL: https://www.catonetworks.com/blog/cato-ctrl-suspected-china-linked-threat-actor-targets-global-manufacturer/
+- Local freeze: `evidence/primary-sources/tencshell/cato-tencshell-2026.md.txt` (PS-TEN-001)
 
 ## Research emphasis
 
-- Track OSS Rshell overlap carefully; do not treat public Rshell as TencShell IOCs.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED. Standalone.
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **15 TEN-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/10-tencshell/`](../../reports/law-enforcement/packages/10-tencshell/).

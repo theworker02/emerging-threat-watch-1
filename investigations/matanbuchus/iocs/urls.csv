@@ -1,2 +1,3 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for Matanbuchus
+http://binclloudapp.com/466943,url,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,ClickFix MSI delivery URL (Huntress),matanbuchus
+https://marle.io/check/updprofile.aspx,url,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,Matanbuchus C2 — encrypted main module,matanbuchus

@@ -1,25 +1,23 @@
-# Argamal Investigation (Candidate Stub)
+# Argamal Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for package `ETW-ARG-IC3`  
 **Case ID:** `argamal`  
 **Case code:** `ARG` / `ETW-ARG-IC3`  
 **Kind:** `candidate`  
 **Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Kaspersky June 2026**
-- Why it fits Emerging Threat Watch: Trojanized adult games RAT
-- Primary research org (candidate catalog): Kaspersky
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- Standalone candidate. Case-isolated from all active families.
+- First/major disclosure: **Kaspersky GReAT / Securelist 2026-06-03**
+- Why it fits Emerging Threat Watch: RAT via trojanized adult/hentai games (COM hijack)
+- Primary URL: https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/
+- Local freeze: `evidence/primary-sources/argamal/securelist-argamal-2026.html` (PS-ARG-001)
 
 ## Research emphasis
 
-- Trojanized game distribution surface; no lure URLs invented.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+Standalone candidate. Case-isolated from all active families.
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **22 ARG-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/12-argamal/`](../../reports/law-enforcement/packages/12-argamal/).

@@ -1,2 +1,18 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for StarlandRAT
+eorthopaedics.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Staging / HWID C2 (Talos; possibly hijacked),starlandrat
+sastoro.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Parallel staging / HWID C2 under /alpha/,starlandrat
+web-devtools.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Shellcode staging (/starlandfox /x32remka /dopfile),starlandrat
+zynaris.io,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,HTA stager / trojanized installer lures,starlandrat
+windowscreenrepairnearme.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Primary Starland RAT C2 (possibly hijacked),starlandrat
+aipythondevs.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Primary Starland RAT C2,starlandrat
+0x6ae382ed2154cc84c6672e4e908cd2c69c1b35ba,crypto_constant,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Polygon smart-contract address for XOR-encrypted fallback C2,starlandrat
+polygon-rpc.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Public Polygon JSON-RPC used for fallback domain retrieval,starlandrat
+skuefq_bot,string,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Telegram bot username for victim notification beacons (id 8384531459),starlandrat
+komandastuk_bot,string,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Telegram bot username for victim notification beacons (id 7993597060),starlandrat
+stuk komanda,string,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Private Telegram channel used as C2-like dashboard (created 2025-06-05),starlandrat
+PythonLauncher,string,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Scheduled-task name prefix PythonLauncher-{3 random chars},starlandrat
+f2j398fj239d8j23dkkskskkkkkkkkk,mutex,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,WLDR agent mutex preventing duplicate instances,starlandrat
+odg5t8mvssvh,crypto_constant,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Hardcoded WLDR downloader password (PBKDF2 session key material),starlandrat
+helo1,crypto_constant,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Starland RAT XOR key for registration/telemetry encoding,starlandrat
+$m7*rYpry3,crypto_constant,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,XOR key for Polygon-contract fallback domain decrypt,starlandrat
+LICENSE.txt,filename,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Starland persistence argument to pythonw.exe via Startup LNK,starlandrat

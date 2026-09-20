@@ -1,2 +1,11 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for Argamal
+42add9475e67a1ccc6a6af94b5475d3defc01b85,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Modified FFmpeg DLL (SHA1),argamal
+edce72f59e4c1d136cd1946af70d334c19df858d,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,natives2_blob.bin / Trojan downloader (SHA1),argamal
+76253fb55aed707440e808ea78e7101318436b1c,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
+1405a3c5e0aeb08012484134e16cdec4ab29b4a4,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
+535f4337f261b6da20a3c614eb13270bed2d533a,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
+d2cb0d7a9ad2b5d4ea7c2da8aec62beb37cf36d6,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
+9803604ec45f31f9ef75bcca1e1310d8ac1fc3a6,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Trojan downloader (SHA1),argamal
+02819d200d1424882af81cb504b3e8614b32397a,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Trojan downloader (SHA1),argamal
+186.158.223.35,ipv4,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Shared C2 resolution (Kaspersky infrastructure table),argamal
+181.116.218.56,ipv4,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Earlier asper1 resolution (2024),argamal

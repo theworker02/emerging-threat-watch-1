@@ -24,9 +24,9 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 
 **Enforcement readiness:** [`docs/ENFORCEMENT_READINESS.md`](../../docs/ENFORCEMENT_READINESS.md).
 
-## Fifteen packages (7 active + 8 candidate stubs — do not merge)
+## Fifteen packages (8 filed + 7 primary-frozen — do not merge)
 
-### Active
+### Filed
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
@@ -37,23 +37,23 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) — **FILED_IC3** `98a4444754324e539dbbffcb10c70637` (2026-09-19 9:52:51 PM EST); [`IC3_FILING_RECORD.md`](packages/05-pollcat/IC3_FILING_RECORD.md) · pointer [`reports/pollcat/POLLCAT_IC3_BRIEF.md`](../pollcat/POLLCAT_IC3_BRIEF.md) |
 | 6 | SynkLoader | `ETW-SYN-IC3` | Modular mixed-language loader / Teams phishing | [`packages/06-synkloader/`](packages/06-synkloader/) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST); [`IC3_FILING_RECORD.md`](packages/06-synkloader/IC3_FILING_RECORD.md) |
 | 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST); [`IC3_FILING_RECORD.md`](packages/07-showboat/IC3_FILING_RECORD.md) |
+| 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (Zscaler) | [`packages/08-abyssos/`](packages/08-abyssos/) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST); [`IC3_FILING_RECORD.md`](packages/08-abyssos/IC3_FILING_RECORD.md) |
 
-### Candidate / comparator stubs (**NOT READY TO FILE**)
+### Primary-frozen (IOCs transcribed — **not IC3-filed**)
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
-| 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (Zscaler) | [`packages/08-abyssos/`](packages/08-abyssos/) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST); [`IC3_FILING_RECORD.md`](packages/08-abyssos/IC3_FILING_RECORD.md) |
-| 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (candidate) | [`packages/09-sharkloader/`](packages/09-sharkloader/) |
-| 10 | TencShell | `ETW-TEN-IC3` | Go implant / Rshell lineage problem (candidate) | [`packages/10-tencshell/`](packages/10-tencshell/) |
-| 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) |
-| 12 | Argamal | `ETW-ARG-IC3` | Trojanized adult games RAT (candidate) | [`packages/12-argamal/`](packages/12-argamal/) |
-| 13 | Okobot | `ETW-OKO-IC3` | Multi-payload / OkoSpyware alias (candidate) | [`packages/13-okobot/`](packages/13-okobot/) |
-| 14 | Matanbuchus | `ETW-MAT-IC3` | SynkLoader technique comparator (MaaS) | [`packages/14-matanbuchus/`](packages/14-matanbuchus/) |
-| 15 | StarlandRAT | `ETW-STR-IC3` | Python RAT / WLDR companion (candidate) | [`packages/15-starlandrat/`](packages/15-starlandrat/) |
+| 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (StrikeShark) | [`packages/09-sharkloader/`](packages/09-sharkloader/) — **PRIMARY_FROZEN** 19 SHK-IND · [`IC3_FULL_PACKAGE.md`](packages/09-sharkloader/IC3_FULL_PACKAGE.md) |
+| 10 | TencShell | `ETW-TEN-IC3` | Go implant / customized Rshell | [`packages/10-tencshell/`](packages/10-tencshell/) — **PRIMARY_FROZEN** 15 TEN-IND · [`IC3_FULL_PACKAGE.md`](packages/10-tencshell/IC3_FULL_PACKAGE.md) |
+| 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) — **PRIMARY_FROZEN** 30 MNF-IND · [`IC3_FULL_PACKAGE.md`](packages/11-minifast/IC3_FULL_PACKAGE.md) |
+| 12 | Argamal | `ETW-ARG-IC3` | Trojanized adult games RAT | [`packages/12-argamal/`](packages/12-argamal/) — **PRIMARY_FROZEN** 22 ARG-IND · [`IC3_FULL_PACKAGE.md`](packages/12-argamal/IC3_FULL_PACKAGE.md) |
+| 13 | Okobot | `ETW-OKO-IC3` | Multi-payload / OkoSpyware | [`packages/13-okobot/`](packages/13-okobot/) — **PRIMARY_FROZEN** 30 OKO-IND · [`IC3_FULL_PACKAGE.md`](packages/13-okobot/IC3_FULL_PACKAGE.md) |
+| 14 | Matanbuchus | `ETW-MAT-IC3` | SynkLoader technique comparator (MaaS) | [`packages/14-matanbuchus/`](packages/14-matanbuchus/) — **PRIMARY_FROZEN** 15 MAT-IND · [`IC3_FULL_PACKAGE.md`](packages/14-matanbuchus/IC3_FULL_PACKAGE.md) |
+| 15 | StarlandRAT | `ETW-STR-IC3` | Python RAT / WLDR companion | [`packages/15-starlandrat/`](packages/15-starlandrat/) — **PRIMARY_FROZEN** 17 STR-IND · [`IC3_FULL_PACKAGE.md`](packages/15-starlandrat/IC3_FULL_PACKAGE.md) |
 
 **PollCat and NodeRabbit** share a dual-referenced Securelist primary artifact but remain **separate** IC3 packages. Do not merge.
 
-**Matanbuchus** is a technique-comparator stub for SynkLoader only — `authorship_link=NOT_ESTABLISHED`. Do not file jointly.
+**Matanbuchus** is a technique-comparator package for SynkLoader only — `authorship_link=NOT_ESTABLISHED`. Do not file jointly.
 
 Master status table: [`MASTER_INDEX.csv`](MASTER_INDEX.csv)
 
@@ -80,7 +80,7 @@ Local filing helpers (gitignored): `private/filing-helpers/0N-family/` (`00_COVE
 4. **No malware binaries** in IC3 web forms.  
 5. **No invented dollar losses, victim names, hashes, or C2 hosts.**  
 6. Rebuild public packages after indicator changes: `python shared/tooling/build_le_packages.py`  
-7. **Candidate stubs (08–15)** must not be filed until primary URL freeze + human promotion.
+7. **Primary-frozen packages (09–15)** have IOCs transcribed but must not be IC3-filed until human review; Matanbuchus remains SynkLoader comparator only.
 
 ## Relationship to other repo paths
 

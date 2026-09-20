@@ -1,25 +1,23 @@
-# SharkLoader Investigation (Candidate Stub)
+# SharkLoader Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for package `ETW-SHK-IC3`  
 **Case ID:** `sharkloader`  
 **Case code:** `SHK` / `ETW-SHK-IC3`  
 **Kind:** `candidate`  
 **Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Kaspersky June 2026**
-- Why it fits Emerging Threat Watch: Custom loader leading to Cobalt Strike
-- Primary research org (candidate catalog): Kaspersky
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- Standalone candidate. Loader→CS is COMMON TECHNIQUE class only vs other loaders.
+- First/major disclosure: **Kaspersky GReAT / Securelist 2026-06-24**
+- Why it fits Emerging Threat Watch: Custom loader → Cobalt Strike (StrikeShark campaign)
+- Primary URL: https://securelist.com/strikeshark-campaign/120326/
+- Local freeze: `evidence/primary-sources/sharkloader/securelist-strikeshark-2026-06-24.html` (PS-SHK-001)
 
 ## Research emphasis
 
-- Loader→Cobalt Strike delivery chain; no CS beacon hashes invented here.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+Standalone candidate promoted after primary freeze. Loader→CS is COMMON TECHNIQUE class only vs other loaders.
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **19 SHK-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/09-sharkloader/`](../../reports/law-enforcement/packages/09-sharkloader/).

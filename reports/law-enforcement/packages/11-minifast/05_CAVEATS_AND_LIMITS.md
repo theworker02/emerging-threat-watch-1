@@ -1,26 +1,34 @@
 # MiniFast — Caveats and Limits
 
 **Package:** `ETW-MNF-IC3`  
-**Status:** `CANDIDATE`
+**Status:** `PRIMARY_FROZEN`
 
 ## Analytical caveats
 
-- This is a **candidate/comparator stub**, not a filing-ready package.
+- PRIMARY-SOURCE indicators only — no ETW live C2 contact.
+- Additional SHA-256 / Azure domains appear in primary IOC section beyond this curated ledger — see freeze HTML.
+- Nimbus Manticore / IRGC attribution is Check Point framing — NOT independently established by ETW.
+- Do NOT auto-merge MiniFast into PollCat despite Azure/C2 structural notes (ASSOCIATION_ONLY).
+- Author identity remains **NOT_ESTABLISHED**.
 - Context for PollCat lineage assessment only — do NOT auto-merge into POL case. authorship_link=NOT_ESTABLISHED.
-- No hashes, domains, IPs, wallets, or handles were invented for this stub.
 
 ## This package does **not** claim
 
-- No dollar loss figure
-- No assertion that ETW discovered MiniFast
-- No fabricated indicators
-- No independent actor attribution
-- No readiness for IC3/FBI filing
+- No dollar loss figure.
+- No assertion that ETW discovered MiniFast.
+- No fabricated hashes or C2 hosts.
+- No independent actor attribution.
+- No IC3 Submission ID until a human files this package.
 
 ## Provenance vocabulary
 
-| Label | Meaning |
-|-------|---------|
+| Label | Meaning in this package |
+|-------|-------------------------|
+| PRIMARY-SOURCE | Published by the cited vendor/researcher |
+| OBSERVED_PASSIVE | Passive fact retrieved by ETW — not ownership |
+| OBSERVED | Independently observed campaign ownership (not claimed) |
 | UNVERIFIED | Lead only — not adequately substantiated |
-| ASSOCIATION_ONLY | Contextual association — not ownership |
-| PRIMARY-SOURCE | Published by cited vendor (none frozen yet here) |
+
+## Safety statement
+
+No malware was executed and no suspected command-and-control system was contacted during preparation of this package.

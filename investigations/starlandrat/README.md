@@ -1,25 +1,23 @@
-# StarlandRAT Investigation (Candidate Stub)
+# StarlandRAT Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for package `ETW-STR-IC3`  
 **Case ID:** `starlandrat`  
 **Case code:** `STR` / `ETW-STR-IC3`  
 **Kind:** `candidate`  
 **Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Cisco Talos UAT-11795 / public vendor coverage**
-- Why it fits Emerging Threat Watch: Telegram + Polygon contract C2 fallback; fits ETW tracker/Telegram OSINT methodology
-- Primary research org (candidate catalog): Cisco Talos
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- WLDR Agent is companion tracking under this case folder until distinct corpus warrants split. Do not attribute to active ETW families.
+- First/major disclosure: **Cisco Talos 2026-07**
+- Why it fits Emerging Threat Watch: Python RAT + WLDR PowerShell C2 (UAT-11795)
+- Primary URL: https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/
+- Local freeze: `evidence/primary-sources/starlandrat/talos-uat-11795-starland-wldr.html` (PS-STR-001)
 
 ## Research emphasis
 
-- Telegram/Polygon C2 class is methodology-relevant; no contract addresses or bot handles invented.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+WLDR Agent companion tracking under this case folder until distinct corpus warrants split. Do not attribute to active ETW families.
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **17 STR-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/15-starlandrat/`](../../reports/law-enforcement/packages/15-starlandrat/).

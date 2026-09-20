@@ -1,13 +1,20 @@
-# Matanbuchus — Sources
+# Matanbuchus — Primary Sources
 
-**Status:** `CANDIDATE_COMPARATOR`
+**Package:** `ETW-MAT-IC3`
 
-| ID | Role | URL / path |
-|----|------|------------|
-| CAT-001 | Candidate catalog | `docs/CANDIDATE_FAMILIES.md` |
-| CAT-002 | Machine-readable candidates | `intelligence/candidate-families.csv` |
-| CMP-001 | Technique comparators (if applicable) | `docs/TECHNIQUE_COMPARATORS.md` |
+## Organizations
 
-Primary vendor URL: **UNVERIFIED — freeze primary URL before IOC ingest**
+Huntress (+ Zscaler ThreatLabz Matanbuchus 3.0 analysis)
 
-Organization framing: Multiple vendors
+## Copy-pasteable URLs
+
+- https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis
+
+## Local archive
+
+- `evidence/primary-sources/matanbuchus/huntress-matanbuchus-astarionrat.html` (PS-MAT-001)
+  - SHA-256: `61db6ae84078463576b58b48bcf79d489adeeb5b05f4658fdb29e840a07904e7`
+
+## Provenance rule
+
+These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.

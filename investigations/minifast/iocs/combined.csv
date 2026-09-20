@@ -1,2 +1,31 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for MiniFast
+10fd541674adadfbba99b54280f7e59732746faf2b10ce68521866f737f1e46d,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+781605ce9d4a9869e846f6c9657d71437cb6240ab27ffbc4cd550c0e06996690,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+2c214494fd0bad31473ca8adce78a4f50847876584571e66aadeae70827ec2dc,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+f08b17856616d66492a24dced27f788e235f35f42fa7cd10f315000d3a2f4c03,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+a57ffb819fe8d98ff925c5d7b239598fe302acf5a13193d7a535040a71298fdf,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+63d0d3c4a7f71bdbca720903d6a99b832089cc093c64d2938e7e001e56c17ab4,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+74882085db2088356ed7f72f01e0404a0a98cda88ef56fb15ce74c1f36b26d27,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+bc3b44154518c5794ce639108e7b9c5fecb0c189607a26de1aaed518d890c7ad,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+ecaf493c320d201d285ef5f61d75744216e47cf1115b4af528f9a78883cc446e,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+44f4f7aca7f1d9bfdaf7b3736934cbe19f851a707662f8f0b0c49b383e054250,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+0db36a04d304ad96f9e6f97b531934594cd95a5cea9ff2c9af249201089dc864,sha256,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Check Point MiniFast / Nimbus Manticore campaign sample,minifast
+business-startup.org,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+business-startup.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+businessstartup.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+buisness-centeral.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+buisness-centeral-transportation.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+buisness-centeral-transportation.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+licencemanagers.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+licencesupporting.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+peerdistsvcmanagers.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+nanomatrix.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+PremierHealthAdvisory.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+ramiltonsfinance.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+getsqldeveloper.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+UpdateChecker.dll,filename,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Final MiniFast backdoor payload filename,minifast
+CheckForUpdates,string,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,MiniFast DLL export / entry,minifast
+ZoomUpdateTaskUser,string,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Hijacked Zoom scheduled-task persistence prefix,minifast
+%LOCALAPPDATA%\Zoom\bin\update,path,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Second-stage staging directory under Zoom path,minifast
+Zoominstall64.zip,filename,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,Trojanized Zoom installer archive lure,minifast

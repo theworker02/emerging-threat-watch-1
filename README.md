@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/theworker02/emerging-threat-watch-1"><img alt="Repository" src="https://img.shields.io/badge/repo-emerging--threat--watch--1-22D3EE?style=flat-square&logo=github&logoColor=white"/></a>
-  <img alt="Families" src="https://img.shields.io/badge/families-15%20(7%20active%20%2B%208%20stubs)-3B82F6?style=flat-square"/>
+  <img alt="Families" src="https://img.shields.io/badge/families-15%20(8%20filed%20%2B%207%20primary-frozen)-3B82F6?style=flat-square"/>
   <img alt="Phase" src="https://img.shields.io/badge/phase-1%20evidence%20acquisition-0EA5E9?style=flat-square"/>
   <img alt="Cutoff" src="https://img.shields.io/badge/v1%20freeze-2026--09--19-64748B?style=flat-square"/>
   <img alt="Scope" src="https://img.shields.io/badge/scope-defensive%20CTI%20only-10B981?style=flat-square"/>
@@ -62,7 +62,7 @@ Official brand mark: [`assets/etw-logo.svg`](assets/etw-logo.svg).
 | Claim ledgers, source archives, IOC corpora | A live C2 monitoring or interactive tasking platform |
 | Independent family case packages | A merged “mega-campaign” attribution dump |
 | Draft IC3 / FBI filing packages for human review | An automatic submission to law enforcement |
-| Candidate stubs with empty / UNVERIFIED ledgers | Permission to invent IOCs or force lineage |
+| Empty ledgers or invented IOCs | Permission to invent IOCs or force lineage |
 
 > **Hard boundary:** This repository must never contain functionality intended to improve, weaponize, deploy, propagate, conceal, or operationalize malware.
 
@@ -86,20 +86,20 @@ Seven **active** investigation trees under `investigations/`:
 
 ---
 
-## Candidate / comparator stubs
+## Candidate / comparator packages (primary-frozen)
 
-Seven remaining **UNVERIFIED** stubs share the same folder skeleton until primary URL freeze. **Candidate stub packages are not filing-ready** (except Abyssos, now primary-frozen / IC3-ready).
+Former empty stubs **09–15** now have frozen primaries and transcribed IOCs (`PRIMARY_FROZEN`). They are **not IC3-filed** until a human files them. Matanbuchus remains a SynkLoader technique comparator only.
 
 | Family | Kind | Why tracked |
 |--------|------|-------------|
 | **Abyssos** | Filed (promoted from candidate) | Modular RAT — Zscaler primary frozen 2026-09-20; `ETW-ABY-IC3` **FILED_IC3** `a23f0a9d6799480e994284416d354713` |
-| **SharkLoader** | Candidate | Custom loader → Cobalt Strike (Kaspersky June 2026 framing) |
-| **TencShell** | Candidate | Go implant; Rshell OSS lineage problem (Cato CTRL 2026) |
-| **MiniFast** | Candidate | Zoom installer trust abuse; PollCat context only — **not merged** |
-| **Argamal** | Candidate | Trojanized adult games RAT (Kaspersky June 2026 framing) |
-| **Okobot** | Candidate | Multi-payload / OkoSpyware alias tracking |
-| **Matanbuchus** | Technique comparator | SynkLoader Teams / ChaCha20 **COMMON TECHNIQUE** only — authorship `NOT_ESTABLISHED` |
-| **StarlandRAT** | Candidate | Talos UAT-11795 / WLDR companion tracking; Telegram / Polygon C2 class |
+| **SharkLoader** | Primary-frozen | StrikeShark / Cobalt Strike loader — Securelist 2026-06-24; 19 SHK-IND |
+| **TencShell** | Primary-frozen | Customized Rshell Go implant — Cato CTRL; 15 TEN-IND |
+| **MiniFast** | Primary-frozen | Zoom trust abuse / Nimbus Manticore — Check Point; 30 MNF-IND; PollCat context only — **not merged** |
+| **Argamal** | Primary-frozen | Trojanized adult games RAT — Securelist 2026-06-03; 22 ARG-IND |
+| **Okobot** | Primary-frozen | Multi-payload / OkoSpyware — Securelist; 30 OKO-IND |
+| **Matanbuchus** | Technique comparator (primary-frozen) | SynkLoader Teams / ChaCha20 **COMMON TECHNIQUE** only — 15 MAT-IND; authorship `NOT_ESTABLISHED` |
+| **StarlandRAT** | Primary-frozen | Talos UAT-11795 / WLDR — 17 STR-IND; Telegram / Polygon C2 class |
 
 Catalogs:
 
@@ -236,7 +236,13 @@ Canonical home: [`reports/law-enforcement/`](reports/law-enforcement/).
 | SynkLoader | `reports/law-enforcement/packages/06-synkloader/` (`ETW-SYN-IC3`) — **FILED_IC3** `3440d0c64dc240499ff66deaa3311a0b` (2026-09-19 10:04:35 PM EST) |
 | Showboat | `reports/law-enforcement/packages/07-showboat/` (`ETW-SHO-IC3`) — **FILED_IC3** `db42033f319844c08ad103befebfca08` (2026-09-19 10:13:28 PM EST) |
 | Abyssos | `reports/law-enforcement/packages/08-abyssos/` (`ETW-ABY-IC3`) — **FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
-| SharkLoader … StarlandRAT stubs | `packages/09`–`15` — **not filing-ready** |
+| SharkLoader | `packages/09-sharkloader/` (`ETW-SHK-IC3`) — **PRIMARY_FROZEN** 19 SHK-IND |
+| TencShell | `packages/10-tencshell/` (`ETW-TEN-IC3`) — **PRIMARY_FROZEN** 15 TEN-IND |
+| MiniFast | `packages/11-minifast/` (`ETW-MNF-IC3`) — **PRIMARY_FROZEN** 30 MNF-IND |
+| Argamal | `packages/12-argamal/` (`ETW-ARG-IC3`) — **PRIMARY_FROZEN** 22 ARG-IND |
+| Okobot | `packages/13-okobot/` (`ETW-OKO-IC3`) — **PRIMARY_FROZEN** 30 OKO-IND |
+| Matanbuchus | `packages/14-matanbuchus/` (`ETW-MAT-IC3`) — **PRIMARY_FROZEN** 15 MAT-IND (SynkLoader comparator only) |
+| StarlandRAT | `packages/15-starlandrat/` (`ETW-STR-IC3`) — **PRIMARY_FROZEN** 17 STR-IND |
 | Landscape comparison | `reports/landscape/EMERGING_THREAT_LANDSCAPE_REPORT.pdf` |
 
 **Rules:**
@@ -254,7 +260,7 @@ Start at [`reports/law-enforcement/README.md`](reports/law-enforcement/README.md
 **Phase 1 — Evidence acquisition & claim corpus**  
 **v1 freeze cutoff:** **2026-09-19**  
 **Final threat-report PDFs:** deferred  
-**Scale:** **7** active families + **8** candidate/comparator stubs = **15** family folders
+**Scale:** **8** filed families + **7** primary-frozen packages = **15** family folders
 
 Operational pointers:
 
@@ -272,12 +278,12 @@ Operational pointers:
 
 ## Contribute intelligence
 
-Have indicators, sightings, or corrections for active families (**Rapuncel**, **Settra**, **RatHat**, **NodeRabbit**, **PollCat**, **SynkLoader**, **Showboat**) or candidate stubs?
+Have indicators, sightings, or corrections for active or primary-frozen families (**Rapuncel**, **Settra**, **RatHat**, **NodeRabbit**, **PollCat**, **SynkLoader**, **Showboat**, **Abyssos**, **SharkLoader**, **TencShell**, **MiniFast**, **Argamal**, **Okobot**, **Matanbuchus**, **StarlandRAT**)?
 
 1. Open a GitHub issue on [theworker02/emerging-threat-watch-1](https://github.com/theworker02/emerging-threat-watch-1), **or**
 2. Follow [`docs/SUBMIT_INTEL.md`](docs/SUBMIT_INTEL.md)
 
-Tips support defensive research. Completed, human-reviewed packages under [`reports/law-enforcement/`](reports/law-enforcement/) are prepared for FBI / IC3 reporting. **Candidate stub packages are not filing-ready.**
+Tips support defensive research. Completed, human-reviewed packages under [`reports/law-enforcement/`](reports/law-enforcement/) are prepared for FBI / IC3 reporting. **Primary-frozen packages (09–15) are not IC3-filed until human filing.**
 
 Code / docs contributions: see [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 

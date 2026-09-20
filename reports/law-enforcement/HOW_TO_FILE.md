@@ -56,7 +56,7 @@ IC3 web forms often limit uploads. Prefer:
 
 If a field office requests files, send the entire `packages/0N-<family>/` folder (still no malware binaries).
 
-## Seven active filings, not one
+## Eight active filings, not one
 
 | Package ID | Family | Why separate | Status |
 |------------|--------|--------------|--------|
@@ -69,4 +69,18 @@ If a field office requests files, send the entire `packages/0N-<family>/` folder
 | ETW-SHO-IC3 | Showboat | Linux telecom post-exploitation; historical activity may predate 2026 disclosure | `FILED_IC3` `db42033f319844c08ad103befebfca08` |
 | ETW-ABY-IC3 | Abyssos | Modular Windows C++ RAT (HVNC / credential theft); Zscaler primary | `FILED_IC3` `a23f0a9d6799480e994284416d354713` |
 
-There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly. Candidate stubs (09–15) remain **not filing-ready**. Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`.
+There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly.
+
+### Primary-frozen packages (09–15) — IOCs ready; not yet filed
+
+| Package ID | Family | IND rows | Status |
+|------------|--------|----------|--------|
+| ETW-SHK-IC3 | SharkLoader | 19 | `PRIMARY_FROZEN` |
+| ETW-TEN-IC3 | TencShell | 15 | `PRIMARY_FROZEN` |
+| ETW-MNF-IC3 | MiniFast | 30 | `PRIMARY_FROZEN` |
+| ETW-ARG-IC3 | Argamal | 22 | `PRIMARY_FROZEN` |
+| ETW-OKO-IC3 | Okobot | 30 | `PRIMARY_FROZEN` |
+| ETW-MAT-IC3 | Matanbuchus | 15 | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
+| ETW-STR-IC3 | StarlandRAT | 17 | `PRIMARY_FROZEN` |
+
+Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`.

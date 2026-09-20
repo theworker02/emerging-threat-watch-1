@@ -1,2 +1,8 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for Okobot
+2baserec2.guru,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+recavb22.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+kbeautyreviews.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+coffeesaloon.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+livewallpapers.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
+thatwascringe.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
+moonsand.store,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SeedHunter C2,okobot

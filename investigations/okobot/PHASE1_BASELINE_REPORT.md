@@ -1,30 +1,25 @@
-# Okobot — Phase 1 Baseline (CANDIDATE STUB)
+# Okobot — Phase 1 Baseline
 
-**Generated:** 2026-09-19T20:30:00Z  
-**Status:** `CANDIDATE` — not an active Phase-1 freeze corpus
+**Generated:** 2026-09-20T02:25:00Z  
+**Status:** `PRIMARY_FROZEN`
 
 ## Summary
 
-Okobot is tracked as a **candidate/comparator case folder** so Emerging Threat Watch can host notes, source freeze work, and passive collection seeds without inventing indicators.
+Defensive threat-intelligence package concerning the OkoBot framework as publicly documented by Kaspersky GReAT (Securelist). Kaspersky describes a multi-stage campaign (≥20 payloads) initiated via TookPS PowerShell, configuring an SSH bot and dispatching modules including OkoSpyware (window video + keylogging of crypto wallets/password managers), SeedHunter (hardware-wallet seed phishing overlays), MC Keylogger, and browser extension loaders (e.g. Rilide). Victims across 25+ countries; activity ongoing as of publication. Russian-speaking crimeware signals noted by Kaspersky — author identity remains NOT_ESTABLISHED.
 
 | Field | Value |
 |-------|-------|
 | Family | Okobot |
 | Case code | OKO |
-| Disclosure framing | Kaspersky (investigation start Jan 2026) |
-| PRIMARY IOCs in this stub | **None** |
+| Disclosure | Kaspersky GReAT / Securelist 2026 |
+| PRIMARY IOCs in this build | **30** |
 | Independently observed infra | **None** |
 | Author attribution | **NOT_ESTABLISHED** |
-
-## Next promotion gates
-
-1. Freeze at least one PRIMARY-SOURCE URL into `evidence/source-index.csv`
-2. Transcribe published IOCs only (never invent)
-3. Human decision to mark priority `ADDED` in `docs/CANDIDATE_FAMILIES.md`
+| Primary freeze | `evidence/primary-sources/okobot/securelist-okobot-2026.html` |
+| SHA-256 | `04eb0610ddb6e36d4cb0c12917e90424741162b091b87426a5c4c3cc1bf431ec` |
 
 ## Cross-references
 
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`
-- Technique comparators: `docs/TECHNIQUE_COMPARATORS.md`
-- CTI stub: `reports/law-enforcement/CTI-Evidence-Repository/families/Okobot/`
-- LE stub package: `reports/law-enforcement/packages/13-okobot/`
+- LE package: `reports/law-enforcement/packages/13-okobot/`
+- CTI tree: `reports/law-enforcement/CTI-Evidence-Repository/families/Okobot/`

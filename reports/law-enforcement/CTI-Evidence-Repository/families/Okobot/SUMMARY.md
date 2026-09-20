@@ -1,41 +1,32 @@
-# Okobot — Family Summary (CANDIDATE STUB)
+# Okobot — Family Summary
 
 **Case ID slug:** `okobot`  
 **Package:** `ETW-OKO-IC3`  
-**Status:** `CANDIDATE`  
-**Category:** Multi-payload spyware / loader ecosystem (OkoSpyware alias tracking)  
+**Status:** `PRIMARY_FROZEN`  
+**Category:** Multi-payload crypto-theft framework (OkoSpyware / SeedHunter)  
 **TLP:** TLP:AMBER+STRICT  
-**Generated:** 2026-09-19T20:30:00Z  
-**Source:** Candidate catalog only — **no invented IOCs**
+**Generated:** 2026-09-20T02:25:00Z  
+**Source:** PRIMARY freeze `PS-OKO-001`
 
 ## Executive overview
 
-Defensive placeholder package for **Okobot**. This folder exists so the CTI tree mirrors investigation stubs.  
-**PRIMARY indicator counts in this build: 0.** Author personal identity / home IP is **NOT ESTABLISHED**.
+Defensive threat-intelligence package concerning the OkoBot framework as publicly documented by Kaspersky GReAT (Securelist). Kaspersky describes a multi-stage campaign (≥20 payloads) initiated via TookPS PowerShell, configuring an SSH bot and dispatching modules including OkoSpyware (window video + keylogging of crypto wallets/password managers), SeedHunter (hardware-wallet seed phishing overlays), MC Keylogger, and browser extension loaders (e.g. Rilide). Victims across 25+ countries; activity ongoing as of publication. Russian-speaking crimeware signals noted by Kaspersky — author identity remains NOT_ESTABLISHED.
 
 ## Indicator counts (this build)
 
 | Class | Count |
 |-------|------:|
-| Domains / URLs | 0 |
-| IPs | 0 |
-| Hashes | 0 |
-
-## Evidence folders (placeholders)
-
-| Folder | Status |
-|--------|--------|
-| `network_captures/` | Empty — lab PCAP only after approved Tier-1 gate |
-| `memory_dumps/` | Empty |
-| `rules/` | Stub YARA/Sigma placeholders — not deployable |
-| `actors_and_finance/` | No crypto wallets established |
+| Domains / URLs | 7 |
+| IPs | 3 |
+| Hashes | 15 |
+| Total IND rows | 30 |
 
 ## Case isolation
 
-Alias OkoSpyware tracked here only. Do not invent payload inventory.
+Standalone candidate. Case-isolated from all active families.
 
 ## Cross-references
 
 - Investigation: `investigations/okobot/`
-- LE stub package: `reports/law-enforcement/packages/13-okobot/`
+- LE package: `reports/law-enforcement/packages/13-okobot/`
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`

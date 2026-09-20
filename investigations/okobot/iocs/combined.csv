@@ -1,2 +1,31 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for Okobot
+B07D451EE65A1580F20A784C8F0E7A46,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher protobuf.dll,okobot
+187A1F68AE786E53D3831166DC84E6D2,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher protobuf.dll,okobot
+D84E8DC509308523E0209D3CD3544619,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher protobuf.dll,okobot
+83E6B8FCB92A0B13E109301F8FF649CF,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher version.dll,okobot
+7306885BB4C98F2A9F056104CF092BC9,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin PowerShell wrapper,okobot
+B4C2E16CDB513BE4DC798F88E2527334,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin CMD wrapper,okobot
+2157D2429124AD28DB7A26F2477CB985,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin environment enumerator,okobot
+77CECF5E2A622AE07D8AE9913457AB57,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin dropper,okobot
+E0C3BC27A65750E740C4F1719E531C7D,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin process injector,okobot
+3D2B43F91F65BFBF36A9C71B6B418876,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector ext_daemon.exe,okobot
+70FEF9FD6E351F4D53CFEEE8DCDFCD99,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector seedhunter_x64.exe,okobot
+ACD31C9941B6C1CABD4E45E6877B9038,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector keylog_x64.dll,okobot
+DD52F5108A176C62AD807C327734AD12,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector oko.dll (OkoSpyware),okobot
+AC93A821617AEA1F56D4BC0BEF4AF327,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot HDUtil.exe,okobot
+11DBC8A2BEA04B15F8F68F3F01E8FAF9,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot extl.exe,okobot
+2baserec2.guru,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+recavb22.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+kbeautyreviews.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+coffeesaloon.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
+livewallpapers.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
+thatwascringe.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
+moonsand.store,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SeedHunter C2,okobot
+104.243.43.16,ipv4,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot infrastructure,okobot
+104.243.32.213,ipv4,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot infrastructure,okobot
+62.210.188.209,ipv4,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot infrastructure,okobot
+%PROGRAMDATA%\HDVideo\HDUtil.exe,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot utility path,okobot
+%PROGRAMDATA%\hwid.dat,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Host ID artifact,okobot
+%PROGRAMDATA%\oko_ver,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Framework version marker,okobot
+%USERPROFILE%\.ssh\go.bat,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot helper,okobot
+ir-post.php,string,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Exfiltration endpoint for OkoSpyware/MC Keylogger artifacts,okobot

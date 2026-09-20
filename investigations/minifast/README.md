@@ -1,25 +1,23 @@
-# MiniFast Investigation (Candidate Stub)
+# MiniFast Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for package `ETW-MNF-IC3`  
 **Case ID:** `minifast`  
 **Case code:** `MNF` / `ETW-MNF-IC3`  
 **Kind:** `candidate`  
 **Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Check Point May 2026**
-- Why it fits Emerging Threat Watch: Nimbus Manticore; Zoom installer trust abuse; PollCat C2 structural overlap noted in candidate notes
-- Primary research org (candidate catalog): Check Point
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- Context for PollCat lineage assessment only — do NOT auto-merge into POL case. authorship_link=NOT_ESTABLISHED.
+- First/major disclosure: **Check Point Research 2026-05**
+- Why it fits Emerging Threat Watch: AI-assisted .NET backdoor via Zoom trust abuse (Nimbus Manticore)
+- Primary URL: https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/
+- Local freeze: `evidence/primary-sources/minifast/checkpoint-nimbus-manticore-minifast-2026.html` (PS-MNF-001)
 
 ## Research emphasis
 
-- Zoom trust-abuse delivery; structural C2 notes vs PollCat are ASSOCIATION_ONLY until primary freeze.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+Context for PollCat lineage assessment only — do NOT auto-merge into POL case. authorship_link=NOT_ESTABLISHED.
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **30 MNF-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/11-minifast/`](../../reports/law-enforcement/packages/11-minifast/).

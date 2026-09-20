@@ -1,2 +1,2 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for TencShell
+gin-tne-fahcesmukw.cn-hangzhou.fcapp.run,domain,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Observed C2 / staging domain (Alibaba FC-style),tencshell

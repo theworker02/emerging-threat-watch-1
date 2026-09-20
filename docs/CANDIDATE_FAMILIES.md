@@ -14,14 +14,14 @@ One-report / obscure families are high-value for autonomous CT / pDNS / archive 
 | SynkLoader | Expel Aug 2026 | Modular mixed-language loader; Teams/IT-helpdesk enterprise intrusion | **ADDED** |
 | Showboat | Lumen BLL 2026 | Linux modular post-ex; telecoms; possible activity ≥2022 | **ADDED** |
 | Abyssos | Zscaler Aug 2026 | Modular RAT; young corpus | **ADDED / FILED_IC3** `a23f0a9d6799480e994284416d354713` (2026-09-19 10:20:50 PM EST) |
-| SharkLoader | Kaspersky June 2026 | Custom loader → Cobalt Strike | CANDIDATE |
-| TencShell | Cato CTRL 2026 | Go implant; Rshell OSS lineage problem | CANDIDATE |
-| MiniFast | Check Point May 2026 | Nimbus Manticore; Zoom installer trust abuse | CANDIDATE |
-| Argamal | Kaspersky June 2026 | Trojanized adult games RAT | CANDIDATE |
+| SharkLoader | Kaspersky June 2026 | Custom loader → Cobalt Strike | **ADDED / PRIMARY_FROZEN** (19 SHK-IND; Securelist 2026-06-24) |
+| TencShell | Cato CTRL 2026 | Go implant; Rshell OSS lineage problem | **ADDED / PRIMARY_FROZEN** (15 TEN-IND; Cato CTRL) |
+| MiniFast | Check Point May 2026 | Nimbus Manticore; Zoom installer trust abuse | **ADDED / PRIMARY_FROZEN** (30 MNF-IND; do not merge with PollCat) |
+| Argamal | Kaspersky June 2026 | Trojanized adult games RAT | **ADDED / PRIMARY_FROZEN** (22 ARG-IND; Securelist 2026-06-03) |
 | (unnamed) torrent campaign | Kaspersky Sept 17 2026 | Compromised torrents / film lures; mid-Aug start | CANDIDATE |
-| Okobot/OkoSpyware | Kaspersky | 20+ payloads; 25+ countries; Jan 2026 investigation start | CANDIDATE |
-| Matanbuchus & AstarionRAT | Elastic/Checkpoint/community; BelialDemon XSS/Exploit | MaaS loader+RAT; Teams/ClickFix; ChaCha20 — **technique comparator** for SynkLoader only | CANDIDATE |
-| Starland RAT & WLDR Agent | Cisco Talos UAT-11795 / vendors | Python RAT / PS implant; Telegram + Polygon contract C2 fallback | CANDIDATE |
+| Okobot/OkoSpyware | Kaspersky | 20+ payloads; 25+ countries; Jan 2026 investigation start | **ADDED / PRIMARY_FROZEN** (30 OKO-IND; Securelist) |
+| Matanbuchus & AstarionRAT | Huntress / Zscaler; BelialDemon XSS/Exploit | MaaS loader+RAT; Teams/ClickFix; ChaCha20 — **technique comparator** for SynkLoader only | **ADDED / PRIMARY_FROZEN** (15 MAT-IND; comparator only — do not file jointly) |
+| Starland RAT & WLDR Agent | Cisco Talos UAT-11795 | Python RAT / PS implant; Telegram + Polygon contract C2 fallback | **ADDED / PRIMARY_FROZEN** (17 STR-IND; Talos) |
 | RedLine / Vidar / Lumma Stealer | Multiple (Russian MaaS markets) | Commodity stealers; ransomware IA; TimeWeb/REG.RU panel context — **market comparator** for Rapuncel only | CANDIDATE |
 | Pikabot & QakBot variants | Multiple (BlackBasta/Akira IA) | Initial-access loaders; CIS language checks; ClickFix-class paste/exec — **technique comparator** for SynkLoader delivery | CANDIDATE |
 

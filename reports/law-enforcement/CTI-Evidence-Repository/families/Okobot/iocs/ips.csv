@@ -1,2 +1,4 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No IPs — UNVERIFIED candidate stub (Okobot)
+value,notes
+104.243.43.16,SSH bot infrastructure NOT OBSERVED by ETW.
+104.243.32.213,SSH bot infrastructure NOT OBSERVED by ETW.
+62.210.188.209,SSH bot infrastructure NOT OBSERVED by ETW.

@@ -1,2 +1,5 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No domains — UNVERIFIED candidate stub (Matanbuchus)
+value,notes
+http://binclloudapp.com/466943,ClickFix MSI delivery URL (Huntress) NOT OBSERVED by ETW.
+https://marle.io/check/updprofile.aspx,Matanbuchus C2 — encrypted main module NOT OBSERVED by ETW.
+www.ndibstersoft.com,AstarionRAT C2 host NOT OBSERVED by ETW.
+binclloudapp.com,ClickFix MSI delivery domain (created 2026-02-05 per Huntress) NOT OBSERVED by ETW.

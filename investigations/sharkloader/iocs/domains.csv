@@ -1,2 +1,5 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for SharkLoader
+connect-microsoft.com,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain (defanged in article),sharkloader
+ms-record.com,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
+ms-record.top,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
+ms-tray.top,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader

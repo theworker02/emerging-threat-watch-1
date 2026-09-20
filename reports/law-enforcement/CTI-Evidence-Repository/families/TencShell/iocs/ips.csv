@@ -1,2 +1,4 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No IPs — UNVERIFIED candidate stub (TencShell)
+value,notes
+45.64.52.242,Cato CTRL network indicator (defanged 45[.]64[.]52[.]242) NOT OBSERVED by ETW.
+192.238.134.166,Cato CTRL network indicator NOT OBSERVED by ETW.
+45.115.38.27,Cato CTRL network indicator NOT OBSERVED by ETW.

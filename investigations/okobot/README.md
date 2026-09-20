@@ -1,25 +1,23 @@
-# Okobot Investigation (Candidate Stub)
+# Okobot Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for package `ETW-OKO-IC3`  
 **Case ID:** `okobot`  
 **Case code:** `OKO` / `ETW-OKO-IC3`  
 **Kind:** `candidate`  
 **Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**IOC policy:** PRIMARY-SOURCE transcription only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Kaspersky (investigation start Jan 2026)**
-- Why it fits Emerging Threat Watch: 20+ payloads; 25+ countries; broad geographic footprint
-- Primary research org (candidate catalog): Kaspersky
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- Alias OkoSpyware tracked here only. Do not invent payload inventory.
+- First/major disclosure: **Kaspersky GReAT / Securelist 2026**
+- Why it fits Emerging Threat Watch: Multi-payload crypto-theft framework (OkoSpyware / SeedHunter)
+- Primary URL: https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/
+- Local freeze: `evidence/primary-sources/okobot/securelist-okobot-2026.html` (PS-OKO-001)
 
 ## Research emphasis
 
-- Broad multi-payload campaign; stub only until primary sources frozen.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+Standalone candidate. Case-isolated from all active families.
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **30 OKO-IND rows** transcribed. Package status `PRIMARY_FROZEN` — **not IC3-filed**. See [`reports/law-enforcement/packages/13-okobot/`](../../reports/law-enforcement/packages/13-okobot/).

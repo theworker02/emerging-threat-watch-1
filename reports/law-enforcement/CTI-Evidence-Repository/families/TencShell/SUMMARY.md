@@ -1,41 +1,32 @@
-# TencShell — Family Summary (CANDIDATE STUB)
+# TencShell — Family Summary
 
 **Case ID slug:** `tencshell`  
 **Package:** `ETW-TEN-IC3`  
-**Status:** `CANDIDATE`  
-**Category:** Go implant (Rshell OSS lineage problem)  
+**Status:** `PRIMARY_FROZEN`  
+**Category:** Go implant / customized Rshell C2 (Tencent-like paths)  
 **TLP:** TLP:AMBER+STRICT  
-**Generated:** 2026-09-19T20:30:00Z  
-**Source:** Candidate catalog only — **no invented IOCs**
+**Generated:** 2026-09-20T02:25:00Z  
+**Source:** PRIMARY freeze `PS-TEN-001`
 
 ## Executive overview
 
-Defensive placeholder package for **TencShell**. This folder exists so the CTI tree mirrors investigation stubs.  
-**PRIMARY indicator counts in this build: 0.** Author personal identity / home IP is **NOT ESTABLISHED**.
+Defensive threat-intelligence package concerning TencShell as publicly documented by Cato CTRL (2026). Cato describes a previously undocumented Go-based implant customized from the open-source Rshell C2 framework, delivered via a dropper → masqueraded .woff (Donut shellcode) → reflective in-memory load chain against a global manufacturer (India site / third-party access context). C2 traffic imitates Tencent-like web/API paths. Persistence via Run key value OneDriveHealthTask. Suspected China-linked assessment is vendor framing only. Author identity remains NOT_ESTABLISHED. Public Rshell OSS is NOT an IOC for this family.
 
 ## Indicator counts (this build)
 
 | Class | Count |
 |-------|------:|
-| Domains / URLs | 0 |
-| IPs | 0 |
-| Hashes | 0 |
-
-## Evidence folders (placeholders)
-
-| Folder | Status |
-|--------|--------|
-| `network_captures/` | Empty — lab PCAP only after approved Tier-1 gate |
-| `memory_dumps/` | Empty |
-| `rules/` | Stub YARA/Sigma placeholders — not deployable |
-| `actors_and_finance/` | No crypto wallets established |
+| Domains / URLs | 1 |
+| IPs | 3 |
+| Hashes | 8 |
+| Total IND rows | 15 |
 
 ## Case isolation
 
-OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED.
+OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED. Standalone.
 
 ## Cross-references
 
 - Investigation: `investigations/tencshell/`
-- LE stub package: `reports/law-enforcement/packages/10-tencshell/`
+- LE package: `reports/law-enforcement/packages/10-tencshell/`
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`

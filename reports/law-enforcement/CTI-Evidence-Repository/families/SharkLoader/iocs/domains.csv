@@ -1,2 +1,5 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No domains — UNVERIFIED candidate stub (SharkLoader)
+value,notes
+connect-microsoft.com,C2 / infrastructure domain (defanged in article) NOT OBSERVED by ETW.
+ms-record.com,C2 / infrastructure domain NOT OBSERVED by ETW.
+ms-record.top,C2 / infrastructure domain NOT OBSERVED by ETW.
+ms-tray.top,C2 / infrastructure domain NOT OBSERVED by ETW.

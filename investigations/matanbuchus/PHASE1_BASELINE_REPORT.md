@@ -1,30 +1,25 @@
-# Matanbuchus — Phase 1 Baseline (CANDIDATE STUB)
+# Matanbuchus — Phase 1 Baseline
 
-**Generated:** 2026-09-19T20:30:00Z  
-**Status:** `CANDIDATE_COMPARATOR` — not an active Phase-1 freeze corpus
+**Generated:** 2026-09-20T02:25:00Z  
+**Status:** `PRIMARY_FROZEN`
 
 ## Summary
 
-Matanbuchus is tracked as a **candidate/comparator case folder** so Emerging Threat Watch can host notes, source freeze work, and passive collection seeds without inventing indicators.
+Defensive threat-intelligence package concerning Matanbuchus 3.0 / AstarionRAT as publicly documented by Huntress (ClickFix delivery chain) with supporting technical context from Zscaler ThreatLabz Matanbuchus 3.0 analysis. Huntress describes ClickFix → silent MSI → Zillya-style DLL sideload → Matanbuchus 3.0 (ChaCha20) → Lua/reflective loader → AstarionRAT. This package is a TECHNIQUE COMPARATOR for SynkLoader (Teams/ClickFix/ChaCha20 class) only. authorship_link SynkLoader=NOT_ESTABLISHED. Do NOT file jointly with SynkLoader. Author/operator identity remains NOT_ESTABLISHED.
 
 | Field | Value |
 |-------|-------|
 | Family | Matanbuchus |
 | Case code | MAT |
-| Disclosure framing | Elastic/Checkpoint/community; BelialDemon XSS/Exploit ads |
-| PRIMARY IOCs in this stub | **None** |
+| Disclosure | Huntress (+ Zscaler ThreatLabz Matanbuchus 3.0 analysis) 2025-07/2026 |
+| PRIMARY IOCs in this build | **15** |
 | Independently observed infra | **None** |
 | Author attribution | **NOT_ESTABLISHED** |
-
-## Next promotion gates
-
-1. Freeze at least one PRIMARY-SOURCE URL into `evidence/source-index.csv`
-2. Transcribe published IOCs only (never invent)
-3. Human decision to mark priority `ADDED` in `docs/CANDIDATE_FAMILIES.md`
+| Primary freeze | `evidence/primary-sources/matanbuchus/huntress-matanbuchus-astarionrat.html` |
+| SHA-256 | `61db6ae84078463576b58b48bcf79d489adeeb5b05f4658fdb29e840a07904e7` |
 
 ## Cross-references
 
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`
-- Technique comparators: `docs/TECHNIQUE_COMPARATORS.md`
-- CTI stub: `reports/law-enforcement/CTI-Evidence-Repository/families/Matanbuchus/`
-- LE stub package: `reports/law-enforcement/packages/14-matanbuchus/`
+- LE package: `reports/law-enforcement/packages/14-matanbuchus/`
+- CTI tree: `reports/law-enforcement/CTI-Evidence-Repository/families/Matanbuchus/`

@@ -1,2 +1,20 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for SharkLoader
+C559CC68986933200FD5D9E4388E2F58,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Installer sample (Kaspersky StrikeShark),sharkloader
+B3352B42432DEDC4A519F011DC8B5D5A,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Dropper sample,sharkloader
+24FCEBDEECBA65004FDB0923763D74FD,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Dropper (Taiwan gov chain) — Chinese-filename pdf.exe,sharkloader
+9C872A0D5D5A38950E8B9AC9B488BE3F,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,SharkLoader DLL,sharkloader
+AA3086BE652C8B20B0B29B2730D57119,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,SharkLoader DLL SystemSettings.dll,sharkloader
+A514D1BB62D7916475946FE7C07AC0AA,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Encrypted DscCoreR.mui,sharkloader
+9CBD560F820C95D7C38342CD558CB5C6,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Encrypted SyncRest.dat / SyncRes.dat,sharkloader
+1F65544978B8EA0E745E573B8EE9684B,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Dropper (Lebanon),sharkloader
+connect-microsoft.com,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain (defanged in article),sharkloader
+ms-record.com,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
+ms-record.top,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
+ms-tray.top,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
+SystemSettings.dll,filename,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Malicious SharkLoader sideload DLL,sharkloader
+DscCoreR.mui,filename,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Encrypted module hosting Beacon + MinHook,sharkloader
+SyncRes.dat,filename,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Encrypted Detours API-hook module (also SyncRest.dat),sharkloader
+%APPDATA%\xwreg,path,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Common SharkLoader working directory,sharkloader
+%APPDATA%\xgdf,path,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Alternate SharkLoader working directory,sharkloader
+MFUpdate,string,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,HKCU Run key value used for SystemSettings.exe persistence (Hong Kong incident),sharkloader
+\Microsoft\Windows\Edge\Edgeupdate,string,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Scheduled task name (Indonesia diplomatic incident),sharkloader

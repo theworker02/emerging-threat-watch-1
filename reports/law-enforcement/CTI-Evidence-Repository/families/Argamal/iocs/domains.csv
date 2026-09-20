@@ -1,2 +1,7 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No domains — UNVERIFIED candidate stub (Argamal)
+value,notes
+asper1.freeddns.org,Early-version default C2 NOT OBSERVED by ETW.
+Winst0.kozow.com,Latest-version default C2 NOT OBSERVED by ETW.
+country1.ignorelist.com,Associated infrastructure domain NOT OBSERVED by ETW.
+github.com/gmz159/u,GitHub repo used for payload hosting (hxxps defanged in article) NOT OBSERVED by ETW.
+github.com/DnyP/files,GitHub repo used for payload hosting NOT OBSERVED by ETW.
+github.com/mgzv/p,GitHub repo used for payload hosting NOT OBSERVED by ETW.

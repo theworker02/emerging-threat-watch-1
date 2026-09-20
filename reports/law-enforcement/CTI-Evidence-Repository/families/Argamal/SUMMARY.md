@@ -1,34 +1,25 @@
-# Argamal — Family Summary (CANDIDATE STUB)
+# Argamal — Family Summary
 
 **Case ID slug:** `argamal`  
 **Package:** `ETW-ARG-IC3`  
-**Status:** `CANDIDATE`  
-**Category:** RAT (trojanized adult games)  
+**Status:** `PRIMARY_FROZEN`  
+**Category:** RAT via trojanized adult/hentai games (COM hijack)  
 **TLP:** TLP:AMBER+STRICT  
-**Generated:** 2026-09-19T20:30:00Z  
-**Source:** Candidate catalog only — **no invented IOCs**
+**Generated:** 2026-09-20T02:25:00Z  
+**Source:** PRIMARY freeze `PS-ARG-001`
 
 ## Executive overview
 
-Defensive placeholder package for **Argamal**. This folder exists so the CTI tree mirrors investigation stubs.  
-**PRIMARY indicator counts in this build: 0.** Author personal identity / home IP is **NOT ESTABLISHED**.
+Defensive threat-intelligence package concerning Argamal as publicly documented by Kaspersky GReAT (Securelist 2026-06-03). Kaspersky describes a RAT distributed inside trojanized adult/hentai games (RenPy/RPG Maker etc.) via catalogue sites→PixelDrain and torrents (e.. AniRena). Infection uses modified FFmpeg DLL + natives2_blob.bin PowerShell stages, COM hijacking of Windows Color System Calibration Loader, AES-CBC payload decrypt (key zbcd1j9234r670eh), UDP heartbeats (57441) and TCP RAT mode (3747). C2 domains include asper1.freeddns.org / Winst0.kozow.com. Spanish-language comments noted by Kaspersky — author identity remains NOT_ESTABLISHED.
 
 ## Indicator counts (this build)
 
 | Class | Count |
 |-------|------:|
-| Domains / URLs | 0 |
-| IPs | 0 |
-| Hashes | 0 |
-
-## Evidence folders (placeholders)
-
-| Folder | Status |
-|--------|--------|
-| `network_captures/` | Empty — lab PCAP only after approved Tier-1 gate |
-| `memory_dumps/` | Empty |
-| `rules/` | Stub YARA/Sigma placeholders — not deployable |
-| `actors_and_finance/` | No crypto wallets established |
+| Domains / URLs | 6 |
+| IPs | 2 |
+| Hashes | 8 |
+| Total IND rows | 22 |
 
 ## Case isolation
 
@@ -37,5 +28,5 @@ Standalone candidate. Case-isolated from all active families.
 ## Cross-references
 
 - Investigation: `investigations/argamal/`
-- LE stub package: `reports/law-enforcement/packages/12-argamal/`
+- LE package: `reports/law-enforcement/packages/12-argamal/`
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`

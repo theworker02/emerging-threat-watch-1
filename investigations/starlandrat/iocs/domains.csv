@@ -1,2 +1,8 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for StarlandRAT
+eorthopaedics.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Staging / HWID C2 (Talos; possibly hijacked),starlandrat
+sastoro.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Parallel staging / HWID C2 under /alpha/,starlandrat
+web-devtools.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Shellcode staging (/starlandfox /x32remka /dopfile),starlandrat
+zynaris.io,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,HTA stager / trojanized installer lures,starlandrat
+windowscreenrepairnearme.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Primary Starland RAT C2 (possibly hijacked),starlandrat
+aipythondevs.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Primary Starland RAT C2,starlandrat
+polygon-rpc.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Public Polygon JSON-RPC used for fallback domain retrieval,starlandrat

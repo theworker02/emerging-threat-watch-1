@@ -1,41 +1,32 @@
-# Matanbuchus — Family Summary (CANDIDATE STUB)
+# Matanbuchus — Family Summary
 
 **Case ID slug:** `matanbuchus`  
 **Package:** `ETW-MAT-IC3`  
-**Status:** `CANDIDATE_COMPARATOR`  
-**Category:** MaaS loader+RAT (Teams/ClickFix; ChaCha20)  
+**Status:** `PRIMARY_FROZEN`  
+**Category:** MaaS loader 3.0 + AstarionRAT (ClickFix / Teams comparator)  
 **TLP:** TLP:AMBER+STRICT  
-**Generated:** 2026-09-19T20:30:00Z  
-**Source:** Candidate catalog only — **no invented IOCs**
+**Generated:** 2026-09-20T02:25:00Z  
+**Source:** PRIMARY freeze `PS-MAT-001`
 
 ## Executive overview
 
-Defensive placeholder package for **Matanbuchus**. This folder exists so the CTI tree mirrors investigation stubs.  
-**PRIMARY indicator counts in this build: 0.** Author personal identity / home IP is **NOT ESTABLISHED**.
+Defensive threat-intelligence package concerning Matanbuchus 3.0 / AstarionRAT as publicly documented by Huntress (ClickFix delivery chain) with supporting technical context from Zscaler ThreatLabz Matanbuchus 3.0 analysis. Huntress describes ClickFix → silent MSI → Zillya-style DLL sideload → Matanbuchus 3.0 (ChaCha20) → Lua/reflective loader → AstarionRAT. This package is a TECHNIQUE COMPARATOR for SynkLoader (Teams/ClickFix/ChaCha20 class) only. authorship_link SynkLoader=NOT_ESTABLISHED. Do NOT file jointly with SynkLoader. Author/operator identity remains NOT_ESTABLISHED.
 
 ## Indicator counts (this build)
 
 | Class | Count |
 |-------|------:|
-| Domains / URLs | 0 |
-| IPs | 0 |
-| Hashes | 0 |
-
-## Evidence folders (placeholders)
-
-| Folder | Status |
-|--------|--------|
-| `network_captures/` | Empty — lab PCAP only after approved Tier-1 gate |
-| `memory_dumps/` | Empty |
-| `rules/` | Stub YARA/Sigma placeholders — not deployable |
-| `actors_and_finance/` | No crypto wallets established |
+| Domains / URLs | 4 |
+| IPs | 1 |
+| Hashes | 8 |
+| Total IND rows | 15 |
 
 ## Case isolation
 
-COMMON TECHNIQUE comparator for SynkLoader only. authorship_link SynkLoader=NOT_ESTABLISHED. See docs/TECHNIQUE_COMPARATORS.md. AstarionRAT tracked as related MaaS note — not merged IOCs.
+COMMON TECHNIQUE comparator for SynkLoader only. authorship_link SynkLoader=NOT_ESTABLISHED. See docs/TECHNIQUE_COMPARATORS.md.
 
 ## Cross-references
 
 - Investigation: `investigations/matanbuchus/`
-- LE stub package: `reports/law-enforcement/packages/14-matanbuchus/`
+- LE package: `reports/law-enforcement/packages/14-matanbuchus/`
 - Candidate catalog: `docs/CANDIDATE_FAMILIES.md`

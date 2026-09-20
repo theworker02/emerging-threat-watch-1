@@ -1,2 +1,14 @@
-indicator_type,value,first_seen_utc,last_seen_utc,confidence,provenance,evidence_id,notes
-# No domains — UNVERIFIED candidate stub (MiniFast)
+value,notes
+business-startup.org,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+business-startup.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+businessstartup.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+buisness-centeral.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+buisness-centeral-transportation.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+buisness-centeral-transportation.com,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+licencemanagers.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+licencesupporting.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+peerdistsvcmanagers.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+nanomatrix.azurewebsites.net,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+PremierHealthAdvisory.com,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+ramiltonsfinance.com,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+getsqldeveloper.com,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.

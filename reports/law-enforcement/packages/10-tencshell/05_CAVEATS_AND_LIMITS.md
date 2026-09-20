@@ -1,26 +1,35 @@
 # TencShell — Caveats and Limits
 
 **Package:** `ETW-TEN-IC3`  
-**Status:** `CANDIDATE`
+**Status:** `PRIMARY_FROZEN`
 
 ## Analytical caveats
 
-- This is a **candidate/comparator stub**, not a filing-ready package.
-- OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED.
-- No hashes, domains, IPs, wallets, or handles were invented for this stub.
+- PRIMARY-SOURCE indicators only — no ETW live C2 contact.
+- HTML freeze blocked by Incapsula; markdown content freeze retained from vendor page retrieval (PS-TEN-001).
+- OSS Rshell similarity ≠ shared operators; do not treat public Rshell repos as TencShell IOCs.
+- China-linked assessment is suspected/not confirmed by Cato — ETW does not independently establish attribution.
+- Additional published SHA-256s exist in primary; ledger prioritizes network + distinctive host artifacts + representative hashes.
+- Author identity remains **NOT_ESTABLISHED**.
+- OSS lineage similarity ≠ shared operators. Authorship NOT_ESTABLISHED. Standalone.
 
 ## This package does **not** claim
 
-- No dollar loss figure
-- No assertion that ETW discovered TencShell
-- No fabricated indicators
-- No independent actor attribution
-- No readiness for IC3/FBI filing
+- No dollar loss figure.
+- No assertion that ETW discovered TencShell.
+- No fabricated hashes or C2 hosts.
+- No independent actor attribution.
+- No IC3 Submission ID until a human files this package.
 
 ## Provenance vocabulary
 
-| Label | Meaning |
-|-------|---------|
+| Label | Meaning in this package |
+|-------|-------------------------|
+| PRIMARY-SOURCE | Published by the cited vendor/researcher |
+| OBSERVED_PASSIVE | Passive fact retrieved by ETW — not ownership |
+| OBSERVED | Independently observed campaign ownership (not claimed) |
 | UNVERIFIED | Lead only — not adequately substantiated |
-| ASSOCIATION_ONLY | Contextual association — not ownership |
-| PRIMARY-SOURCE | Published by cited vendor (none frozen yet here) |
+
+## Safety statement
+
+No malware was executed and no suspected command-and-control system was contacted during preparation of this package.

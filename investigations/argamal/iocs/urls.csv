@@ -1,2 +1,4 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for Argamal
+github.com/gmz159/u,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting (hxxps defanged in article),argamal
+github.com/DnyP/files,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting,argamal
+github.com/mgzv/p,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting,argamal

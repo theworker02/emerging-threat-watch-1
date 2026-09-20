@@ -1,2 +1,16 @@
 value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-# No PRIMARY IOCs — UNVERIFIED candidate stub for TencShell
+45.64.52.242,ipv4,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL network indicator (defanged 45[.]64[.]52[.]242),tencshell
+192.238.134.166,ipv4,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL network indicator,tencshell
+45.115.38.27,ipv4,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL network indicator,tencshell
+gin-tne-fahcesmukw.cn-hangzhou.fcapp.run,domain,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Observed C2 / staging domain (Alibaba FC-style),tencshell
+c3ecb90c9915daa23aec51f93ff8665778866f0592b2413578c8ba9708df6091,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+660af53acdc505f333f6d4f4269cec740a5eb05e41a4c7926742606b18f22d33,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+37facbbd0047c19f4efdea75ccb9e3ec793cb9b1d7846afa4fb8e900d6e9ed95,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+01dc3e7e673b4f2682f29b19ecabf9a6ec9c3042c9b1cfb39dbdddf1dda680ab,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+750a707084839fe970266964957b8eaa7e25b4d9ca1050cd7ab19e4a2add707d,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+12f76f48727916d6c05f53f8cd94915db5de5ffcbfa02c4807c27e090cfa47c1,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+4ae8de40153c66455d972e6e98fe06fb68db7301ba126557e96599527bc5509c,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+1ba73df60e12b3feb8b5574e65cfceb6910460ab7fae2cf5554769fafdad049e,sha256,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Cato CTRL published sample hash,tencshell
+OneDriveHealthTask,string,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Registry Run value name used for persistence,tencshell
+Reacon,string,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Embedded Go project/artifact name linking customized Rshell lineage,tencshell
+.woff,filename,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Masqueraded web-font extension used to stage Donut shellcode,tencshell
