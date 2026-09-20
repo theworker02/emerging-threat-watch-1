@@ -1,2 +1,2 @@
 source_id,title,url,organization_or_author,publication_date,retrieval_date,source_tier,case_ids,notes
-SOURCE-ABY-000,UNVERIFIED primary — freeze before IOC ingest,UNVERIFIED — freeze primary URL before IOC ingest,Zscaler,unspecified,2026-09-19T20:30:00Z,UNVERIFIED,abyssos,"Candidate stub; primary URL not frozen"
+SOURCE-ABY-001,Abyssos: Technical Analysis of a New Modular RAT,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,Zscaler ThreatLabz,2026-08-10,2026-09-20T02:15:00Z,PRIMARY,abyssos,"PS-ABY-001 HTML archived evidence/primary-sources/abyssos/zscaler-abyssos-2026-08-10.html SHA-256 e374eed951febbdf8f18ae435669f8c2b6b6871c1c63e28aacdd28e97f80ba6c"

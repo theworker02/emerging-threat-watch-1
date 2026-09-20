@@ -1,6 +1,6 @@
 # Law Enforcement Handoff — FBI & IC3
 
-**Status:** Rapuncel, Settra, RatHat, NodeRabbit, PollCat, SynkLoader, Showboat `FILED_IC3` · candidates remain unfiled  
+**Status:** Rapuncel–Showboat `FILED_IC3` · **Abyssos `ETW-ABY-IC3` next to file** (primary frozen) · remaining candidates unfiled  
 **Research cutoff:** 2026-09-19  
 **Independently observed campaign ownership by ETW:** none
 
@@ -42,7 +42,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 
 | # | Package | Case code | Threat | Folder |
 |---|---------|-----------|--------|--------|
-| 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (candidate) | [`packages/08-abyssos/`](packages/08-abyssos/) |
+| 8 | Abyssos | `ETW-ABY-IC3` | Modular RAT (Zscaler) | [`packages/08-abyssos/`](packages/08-abyssos/) — **next IC3 filing**; [`IC3_FULL_PACKAGE.md`](packages/08-abyssos/IC3_FULL_PACKAGE.md) · primary frozen 2026-09-20 |
 | 9 | SharkLoader | `ETW-SHK-IC3` | Custom loader → Cobalt Strike (candidate) | [`packages/09-sharkloader/`](packages/09-sharkloader/) |
 | 10 | TencShell | `ETW-TEN-IC3` | Go implant / Rshell lineage problem (candidate) | [`packages/10-tencshell/`](packages/10-tencshell/) |
 | 11 | MiniFast | `ETW-MNF-IC3` | Zoom trust abuse; PollCat context only | [`packages/11-minifast/`](packages/11-minifast/) |

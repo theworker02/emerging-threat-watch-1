@@ -1,25 +1,25 @@
-# Abyssos Investigation (Candidate Stub)
+# Abyssos Investigation
 
-**Status:** `CANDIDATE` — case folder stub  
+**Status:** PRIMARY frozen — promoted for IC3 package `ETW-ABY-IC3`  
 **Case ID:** `abyssos`  
 **Case code:** `ABY` / `ETW-ABY-IC3`  
-**Kind:** `candidate`  
-**Independence:** Isolated from all other ETW families. Technique/market comparisons are COMMON TECHNIQUE / ASSOCIATION_ONLY only.  
-**IOC policy:** No PRIMARY hashes, domains, or C2 IPs invented. Placeholders are UNVERIFIED until primary URL freeze.
+**Independence:** Isolated from all other ETW families.  
+**IOC policy:** PRIMARY-SOURCE transcription from Zscaler only — no invented IOCs.
 
-## Research thesis (candidate — not promoted)
+## Research thesis
 
-- First/major disclosure framing: **Zscaler Aug 2026**
-- Why it fits Emerging Threat Watch: Modular RAT; young corpus; high autonomous-collection value
-- Primary research org (candidate catalog): Zscaler
-- Primary URL: UNVERIFIED — freeze primary URL before IOC ingest
-- Standalone candidate. Do not merge with active ETW families.
+- First major disclosure: **Zscaler ThreatLabz 2026-08-10** (identified late June 2026)
+- Modular C++ Windows RAT: credential theft, HVNC, file exfil, downloadable modules
+- Primary URL: https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat
+- Local freeze: `evidence/primary-sources/abyssos/zscaler-abyssos-2026-08-10.html` (PS-ABY-001)
 
 ## Research emphasis
 
-- Young modular RAT corpus — prioritize primary URL freeze + sparse CT/pDNS collection.
-- Promote only after: primary URL freeze, evidence-id prefixes assigned, human decision (see `docs/CANDIDATE_FAMILIES.md`).
+- Custom AES-GCM TCP C2 + HELLO registration
+- HVNC / browser session hijack (`%TEMP%\fontconfigs`, Chrome CDP 9222)
+- Module crypto constant `1234567890abcdef`
+- Published sample hashes + C2 IPv4 only
 
 ## Status
 
-Candidate / comparator **skeleton only**. Empty IOC ledgers are intentional. See `docs/CANDIDATE_FAMILIES.md` and `docs/TECHNIQUE_COMPARATORS.md`.
+Primary URL frozen; **10 ABY-IND rows** transcribed. IC3 package ready for human filing — see [`reports/law-enforcement/packages/08-abyssos/`](../../reports/law-enforcement/packages/08-abyssos/).
