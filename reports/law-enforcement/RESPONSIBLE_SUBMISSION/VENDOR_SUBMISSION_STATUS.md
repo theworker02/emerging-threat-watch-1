@@ -16,6 +16,8 @@
 
 **Result:** All vendor/CERT items below are **PREPARED / PASTE-READY only** — none emailed from this environment.
 
+**Gmail one-click drafts (private):** `../private/vendor-submissions/GMAIL_LAUNCHER.html` + `GMAIL_SEND_INDEX.md` (Kaspersky intelreports ×5 families, CISA Central, CISA Contact, CERT/CC).
+
 ## Per-family matrix
 
 | Package | Family | Tracked brief | Non-PII email draft | Private pack | Actually emailed? |
