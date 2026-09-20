@@ -49,7 +49,7 @@ I am reporting defensive threat-intelligence information concerning Matanbuchus 
 
 Huntress describes ClickFix → silent MSI → DLL sideload → Matanbuchus 3.0 → Lua/reflective loader → AstarionRAT (24-command RAT with credential theft, SOCKS5, reflective loading). Morphisec documents a separate Teams IT-helpdesk / Quick Assist chain delivering Matanbuchus 3.0 via Notepad++ GUP sideload (malicious libcurl.dll) with distinct IOCs (fixuplink.com, EventLogBackupTask). This package is a TECHNIQUE COMPARATOR for SynkLoader (Teams/ClickFix/loader class) only — authorship_link SynkLoader = NOT_ESTABLISHED. Do NOT file jointly with SynkLoader (already filed separately as ETW-SYN-IC3 3440d0c64dc240499ff66deaa3311a0b). Author/operator identity remains NOT_ESTABLISHED.
 
-INDICATORS (PRIMARY-SOURCE; full CSV MAT-IND-0001–0028 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV MAT-IND-0001–0034 on request):
 Huntress: http://binclloudapp.com/466943; https://marle.io/check/updprofile.aspx; www.ndibstersoft.com; Beacon.exe SHA-256 eecc83add16f3d513a9701e9a646b1885014229ac6f86addd6b10afb64d1d2af; SystemStatus.dll 6ffae128e0dbf14c00e35d9ca17c9d6c81743d1fc5f8dd4272a03c66ecc1ad1f. Morphisec: 94.159.113.33; fixuplink.com; bretux.com; nicewk.com; emorista.org; notepad-plus-plu.org; EventLogBackupTask; libcurl.dll hashes in CSV.
 
 Matanbuchus-only comparator package — do not merge with SynkLoader. Prior separate IC3 IDs (no shared-operator claim): Rapuncel 208b747c6f7445f0af2b69a9d63acc36; Settra 631d8b4800d04bc19cdbfc6662e5c52c; RatHat f92c4c2f0dd3481f898fdd125e728adf; NodeRabbit dded86972e9347e0be27a6597b4cf08a; PollCat 98a4444754324e539dbbffcb10c70637; SynkLoader 3440d0c64dc240499ff66deaa3311a0b; Showboat db42033f319844c08ad103befebfca08; Abyssos a23f0a9d6799480e994284416d354713; SharkLoader 6ed57963d0c64750aa14b6fcbaa2e576.
@@ -153,7 +153,7 @@ https://www.esentire.com/security-advisories/matanbuchus-malware
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/14-matanbuchus/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (28 MAT-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (34 MAT-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md — TECHNIQUE_COMPARATOR for SynkLoader only.
 Crime-type language: Malware; Unauthorized network intrusion / remote access; Credential theft; Social engineering.
 Dollar loss: $0 / none claimed. Personal victimization: No.

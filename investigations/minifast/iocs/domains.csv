@@ -1,14 +1,20 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-business-startup.org,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-business-startup.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-businessstartup.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-buisness-centeral.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-buisness-centeral-transportation.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-buisness-centeral-transportation.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-licencemanagers.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-licencesupporting.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-peerdistsvcmanagers.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-nanomatrix.azurewebsites.net,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-PremierHealthAdvisory.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-ramiltonsfinance.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
-getsqldeveloper.com,domain,2026-05,,Check Point,High,minifast,CAMPAIGN ASSOCIATED,C2 / lure domain (Check Point IOC list),minifast
+domain,source,confidence,family,status,notes
+business-startup.org,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+business-startup.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+businessstartup.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+buisness-centeral.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+buisness-centeral-transportation.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+buisness-centeral-transportation.com,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+licencemanagers.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+licencesupporting.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+peerdistsvcmanagers.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+nanomatrix.azurewebsites.net,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+PremierHealthAdvisory.com,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+ramiltonsfinance.com,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+getsqldeveloper.com,https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/,High,minifast,PRIMARY,C2 / lure domain (Check Point IOC list) NOT OBSERVED by ETW.
+QuantumWeave.azurewebsites.net,https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/,High,minifast,PRIMARY,Unit 42 Screening Serpens C2/lure Azure host NOT OBSERVED by ETW.
+ElementShift.azurewebsites.net,https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/,High,minifast,PRIMARY,Unit 42 Screening Serpens C2/lure Azure host NOT OBSERVED by ETW.
+ThemesManagers.azurewebsites.net,https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/,High,minifast,PRIMARY,Unit 42 Screening Serpens C2/lure Azure host NOT OBSERVED by ETW.
+ThemesProviderManagers.azurewebsites.net,https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/,High,minifast,PRIMARY,Unit 42 Screening Serpens C2/lure Azure host NOT OBSERVED by ETW.
+docspace-twpf0e.onlyoffice.com,https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/,High,minifast,PRIMARY,Unit 42 staging / lure OnlyOffice host NOT OBSERVED by ETW.
+2117.filemail.com,https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/,High,minifast,PRIMARY,Unit 42 Filemail delivery API host NOT OBSERVED by ETW.

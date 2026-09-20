@@ -1,10 +1,20 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-de81e2155d797ff729ed3112fd271aa2728e75fc71b023d0d9bb0f62663f33b3,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,INFO encrypted shellcode,matanbuchus
-6ffae128e0dbf14c00e35d9ca17c9d6c81743d1fc5f8dd4272a03c66ecc1ad1f,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,SystemStatus.dll Matanbuchus 3.0 loader,matanbuchus
-68858d3cbc9b8abaed14e85fc9825bc4fffc54e8f36e96ddda09e853a47e3e31,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,jli.dll stage-2 loader,matanbuchus
-03c624d251e9143e1c8d90ba9b7fa1f2c5dc041507fd0955bdd4048a0967a829,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,SySUpd XOR-encrypted Lua script,matanbuchus
-8e54cd12591d67dfbe72e94c1bde6059e1cba157e6786aec63f8f9e3c71fb925,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,Reflective PE loader,matanbuchus
-c31c8edbf94c85cc9bc46a5665c45a3556c48d5ad615c0a44e14e5406d80df12,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,Stage 1 payload,matanbuchus
-eecc83add16f3d513a9701e9a646b1885014229ac6f86addd6b10afb64d1d2af,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,Beacon.exe / AstarionRAT,matanbuchus
-ea378496135318ac5ad667a032fa4a9686add9d27fe4a7c549c937611b5099e5,sha256,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,Updprofile.aspx Matanbuchus core module,matanbuchus
-192.121.23.146,ipv4,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,binclloudapp.com resolution (M247 AS9009) per Huntress,matanbuchus
+hash,hash_type,source,confidence,family,status,notes
+de81e2155d797ff729ed3112fd271aa2728e75fc71b023d0d9bb0f62663f33b3,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,INFO encrypted shellcode NOT OBSERVED by ETW.
+6ffae128e0dbf14c00e35d9ca17c9d6c81743d1fc5f8dd4272a03c66ecc1ad1f,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,SystemStatus.dll Matanbuchus 3.0 loader NOT OBSERVED by ETW.
+68858d3cbc9b8abaed14e85fc9825bc4fffc54e8f36e96ddda09e853a47e3e31,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,jli.dll stage-2 loader NOT OBSERVED by ETW.
+03c624d251e9143e1c8d90ba9b7fa1f2c5dc041507fd0955bdd4048a0967a829,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,SySUpd XOR-encrypted Lua script NOT OBSERVED by ETW.
+8e54cd12591d67dfbe72e94c1bde6059e1cba157e6786aec63f8f9e3c71fb925,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,Reflective PE loader NOT OBSERVED by ETW.
+c31c8edbf94c85cc9bc46a5665c45a3556c48d5ad615c0a44e14e5406d80df12,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,Stage 1 payload NOT OBSERVED by ETW.
+eecc83add16f3d513a9701e9a646b1885014229ac6f86addd6b10afb64d1d2af,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,Beacon.exe / AstarionRAT NOT OBSERVED by ETW.
+ea378496135318ac5ad667a032fa4a9686add9d27fe4a7c549c937611b5099e5,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,Updprofile.aspx Matanbuchus core module NOT OBSERVED by ETW.
+da9585d578f367cd6cd4b0e6821e67ff02eab731ae78593ab69674f649514872,sha256,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec malicious libcurl.dll (sideloaded) NOT OBSERVED by ETW.
+2ee3a202233625cdcdec9f687d74271ac0f9cb5877c96cf08cf1ae88087bec2e,sha256,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec malicious libcurl.dll NOT OBSERVED by ETW.
+19fb41244558f3a7d469b79b9d91cd7d321b6c82d1660738256ecf39fe3c8421,sha256,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec malicious libcurl.dll NOT OBSERVED by ETW.
+211cea7a5fe12205fee4e72837279409ace663567c5b8c36828a3818aabef456,sha256,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec malicious libcurl.dll NOT OBSERVED by ETW.
+0f41536cd9982a5c1d6993fac8cd5eb4e7f8304627f2019a17e1aa283ac3f47c,sha256,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec malicious libcurl.dll NOT OBSERVED by ETW.
+3ac90c071d143c3240974618d395fa3c5228904c8bf0a89a49f8c01cd7777421,sha256,https://www.zscaler.com/blogs/security-research/technical-analysis-matanbuchus-3-0,High,matanbuchus,PRIMARY,Zscaler ThreatLabz Matanbuchus 3.0 PRIMARY SHA-256 NOT OBSERVED by ETW.
+6246801035e053df2053b2dc28f4e76e3595fb62fdd02b5a50d9a2ed3796b153,sha256,https://www.zscaler.com/blogs/security-research/technical-analysis-matanbuchus-3-0,High,matanbuchus,PRIMARY,Zscaler ThreatLabz Matanbuchus 3.0 PRIMARY SHA-256 NOT OBSERVED by ETW.
+77a53dc757fdf381d3906ab256b74ad3cdb7628261c58a62bcc9c6ca605307ba,sha256,https://www.zscaler.com/blogs/security-research/technical-analysis-matanbuchus-3-0,High,matanbuchus,PRIMARY,Zscaler ThreatLabz Matanbuchus 3.0 PRIMARY SHA-256 NOT OBSERVED by ETW.
+92a2e2a124a106af33993828fb0d4cdffd9dac8790169774d672c30747769455,sha256,https://www.zscaler.com/blogs/security-research/technical-analysis-matanbuchus-3-0,High,matanbuchus,PRIMARY,Zscaler ThreatLabz Matanbuchus 3.0 PRIMARY SHA-256 NOT OBSERVED by ETW.
+0e9df62613c5dd8880fe3bfe8d48698be41bdece30423be21efb2e32836de4bb,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,PRIMARY freeze companion SHA-256 NOT OBSERVED by ETW.
+6bdee8a512cb2af28c0562d9b4a018b2500a205e212bc945064a2e2c6dd5ddc2,sha256,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,PRIMARY freeze companion SHA-256 NOT OBSERVED by ETW.

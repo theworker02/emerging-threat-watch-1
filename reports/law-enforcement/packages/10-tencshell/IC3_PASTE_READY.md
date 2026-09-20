@@ -51,7 +51,7 @@ Cato CTRL describes TencShell as a previously undocumented Go-based implant cust
 
 Hunt.io later pivoted on TencShell C2 HTTP header fingerprints (port 1111) and published a Hong Kong infrastructure cluster including an open directory at 112.213.124.132, plus related Gshell TLS certificate matches. Hunt.io Linux/ARM samples from that pivot are infra-related and are not confirmed Windows TencShell code-level matches.
 
-INDICATORS (PRIMARY-SOURCE; full CSV TEN-IND-0001–0030 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV TEN-IND-0001–0081 on request):
 Cato IPs: 45.64.52.242; 192.238.134.166; 45.115.38.27. Domain: gin-tne-fahcesmukw.cn-hangzhou.fcapp.run. Host: OneDriveHealthTask; Reacon; .woff. Representative Cato SHA-256: c3ecb90c9915daa23aec51f93ff8665778866f0592b2413578c8ba9708df6091; 660af53acdc505f333f6d4f4269cec740a5eb05e41a4c7926742606b18f22d33; 37facbbd0047c19f4efdea75ccb9e3ec793cb9b1d7846afa4fb8e900d6e9ed95; 01dc3e7e673b4f2682f29b19ecabf9a6ec9c3042c9b1cfb39dbdddf1dda680ab. Hunt.io cluster IPs include 112.213.124.132/159/163 and 45.64.52.245/246 (full list in CSV).
 
 TencShell-only — do not merge with other ETW filings. Prior separate IC3 IDs (no shared-operator claim): Rapuncel 208b747c6f7445f0af2b69a9d63acc36; Settra 631d8b4800d04bc19cdbfc6662e5c52c; RatHat f92c4c2f0dd3481f898fdd125e728adf; NodeRabbit dded86972e9347e0be27a6597b4cf08a; PollCat 98a4444754324e539dbbffcb10c70637; SynkLoader 3440d0c64dc240499ff66deaa3311a0b; Showboat db42033f319844c08ad103befebfca08; Abyssos a23f0a9d6799480e994284416d354713; SharkLoader 6ed57963d0c64750aa14b6fcbaa2e576.
@@ -162,7 +162,7 @@ Secondary: https://www.infosecurity-magazine.com/news/china-hackers-tencshell-ma
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/10-tencshell/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (30 TEN-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (81 TEN-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md
 Crime-type language: Malware; Unauthorized network intrusion / remote access; Credential theft.
 Dollar loss: $0 / none claimed. Personal victimization: No.

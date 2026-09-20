@@ -35,3 +35,11 @@ Full table: `03_INDICATORS.csv` (10 ABY-IND rows). Dossier: `IC3_FULL_PACKAGE.md
 
 1. Treat as defensive threat-intelligence referral.
 2. Keep **separate** from other ETW packages.
+
+## Evidence inventory (ETW retained)
+
+- **Package ID:** `ETW-ABY-IC3` / folder `08-abyssos`
+- **PRIMARY-SOURCE indicators in `03_INDICATORS.csv`:** **10** rows (**sha256** ×2, **ipv4** ×2, **filename** ×1, **path** ×1, **crypto_constant** ×1, **mutex** ×1, **string** ×1, **detection_name** ×1)
+- **Provenance rule:** Indicators are transcribed from public vendor research only. ETW has **not** executed malware and has **not** contacted suspected C2.
+- **Local freezes:** `evidence/primary-sources/abyssos/` (and dual refs where noted)
+- **Caveats:** See `05_CAVEATS_AND_LIMITS.md` — author/operator identity remains NOT_ESTABLISHED by ETW unless a court/LE source states otherwise.

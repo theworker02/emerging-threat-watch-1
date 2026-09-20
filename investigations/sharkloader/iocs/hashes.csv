@@ -1,9 +1,11 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-C559CC68986933200FD5D9E4388E2F58,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Installer sample (Kaspersky StrikeShark),sharkloader
-B3352B42432DEDC4A519F011DC8B5D5A,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Dropper sample,sharkloader
-24FCEBDEECBA65004FDB0923763D74FD,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Dropper (Taiwan gov chain) — Chinese-filename pdf.exe,sharkloader
-9C872A0D5D5A38950E8B9AC9B488BE3F,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,SharkLoader DLL,sharkloader
-AA3086BE652C8B20B0B29B2730D57119,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,SharkLoader DLL SystemSettings.dll,sharkloader
-A514D1BB62D7916475946FE7C07AC0AA,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Encrypted DscCoreR.mui,sharkloader
-9CBD560F820C95D7C38342CD558CB5C6,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Encrypted SyncRest.dat / SyncRes.dat,sharkloader
-1F65544978B8EA0E745E573B8EE9684B,md5,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,Dropper (Lebanon),sharkloader
+hash,hash_type,source,confidence,family,status,notes
+C559CC68986933200FD5D9E4388E2F58,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Installer sample (Kaspersky StrikeShark) NOT OBSERVED by ETW.
+B3352B42432DEDC4A519F011DC8B5D5A,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Dropper sample NOT OBSERVED by ETW.
+24FCEBDEECBA65004FDB0923763D74FD,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Dropper (Taiwan gov chain) — Chinese-filename pdf.exe NOT OBSERVED by ETW.
+9C872A0D5D5A38950E8B9AC9B488BE3F,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,SharkLoader DLL NOT OBSERVED by ETW.
+AA3086BE652C8B20B0B29B2730D57119,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,SharkLoader DLL SystemSettings.dll NOT OBSERVED by ETW.
+A514D1BB62D7916475946FE7C07AC0AA,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Encrypted DscCoreR.mui NOT OBSERVED by ETW.
+9CBD560F820C95D7C38342CD558CB5C6,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Encrypted SyncRest.dat / SyncRes.dat NOT OBSERVED by ETW.
+1F65544978B8EA0E745E573B8EE9684B,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Dropper (Lebanon) NOT OBSERVED by ETW.
+d98f568496512e4f98670c61c97cb07a,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Securelist StrikeShark PRIMARY MD5 NOT OBSERVED by ETW.
+ed1f9e435dc885292eab65620c51f3fb,md5,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,Securelist StrikeShark PRIMARY MD5 NOT OBSERVED by ETW.

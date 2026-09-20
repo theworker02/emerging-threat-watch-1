@@ -1,5 +1,9 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-http://binclloudapp.com/466943,url,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,ClickFix MSI delivery URL (Huntress),matanbuchus
-https://marle.io/check/updprofile.aspx,url,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,Matanbuchus C2 — encrypted main module,matanbuchus
-www.ndibstersoft.com,domain,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,AstarionRAT C2 host,matanbuchus
-binclloudapp.com,domain,2025/2026,,Huntress,High,matanbuchus,CAMPAIGN ASSOCIATED,ClickFix MSI delivery domain (created 2026-02-05 per Huntress),matanbuchus
+domain,source,confidence,family,status,notes
+www.ndibstersoft.com,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,AstarionRAT C2 host NOT OBSERVED by ETW.
+binclloudapp.com,https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis,High,matanbuchus,PRIMARY,ClickFix MSI delivery domain (created 2026-02-05 per Huntress) NOT OBSERVED by ETW.
+fixuplink.com,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec GUP.zip staging domain NOT OBSERVED by ETW.
+bretux.com,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec Matanbuchus 3.0 campaign domain NOT OBSERVED by ETW.
+nicewk.com,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec Matanbuchus 3.0 campaign domain NOT OBSERVED by ETW.
+emorista.org,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec UP.zip staging domain NOT OBSERVED by ETW.
+notepad-plus-plu.org,https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up/,High,matanbuchus,PRIMARY,Morphisec malicious Notepad++ update location NOT OBSERVED by ETW.
+treasuryfinance.org,https://www.esentire.com/security-advisories/matanbuchus-malware,High,matanbuchus,PRIMARY,eSentire Matanbuchus advisory domain NOT OBSERVED by ETW.

@@ -1,8 +1,10 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-eorthopaedics.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Staging / HWID C2 (Talos; possibly hijacked),starlandrat
-sastoro.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Parallel staging / HWID C2 under /alpha/,starlandrat
-web-devtools.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Shellcode staging (/starlandfox /x32remka /dopfile),starlandrat
-zynaris.io,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,HTA stager / trojanized installer lures,starlandrat
-windowscreenrepairnearme.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Primary Starland RAT C2 (possibly hijacked),starlandrat
-aipythondevs.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Primary Starland RAT C2,starlandrat
-polygon-rpc.com,domain,2025-06/2026,,Cisco Talos,High,starlandrat,CAMPAIGN ASSOCIATED,Public Polygon JSON-RPC used for fallback domain retrieval,starlandrat
+domain,source,confidence,family,status,notes
+eorthopaedics.com,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,Staging / HWID C2 (Talos; possibly hijacked) NOT OBSERVED by ETW.
+sastoro.com,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,Parallel staging / HWID C2 under /alpha/ NOT OBSERVED by ETW.
+web-devtools.com,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,Shellcode staging (/starlandfox /x32remka /dopfile) NOT OBSERVED by ETW.
+zynaris.io,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,HTA stager / trojanized installer lures NOT OBSERVED by ETW.
+windowscreenrepairnearme.com,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,Primary Starland RAT C2 (possibly hijacked) NOT OBSERVED by ETW.
+aipythondevs.com,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,Primary Starland RAT C2 NOT OBSERVED by ETW.
+polygon-rpc.com,https://blog.talosintelligence.com/uat-11795-deploys-novel-starland-rat-and-bespoke-wldr-c2-implant-in-financially-motivated-campaign/,High,starlandrat,PRIMARY,Public Polygon JSON-RPC used for fallback domain retrieval NOT OBSERVED by ETW.
+alphabitcapital.info,https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2026/07/new-starland-rat-and-WLDR-implant-campaign.txt,High,starlandrat,PRIMARY,Talos IOC appendix domain NOT OBSERVED by ETW.
+niggerdemon.in,https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2026/07/new-starland-rat-and-WLDR-implant-campaign.txt,High,starlandrat,PRIMARY,Talos IOC appendix domain NOT OBSERVED by ETW.

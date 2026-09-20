@@ -1,7 +1,17 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-795e053a990a1569ffdcb57f48f6d085,md5,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,RankChallenge-react-6uJSX3-main.zip,pollcat
-sahi-finance.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 register #1,pollcat
-gamebarappinformation.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #2,pollcat
-gamebarapp.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #3,pollcat
-lifespotify.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP lure domain,pollcat
-https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate,url,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP validate; do not probe,pollcat
+indicator,type,first_seen,source,confidence,family,status,notes,case
+795e053a990a1569ffdcb57f48f6d085,md5,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,RankChallenge-react-6uJSX3-main.zip PollCat lure. Was mis-tagged NRB-IND-0011; keep NRB cross-ref only. SHA-256 unresolved.,pollcat
+sahi-finance.com,domain,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,PollCat registration C2 #1. NOT OBSERVED ownership.,pollcat
+gamebarappinformation.azurewebsites.net,domain,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,PollCat C2 #2 Azure. Shared edge ASSOCIATION_ONLY.,pollcat
+gamebarapp.azurewebsites.net,domain,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,PollCat C2 #3 Azure.,pollcat
+lifespotify.com,domain,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,OTP validation host; Kaspersky late-June-2026 registration claim.,pollcat
+https://lifespotify.com/api/users/b879746e-fed9-4211-a6da-4d8223681267/otp/validate,url,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,OTP validate URL path. Do not probe live.,pollcat
+requireObjects.js,filename,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Malicious component started via requireAuth.js.,pollcat
+requireObject.js,filename,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Windows persistence worker under %APPDATA%\Microsoft\Network.,pollcat
+com.harsh.requireobject.plist,filename,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,macOS LaunchAgent persistence marker.,pollcat
+NetSync_,scheduled_task_prefix,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Windows task NetSync_<username> daily 09AM.,pollcat
+~/.node_packages,path,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Linux/macOS persistence directory.,pollcat
+POST /beacon,http_endpoint,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Registration; expects HTTP 400 + socketId.,pollcat
+GET /gate/fetch,http_endpoint,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Command poll with token=socketId.,pollcat
+POST /gate/hello,http_endpoint,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,Host registration after socketId.,pollcat
+POST /api/system-details/result,http_endpoint,unspecified,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,SYSTEM_CHECK inventory exfil.,pollcat
+f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef,sha256,2026,https://www.cyberveille.fr/,High,pollcat,PRIMARY,Cyberveille PollCat-context PRIMARY SHA-256 (verify dual Securelist provenance) NOT OBSERVED by ETW.,pollcat

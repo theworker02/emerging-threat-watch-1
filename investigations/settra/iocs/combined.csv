@@ -1,8 +1,17 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-45.13.122.7,ip,,,Huntress,Moderate,settra-incident-july,CAMPAIGN ASSOCIATED,MeshAgent C2 in one IR case — not global Settra C2,settra
-193.5.65.114,ip,,,Huntress,Moderate,settra-incident-sept,CAMPAIGN ASSOCIATED,MeshAgent-related IP in one IR case,settra
-RESTORE_FILES.txt,filename,,,Cynet,High,settra,CAMPAIGN ASSOCIATED,Ransom note filename,settra
-RESTORE_FILES.html,filename,,,Cynet,High,settra,CAMPAIGN ASSOCIATED,Ransom note filename,settra
-.locked,extension,,,Cynet; Huntress,High,settra,CAMPAIGN ASSOCIATED,Encrypted extension,settra
-.locked_wip,extension,,,Cynet,Moderate,settra,CAMPAIGN ASSOCIATED,In-progress extension,settra
-mvtcs.exe,filename,,,Huntress,Moderate,settra-incident-july,SUSPICIOUS,Renamed MeshAgent in one incident,settra
+indicator,type,first_seen,source,confidence,family,status,notes,case
+45.13.122.7,ipv4,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,July 2026 MeshAgent C2 (mvtcs.exe) | NOT OBSERVED by ETW.,settra
+193.5.65.114,ipv4,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,Sept MeshAgent C2 (Huntress). urlscan MeshCentral from 2025-05 (SET-CLAIM-0017); RDAP NL-RAPIDSEEDBOX (SET-CLAIM-0018). INFRASTRUCTURE_OVERLAP / UNKNOWN — not Settra-exclusive.,settra
+WIN-LIVFRVQFMKO,hostname,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,Workstation lead; Huntress to 2024-12-24; Kaspersky SSL CN on :7777 (SET-CLAIM-0016). UNKNOWN / not Settra-exclusive — do not backdate Settra.,settra
+RESTORE_FILES.txt,filename,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,ransom note | NOT OBSERVED by ETW.,settra
+RESTORE_FILES.html,filename,see notes,https://www.cynet.com/settra-ransomware-inside-a-new-enterprise-grade-extortion-threat/,High,settra,PRIMARY,ransom note (Cynet) | NOT OBSERVED by ETW.,settra
+gdrv.sys,filename,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,BYOVD Sept incident | NOT OBSERVED by ETW.,settra
+STProcessMonitor_v114.sys,filename,see notes,https://www.moxfive.com/blog/settra-ransomware-ttps-victims-and-defense-guide,High,settra,PRIMARY,MOXFIVE BYOVD artifact — operator tooling | NOT OBSERVED by ETW.,settra
+STProcessMonitor.sys,filename,see notes,https://www.moxfive.com/blog/settra-ransomware-ttps-victims-and-defense-guide,Moderate,settra,PRIMARY,related vulnerable-driver artifact | NOT OBSERVED by ETW.,settra
+.locked,extension,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,July encrypted extension | NOT OBSERVED by ETW.,settra
+.locked_wip,extension,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,Sept / Cynet intermediate extension | NOT OBSERVED by ETW.,settra
+C:\Users\Public\NOTICE.png,path,see notes,https://www.cynet.com/settra-ransomware-inside-a-new-enterprise-grade-extortion-threat/,Moderate,settra,PRIMARY,wallpaper artifact (Cynet) | NOT OBSERVED by ETW.,settra
+win64.exe --pass <secret> --cmd --path <dir>,behavioral,see notes,https://www.cynet.com/settra-ransomware-inside-a-new-enterprise-grade-extortion-threat/,High,settra,PRIMARY,CLI password gate pattern | NOT OBSERVED by ETW.,settra
+*_win64.exe,filename_pattern,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,victim-domain_win64.exe naming | NOT OBSERVED by ETW.,settra
+Microsoft-Windows-Defender/Operational,artifact,see notes,https://www.huntress.com/blog/new-settra-ransomware-variant,High,settra,PRIMARY,typo in clear-list; correct is Microsoft-Windows-Windows-Defender/Operational | NOT OBSERVED by ETW.,settra
+id-manulife.com,domain,2025-05-05,https://urlscan.io/api/v1/search/?q=ip:193.5.65.114,Low,settra,PRIMARY,Historical domain resolving to MeshAgent IP 193.5.65.114 (MeshCentral UI). INFRASTRUCTURE_OVERLAP / UNKNOWN — not Settra-exclusive.,settra
+MeshCentralRoot-eca57f,tls_issuer,2025-07-30,https://urlscan.io/result/019939fe-261d-761d-b4c3-8d0eae2a8bf2/,Moderate,settra,PRIMARY,urlscan tlsIssuer for MeshCentral panel on 193.5.65.114. Detection artifact — not Settra malware hash.,settra

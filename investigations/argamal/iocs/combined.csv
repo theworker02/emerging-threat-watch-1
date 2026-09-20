@@ -1,23 +1,35 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-42add9475e67a1ccc6a6af94b5475d3defc01b85,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Modified FFmpeg DLL (SHA1),argamal
-edce72f59e4c1d136cd1946af70d334c19df858d,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,natives2_blob.bin / Trojan downloader (SHA1),argamal
-76253fb55aed707440e808ea78e7101318436b1c,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
-1405a3c5e0aeb08012484134e16cdec4ab29b4a4,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
-535f4337f261b6da20a3c614eb13270bed2d533a,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
-d2cb0d7a9ad2b5d4ea7c2da8aec62beb37cf36d6,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,RAT payload (SHA1),argamal
-9803604ec45f31f9ef75bcca1e1310d8ac1fc3a6,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Trojan downloader (SHA1),argamal
-02819d200d1424882af81cb504b3e8614b32397a,sha1,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Trojan downloader (SHA1),argamal
-asper1.freeddns.org,domain,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Early-version default C2,argamal
-Winst0.kozow.com,domain,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Latest-version default C2,argamal
-country1.ignorelist.com,domain,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Associated infrastructure domain,argamal
-186.158.223.35,ipv4,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Shared C2 resolution (Kaspersky infrastructure table),argamal
-181.116.218.56,ipv4,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Earlier asper1 resolution (2024),argamal
-natives2_blob.bin,filename,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,DLL executing Base64 PowerShell Stage1,argamal
-zaesdl.dat,filename,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Encrypted payload name downloaded via bitsadmin,argamal
-zbcd1j9234r670eh,crypto_constant,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,AES-CBC key/IV for Stage2 payload decrypt,argamal
-HKCU\SOFTWARE\Classes\CLSID\{B210D694-C8DF-490D-9576-9E20CDBC20BD},path,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,COM hijack for Windows Color System Calibration Loader,argamal
-github.com/gmz159/u,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting (hxxps defanged in article),argamal
-github.com/DnyP/files,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting,argamal
-github.com/mgzv/p,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting,argamal
-57441,port,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,UDP heartbeat port to C2,argamal
-3747,port,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,TCP RAT-mode C2 port,argamal
+indicator,type,first_seen,source,confidence,family,status,notes,case
+42add9475e67a1ccc6a6af94b5475d3defc01b85,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Modified FFmpeg DLL (SHA1) NOT OBSERVED by ETW.,argamal
+edce72f59e4c1d136cd1946af70d334c19df858d,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,natives2_blob.bin / Trojan downloader (SHA1) NOT OBSERVED by ETW.,argamal
+76253fb55aed707440e808ea78e7101318436b1c,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,RAT payload (SHA1) NOT OBSERVED by ETW.,argamal
+1405a3c5e0aeb08012484134e16cdec4ab29b4a4,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,RAT payload (SHA1) NOT OBSERVED by ETW.,argamal
+535f4337f261b6da20a3c614eb13270bed2d533a,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,RAT payload (SHA1) NOT OBSERVED by ETW.,argamal
+d2cb0d7a9ad2b5d4ea7c2da8aec62beb37cf36d6,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,RAT payload (SHA1) NOT OBSERVED by ETW.,argamal
+9803604ec45f31f9ef75bcca1e1310d8ac1fc3a6,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Trojan downloader (SHA1) NOT OBSERVED by ETW.,argamal
+02819d200d1424882af81cb504b3e8614b32397a,sha1,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Trojan downloader (SHA1) NOT OBSERVED by ETW.,argamal
+asper1.freeddns.org,domain,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Early-version default C2 NOT OBSERVED by ETW.,argamal
+Winst0.kozow.com,domain,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Latest-version default C2 NOT OBSERVED by ETW.,argamal
+country1.ignorelist.com,domain,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Associated infrastructure domain NOT OBSERVED by ETW.,argamal
+186.158.223.35,ipv4,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Shared C2 resolution (Kaspersky infrastructure table) NOT OBSERVED by ETW.,argamal
+181.116.218.56,ipv4,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Earlier asper1 resolution (2024) NOT OBSERVED by ETW.,argamal
+natives2_blob.bin,filename,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,DLL executing Base64 PowerShell Stage1 NOT OBSERVED by ETW.,argamal
+zaesdl.dat,filename,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Encrypted payload name downloaded via bitsadmin NOT OBSERVED by ETW.,argamal
+zbcd1j9234r670eh,crypto_constant,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,AES-CBC key/IV for Stage2 payload decrypt NOT OBSERVED by ETW.,argamal
+HKCU\SOFTWARE\Classes\CLSID\{B210D694-C8DF-490D-9576-9E20CDBC20BD},path,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,COM hijack for Windows Color System Calibration Loader NOT OBSERVED by ETW.,argamal
+github.com/gmz159/u,url,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,GitHub repo used for payload hosting (hxxps defanged in article) NOT OBSERVED by ETW.,argamal
+github.com/DnyP/files,url,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,GitHub repo used for payload hosting NOT OBSERVED by ETW.,argamal
+github.com/mgzv/p,url,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,GitHub repo used for payload hosting NOT OBSERVED by ETW.,argamal
+57441,port,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,UDP heartbeat port to C2 NOT OBSERVED by ETW.,argamal
+3747,port,2024/2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,TCP RAT-mode C2 port NOT OBSERVED by ETW.,argamal
+17f8f8f34dfa737f36182fed7ff9e9814a114058,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+2423a5bf0fa7cb9ec09211630a5488629499691b,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+29f1d346a6e71774c7dad25b90f446b2974393df,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+5f1f3689bcf23de1b280b5f35712946da0f7978f,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+69331cfdac792dc79240e6a6bb6e803eabd70beb,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+901cfa97b1baaf908fd4a02bb52d970f576c4193,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+954722b0c9c678b1313d1f8b204e102842dc5889,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+ae4601a19d28332a3ec6ac31b385cdf53be53450,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+c2d9d48b3b10bd58cdf5df9463e3ffcd60533ff3,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+dad26f61da7b8bccc78364411812be74c025b475,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+e05f1767c2a337910ed75e90288838d6d0541164,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal
+e815a9b418d09c2d4bcd074c2c0bc21406eeb22f,sha1,2026,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Kaspersky Securelist Argamal PRIMARY SHA-1 NOT OBSERVED by ETW.,argamal

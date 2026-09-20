@@ -1,0 +1,2 @@
+hash,hash_type,source,confidence,family,status,notes
+00ba0d5aea129f098b5a609633ac77cd642fddba8b64f6332e49e6d33294992e,sha256,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,First listed APK hash in Zimperium apks.csv (representative; 162 total) | UNVERIFIED pending passive checks where applicable. NOT malware download.

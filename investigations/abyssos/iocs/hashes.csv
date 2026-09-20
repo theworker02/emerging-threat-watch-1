@@ -1,3 +1,3 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-52b400c5be1557a8df146f62fde76d906e7e0a92ed76788717ef61c758f315aa,sha256,,,Zscaler,High,abyssos,CAMPAIGN ASSOCIATED,v2.4F,abyssos
-ca94d95413210a2a325155740eb8a5c58627ad5c4e704478621e7fc8165fe173,sha256,,,Zscaler,High,abyssos,CAMPAIGN ASSOCIATED,v2.1F,abyssos
+hash,hash_type,source,confidence,family,status,notes
+52b400c5be1557a8df146f62fde76d906e7e0a92ed76788717ef61c758f315aa,sha256,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Abyssos sample version 2.4F (Zscaler ThreatLabz). NOT OBSERVED by ETW.
+ca94d95413210a2a325155740eb8a5c58627ad5c4e704478621e7fc8165fe173,sha256,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Abyssos sample version 2.1F (Zscaler ThreatLabz). NOT OBSERVED by ETW.

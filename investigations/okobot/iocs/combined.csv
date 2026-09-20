@@ -1,31 +1,39 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-B07D451EE65A1580F20A784C8F0E7A46,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher protobuf.dll,okobot
-187A1F68AE786E53D3831166DC84E6D2,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher protobuf.dll,okobot
-D84E8DC509308523E0209D3CD3544619,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher protobuf.dll,okobot
-83E6B8FCB92A0B13E109301F8FF649CF,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Dispatcher version.dll,okobot
-7306885BB4C98F2A9F056104CF092BC9,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin PowerShell wrapper,okobot
-B4C2E16CDB513BE4DC798F88E2527334,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin CMD wrapper,okobot
-2157D2429124AD28DB7A26F2477CB985,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin environment enumerator,okobot
-77CECF5E2A622AE07D8AE9913457AB57,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin dropper,okobot
-E0C3BC27A65750E740C4F1719E531C7D,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Plugin process injector,okobot
-3D2B43F91F65BFBF36A9C71B6B418876,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector ext_daemon.exe,okobot
-70FEF9FD6E351F4D53CFEEE8DCDFCD99,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector seedhunter_x64.exe,okobot
-ACD31C9941B6C1CABD4E45E6877B9038,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector keylog_x64.dll,okobot
-DD52F5108A176C62AD807C327734AD12,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Injector oko.dll (OkoSpyware),okobot
-AC93A821617AEA1F56D4BC0BEF4AF327,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot HDUtil.exe,okobot
-11DBC8A2BEA04B15F8F68F3F01E8FAF9,md5,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot extl.exe,okobot
-2baserec2.guru,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-recavb22.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-kbeautyreviews.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-coffeesaloon.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-livewallpapers.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
-thatwascringe.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
-moonsand.store,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SeedHunter C2,okobot
-104.243.43.16,ipv4,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot infrastructure,okobot
-104.243.32.213,ipv4,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot infrastructure,okobot
-62.210.188.209,ipv4,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot infrastructure,okobot
-%PROGRAMDATA%\HDVideo\HDUtil.exe,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot utility path,okobot
-%PROGRAMDATA%\hwid.dat,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Host ID artifact,okobot
-%PROGRAMDATA%\oko_ver,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Framework version marker,okobot
-%USERPROFILE%\.ssh\go.bat,path,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SSH bot helper,okobot
-ir-post.php,string,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Exfiltration endpoint for OkoSpyware/MC Keylogger artifacts,okobot
+indicator,type,first_seen,source,confidence,family,status,notes,case
+B07D451EE65A1580F20A784C8F0E7A46,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Dispatcher protobuf.dll NOT OBSERVED by ETW.,okobot
+187A1F68AE786E53D3831166DC84E6D2,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Dispatcher protobuf.dll NOT OBSERVED by ETW.,okobot
+D84E8DC509308523E0209D3CD3544619,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Dispatcher protobuf.dll NOT OBSERVED by ETW.,okobot
+83E6B8FCB92A0B13E109301F8FF649CF,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Dispatcher version.dll NOT OBSERVED by ETW.,okobot
+7306885BB4C98F2A9F056104CF092BC9,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Plugin PowerShell wrapper NOT OBSERVED by ETW.,okobot
+B4C2E16CDB513BE4DC798F88E2527334,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Plugin CMD wrapper NOT OBSERVED by ETW.,okobot
+2157D2429124AD28DB7A26F2477CB985,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Plugin environment enumerator NOT OBSERVED by ETW.,okobot
+77CECF5E2A622AE07D8AE9913457AB57,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Plugin dropper NOT OBSERVED by ETW.,okobot
+E0C3BC27A65750E740C4F1719E531C7D,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Plugin process injector NOT OBSERVED by ETW.,okobot
+3D2B43F91F65BFBF36A9C71B6B418876,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Injector ext_daemon.exe NOT OBSERVED by ETW.,okobot
+70FEF9FD6E351F4D53CFEEE8DCDFCD99,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Injector seedhunter_x64.exe NOT OBSERVED by ETW.,okobot
+ACD31C9941B6C1CABD4E45E6877B9038,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Injector keylog_x64.dll NOT OBSERVED by ETW.,okobot
+DD52F5108A176C62AD807C327734AD12,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Injector oko.dll (OkoSpyware) NOT OBSERVED by ETW.,okobot
+AC93A821617AEA1F56D4BC0BEF4AF327,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot HDUtil.exe NOT OBSERVED by ETW.,okobot
+11DBC8A2BEA04B15F8F68F3F01E8FAF9,md5,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot extl.exe NOT OBSERVED by ETW.,okobot
+2baserec2.guru,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.,okobot
+recavb22.online,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.,okobot
+kbeautyreviews.com,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.,okobot
+coffeesaloon.online,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.,okobot
+livewallpapers.online,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Volume2 C2 NOT OBSERVED by ETW.,okobot
+thatwascringe.com,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Volume2 C2 NOT OBSERVED by ETW.,okobot
+moonsand.store,domain,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SeedHunter C2 NOT OBSERVED by ETW.,okobot
+104.243.43.16,ipv4,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot infrastructure NOT OBSERVED by ETW.,okobot
+104.243.32.213,ipv4,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot infrastructure NOT OBSERVED by ETW.,okobot
+62.210.188.209,ipv4,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot infrastructure NOT OBSERVED by ETW.,okobot
+%PROGRAMDATA%\HDVideo\HDUtil.exe,path,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot utility path NOT OBSERVED by ETW.,okobot
+%PROGRAMDATA%\hwid.dat,path,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Host ID artifact NOT OBSERVED by ETW.,okobot
+%PROGRAMDATA%\oko_ver,path,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Framework version marker NOT OBSERVED by ETW.,okobot
+%USERPROFILE%\.ssh\go.bat,path,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SSH bot helper NOT OBSERVED by ETW.,okobot
+ir-post.php,string,2025/2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Exfiltration endpoint for OkoSpyware/MC Keylogger artifacts NOT OBSERVED by ETW.,okobot
+22tuk.digital,domain,2026,https://blog.gridinsoft.com/okobot-seed-phrase-malware/,High,okobot,PRIMARY,Gridinsoft high-confidence TookPS/OkoBot callback domain (unpublished in Securelist primary) NOT OBSERVED by ETW.,okobot
+https://22tuk.digital/online/took.php,url,2026,https://blog.gridinsoft.com/okobot-seed-phrase-malware/,High,okobot,PRIMARY,TookPS JSON profile POST → iex PowerShell delivery endpoint NOT OBSERVED by ETW.,okobot
+\GDrive Backup Sync,string,2026,https://blog.gridinsoft.com/okobot-seed-phrase-malware/,High,okobot,PRIMARY,Scheduled task name used with hidden Base64 PowerShell launcher (Gridinsoft) NOT OBSERVED by ETW.,okobot
+30a7eeb6e5d5c50252dc133806bd1b25,md5,2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,PRIMARY freeze MD5 NOT OBSERVED by ETW.,okobot
+42758747b8592c683aa2b2162019ddfa,md5,2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,PRIMARY freeze MD5 NOT OBSERVED by ETW.,okobot
+755d128c17e6cc3971485b7e018ddb00,md5,2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,PRIMARY freeze MD5 NOT OBSERVED by ETW.,okobot
+37aecaec9ef57f63e1bf6aeb1b3bd5c2ee3a8ee3d32b2721e13c490193b32f1f,sha256,2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,PRIMARY freeze SHA-256 NOT OBSERVED by ETW.,okobot
+a0ed9c326558cfa41560bc38e6045326aa7ef7d9957d4134d394d464e3fdc05e,sha256,2026,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,PRIMARY freeze SHA-256 NOT OBSERVED by ETW.,okobot
