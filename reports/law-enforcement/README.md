@@ -1,6 +1,6 @@
 # Law Enforcement Handoff — FBI & IC3
 
-**Status:** Rapuncel, Settra, RatHat, NodeRabbit `FILED_IC3` · PollCat / SynkLoader / Showboat / candidates remain unfiled  
+**Status:** Rapuncel, Settra, RatHat, NodeRabbit `FILED_IC3` · **PollCat `ETW-POL-IC3` next to file** (helpers ready) · SynkLoader / Showboat / candidates remain unfiled  
 **Research cutoff:** 2026-09-19  
 **Independently observed campaign ownership by ETW:** none
 
@@ -34,7 +34,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](../../docs/SUBMIT_INTEL.md).
 | 2 | Settra | `ETW-SET-IC3` | Enterprise ransomware + operator intrusion | [`packages/02-settra/`](packages/02-settra/) — **FILED_IC3** `631d8b4800d04bc19cdbfc6662e5c52c` (2026-09-19 4:59:46 PM EST); [`IC3_FILING_RECORD.md`](packages/02-settra/IC3_FILING_RECORD.md) |
 | 3 | RatHat | `ETW-RAT-IC3` | Android Accessibility → Wireless ADB RAT | [`packages/03-rathat/`](packages/03-rathat/) — **FILED_IC3** `f92c4c2f0dd3481f898fdd125e728adf` (2026-09-19 5:08:29 PM EST); [`IC3_FILING_RECORD.md`](packages/03-rathat/IC3_FILING_RECORD.md) |
 | 4 | NodeRabbit | `ETW-NRB-IC3` | Cross-platform developer-targeted RAT | [`packages/04-noderabbit/`](packages/04-noderabbit/) — **FILED_IC3** `dded86972e9347e0be27a6597b4cf08a` (2026-09-19 5:15:51 PM EST); [`IC3_FILING_RECORD.md`](packages/04-noderabbit/IC3_FILING_RECORD.md) |
-| 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) |
+| 5 | PollCat | `ETW-POL-IC3` | Cross-platform obfuscated JavaScript RAT | [`packages/05-pollcat/`](packages/05-pollcat/) — **next IC3 filing**; pointer [`reports/pollcat/POLLCAT_IC3_BRIEF.md`](../pollcat/POLLCAT_IC3_BRIEF.md) |
 | 6 | SynkLoader | `ETW-SYN-IC3` | Modular mixed-language loader / Teams phishing | [`packages/06-synkloader/`](packages/06-synkloader/) |
 | 7 | Showboat | `ETW-SHO-IC3` | Linux modular post-exploitation (telecom) | [`packages/07-showboat/`](packages/07-showboat/) |
 
@@ -65,10 +65,12 @@ packages/0N-family/
 ├── 03_INDICATORS.csv          ← PRIMARY-SOURCE / labeled OBSERVED_PASSIVE indicators
 ├── 04_SOURCES.md              ← exact public research URLs
 ├── 05_CAVEATS_AND_LIMITS.md   ← what this package does not claim
-└── IC3_FILING_RECORD.md       ← only after an IC3 filing is recorded (Rapuncel has this)
+├── FILING_SETUP.md            ← optional; present for PollCat (next active filing)
+├── REVIEW_CHECKLIST.md        ← optional; pre-submit review copy
+└── IC3_FILING_RECORD.md       ← only after an IC3 filing is recorded (Rapuncel–NodeRabbit have this)
 ```
 
-Local filing helpers (gitignored): `private/filing-helpers/0N-family/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`).
+Local filing helpers (gitignored): `private/filing-helpers/0N-family/` (`00_COVER_SHEET.md`, `01_NARRATIVE_PASTE.txt`, `06_EVIDENCE_RETAINED.md`). Regenerate with `python shared/tooling/build_le_packages.py`.
 
 ## Hard rules
 
