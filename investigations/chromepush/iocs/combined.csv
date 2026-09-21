@@ -1,1 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+indicator_id,type,value,notes,source
+CRP-IND-0001,domain,breakdream.com,SUGARLOADER / UNC1069 C&C class (Mandiant table),Mandiant / Google Cloud UNC1069 blog
+CRP-IND-0002,domain,dreamdie.com,SUGARLOADER / UNC1069 C&C class (Mandiant table),Mandiant / Google Cloud UNC1069 blog
+CRP-IND-0003,sha256,603848f37ab932dccef98ee27e3c5af9221d3b6ccfe457ccf93cb572495ac325,CHROMEPUSH sample,Mandiant / Google Cloud UNC1069 blog
+CRP-IND-0004,path,/Library/LaunchDaemons/com.apple.system.updater.plist,SUGARLOADER persistence used to deploy CHROMEPUSH,Mandiant / Google Cloud UNC1069 blog

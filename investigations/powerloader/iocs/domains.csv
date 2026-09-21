@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PWD-IND-0001,ip,5.252.153.67,PowerLoader C2 / control panel host (also used for PureLogs/PureRAT by Fluffy Wolf),BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)

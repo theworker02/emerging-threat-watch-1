@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PGB-IND-0002,sha256,58f911d183b09ef9d587d1e59a5d17f9273581cee9891f4642e349b4f9f678b1,PaperGrabber sample,BI.ZONE Paper Werewolf toolkit (Medium webfetch)

@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+GCT-IND-0001,md5,3ecd1cd627d0340c92901a478a7caad8,GhostContainer / Exchange backdoor sample (OpenTIP),Kaspersky Securelist GhostContainer
+GCT-IND-0002,md5,4aa9fb1bf9223dfcdac920759bc7a3c7,GhostContainer / Exchange backdoor sample (OpenTIP),Kaspersky Securelist GhostContainer
+GCT-IND-0003,md5,631fb131a56caf4ca0f287ed73e876ab,GhostContainer / Exchange backdoor sample (OpenTIP),Kaspersky Securelist GhostContainer

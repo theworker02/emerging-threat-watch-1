@@ -1,7 +1,5 @@
-# Summary — CHROMEPUSH
+# FBI / LE Summary — CHROMEPUSH
 
-Defensive TI package for **CHROMEPUSH** (Mandiant UNC1069 (via THN)).
+**Status:** PRIMARY_FROZEN (not IC3-filed)
 
-Browser-extension stealer (Chrome/Brave)
-
-Attribution claim (vendor/LE): UNC1069 (Mandiant) [Medium-High (vendor via secondary)]
+C++ browser native-messaging stealer deployed by SUGARLOADER in UNC1069 crypto intrusion. Masquerades as offline Google Docs helper for Chrome/Brave; keylogging, credential/cookie theft, HTTP POST exfil.

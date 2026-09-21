@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PWD-IND-0003,sha256,2bd0667301cb43be4f4f413f888b23e871d623e7b1cad25a744a5b21de0253be,PowerLoader sample (doc_08042026_buh_akt_PDF.scr lineage),BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)

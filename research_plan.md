@@ -45,4 +45,5 @@ See `intelligence/priority-gaps.csv`, `docs/CANDIDATE_FAMILIES.md`, and per-fami
 - HEAVYGRAM and CHOSEN BRICK remain **separate** packages (contested alias).
 - MiniUpdate / MiniJunk V2 / MiniBrowse **not merged** with existing MiniFast (11).
 - NightLedger / ArcBridge / BridgeHead **not merged** with NodeRabbit/PollCat.
-- Open: Cato Foxveil PRIMARY (WAF), Mandiant UNC1069 PRIMARY HTML, PhantomPyramid/ZeronetKit/PaperGrabber/PowerLoader/Atlas RAT PRIMARY URLs, IOC harvest for zero-IND PRIMARY_FROZEN packages, APT36 Poseidon Linux branch.
+- Closed (2026-09-21): Mandiant UNC1069 PRIMARY; PhantomPyramid/ZeronetKit/PaperGrabber/PowerLoader/Atlas RAT PRIMARYs + IOC/WHOIS harvest.
+- Open: Cato Foxveil PRIMARY (WAF still blocks), deeper IOC harvest for remaining thin PRIMARY_FROZEN packages, APT36 Poseidon Linux branch.

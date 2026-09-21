@@ -73,19 +73,24 @@ Prior deep-research freezes (MovieReaper, Insomnia RAT, ARKTunnel, Docro, OfferL
 | Pkg | Family | Notes |
 |-----|--------|-------|
 | 43 | Foxveil | Cato PRIMARY WAF-blocked; SOCPrime SECONDARY freeze |
-| 44 | PhantomPyramid | CANDIDATE — PRIMARY URL gap |
+| 44 | PhantomPyramid | PRIMARY_FROZEN (Kaspersky Securelist RU) |
 | 45 | GhostContainer | Kaspersky Exchange backdoor |
 | 46 | Dohdoor | Talos UAT-10027 DoH C2 |
 | 47–48 | LaxGopher / FriendDelivery | ESET GopherWhisper |
 | 49–50 | NosyDoor / NosyHistorian | ESET LongNosedGoblin |
 | 51–53 | TernDoor / PeerTime / BruteEntry | Talos UAT-9244 |
-| 54–56 | SILENCELIFT / DEEPBREATH / CHROMEPUSH | UNC1069 via THN secondary (Mandiant PRIMARY gap) |
+| 54–56 | SILENCELIFT / DEEPBREATH / CHROMEPUSH | PRIMARY_FROZEN (Mandiant / Google Cloud UNC1069) |
 | 57–59 | NightLedger / ArcBridge / BridgeHead | Mirage Kitten; isolated from NodeRabbit/PollCat |
 | 60–61 | Fooder / MuddyViper | ESET MuddyWater |
 | 62 | MiniBrowse | Unit 42 Screening Serpens context |
-| 63–66 | ZeronetKit / PaperGrabber / PowerLoader / Atlas RAT | CANDIDATE stubs — PRIMARY gaps |
+| 63–66 | ZeronetKit / PaperGrabber / PowerLoader / Atlas RAT | PRIMARY_FROZEN (Kaspersky / BI.ZONE / Proofpoint) |
 
 **Argamal** remains package `12-argamal` (already PRIMARY_FROZEN) — not duplicated as 40.
+
+
+### IOC / WHOIS enrichment (2026-09-21)
+
+Non-redundant harvest from frozen primaries + vendor GitHub IoC corpora; passive RDAP/WHOIS in [`intelligence/infra-ownership.csv`](../intelligence/infra-ownership.csv). Findings summary: [`intelligence/INFRA_OWNERSHIP_FINDINGS.md`](../intelligence/INFRA_OWNERSHIP_FINDINGS.md). Gap families upgraded to PRIMARY_FROZEN (2026-09-21): PhantomPyramid, ZeronetKit, PaperGrabber, PowerLoader, Atlas RAT, UNC1069 trio.
 
 ### South Asia branch (follow-on)
 

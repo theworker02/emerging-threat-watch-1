@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+TRN-IND-0023,sha256,711d9427ee43bc2186b9124f31cba2db5f54ec9a0d56dc2948e1a4377bada289,TernDoor Loader DLL,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+TRN-IND-0024,sha256,3c098a687947938e36ab34b9f09a11ebd82d50089cbfe6e237d810faa729f8ff,TernDoor Loader DLL,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+TRN-IND-0025,sha256,f36913607356a32ea106103387105c635fa923f8ed98ad0194b66ec79e379a02,TernDoor Loader DLL,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)

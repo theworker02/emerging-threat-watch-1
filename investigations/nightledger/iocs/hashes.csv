@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+NLG-IND-0023,md5,a239e655709a2518dd0b7bdbed163679,NightLedger sspicli.dll,Kaspersky Securelist Mirage Kitten 2026-07-28

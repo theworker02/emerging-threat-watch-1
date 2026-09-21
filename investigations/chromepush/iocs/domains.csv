@@ -1,2 +1,3 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+CRP-IND-0001,domain,breakdream.com,SUGARLOADER / UNC1069 C&C class (Mandiant table),Mandiant / Google Cloud UNC1069 blog
+CRP-IND-0002,domain,dreamdie.com,SUGARLOADER / UNC1069 C&C class (Mandiant table),Mandiant / Google Cloud UNC1069 blog

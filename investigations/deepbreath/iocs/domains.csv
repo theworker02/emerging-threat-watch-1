@@ -1,2 +1,6 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+DPB-IND-0001,domain,mylingocoin.com,UNC1069 network indicator (Mandiant IoC table),Mandiant / Google Cloud UNC1069 blog
+DPB-IND-0002,domain,zoom.uswe05.us,Fake Zoom meeting host (Mandiant),Mandiant / Google Cloud UNC1069 blog
+DPB-IND-0003,domain,support-zoom.us,UNC1069 network indicator,Mandiant / Google Cloud UNC1069 blog
+DPB-IND-0004,domain,supportzm.com,UNC1069 network indicator,Mandiant / Google Cloud UNC1069 blog
+DPB-IND-0005,domain,zmsupport.com,UNC1069 network indicator,Mandiant / Google Cloud UNC1069 blog

@@ -1,7 +1,7 @@
-# Summary — PowerLoader
+# FBI / LE Summary — PowerLoader (2026 MaaS)
 
-Defensive TI package for **PowerLoader** (Russian-targeting third-party downloader (recent campaigns; not 2013 classic)).
+**Status:** PRIMARY_FROZEN (not IC3-filed)
 
-Previously undocumented third-party downloader in recent campaigns
+Previously undocumented C++ downloader/dropper sold as MaaS (~$100/build) and used by Fluffy Wolf against Russian organizations. Retrieves PowerShell from C2 (observed panel/host `5.252.153.67`) to stage PureCrypter → PureLogs/PureRAT/Pay2Key.
 
-Attribution claim (vendor/LE): Unknown [Unknown]
+**Caveat:** Not the historical 2013 PowerLoader family.

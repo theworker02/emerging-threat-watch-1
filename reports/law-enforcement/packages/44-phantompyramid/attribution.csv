@@ -1,2 +1,2 @@
 claim,confidence,source,aliases,lineage_notes,nationality_folder
-"Unknown","Unknown","","","","NONE — metadata only"
+"Head Mare (vendor high confidence)","Medium-High","Kaspersky Securelist","PhantomPyramid","Polyglot ZIP/PE delivery; MeshAgent payload; case-isolated from PhantomHeart","NONE — metadata only"

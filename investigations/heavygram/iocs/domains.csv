@@ -1,2 +1,9 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+HVG-IND-0003,domain,sgp1.vultrobjects.com,Vultr Objects staging host,FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0004,domain,ams1.vultrobjects.com,Vultr Objects host (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0005,domain,micbucket.ams1.vultrobjects.com,Vultr Objects bucket host,Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0006,domain,ppt1.sgp1.vultrobjects.com,Vultr Objects host,Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0007,domain,handala-hack.to,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0008,domain,handala-redwanted.to,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0009,domain,justicehomeland.org,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0010,domain,karmabelow80.org,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze

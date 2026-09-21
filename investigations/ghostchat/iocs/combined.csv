@@ -1,1 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+indicator_id,type,value,notes,source
+GCH-IND-0001,domain,hitpak.org,C2 domain,ESET malware-ioc GitHub (ghostchat)
+GCH-IND-0002,sha1,B15B1F3F2227EBA4B69C85BDB638DF34B9D30B6A,sample,ESET malware-ioc GitHub (ghostchat)
+GCH-IND-0003,sha1,8B103D0AA37E5297143E21949471FD4F6B2ECBAA,sample,ESET malware-ioc GitHub (ghostchat)

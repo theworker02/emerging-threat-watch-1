@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PGB-IND-0003,url,https://ntptop.online/VaukY9uSiPjpylxpDeTXQgmh0QLy2Q9I8kYY6OFyt0wFqz3yZF/upload,PaperGrabber upload URL,BI.ZONE Paper Werewolf toolkit (Medium webfetch)

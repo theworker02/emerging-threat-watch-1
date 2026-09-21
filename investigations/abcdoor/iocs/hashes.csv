@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-5b998a5bc5ad1c550564294034d4a62c,md5,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,Earliest ABCDoor late 2024,abcdoor
+indicator_id,type,value,notes,source
+ABC-IND-0001,md5,5b998a5bc5ad1c550564294034d4a62c,Earliest ABCDoor late 2024,Kaspersky

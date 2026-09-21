@@ -1,7 +1,5 @@
-# Summary — Atlas RAT
+# FBI / LE Summary — Atlas RAT
 
-Defensive TI package for **Atlas RAT** (TA4922 Chinese-speaking cluster (primary TBD)).
+**Status:** PRIMARY_FROZEN (not IC3-filed)
 
-Newly surfaced RAT expanding to Europe
-
-Attribution claim (vendor/LE): TA4922 Chinese-speaking financially motivated (UNVERIFIED until primary) [Unknown]
+Modular RAT used by TA4922 (Chinese-speaking financially motivated cluster) expanding into Europe (UK/Germany/Italy) in 2026. Delivered via ZIP/IMG + DLL sideloading (`libcef.dll`). C2 observed at `206.238.115.58:886` and `154.211.86.110:886`. Capabilities include recon, file theft, keylogging, AV/media capture, ChaCha-encrypted C2.

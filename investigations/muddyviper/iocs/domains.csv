@@ -1,2 +1,15 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+MVP-IND-0001,domain,processplanet.org,staging and C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0002,domain,magicallyday.com,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0003,domain,api.tikavodot.co.il,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0004,ip,3.95.7.142,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0005,ip,35.175.224.64,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0006,ip,51.16.209.105,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0007,ip,62.106.66.112,staging,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0008,ip,157.20.182.45,staging,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0009,ip,161.35.172.55,staging,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0010,ip,167.99.224.13,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0011,ip,194.11.246.78,C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0012,ip,194.11.246.101,staging and C2,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0013,ip,206.71.149.51,staging,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0014,ip,212.232.22.136,C2,ESET malware-ioc GitHub (muddywater)

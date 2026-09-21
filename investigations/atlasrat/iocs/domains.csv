@@ -1,2 +1,3 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+ATR-IND-0001,ip,206.238.115.58,Atlas RAT C2 :886 (Campaign 1 Japan),Proofpoint TA4922 Atlas RAT
+ATR-IND-0002,ip,154.211.86.110,Atlas RAT C2 :886 (Campaign 2/3 UK/Germany/Japan),Proofpoint TA4922 Atlas RAT

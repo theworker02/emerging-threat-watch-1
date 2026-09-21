@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+MVP-IND-0015,sha1,2939FD218E0145D730BD94AA1C76386A5259EACE,Fooder loader w/ MuddyViper (msi.dll),ESET malware-ioc GitHub (muddywater)
+MVP-IND-0016,sha1,3BC6502A55A4D5D29132DA4D9943E154A810CC83,Fooder loader w/ MuddyViper,ESET malware-ioc GitHub (muddywater)
+MVP-IND-0017,sha1,7950296331802188EB99E232E2C383CB9FDD5D7D,Fooder loader w/ MuddyViper,ESET malware-ioc GitHub (muddywater)

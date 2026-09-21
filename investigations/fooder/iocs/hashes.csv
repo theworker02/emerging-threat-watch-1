@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+FDR-IND-0015,sha1,76632910CF67697BF5D7285FAE38BFCF438EC082,Fooder launcher OsUpdater.exe,ESET malware-ioc GitHub (muddywater)
+FDR-IND-0016,sha1,CD36F93DBC4C718930593D8F029EFDCAA52B619B,Fooder + HackBrowserData,ESET malware-ioc GitHub (muddywater)
+FDR-IND-0017,sha1,0657D0B0610618886DDD74C3D0A1D582CDD24863,Fooder embedding MuddyViper,ESET malware-ioc GitHub (muddywater)

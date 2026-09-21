@@ -1,1 +1,28 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+indicator_id,type,value,notes,source
+BRH-IND-0001,ip,172.86.98.113,campaign IP (Domains and IPs section),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0002,domain,aecert.org,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0003,domain,buisness-centeral-transportation.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0004,domain,business-deegital.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0005,domain,business-deegital.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0006,domain,business-startup.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0007,domain,businessdeegital.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0008,domain,businessmixture.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0009,domain,businessstartup.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0010,domain,global-reds.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0011,domain,healthcarezoom-centeral.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0012,domain,healthcarezoomcenteral.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0013,domain,healthcarezoomcenteral.org,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0014,domain,maadinglobal.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0015,domain,neexportfolio.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0016,domain,neexportfolio.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0017,domain,neexportfolio.eastus.cloudapp.azure.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0018,domain,realhealthshop.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0019,domain,smartconnect.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0020,domain,thehealth-life.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0021,domain,tjconsultingservices.com,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0022,domain,toadreport.azurewebsites.net,Mirage Kitten campaign shared infra (not tool-exclusive),Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0023,md5,6038d42af0affd1fb263f470c0956f6b,BridgeHead unbcl.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0024,md5,ae628efa305387b633dce82f9364875b,BridgeHead unbcl.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0025,md5,f7d36cc5904a53252d2bb3d21615134f,BridgeHead libwinpthread-1.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0026,md5,c90f0efadbf322e5eb1c4103a38c30e6,BridgeHead libwinpthread-1.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0027,md5,d09b14a2fe01c7363ecc56f5d046162c,BridgeHead IPHLPAPI.dll,Kaspersky Securelist Mirage Kitten 2026-07-28

@@ -1,2 +1,6 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PGB-IND-0001,domain,ntptop.online,PaperGrabber C2 (DocDownloader.exe),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0004,domain,ntpluck.online,Paper Werewolf campaign infra (shared toolkit context — not exclusive to PaperGrabber),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0005,domain,ntpsum.online,Paper Werewolf campaign infra (shared context),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0006,domain,ssltop.online,Paper Werewolf campaign infra (shared context),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0007,domain,certcalc.online,Paper Werewolf campaign infra (shared context),BI.ZONE Paper Werewolf toolkit (Medium webfetch)

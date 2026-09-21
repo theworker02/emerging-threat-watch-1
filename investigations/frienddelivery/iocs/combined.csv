@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-5A1BBB40C442B12594A913431F8C6757A3A66E8F,sha1,,,ESET,High,frienddelivery,CAMPAIGN ASSOCIATED,wer.dll FriendDelivery,frienddelivery
+indicator_id,type,value,notes,source
+FDL-IND-0001,sha1,5A1BBB40C442B12594A913431F8C6757A3A66E8F,wer.dll FriendDelivery,ESET
+FDL-IND-0002,ip,43.231.113.50,GopherWhisper arsenal C2 (SSLORDoor); shared toolset context only,ESET malware-ioc GitHub (gopherwhisper)
+FDL-IND-0003,sha1,FA9E65E58EB8FA41FDE0A0A870B7D24B298026D9,JabGopher injector whisper.dll,ESET malware-ioc GitHub (gopherwhisper)

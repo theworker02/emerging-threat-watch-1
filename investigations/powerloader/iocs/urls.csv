@@ -1,2 +1,3 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PWD-IND-0002,url,http://5.252.153.67:60070/script?id=%GUID%&country=RU&admin=true,PowerLoader script retrieval URL pattern,BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)
+PWD-IND-0004,url,https://raw.githubusercontent.com/versachi2026/max/refs/heads/main/VC29032026upload.txt,Related delivery URL observed in Fluffy Wolf chain (association-only),BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)

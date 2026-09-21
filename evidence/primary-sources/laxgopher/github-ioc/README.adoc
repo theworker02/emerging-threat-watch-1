@@ -1,0 +1,33 @@
+:toc:
+:toclevels: 2
+
+= GopherWhisper -- Indicators of Compromise
+
+== GopherWhisper: A burrow full of malware
+
+The blog post on GopherWhisper's toolset including backdoors abusing publicly
+available services like Slack, Discord, and Microsoft Graph, is available on
+WeLiveSecurity at https://www.welivesecurity.com/en/
+
+=== Files
+
+["options="header"]
+|===
+|SHA-1                                        |Filename         |Detection                         |Description
+|`+C72E7540D6F12D74D8E737B02F31568385F575D7+` |temp001.exe      |WinGo/Filecoder.JI                |CompactGopher exfiltration tool.
+|`+039EB329A173FCE7EFECA18611A8F2C0F7D24609+` |rp.exe           |Win32/HackTool.Agent.NLV          |rp hack tool, used to run a specific process using token impersonation.
+|`+716554DC580A82CC17A1035ADD302C0766590964+` |wb.exe           |Win32/PSWTool.WebBrowserPassView.I|WebBrowserPassView is a free password recovery tool that reveals the passwords stored by IE, Mozilla Firefox, Google Chrome, and Opera.
+|`+57C2490E4DB194D3503EE85635FB1D6F26E8C534+` |intelservice.exe |WinGo/Agent.VM                    |RatGopher backdoor that uses Discord for C&C.
+|`+AD7E264EB08415871617E45F21D03F7D71E4C36F+` |delltool.exe     |Win64/Agent.AGD                   |SSLORDoor backdoor.
+|`+FA9E65E58EB8FA41FDE0A0A870B7D24B298026D9+` |whisper.dll      |Win64/Injector.UI                 |JabGopher backdoor injector.
+|`+5A1BBB40C442B12594A913431F8C6757A3A66E8F+` |wer.dll          |Win64/Injector.G                  |FriendDelivery loader.
+|`+926974FACFD0383C65458D6EF1F31FBB7C769E18+` |N/A              |WinGo/Agent.AJI                   |BoxOfFriends backdoor.
+|===
+
+=== Network
+
+["options="header"]
+|===
+|IP                  |Hosting provider  |First seen |Details
+|`+43.231.113[.]50+` |Intelligent Tools |2025-03-24 |SSLORDoor C&C server.
+|===

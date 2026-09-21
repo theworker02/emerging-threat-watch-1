@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js" prefix="og: https://ogp.me/ns#">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>Polyglot technique for disguising malware | Kaspersky official blog</title>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta property="vk:image" content="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/02131155/polyglot-malware-masking-technique-featured.jpg" />
+<link rel="canonical" href="https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/" />
+<meta name="description" content="What is the polyglot technique, and how cybercriminals employ it to hide malicious files in other formats." />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Kaspersky official blog" />
+<meta property="og:title" content="Polyglot technique for disguising malware" />
+<meta property="og:description" content="What is the polyglot technique, and how cybercriminals employ it to hide malicious files in other formats." />
+<meta property="og:url" content="https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/" />
+<meta property="og:image" content="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/02131155/polyglot-malware-masking-technique-featured.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@kaspersky" />
+<meta name="twitter:creator" content="@kaspersky" />
+<meta name="twitter:title" content="Polyglot technique for disguising malware" />
+<meta name="twitter:description" content="What is the polyglot technique, and how cybercriminals employ it to hide malicious files in other formats." />
+<meta name="twitter:image" content="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/02131155/polyglot-malware-masking-technique-featured.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.kaspersky.com/blog/#/schema/WebSite","url":"https://www.kaspersky.com/blog/","name":"Kaspersky official blog","alternateName":"Kaspersky","description":"The Official Blog from Kaspersky covers information to help protect you against viruses, spyware, hackers, spam & other forms of malware.","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.kaspersky.com/blog/search/{search_term_string}/"},"query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/","url":"https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/","name":"Polyglot technique for disguising malware | Kaspersky official blog","description":"What is the polyglot technique, and how cybercriminals employ it to hide malicious files in other formats.","inLanguage":"en-US","isPartOf":{"@id":"https://www.kaspersky.com/blog/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://www.kaspersky.com/blog/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://www.kaspersky.com/blog/","name":"Kaspersky official blog"},{"@type":"ListItem","position":2,"item":"https://www.kaspersky.com/blog/category/business/","name":"Category: Business"},{"@type":"ListItem","position":3,"item":"https://www.kaspersky.com/blog/category/business/enterprise/","name":"Category: Enterprise"},{"@type":"ListItem","position":4,"name":"Polyglot technique for disguising malware"}]},"potentialAction":{"@type":"ReadAction","target":"https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/"},"datePublished":"2025-04-02T17:16:45+00:00","dateModified":"2025-04-02T17:16:45+00:00","author":{"@type":"Person","@id":"https://www.kaspersky.com/blog/#/schema/Person/a13409f5fb6d96fb9a991e4527600da1","name":"Kaspersky Team"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/"},"headline":"When files are not what they seem","image":"https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/02131155/polyglot-malware-masking-technique-featured.jpg","datePublished":"2025-04-02T17:16:45+00:00","dateModified":"2025-04-02T17:16:45+00:00","author":{"@type":"Person","name":"Kaspersky Team","url":"https://www.kaspersky.com/blog/author/kasperskyteam/"},"publisher":{"@type":"Organization","name":"Kaspersky","logo":{"@type":"ImageObject","url":"https://media.kasperskydaily.com/wp-content/uploads/sites/92/2026/03/26050647/logo-kaspersky.png","width":315,"height":60}},"description":"What is the polyglot technique, and how cybercriminals employ it to hide malicious files in other formats."}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 337.48ms meta | 0.15ms boot -->
+
+<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel='dns-prefetch' href='//app-sj06.marketo.com' />
+<link rel='dns-prefetch' href='//www.kaspersky.com' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<link rel="alternate" type="application/rss+xml" title="Daily - English - Global - blog.kaspersky.com &raquo; Feed" href="https://www.kaspersky.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Daily - English - Global - blog.kaspersky.com &raquo; Comments Feed" href="https://www.kaspersky.com/blog/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.kaspersky.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kaspersky.com%2Fblog%2Fpolyglot-malware-masking-technique%2F53263%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.kaspersky.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kaspersky.com%2Fblog%2Fpolyglot-malware-masking-technique%2F53263%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='kspr_twitter_pullquote-css' href='https://www.kaspersky.com/blog/wp-content/plugins/kspr_twitter_pullquote/css/style.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='pullquote-shortcode-css' href='https://www.kaspersky.com/blog/wp-content/plugins/pullquote-shortcode/css/pullquote-shortcode.css?ver=0.1' media='all' />
+<link rel='stylesheet' id='daily-style-css' href='https://www.kaspersky.com/blog/wp-content/themes/daily2019/assets/css/main.css?ver=1789617564' media='all' />
+<link rel='stylesheet' id='daily-post-style-css' href='https://www.kaspersky.com/blog/wp-content/themes/daily2019/assets/css/post.css?ver=1789617564' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.kaspersky.com/blog/wp-content/themes/daily2019/assets/font-awesome/css/font-awesome.min.css?ver=1789617564' media='all' />
+<link rel='stylesheet' id='kaspersky-instagram-magnific-popup-css' href='https://www.kaspersky.com/blog/wp-content/plugins/kaspersky-instagram/css/magnific-popup.css?ver=7.1' media='all' />
+<link rel='stylesheet' id='kaspersky-instagram-style-css' href='https://www.kaspersky.com/blog/wp-content/plugins/kaspersky-instagram/css/widget.css?ver=7.1' media='all' />
+<meta name="sentry-trace" content="ae19f281a13c463fbf27f232b934472c-cdf996e74fd24b23-0" />
+<meta name="traceparent" content="" />
+<meta name="baggage" content="sentry-trace_id=ae19f281a13c463fbf27f232b934472c,sentry-sample_rate=0.3,sentry-transaction=%2F%7Bname%7D%2F%7Bp%7D,sentry-public_key=4826a69933e641c5b854fe1e8b9d9752,sentry-release=1.0,sentry-environment=yandex-production,sentry-sampled=false,sentry-sample_rand=0.813006" />
+<link rel="alternate" hreflang="x-default" href="https://www.kaspersky.com/blog/polyglot-malware-masking-technique/53263/" />
+<link rel="alternate" hreflang="en-in" href="https://www.kaspersky.co.in/blog/polyglot-malware-masking-technique/28730/" />
+<link rel="alternate" hreflang="en-ae" href="https://me-en.kaspersky.com/blog/polyglot-malware-masking-technique/23969/" />
+<link rel="alternate" hreflang="en-gb" href="https://www.kaspersky.co.uk/blog/polyglot-malware-masking-technique/28847/" />
+<link rel="alternate" hreflang="ru" href="https://www.kaspersky.ru/blog/polyglot-malware-masking-technique/39330/" />
+<link rel="alternate" hreflang="ru-kz" href="https://blog.kaspersky.kz/polyglot-malware-masking-technique/29005/" />
+<link rel="alternate" hreflang="en-au" href="https://www.kaspersky.com.au/blog/polyglot-malware-masking-technique/34794/" />
+<link rel="alternate" hreflang="en-za" href="https://www.kaspersky.co.za/blog/polyglot-malware-masking-technique/34426/" />
+<script id="kasp-marketo-remote-js-js" src="//app-sj06.marketo.com/js/forms2/js/forms2.min.js?ver=1.1.1"></script>
+<script id="jquery-core-js" src="https://www.kaspersky.com/blog/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.kaspersky.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script id="kasbanner-front-script-js-extra">
+var kasbanner_frontend_ajax_object = {"restURL":"https://www.kaspersky.com/blog/wp-json/","postID":"53263","postStatus":"publish","postType":"posts"};
+//# sourceURL=kasbanner-front-script-js-extra
+</script>
+<script id="notification_strings-js-extra">
+var gdprDynamicStrings = {"notification_text":"We use cookies to make your experience of our websites better. By using and further navigating this website you accept this. Detailed information about the use of cookies on this website is available by clicking on \u003Ca href=\"https://www.kaspersky.com/third-party-tracking\" target=\"_blank\"\u003Emore information\u003C/a\u003E.","button_text":"ACCEPT AND CLOSE"};
+//# sourceURL=notification_strings-js-extra
+</script>
+<script type='text/javascript' src='//assets.kasperskydaily.com/blog/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-banners/assets/js/script.js,wp-content/plugins/kaspersky-cookies-notification/scripts/alert_text.js,wp-content/plugins/kaspersky-cookies-notification/scripts/alert.js,wp-content/plugins/kspr_twitter_pullquote/js/kaspersky-twitter-pullquote.js,wp-content/plugins/kaspersky-instagram/js/jquery.magnific-popup.min.js,wp-content/plugins/kaspersky-instagram/js/widget.js&#038;ver=7.1'></script>
+<link rel="https://api.w.org/" href="https://www.kaspersky.com/blog/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.kaspersky.com/blog/wp-json/wp/v2/posts/53263" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kaspersky.com/blog/xmlrpc.php?rsd" />
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				'Author' : 'Kaspersky Team',
+				'PostId' : '53263',
+				'PublicationDate' : '2025-04-02',
+				'Categories': 'Business, Enterprise, SMB, Threats',
+				'Tags': 'malware, threats',
+				'MainTag': 'malware',
+				'Hashtags': '',
+
+			});
+		</script>
+				
+		
+<!-- Start GTM container script -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WZ7LJ3');</script>
+		<!-- End Start GTM container script -->
+<script>
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/pa-560b0d8dabe53d2e7e8a2dfc.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+			ymCounterId_1: 98380851		});
+	</script>
+<link rel="icon" href="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/06/04074830/cropped-k-favicon-new-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/06/04074830/cropped-k-favicon-new-200x200.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/06/04074830/cropped-k-favicon-new-200x200.png" />
+<meta name="msapplication-TileImage" content="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/06/04074830/cropped-k-favicon-new-300x300.png" />
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-53263 single-format-standard wp-theme-daily2019 lang-en_US">
+	<!-- Start GTM container script -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZ7LJ3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Start GTM container script -->			
+			<div id="site-top" class="site-top">
+		<div class="container">
+			<nav class="site-nav">
+				<div class="label"><p>Solutions for:</p></div><ul class="site-selector"><li><a target="_blank" href="https://www.kaspersky.com/home-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_prodmen_sm-team_______d41e2cff6378ae8f" data-element-id="product-menu" class="font-icons icon-home top-menu-business-stripe menu-item menu-item-type-custom menu-item-object-custom menu-item-17674">Home Products</a></li>
+<li><a title="font-icons icon-small-business" target="_blank" href="https://www.kaspersky.com/small-business-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_prodmen_sm-team_______d41e2cff6378ae8f" data-element-id="product-menu" class="font-icons icon-small-business top-menu-business-stripe menu-item menu-item-type-custom menu-item-object-custom menu-item-17675">Small Business 1-50 employees</a></li>
+<li><a target="_blank" href="https://www.kaspersky.com/small-to-medium-business-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_prodmen_sm-team_______d41e2cff6378ae8f" data-element-id="product-menu" class="font-icons icon-medium-business top-menu-business-stripe menu-item menu-item-type-custom menu-item-object-custom menu-item-17676">Medium Business 51-999 employees</a></li>
+<li><a target="_blank" href="https://www.kaspersky.com/enterprise-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_prodmen_sm-team_______d41e2cff6378ae8f" data-element-id="product-menu" class="font-icons icon-enterprise top-menu-business-stripe menu-item menu-item-type-custom menu-item-object-custom menu-item-17677">Enterprise 1000+ employees</a></li>
+</ul>			</nav>
+		</div>
+	</div>
+
+	<header id="site-header" class="site-header">
+		<div class="container">
+			<a href="" class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+								<div class="site-title ">
+										<a href="https://www.kaspersky.com/blog/" title="Kaspersky official blog" rel="home">
+						<i class="kaspersky-logo">Kaspersky official blog</i>
+                        
+                                                    <span class="logo-text"></span>
+                        					</a>
+							</div>
+	
+	<ul id="menu-my-kaspersky" class="menu-utility"><li id="menu-item-17670" class="dropdown my-kaspersky top-menu-my-kaspersky menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17670"><a href="https://my.kaspersky.com/?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_main-menu_sm-team_______56de5f8d1e0687ee">My Account</a>
+<ul class="sub-menu">
+	<li id="menu-item-17671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17671"><a href="https://my.kaspersky.com/?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_main-menu_sm-team_______56de5f8d1e0687ee"><i class="font-icons icon-devices"></i>My Kaspersky</a></li>
+	<li id="menu-item-17672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17672"><a href="https://my.kaspersky.com/MyLicenses?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_main-menu_sm-team_______56de5f8d1e0687ee"><i class="font-icons icon-subscriptions"></i>My Products / Subscriptions</a></li>
+	<li id="menu-item-17673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17673"><a href="https://my.kaspersky.com/redirect?target=AccountSettingsPurchaseHistory&#038;icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_main-menu_sm-team_______56de5f8d1e0687ee"><i class="font-icons icon-card"></i>My Orders</a></li>
+</ul>
+</li>
+</ul>
+	<nav class="main-nav">
+		<ul id="menu-ent" class="main-menu"><li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49235"><a href="https://www.kaspersky.com/enterprise-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Solutions</a>
+<ul class="submenu">
+<li class="first">
+	<ul class="featured section-col-l-3 no-gutter has-equal-height-children">
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49236"><a href="https://www.kaspersky.com/enterprise-security/embedded-security-internet-of-things?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://www.kaspersky.com/content/en-global/images/enterprise/new-product-icons/kl_IoT_Security_black_icon.png"></figure>Internet of Things &#038; Embedded Security</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/embedded-security-internet-of-things?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49237"><a href="https://www.kaspersky.com/enterprise-security/industrial-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--industrial--cybersecurity--black--icon/kl--industrial--cybersecurity--black--icon-v4.png"></figure>Industrial CyberSecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/industrial-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49238"><a href="https://www.kaspersky.com/enterprise-security/fraud-prevention?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/icons/related-solutions-icons/rs-b-kfp/rs-b-kfp.png"></figure>Fraud Prevention</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/fraud-prevention?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49239"><a href="https://www.kaspersky.com/enterprise-security/kasperskyos?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/icons/Related-solutions-icons/kaspersky-os/kaspersky-os.png"></figure>KasperskyOS &#8211; based solutions</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/kasperskyos?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>Other solutions</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49241"><a href="https://www.kaspersky.com/enterprise-security/security-operations-center-soc?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky for Security Operations Center</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49242"><a href="https://www.kaspersky.com/enterprise-security/kaspersky-iot-infrastructure-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky IoT Infrastructure Security</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49243"><a href="https://www.kaspersky.com/enterprise-security/kaspersky-secure-remote-workspace?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Secure Remote Workspace</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49244"><a href="https://www.kaspersky.com/enterprise-security/industries?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Industries</a>
+<ul class="submenu">
+<li class="first">
+	<ul class="featured section-col-l-3 no-gutter has-equal-height-children">
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49245"><a href="https://www.kaspersky.com/enterprise-security/national-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--national--cybersecurity--black--icon/kl--national--cybersecurity--black--icon-v3.svg"></figure>National Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/national-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49246"><a href="https://www.kaspersky.com/enterprise-security/industrial?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/icons/related-solutions-icons/ent-industrial-protection-transparent/ent-industrial-protection-transparent.png"></figure>Industrial Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/industrial?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49247"><a href="https://www.kaspersky.com/enterprise-security/finance?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--financial--services--cybersecurity--black--icon/kl--financial--services--cybersecurity--black--icon-v3.svg"></figure>Finance Services Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/finance?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49248"><a href="https://www.kaspersky.com/enterprise-security/healthcare?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--healthcare--cybersecurity--black--icon/kl--healthcare--cybersecurity--black--icon-v3.svg"></figure>Healthcare Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/healthcare?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49249"><a href="https://www.kaspersky.com/enterprise-security/transportation-cybersecurity-it-infrastructure?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--transportation--cybersecurity--black--icon/kl--transportation--cybersecurity--black--icon.png"></figure>Transportation Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/transportation-cybersecurity-it-infrastructure?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49250"><a href="https://www.kaspersky.com/enterprise-security/retail-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--retail--cybersecurity--black--icon/kl--retail--cybersecurity--black--icon.png"></figure>Retail Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/retail-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49251"><a href="https://www.kaspersky.com/enterprise-security/telecom?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/icons/ent-new-telecom-banner-black-77-77/ent-new-telecom-banner-black-77-77.png"></figure>Telecom Cybersecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/telecom?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+	</ul>
+
+</ul>
+
+<li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49252"><a href="https://www.kaspersky.com/enterprise-security/products?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Products</a>
+<ul class="submenu">
+<li class="first">
+	<ul class="featured section-col-l-3 no-gutter has-equal-height-children">
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-50968"><a href="https://www.kaspersky.com/next?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2024/04/10052437/k_Next_RGB_black_icon.png"></figure>Kaspersky Next <small class="label-inline red">NEW!</small></a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/next?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49256"><a href="https://www.kaspersky.com/enterprise-security/anti-targeted-attack-platform?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/icons/related-solutions-icons/rs-b-kata/rs-b-kata.png"></figure>Kaspersky Anti Targeted Attack Platform</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/anti-targeted-attack-platform?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49257"><a href="https://www.kaspersky.com/enterprise-security/cloud-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/smb/icons/icon-hybrid-cloud/icon-hybrid-cloud.png"></figure>Kaspersky Hybrid Cloud Security</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/cloud-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49258"><a href="https://www.kaspersky.com/enterprise-security/mail-server-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--security--for--mail--server--black--icon/kl--security--for--mail--server--black--icon.png"></figure>Kaspersky Security for Mail Server</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/mail-server-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49259"><a href="https://www.kaspersky.com/enterprise-security/industrial-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--industrial--cybersecurity--black--icon/kl--industrial--cybersecurity--black--icon-v4.png"></figure>Kaspersky Industrial CyberSecurity</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/industrial-cybersecurity?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>Other products</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49261"><a href="https://www.kaspersky.com/enterprise-security/products/internet-gateway?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Security for Internet Gateway</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49262"><a href="https://www.kaspersky.com/enterprise-security/embedded-systems?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Embedded Systems Security</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49263"><a href="https://www.kaspersky.com/enterprise-security/kaspersky-iot-infrastructure-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky IoT Infrastructure Security</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49264"><a href="https://www.kaspersky.com/enterprise-security/kaspersky-secure-remote-workspace?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Secure Remote Workspace</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49265"><a href="https://www.kaspersky.com/enterprise-security/products?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">View all</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49266"><a href="https://www.kaspersky.com/enterprise-security/services?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Services</a>
+<ul class="submenu">
+<li class="first">
+	<ul class="featured section-col-l-3 no-gutter has-equal-height-children">
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49267"><a href="https://www.kaspersky.com/enterprise-security/cybersecurity-services?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--cybersecurity--services--black--icon/kl--cybersecurity--services--black--icon.png"></figure>Kaspersky Cybersecurity Services</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/cybersecurity-services?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49268"><a href="https://www.kaspersky.com/enterprise-security/security-awareness?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/fm/site-editor/ca/ca65765dc55ec7830b51d9d010c372f7/processed/kl-security-awareness-black-icon-q93.webp"></figure>Kaspersky Security Awareness</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/security-awareness?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49269"><a href="https://www.kaspersky.com/enterprise-security/premium-support?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--premium--support--and--professional--services--black--icon/kl--premium--support--and--professional--services--black--icon.png"></figure>Kaspersky Premium Support</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/premium-support?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Kaspersky Premium Support</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49270"><a href="https://www.kaspersky.com/enterprise-security/threat-intelligence?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--threat--intelligence--black--icon/kl--threat--intelligence--black--icon.png"></figure>Kaspersky Threat Intelligence</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/threat-intelligence?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49271"><a href="https://www.kaspersky.com/enterprise-security/managed-detection-and-response?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--managed--protection--black--icon/kl--managed--protection--black--icon.png"></figure>Kaspersky Managed Detection and Response</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/managed-detection-and-response?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+<li class="show-figure smaller-item menu-item menu-item-type-custom menu-item-object-custom menu-item-49272"><a href="https://www.kaspersky.com/enterprise-security/compromise-assessment?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu"><figure><img alt="" src="https://content.kaspersky-labs.com/se/com/content/en-global/images/enterprise/new-product-icons/kl--targeted--attack-----discovery--black--icon/kl--targeted--attack-----discovery--black--icon.png"></figure>Kaspersky Compromise Assessment</a><div class="desc"><p><a data-element-id="main-menu" href="https://www.kaspersky.com/enterprise-security/compromise-assessment?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce">Learn more</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>Other services</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49274"><a href="https://www.kaspersky.com/enterprise-security/professional-services?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Professional Services</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49275"><a href="https://www.kaspersky.com/enterprise-security/incident-response?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Incident Response</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49276"><a href="https://www.kaspersky.com/enterprise-security/cyber-security-training?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Kaspersky Cybersecurity Training</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49279"><a href="https://www.kaspersky.com/enterprise-security/services?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">View all</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49280"><a href="https://www.kaspersky.com/enterprise-security/resources?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Resource Center</a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49281"><a href="https://www.kaspersky.com/enterprise-security/resources/case-studies?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Case Studies</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49282"><a href="https://www.kaspersky.com/enterprise-security/resources/white-papers?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">White Papers</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49283"><a href="https://www.kaspersky.com/enterprise-security/resources/data-sheets?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Datasheets</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49284"><a href="https://www.kaspersky.com/enterprise-security/wiki-section/home?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Technologies</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49285"><a href="https://www.kaspersky.com/MITRE?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">MITRE ATT&#038;CK</a>
+</ul>
+
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-49286"><a href="https://www.kaspersky.com/about?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">About Us</a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49287"><a href="https://www.kaspersky.com/about/transparency?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Transparency</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49288"><a href="https://www.kaspersky.com/about/press-releases?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Corporate News</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49289"><a href="https://press.kaspersky.com/?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Press Center</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49290"><a href="https://www.kaspersky.com/about/careers?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Careers</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49291"><a href="https://www.kaspersky.com/about/sponsorships/?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Sponsorship</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49292"><a href="https://www.kaspersky.com/about/policy-blog?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Policy Blog</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49293"><a href="https://www.kaspersky.com/about/contact?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Contacts</a>
+</ul>
+
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49294"><a href="https://www.kaspersky.com/gdpr?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">GDPR</a>
+<li class="dropdown active top-menu-blog menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-50957"><a href="https://www.kaspersky.com/blog/" data-element-id="main-menu">Blog</a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50958"><a href="https://www.kaspersky.com/blog/category/business/" data-element-id="main-menu">Business</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50959"><a href="https://www.kaspersky.com/blog/category/news/" data-element-id="main-menu">News</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50960"><a href="https://www.kaspersky.com/blog/category/privacy/" data-element-id="main-menu">Privacy</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50961"><a href="https://www.kaspersky.com/blog/category/products/" data-element-id="main-menu">Products</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50962"><a href="https://www.kaspersky.com/blog/category/special-projects/" data-element-id="main-menu">Special Projects</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50963"><a href="https://www.kaspersky.com/blog/category/technology/" data-element-id="main-menu">Technology</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50964"><a href="https://www.kaspersky.com/blog/category/threats/" data-element-id="main-menu">Threats</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50965"><a href="https://www.kaspersky.com/blog/category/tips/" data-element-id="main-menu">Tips</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50966"><a href="https://www.kaspersky.com/blog/feed/" data-element-id="main-menu">RSS</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50967"><a href="https://www.kaspersky.com/blog/subscribe/" data-element-id="main-menu">Newsletter subscription</a>
+</ul>
+
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49295"><a href="https://www.kaspersky.com/blog/secure-futures-magazine/?icid=gl_kdailyheader_acq_ona_smm__onl_b2b_kdaily_main-menu_sm-team_______ad86ac275857d7ce" data-element-id="main-menu">Secure Futures</a>
+
+<li class="search">
+	<a href="#" class="inactive search-button">
+		<i class="font-icons icon-search"></i>
+	</a>
+	<form action="https://www.kaspersky.com/search">
+		<input type="text" placeholder="Type and hit enter..." name="query" value="" autocomplete="off">
+	</form>
+	<a href="#" class="close-search">
+		<i class="font-icons icon-cancel"></i>
+	</a>
+</li>
+</ul>	</nav>
+	</div>
+	</header><!-- #site-header -->
+
+	<div class="mobile-menu-wrapper">
+		<ul class="mobile-nav" data-back="Back">
+			<li class="title">
+				<span>Solutions for:</span>
+			</li>
+			<li class="parent" data-parent="Home" data-icon="font-icons top-item"><a rel="Home" href="#" data-element-id="mobile-menu"><i class="font-icons top-item"></i><span>Home</span></a>
+<ul class="submenu">
+<li class="parent" data-parent="Security Solutions" data-icon="top-item no-icon"><a rel="Security Solutions" href="https://www.kaspersky.com/home-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu"><i class="top-item no-icon"></i><span>Security Solutions</span></a>
+	<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47564"><a href="https://www.kaspersky.com/premium?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky Premium</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47565"><a href="https://www.kaspersky.com/plus?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky Plus</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47566"><a href="https://www.kaspersky.com/standard?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky Standard</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47567"><a href="https://www.kaspersky.com/home-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">View All Solutions</a>
+<li class="title"><h6><span>Privacy &#038; Kids</span></h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47569"><a href="https://www.kaspersky.com/safe-kids?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky Safe Kids</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47570"><a href="https://www.kaspersky.com/vpn-secure-connection?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky VPN</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47571"><a href="https://www.kaspersky.com/password-manager?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky Password Manager</a>
+	</ul>
+
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47572"><a href="https://www.kaspersky.com/renewal-center/home?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Renew Licence</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47573"><a href="https://support.kaspersky.com/?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Support</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17547"><a href="https://www.kaspersky.com/downloads?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Trials&#038;Update</a>
+</ul>
+
+<li class="parent" data-parent="Business" data-icon="font-icons icon-enterprise top-item"><a rel="Business" href="#" data-element-id="mobile-menu"><i class="font-icons icon-enterprise top-item"></i><span>Business</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50977"><a href="https://www.kaspersky.com/next?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Kaspersky Next</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17553"><a href="https://www.kaspersky.com/small-business-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Small Business (1-50 employees)</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17560"><a href="https://www.kaspersky.com/small-to-medium-business-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Medium Business (51-999 employees)</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17561"><a href="https://www.kaspersky.com/enterprise-security?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Enterprise (1000+ employees)</a>
+</ul>
+
+<li class="splitter"></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36670"><a href="https://www.kaspersky.com/blog/?s=" data-element-id="mobile-menu">Search blog posts</a>
+<li class="parent" data-parent="BLOG" data-icon="top-item no-icon"><a rel="BLOG" href="https://wwww.kaspersky.com/blog/" data-element-id="mobile-menu"><i class="top-item no-icon"></i><span>Blog</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19554"><a href="https://www.kaspersky.com/blog/category/business/" data-element-id="mobile-menu">Business</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19555"><a href="https://www.kaspersky.com/blog/category/news/" data-element-id="mobile-menu">News</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19556"><a href="https://www.kaspersky.com/blog/category/privacy/" data-element-id="mobile-menu">Privacy</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19557"><a href="https://www.kaspersky.com/blog/category/products/" data-element-id="mobile-menu">Products</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19558"><a href="https://www.kaspersky.com/blog/category/special-projects/" data-element-id="mobile-menu">Special Projects</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19559"><a href="https://www.kaspersky.com/blog/category/technology/" data-element-id="mobile-menu">Technology</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19560"><a href="https://www.kaspersky.com/blog/category/threats/" data-element-id="mobile-menu">Threats</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19561"><a href="https://www.kaspersky.com/blog/category/tips/" data-element-id="mobile-menu">Tips</a><div class="desc"> </div>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20127"><a href="https://www.kaspersky.com/blog/feed/" data-element-id="mobile-menu">RSS</a>
+</ul>
+
+<li class="parent" data-parent="" data-icon="top-item"><a href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>About us</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17572"><a href="https://www.kaspersky.com/about/company?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">About company</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17578"><a href="https://www.kaspersky.com/transparency?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Transparency</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17573"><a href="https://www.kaspersky.com/about/press-releases?rel=1&#038;sel=date" data-element-id="mobile-menu">Corporate News</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17576"><a href="https://www.kaspersky.com/about/press-center?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Press Center</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17577"><a href="https://careers.kaspersky.com/?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Careers</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17574"><a href="https://www.kaspersky.com/about/sponsorships?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Sponsorships</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17575"><a href="https://www.kaspersky.com/about/policy-blog?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Policy blog</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17569"><a href="https://www.kaspersky.com/about/contact?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Contacts</a>
+</ul>
+
+<li class="parent" data-parent="" data-icon="top-item"><a href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>Partners</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17545"><a href="https://partnersearch.kaspersky.com/?b2b&#038;locale=en" data-element-id="mobile-menu">Find a Partner</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17546"><a href="https://www.kaspersky.com/partners?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Partners</a>
+</ul>
+
+<li class="parent" data-parent="My Account" data-icon="font-icons top-item"><a rel="My Account" href="#" data-element-id="mobile-menu"><i class="font-icons top-item"></i><span>My Account</span></a>
+<ul class="submenu">
+<li class="parent" data-parent="Personal" data-icon="font-icons top-item"><a rel="Personal" href="#" data-element-id="mobile-menu"><i class="font-icons top-item"></i><span>Personal</span></a>
+	<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43859"><a href="https://my.kaspersky.com/?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">My Kaspersky</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43860"><a href="https://www.kaspersky.com/renewal-center/home?icid=gl_kdailyheader_acq_ona_smm__onl_b2c_kdaily_mobmen_sm-team_______04916cf152d14fc5" data-element-id="mobile-menu">Renew your product</a>
+	</ul>
+
+<li class="parent" data-parent="Business" data-icon="font-icons top-item"><a rel="Business" href="#" data-element-id="mobile-menu"><i class="font-icons top-item"></i><span>Business</span></a>
+	<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43864"><a href="https://ksos.kaspersky.com/" data-element-id="mobile-menu">KSOS portal</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43865"><a href="https://cloud.kaspersky.com/" data-element-id="mobile-menu">Kaspersky Business Hub</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43868"><a href="https://www.kaspersky.com/renewal-center/vsb" data-element-id="mobile-menu">Renew your License</a>
+	</ul>
+
+</ul>
+
+		</ul>
+		<div class="background-overlay"></div>
+	</div>
+
+		<div class="c-page">
+
+		
+		<section class="c-page-header js-sticky-header">
+			<div class="o-container-fluid">
+				<div class="c-page-header__wrapper">
+					<form class="c-page-search__form c-page-search__form--small" role="search" method="get" action="https://www.kaspersky.com/blog/">
+						<div class="c-form-element c-form-element--style-fill">
+							<div class="c-form-element__field">
+								<input type="text" class="c-form-element__text" name="s" placeholder="Search blog posts">
+							</div>
+						</div>
+						<button type="submit" class="c-button" value="Search">Search</button>
+					</form>
+				</div>
+			</div>
+		</section><section class="c-block c-block--spacing-b-small@sm c-block--divider">
+	<div class="o-container-fluid">
+		<article class="c-article">
+			<header class="c-article__header">
+					<ul class="c-taxonomy c-taxonomy--category">
+					<li><a class="c-link--icon-primary" href="https://www.kaspersky.com/blog/tag/malware-2/"><img class="o-icon" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/11/14063754/mail.png" /> malware</a></li>
+				</ul>
+				<h1 class="c-article__title">When files are not what they seem</h1>	<div class="c-article__intro">
+					<p>Attackers use the polyglot technique to disguise malware. We explain what it is and how to protect your company against attacks.</p>
+			</div>
+	<ul class="c-article__meta-list">
+		<li class="c-article__author">
+			<div class="c-article__author-avatar">
+				<a href="https://www.kaspersky.com/blog/author/kasperskyteam/"><img alt='' src='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23111210/Midori-Kuma-Ed-192x192.jpg' srcset='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23111210/Midori-Kuma-Ed-192x192.jpg 2x' class='avatar avatar-50 photo' height='50' width='50' decoding='async'/></a>
+			</div>
+			<p class="c-article__author-name">
+				<a href="https://www.kaspersky.com/blog/author/kasperskyteam/">Kaspersky Team</a>
+			</p>
+		</li>
+				<li class="c-article__time c-article__meta-spacer">
+			<p>
+				<time datetime="2025-04-02T13:16:45-04:00">April 2, 2025</time>
+			</p>
+		</li>
+			</ul>
+		<figure class="c-article__figure">
+		<img width="1460" height="960" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/02131155/polyglot-malware-masking-technique-featured.jpg" class="attachment-daily-2019-article-image size-daily-2019-article-image wp-post-image" alt="Polyglot technique for disguising malware" decoding="async" fetchpriority="high" data-src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/02131155/polyglot-malware-masking-technique-featured.jpg" data-srcset="" srcset="" />	</figure>
+	</header>
+
+			<div class="o-row c-article__body c-article__body--columns@lg">
+				<div class="o-col-8@lg">
+					<div class="c-article__content">
+						<div class="c-wysiwyg">
+							<p>Not long ago, our Securelist blog published a <a href="https://securelist.ru/head-mare-attacks-with-phantompyramid/112164/" target="_blank" rel="noopener">post</a> (Russian language only) about an attack on industrial enterprises using the PhantomPyramid backdoor, which our experts with a high degree of confidence attribute to the Head Mare group. The attack was fairly standard — an email claiming to contain confidential information, with an attached password-protected archive containing malware, and a password for unpacking located right in the email’s body. But the method by which the attackers hid their malicious code — in a seemingly harmless file — is quite interesting: to do it they used the polyglot technique.</p>
+<h2>What is the polyglot technique?</h2>
+<p>In the Mitre ATT&amp;CK matrix, polyglot files are <a href="https://attack.mitre.org/techniques/T1036/008/" target="_blank" rel="nofollow noopener">described</a> as files that correspond to several file types of at once, and that operate differently depending on the application in which they’re launched. They’re used to disguise malware: for the user, as well as for some basic protection mechanisms, they look like something completely harmless, for example a picture or a document, but in fact there’s malicious code inside. Moreover, the code can be <a href="https://en.wikipedia.org/wiki/Polyglot_(computing)" target="_blank" rel="nofollow noopener">written</a> in several programming languages ​​at once.</p>
+<p>Attackers use a variety of format combinations. Unit42 once <a href="https://unit42.paloaltonetworks.com/polyglot-file-icedid-payload/" target="_blank" rel="nofollow noopener">investigated</a> an attack using a help file in the Microsoft Compiled HTML Help format (.chm extension), which also was an HTML application (.hta file). Researchers also <a href="https://medium.com/swlh/polyglot-files-a-hackers-best-friend-850bf812dd8a" target="_blank" rel="nofollow noopener">describe</a> the use of a .jpeg image inside which, in fact, was a .phar PHP archive. In the case of the attack investigated by our experts, executable code was hidden inside a .zip archive file.</p>
+<h2>Polyglot file in the PhantomPyramid case</h2>
+<p>The file sent by attackers (presumably the Head Mare group) had a .zip extension and could be opened with a standard archiver application. But in fact it was a binary executable file, to the end of which a small ZIP archive was added. Inside the archive was a shortcut file with a double extension .pdf.lnk. If the victim, confident that they were dealing with a regular PDF file, clicked on it, the shortcut executed a powershell script, which allowed the malicious .zip file to be launched as an executable file, and also created a decoy PDF file in the temporary directory to show it to the user.</p>
+<h2>How to stay safe</h2>
+<p>To prevent the launch of malicious code, we recommend equipping all computers having internet access with <a href="https://www.kaspersky.com/next?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kdaily_wpplaceholder_sm-team___knext____a8c0f733e524af27" target="_blank" rel="noopener nofollow">reliable security solutions</a>. In addition, since most cyberattacks are started with malicious or social engineering emails, it’s not a bad idea to install a security solution <a href="https://www.kaspersky.com/small-to-medium-business-security/mail-security-appliance?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder____" target="_blank" rel="noopener nofollow">at the corporate mail gateway level</a>.</p>
+<p>And in order to have the most up-to-date data on the techniques, tactics, and procedures of attackers, we suggest using the threat data provided by our <a href="https://www.kaspersky.com/enterprise-security/threat-intelligence?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kasperskydaily_wpplaceholder_______" target="_blank" rel="noopener nofollow">Threat Intelligence services</a>.</p>
+<input type="hidden" class="category_for_banner" value="kaspersky-next">
+<div class="c-site-logo c-site-logo--symbol"></div>
+<div ub-in-page="5e1dc40ed3212c4643191543"></div>						</div>
+					</div>
+				</div>
+
+				<div class="o-col-4@lg">
+	<aside class="c-article__sidebar js-sticky-sidebar">
+		<div class="c-widget">
+					<ul class="c-taxonomy c-taxonomy--tags">
+							<li><a href="https://www.kaspersky.com/blog/tag/malware-2/">malware</a></li>
+							<li><a href="https://www.kaspersky.com/blog/tag/threats/">threats</a></li>
+					</ul>
+		</div>
+		<div class="js-sticky-sidebar-visible">
+			        					<div class="c-widget c-widget--full kl_sm_sidebar_banner">
+				<a data-element-id="sidebar-banner" class="u-hidden u-block@lg" href="https://www.kaspersky.com/next-optimum?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kdaily_wpplaceholder_sm-team___knext____d0b2d5e7bcf532c5"><img src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/07/29124059/reliable-protection-for-your-business-sidebar-en.jpg" /></a><a data-element-id="sidebar-banner" class="u-block u-hidden@lg" href="https://www.kaspersky.com/next-optimum?icid=gl_kdailyplacehold_acq_ona_smm__onl_b2b_kdaily_wpplaceholder_sm-team___knext____d0b2d5e7bcf532c5"><img src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2020/07/29124059/reliable-protection-for-your-business-sidebar-en.jpg" /></a>			</div>
+				<div class="c-widget" data-element-id="sidebar-related">
+				<h5 class="c-block__title c-block__title--small">Related</h5>
+	<div class="o-row c-card__row--fixed-width@sm js-slider-posts-mobile">
+								<div class="o-col-6@sm o-col-12@lg">
+				<article class="c-card c-card--mini kl_sm_sidebar_related">
+										<figure class="c-card__figure">
+						<a data-element-id="sidebar-related-image" href="https://www.kaspersky.com/blog/polyglot-file-formats-attack-examples-detection-prevention-advice/56253/">
+							<img width="700" height="460" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2026/08/10102723/polyglot-file-formats-attack-examples-detection-prevention-advice-featured-700x460.jpg" class="attachment-daily-2019-post-thumbnail-large size-daily-2019-post-thumbnail-large wp-post-image" alt="A dangerous matryoshka: everything needed to be known about polyglot malware files" decoding="async" data-src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2026/08/10102723/polyglot-file-formats-attack-examples-detection-prevention-advice-featured-700x460.jpg" data-srcset="" srcset="" />						</a>
+					</figure>
+										<div class="c-card__content">
+						<h3 class="c-card__title"><a data-element-id="sidebar-related-title" href="https://www.kaspersky.com/blog/polyglot-file-formats-attack-examples-detection-prevention-advice/56253/">A dangerous matryoshka: everything needed to be known about polyglot malware files</a></h3>					</div>
+				</article>
+			</div>
+								<div class="o-col-6@sm o-col-12@lg">
+				<article class="c-card c-card--mini kl_sm_sidebar_related">
+										<figure class="c-card__figure">
+						<a data-element-id="sidebar-related-image" href="https://www.kaspersky.com/blog/cve-2024-6387-regresshion-researcher-attack/51646/">
+							<img width="700" height="460" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2024/07/05132019/cve-2024-6387-regresshion-researcher-attack-featured-700x460.jpg" class="attachment-daily-2019-post-thumbnail-large size-daily-2019-post-thumbnail-large wp-post-image" alt="Pseudo-exploit for CVE-2024-6387 aka regreSSHion" decoding="async" data-src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2024/07/05132019/cve-2024-6387-regresshion-researcher-attack-featured-700x460.jpg" data-srcset="" srcset="" />						</a>
+					</figure>
+										<div class="c-card__content">
+						<h3 class="c-card__title"><a data-element-id="sidebar-related-title" href="https://www.kaspersky.com/blog/cve-2024-6387-regresshion-researcher-attack/51646/">Attack on cybersecurity researchers: pseudo-exploit for regreSSHion</a></h3>					</div>
+				</article>
+			</div>
+			</div>
+			</div>
+			</div>
+	</aside>
+</div>
+			</div>
+
+		</article>
+	</div>
+</section>
+	<section class="c-block c-block--spacing-t-small@sm c-block--spacing-b-small@sm c-block--divider">
+		<div class="o-container-fluid">
+			<article class="c-card c-card--hor@sm kl_sm_readnext" data-element-id="read-next">
+								<figure class="c-card__figure">
+					<a data-element-id="read-next-image" href="https://www.kaspersky.com/blog/tarot-and-cyber-threats/53256/">
+						<img width="700" height="460" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/01040014/tarot-and-cyber-threats-featured-700x460.jpg" class="attachment-daily-2019-post-thumbnail-large size-daily-2019-post-thumbnail-large wp-post-image" alt="Trojan.Arcanum — a new trojan targeting tarot experts, esotericists, and magicians" decoding="async" data-src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/01040014/tarot-and-cyber-threats-featured-700x460.jpg" data-srcset="" srcset="" />					</a>
+				</figure>
+								<div class="c-card__content">
+					<header class="c-card__header">
+						<ul class="c-taxonomy c-taxonomy--category">
+							<li><a class="c-link--icon-primary" href="https://www.kaspersky.com/blog/tarot-and-cyber-threats/53256/"><svg class="o-icon o-svg-icon o-svg-down"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.kaspersky.com/blog/wp-content/themes/daily2019/assets/sprite/icons.svg#icon-arrow"></use></svg>Read next</a></li>
+						</ul>
+					</header>
+					<h3 class="c-card__title"><a data-element-id="read-next-title" href="https://www.kaspersky.com/blog/tarot-and-cyber-threats/53256/">Tarot and cyberthreats: a new Trojan for fans of the supernatural</a></h3>					<div class="c-card__desc">
+						<p><p>New malware targets magic enthusiasts — sending stolen data to an &#8220;astral cloud server&#8221;.</p>
+</p>
+					</div>
+										<figure class="c-card__figure">
+						<a href="https://www.kaspersky.com/blog/tarot-and-cyber-threats/53256/">
+							<img width="700" height="460" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/01040014/tarot-and-cyber-threats-featured-700x460.jpg" class="attachment-daily-2019-post-thumbnail-large size-daily-2019-post-thumbnail-large wp-post-image" alt="Trojan.Arcanum — a new trojan targeting tarot experts, esotericists, and magicians" decoding="async" data-src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2025/04/01040014/tarot-and-cyber-threats-featured-700x460.jpg" data-srcset="" srcset="" />						</a>
+					</figure>
+										<footer class="c-card__footer">
+	<ul class="c-card__meta-list">
+		<li class="c-card__author">
+			<div class="c-card__author-avatar">
+				<a href="https://www.kaspersky.com/blog/author/kasperskyteam/"><img alt='' src='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23111210/Midori-Kuma-Ed-192x192.jpg' srcset='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23111210/Midori-Kuma-Ed-192x192.jpg 2x' class='avatar avatar-25 photo' height='25' width='25' decoding='async'/></a>
+			</div>
+			<p class="c-card__author-name">
+				<a href="https://www.kaspersky.com/blog/author/kasperskyteam/">Kaspersky Team</a>
+			</p>
+		</li>
+		<li class="c-card__time">
+			<p>
+				<time datetime="2025-04-01T04:55:19-04:00">April 1, 2025</time>
+			</p>
+		</li>
+	</ul>
+</footer>
+				</div>
+			</article>
+		</div>
+	</section>
+		<section class="c-block c-block--spacing-t-small@sm c-block--spacing-b@sm c-block--divider" data-element-id="footer-tips">
+		<div class="o-container-fluid">
+			<h5 class="c-block__title">Tips</h5>
+			<div class="o-row c-card__row">
+														<div class="o-col-6@lg">
+						<article class="c-card c-card--no-image kl_sm_tips c-card--bg-gradient1">
+	<div class="c-card__content">
+				<header class="c-card__header">
+			<ul class="c-taxonomy c-taxonomy--category">
+				<li><a class="c-link--icon-primary" href="https://www.kaspersky.com/blog/tag/tips/"><img class="o-icon" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/11/14063839/bug.png" /> Tips</a></li>
+			</ul>
+		</header>
+		<h3 class="c-card__title"><a data-element-id="footer-tips-title" href="https://www.kaspersky.com/blog/clickfix-malicious-browser-extensions/56428/">Malicious Chrome and Edge add-ons and ClickFix attacks</a></h3>		<div class="c-card__desc">
+			<p><p>What do malicious browser extensions, crypto theft, and fake Chrome update guides have in common? We look at a recent campaign involving 19 infected add-ons.</p>
+</p>
+		</div>
+		<footer class="c-card__footer">
+	<ul class="c-card__meta-list">
+		<li class="c-card__author">
+			<div class="c-card__author-avatar">
+				<a href="https://www.kaspersky.com/blog/author/alannatitterington/"><img alt='' src='https://media.kasperskydaily.com/wp-content/uploads/2025/05/16075858/Alanna.Titterington-192x192.jpg' srcset='https://media.kasperskydaily.com/wp-content/uploads/2025/05/16075858/Alanna.Titterington-192x192.jpg 2x' class='avatar avatar-25 photo' height='25' width='25' decoding='async'/></a>
+			</div>
+			<p class="c-card__author-name">
+				<a href="https://www.kaspersky.com/blog/author/alannatitterington/">Alanna Titterington</a>
+			</p>
+		</li>
+		<li class="c-card__time">
+			<p>
+				<time datetime="2026-09-17T16:18:52-04:00">September 17, 2026</time>
+			</p>
+		</li>
+	</ul>
+</footer>
+	</div>
+</article>
+					</div>
+															<div class="o-col-6@lg">
+						<article class="c-card c-card--no-image kl_sm_tips c-card--bg-gradient1">
+	<div class="c-card__content">
+				<header class="c-card__header">
+			<ul class="c-taxonomy c-taxonomy--category">
+				<li><a class="c-link--icon-primary" href="https://www.kaspersky.com/blog/tag/tips/"><img class="o-icon" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/11/14063839/bug.png" /> Tips</a></li>
+			</ul>
+		</header>
+		<h3 class="c-card__title"><a data-element-id="footer-tips-title" href="https://www.kaspersky.com/blog/smart-tv-box-residential-proxy-malware-threat/56404/">Trojan TV, or the new risks of malicious proxies</a></h3>		<div class="c-card__desc">
+			<p><p>How budget smart-TVs and set-top boxes infect home networks and join malicious botnets.</p>
+</p>
+		</div>
+		<footer class="c-card__footer">
+	<ul class="c-card__meta-list">
+		<li class="c-card__author">
+			<div class="c-card__author-avatar">
+				<a href="https://www.kaspersky.com/blog/author/stankaminsky/"><img alt='' src='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23110013/Stan-kaminski-avatar-192x192.jpg' srcset='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23110013/Stan-kaminski-avatar-192x192.jpg 2x' class='avatar avatar-25 photo' height='25' width='25' decoding='async'/></a>
+			</div>
+			<p class="c-card__author-name">
+				<a href="https://www.kaspersky.com/blog/author/stankaminsky/">Stan Kaminsky</a>
+			</p>
+		</li>
+		<li class="c-card__time">
+			<p>
+				<time datetime="2026-09-14T11:59:57-04:00">September 14, 2026</time>
+			</p>
+		</li>
+	</ul>
+</footer>
+	</div>
+</article>
+					</div>
+															<div class="o-col-6@lg">
+						<article class="c-card c-card--no-image kl_sm_tips c-card--bg-gradient1">
+	<div class="c-card__content">
+				<header class="c-card__header">
+			<ul class="c-taxonomy c-taxonomy--category">
+				<li><a class="c-link--icon-primary" href="https://www.kaspersky.com/blog/tag/tips/"><img class="o-icon" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/11/14063839/bug.png" /> Tips</a></li>
+			</ul>
+		</header>
+		<h3 class="c-card__title"><a data-element-id="footer-tips-title" href="https://www.kaspersky.com/blog/chatgpt-computer-history-macos-risks-benefits/56380/">Dear diary: how OpenAI&#8217;s Computer History feature works, and why it&#8217;s risky</a></h3>		<div class="c-card__desc">
+			<p><p>A new feature in the ChatGPT app for macOS keeps a detailed log of everything you do on your computer, and stores that data in a freely readable text file. We assess the benefits, the risks, and settle on a plan of what to do.</p>
+</p>
+		</div>
+		<footer class="c-card__footer">
+	<ul class="c-card__meta-list">
+		<li class="c-card__author">
+			<div class="c-card__author-avatar">
+				<a href="https://www.kaspersky.com/blog/author/stankaminsky/"><img alt='' src='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23110013/Stan-kaminski-avatar-192x192.jpg' srcset='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23110013/Stan-kaminski-avatar-192x192.jpg 2x' class='avatar avatar-25 photo' height='25' width='25' decoding='async'/></a>
+			</div>
+			<p class="c-card__author-name">
+				<a href="https://www.kaspersky.com/blog/author/stankaminsky/">Stan Kaminsky</a>
+			</p>
+		</li>
+		<li class="c-card__time">
+			<p>
+				<time datetime="2026-09-10T12:00:07-04:00">September 10, 2026</time>
+			</p>
+		</li>
+	</ul>
+</footer>
+	</div>
+</article>
+					</div>
+															<div class="o-col-6@lg">
+						<article class="c-card c-card--no-image kl_sm_tips c-card--bg-gradient1">
+	<div class="c-card__content">
+				<header class="c-card__header">
+			<ul class="c-taxonomy c-taxonomy--category">
+				<li><a class="c-link--icon-primary" href="https://www.kaspersky.com/blog/tag/tips/"><img class="o-icon" src="https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/11/14063839/bug.png" /> Tips</a></li>
+			</ul>
+		</header>
+		<h3 class="c-card__title"><a data-element-id="footer-tips-title" href="https://www.kaspersky.com/blog/teaching-kids-to-use-ai-in-school/56331/">AI for schoolkids: 25 helpful prompts + usage tips</a></h3>		<div class="c-card__desc">
+			<p><p>We explain how to use AI the right way for schoolwork, how to fact-check chatbot responses, and how to protect your personal data.</p>
+</p>
+		</div>
+		<footer class="c-card__footer">
+	<ul class="c-card__meta-list">
+		<li class="c-card__author">
+			<div class="c-card__author-avatar">
+				<a href="https://www.kaspersky.com/blog/author/kasperskyteam/"><img alt='' src='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23111210/Midori-Kuma-Ed-192x192.jpg' srcset='https://media.kasperskydaily.com/wp-content/uploads/2025/05/23111210/Midori-Kuma-Ed-192x192.jpg 2x' class='avatar avatar-25 photo' height='25' width='25' decoding='async'/></a>
+			</div>
+			<p class="c-card__author-name">
+				<a href="https://www.kaspersky.com/blog/author/kasperskyteam/">Kaspersky Team</a>
+			</p>
+		</li>
+		<li class="c-card__time">
+			<p>
+				<time datetime="2026-09-02T09:40:18-04:00">September 2, 2026</time>
+			</p>
+		</li>
+	</ul>
+</footer>
+	</div>
+</article>
+					</div>
+								</div>
+					</div>
+	</section>
+		</div><!-- /page -->
+
+<div id="site-footer" class="site-footer">
+	<div class="container">
+		<div class="site-footer-links" data-element-id="footer-product-links">
+			<div class="row">
+				<div class="footer-column"><h4 id="menu-item-27668" class="section-title footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27668"><a target="_blank" data-element-id="footer-product-link" href="https://www.kaspersky.com/home-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Home Solutions</a></h4>
+<ul class="small-list">
+	<li id="menu-item-27669" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27669"><a target="_blank" data-element-id="footer-product-link" href="https://www.kaspersky.com/standard?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Standard</a></li>
+	<li id="menu-item-36970" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-36970"><a target="_blank" data-element-id="footer-product-link" href="https://www.kaspersky.com/plus?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Plus</a></li>
+	<li id="menu-item-27670" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27670"><a target="_blank" data-element-id="footer-product-link" href="https://www.kaspersky.com/premium?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Premium</a></li>
+	<li id="menu-item-27676" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27676"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/home-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060#all">All Solutions</a></li>
+</ul>
+</li>
+</li></ul></div><div class="footer-column"><h4 id="menu-item-27677" class="section-title footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27677"><a target="_blank" data-element-id="footer-product-link" href="https://www.kaspersky.com/small-business-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Small Business Products</a></h4><small>1-100 EMPLOYEES</small>
+<ul class="small-list">
+	<li id="menu-item-27678" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27678"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-business-security/small-office-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Small Office Security</a></li>
+	<li id="menu-item-27679" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27679"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-to-medium-business-security/cloud?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Endpoint Security Cloud</a></li>
+	<li id="menu-item-27680" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27680"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-business-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">All Products</a></li>
+</ul>
+</li>
+</li></ul></div><div class="footer-column"><h4 id="menu-item-27681" class="section-title footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27681"><a target="_blank" data-element-id="footer-product-link" href="https://www.kaspersky.com/small-to-medium-business-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Medium Business Products</a></h4><small>101-999 EMPLOYEES</small>
+<ul class="small-list">
+	<li id="menu-item-50975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50975"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/next?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Next</a></li>
+	<li id="menu-item-27682" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27682"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-to-medium-business-security/cloud?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Endpoint Security Cloud</a></li>
+	<li id="menu-item-27683" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27683"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-to-medium-business-security/endpoint-select?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Endpoint Security for Business Select</a></li>
+	<li id="menu-item-27684" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27684"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-to-medium-business-security/endpoint-advanced?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Endpoint Security for Business Advanced</a></li>
+	<li id="menu-item-27685" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27685"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/small-to-medium-business-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">All Products</a></li>
+</ul>
+</li>
+</li></ul></div><div class="footer-column"><h4 id="menu-item-27686" class="section-title footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27686"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/enterprise-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Enterprise Solutions</a></h4><small>1000 EMPLOYEES</small>
+<ul class="small-list">
+	<li id="menu-item-50974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50974"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/next?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Kaspersky Next</a></li>
+	<li id="menu-item-27687" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27687"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/enterprise-security/cybersecurity-services?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Cybersecurity Services</a></li>
+	<li id="menu-item-27688" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27688"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/enterprise-security/threat-management-defense-solution?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Threat Management and Defense</a></li>
+	<li id="menu-item-27689" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27689"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/enterprise-security/endpoint?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Endpoint Security</a></li>
+	<li id="menu-item-27690" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27690"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/enterprise-security/cloud-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">Hybrid Cloud Security</a></li>
+	<li id="menu-item-27691" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27691"><a data-element-id="footer-product-link" href="https://www.kaspersky.com/enterprise-security?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060">All Solutions</a></li>
+</ul>
+</li>
+</div>			</div>
+		</div>
+		<footer>
+			<div class="row">
+				<div class="footer-column footer-column-large" data-element-id="footer-menu">
+					<div class="textwidget">
+												<p class="copy">Copyright © 2026 AO Kaspersky Lab. All Rights Reserved.</p>
+						<ul id="menu-footer-secondary-navigation" class="footer-secondary-nav"><li id="menu-item-17504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17504"><a target="_blank" href="https://www.kaspersky.com/web-privacy-policy?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Privacy Policy</a></li>
+<li id="menu-item-23059" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23059"><a target="_blank" href="https://www.kaspersky.com/anti-corruption-policy?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Anti-Corruption Policy</a></li>
+<li id="menu-item-17505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17505"><a target="_blank" href="https://www.kaspersky.com/end-user-license-agreement?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">License Agreement B2C</a></li>
+<li id="menu-item-47466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-47466"><a target="_blank" href="https://www.kaspersky.com/business/eula?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">License Agreement B2B</a></li>
+</ul>						<div class="footer-tertiary">
+							<ul id="menu-footer-tertiary" class=""><li id="menu-item-27719" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27719"><a href="https://www.kaspersky.com/about/contact?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Contact Us</a></li>
+<li id="menu-item-27720" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27720"><a href="https://www.kaspersky.com/about?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">About Us</a></li>
+<li id="menu-item-27721" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27721"><a href="https://www.kaspersky.com/partners?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Partners</a></li>
+<li id="menu-item-27722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-27722"><a href="https://www.kaspersky.com/blog/" data-element-id="footer-menu-link">Blog</a></li>
+<li id="menu-item-27723" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27723"><a href="https://www.kaspersky.com/resource-center?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Resource Center</a></li>
+<li id="menu-item-27724" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27724"><a href="https://www.kaspersky.com/about/press-releases?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Press Releases</a></li>
+<li id="menu-item-27725" class="footer-corpsite-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27725"><a href="https://www.kaspersky.com/about-trust?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Trust Kaspersky</a></li>
+</ul>						</div>
+						<div class="blog-list">
+							<ul id="menu-footer-blog-list" class="sub-menu"><li id="menu-item-27707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27707"><h3><a target="_blank" href="https://securelist.com/?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Securelist</a></h3></li>
+<li id="menu-item-27712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27712"><h3><a target="_blank" href="https://eugene.kaspersky.com/?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Eugene Personal Blog</a></h3></li>
+<li id="menu-item-39202" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39202"><h3><a href="https://encyclopedia.kaspersky.com/?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Encyclopedia</a></h3></li>
+<li id="menu-item-54278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54278"><h3><a href="https://ics-cert.kaspersky.com/?icid=gl_kdailyfooter_acq_ona_smm__onl_b2c_kdaily_footer_sm-team_______ca305b37d3bf6060" data-element-id="footer-menu-link">Kaspersky ICS CERT</a></h3></li>
+</ul>						</div>
+					</div>
+				</div>
+				<div class="footer-column">
+					<div class="social-list" data-element-id="footer-social-links">
+						<ul id="menu-footer-social-networks" class="sub-menu"><li id="menu-item-27698" class="social footer-social-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27698 social"><h3><a target="_blank" href="https://twitter.com/Kaspersky" data-element-id="footer-social-link"><i class="font-icons icon-twitterx"></i></a></h3></li>
+<li id="menu-item-43983" class="social footer-social-links menu-item menu-item-type-custom menu-item-object-custom menu-item-43983 social"><h3><a target="_blank" href="https://www.facebook.com/Kaspersky" data-element-id="footer-social-link"><i class="font-icons icon-facebook"></i></a></h3></li>
+<li id="menu-item-27699" class="social footer-social-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27699 social"><h3><a target="_blank" href="https://www.linkedin.com/company/kaspersky" data-element-id="footer-social-link"><i class="font-icons icon-linkedin"></i></a></h3></li>
+<li id="menu-item-27700" class="social footer-social-links menu-item menu-item-type-custom menu-item-object-custom menu-item-27700 social"><h3><a target="_blank" href="https://youtube.com/Kaspersky" data-element-id="footer-social-link"><i class="font-icons icon-youtube"></i></a></h3></li>
+<li id="menu-item-49228" class="social footer-social-links menu-item menu-item-type-custom menu-item-object-custom menu-item-49228 social"><h3><a target="_blank" href="https://www.instagram.com/kasperskylab" data-element-id="footer-social-link"><i class="font-icons icon-instagram"></i></a></h3></li>
+</ul>					</div>
+					<div class="country-selector-button font-icons">
+													<p>Global</p>
+							<span class="arrow"></span>
+											</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+<section class="footer-selector">
+	<div class="container">
+		<a href="#" class="close-selector"><i class="font-icons icon-cancel"></i></a>
+		<div class="section-col-l-4 section-col-s-2 reset-l country-list">
+			<div>
+									<ul>
+						<li class="list-title">Americas</li>
+						<li id="menu-item-17473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17473"><a href="https://www.kaspersky.com.br/blog/">Brasil</a></li>
+<li id="menu-item-17472" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17472"><a href="https://latam.kaspersky.com/blog">México</a></li>
+					</ul>
+													<ul>
+						<li class="list-title">Africa</li>
+						<li id="menu-item-17716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17716"><a href="https://www.kaspersky.co.za/blog/">South Africa</a></li>
+					</ul>
+													<ul>
+						<li class="list-title">Middle East</li>
+						<li id="menu-item-17668" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17668"><a href="https://me-en.kaspersky.com/blog/">Middle East</a></li>
+<li id="menu-item-17669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17669"><a href="https://me.kaspersky.com/blog/">&#1575;&#1604;&#1588;&#1585;&#1602; &#1575;&#1604;&#1571;&#1608;&#1587;&#1591;</a></li>
+					</ul>
+							</div>
+			<div>
+									<ul>
+						<li class="list-title">Western Europe</li>
+						<li id="menu-item-17678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17678"><a href="https://www.kaspersky.de/blog/">Deutschland &#038; Schweiz</a></li>
+<li id="menu-item-17679" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17679"><a href="https://www.kaspersky.es/blog/">España</a></li>
+<li id="menu-item-17680" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17680"><a href="https://www.kaspersky.fr/blog/">France &#038; Suisse</a></li>
+<li id="menu-item-17681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17681"><a href="https://www.kaspersky.it/blog/">Italia &#038; Svizzera</a></li>
+<li id="menu-item-17682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17682"><a href="https://www.kaspersky.nl/blog">Nederland &#038; België</a></li>
+<li id="menu-item-17683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17683"><a href="https://www.kaspersky.co.uk/blog/">United Kingdom</a></li>
+					</ul>
+							</div>
+			<div>
+									<ul>
+						<li class="list-title">Eastern Europe</li>
+						<li id="menu-item-17486" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17486"><a href="https://plblog.kaspersky.com">Polska</a></li>
+<li id="menu-item-17488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17488"><a href="https://www.kaspersky.com.tr/blog/">Türkiye</a></li>
+<li id="menu-item-17487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17487"><a href="https://www.kaspersky.ru/blog/">Россия (Russia)</a></li>
+<li id="menu-item-17485" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17485"><a href="https://blog.kaspersky.kz">Kazakhstan</a></li>
+					</ul>
+							</div>
+			<div>
+									<ul>
+						<li class="list-title">Asia &amp; Pacific</li>
+						<li id="menu-item-17704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17704"><a href="https://www.kaspersky.com.au/blog/">Australia</a></li>
+<li id="menu-item-17475" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17475"><a href="https://www.kaspersky.co.in/blog">India</a></li>
+<li id="menu-item-17476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17476"><a href="https://www.kaspersky.com.cn/blog">中国 (China)</a></li>
+<li id="menu-item-17474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17474"><a href="https://blog.kaspersky.co.jp">日本 (Japan)</a></li>
+					</ul>
+													<ul>
+						<li class="list-title">For all other countries</li>
+						<li id="menu-item-17506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-17506"><a href="https://www.kaspersky.com/blog/">Global</a></li>
+					</ul>
+							</div>
+		</div>
+
+	</div>
+</section>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/blog/*"},{"not":{"href_matches":["/blog/wp-*.php","/blog/wp-admin/*","/blog/files/*","/blog/wp-content/*","/blog/wp-content/plugins/*","/blog/wp-content/themes/daily2019/*","/blog/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" src="https://content.kaspersky-labs.com/public/analytics-scripts/analytical_functions.js"></script>	<script>
+		jQuery('p').each(function(ind, el) {
+			var text = jQuery(el).html();
+			text = text.replace('«&nbsp;.', '&nbsp;».');
+			jQuery(el).html(text);
+		});
+	</script>
+<script id="kaspersky-omniture-js-extra">
+var kaspersky = {"isStaging":"0","pageName":"Kaspersky Daily Blog \u003E Polyglot Malware Masking Technique","siteLocale":"en-GLOBAL","siteType":"Default","platformName":"Kaspersky Daily Blog","pageCharset":"UTF-8","pageLocale":"en-GLOBAL","pageType":"blog","businessType":"b2b"};
+//# sourceURL=kaspersky-omniture-js-extra
+</script>
+<script id="daily-script-js-extra">
+var daily2019Data = {"loading":"Loading..."};
+var kasperskyScriptOptions = {"kasperskyPopupObject":{"show_after":"2"},"ajaxUrl":"https://www.kaspersky.com/blog/wp-admin/admin-ajax.php"};
+//# sourceURL=daily-script-js-extra
+</script>
+<script type='text/javascript' src='//assets.kasperskydaily.com/blog/wp-content/plugins/bwp-minify/min/?f=wp-content/plugins/kaspersky-omniture/assets/dataLayer.js,wp-content/plugins/social-polls-by-opinionstage/assets/js/shortcodes.js,wp-content/themes/daily2019/assets/js/main-new.js&#038;ver=7.1'></script>
+<script id="facebook-jssdk-js-extra">
+var FB_WP=FB_WP||{};FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn;fn=FB_WP.queue._methods.shift();){fn()}FB_WP.queue.flushed=true}};window.fbAsyncInit=function(){FB.init({"xfbml":true,"appId":"307769532755023"});if(FB_WP && FB_WP.queue && FB_WP.queue.flush){FB_WP.queue.flush()}}
+//# sourceURL=facebook-jssdk-js-extra
+</script>
+<script type="text/javascript">(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https:\/\/connect.facebook.net\/en_US\/all.js";fjs.parentNode.insertBefore(js,fjs)}(document,"script","facebook-jssdk"));</script>
+<div id="fb-root"></div>
+
+<!-- Powered by Whitelist IP For Limit Login Attempts (Forked by Convertiv) | URL: http://club.orbisius.com/products/wordpress-plugins/whitelist-ip-for-limit-login-attempts/ -->
+
+</body>
+
+</html>

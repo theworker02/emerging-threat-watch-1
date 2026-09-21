@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+ARB-IND-0023,md5,5fa15ef96808ea82f0a6176f0bb4b386,ArcBridge sample,Kaspersky Securelist Mirage Kitten 2026-07-28
+ARB-IND-0024,md5,42f847597109da2a220391bb09d00676,ArcBridge sample,Kaspersky Securelist Mirage Kitten 2026-07-28
+ARB-IND-0025,md5,afb1c1583606599c7272cfb33cc6f498,ArcBridge sample,Kaspersky Securelist Mirage Kitten 2026-07-28

@@ -1,1 +1,7 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+indicator_id,type,value,notes,source
+PSP-IND-0001,domain,mgardownload.com,C2 / download domain,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0002,domain,m-mgarg.com,C2 domain,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0003,ip,54.67.2.84,C2 IP listed with domains,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0004,sha1,F8F4C5BC498BCCE907DC975DD88BE8D594629909,sample,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0005,sha1,6BBC9AB132BA066F63676E05DA13D108598BC29B,sample,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0006,sha1,C14E9B062ED28115EDE096788F62B47A6ED841AC,sample,ESET malware-ioc GitHub (promptspy)

@@ -1,1 +1,15 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+indicator_id,type,value,notes,source
+HVG-IND-0001,email,ghazalehmehrjo@gmail.com,Credential string embedded in Pictory_premium sample (FBI FLASH) — NOT confirmed operator identity,FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0002,url,https://sgp1.vultrobjects.com/downloads/pictory/Pictory_premium_ver9.0.4.exe,Malware staging URL (Vultr Objects),FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0003,domain,sgp1.vultrobjects.com,Vultr Objects staging host,FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0004,domain,ams1.vultrobjects.com,Vultr Objects host (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0005,domain,micbucket.ams1.vultrobjects.com,Vultr Objects bucket host,Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0006,domain,ppt1.sgp1.vultrobjects.com,Vultr Objects host,Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0007,domain,handala-hack.to,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0008,domain,handala-redwanted.to,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0009,domain,justicehomeland.org,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0010,domain,karmabelow80.org,related domain (Group-IB),Group-IB HEAVYGRAM HTML freeze
+HVG-IND-0011,md5,1E6B601F733BC40EAA58916986BFC5B9,Pictory_premium_ver9.0.4.exe,FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0012,sha256,E8B633DCAD173EB41EF02686B46779A4A0E53DF7F6C63039A798F2DB5EB83AFC,same sample,FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0013,md5,B9086413E7B6A0C6A11C25D14C22615F,Telegram_Authenticator.exe,FBI FLASH HEAVYGRAM PDF 2026-09-15
+HVG-IND-0014,sha256,9014FE4F16F01C0439B261ADE4CF980F460E0DAE46B1EC5F58FD9BC0AF26E531,same sample,FBI FLASH HEAVYGRAM PDF 2026-09-15
