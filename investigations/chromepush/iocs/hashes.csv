@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+CRP-IND-0003,sha256,603848f37ab932dccef98ee27e3c5af9221d3b6ccfe457ccf93cb572495ac325,CHROMEPUSH sample,Mandiant / Google Cloud UNC1069 blog

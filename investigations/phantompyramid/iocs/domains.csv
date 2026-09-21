@@ -1,2 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PPY-IND-0001,ip,109.107.182.11,PhantomPyramid C2 (/task?uid=),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0002,ip,185.130.251.101,related IP (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0003,domain,updourlan.ru,MeshAgent C2 domain (also PhantomJitter context — association-only across Head Mare tools),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0004,domain,nextcloud.soft-trust.com,related domain (OpenTIP),Kaspersky Securelist PhantomPyramid (RU) 2025

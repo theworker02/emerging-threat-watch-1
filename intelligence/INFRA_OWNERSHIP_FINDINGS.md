@@ -32,3 +32,14 @@ Passive RDAP/WHOIS only (`intelligence/infra-ownership.csv`). Privacy-redacted W
 ## Tooling
 
 Re-run: `python3 shared/tooling/enrich_sparse_iocs_whois.py` (skips duplicate values).
+
+## Gap-family PRIMARY upgrades (2026-09-21)
+
+| Family | Primary | Key new IOCs |
+|--------|---------|-------------|
+| PhantomPyramid | Kaspersky Securelist RU | C2 `109.107.182.11`, `updourlan.ru` |
+| ZeronetKit | Kaspersky Securelist RU | `icecoldwind.online` + BO Team C2 set; Linux MD5 |
+| PaperGrabber | BI.ZONE Medium | `ntptop.online` + SHA-256 |
+| PowerLoader | BI.ZONE Medium | `5.252.153.67` panel/C2 + SHA-256 |
+| Atlas RAT | Proofpoint TA4922 | C2 `206.238.115.58`, `154.211.86.110` :886 |
+| SILENCELIFT / DEEPBREATH / CHROMEPUSH | Mandiant Google Cloud | `cmailer.pro`, Zoom-lure domains, sample SHA-256s |

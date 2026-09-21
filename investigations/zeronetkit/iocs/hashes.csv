@@ -1,2 +1,14 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+ZNK-IND-0013,md5,f44363f27dc5b6317c4c4302f04d3551,Linux ZeronetKit sample,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0014,md5,0208bc35bc22e26057baaae28c1a30f9,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0015,md5,06220c16680975edc66a3590bdb14e93,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0016,md5,074e0a2d1dfe648959bb593f2f01800f,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0017,md5,09c1a436d99c07db5a04b2e6c8d6dc2f,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0018,md5,0fb1d4651b6ff0aace4fdd62096de739,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0019,md5,12772caa05f2c28ebe8c99abb35ac39c,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0020,md5,159a0ab9696510263e1d29ff00a6484f,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0021,md5,168a68b95574381ace9592c2a422315f,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0022,md5,18623133ec76987a1783b4bb89e4faa9,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0023,md5,1fb7d5554fb19fc4e951b6a241d3656d,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0024,md5,1fe61a3c9d64469edfbee0fa70ede1c0,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0025,md5,228c37e006de63d66ebd85db92374039,sample hash (OpenTIP),Kaspersky Securelist BO Team / ZeronetKit (RU)

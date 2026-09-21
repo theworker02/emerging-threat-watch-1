@@ -1,1 +1,5 @@
 indicator_id,type,value,notes,source
+PWD-IND-0001,ip,5.252.153.67,PowerLoader C2 / control panel host (also used for PureLogs/PureRAT by Fluffy Wolf),BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)
+PWD-IND-0002,url,http://5.252.153.67:60070/script?id=%GUID%&country=RU&admin=true,PowerLoader script retrieval URL pattern,BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)
+PWD-IND-0003,sha256,2bd0667301cb43be4f4f413f888b23e871d623e7b1cad25a744a5b21de0253be,PowerLoader sample (doc_08042026_buh_akt_PDF.scr lineage),BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)
+PWD-IND-0004,url,https://raw.githubusercontent.com/versachi2026/max/refs/heads/main/VC29032026upload.txt,Related delivery URL observed in Fluffy Wolf chain (association-only),BI.ZONE Fluffy Wolf / PowerLoader (Medium webfetch)

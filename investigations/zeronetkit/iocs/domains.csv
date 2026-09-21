@@ -1,2 +1,13 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+ZNK-IND-0001,domain,icecoldwind.online,Linux ZeronetKit C2 (Gorilla WebSocket),Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0002,domain,czlm.site,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0003,domain,easybussy.space,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0004,domain,hatchvpn.online,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0005,domain,lizzardsnails.online,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0006,domain,railradman.site,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0007,domain,rrcrft.xyz,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0008,domain,scnmon.store,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0009,domain,tributarieshand.online,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0010,domain,yandecx.site,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0011,domain,bobas.fun,ZeronetKit C2,Kaspersky Securelist BO Team / ZeronetKit (RU)
+ZNK-IND-0012,ip,150.241.70.86,ZeronetKit related IP,Kaspersky Securelist BO Team / ZeronetKit (RU)

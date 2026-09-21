@@ -1,5 +1,6 @@
 # Sources — CHROMEPUSH
 
-- Primary: https://thehackernews.com/2026/02/north-korea-linked-unc1069-uses-ai.html
-- Freeze: `evidence/primary-sources/chromepush/thn-unc1069-2026-02.html`
-- Publisher: Mandiant (cited); THN secondary
+- Primary: https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering
+- Freeze: `evidence/primary-sources/chromepush/mandiant-unc1069-crypto-ai.html`
+- Publisher: Mandiant (Google Cloud)
+- Status: PRIMARY_FROZEN

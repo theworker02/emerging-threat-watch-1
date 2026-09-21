@@ -1,1 +1,8 @@
 indicator_id,type,value,notes,source
+PGB-IND-0001,domain,ntptop.online,PaperGrabber C2 (DocDownloader.exe),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0002,sha256,58f911d183b09ef9d587d1e59a5d17f9273581cee9891f4642e349b4f9f678b1,PaperGrabber sample,BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0003,url,https://ntptop.online/VaukY9uSiPjpylxpDeTXQgmh0QLy2Q9I8kYY6OFyt0wFqz3yZF/upload,PaperGrabber upload URL,BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0004,domain,ntpluck.online,Paper Werewolf campaign infra (shared toolkit context — not exclusive to PaperGrabber),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0005,domain,ntpsum.online,Paper Werewolf campaign infra (shared context),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0006,domain,ssltop.online,Paper Werewolf campaign infra (shared context),BI.ZONE Paper Werewolf toolkit (Medium webfetch)
+PGB-IND-0007,domain,certcalc.online,Paper Werewolf campaign infra (shared context),BI.ZONE Paper Werewolf toolkit (Medium webfetch)

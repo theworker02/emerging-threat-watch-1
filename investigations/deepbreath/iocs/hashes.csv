@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+DPB-IND-0006,sha256,b452c2da7c012eda25a1403b3313444b5eb7c2c3e25eee489f1bd256f8434735,DEEPBREATH related initial payload path /Library/Caches/System Settings,Mandiant / Google Cloud UNC1069 blog

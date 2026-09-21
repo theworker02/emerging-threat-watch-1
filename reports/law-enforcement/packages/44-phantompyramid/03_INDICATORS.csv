@@ -1,1 +1,17 @@
 indicator_id,type,value,notes,source
+PPY-IND-0001,ip,109.107.182.11,PhantomPyramid C2 (/task?uid=),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0002,ip,185.130.251.101,related IP (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0003,domain,updourlan.ru,MeshAgent C2 domain (also PhantomJitter context — association-only across Head Mare tools),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0004,domain,nextcloud.soft-trust.com,related domain (OpenTIP),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0005,md5,2386baf319bc550a6468bf62e661ca48,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0006,md5,37c0c0b253088c845aad2f36520eaba5,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0007,md5,50c8ac460c185f7ea8cec33f876bef02,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0008,md5,68155b35a6f149a722ce0349a82edf58,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0009,md5,922201bedb77289e17478df2206a40fa,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0010,md5,9f250a3163546ee22471390f32d5fed3,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0011,md5,c10c6c61dd7807641c2ab22584b64bde,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0012,md5,cb26c5d904b67f3cb3b2537753f8238a,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0013,md5,e0aa78d9b915ff6cd1eb0bb18c73988e,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0014,md5,ed1f9e435dc885292eab65620c51f3fb,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0015,md5,ef9522c67eaf4363c7ccfa5124c1a3ba,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025
+PPY-IND-0016,md5,f556f60c9c3877fbf464975ccb58c3f5,sample hash (OpenTIP/article),Kaspersky Securelist PhantomPyramid (RU) 2025

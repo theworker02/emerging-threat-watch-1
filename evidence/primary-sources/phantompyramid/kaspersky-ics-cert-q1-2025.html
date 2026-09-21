@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="test" content="publication">
+    <!-- develop by co-dd.ru -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/favicon-16x16.png">
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNCHJLS4');</script>
+<!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WZ7LJ3');</script>
+<!-- End Google Tag Manager -->  
+        <title>APT and financial attacks on industrial organizations in Q1 2025 &#8211; Kaspersky ICS CERT EN</title>
+<link rel='dns-prefetch' href='//go.kaspersky.com' />
+<link rel='dns-prefetch' href='//smartcaptcha.cloud.yandex.ru' />
+<link rel='dns-prefetch' href='//ics-media.kasperskycontenthub.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://ics-cert.kaspersky.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fics-cert.kaspersky.com%2Fpublications%2Fapt-and-financial-attackson-industrial-organizations-in-q1-2025%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://ics-cert.kaspersky.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fics-cert.kaspersky.com%2Fpublications%2Fapt-and-financial-attackson-industrial-organizations-in-q1-2025%2F&#038;format=xml" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Kaspersky ICS CERT EN" />
+<meta property="og:title" content="APT and financial attacks on industrial organizations in Q1 2025" />
+<meta property="og:url" content="https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:description" content="Using polyglot files, involving the 7-Zip vulnerability and the 0-click vulnerability in MS Windows – there are some interesting details of attacks on industrial enterprises disclosed at this quarter." />
+<meta property="og:image" content="https://ics-cert.kaspersky.com/wp-content/uploads/sites/27/2021/10/kaspersky-ics-cert-logo-2021-facebook.png" />
+<meta name="twitter:image" content="https://ics-cert.kaspersky.com/wp-content/uploads/sites/27/2021/10/kaspersky-ics-cert-logo-2021-facebook.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="description" content="Using polyglot files, involving the 7-Zip vulnerability and the 0-click vulnerability in MS Windows – there are some interesting details of attacks on industrial enterprises disclosed at this quarter." />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://ics-cert.kaspersky.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://ics-cert.kaspersky.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='swiper.min-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/cdn/swiper.min.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='select2.min-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/cdn/select2.min.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='selectize.default.min-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/cdn/selectize.default.min.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='tooltipster.min-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/cdn/tooltipster.min.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='tooltipster-light.min-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/cdn/tooltipster-light.min.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='magnific-popup.min-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/cdn/magnific-popup.min.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='main-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/style.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='sidebar-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/sidebar.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='service-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/service.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='service-mobile-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/service-mobile.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='post-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/post.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='simplebar-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/libs/simplebar.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='faq-style-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/faq.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='fix-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/css/fix.css?ver=1789629524' media='all' />
+<link rel='stylesheet' id='slick-css-css' href='https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/slick/slick.css?ver=1789629524' media='all' />
+<script id="jquery-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/jquery-3.6.4.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="slick-min-js-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/slick/slick.min.js?ver=1789629524"></script>
+<link rel="https://api.w.org/" href="https://ics-cert.kaspersky.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://ics-cert.kaspersky.com/wp-json/wp/v2/publications/12193" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ics-cert.kaspersky.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1" />
+<link rel="canonical" href="https://ics-cert.kaspersky.com/publications/apt-and-financial-attackson-industrial-organizations-in-q1-2025/" />
+<link rel='shortlink' href='https://ics-cert.kaspersky.com/?p=12193' />
+<link rel="alternate" hreflang="ru" href="https://ics-cert.kaspersky.ru/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025/">
+<link rel="alternate" hreflang="en" href="https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025/">
+<link rel="alternate" hreflang="x-default" href="https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025/">
+</head>
+
+<body>
+
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNCHJLS4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ7LJ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Page -->
+    <div class="page" id="root">
+        <header class="header _publication">
+            <div class="header__container container">
+                <a href="https://ics-cert.kaspersky.com" class="logo-link">
+                    <img class="logo" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-ics.svg" />
+                    <!--<img class="logo-link_top" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-top.svg" />
+                    <img class="logo-link_bottom" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-bottom.svg" />-->
+                </a>
+                <nav class="header__nav"><ul id="menu-menyu-v-shapke" class="header__nav-menu"><li id="menu-item-837" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-837 header__nav-menu-item"><a href="https://ics-cert.kaspersky.com/publications/reports/" class="header__nav-menu-lnk">Publications</a></li>
+<li id="menu-item-1306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1306 header__nav-menu-item"><a href="https://ics-cert.kaspersky.com/services/" class="header__nav-menu-lnk">Services</a></li>
+<li id="menu-item-4674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4674 header__nav-menu-item"><a href="https://ics-cert.kaspersky.com/advisories/" class="header__nav-menu-lnk">Advisories</a></li>
+<li id="menu-item-1315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1315 header__nav-menu-item"><a href="https://ics-cert.kaspersky.com/statistics/" class="header__nav-menu-lnk">Statistics</a></li>
+</ul></nav>                <div class="header__settings">
+                    <div class="header__search modal-link" data-modal="search">
+                        <form class="header__search-form">
+                            <input type="text" class="header__input" />
+                        </form>
+                    </div>
+                    <div class="default-select header__language">
+                        <select class="change-language">
+                            <option value="0">English</option>
+                            <option value="1">English</option>
+                            <option value="2">Русский</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </div>
+            </div>
+            <div class="header-mobile">
+                <div class="container">
+                    <div class="header-mobile__header">
+                        <a href="https://ics-cert.kaspersky.com" class="logo-link">
+                            <img class="logo" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-ics.svg" />
+                            <!-- <img class="logo-link_top" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-top.svg" />
+                            <img class="logo-link_bottom" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-bottom.svg" />-->
+                        </a>
+                        <div class="header__search modal-link" data-modal="search">
+                            <form class="header__search-form">
+                                <input type="text" class="header__input" />
+                            </form>
+                        </div>
+                        <div class="hamburger header-mobile__close">
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                            <div class="hamburger__line"></div>
+                        </div>
+                    </div>
+                    <div class="header-mobile-container">
+                        <nav class="header-mobile__nav"><ul id="menu-menyu-v-shapke-1" class="header-mobile__nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-837 header-mobile__nav-menu-item"><a href="https://ics-cert.kaspersky.com/publications/reports/" class="header-mobile__nav-menu-lnk">Publications</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1306 header-mobile__nav-menu-item"><a href="https://ics-cert.kaspersky.com/services/" class="header-mobile__nav-menu-lnk">Services</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4674 header-mobile__nav-menu-item"><a href="https://ics-cert.kaspersky.com/advisories/" class="header-mobile__nav-menu-lnk">Advisories</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1315 header-mobile__nav-menu-item"><a href="https://ics-cert.kaspersky.com/statistics/" class="header-mobile__nav-menu-lnk">Statistics</a></li>
+</ul></nav>                        <div class="default-select default-select_mobile header__language header-mobile__language">
+                            <select class="change-language">
+                                <option value="0">English</option>
+                                <option value="1">English</option>
+                                <option value="2">Русский</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="header-bottom__container container">
+                    <div class="header-bottom__wrap">
+                        <div class="new__totop page-top">
+                            <button class="totop">
+                                <div href="#" class="header-bottom__link-top header-bottom__title">Contents:</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header-bottom__menu">
+                                                                            <ul class="new-table-of-contents header-bottom__list"></ul>
+                                            </div>
+                </div>
+            </div>
+
+        </header>
+
+
+
+        <div class="modal modal_search" data-modal="search">
+            <div class="modal__content modal__content_overflow-none modal__content_search">
+                <div id="search" class="modal__inner"></div>
+                <button class="modal__close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44966 7L8 8.37786L14.9353 15.6745L8.00004 22.9711L9.4497 24.349L16.3149 17.126L23.1801 24.349L24.6298 22.9711L17.6946 15.6745L24.6298 8.37786L23.1802 7L16.3149 14.223L9.44966 7Z" fill="#FF3748" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+<main class="main new">
+  <div class="breadcrumbs new__breadcrumbs">
+    <nav class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item breadcrumbs__desktop">
+          <a href="https://ics-cert.kaspersky.com" class="breadcrumbs__link">Main</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__desktop">
+          <a href="https://ics-cert.kaspersky.com/publications" class="breadcrumbs__link">Publications</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__desktop breadcrumbs__before-mobile">
+                      <a href="https://ics-cert.kaspersky.com/publications/reports/" class="breadcrumbs__link">Reports</a>
+                  </li>
+        <li class="breadcrumbs__list-item breadcrumbs__desktop breadcrumbs__desktop-title">
+          <span class="breadcrumbs__current-item">APT and financial attacks on industrial organizations in Q1 2025</span>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__mobile">
+          <span class="breadcrumbs__link">APT and financial attacks on industrial organizations in Q1 2025</span>
+        </li>
+      </ul>
+    </nav>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Main",
+            "item": "https://ics-cert.kaspersky.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Publications",
+            "item": "https://ics-cert.kaspersky.com/publications/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Reports",
+            "item": "https://ics-cert.kaspersky.com/publications/reports/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "APT and financial attacks on industrial organizations in Q1 2025"            
+          }
+        ]
+      }
+      </script>
+  </div>
+  <div class="new__header container">
+    <p class="new__date">19 June 2025</p>
+    <h1 class="h1 new__title">
+      APT and financial attacks on industrial organizations in Q1 2025    </h1>
+  </div>
+  <div class="new__main container">
+    <section class="new__content page__content">
+      <div class="new__socials new__socials_mobile social-block">
+        <div class="social">
+              <ul class="social__list" data-counters="no">
+                <li class="social__list-item" data-type="fb" data-link="#">
+                  <a href="https://t.me/share/url?url=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025" target="_blank" class="social__link"></a>
+                  <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/telegram-black.svg">
+                </li>
+                <li class="social__list-item" data-type="tw" data-link="#">
+                  <a href="https://twitter.com/intent/tweet?text=APT and financial attacks on industrial organizations in Q1 2025&url=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025" target="_blank" class="social__link"></a>
+                  <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/x-black.svg">
+                </li>
+                                        <li class="social__list-item" data-type="in" data-link="#">
+                          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025&title=APT and financial attacks on industrial organizations in Q1 2025" target="_blank" class="social__link"></a>
+                          <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/linkedin-black.svg">
+                      </li>
+                                  <li class="social__list-item" data-type="mail" data-link="#">
+                  <a href="mailto:?subject=APT and financial attacks on industrial organizations in Q1 2025&body=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025" target="_blank" class="social__link"></a>
+                  <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/email-black.svg">
+                </li>
+              </ul>
+            </div>        <div class="new__links-wrapper">
+          
+
+    <div class="report__download">
+        <a href="https://ics-cert.kaspersky.com/media/Kaspersky-ICS-CERT-APT-and-financial-attacks-on-industrial-organizations-in-Q1-2025-En.pdf?download=1" download class="report__download-link download">
+            <svg class="report__download-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_149_1492)">
+                    <path d="M14.9999 17.5L18.3333 14.1667L17.1666 13L15.8333 14.3333V10.8542H14.1666V14.3333L12.8333 13L11.6666 14.1667L14.9999 17.5ZM11.6666 20V18.3333H18.3333V20H11.6666ZM4.99992 16.6667C4.54159 16.6667 4.14922 16.5035 3.82284 16.1771C3.49645 15.8507 3.33325 15.4583 3.33325 15V3.33332C3.33325 2.87499 3.49645 2.48263 3.82284 2.15624C4.14922 1.82985 4.54159 1.66666 4.99992 1.66666H10.8333L15.8333 6.66666V9.18749H14.1666V7.49999H9.99992V3.33332H4.99992V15H9.99992V16.6667H4.99992Z" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_149_1492">
+                        <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <span class="download__text">Download PDF</span>
+        </a>
+    </div>
+          <div class="box-mobile box-mobile_width_indi">
+            <button class="modal-link-subscr button-subscr button-subscr--aside" data-modal="form-order-subscription" data-value="">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.2917 18.3333L9.75008 14.7917L10.9167 13.625L13.2917 16L18.0001 11.2917L19.1667 12.4583L13.2917 18.3333ZM10.0001 9.16668L16.6667 5.00001H3.33341L10.0001 9.16668ZM10.0001 10.8333L3.33341 6.66668V15H7.62508L9.29175 16.6667H3.33341C2.87508 16.6667 2.48272 16.5035 2.15633 16.1771C1.82994 15.8507 1.66675 15.4583 1.66675 15V5.00001C1.66675 4.54168 1.82994 4.14932 2.15633 3.82293C2.48272 3.49654 2.87508 3.33334 3.33341 3.33334H16.6667C17.1251 3.33334 17.5174 3.49654 17.8438 3.82293C18.1702 4.14932 18.3334 4.54168 18.3334 5.00001V8.62501L16.6667 10.2917V6.66668L10.0001 10.8333Z" fill="white" />
+              </svg>
+              <span>Subscribe to newsletter</span>
+            </button>
+          </div>
+        </div>
+      </div>
+              <div class="new__tags-popup">
+          <div class="new__tags-popup-content">
+            <div class="new__tags-popup-close">
+              <img src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/close.svg" alt="close">
+            </div>
+            <div class="new__tags-popup-title">
+              Related tags            </div>
+            <div class="new__tags-popup-tags">
+                                            <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=apt&p=reports#reports" class="page-filter__box">APT</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=apt-overview&p=reports#reports" class="page-filter__box">APT overview</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=cyberespionage&p=reports#reports" class="page-filter__box">cyberespionage</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=mining&p=reports#reports" class="page-filter__box">mining</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=phishing&p=reports#reports" class="page-filter__box">phishing</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=ransomware&p=reports#reports" class="page-filter__box">ransomware</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=spyware&p=reports#reports" class="page-filter__box">spyware</a>
+                </div>
+                              <div class="page-filter__tag">
+                  <a href="https://ics-cert.kaspersky.com/publications?t=statistics&p=reports#reports" class="page-filter__box">statistics</a>
+                </div>
+                          </div>
+          </div>
+        </div>
+        <div class="new__tags new__tags_mobile page-filters">
+          <div class="page-filter">
+            <div class="page-filter__mobile-header">
+              <div class="page-filter__title">Related tags</div>
+              <svg class="page-filter__mobile-header-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_149_1917" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="5" y="1" width="7" height="14">
+                  <path d="M5.00076 3.10027L6.08681 1.99854L11.9993 7.99716L6.21134 14.0011L5.11332 12.9117L9.83928 8.00931L5.00076 3.10027Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_149_1917)">
+                  <rect y="16" width="16" height="16" transform="rotate(-90 0 16)" fill="#999999" />
+                </g>
+              </svg>
+
+              <button class="tags-toggle-btn" id="tagsToggleBtnMobile" style="display:none;" type="button" aria-expanded="false">Show all</button>
+            </div>
+            <div class="page-filter__tags-wrapper_" id="tagsWrapperMobile">
+              <div class="page-filter__tags" id="tagsMobile">
+                                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=apt&p=reports#reports" class="page-filter__box">APT</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=apt-overview&p=reports#reports" class="page-filter__box">APT overview</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=cyberespionage&p=reports#reports" class="page-filter__box">cyberespionage</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=mining&p=reports#reports" class="page-filter__box">mining</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=phishing&p=reports#reports" class="page-filter__box">phishing</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=ransomware&p=reports#reports" class="page-filter__box">ransomware</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=spyware&p=reports#reports" class="page-filter__box">spyware</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications?t=statistics&p=reports#reports" class="page-filter__box">statistics</a>
+                  </div>
+                              </div>
+            </div>
+
+          </div>
+        </div>
+                    <ul class="new-table-of-contents new-table-of-contents--content"></ul>
+            
+<p class="wp-block-paragraph">This summary provides an overview of the reports of APT and financial attacks on industrial enterprises disclosed in Q1 2025, as well as the related activities of groups that have been observed attacking industrial organizations and critical infrastructure facilities. For each topic, we summarize the key facts, findings and conclusions of researchers that we believe may be of use to professionals addressing practical issues of cybersecurity for industrial enterprises.</p>
+
+
+
+<h2 class="wp-block-heading">Executive summary</h2>
+
+
+
+<p class="wp-block-paragraph">Although the findings of researchers are noticeably fewer in number than those of the previous quarter, there are many that deserve special attention – if only to ask ourselves again: &#8220;Is our organization reliably protected from this?&#8221;</p>
+
+
+
+<p class="wp-block-paragraph">Attackers continued to emphasize to Korean organizations the high risk of supply chain attacks involving locally developed products. This time, the attack target was a local developer of a VPN solution. At least one industrial company was affected – a manufacturer of semiconductor products.</p>
+
+
+
+<p class="wp-block-paragraph">Two cases highlighted the exploitation of zero-day vulnerabilities during attacks on industrial organizations – one involved the 7-Zip vulnerability in attacks discovered in Ukraine and the other involved the 0-click vulnerability in MS Windows. The developer refused to fix the latter vulnerability, even though it has been tracked in multiple malicious campaigns, the earliest of which occurred in 2017.</p>
+
+
+
+<p class="wp-block-paragraph">The technique of using polyglot files, which are constructed from data of different formats in such a way that they are interpreted by different legitimate interpreters, has suddenly become popular among attackers. Proofpoint researchers reported one such campaign involving PDF/HTA and PDF/ZIP polyglots, while Kaspersky experts reported another involving a PE/ZIP polyglot.</p>
+
+
+
+<p class="wp-block-paragraph">One of the stories describes sophisticated techniques used to steal authentication data for the lateral movement stages highlighting the need for industrial enterprises to continuously check their perimeter for the signs of potential compromise – such as making sure your login pages have not been modified with a malicious implant and that it is still only you who is in power of controlling you companies’ DNS zone.</p>
+
+
+
+<h2 class="wp-block-heading">South-East Asia and Korean Peninsula</h2>
+
+
+
+<h3 class="wp-block-heading">SalmonSlalom campaign</h3>
+
+
+
+<p class="wp-block-paragraph">Kaspersky ICS CERT researchers <a href="https://ics-cert.kaspersky.com/publications/reports/2025/02/24/fatalrat-attacks-in-apac-backdoor-delivered-via-an-overly-long-infection-chain-to-chinese-speaking-targets/">reported</a> on the SalmonSlalom campaign targeting organizations in the Asia-Pacific region via phishing emails deploying FatalRAT, a multifunctional Trojan capable of keystroke logging, memory manipulation, viewing browser data, downloading additional software such as AnyDesk and UltraViewer, performing file operations, starting a proxy server, scanning the network, and terminating processes. The campaign specifically targeted government and industrial organizations, particularly those in the manufacturing, construction, IT, telecom, healthcare, energy, and logistics and transportation sectors in Taiwan, Malaysia, China, Japan, Thailand, South Korea, Singapore, the Philippines, Vietnam, and Hong Kong. The lures used in the emails suggest that the phishing campaign targets Chinese-speaking users.</p>
+
+
+
+<p class="wp-block-paragraph">The attackers used a complex multi-stage payload delivery structure to evade detection and incorporated legitimate Chinese CDN myqcloud and Youdao Cloud Notes into the attack infrastructure. The starting point of the latest attack chain is a phishing email containing a ZIP archive with a file name in Chinese. When opened, the archive triggers a first-stage downloader that sends a request to Youdao Cloud Notes to retrieve the FatalRAT configurator and second-stage DLL loader. The configurator is a DLL that downloads the contents of another note from note.youdao[.]com, accessing the configuration information and opening a decoy file. The second-stage DLL downloader is responsible for downloading and installing the FatalRAT payload from the server (“myqcloud[.]com”) specified in the configuration file, while simultaneously displaying a fake error message indicating a problem launching the application.</p>
+
+
+
+<p class="wp-block-paragraph">A significant distinguishing feature of the campaign is its use of DLL sideloading techniques to speed up the multi-stage infection sequence and download of the FatalRAT malware. FatalRAT performs 17 checks to determine if the malware is running in a virtual machine or sandbox environment. When examining the code of the malicious artifacts, the researchers noticed similarities with the workflows observed in previous campaigns organized by threat actors using Gh0st RAT, SimayRAT, Zegost, and FatalRAT. There is no clear consensus among researchers as to who is behind the attacks using FatalRAT.</p>
+
+
+
+<h3 class="wp-block-heading">VIP Keylogger attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Researchers from HP Wolf Security <a href="https://threatresearch.ext.hp.com/wp-content/uploads/2025/03/HP_Wolf_Security_Threat_Insights_Report_March_2025.pdf">identified</a> a malware campaign delivering VIP Keylogger that targeted engineering companies in the Asia-Pacific region in Q4 2024. The attackers sent malicious PDF files via email, posing as quotation requests, and tailored their messages to potential victim organizations based on the products they sold, such as automobile and industrial parts. When a user opens the PDF, they see a blurry image of a document with two messages. The first message informs the user that there is an update available for their PDF reader. The second message indicates that the document was compressed and that the user must click on the image to download the file to see the full version. Following these instructions triggers a web download of a ZIP archive. Opening the ZIP archive reveals a disk image (IMG) file. When opened, Windows mounts the disk image and shows its contents in a new File Explorer window. The mounted disk image only contains a single file – an executable <a href="https://attack.mitre.org/techniques/T1036/008/">made to look</a> like a PDF document by changing the file’s icon. Running the executable starts the final infection stage that installs the payload, VIP Keylogger, which shares similarities with <a href="https://malpedia.caad.fkie.fraunhofer.de/details/win.404keylogger">Snake</a>/404 Keylogger.</p>
+
+
+
+<h3 class="wp-block-heading">SideWinder attacks</h3>
+
+
+
+<p class="wp-block-paragraph">In 2024, Kaspersky researchers published <a href="https://securelist.com/sidewinder-apt/114089/">the article</a> about SideWinder. It described the latest toolsets and a previously unknown advanced modular espionage tool named StealerBot. Following <a href="https://securelist.com/sidewinder-apt-updates-its-toolset-and-targets-nuclear-sector/115847/">publication</a>, researchers observed frenetic activity by this actor to update their toolset and create a large infrastructure to distribute and control compromised systems. The targeted sectors are consistent with those observed in the past. However, researchers noticed a significant increase in attacks against maritime infrastructure and logistics companies. During the first part of 2024, a spike in attacks against the aforementioned sectors, especially in Djibouti, was observed. Since then, the attackers have expanded their activity, attacking many different maritime infrastructures from South-East Asia to the Mediterranean Sea. Attacks against governments, military and diplomatic entities also continued. Moreover, researchers observed attacks indicating a particular interest in nuclear power plants and nuclear energy, with documents seemingly designed to target personnel in this sector.</p>
+
+
+
+<h3 class="wp-block-heading">Squid Werewolf/APT37 attacks</h3>
+
+
+
+<p class="wp-block-paragraph">BI.ZONE researchers <a href="https://bi.zone/eng/expertise/blog/sotni-tysyach-rubley-za-vashi-sekrety-kibershpiony-squid-werewolf-maskiruyutsya-pod-rekruterov/">uncovered</a> a phishing campaign carried out by Squid Werewolf (also known as APT37, Ricochet Chollima, ScarCruft, or Reaper Group). The attack begins with a phishing email, written in Russian, disguised as a job offer from a United Industrial Complex HR representative. The email includes a password-protected ZIP archive attachment. The attachment contains an LNK file that, when opened, executes a command that leads to the execution of an EXE file. The malware then runs a DLL, an obfuscated C#-based loader. This loader disables autoruns from the startup folder by setting registry key parameters. It then downloads, decrypts and executes the malicious payload in memory. However, the payload was unavailable at the time of the research. The attack detected by BI.ZONE Threat Intelligence closely resembles one <a href="https://www.securonix.com/blog/shroudedsleep-a-deep-dive-into-north-koreas-ongoing-campaign-against-southeast-asia">described</a> by the Securonix team, who attribute it to the APT37 cluster. Previously, the attackers used a similar library in C#, but the payload was decrypted using the shift algorithm (Caesar cipher) and was obfuscated JavaScript code. This payload was another downloader that sent the computer name of the victim to the server, and downloaded and executed the next-stage code – a PowerShell script. This script was the VeilShell Trojan.</p>
+
+
+
+<h2 class="wp-block-heading">Chinese-speaking activity</h2>
+
+
+
+<h3 class="wp-block-heading">PlushDaemon attacks</h3>
+
+
+
+<p class="wp-block-paragraph">ESET researchers <a href="https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-supply-chain-korean-vpn-service/">reported</a> on the activities of a China-aligned APT group called PlushDaemon that has been active since at least 2019. The group is linked to a supply chain attack against South Korean VPN provider IPany. Trojanized software was found on the provider’s official website. There was no targeting implemented on the site; all download requests resulted in delivery of the trojanized installer. ESET telemetry data revealed that several users attempted to run the trojanized installer from a Korean VPN developer within the networks of a semiconductor company and an unidentified software development organization in South Korea. The earliest known victims were in Japan and China in November and December of 2023, respectively.</p>
+
+
+
+<p class="wp-block-paragraph">PlushDaemon&#8217;s main arsenal is the multifunctional backdoor SlowStepper, which supports a wide set of tools with 30 modules written in C++, Python, and Go. SlowStepper has been in development since January 2019, and the latest iteration was compiled in June 2024. All the SlowStepper tools, among other data collection capabilities, have capabilities for extensive data collection and audio and video recording for the purposes of spying. The tools were stored in a remote code repository hosted on the Chinese platform GitCode. The developers also implemented a custom shell in SlowStepper, or command line interface, on top of its communication protocol. ESET researchers have also observed the group gaining access via vulnerabilities in legitimate web servers.</p>
+
+
+
+<h3 class="wp-block-heading">J-magic attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Researchers at Black Lotus Labs of Lumen Technologies <a href="https://blog.lumen.com/the-j-magic-show-magic-packets-and-where-to-find-them/">reported</a> a malicious campaign targeting Juniper routers and VPN gateways. The campaign used malware called J-magic, which is specifically designed for Junos OS. The name comes from the fact that the backdoor constantly monitors TCP traffic for a “magic packet” before launching a reverse shell. J-magic is a modified version of the publicly available <a href="https://github.com/aaaaaaaannn/cd00r.c/blob/master/cd00r.c">cd00r</a> backdoor, an experimental prototype that remains hidden and passively monitors network traffic for a magic packet before opening a communication channel with the attacker. The malware creates an eBPF filter on the specified interface and port as a command line argument when executed.</p>
+
+
+
+<p class="wp-block-paragraph">J-magic attacks targeted organizations in the semiconductor, energy, manufacturing, heavy machinery, construction, bioengineering, and IT industries. According to Black Lotus Labs, the J-magic campaign was active from mid-2023 to mid-2024 and employed a low-detection, long-term access format. Based on telemetry, researchers believe about half of the targeted devices were configured as VPN gateways for their organizations. They note that the campaign under study has technical similarities with SeaSpy malware, which is also based on the cd00r backdoor. However, some differences make it difficult to establish a connection between the two campaigns. Overall, the researchers assess with low confidence the correlation between J-magic and SeaSpy, the latter of which attacked <a href="https://cloud.google.com/blog/topics/threat-intelligence/barracuda-esg-exploited-globally">Barracuda Email Security Gateways</a> using CVE-2023-2868 as a zero-day in 2022-2023.</p>
+
+
+
+<h3 class="wp-block-heading">Shadowpad attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Trend Micro researchers <a href="https://www.trendmicro.com/en_us/research/25/b/updated-shadowpad-malware-leads-to-ransomware-deployment.html">discovered</a> that Shadowpad, a malware family linked to various Chinese-speaking threat actors, is being used to deploy a previously undetected ransomware family. The attackers deploy the malware by exploiting weak passwords and bypassing multi-factor authentication mechanisms. According to the researchers, this malware family has targeted at least 21 companies in nine different industries across 15 countries in Europe, the Middle East, Asia, and South America. The manufacturing sector was the hardest hit. Other affected industries include transportation, publishing, energy, pharmacy, banking, mining, education and entertainment. The ransomware attack uses DLL side-loading to run a malicious payload. In two cases, researchers saw Shadowpad launching CQHashDumpv2.exe, part of the penetration testing toolkit <a href="https://github.com/BlackDiverX/cqtools">CQTools</a> that allows users to dump hashes from the system and change user passwords. Other post-exploitation tools include Impacket and an unidentified tool used to dump the Active Directory database (probably NTDSUtil). Researchers did not find strong enough evidence to link this activity to older operations or a known threat actor. However, they found two low-confidence indicators pointing toward the <a href="https://jsac.jpcert.or.jp/archive/2024/pdf/JSAC2024_1_8_yi-chin_yu-tung_en.pdf">Teleboyi</a> threat actor.</p>
+
+
+
+<h3 class="wp-block-heading">Winnti attacks</h3>
+
+
+
+<p class="wp-block-paragraph">LAC’s Cyber Emergency Center <a href="https://www.lac.co.jp/lacwatch/report/20250213_004283.html">reported</a> a new attack campaign called RevivalStone by the Winnti group. In March 2024, the campaign targeted Japanese companies in the manufacturing, material-based, and energy sectors, utilizing Winnti malware with enhanced capabilities and sophisticated evasion techniques. For initial intrusion, the attacker group exploited an SQL injection vulnerability in the ERP system running on the target organization&#8217;s web server to place a WebShell. The attacker then used the WebShell to perform reconnaissance and collect credentials for lateral movement within the organization&#8217;s network, and placed Winnti malware on the server to use as a foothold for future attacks. Winnti malware employs AES and ChaCha20 encryption algorithms to secure its payloads and communications. Unique identifiers, such as IP and MAC addresses, are used to generate decryption keys, which complicates analysis. The malware also installs a kernel-level rootkit to hide its communications. Code obfuscation and DLL hijacking techniques are used to bypass endpoint detection and response (EDR) systems.</p>
+
+
+
+<h3 class="wp-block-heading">Lotus Blossom attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Cisco Talos researchers <a href="https://blog.talosintelligence.com/lotus-blossom-espionage-group/">revealed</a> new campaigns by the Chinese-speaking Lotus Blossom APT group (also referred to as <a href="https://securelist.com/spring-dragon-updated-activity/79067/">Spring Dragon</a>, <a href="https://www.security.com/threat-intelligence/espionage-asia-governments-cert-authority">Billbug</a>, or <a href="https://www.fortinet.com/blog/threat-research/thrip-atp-attack-update">Thrip</a>) targeting the government, manufacturing, telecom, and media sectors in the Philippines, Vietnam, Hong Kong, and Taiwan using updated versions of Sagerunex backdoor. Lotus Blossom has been known since 2009 and has been using Sagerunex since at least 2016. The Sagerunex backdoor is believed to be an updated variant of the previously known <a href="https://geumgeumland.medium.com/part-2-5-versions-of-evora-c4bcc5db08cf">Billbug</a> (Evora) malware.</p>
+
+
+
+<p class="wp-block-paragraph">The exact initial access vector in the latest intrusions is unknown. The observed activity is notable for two new malware variants that leverage cloud services such as Dropbox, Twitter, and Zimbra for C2. The Dropbox and Twitter/X versions of Sagerunex were used between 2018 and 2022, while the Zimbra version has been around since 2019. The latter is designed not only to collect information about the victim and send it to the Zimbra mailbox, but also to allow the attacker to use the contents of the Zimbra mailbox to send commands and control the victim&#8217;s machine. If the mailbox contains legitimate command content, the backdoor downloads it and extracts the command. Otherwise, it deletes the content and waits for it to arrive. The results of the command execution are then packed as a RAR archive and attached to the draft email in &#8220;Trash&#8221; folders of the mailbox. Each Sagerunex variant implements various checks, such as time-based delays and system checks, to maintain persistence. The attacks also use other tools, including a Chrome browser credential stealer, the open-source proxy utility Venom, a privilege configuration program, custom software for compressing and encrypting captured data, and the modified relay tool mtrain V1.01. The attackers were also observed running commands such as net, tasklist, ipconfig, and netstat to perform reconnaissance on the target environment, as well as probes to determine internet access. If internet access was restricted, the attackers used one of two strategies: they either used the target&#8217;s proxy settings to establish a connection or relied on Venom to connect isolated machines to systems with internet access.</p>
+
+
+
+<h3 class="wp-block-heading">Earth Alux attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Trend Micro researchers <a href="https://www.trendmicro.com/en_us/research/25/c/the-espionage-toolkit-of-earth-alux.html">uncovered</a> a new Chinese-speaking threat actor called Earth Alux targeting various key sectors, including government, technology, logistics, manufacturing, telecom, IT, and retail in the Asia-Pacific region and Latin America. First observed in Asia in Q2 2023, Earth Alux has also been active in Latin America since mid-2024. The actor’s primary targets are in countries such as Thailand, the Philippines, Malaysia, Taiwan, and Brazil. The infection chains begin with the exploitation of vulnerable services in web applications accessible via the internet. These services are used to inject a Godzilla shell to facilitate the deployment of additional payloads, including the VARGEIT and COBEACON (Cobalt Strike Beacon) backdoors.</p>
+
+
+
+<p class="wp-block-paragraph">VARGEIT downloads tools directly from its C2 server into a newly created Microsoft Paint process (mspaint.exe) for reconnaissance, collection and exfiltration. VARGEIT is also the primary method by which Earth Alux manages additional tools for various purposes and lateral movement. VARGEIT is used as a first-, second-, or later-stage backdoor, while COBEACON is used as a first-stage backdoor. COBEACON is loaded as an encrypted payload of the side-loaded DLL MASQLOADER, or as a shellcode using RSBINJECT, a Rust-based command-line downloader. Executing VARGEIT deploys more tools, including a component of the RAILLOAD downloader, which is executed using sideloading DLLs and is used to launch an encrypted payload in a different folder. The second payload is RAILSETTER, which modifies the timestamps associated with RAILLOAD artifacts on the compromised host and creates a scheduled task to run RAILLOAD. VARGEIT’s most distinctive feature is its ability to support 10 different channels for communicating with the C2 over HTTP, TCP, UDP, ICMP, DNS, and Microsoft Outlook. The latter uses the Graph API to exchange commands in a pre-defined format via the drafts folder of the attacker-controlled mailbox.</p>
+
+
+
+<p class="wp-block-paragraph">Earth Alux performs several tests with RAILLOAD and RAILSETTER, including detections and attempts to find new hosts for sideloading DLLs. The group uses ZeroEye, an open-source tool that scans EXE import tables for imported DLLs that can be used for sideloading. The group also uses VirTest, another widely used testing tool in the Chinese-speaking community.</p>
+
+
+
+<h2 class="wp-block-heading">Russian-speaking activity and targets in Russia</h2>
+
+
+
+<h3 class="wp-block-heading">Sticky Werewolf attacks</h3>
+
+
+
+<p class="wp-block-paragraph">In January, F6 researchers <a href="https://habr.com/ru/companies/F6/news/873762/">reported</a> on the activities of the Sticky Werewolf group, which attacked Russian research and production enterprises. The attackers sent malicious emails containing instructions for placing orders from defense industry enterprises with penal institutions that involve the use of convict labor. The emails contained two attachments: a decoy cover document in the style of the Ministry of Industry and Trade, and a malicious password-protected RAR archive (&#8220;Filling form.rar&#8221;). The archive contained a document called &#8220;mailing list.docx&#8221; and a malicious executable file called &#8220;Form filling.pdf.exe&#8221; that, when launched, eventually delivered the Ozone RAT. Further investigation revealed a phishing email with a similar subject line dated December 23, 2024, containing two fake documents. The attackers targeted a research and production facility; however, the email did not contain an archive with the payload.</p>
+
+
+
+<p class="wp-block-paragraph">In March, F6 researchers also <a href="https://t.me/f6_cybersecurity/3577">reported</a> new attacks by the Sticky Werewolf group. This time, the group targeted an oil and gas equipment manufacturer. The detected mailing included emails with a password-protected 7z <a href="https://detonation.f6.security/wPEQeCBiaVVxngT2eay3geh0F/ru/">archive</a>. Sticky Werewolf used a decoy document from the Ministry of Industry and Trade. As a result of executing the group&#8217;s classic attack chain, which includes the NSIS dropper installer, BAT file and AutoIt script, the RegAsm.exe process is created and QuasarRAT is injected into it. One of the C2 domains (crostech[.]ru) has been used by the group since October 2024. The second domain (thelightpower[.]info) was registered later in December, and the earliest known attacks using it date back to March of this year.</p>
+
+
+
+<h3 class="wp-block-heading">Rezet/Rare Wolf attacks</h3>
+
+
+
+<p class="wp-block-paragraph">F6 researchers <a href="https://habr.com/ru/companies/F6/news/878320/">reported</a> attacks by the cyberespionage group Rezet (aka Rare Wolf), which has been active since October 2018 and involved in more than 500 cyberattacks on Russian, Belarusian and Ukrainian industrial enterprises. In January 2025, for example, malicious mailings were sent on behalf of a company that specializes in supporting contracts with enterprises performing state defense orders. The emails looked like invitations to managers and specialists for seminars on the standardization of defense products. The targets of the attack were enterprises in the chemical, food, and pharmaceutical industries in Russia. The first mailing contained a malicious file inside a password-protected RAR archive, which contained a bait file in the form of a PDF document, as well as a payload. When launched, the PDF bait document opens to distract the user’s attention while the system is infected in the background. The second and third mailings, which the attackers sent a few days later, contained an archive with two malicious files – a PDF document and a payload. Opening either of the files also resulted in system infection. The researchers did not specify what payload was used in the attacks.</p>
+
+
+
+<h3 class="wp-block-heading">Attacks on Ukrainian organizations using CVE-2025-0411</h3>
+
+
+
+<p class="wp-block-paragraph">According to a Trend Micro <a href="https://www.trendmicro.com/en_us/research/25/a/cve-2025-0411-ukrainian-organizations-targeted.html">report</a>, a zero-day vulnerability in 7-Zip identified as <a href="https://www.zerodayinitiative.com/advisories/ZDI-25-045/">CVE-2025-0411</a> was exploited to deploy the <a href="https://attack.mitre.org/software/S0226/">SmokeLoader</a> malware in a cyberespionage campaign targeting Ukrainian organizations. The exploitation was identified in September 2024, and a patch was released on November 30, 2024. The vulnerability allows attackers to bypass Windows Mark-of-the-Web protections by double-archiving files, thereby evading essential security checks and enabling the execution of malicious content. Russian-speaking cybercrime groups actively exploited the vulnerability through spear-phishing campaigns involving compromised email accounts and spoofed document extensions to trick users and the Windows operating system into executing malicious files. Based on data uncovered by researchers, Ukrainian government entities and other organizations, including a ministry, an automobile, bus and truck manufacturer, a public transportation service, an appliance, electrical equipment and electronics manufacturer, a regional administration, an insurance company, a regional pharmacy, a water supply company, and a city council, may have been directly targeted and/or affected by this campaign.</p>
+
+
+
+<h3 class="wp-block-heading">Mythic Likho attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Kaspersky researchers <a href="https://securelist.ru/merlin-loki-mythic-attacks/111704/">reported</a> attacks on Russian companies by the Mythic Likho group. The researchers initiated the study in January after analyzing an email addressed to the HR department of a machine factory. The authors – allegedly from another company’s HR department – requested a character reference for a former employee. Mythic Likho is either a new group or one that has significantly improved its TTPs.</p>
+
+
+
+<p class="wp-block-paragraph">The phishing email attachment contains an archive with several components, including a secure decoy document and an LNK file that leads to infection. As a result of infection, the Merlin agent – an open-source post-exploitation tool compatible with the Mythic framework written in Go – is deployed on the host. Merlin can communicate with the server via HTTP/1.1, HTTP/2, and HTTP/3 (a combination of HTTP/2 and the QUIC protocol). In addition to compatibility with the Mythic framework, researchers discovered a connection between Merlin and <a href="https://securelist.com/loki-agent-for-mythic/113596/">Loki</a> backdoor attacks. For example, one of the Merlin instances with the mail.gkrzn[.]ru command center downloaded a new version of the Loki 2.0 sample with the pop3.gkrzn[.]ru command center to the victim&#8217;s system. Like the first version, the second version of Loki sends various system and build data to the server, but this has been slightly expanded. Additionally, perhaps to complicate identification of the malware family, the malware authors decided to change the method of sending data to the command server from the POST request method to GET. As with the Loki backdoor, Merlin backdoor attacks have hit more than a dozen Russian companies from various industries, including telecommunications equipment suppliers and industrial enterprises.</p>
+
+
+
+<h3 class="wp-block-heading">ReaverBits attacks</h3>
+
+
+
+<p class="wp-block-paragraph">F6 researchers <a href="https://www.f6.ru/blog/reaverbits-new-instruments-2/">reported</a> new activity by the <a href="https://www.f6.ru/blog/reaverbits/">ReaverBits</a> group. Active since late 2023, ReaverBits specializes in attacking Russian companies in the biotechnology, retail, agro-industrial, telecommunications and financial sectors. From September 2024 to January 2025, researchers observed three distinct infection chains involving updated tools – the publicly available Meduza Stealer and the new ReaverDoor malware. In September 2024, researchers detected phishing mailings purporting to be from the Investigative Committee of the Russian Federation. The emails contained a malicious PDF attachment. Once launched, the victim sees a notification about the need to update Adobe Font Package, and is given a link to download it. Clicking the link downloads an executable file with a name mimicking a legitimate Adobe Font Package update. The executable file is a downloader and contains code from the open-source project adbGUI, which downloads and launches the next stage Meduza Stealer.</p>
+
+
+
+<p class="wp-block-paragraph">In January, an email allegedly from the Russian Ministry of Internal Affairs was also detected. The email contained a link supposedly for downloading a document. When the recipient clicked the link, the server checked the browser’s language settings. The downloaded executable file is based on .NET and classified as a downloader, similar to that in previous mailings. The file is based on the legitimate open-source NBTExplorer software, but with added malicious code. The downloaded final-stage malware was also Meduza Stealer.</p>
+
+
+
+<p class="wp-block-paragraph">Additionally, the researchers managed to find a previously undocumented backdoor named ReaverDoor on VirusTotal that was associated with a ReaverBits IP address. ReaverDoor is based on the legitimate open-source project Optimizer and contains malicious code that loads a .NET library. Various techniques are used to covertly execute the malicious code, including Process Hollowing, as well as complex cryptographic encryption schemes such as a combination of AES-256, PBKDF2, XOR, and Base64.</p>
+
+
+
+<h3 class="wp-block-heading">Telemancon attackers</h3>
+
+
+
+<p class="wp-block-paragraph">F6 researchers <a href="https://www.f6.ru/blog/telemancon/">discovered</a> a previously unknown state-sponsored group dubbed Telemancon. During their investigation of the group’s infrastructure, the researchers found that the group’s earliest activity dates back to February 2023. The identified attacks, based on the content of the phishing documents, targeted Russian organizations in the industrial sector, specifically the machinery industry. The group uses a custom-made dropper and PowerShell backdoor, named TMCDropper and TMCShell, respectively. The group employs a non-trivial method of concealing its command and control (C2) addresses, utilizing the legitimate telegra.ph service. While studying one of the samples, the researchers determined that TMCShell executed the following commands received from the control server on the victim&#8217;s machine: net.exe user; net.exe user {username}; whoami.exe; whoami.exe /groups /fo csv; ipconfig.exe /all; and ARP.EXE -a.</p>
+
+
+
+<p class="wp-block-paragraph">According to <a href="https://www.securonix.com/blog/security-advisory-steadyursa-attack-campaign-targets-ukraine-military/">Securonix</a> researchers, this technique for storing C2 addresses was previously observed in the arsenal of the Shuckworm group (aka Gamaredon), but in a simpler form, without generating a URL path and verifying the signature. Overall, F6 researchers posit that the Core Werewolf group may be behind Telemancon&#8217;s activity. However, there are not yet enough artifacts for confident attribution. Core Werewolf is also known as PseudoGamaredon because it often copies the TTPs of the Gamaredon group.</p>
+
+
+
+<h3 class="wp-block-heading">Head Mare attacks</h3>
+
+
+
+<p class="wp-block-paragraph">In September 2024, Kaspersky researchers <a href="https://securelist.com/head-mare-twelve-collaboration/115887/">investigated</a> several incidents in which indicators of compromise and TTPs related to the hacktivist group <a href="https://securelist.com/head-mare-hacktivists/113555/">Head Mare</a> were detected. The new attacks utilized well-known tools previously seen in Head Mare incidents, such as mimikatz, ngrok, LockBit 3.0, Babuk, etc., as well as new tools written in PowerShell. During their investigation, the researchers discovered that Head Mare uses tools such as the CobInt backdoor that were formerly used by another hacktivist group, <a href="https://securelist.ru/twelve-group-unified-kill-chain/110128/">Twelve</a> (aka Shadows/Comet/Darkstar), to carry out attacks. The researchers also found C2s that, prior to investigating these incidents, were only used by the Twelve group. This may indicate that Head Mare is related to Twelve. Both groups targeted Russian companies in the manufacturing, government, and energy sectors.</p>
+
+
+
+<p class="wp-block-paragraph">Kaspersky researchers have <a href="https://securelist.ru/head-mare-attacks-with-phantompyramid/112164/">detected</a> a new wave of targeted attacks by the Head Mare group against Russian industrial companies using a new Python-based backdoor called PhantomPyramid. According to Kaspersky telemetry, in March 2025, more than 800 employees of near 100 organizations received a mailing containing previously unknown malware. The infection chain included similar emails from a specific administrative body with the .zip attachment. The senders asked the recipients to confirm receipt of the information and to read the attached archived application. After opening the attachment, a decoy document is displayed with a request for equipment repair allegedly from a government ministry. The attackers sent a password-protected archive and used the polyglot technique for creating files containing both harmless components and malicious code. This time it was a zip archive appended to a malicious executable. The executable part of the polyglot file was the previously unknown backdoor PhantomPyramid. One of the downloadable components was MeshAgent software for remote device management with open-source code, included in the MeshCentral solution. The archive part contained an .lnk file disguised (via Windows Explorer) as a decoy PDF, but with a PowerShell script that opens the decoy documents (extracts the decoy PDF data, saves it to disk and opens it) and starts the backdoor binary.</p>
+
+
+
+<h3 class="wp-block-heading">Seashell Blizzard/Sandworm attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Microsoft <a href="https://www.microsoft.com/en-us/security/blog/2025/02/12/the-badpilot-campaign-seashell-blizzard-subgroup-conducts-multiyear-global-access-operation/">published</a> research detailing the BadPilot campaign, a multiyear, global cyberespionage operation conducted by the Seashell Blizzard subgroup (aka <a href="https://cloud.google.com/blog/topics/threat-intelligence/apt44-unearthing-sandworm">APT44</a>, BlackEnergy, PHANTOM, UAC-0133, Blue Echidna and Sandworm). The campaign targeted organizations in various sectors, including government, energy, oil and gas, shipping, telecommunications, and manufacturing. The goal was to gain unauthorized access to sensitive systems and data. These access operations built upon previous efforts from 2021 to 2023 that primarily targeted Ukraine, Europe, and specific sectors in Central and South Asia, and the Middle East. Since early 2024, the subgroup has expanded its range to include targets in the United States and the United Kingdom by exploiting vulnerabilities. At least eight vulnerabilities have been exploited by this subgroup for initial access: ConnectWise ScreenConnect (<a href="https://nvd.nist.gov/vuln/detail/CVE-2024-1709">CVE-2024-1709</a>); Fortinet FortiClientEMS security software (<a href="https://nvd.nist.gov/vuln/detail/CVE-2023-48788">CVE-2023-48788</a>); Microsoft Exchange (<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-34473">CVE-2021-34473</a>); Zimbra Collaboration (<a href="https://nvd.nist.gov/vuln/detail/CVE-2022-41352">CVE-2022-41352</a>); Openfire (<a href="https://nvd.nist.gov/vuln/detail/CVE-2023-32315">CVE-2023-32315</a>); JetBrains TeamCity (<a href="https://nvd.nist.gov/vuln/detail/CVE-2023-42793">CVE-2023-42793</a>); Microsoft Outlook (<a href="https://nvd.nist.gov/vuln/detail/CVE-2023-23397">CVE-2023-23397</a>); JBOSS (exact CVE is unknown).</p>
+
+
+
+<p class="wp-block-paragraph">Since late 2021, Seashell Blizzard has primarily used web shells to maintain footholds following successful exploitation. In early 2024, the group began using RMM suites, such as Atera Agent and Splashtop Remote Services, for persistence and command and control (C2). In some cases, Seashell Blizzard deployed OpenSSH with a unique public key, allowing them to access compromised systems using an actor-controlled account and credentials. The group used a C2 method known as ShadowLink that facilitates persistent remote access by configuring a compromised system to register as a Tor hidden service. When Seashell Blizzard identified targets of likely strategic value, it often furthered its network compromise by deploying tunneling utilities, such as <a href="https://medium.com/@laurent.mandine/chisel-the-hackers-hidden-tunnel-for-stealthy-network-access-acdcdaafeabd">Chisel</a>, <a href="https://www.globalsecuritymag.com/protocol-tunneling-tools-and-techniques.html">Plink</a>, and <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-347a">Rsockstun</a>, to established dedicated conduits into affected network segments. Microsoft researchers have observed subsequent rogue JavaScript inserts to victims’ sign-in pages, including those for Outlook Web Access (OWA), to steal credentials. They assess with moderate confidence that the group has been able to modify DNS A record configurations for selected targets, presumably to steal authentication data as well. The researchers conclude that these methods have likely provided the subgroup with the credentials necessary for lateral movement within several organizations.</p>
+
+
+
+<h3 class="wp-block-heading">Attacks with GoGo Exfiltration</h3>
+
+
+
+<p class="wp-block-paragraph">At the end of August 2024, an unidentified threat actor launched a targeted operation against a manufacturing company in Russia that was discovered by Kaspersky Global Research &amp; Analysis Team (GReAT) researchers. The investigation started with a previously unknown DLL file discovered in the svchost process memory and carrying a highly suspicious name – exfiltration.dll. During the campaign, the attackers likely exploited a one-day vulnerability in Microsoft Outlook and registered a domain that mimicked the victim’s domain name. The attacks involved a constantly evolving custom module for the data exfiltration written in Go, which gave the malware its name. Some indicators led researchers to suspect that other malware types, such as a RAT or backdoor, remain undiscovered.</p>
+
+
+
+<h3 class="wp-block-heading">NGC4020 attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Solar researchers <a href="https://rt-solar.ru/solar-4rays/blog/5202/">released</a> a report on a new APT dubbed NGC4020, which they detected during an investigation of an incident involving a company in the industrial sector. While studying the attacked systems, the researchers found that the attackers exploited a vulnerability (CVE-2019-3980) in DameWare Mini Remote Control to download malware. The vulnerability allowed the attackers to load their own malicious driver into the kernel space from the LocalSystem account (CVE-2023-36802). This driver is designed to bypass protection tools and disable the self-defense components of antivirus software. The other malware discovered was Reverse Shell written in Java, system reconnaissance utilities and QuasarRAT. The attackers made a mistake when creating a task for QuasarRAT persistence, which prevented them from developing the attack. Upon examining the task parameters, it was found that the task should have been launched using a domain system account, but the task had mistakenly specified the &#8220;Run only when user is logged on&#8221; parameter. A different parameter is required to perform tasks with system rights.</p>
+
+
+
+<h2 class="wp-block-heading">Middle East-related activity</h2>
+
+
+
+<h3 class="wp-block-heading">Desert Dexter attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Researchers from Positive Technologies <a href="https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/desert-dexter-attacks-on-middle-eastern-countries">reported</a> the discovery of a new attacker dubbed Desert Dexter, which has been targeting users in the Middle East and North Africa since September 2024 using a modified version of AsyncRAT. Check Point <a href="https://research.checkpoint.com/2019/operation-tripoli/">described</a> a similar campaign in 2019, but some of the techniques used in the kill chain have evolved since then. Activity attributed to Desert Dexter was first detected in February 2025. Positive Technologies estimates that approximately 900 users fell victim to the campaign. Most of these users are located in Libya, Saudi Arabia, Egypt, Turkey, the United Arab Emirates, Qatar and Tunisia. For the most part, they are ordinary individuals, including employees of enterprises in the fields of oil production, construction, information technology, and agriculture.</p>
+
+
+
+<p class="wp-block-paragraph">The attackers create fake news groups on Facebook, mimicking Libya Press, Sky News, Almasar TV, The Libya Observer, and The Times of Israel, etc., to distribute malware and publish posts with advertisements and links to the Files.fm file sharing service or Telegram channel. The attack chain starts with a RAR archive containing either a batch script or a JavaScript file that launches a PowerShell script, which is responsible for executing the second stage of the attack. The script then establishes persistence on the system, collects and transmits system information to a Telegram bot, takes a screenshot, and ultimately launches the AsyncRAT payload by injecting it into the aspnet_compiler.exe executable. Analysis of messages sent to the Telegram bot revealed screenshots of the attacker&#8217;s desktop, called DEXTERMSI, as well as a link to a Telegram channel called Dexterlyly. The ly substring in the channel name, according to the researchers, may indicate the channel owner&#8217;s Libyan origin. This is corroborated by the geolocation in the data sent by the malware and the Arabic comments in the PowerShell script.</p>
+
+
+
+<h3 class="wp-block-heading">UNK_CraftyCamel attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Proofpoint researchers <a href="https://www.proofpoint.com/us/blog/threat-insight/call-it-what-you-want-threat-actor-delivers-highly-targeted-multistage-polyglot">identified</a> a highly targeted, email-based campaign attributed to a previously unknown actor tracked as UNK_CraftyCamel. This campaign targets entities in the UAE, with a specific interest in aviation and satellite communications organizations, as well as critical transportation infrastructure. The campaign led to the discovery of a new Go backdoor dubbed Sosano that uses various techniques, including the use of polyglot files, which can be interpreted as multiple formats depending on how they are read (PDF/HTA and PDF/ZIP in this particular case), to obfuscate the malware and its payload. A notable aspect of the attack chain is the attacker’s use of a compromised email account belonging to an Indian company, INDIC Electronics, to send phishing emails and deliver Sosano. The emails contained URLs pointing to a domain masquerading as an Indian company, which hosted a ZIP archive containing an XLS file and two PDF files. The XLS file was actually a Windows shortcut (LNK) that used a double extension, posing as a Microsoft Excel document. The two PDFs were polyglots: one was accompanied by an HTA file and the other by a ZIP archive. Depending on how they were parsed using programs such as file managers, command line tools and browsers, both PDFs could be interpreted as two different valid formats. The attack sequence involved using an LNK file to launch cmd.exe and then mshta.exe to launch a PDF/HTA polyglot file. This file would execute the HTA script, which contained instructions to unzip the contents of a ZIP archive contained in a second PDF file. One of the files in the second PDF is an internet shortcut file (URL), which downloads a binary file that implements the decoding and execution of the Sosano backdoor via an image file. Proofpoint researchers noted that UNK_CraftyCamel&#8217;s activity does not overlap with other known attackers or groups, but is most likely related to Iran given the target sectors.</p>
+
+
+
+<h2 class="wp-block-heading">Other</h2>
+
+
+
+<h3 class="wp-block-heading">MintsLoader attacks</h3>
+
+
+
+<p class="wp-block-paragraph">Researchers at ESentire <a href="https://www.esentire.com/blog/mintsloader-stealc-and-boinc-delivery">reported</a> on an ongoing campaign first identified in early January 2025. The campaign leverages a malware loader called MintsLoader to distribute secondary payloads such as the StealC information stealer and the legitimate open-source network computing platform Berkeley Open Infrastructure for Network Computing (BOINC). MintsLoader is a PowerShell-based malware loader that has been delivered via spam emails containing a link to Kongtuke/ClickFix pages or a JScript file. It features a Domain Generation Algorithm (DGA) with a seed value based on the current day of the month and a constant, combined with anti-VM techniques to evade sandboxes and malware researchers. The campaign has targeted electricity, oil and gas, and the legal services sectors in the United States and Europe.</p>
+
+
+
+<h3 class="wp-block-heading">Attacks with ZDI-CAN-25373 vulnerability</h3>
+
+
+
+<p class="wp-block-paragraph">Trend Micro researchers <a href="https://www.trendmicro.com/en_us/research/25/c/windows-shortcut-zero-day-exploit.html">uncovered</a> both state-sponsored and cybercriminal groups extensively exploiting ZDI-CAN-25373 (aka ZDI-25-148), a Windows .lnk file vulnerability that allows attackers to execute hidden malicious commands on a victim’s machine by leveraging crafted shortcut files. The attacks use hidden command-line arguments in .lnk files to execute malicious payloads, complicating detection. This vulnerability has been exploited by APT groups based in various countries, including Water Asena (Evil Corp), Earth Kumiho (Kimsuky, APT43), Earth Imp (Konni), Earth Anansi (Bitter), Earth Manticore (APT37). Since at least 2017, organizations in the government, financial, telecommunications, military, and energy sectors in North America, Europe, Asia, South America, and Australia have been affected. In the analysis of the campaigns exploiting ZDI-CAN-25373 and their associated intrusion sets, researchers found that nearly 70% focus primarily on espionage and information theft, and over 20% pursue financial gain. Malware payloads in attack chains that exploit ZDI-CAN-25373 include Lumma Stealer, GuLoader, Remcos, and commodity malware payloads. According to the researchers, Microsoft declined to patch the vulnerability because it does “not meet the bar for servicing”.</p>
+
+
+
+<h3 class="wp-block-heading">CISA alert on Ghost/Cring ransomware group</h3>
+
+
+
+<p class="wp-block-paragraph">The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-050a">released</a> a joint cybersecurity advisory regarding Ghost (Cring) ransomware and its IOCs and TTPs identified in an FBI investigation as recently as January 2025. The entities affected by the ransomware include critical infrastructure, schools and universities, healthcare, government networks, religious institutions, technology and manufacturing companies, and numerous small- and medium-sized businesses in more than 70 countries.</p>
+
+
+
+<p class="wp-block-paragraph">According to the advisory, Ghost first appeared in 2021. Located in China, the group rotated their ransomware executable payloads, switched file extensions for encrypted files, modified ransom note texts, and used numerous ransom email addresses. This led to variable attribution of the group. Over time, the group has been identified as Ghost, Cring, Crypt3r, Phantom, Strike, Hello, Wickrme, HsHarada, and Rapture.</p>
+
+
+
+<p class="wp-block-paragraph">The FBI has observed Ghost actors gaining initial access to networks by exploiting vulnerabilities in Fortinet FortiOS appliances (<a href="https://nvd.nist.gov/vuln/detail/CVE-2018-13379">CVE-2018-13379</a>), servers running Adobe ColdFusion (<a href="https://nvd.nist.gov/vuln/detail/CVE-2010-2861">CVE-2010-2861</a> and <a href="https://nvd.nist.gov/vuln/detail/CVE-2009-3960">CVE-2009-3960</a>), Microsoft SharePoint (<a href="https://nvd.nist.gov/vuln/detail/CVE-2019-0604">CVE-2019-0604</a>), and Microsoft Exchange (<a href="https://nvd.nist.gov/vuln/detail/CVE-2021-34473">CVE-2021-34473</a>, <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-34523">CVE-2021-34523</a>, and <a href="https://nvd.nist.gov/vuln/detail/CVE-2021-31207">CVE-2021-31207</a> – commonly referred to as the ProxyShell attack chain). Ghost actors have also been observed uploading a web shell to a compromised server and leveraging Windows Command Prompt and/or PowerShell to download and execute Cobalt Strike Beacon malware that is then implanted on victim systems. Ghost actors sporadically create new local and domain accounts and change passwords of existing accounts. In 2024, they were observed deploying web shells on victim web servers to establish persistence. They used elevated access and Windows Management Instrumentation Command-Line (WMIC) to run PowerShell commands on additional systems on the victim network, often to initiate more Cobalt Strike Beacon infections. The group’s actors use Cring.exe, Ghost.exe, ElysiumO.exe, and Locker.exe, all of which are ransomware executables with similar functionality.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+      
+      
+                      </section>
+    <aside class="new__aside page__aside">
+      <div class="new__socials social-block">
+        <div class="social">
+              <ul class="social__list" data-counters="no">
+                <li class="social__list-item" data-type="fb" data-link="#">
+                  <a href="https://t.me/share/url?url=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025" target="_blank" class="social__link"></a>
+                  <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/telegram-black.svg">
+                </li>
+                <li class="social__list-item" data-type="tw" data-link="#">
+                  <a href="https://twitter.com/intent/tweet?text=APT and financial attacks on industrial organizations in Q1 2025&url=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025" target="_blank" class="social__link"></a>
+                  <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/x-black.svg">
+                </li>
+                                        <li class="social__list-item" data-type="in" data-link="#">
+                          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025&title=APT and financial attacks on industrial organizations in Q1 2025" target="_blank" class="social__link"></a>
+                          <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/linkedin-black.svg">
+                      </li>
+                                  <li class="social__list-item" data-type="mail" data-link="#">
+                  <a href="mailto:?subject=APT and financial attacks on industrial organizations in Q1 2025&body=https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025" target="_blank" class="social__link"></a>
+                  <img class="social__img" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/email-black.svg">
+                </li>
+              </ul>
+            </div>      </div>
+              <button class="modal-link-subscr button-subscr button-subscr--aside" data-modal="form-order-subscription" data-value="">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.2917 18.3333L9.75008 14.7917L10.9167 13.625L13.2917 16L18.0001 11.2917L19.1667 12.4583L13.2917 18.3333ZM10.0001 9.16668L16.6667 5.00001H3.33341L10.0001 9.16668ZM10.0001 10.8333L3.33341 6.66668V15H7.62508L9.29175 16.6667H3.33341C2.87508 16.6667 2.48272 16.5035 2.15633 16.1771C1.82994 15.8507 1.66675 15.4583 1.66675 15V5.00001C1.66675 4.54168 1.82994 4.14932 2.15633 3.82293C2.48272 3.49654 2.87508 3.33334 3.33341 3.33334H16.6667C17.1251 3.33334 17.5174 3.49654 17.8438 3.82293C18.1702 4.14932 18.3334 4.54168 18.3334 5.00001V8.62501L16.6667 10.2917V6.66668L10.0001 10.8333Z" fill="white" />
+          </svg>
+
+          <span>Subscribe to newsletter</span>
+        </button>
+            
+
+    <div class="report__download">
+        <a href="https://ics-cert.kaspersky.com/media/Kaspersky-ICS-CERT-APT-and-financial-attacks-on-industrial-organizations-in-Q1-2025-En.pdf?download=1" download class="report__download-link download">
+            <svg class="report__download-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_149_1492)">
+                    <path d="M14.9999 17.5L18.3333 14.1667L17.1666 13L15.8333 14.3333V10.8542H14.1666V14.3333L12.8333 13L11.6666 14.1667L14.9999 17.5ZM11.6666 20V18.3333H18.3333V20H11.6666ZM4.99992 16.6667C4.54159 16.6667 4.14922 16.5035 3.82284 16.1771C3.49645 15.8507 3.33325 15.4583 3.33325 15V3.33332C3.33325 2.87499 3.49645 2.48263 3.82284 2.15624C4.14922 1.82985 4.54159 1.66666 4.99992 1.66666H10.8333L15.8333 6.66666V9.18749H14.1666V7.49999H9.99992V3.33332H4.99992V15H9.99992V16.6667H4.99992Z" fill="white" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_149_1492">
+                        <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <span class="download__text">Download PDF</span>
+        </a>
+    </div>
+              <p class="new__tags-title">Related tags</p>
+        <div class="new__tags page-filters">
+          <div class="page-filter">
+            <div class="page-filter__tags-wrapper_" id="tagsWrapperAside">
+              <div class="page-filter__tags page-filter-singlepage__tags" id="tagsAside">
+                                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=apt" class="page-filter__box">APT</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=apt-overview" class="page-filter__box">APT overview</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=cyberespionage" class="page-filter__box">cyberespionage</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=mining" class="page-filter__box">mining</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=phishing" class="page-filter__box">phishing</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=ransomware" class="page-filter__box">ransomware</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=spyware" class="page-filter__box">spyware</a>
+                  </div>
+                                  <div class="page-filter__tag">
+                    <a href="https://ics-cert.kaspersky.com/publications/reports/?t=statistics" class="page-filter__box">statistics</a>
+                  </div>
+                              </div>
+            </div>
+            <button class="tags-toggle-btn" id="tagsToggleBtnAside" style="display:none;" type="button" aria-expanded="false">Show all</button>
+          </div>
+        </div>
+      
+            <div class="new__totop page-top">
+    <button class="new__totop-button totop">
+        <span class="totop__icon"></span>
+    </button>
+</div>    </aside>
+  </div>
+      <div class="new__similar-footer container" id="footerSimilar">
+
+      <div class="similar-footer__similar">
+        <p class="similar-footer__similar-title">See also</p>
+        <div class="similar-footer__wrap">
+          <ul class="similar-footer__similar-list">
+                                        <li class="similar-footer__similar-list-item">
+                <a href="/publications/reports/2026/08/25/threat-landscape-for-industrial-automation-systems-q2-2026" class="similar-footer__similar-link">Threat landscape for industrial automation systems. Q2 2026</a>
+                <p class="similar-footer__similar-date">25 August 2026</p>
+              </li>
+                                        <li class="similar-footer__similar-list-item">
+                <a href="/publications/reports/2026/08/20/a-brief-overview-of-the-main-incidents-in-industrial-cybersecurity-q2-2026" class="similar-footer__similar-link">A brief overview of the main incidents in industrial cybersecurity. Q2 2026</a>
+                <p class="similar-footer__similar-date">20 August 2026</p>
+              </li>
+                                        <li class="similar-footer__similar-list-item">
+                <a href="/publications/reports/2026/08/03/apt-and-financial-attacks-on-industrial-organizations-in-q2-2026" class="similar-footer__similar-link">APT and financial attacks on industrial organizations in Q2 2026</a>
+                <p class="similar-footer__similar-date">03 August 2026</p>
+              </li>
+                      </ul>
+        </div>
+      </div>
+
+      
+    </div>
+  </main>
+<script>
+      var generic_table_of_contents_headers_list = "h2, h3, h4, h5, h6";
+  </script>
+  <script src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/table_of_contents.js"></script>
+
+<script>
+  var serviceFormLocale = {
+    formTitle: 'Request the service',
+    name: 'Name, surname',
+    position: 'Position',
+    companyName: 'Company name',
+    service: 'Service',
+    country: 'Country or territory',
+    email: 'Email',
+    phone: 'Phone',
+    comment: 'Additional information',
+    text: 'I agree to provide my contact information to Kaspersky Lab (first name, last name, email address, phone, country postal code) to be contacted by Kaspersky Lab sales representatives by phone for a personalized offer that could be based, in particular, on geography and company size information provided; to receive information via email about Kaspersky Lab products and services including promotional offers, product updates and premium assets like white papers, webcasts, videos, events etc.; to participate in surveys to vocalize opinion on various aspects of Kaspersky Lab business, in particular, about products, and technical support. I understand that I can withdraw this consent at any time via unsubscribe link from email or via <a href="https://www.kaspersky.com/web-privacy-policy" target=_blank>Privacy Policy</a>.',
+    btnSend: 'Send',
+  }
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "APT and financial attacks on industrial organizations in Q1 2025",
+  "name": "APT and financial attacks on industrial organizations in Q1 2025",
+  "datePublished": "2025-06-19",
+  "dateModified": "2026-03-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kaspersky ICS CERT Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kaspersky",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-ics.svg"
+    }
+  },
+  "url": "https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025/",
+  "description": "Using polyglot files, involving the 7-Zip vulnerability and the 0-click vulnerability in MS Windows – there are some interesting details of attacks on industrial enterprises disclosed at this quarter.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ics-cert.kaspersky.com/publications/reports/2025/06/19/apt-and-financial-attackson-industrial-organizations-in-q1-2025/"
+  }
+}
+</script>
+
+<div class="modal arcs-modal" data-modal="arc-order-service" id="service-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <div id="form"></div>
+        <div class="form"></div>
+
+        <button class="modal__close">
+            <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.99609 7L17.9961 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M17.9961 7L7.99608 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+    </div>
+</div><div class="modal arcs-modal inform-subscription " data-modal="modalSubscription" id="service-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+        <div class="modal-m" data-modal="modalSubscription">
+                                        <div class="modal--alert"></div>
+                <form class="modal-m__form form-subscription" method="POST" action="#">
+                    <input type="hidden" name="Услуга" id="advisories_info" />
+                    <span class="modal-m__title">Newsletter subscription</span>
+                    <label class="modal-m__label">
+                        <span>E-mail</span>
+                        <input type="text" class="modal-m__input field__input input" id="email">
+                        <div class="input--info"></div>
+                    </label>
+                    <label class="modal-m__label">
+                        <span>Your company or organization name</span>
+                        <input type="text" class="modal-m__input field__input input" id="organization">
+                        <div class="input--info"></div>
+                    </label>
+                    <div class="arcs-modal__field-wrapper_checkbox field_checkbox checkbox modal-m__privacy form-check">
+                        <label for="vulnerabilities" class="checkbox__label modal-m__text">
+                            Vulnerability data                        </label>
+                        <input type="checkbox" class="checkbox__input visually-hidden" name="vulnerabilities" checked id="vulnerabilities" value="1">
+                        <span class="checkbox__input-fake"></span>
+                    </div>
+                    <div class="arcs-modal__field-wrapper_checkbox field_checkbox checkbox modal-m__privacy">
+                        <label for="threats" class="checkbox__label modal-m__text">
+                            Threat Information                        </label>
+                        <input type="checkbox" class="checkbox__input visually-hidden" name="threats" checked id="threats">
+                        <span class="checkbox__input-fake"></span>
+                    </div>
+                    <div class="arcs-modal__field-wrapper_checkbox field_checkbox checkbox modal-m__privacy">
+                        <label for="condition" class="checkbox__label modal-m__text">
+                            I agree to provide my contact information to Kaspersky Lab (first name, last name, email address, phone, country postal code) to be contacted by Kaspersky Lab sales representatives by phone for a personalized offer that could be based, in particular, on geography and company size information provided; to receive information via email about Kaspersky Lab products and services including promotional offers, product updates and premium assets like white papers, webcasts, videos, events etc.; to participate in surveys to vocalize opinion on various aspects of Kaspersky Lab business, in particular, about products, and technical support. I understand that I can withdraw this consent at any time via unsubscribe link from email or via                            <a href="#" class="modal-m__link">
+                                Privacy Policy                            </a>
+                        </label>
+                        <input type="checkbox" class="checkbox__input visually-hidden" name="condition" id="condition">
+                        <span class="checkbox__input-fake"></span>
+                    </div>
+                    <div id='captcha-container-subscription'></div>
+                    <br />
+                    <button class="arcs-modal__form-button button-ajax" type="submit">
+                        <span class="button__text">Subscribe</span>
+                    </button>
+                </form>
+                    </div>
+        <button class="modal__close">
+            <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.99609 7L17.9961 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M17.9961 7L7.99608 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+    </div>
+</div><footer class="footer">
+  <div class="container">    
+    <div class="footer__top text_linkHover">
+      <div class="footer__column footer__column_first">
+        <a href="#" class="logo-link">
+          <img src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/logo-ics.svg" class="logo" />
+        </a>
+        <p class="footer__desc">
+          A global project run by Kaspersky to coordinate the efforts of industrial automation system vendors and industrial facility owners and operators.        </p>
+        <p style="margin-top: 0.8rem">
+          <a href="https://ics-cert.kaspersky.com/feed/" style="color:#CCCCCC">
+            <img style="width: 1rem; height: auto" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/rss-vector-footer.svg">
+            &nbsp;&nbsp;&nbsp;RSS feed</a>
+        </p>
+      </div>
+      <div class="footer__column footer__column_second">
+        <nav class="footer__menu"><ul id="menu-footer" class="footer__menu-list"><li id="menu-item-1319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1319 footer__menu-item"><a href="https://ics-cert.kaspersky.com/publications/reports/" class="footer__menu-lnk">Publications</a></li>
+<li id="menu-item-1320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1320 footer__menu-item"><a href="https://ics-cert.kaspersky.com/services/" class="footer__menu-lnk">Services</a></li>
+<li id="menu-item-4673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4673 footer__menu-item"><a href="https://ics-cert.kaspersky.com/advisories/" class="footer__menu-lnk">Advisories</a></li>
+<li id="menu-item-1321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1321 footer__menu-item"><a href="https://ics-cert.kaspersky.com/statistics/" class="footer__menu-lnk">Statistics</a></li>
+<li id="menu-item-1330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1330 footer__menu-item"><a href="https://ics-cert.kaspersky.com/about/" class="footer__menu-lnk">About</a></li>
+</ul></nav>      </div>
+      <div class="footer__column footer__column_third">
+        <a class="footer__download-key button_hover" href="https://ics-cert.kaspersky.com/Kaspersky ICS CERT public communications (EA95BF67) – Public.asc" download>
+          <img src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/icons/key.svg" />
+          Download PGP/GPG key        </a>
+        <div class="footer__cert">
+          <a href="https://www.sei.cmu.edu/our-work/cybersecurity-center-development/authorized-users/index.cfm" target="_blank" class="footer__cert-text">
+            <img src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/footer_cert.svg" class="footer__cert-img" />
+          </a>
+          <a href="https://www.sei.cmu.edu/our-work/cybersecurity-center-development/authorized-users/index.cfm" target="_blank" class="footer__cert-text">
+            <p class="footer__cert-title">Authorized to Use CERT™</p>
+            <p class="footer__cert-desc">
+              CERT is&nbsp;a&nbsp;mark owned by <br> Carnegie              Mellon University            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom text_linkHover">
+      <div class="footer__bottom-col">
+        <a href="https://www.kaspersky.com/" target="_blank">
+          <img class="footer__kaspersky" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/img/kaspersky.svg" />
+        </a>
+        <div class="footer__text">
+          <p class="footer__copyright">
+                          &copy; 2026 AO Kaspersky Lab
+                      </p>
+                        <a href="https://www.kaspersky.com/web-privacy-policy" target="_blank" class="footer__confid">
+                            Privacy policy              </a>
+              &nbsp; <a href="https://ics-cert.kaspersky.com/terms-of-use/" class="footer__confid">Terms of Use</a>
+                              &nbsp; <a href="javascript: void(0);" class="footer__confid" onclick="javascript: Cookiebot.renew()" xmlns=http://www.w3.org/1999/xhtml>Cookies</a>
+                      </div>
+      </div>
+      <div class="footer__question" href="mailto:ics-cert@kaspersky.com">
+        <span class="footer__question-text">If you have any questions remaining, please email us at</span>
+        <a href="mailto:ics-cert@kaspersky.com" class="footer__question-email">ics-cert@kaspersky.com</a>
+      </div>
+      <p class="footer__studio">
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+<!--/Page -->
+<script>
+  const CURRENT_PAGE = 'publications';
+  var currentLocale = "en";
+  const currentPageType = "publications";
+  const currentPageSlug = "apt-and-financial-attackson-industrial-organizations-in-q1-2025";
+  const DOMAIN_RU = 'https://ics-cert.kaspersky.ru';
+  const DOMAIN_EN = 'https://ics-cert.kaspersky.com';
+  const LANG = 'en';
+  // The calendar bundle reads the locale from the Window object.
+  window.LANG = LANG;
+  const TAB_LABEL_PUBLICATIONS_NEWS = 'News';
+  const TAB_LABEL_PUBLICATIONS_EVENTS = 'Events';
+  const TAB_LABEL_PUBLICATIONS_ANNOUNCEMENTS = 'Announcements';
+  const TAB_LABEL_PUBLICATIONS_REPORTS = 'Reports';
+  const TAB_LABEL_PUBLICATIONS_BLOG = 'Blog';
+  const CURRENT_TAG = '';
+  var searchLocale = {
+    filter: "Filter",
+    search: "Search",
+    showedResults: "Showing results for",
+    next: "Далее",
+    apply: "Apply",
+    searchBy: "Search by:",
+    noResult: "Unfortunately, your search returned no results",
+    advices: "Tips",
+    advice1: "Check spelling",
+    advice2: "Try a similar word or synonym",
+    advice3: "Use common words to broaden your search",
+    services: "Services",
+  }
+</script>
+
+<script>
+  var serviceFormLocale = {
+    formTitle: 'Request the service',
+    name: 'Name, surname',
+    position: 'Position',
+    companyName: 'Company name',
+    service: 'Service',
+    country: 'Country or territory',
+    email: 'Email',
+    phone: 'Phone',
+    comment: 'Additional information',
+    text: 'I agree to provide my contact information to Kaspersky Lab (first name, last name, email address, phone, country postal code) to be contacted by Kaspersky Lab sales representatives by phone for a personalized offer that could be based, in particular, on geography and company size information provided; to receive information via email about Kaspersky Lab products and services including promotional offers, product updates and premium assets like white papers, webcasts, videos, events etc.; to participate in surveys to vocalize opinion on various aspects of Kaspersky Lab business, in particular, about products, and technical support. I understand that I can withdraw this consent at any time via unsubscribe link from email or via <a href="https://www.kaspersky.com/web-privacy-policy" target=_blank>Privacy Policy</a>.',
+    btnSend: 'Send',
+    locale: 'en',
+  }
+</script>
+
+<style>
+  form.arcs-modal__form {
+    display: none;
+  }
+
+  .b24-form-state-container .b24-form-success {
+    background-color: #fff !important;
+  }
+</style>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/new_ics_cert/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="gblocks-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/gblocks/main.js?ver=1789629524"></script>
+<script id="libs-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="scroll-magic-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/ScrollMagic.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="add-indicators-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/debug.addIndicators.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="select2-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/select2.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="selectize-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/selectize.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="tooltipster-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/jquery.tooltipster.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="magnific-popup-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/jquery.magnific-popup.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="inputmask-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/inputmask.min.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="marketo-js" src="//go.kaspersky.com/js/forms2/js/forms2.min.js"></script>
+<script data-wp-strategy="defer" defer id="form-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/forms.js?v2&#038;ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="simplebar-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/libs/simplebar.min.js?ver=1789629524"></script>
+<script id="script-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/script.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="post-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/post.js?ver=1789629524"></script>
+<script id="service-js-extra">
+var serviceData = {"lang":{"downloadServiceDescription":"Download service description"}};
+//# sourceURL=service-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="service-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/service.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="search-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/search.js?ver=1789629524"></script>
+<script id="ajax-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/ajax.js?ver=1789629524"></script>
+<script id="lazy-filter-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/lazy-filter.js?ver=1789629524"></script>
+<script id="theme-smartcaptcha-js-extra">
+var smartCaptchaConfig = {"sitekey":"ysc1_JtsPgIpPb5VuqJnpITHxMg3dyNFbtkaXP5oznU5O68b6de2f"};
+//# sourceURL=theme-smartcaptcha-js-extra
+</script>
+<script id="theme-smartcaptcha-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/smartcaptcha.js?ver=1789629524"></script>
+<script id="yandex-smartcaptcha-js" src="https://smartcaptcha.cloud.yandex.ru/captcha.js?render=onload&#038;onload=onSmartCaptchaLoaded"></script>
+<script id="app_init-js-after">
+app.config.urls = {public: ""};
+//# sourceURL=app_init-js-after
+</script>
+<script data-wp-strategy="defer" defer id="faq-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/faq.js?ver=1789629524"></script>
+<script data-wp-strategy="defer" defer id="cvsscalc30-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/cvsscalc30.js?ver=1789629524"></script>
+<script id="commit-js-extra">
+var commitData = {"ajaxUrl":"https://ics-cert.kaspersky.com/wp-admin/admin-ajax.php"};
+//# sourceURL=commit-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="commit-js" src="https://ics-cert.kaspersky.com/wp-content/themes/new_ics_cert/assests/js/commit.js?ver=1789629524"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://ics-cert.kaspersky.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://ics-cert.kaspersky.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+<script>
+  jQuery(document).ready(function($) {
+    if (location.search == '?order=service') {
+      setTimeout(function() {
+        $($('.services__button')[0]).trigger('click')
+      }, 1000)
+    }
+
+    $('.b24-form-btn-container .b24-form-btn-block .b24-form-btn').on('click', function() {
+      const b24SuccessMsg = $('.b24-form-success-msg').html()
+      console.log('b24SuccessMsg: ', b24SuccessMsg)
+      if (b24SuccessMsg) {
+        b24SetSuccessText(b24SuccessMsg)
+      }
+    })
+
+    function b24SetSuccessText(msg) {
+      let attrStyle = ''
+      let timerId = setInterval(function() {
+        attrStyle = $('.b24-form-state.b24-form-success').attr('style')
+        if (!attrStyle || attrStyle != 'display: none') {
+          $('.b24-form-state.b24-form-success .b24-form-state-text').html(msg)
+          clearInterval(timerId)
+        }
+      }, 1000)
+    }
+  })
+</script>
+
+<script>
+  const storageKey = location.host + '-onesignal-slidedown-action';
+  console.log(sessionStorage.getItem(storageKey));
+
+  if (!sessionStorage.getItem(storageKey)) {
+    setTimeout(function() {
+      window.OneSignal = window.OneSignal || [];
+      window.OneSignal.push(function() {
+        window.OneSignal.init(window._oneSignalInitOptions);
+      });
+      sessionStorage.setItem(storageKey, 'show');
+    }, 3000);
+  }
+  jQuery('body').on('click', '#onesignal-slidedown-cancel-button', function() {
+    sessionStorage.setItem(storageKey, 'cansel');
+  });
+  jQuery('body').on('click', '#onesignal-slidedown-allow-button', function() {
+    sessionStorage.setItem(storageKey, 'allow');
+  });
+</script>
+
+</body>
+
+</html>
+
+<!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com -->

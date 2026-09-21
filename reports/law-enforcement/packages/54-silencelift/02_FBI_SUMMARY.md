@@ -1,7 +1,5 @@
-# Summary — SILENCELIFT
+# FBI / LE Summary — SILENCELIFT
 
-Defensive TI package for **SILENCELIFT** (Mandiant UNC1069 (via THN secondary 2026-02)).
+**Status:** PRIMARY_FROZEN (not IC3-filed)
 
-New C++ backdoor in crypto-sector intrusion
-
-Attribution claim (vendor/LE): UNC1069 / North Korea-nexus financially motivated (Mandiant) [Medium-High (vendor via secondary)]
+Minimal C/C++ backdoor in UNC1069 (North Korea-nexus, Mandiant) cryptocurrency-sector intrusion. Beacons host/lock-screen data to C&C (`cmailer.pro` per Mandiant IoC table). Uses `/Library/Caches/.Logs.db` unique ID path also seen with CHROMEPUSH.

@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+SLF-IND-0001,domain,cmailer.pro,SILENCELIFT C&C (Mandiant),Mandiant / Google Cloud UNC1069 blog

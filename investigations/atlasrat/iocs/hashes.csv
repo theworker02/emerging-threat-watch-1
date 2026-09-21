@@ -1,2 +1,6 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+ATR-IND-0003,sha256,584a9448dda46bd590d7a2f86228100d2ae6e0d6d990c1a4459ed5ee28e07ae8,Atlas RAT DLL libcef.dll (Campaign 1),Proofpoint TA4922 Atlas RAT
+ATR-IND-0004,sha256,a75eab31d7ff06b6864960ad7e633be3f9730ff3d3873e4539c8f425fc632dad,Atlas RAT DLL libcef.dll (Campaign 2),Proofpoint TA4922 Atlas RAT
+ATR-IND-0005,sha256,a648db354820ea4d02940cb1702b35974513b7aae83f6dffaacaac4ba31f9295,ZIP delivering Atlas RAT (Japan salary lure),Proofpoint TA4922 Atlas RAT
+ATR-IND-0006,sha256,66a3836b9a17771bce2161f6b73cbc2494a91e49d6aa30d2d53711e8d10de60d,ZIP Paperwork.zip delivering Atlas RAT,Proofpoint TA4922 Atlas RAT
+ATR-IND-0007,sha256,4fcfa88fffacbce30bbe2136753c9ab5a4c092940d2406fd9d44d5118e745b9d,ZIP HR (2).zip delivering Atlas RAT,Proofpoint TA4922 Atlas RAT

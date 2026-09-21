@@ -1,7 +1,5 @@
-# Summary — PaperGrabber
+# FBI / LE Summary — PaperGrabber
 
-Defensive TI package for **PaperGrabber** (Russian-targeting activity (primary TBD)).
+**Status:** PRIMARY_FROZEN (not IC3-filed)
 
-Previously undocumented VB.NET stealer
-
-Attribution claim (vendor/LE): Unknown [Unknown]
+Previously undocumented VB.NET stealer (BI.ZONE, March–April 2026) used by Paper Werewolf/GOFFEE against Russian industrial, financial, and transport targets. Collects documents, browser credentials (DPAPI), and Telegram `tdata`; exfiltrates over HTTPS in 10 MB chunks to `ntptop.online` and reports to a Telegram bot.

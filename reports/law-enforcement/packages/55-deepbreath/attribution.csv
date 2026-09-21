@@ -1,2 +1,2 @@
 claim,confidence,source,aliases,lineage_notes,nationality_folder
-"UNC1069 (Mandiant)","Medium-High (vendor via secondary)","Mandiant via THN","","","NONE — metadata only"
+"UNC1069 (Mandiant)","High (vendor)","Mandiant","DEEPBREATH","Swift macOS data miner","NONE — metadata only"

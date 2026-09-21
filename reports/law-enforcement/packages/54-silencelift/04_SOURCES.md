@@ -1,5 +1,7 @@
 # Sources — SILENCELIFT
 
-- Primary: https://thehackernews.com/2026/02/north-korea-linked-unc1069-uses-ai.html
-- Freeze: `evidence/primary-sources/silencelift/thn-unc1069-2026-02.html`
-- Publisher: Mandiant (cited); THN secondary freeze
+- Primary: https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering
+- Freeze: `evidence/primary-sources/silencelift/mandiant-unc1069-crypto-ai.html`
+- Secondary: THN summary (prior freeze retained)
+- Publisher: Mandiant (Google Cloud)
+- Status: PRIMARY_FROZEN
