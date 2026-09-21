@@ -12,3 +12,5 @@
 | Other information | 899 | §9 |
 
 Subject #1, loss=$0, crime types, date range, and “not an update” are also in [`IC3_PASTE_READY.md`](IC3_PASTE_READY.md).
+
+**Complainant contact (gitignored):** paste from [`../../private/COMPLAINANT_PROFILE.md`](../../private/COMPLAINANT_PROFILE.md) or `../../private/filing-helpers/09-sharkloader/00_COMPLAINANT_CONTACT.md`. Do not enter SSN/DOB.

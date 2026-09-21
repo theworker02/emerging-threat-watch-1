@@ -49,7 +49,7 @@ I am reporting defensive threat-intelligence information concerning Starland RAT
 
 Talos describes a financially motivated, Russian-speaking actor (vendor assessment only) delivering trojanized installers (MobaXterm, WebEx, Zoom, DBeaver, FACEIT) and ClickFix/HTA staging that loads a Python-based Starland RAT in memory (LICENSE.txt / pythonw.exe) with crypto-wallet recon, Telegram bots, and Polygon smart-contract fallback C2, plus optional CastleStealer/Remcos follow-ons and the in-memory WLDR PowerShell agent. Author identity remains NOT_ESTABLISHED by ETW. UAT-11795 Russian-speaking financially motivated framing is Talos assessment only.
 
-INDICATORS (PRIMARY-SOURCE; full CSV STR-IND-0001–0035 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV STR-IND-0001–0063 on request):
 Domains: eorthopaedics.com; sastoro.com; web-devtools.com; zynaris.io; windowscreenrepairnearme.com; aipythondevs.com; alphabitcapital.info. IPs: 104.248.233.104; 192.81.216.250; 74.114.119.201; 178.255.126.39; 193.149.176.254; 185.238.191.234. Sample SHA-256: 162e436f18fe6099c57855c8d63fd747493624e87702dc749b242eb9a6b758ca (Starland RAT); d52540621dec5ed56cac8532f0e4fe10a7575c3e17e984f59646909fa587dd35 (WLDR); 47dedb08385449d48d8b6543030310317c92cddafa25e14ee0cb9a32d53ced5c (Python_Loader). Polygon contract 0x6ae382ed2154cc84c6672e4e908cd2c69c1b35ba; polygon-rpc.com. Host: LICENSE.txt; PythonLauncher-*; odg5t8mvssvh; helo1.
 
 StarlandRAT-only — do not merge with other ETW filings. Prior separate IC3 IDs (no shared-operator claim): Rapuncel 208b747c6f7445f0af2b69a9d63acc36; Settra 631d8b4800d04bc19cdbfc6662e5c52c; RatHat f92c4c2f0dd3481f898fdd125e728adf; NodeRabbit dded86972e9347e0be27a6597b4cf08a; PollCat 98a4444754324e539dbbffcb10c70637; SynkLoader 3440d0c64dc240499ff66deaa3311a0b; Showboat db42033f319844c08ad103befebfca08; Abyssos a23f0a9d6799480e994284416d354713; SharkLoader 6ed57963d0c64750aa14b6fcbaa2e576.
@@ -160,7 +160,7 @@ Secondary: BleepingComputer; Security Affairs.
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/15-starlandrat/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (35 STR-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (63 STR-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md
 Crime-type language: Malware; Unauthorized network intrusion / remote access; Credential theft; Cryptocurrency theft; Social engineering.
 Dollar loss: $0 / none claimed. Personal victimization: No.
@@ -180,7 +180,21 @@ Ending: ongoing / unknown
 
 ## 12. Complainant contact
 
-Use **your** real name, phone, email, and mailing address (IC3 required). Do not enter SSN/DOB.
+Paste from the **gitignored** local profile (do not commit PII):
+
+`reports/law-enforcement/private/COMPLAINANT_PROFILE.md`
+
+Per-package copy: `reports/law-enforcement/private/filing-helpers/<NN-family>/00_COMPLAINANT_CONTACT.md`
+
+| Field | Source |
+|-------|--------|
+| Full legal name / phone / email / mailing address | `COMPLAINANT_PROFILE.md` (filled) |
+| Filing capacity | Individual / researcher — defensive TI (Emerging Threat Watch) |
+| Business victim? | No |
+| Critical infrastructure disruption? | No / unknown |
+| Personal victimization? | No |
+| Total loss | 0 / None |
+| SSN / DOB | **Do not enter** |
 
 ## After filing
 

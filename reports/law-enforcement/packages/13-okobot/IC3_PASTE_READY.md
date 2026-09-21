@@ -51,7 +51,7 @@ Kaspersky describes OkoBot as a multi-stage Windows framework (≥20 payloads) i
 
 Gridinsoft publishes high-confidence TookPS callback 22tuk.digital/online/took.php and scheduled task \GDrive Backup Sync, correlated to previously documented TookPS domains and OkoBot SSH destinations.
 
-INDICATORS (PRIMARY-SOURCE; full CSV OKO-IND-0001–0033 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV OKO-IND-0001–0038 on request):
 MD5s (representative): B07D451EE65A1580F20A784C8F0E7A46; 187A1F68AE786E53D3831166DC84E6D2; D84E8DC509308523E0209D3CD3544619; 83E6B8FCB92A0B13E109301F8FF649CF; 7306885BB4C98F2A9F056104CF092BC9; B4C2E16CDB513BE4DC798F88E2527334. Domains: 2baserec2.guru; recavb22.online; kbeautyreviews.com; coffeesaloon.online; livewallpapers.online; thatwascringe.com; moonsand.store; 22tuk.digital. IPs: 104.243.43.16; 104.243.32.213; 62.210.188.209. Paths: %PROGRAMDATA%\HDVideo\HDUtil.exe; %PROGRAMDATA%\hwid.dat; %PROGRAMDATA%\oko_ver; %USERPROFILE%\.ssh\go.bat; ir-post.php; \GDrive Backup Sync.
 
 Okobot-only — do not merge with other ETW filings. Prior separate IC3 IDs (no shared-operator claim): Rapuncel 208b747c6f7445f0af2b69a9d63acc36; Settra 631d8b4800d04bc19cdbfc6662e5c52c; RatHat f92c4c2f0dd3481f898fdd125e728adf; NodeRabbit dded86972e9347e0be27a6597b4cf08a; PollCat 98a4444754324e539dbbffcb10c70637; SynkLoader 3440d0c64dc240499ff66deaa3311a0b; Showboat db42033f319844c08ad103befebfca08; Abyssos a23f0a9d6799480e994284416d354713; SharkLoader 6ed57963d0c64750aa14b6fcbaa2e576.
@@ -163,7 +163,7 @@ Secondary: The Hacker News; BleepingComputer.
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/13-okobot/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (33 OKO-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (38 OKO-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md
 Crime-type language: Malware; Unauthorized network intrusion / remote access; Credential theft; Cryptocurrency theft.
 Dollar loss: $0 / none claimed. Personal victimization: No.
@@ -183,7 +183,21 @@ Ending: ongoing / unknown
 
 ## 12. Complainant contact
 
-Use **your** real name, phone, email, and mailing address (IC3 required). Do not enter SSN/DOB.
+Paste from the **gitignored** local profile (do not commit PII):
+
+`reports/law-enforcement/private/COMPLAINANT_PROFILE.md`
+
+Per-package copy: `reports/law-enforcement/private/filing-helpers/<NN-family>/00_COMPLAINANT_CONTACT.md`
+
+| Field | Source |
+|-------|--------|
+| Full legal name / phone / email / mailing address | `COMPLAINANT_PROFILE.md` (filled) |
+| Filing capacity | Individual / researcher — defensive TI (Emerging Threat Watch) |
+| Business victim? | No |
+| Critical infrastructure disruption? | No / unknown |
+| Personal victimization? | No |
+| Total loss | 0 / None |
+| SSN / DOB | **Do not enter** |
 
 ## After filing
 

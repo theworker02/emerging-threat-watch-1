@@ -51,7 +51,7 @@ Check Point describes MiniFast as a previously undocumented 64-bit Windows PE DL
 
 Unit 42 publishes overlapping UpdateChecker.dll hashes under the MiniUpdate name and additional MiniJunk V2 sibling hashes under Screening Serpens. MiniJunk V2 rows are sibling-family context only and are not merged as MiniFast authorship. Do NOT merge this package with PollCat despite Azure/C2 structural notes (ASSOCIATION_ONLY).
 
-INDICATORS (PRIMARY-SOURCE; full CSV MNF-IND-0001–0044 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV MNF-IND-0001–0056 on request):
 Representative SHA-256: 10fd541674adadfbba99b54280f7e59732746faf2b10ce68521866f737f1e46d; eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71; 781605ce9d4a9869e846f6c9657d71437cb6240ab27ffbc4cd550c0e06996690; 2c214494fd0bad31473ca8adce78a4f50847876584571e66aadeae70827ec2dc; f08b17856616d66492a24dced27f788e235f35f42fa7cd10f315000d3a2f4c03. Domains include getsqldeveloper.com; business-startup.org; business-startup.azurewebsites.net; QuantumWeave.azurewebsites.net; ElementShift.azurewebsites.net. Host: UpdateChecker.dll; CheckForUpdates; ZoomUpdateTaskUser; Zoominstall64.zip; %LOCALAPPDATA%\Zoom\bin\update.
 
 MiniFast-only — do not merge with PollCat or other ETW filings. Prior separate IC3 IDs (no shared-operator claim): Rapuncel 208b747c6f7445f0af2b69a9d63acc36; Settra 631d8b4800d04bc19cdbfc6662e5c52c; RatHat f92c4c2f0dd3481f898fdd125e728adf; NodeRabbit dded86972e9347e0be27a6597b4cf08a; PollCat 98a4444754324e539dbbffcb10c70637; SynkLoader 3440d0c64dc240499ff66deaa3311a0b; Showboat db42033f319844c08ad103befebfca08; Abyssos a23f0a9d6799480e994284416d354713; SharkLoader 6ed57963d0c64750aa14b6fcbaa2e576.
@@ -169,7 +169,7 @@ Secondary: CyberVeille (FR); The Hacker News.
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/11-minifast/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (44 MNF-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (56 MNF-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md
 Crime-type language: Malware; Unauthorized network intrusion / remote access; Spear phishing.
 Dollar loss: $0 / none claimed. Personal victimization: No.
@@ -189,7 +189,21 @@ Ending: ongoing / unknown
 
 ## 12. Complainant contact
 
-Use **your** real name, phone, email, and mailing address (IC3 required). Do not enter SSN/DOB.
+Paste from the **gitignored** local profile (do not commit PII):
+
+`reports/law-enforcement/private/COMPLAINANT_PROFILE.md`
+
+Per-package copy: `reports/law-enforcement/private/filing-helpers/<NN-family>/00_COMPLAINANT_CONTACT.md`
+
+| Field | Source |
+|-------|--------|
+| Full legal name / phone / email / mailing address | `COMPLAINANT_PROFILE.md` (filled) |
+| Filing capacity | Individual / researcher — defensive TI (Emerging Threat Watch) |
+| Business victim? | No |
+| Critical infrastructure disruption? | No / unknown |
+| Personal victimization? | No |
+| Total loss | 0 / None |
+| SSN / DOB | **Do not enter** |
 
 ## After filing
 

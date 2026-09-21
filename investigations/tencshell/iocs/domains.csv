@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-gin-tne-fahcesmukw.cn-hangzhou.fcapp.run,domain,2026-04,,Cato CTRL,High,tencshell,CAMPAIGN ASSOCIATED,Observed C2 / staging domain (Alibaba FC-style),tencshell
+domain,source,confidence,family,status,notes
+gin-tne-fahcesmukw.cn-hangzhou.fcapp.run,https://www.catonetworks.com/blog/cato-ctrl-suspected-china-linked-threat-actor-targets-global-manufacturer/,High,tencshell,PRIMARY,Observed C2 / staging domain (Alibaba FC-style) NOT OBSERVED by ETW.

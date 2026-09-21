@@ -26,6 +26,8 @@ Many reporters file **IC3 first** (get a complaint number), then send the same p
 1. Open `packages/0N-<family>/` and read `02_FBI_SUMMARY.md` + `05_CAVEATS_AND_LIMITS.md`.  
 2. Confirm case isolation (one family only).  
 3. Run through `../SUBMISSION_CHECKLIST.md` if filing.  
+3b. **Complainant identity (private):** paste name / phone / email / mailing address from `private/COMPLAINANT_PROFILE.md` (gitignored). Never commit PII. Do not enter SSN/DOB.
+
 4. **IC3:** use the local narrative helper at `private/filing-helpers/0N-<family>/01_NARRATIVE_PASTE.txt` (gitignored). Add high-value indicators from `03_INDICATORS.csv` only if the form has space — otherwise state that a CSV is retained and available on request. List primary URLs from `04_SOURCES.md` in the additional-information field.  
 5. Save the IC3 confirmation / Submission ID into `IC3_FILING_RECORD.md`, `02_FBI_SUMMARY.md`, and `MASTER_INDEX.csv`.  
 6. **FBI (optional):** submit or email `02_FBI_SUMMARY.md` + `03_INDICATORS.csv` + `04_SOURCES.md` + `05_CAVEATS_AND_LIMITS.md`, citing the IC3 Submission ID if you have one.
@@ -76,11 +78,24 @@ There is **no** evidence in this repository establishing that these campaigns sh
 
 | Package ID | Family | IND rows | Paste pack | Status |
 |------------|--------|----------|------------|--------|
-| ETW-TEN-IC3 | TencShell | 30 | [`IC3_PASTE_READY.md`](packages/10-tencshell/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
-| ETW-MNF-IC3 | MiniFast | 44 | [`IC3_PASTE_READY.md`](packages/11-minifast/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
-| ETW-ARG-IC3 | Argamal | 22 | [`IC3_PASTE_READY.md`](packages/12-argamal/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
-| ETW-OKO-IC3 | Okobot | 33 | [`IC3_PASTE_READY.md`](packages/13-okobot/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
-| ETW-MAT-IC3 | Matanbuchus | 28 | [`IC3_PASTE_READY.md`](packages/14-matanbuchus/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) |
-| ETW-STR-IC3 | StarlandRAT | 35 | [`IC3_PASTE_READY.md`](packages/15-starlandrat/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` |
+| ETW-TEN-IC3 | TencShell | 30 | [`IC3_PASTE_READY.md`](packages/10-tencshell/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/10-tencshell.md`](RESPONSIBLE_SUBMISSION/briefs/10-tencshell.md) |
+| ETW-MNF-IC3 | MiniFast | 44 | [`IC3_PASTE_READY.md`](packages/11-minifast/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/11-minifast.md`](RESPONSIBLE_SUBMISSION/briefs/11-minifast.md) |
+| ETW-ARG-IC3 | Argamal | 22 | [`IC3_PASTE_READY.md`](packages/12-argamal/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/12-argamal.md`](RESPONSIBLE_SUBMISSION/briefs/12-argamal.md) |
+| ETW-OKO-IC3 | Okobot | 33 | [`IC3_PASTE_READY.md`](packages/13-okobot/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/13-okobot.md`](RESPONSIBLE_SUBMISSION/briefs/13-okobot.md) |
+| ETW-MAT-IC3 | Matanbuchus | 28 | [`IC3_PASTE_READY.md`](packages/14-matanbuchus/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) · [`briefs/14-matanbuchus.md`](RESPONSIBLE_SUBMISSION/briefs/14-matanbuchus.md) |
+| ETW-STR-IC3 | StarlandRAT | 35 | [`IC3_PASTE_READY.md`](packages/15-starlandrat/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/15-starlandrat.md`](RESPONSIBLE_SUBMISSION/briefs/15-starlandrat.md) |
+
+Complainant name / phone / email / address for all IC3 forms: `private/COMPLAINANT_PROFILE.md` (gitignored).
+
+### Vendor / CERT coordination (parallel to IC3)
+
+Do **not** auto-email from agents without a verified sending domain. Ready packs:
+
+- Contacts: [`RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md`](RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md)
+- Email matrix: [`RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md`](RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md)
+- Status (sent vs prepared): [`RESPONSIBLE_SUBMISSION/VENDOR_SUBMISSION_STATUS.md`](RESPONSIBLE_SUBMISSION/VENDOR_SUBMISSION_STATUS.md)
+- Non-PII drafts: `RESPONSIBLE_SUBMISSION/email-drafts/`
+- Full drafts + Reply-To + Gmail launcher: `private/vendor-submissions/` (gitignored; start with `GMAIL_LAUNCHER.html`)
+- Private send log: `private/vendor-submissions/SEND_LOG.md` / `private/VENDOR_SUBMISSION_LOG.md`
 
 Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`. SharkLoader (`ETW-SHK-IC3`) filed — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576`.

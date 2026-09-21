@@ -46,3 +46,16 @@ Full table: `03_INDICATORS.csv` (15 rows, `POL-IND-0001`–`0015`).
 2. Correlate published domain / hash / URI-path indicators against existing FBI/IC3 holdings.
 3. Request sample acquisition through normal vendor/legal channels if needed — this package does not contain malware binaries.
 4. Keep this family **separate** from other Emerging Threat Watch packages (especially NodeRabbit `ETW-NRB-IC3` / `dded86972e9347e0be27a6597b4cf08a`) unless linkage evidence appears.
+
+## Evidence inventory (ETW retained)
+
+- **Package ID:** `ETW-POL-IC3` / folder `05-pollcat`
+- **PRIMARY-SOURCE indicators in `03_INDICATORS.csv`:** **16** rows (**domain** ×4, **http_endpoint** ×4, **filename** ×3, **md5** ×1, **url** ×1, **scheduled_task_prefix** ×1, **path** ×1, **sha256** ×1)
+- **Provenance rule:** Indicators are transcribed from public vendor research only. ETW has **not** executed malware and has **not** contacted suspected C2.
+- **Local freezes:** `evidence/primary-sources/pollcat/` (and dual refs where noted)
+- **Caveats:** See `05_CAVEATS_AND_LIMITS.md` — author/operator identity remains NOT_ESTABLISHED by ETW unless a court/LE source states otherwise.
+
+## Additional primary / dual reference
+
+- Dual-referenced with NodeRabbit Securelist disclosure — **do not merge** implant authorship.
+- French Cyberveille mirror retained under `evidence/primary-sources/pollcat/`.

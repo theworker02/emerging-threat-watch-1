@@ -53,7 +53,7 @@ The common chain copies legitimate SystemSettings.exe (from C:\Windows\Immersive
 
 Kaspersky does not attribute StrikeShark to a known APT with high confidence. Author/operator identity remains NOT_ESTABLISHED by Emerging Threat Watch. Cobalt Strike Beacon hashes are not invented here.
 
-INDICATORS (PRIMARY-SOURCE; full CSV SHK-IND-0001–0019 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV SHK-IND-0001–0021 on request):
 MD5: C559CC68986933200FD5D9E4388E2F58; B3352B42432DEDC4A519F011DC8B5D5A; 24FCEBDEECBA65004FDB0923763D74FD; 9C872A0D5D5A38950E8B9AC9B488BE3F; AA3086BE652C8B20B0B29B2730D57119; A514D1BB62D7916475946FE7C07AC0AA; 9CBD560F820C95D7C38342CD558CB5C6; 1F65544978B8EA0E745E573B8EE9684B.
 Domains: connect-microsoft.com; ms-record.com; ms-record.top; ms-tray.top.
 Host: SystemSettings.dll; DscCoreR.mui; SyncRes.dat; %APPDATA%\xwreg; %APPDATA%\xgdf; MFUpdate; \Microsoft\Windows\Edge\Edgeupdate. Alternate sideloads noted: msedge.dll; PrintDialog.dll; miracastview.dll.
@@ -159,7 +159,7 @@ Companion press: https://www.kaspersky.com/about/press-releases/kaspersky-warns-
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/09-sharkloader/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (19 SHK-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (21 SHK-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md
 Local HTML freeze SHA-256: c5af7fb5acf172632f63b9763e511d756564027cff5cf0ce8a6ffe2fa90934b2
 Crime-type language: Malware; Unauthorized network intrusion / remote access.
@@ -180,7 +180,21 @@ Ending: ongoing / unknown
 
 ## 12. Complainant contact
 
-Use **your** real name, phone, email, and mailing address (IC3 required). Do not enter SSN/DOB.
+Paste from the **gitignored** local profile (do not commit PII):
+
+`reports/law-enforcement/private/COMPLAINANT_PROFILE.md`
+
+Per-package copy: `reports/law-enforcement/private/filing-helpers/<NN-family>/00_COMPLAINANT_CONTACT.md`
+
+| Field | Source |
+|-------|--------|
+| Full legal name / phone / email / mailing address | `COMPLAINANT_PROFILE.md` (filled) |
+| Filing capacity | Individual / researcher — defensive TI (Emerging Threat Watch) |
+| Business victim? | No |
+| Critical infrastructure disruption? | No / unknown |
+| Personal victimization? | No |
+| Total loss | 0 / None |
+| SSN / DOB | **Do not enter** |
 
 ## After filing
 

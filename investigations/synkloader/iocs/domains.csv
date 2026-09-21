@@ -1,7 +1,6 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id,provenance_url
-neversoftmain.net,domain,,,Expel,High,synkloader,UNVERIFIED,Loader C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
-rootfarmapp.net,domain,,,Expel,High,synkloader,UNVERIFIED,Loader C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
-tripinupdate.net,domain,,,Expel,High,synkloader,UNVERIFIED,Loader C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
-dondermicapp.net,domain,,,Expel,High,synkloader,UNVERIFIED,TrafficRedirector C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
-aroclenetapp.net,domain,,,Expel,High,synkloader,UNVERIFIED,VNC StreamMaster C2,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
-filereserve.blob.core.windows.net,domain,,,Expel,High,synkloader,UNVERIFIED,Azure Blob delivery host — shared Microsoft edge,synkloader,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/
+domain,source,confidence,family,status,notes
+neversoftmain.net,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/,High,synkloader,PRIMARY,Loader C2 | NOT OBSERVED by ETW until passive row exists.
+rootfarmapp.net,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/,High,synkloader,PRIMARY,Loader C2 | NOT OBSERVED by ETW until passive row exists.
+tripinupdate.net,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/,High,synkloader,PRIMARY,Loader C2 | NOT OBSERVED by ETW until passive row exists.
+dondermicapp.net,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/,High,synkloader,PRIMARY,TrafficRedirector C2 | NOT OBSERVED by ETW until passive row exists.
+aroclenetapp.net,https://expel.com/blog/synkloader-when-you-throw-in-everything-but-the-kitchen-sink/,High,synkloader,PRIMARY,VNC StreamMaster C2 | NOT OBSERVED by ETW until passive row exists.

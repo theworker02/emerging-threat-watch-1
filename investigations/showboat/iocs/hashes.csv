@@ -1,5 +1,6 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011,sha256,2025-05,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Linux ELF sample,showboat
-8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165,sha256,,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Windows sample,showboat
-253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56,sha256,,,Lumen BLL IOC appendix,High,showboat,CAMPAIGN ASSOCIATED,Windows sample,showboat
-27df475626aafce2ea1548a9f35efb9ad951298c8b11a6adb3ccdfcd5170c677,x509_sha256,,,Lumen BLL,High,showboat,CAMPAIGN ASSOCIATED,Primary cluster cert fingerprint,showboat
+hash,hash_type,source,confidence,family,status,notes
+d6a4fad5448838dbc8cc6b33f1dbfbdc7a2fad36de58ff6a66dce96f729f7011,sha256,https://raw.githubusercontent.com/blacklotuslabs/IOCs/main/Showboat_IOCs.txt,High,showboat,PRIMARY,Linux sample from BLL IOC appendix; also VT link in THN.
+8fc0b205876923d35df436e666ec1506839ef3861422037490bae4daa63c1165,sha256,https://raw.githubusercontent.com/blacklotuslabs/IOCs/main/Showboat_IOCs.txt,High,showboat,PRIMARY,Windows sample (BLL appendix).
+253cc9dbabeb0054f3d353cfff24f2aeb9cecd3e031333127d33cc4edacf2a56,sha256,https://raw.githubusercontent.com/blacklotuslabs/IOCs/main/Showboat_IOCs.txt,High,showboat,PRIMARY,Windows sample (BLL appendix).
+f5359f23eafe7c0f9a445d654dd94c31e982f02c48ac59d1cacf6d6f9f594425,sha256,https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms,High,showboat,PRIMARY,Lumen/Showboat_IOCs.txt — TLS certificates NOT OBSERVED by ETW.
+494676b9255d8c65499c1d5148e34440d27de2e26ad7dd7162dd8e683dba2790,sha256,https://www.lumen.com/blog/en-us/introducing-showboat-a-new-malware-family-taunts-defenses-and-targets-international-telecom-firms,High,showboat,PRIMARY,Lumen Showboat_IOCs.txt SHA-256 NOT OBSERVED by ETW.

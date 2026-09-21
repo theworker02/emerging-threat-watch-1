@@ -49,7 +49,7 @@ I am reporting defensive threat-intelligence information concerning the Argamal 
 
 Kaspersky describes Argamal as a previously undocumented RAT distributed inside trojanized adult/hentai games (RenPy, RPG Maker MV, and other engines) via catalogue sites redirecting to PixelDrain and via torrent trackers (e.g., AniRena), plus at least one gaming-forum cheat lure. Infection uses a modified FFmpeg DLL and natives2_blob.bin PowerShell stages, COM hijacking of the Windows Color System Calibration Loader scheduled task, AES-CBC payload decrypt, UDP heartbeats, and TCP RAT mode. Published C2 domains include asper1.freeddns.org, Winst0.kozow.com, and country1.ignorelist.com. Spanish-language comments were noted by Kaspersky — author identity remains NOT_ESTABLISHED by ETW.
 
-INDICATORS (PRIMARY-SOURCE; full CSV ARG-IND-0001–0022 on request):
+INDICATORS (PRIMARY-SOURCE; full CSV ARG-IND-0001–0034 on request):
 SHA1 (representative): 42add9475e67a1ccc6a6af94b5475d3defc01b85 (ffmpeg.dll); edce72f59e4c1d136cd1946af70d334c19df858d (natives2_blob.bin); plus additional RAT/downloader SHA1s in CSV. Domains: asper1.freeddns.org; Winst0.kozow.com; country1.ignorelist.com. IP: 186.158.223.35. Ports/artifacts: UDP 57441/63559; TCP 3747. Host: COM CLSID {B210D694-C8DF-490D-9576-9E20CDBC20BD} / Windows Color System Calibration Loader.
 
 Argamal-only — do not merge with other ETW filings. Prior separate IC3 IDs (no shared-operator claim): Rapuncel 208b747c6f7445f0af2b69a9d63acc36; Settra 631d8b4800d04bc19cdbfc6662e5c52c; RatHat f92c4c2f0dd3481f898fdd125e728adf; NodeRabbit dded86972e9347e0be27a6597b4cf08a; PollCat 98a4444754324e539dbbffcb10c70637; SynkLoader 3440d0c64dc240499ff66deaa3311a0b; Showboat db42033f319844c08ad103befebfca08; Abyssos a23f0a9d6799480e994284416d354713; SharkLoader 6ed57963d0c64750aa14b6fcbaa2e576.
@@ -147,7 +147,7 @@ https://www.kaspersky.com/about/press-releases/kaspersky-discovers-argamal-a-new
 Research repository: https://github.com/theworker02/emerging-threat-watch-1
 Package folder: reports/law-enforcement/packages/12-argamal/
 Full structured dossier: IC3_FULL_PACKAGE.md
-Machine-readable indicators: 03_INDICATORS.csv (22 ARG-IND rows)
+Machine-readable indicators: 03_INDICATORS.csv (34 ARG-IND rows)
 Caveats: 05_CAVEATS_AND_LIMITS.md
 Crime-type language: Malware; Unauthorized network intrusion / remote access; Credential theft.
 Dollar loss: $0 / none claimed. Personal victimization: No.
@@ -167,7 +167,21 @@ Ending: ongoing / unknown
 
 ## 12. Complainant contact
 
-Use **your** real name, phone, email, and mailing address (IC3 required). Do not enter SSN/DOB.
+Paste from the **gitignored** local profile (do not commit PII):
+
+`reports/law-enforcement/private/COMPLAINANT_PROFILE.md`
+
+Per-package copy: `reports/law-enforcement/private/filing-helpers/<NN-family>/00_COMPLAINANT_CONTACT.md`
+
+| Field | Source |
+|-------|--------|
+| Full legal name / phone / email / mailing address | `COMPLAINANT_PROFILE.md` (filled) |
+| Filing capacity | Individual / researcher — defensive TI (Emerging Threat Watch) |
+| Business victim? | No |
+| Critical infrastructure disruption? | No / unknown |
+| Personal victimization? | No |
+| Total loss | 0 / None |
+| SSN / DOB | **Do not enter** |
 
 ## After filing
 

@@ -31,3 +31,11 @@ Full table: `03_INDICATORS.csv` (22 ARG-IND rows). Dossier: `IC3_FULL_PACKAGE.md
 1. Treat as defensive threat-intelligence referral material (not yet filed unless separately recorded).
 2. Keep **separate** from other ETW packages.
 3. Do not invent additional IOCs beyond the primary freeze.
+
+## Evidence inventory (ETW retained)
+
+- **Package ID:** `ETW-ARG-IC3` / folder `12-argamal`
+- **PRIMARY-SOURCE indicators in `03_INDICATORS.csv`:** **34** rows (**sha1** ×20, **domain** ×3, **url** ×3, **ipv4** ×2, **filename** ×2, **port** ×2, **crypto_constant** ×1, **path** ×1)
+- **Provenance rule:** Indicators are transcribed from public vendor research only. ETW has **not** executed malware and has **not** contacted suspected C2.
+- **Local freezes:** `evidence/primary-sources/argamal/` (and dual refs where noted)
+- **Caveats:** See `05_CAVEATS_AND_LIMITS.md` — author/operator identity remains NOT_ESTABLISHED by ETW unless a court/LE source states otherwise.
