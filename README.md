@@ -88,6 +88,15 @@ Seven **active** investigation trees under `investigations/`:
 
 ## Candidate / comparator packages (primary-frozen)
 
+
+
+### Sparse-corpus expansion (2026-09-21)
+
+- **Packages 16–30:** CountLoader, MAYBEROBOT/NOROBOT/YESROBOT, Tsundere, MonsterV2, PhantomHeart, ABCDoor, MiniUpdate/MiniJunk V2, HEAVYGRAM, CHOSEN BRICK, PromptSpy, GhostChat, HybridPetya — see [`docs/CANDIDATE_FAMILIES.md`](docs/CANDIDATE_FAMILIES.md).
+- **Packages 43–66:** Foxveil, GhostContainer, Dohdoor, GopherWhisper tools, LongNosedGoblin tools, UAT-9244 (TernDoor/PeerTime/BruteEntry), UNC1069 trio, NightLedger/ArcBridge/BridgeHead, Fooder/MuddyViper, MiniBrowse, plus CANDIDATE stubs.
+- **Packages 31–42:** Prior deep-research freezes (MovieReaper … kkRAT).
+- **Attribution is metadata** (`docs/attribution.md` / `attribution.csv`) — not nationality-based folders. HEAVYGRAM vs CHOSEN BRICK kept as separate contested-alias packages.
+
 Former empty stubs **09–15** now have frozen primaries and transcribed IOCs (`PRIMARY_FROZEN`). They are **not IC3-filed** until a human files them. Matanbuchus remains a SynkLoader technique comparator only.
 
 | Family | Kind | Why tracked |

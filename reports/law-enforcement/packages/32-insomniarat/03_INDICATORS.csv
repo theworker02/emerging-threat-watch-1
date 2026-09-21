@@ -1,0 +1,13 @@
+indicator_id,type,value,notes,source
+INS-IND-0001,sha256,3052bd320a34e12ee694811ed0578797477dfd480c664491e509ed15ce1a6961,eld0.exe Insomnia initial loader,Palo Alto Networks Unit 42
+INS-IND-0002,sha256,25558ea78c4aa0fdd0f45fafcaa546d3115dc5806809d144a5801a40e48fd4c5,eld0.tmp unpacked,Palo Alto Networks Unit 42
+INS-IND-0003,sha256,9b0d9cbc0fd4a7bae8b78a15dfbe63052779414ad725845732c4a0083008da69,a.dll,Palo Alto Networks Unit 42
+INS-IND-0004,sha256,ceb30a5eb9ad9d9c6712c80726df16f96f99d9fc0753be241b00b4d636eb576e,t.ps1,Palo Alto Networks Unit 42
+INS-IND-0005,sha256,cf184d04ca31fb2b6b7efd85399c29c1136b539153e137ceb3877b1b905791de,Python agent .py,Palo Alto Networks Unit 42
+INS-IND-0006,sha256,62d49d0c78207ec2452cc8a30501db771c9edbae89889e41a7dd227551243e8e,aa.js Node agent,Palo Alto Networks Unit 42
+INS-IND-0007,domain,stryper.info,PS/Node host,Palo Alto Networks Unit 42
+INS-IND-0008,domain,aa.amazingshield.xyz,Python agent host,Palo Alto Networks Unit 42
+INS-IND-0009,domain,crowdstri.com,Python C2 typosquat,Palo Alto Networks Unit 42
+INS-IND-0010,url,https://stryper.info/t.ps1,stage-2 PS,Palo Alto Networks Unit 42
+INS-IND-0011,url,https://stryper.info/aa.js,Node agent,Palo Alto Networks Unit 42
+INS-IND-0012,url,http://aa.amazingshield.xyz/33244556546.py,Python agent,Palo Alto Networks Unit 42

@@ -1,0 +1,6 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+5b998a5bc5ad1c550564294034d4a62c,md5,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,Earliest ABCDoor late 2024,abcdoor
+abc.haijing88.com,domain,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,lure,abcdoor
+abc.fetish-friends.com,domain,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,ABCDoor staging,abcdoor
+154.82.81.205,ip,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,archive host,abcdoor
+https://abc.fetish-friends.com/setup/install,url,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,Go stager,abcdoor

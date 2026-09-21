@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+rs2y15sungu.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,DGA/distribution,mltbackdoor
+carrolc.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,C2,mltbackdoor
+cwrtwright.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,C2,mltbackdoor
+thomphon.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,C2,mltbackdoor

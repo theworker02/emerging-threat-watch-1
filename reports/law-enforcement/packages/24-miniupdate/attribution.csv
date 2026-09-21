@@ -1,0 +1,2 @@
+claim,confidence,source,aliases,lineage_notes,nationality_folder
+"Screening Serpens / UNC1549 / Nimbus Manticore (vendor cluster names)","Medium-High (vendor)","Unit 42 / Check Point","UpdateChecker.dll; overlaps MiniFast (Check Point) — do NOT merge packages","Sibling to MiniJunk V2 — COMMON TECHNIQUE / lineage assessment only","NONE — metadata only"

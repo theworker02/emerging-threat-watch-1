@@ -1,0 +1,5 @@
+indicator_id,type,value,notes,source
+DOC-IND-0001,sha256,2c6e11027b011042c9a118fc20728f8f4ebb6be8795cc84cc9a45622c297d354,eld2.exe,Palo Alto Networks Unit 42
+DOC-IND-0002,sha256,553ce594c9c6afdd4794fddc28c194e3bc3c1b052310e5099c58ac15bab72104,eld2.tmp,Palo Alto Networks Unit 42
+DOC-IND-0003,sha256,fdcc95b7791c0d6590dcf1a412dc9fcc92ad2095818d1b78368b31efad012007,Adblock.dll,Palo Alto Networks Unit 42
+DOC-IND-0004,path,%TEMP%\\Adblock.dll,HMAC bypass DLL,Palo Alto Networks Unit 42

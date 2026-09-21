@@ -38,3 +38,57 @@ Promote a candidate only after: primary URL freeze, case-isolation ID prefixes a
 ## Underground / tracker OSINT
 
 Commodity RAT marketplace and tracker collection methodology (defensive only): [shared/methodology/UNDERGROUND_AND_COMMODITY_RAT_OSINT.md](../shared/methodology/UNDERGROUND_AND_COMMODITY_RAT_OSINT.md). Tracker query seeds: [shared/queries/tracker_collection_seeds.csv](../shared/queries/tracker_collection_seeds.csv). Bound by [AUTONOMOUS_COLLECTION_POLICY.md](../shared/methodology/AUTONOMOUS_COLLECTION_POLICY.md).
+
+
+## Sparse-corpus expansion (2026-09-21)
+
+Packages are numbered independently of nationality. **Attribution is metadata** (`investigations/*/docs/attribution.md` and `packages/*/attribution.csv`).
+
+### Packages 16–30 (priority young-corpus leads)
+
+| Pkg | Family | Status |
+|-----|--------|--------|
+| 16 | CountLoader | PRIMARY_FROZEN (Silent Push) |
+| 17 | MAYBEROBOT | PRIMARY_FROZEN (Google GTIG) |
+| 18 | NOROBOT | PRIMARY_FROZEN (Google GTIG) |
+| 19 | YESROBOT | PRIMARY_FROZEN (lineage vs MAYBEROBOT) |
+| 20 | Tsundere Bot | PRIMARY_FROZEN (Proofpoint) |
+| 21 | MonsterV2 | PRIMARY_FROZEN (Proofpoint; IOC harvest OPEN) |
+| 22 | PhantomHeart | PRIMARY_FROZEN (Kaspersky RU) |
+| 23 | ABCDoor | PRIMARY_FROZEN (Kaspersky) |
+| 24 | MiniUpdate | PRIMARY_FROZEN (Unit 42; not merged with MiniFast) |
+| 25 | MiniJunk V2 | PRIMARY_FROZEN (Unit 42) |
+| 26 | HEAVYGRAM | PRIMARY_FROZEN (FBI FLASH PDF) |
+| 27 | CHOSEN BRICK | PRIMARY_FROZEN (NCSC); contested alias vs HEAVYGRAM — separate |
+| 28 | PromptSpy | PRIMARY_FROZEN (ESET) |
+| 29 | GhostChat | PRIMARY_FROZEN (ESET) |
+| 30 | HybridPetya | PRIMARY_FROZEN (ESET) |
+
+### Packages 31–42
+
+Prior deep-research freezes (MovieReaper, Insomnia RAT, ARKTunnel, Docro, OfferLoader, GenieLocker, DenoRAT, MLTBackdoor, C2Looper, SmartRAT, PAPERMILL, kkRAT).
+
+### Packages 43–66 (additional sparse leads)
+
+| Pkg | Family | Notes |
+|-----|--------|-------|
+| 43 | Foxveil | Cato PRIMARY WAF-blocked; SOCPrime SECONDARY freeze |
+| 44 | PhantomPyramid | CANDIDATE — PRIMARY URL gap |
+| 45 | GhostContainer | Kaspersky Exchange backdoor |
+| 46 | Dohdoor | Talos UAT-10027 DoH C2 |
+| 47–48 | LaxGopher / FriendDelivery | ESET GopherWhisper |
+| 49–50 | NosyDoor / NosyHistorian | ESET LongNosedGoblin |
+| 51–53 | TernDoor / PeerTime / BruteEntry | Talos UAT-9244 |
+| 54–56 | SILENCELIFT / DEEPBREATH / CHROMEPUSH | UNC1069 via THN secondary (Mandiant PRIMARY gap) |
+| 57–59 | NightLedger / ArcBridge / BridgeHead | Mirage Kitten; isolated from NodeRabbit/PollCat |
+| 60–61 | Fooder / MuddyViper | ESET MuddyWater |
+| 62 | MiniBrowse | Unit 42 Screening Serpens context |
+| 63–66 | ZeronetKit / PaperGrabber / PowerLoader / Atlas RAT | CANDIDATE stubs — PRIMARY gaps |
+
+**Argamal** remains package `12-argamal` (already PRIMARY_FROZEN) — not duplicated as 40.
+
+### South Asia branch (follow-on)
+
+APT36 / Transparent Tribe tooling evolution (Linux `.desktop` delivery; Go Poseidon-class backdoors when PRIMARY confirms) tracked as future package after dedicated PRIMARY freeze — do not invent Poseidon IOCs from older PoSeidon POS malware.
+
+Machine-readable: [`intelligence/candidate-families.csv`](../intelligence/candidate-families.csv).

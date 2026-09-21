@@ -1,0 +1,6 @@
+indicator_id,type,value,notes,source
+ABC-IND-0001,md5,5b998a5bc5ad1c550564294034d4a62c,Earliest ABCDoor late 2024,Kaspersky
+ABC-IND-0002,domain,abc.haijing88.com,lure,Kaspersky
+ABC-IND-0003,domain,abc.fetish-friends.com,ABCDoor staging,Kaspersky
+ABC-IND-0004,ip,154.82.81.205,archive host,Kaspersky
+ABC-IND-0005,url,https://abc.fetish-friends.com/setup/install,Go stager,Kaspersky

@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+94.159.113.37,ip,,,Proofpoint,High,tsunderebot,CAMPAIGN ASSOCIATED,campaign infra per Proofpoint IOC section,tsunderebot
+http://94.159.113.37/ssd.png,url,,,Proofpoint,High,tsunderebot,CAMPAIGN ASSOCIATED,staging,tsunderebot

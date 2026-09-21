@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+154.36.188.201,ip,,,JUMPSEC,High,papermill,CAMPAIGN ASSOCIATED,VenomRAT C2 :4449,papermill
+103.119.15.189,ip,,,JUMPSEC,High,papermill,CAMPAIGN ASSOCIATED,related C2,papermill

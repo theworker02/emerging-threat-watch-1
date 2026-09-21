@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+17bfe335b2f9037849fda87ae0a7909921a96d8abfafa8111dc5da63cbf11eda,sha256,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,.NET twitter1.exe,countloader
+app-updater.app,domain,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,C2 pattern,countloader
+ms-team-ping2.com,domain,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,C2 exemplar,countloader
+ms-team-connect2.com,domain,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,task host,countloader

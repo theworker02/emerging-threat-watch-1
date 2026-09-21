@@ -38,3 +38,12 @@
 5. Keep case isolation except trust-surface / COMMON TECHNIQUE comparisons. PollCat pivots do **not** auto-seed NodeRabbit.
 
 See `intelligence/priority-gaps.csv`, `docs/CANDIDATE_FAMILIES.md`, and per-family `gaps/priority-gaps.csv`.
+
+## Sparse-corpus expansion (2026-09-21)
+
+- Packages **16–30** and **43–66** added for young/obscure families; packages **31–42** retain prior deep-research freezes.
+- Attribution stored as metadata only (`docs/attribution.md`, `attribution.csv`) — no nationality-based package trees.
+- HEAVYGRAM and CHOSEN BRICK remain **separate** packages (contested alias).
+- MiniUpdate / MiniJunk V2 / MiniBrowse **not merged** with existing MiniFast (11).
+- NightLedger / ArcBridge / BridgeHead **not merged** with NodeRabbit/PollCat.
+- Open: Cato Foxveil PRIMARY (WAF), Mandiant UNC1069 PRIMARY HTML, PhantomPyramid/ZeronetKit/PaperGrabber/PowerLoader/Atlas RAT PRIMARY URLs, IOC harvest for zero-IND PRIMARY_FROZEN packages, APT36 Poseidon Linux branch.

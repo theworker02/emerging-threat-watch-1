@@ -1,0 +1,6 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+f96ff2f3abbff7f382ace509b90e54853b4b61c402ecde27d82f1c17b414867b,sha256,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,latest variant,c2looper
+20675a659c338f7267fd09bacb431f4491f061d3acf42d07aca2dec3d25fa549,sha256,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,debug build,c2looper
+f59f32c9af4fa8a5dbd4668df8893593bc0c4324816cbf9b956acedcbfb8cdb6,sha256,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,older variant,c2looper
+45.158.196.23,ip,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,C2 :8888,c2looper
+45.158.196.184,ip,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,C2 :8888,c2looper

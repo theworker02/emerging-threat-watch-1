@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+45.158.196.23,ip,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,C2 :8888,c2looper
+45.158.196.184,ip,,,Zscaler ThreatLabz,High,c2looper,CAMPAIGN ASSOCIATED,C2 :8888,c2looper

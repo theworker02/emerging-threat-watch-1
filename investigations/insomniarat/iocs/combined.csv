@@ -1,0 +1,13 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+3052bd320a34e12ee694811ed0578797477dfd480c664491e509ed15ce1a6961,sha256,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,eld0.exe Insomnia initial loader,insomniarat
+25558ea78c4aa0fdd0f45fafcaa546d3115dc5806809d144a5801a40e48fd4c5,sha256,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,eld0.tmp unpacked,insomniarat
+9b0d9cbc0fd4a7bae8b78a15dfbe63052779414ad725845732c4a0083008da69,sha256,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,a.dll,insomniarat
+ceb30a5eb9ad9d9c6712c80726df16f96f99d9fc0753be241b00b4d636eb576e,sha256,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,t.ps1,insomniarat
+cf184d04ca31fb2b6b7efd85399c29c1136b539153e137ceb3877b1b905791de,sha256,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python agent .py,insomniarat
+62d49d0c78207ec2452cc8a30501db771c9edbae89889e41a7dd227551243e8e,sha256,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,aa.js Node agent,insomniarat
+stryper.info,domain,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,PS/Node host,insomniarat
+aa.amazingshield.xyz,domain,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python agent host,insomniarat
+crowdstri.com,domain,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python C2 typosquat,insomniarat
+https://stryper.info/t.ps1,url,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,stage-2 PS,insomniarat
+https://stryper.info/aa.js,url,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Node agent,insomniarat
+http://aa.amazingshield.xyz/33244556546.py,url,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python agent,insomniarat

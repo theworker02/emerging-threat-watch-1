@@ -1,0 +1,13 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+1e41c7bfaa6aa3b93b6cc024274a10e33f3e12fe7c98c1db387ef8927f9d1984,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,stage-one loader,mltbackdoor
+46b2155c1e71b840d4b7a2e94410b89a61e2446523e6f497206d402eb02e0e93,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,archive stage-one + encrypted,mltbackdoor
+9e52cc90cff150abe21f0a6440e86e0a99ff383b81061b96def8948e21d0ac66,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,MLTBackdoor domains+DGA,mltbackdoor
+ced6b0f44410f6133ad63b61e04613a8b56cc3338d7b34497540e9541163e7ec,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,DGA only,mltbackdoor
+1d09357b6a096fdc35cd5c873eed15665d6b3c879d20c8cf01e6bca0005512cf,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,DGA only,mltbackdoor
+2cd88d5280a61714836f5f07a16df190911c5b952af2998dbbcda910b3b1c494,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,domains only,mltbackdoor
+d34e4038c5c80728f9648ba84833f69bc1ccea82e2e8e748b7b7f02fb687b92b,sha256,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,update sideload archive,mltbackdoor
+rs2y15sungu.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,DGA/distribution,mltbackdoor
+carrolc.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,C2,mltbackdoor
+cwrtwright.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,C2,mltbackdoor
+thomphon.com,domain,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,C2,mltbackdoor
+https://powwowski.com/payloads/update.zip,url,,,Zscaler ThreatLabz,High,mltbackdoor,CAMPAIGN ASSOCIATED,update URL,mltbackdoor

@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+columbnezhjdq.com,domain,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,ClickFix,denorat
+webstizkgao.com,domain,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,DinDoor/DenoRAT C2,denorat
+smallsmokik.com,domain,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,NightshadeC2 dead-drop,denorat

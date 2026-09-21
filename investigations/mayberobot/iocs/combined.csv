@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+b60100729de2f468caf686638ad513fe28ce61590d2b0d8db85af9edc5da98f9,sha256,,,Google GTIG,High,mayberobot,CAMPAIGN ASSOCIATED,Obfuscated MAYBEROBOT,mayberobot
+southprovesolutions.com,domain,,,Google GTIG,High,mayberobot,CAMPAIGN ASSOCIATED,MAYBEROBOT C2,mayberobot

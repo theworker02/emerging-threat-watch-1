@@ -1,0 +1,11 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+2e74f6bd9bf73131d3213399ed2f669ec5f75392de69edf8ce8196cd70eb6aee,sha256,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,iamnotarobot.dll May 2025,norobot
+3b49904b68aedb6031318438ad2ff7be4bf9fd865339330495b177d5c4be69d1,sha256,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,checkme.dll June 2025,norobot
+e9c8f6a7dba6e84a7226af89e988ae5e4364e2ff2973c72e14277c0f1462109b,sha256,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,checkme.dll June 2025,norobot
+f2da013157c09aec9ceba1d4ac1472ed049833bc878a23bc82fe7eacbad399f4,sha256,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,machinerie.dll,norobot
+87138f63974a8ccbbf5840c31165f1a4bf92a954bacccfbf1e7e5525d750aa48,sha256,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,machinerie.dll late Aug,norobot
+c4d0fba5aaafa40aef6836ed1414ae3eadc390e1969fdcb3b73c60fe7fb37897,sha256,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,COLDCOPY ClickFix lure,norobot
+inspectguarantee.org,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,delivery,norobot
+captchanom.top,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,delivery,norobot
+viewerdoconline.com,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,COLDCOPY,norobot
+documentsec.com,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,COLDCOPY,norobot

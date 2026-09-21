@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+154.44.30.27,ip,,,Zscaler ThreatLabz,High,kkrat,CAMPAIGN ASSOCIATED,kkRAT C2 :8250,kkrat

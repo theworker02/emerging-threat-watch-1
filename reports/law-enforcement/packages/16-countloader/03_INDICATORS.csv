@@ -1,0 +1,5 @@
+indicator_id,type,value,notes,source
+CTL-IND-0001,sha256,17bfe335b2f9037849fda87ae0a7909921a96d8abfafa8111dc5da63cbf11eda,.NET twitter1.exe,Silent Push
+CTL-IND-0002,domain,app-updater.app,C2 pattern,Silent Push
+CTL-IND-0003,domain,ms-team-ping2.com,C2 exemplar,Silent Push
+CTL-IND-0004,domain,ms-team-connect2.com,task host,Silent Push

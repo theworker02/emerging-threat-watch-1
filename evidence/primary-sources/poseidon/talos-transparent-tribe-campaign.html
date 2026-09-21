@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Transparent Tribe campaign uses new bespoke malware to target Indian government officials</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/bootstrap.min.css?v=-xdjtZ-fV2QpS1r5">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/navigation.css?v=PhzoiGnw4ldwozL1">
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/footer.css?v=sVEdldiwj6rF6gHP">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/pagination.css?v=HruyeF1JUFuoy6Wu">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/banners.css?v=vI3KT68RWE95HKDs">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/style.css?v=idjnUZoOumC94rdj">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/prism.css?v=jqyaOB6z6CqMaOT4">
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/prism-vsc-dark-plus.css?v=xoEFwaYF1JkH_sqf">
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/prism-talos.css?v=kn8aYcNhO045nXac">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/landing-page.css?v=EPtrK0eJwYLqD25v">
+
+    <link rel="stylesheet" href="https://blog.talosintelligence.com/assets/css/coverage-block.css?v=vBgCqINSTHrSh9PX">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/ghost-theme-utils@latest/dist/css/style.min.css" rel="stylesheet">
+
+
+    <link rel="icon" href="https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w256h256/2022/07/talos_o_square.png" type="image/png">
+    <link rel="canonical" href="https://blog.talosintelligence.com/transparent-tribe-new-campaign/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Cisco Talos Blog">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Transparent Tribe campaign uses new bespoke malware to target Indian government officials">
+    <meta property="og:description" content="By Asheer Malhotra and Justin Thattil with contributions from Kendall McKay.
+
+
+
+ * Cisco Talos has observed a new Transparent Tribe campaign targeting Indian government and military entities. While the actors are infecting victims with CrimsonRAT, their well-known malware of choice, they are also using new stagers and implants.
+ * This campaign,">
+    <meta property="og:url" content="https://blog.talosintelligence.com/transparent-tribe-new-campaign/">
+    <meta property="og:image" content="https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w1200/img/b/R29vZ2xl/AVvXsEje6w0YGQwPsg4lUTVZxXXyNj8mDYl7vUWq8sPfAWJrAjBt3P5OnwXKogP23nirlT0ZojvWSktKn4TJAjPBgLMxdOmX6YeaolEzvurN_N7fdSpeuaGJHNuSW-YMnf07JGxJ0pFkbeQdkcKXt7F83X8upi6-MvqPAVTLPkPG5kSzr89iO7KKPi6QqmNsDA/s2000/image8.jpg">
+    <meta property="article:published_time" content="2022-03-29T12:01:00.000Z">
+    <meta property="article:modified_time" content="2022-12-22T17:16:10.000Z">
+    <meta property="article:tag" content="Threat Spotlight">
+    <meta property="article:tag" content="RAT">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Transparent Tribe campaign uses new bespoke malware to target Indian government officials">
+    <meta name="twitter:description" content="By Asheer Malhotra and Justin Thattil with contributions from Kendall McKay.
+
+
+
+ * Cisco Talos has observed a new Transparent Tribe campaign targeting Indian government and military entities. While the actors are infecting victims with CrimsonRAT, their well-known malware of choice, they are also using new stagers and implants.
+ * This campaign,">
+    <meta name="twitter:url" content="https://blog.talosintelligence.com/transparent-tribe-new-campaign/">
+    <meta name="twitter:image" content="https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w1200/img/b/R29vZ2xl/AVvXsEje6w0YGQwPsg4lUTVZxXXyNj8mDYl7vUWq8sPfAWJrAjBt3P5OnwXKogP23nirlT0ZojvWSktKn4TJAjPBgLMxdOmX6YeaolEzvurN_N7fdSpeuaGJHNuSW-YMnf07JGxJ0pFkbeQdkcKXt7F83X8upi6-MvqPAVTLPkPG5kSzr89iO7KKPi6QqmNsDA/s2000/image8.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Asheer Malhotra">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Threat Spotlight, RAT">
+    <meta name="twitter:site" content="@TalosSecurity">
+    <meta name="twitter:creator" content="@asheermalhotra">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="593">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Cisco Talos Blog",
+        "url": "https://blog.talosintelligence.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/2022/11/TalosBrand_ukraine.svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Asheer Malhotra",
+        "url": "https://blog.talosintelligence.com/author/asheer-malhotra/",
+        "sameAs": [
+            "https://x.com/asheermalhotra"
+        ]
+    },
+    "contributor": [
+        {
+            "@type": "Person",
+            "name": "Kendall McKay",
+            "url": "https://blog.talosintelligence.com/author/kendall/",
+            "sameAs": []
+        }
+    ],
+    "headline": "Transparent Tribe campaign uses new bespoke malware to target Indian government officials",
+    "url": "https://blog.talosintelligence.com/transparent-tribe-new-campaign/",
+    "datePublished": "2022-03-29T12:01:00.000Z",
+    "dateModified": "2022-12-22T17:16:10.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://storage.ghost.io/c/af/a0/afa04ee3-414f-4481-8d23-7e7c146f192e/content/images/size/w1200/img/b/R29vZ2xl/AVvXsEje6w0YGQwPsg4lUTVZxXXyNj8mDYl7vUWq8sPfAWJrAjBt3P5OnwXKogP23nirlT0ZojvWSktKn4TJAjPBgLMxdOmX6YeaolEzvurN_N7fdSpeuaGJHNuSW-YMnf07JGxJ0pFkbeQdkcKXt7F83X8upi6-MvqPAVTLPkPG5kSzr89iO7KKPi6QqmNsDA/s2000/image8.jpg",
+        "width": 1200,
+        "height": 593
+    },
+    "keywords": "Threat Spotlight, RAT",
+    "description": "By Asheer Malhotra and Justin Thattil with contributions from Kendall McKay.\n\n\n\n * Cisco Talos has observed a new Transparent Tribe campaign targeting Indian government and military entities. While the actors are infecting victims with CrimsonRAT, their well-known malware of choice, they are also using new stagers and implants.\n * This campaign, which has been ongoing since at least June 2021, uses fake domains mimicking legitimate government and related organizations to deliver malicious payloa",
+    "mainEntityOfPage": "https://blog.talosintelligence.com/transparent-tribe-new-campaign/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.64">
+    <link rel="alternate" type="application/rss+xml" title="Cisco Talos Blog" href="https://blog.talosintelligence.com/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/sodo-search.min.js" data-key="4ffb0139d74ada998f4b141e4d" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.8/umd/main.css" data-sodo-search="https://cisco-talos-blog.ghost.io/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://blog.talosintelligence.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=ShRHxgy4po8zN-Wf"></script>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=WwnU9jw5ancNC8Gc">
+    <script defer src="/public/ghost-stats.min.js?v=vFcCUf6ZQ0Hyhc8h" data-stringify-payload="false" data-datasource="analytics_events" data-storage="localStorage" data-host="https://blog.talosintelligence.com/.ghost/analytics/api/v1/page_hit"  tb_site_uuid="afa04ee3-414f-4481-8d23-7e7c146f192e" tb_post_uuid="778cb828-40ab-40b3-8204-e3004d447820" tb_post_type="post" tb_member_uuid="undefined" tb_member_status="undefined" tb_gift_link=""></script><style>:root {--ghost-accent-color: #006db6;}</style>
+    <style type='text/css'>
+    img[src*="icon_check_white.svg"] { width: 20px; margin-left: 0px; margin-right: auto; }
+    
+    #ghost-portal-root { display: none; }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F45RVJG3BK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F45RVJG3BK');
+</script>
+</head>
+
+<body class="post-template tag-threat-spotlight tag-rat">
+
+    <div id="mobile-page-header" class="desktop-hide mobile-page-header">
+    <a class="mobile-nav-home-link" href="/">
+        <div class="mobile-logo-wrapper">
+        </div>
+        <div class="mobile-home-title">Blog</div>
+    </a>
+    <div id="mobile-search-wrapper">
+        <button class="search-button mobile-search-button" data-ghost-search>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        </button>
+    </div>
+</div>
+
+<nav id="nav">
+    <input id="nav-trigger" class="nav-trigger" type="checkbox"/>
+    <label for="nav-trigger">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="0 0 22 16">
+            <g id="menu-icon">
+                <path fill="#FFFFFF" d="M20.5,3h-19C0.672,3,0,2.329,0,1.5S0.672,0,1.5,0h19C21.328,0,22,0.671,22,1.5S21.328,3,20.5,3z"></path>
+                <path fill="#FFFFFF" d="M20.5,9.5h-19C0.672,9.5,0,8.828,0,8c0-0.829,0.672-1.5,1.5-1.5h19C21.328,6.5,22,7.171,22,8   C22,8.828,21.328,9.5,20.5,9.5z"></path>
+                <path fill="#FFFFFF" d="M20.5,16h-19C0.672,16,0,15.328,0,14.5S0.672,13,1.5,13h19c0.828,0,1.5,0.672,1.5,1.5S21.328,16,20.5,16z"></path>
+            </g>
+        </svg>
+    </label>
+    <div id="top-nav-bar">
+    </div>
+
+    <div id="navigation">
+        <div class="navigation-logos-wrapper">
+            <div id="talos-logo-wrapper">
+                <a class="navbar-brand" href="https://talosintelligence.com">
+                </a>
+            </div>
+        </div>
+        <div class="navigation-links-wrapper">
+            <ul class="main-nav-list">
+                <li class="nav-item">
+                    <div class="primary-link-wrapper">
+                        <a class="primary_nav_link" href="https://talosintelligence.com/reputation">
+                            <div class="mobile-nav-icon"><!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" height="20px" width="20px" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                            <style type="text/css">
+                                .white{fill:#FFFFFF;}
+                            </style>
+                            <g>
+                                <path class="white" d="M19.5,9.5h-1.1c-0.3-4.2-3.6-7.6-7.8-7.8V0.5C10.5,0.2,10.3,0,10,0l0,0C9.7,0,9.5,0.2,9.5,0.5l0,0v1.1   C5.3,1.9,1.9,5.3,1.6,9.5H0.5C0.2,9.5,0,9.7,0,10s0.2,0.5,0.5,0.5l0,0h1.1c0.3,4.2,3.6,7.6,7.8,7.8v1.1c0,0.3,0.2,0.5,0.5,0.5l0,0   c0.3,0,0.5-0.2,0.5-0.5l0,0v-1.1c4.2-0.3,7.6-3.6,7.8-7.8h1.1c0.3,0,0.5-0.2,0.5-0.5C20,9.7,19.8,9.5,19.5,9.5 M16.6,10.5h0.7   c-0.3,3.6-3.2,6.5-6.8,6.8v-0.8c0-0.3-0.2-0.5-0.5-0.5l0,0c-0.3,0-0.5,0.2-0.5,0.5v0.8C5.8,17,3,14.2,2.7,10.5h0.8   C3.8,10.5,4,10.3,4,10S3.8,9.5,3.5,9.5l0,0H2.7C3,5.8,5.8,3,9.5,2.7v0.8C9.5,3.7,9.7,4,10,4l0,0c0.3,0,0.5-0.2,0.5-0.5V2.7   C14.2,3,17,5.8,17.3,9.5h-0.7c-0.3,0-0.5,0.2-0.5,0.5C16.1,10.3,16.3,10.5,16.6,10.5L16.6,10.5"></path>
+                                                            <circle class="white" cx="10" cy="10" r="3.2"></circle>
+                            </g>
+                            </svg>
+                            </div>
+                            <span class="top-nav-link-text">
+                                Intelligence Center
+                            </span>
+                        </a>
+                    </div>
+                    <input class="sub-nav-trigger" id="intelligence-sub-trigger" type="checkbox">
+                    <label class="sub-nav-trigger-label" for="intelligence-sub-trigger">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167px" height="47.75px" viewBox="0 0 48.167 47.75">
+                            <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.083" cy="23.875" r="22"></circle>
+                            <g>
+                                <circle fill="#FFFFFF" cx="24.083" cy="16.068" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="23.875" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="31.682" r="2.496"></circle>
+                            </g>
+                        </svg>
+
+                    </label>
+                    <ul class="sub-nav sub-nav-single-list">
+                        <li class="desktop-hide">
+                            <a class="mobile_nav_link" href="https://talosintelligence.com/reputation"><h1>Intelligence Center</h1>
+                            </a></li>
+                        <li class="desktop-hide">
+                            <label class="subnav-back-button" for="intelligence-sub-trigger">BACK</label>
+                        </li>
+                        <li><a class="secondary_nav_link" href="https://talosintelligence.com/reputation_center">Intelligence Search</a></li>
+                        <li><a class="secondary_nav_link" href="https://talosintelligence.com/reputation_center/email_rep">Email &amp; Spam Trends</a></li>
+                    </ul>
+                    <div class="desktop-hide subnav-overlay"><!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" height="20px" width="20px" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                        <style type="text/css">
+                            .white{fill:#FFFFFF;}
+                        </style>
+                                                <g>
+                            <path class="white" d="M19.5,9.5h-1.1c-0.3-4.2-3.6-7.6-7.8-7.8V0.5C10.5,0.2,10.3,0,10,0l0,0C9.7,0,9.5,0.2,9.5,0.5l0,0v1.1   C5.3,1.9,1.9,5.3,1.6,9.5H0.5C0.2,9.5,0,9.7,0,10s0.2,0.5,0.5,0.5l0,0h1.1c0.3,4.2,3.6,7.6,7.8,7.8v1.1c0,0.3,0.2,0.5,0.5,0.5l0,0   c0.3,0,0.5-0.2,0.5-0.5l0,0v-1.1c4.2-0.3,7.6-3.6,7.8-7.8h1.1c0.3,0,0.5-0.2,0.5-0.5C20,9.7,19.8,9.5,19.5,9.5 M16.6,10.5h0.7   c-0.3,3.6-3.2,6.5-6.8,6.8v-0.8c0-0.3-0.2-0.5-0.5-0.5l0,0c-0.3,0-0.5,0.2-0.5,0.5v0.8C5.8,17,3,14.2,2.7,10.5h0.8   C3.8,10.5,4,10.3,4,10S3.8,9.5,3.5,9.5l0,0H2.7C3,5.8,5.8,3,9.5,2.7v0.8C9.5,3.7,9.7,4,10,4l0,0c0.3,0,0.5-0.2,0.5-0.5V2.7   C14.2,3,17,5.8,17.3,9.5h-0.7c-0.3,0-0.5,0.2-0.5,0.5C16.1,10.3,16.3,10.5,16.6,10.5L16.6,10.5"></path>
+                                                    <circle class="white" cx="10" cy="10" r="3.2"></circle>
+                        </g>
+                        </svg>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="primary-link-wrapper">
+                        <a class="primary_nav_link" href="https://talosintelligence.com/vulnerability_info"><div class="mobile-nav-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="20px" viewBox="0 0 26 20">
+                            <g id="vuln-icon" class="nav-icon">
+                                <path fill="#FFFFFF" d="M24.256,18.49L13.872,0.503C13.692,0.192,13.36,0,13,0c-0.359,0-0.692,0.192-0.872,0.503L1.744,18.49  c-0.18,0.312-0.18,0.695,0,1.006C1.924,19.809,2.257,20,2.616,20h20.769c0.359,0,0.691-0.191,0.871-0.504  C24.436,19.186,24.436,18.803,24.256,18.49 M14.268,18.215h-2.533v-1.85h2.533V18.215z M14.268,15.441h-2.533L10.89,6.515h4.222  L14.268,15.441z"></path>
+                            </g>
+                        </svg>
+                        </div>
+                            <span class="top-nav-link-text">
+                            Vulnerability Research
+                            </span>
+                        </a></div>
+                    <input class="sub-nav-trigger" id="vuln-sub-trigger" type="checkbox">
+                    <label class="sub-nav-trigger-label" for="vuln-sub-trigger">
+                        <div class="mobile-nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167px" height="47.75px" viewBox="0 0 48.167 47.75">
+                            <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.083" cy="23.875" r="22"></circle>
+                            <g>
+                                <circle fill="#FFFFFF" cx="24.083" cy="16.068" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="23.875" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="31.682" r="2.496"></circle>
+                            </g>
+                        </svg>
+                        </div>
+                    </label>
+                    <ul class="sub-nav sub-nav-single-list">
+                        <li class="desktop-hide">
+                            <a href="https://talosintelligence.com/vulnerability_info"><h1>Vulnerability Research</h1>
+                            </a></li>
+                        <li class="desktop-hide">
+                            <label class="subnav-back-button" for="vuln-sub-trigger">BACK</label>
+                        </li>
+                        <li><a class="vulnerabilty-info-nav-link" href="https://talosintelligence.com/vulnerability_reports">Vulnerability Reports</a></li>
+                        <li><a class="vulnerabilty-info-nav-link" href="https://talosintelligence.com/ms_advisories">Microsoft Advisories</a></li>
+                    </ul>
+                    <div class="desktop-hide subnav-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="20px" viewBox="0 0 26 20">
+                        <g id="vuln-icon" class="nav-icon">
+                            <path fill="#FFFFFF" d="M24.256,18.49L13.872,0.503C13.692,0.192,13.36,0,13,0c-0.359,0-0.692,0.192-0.872,0.503L1.744,18.49  c-0.18,0.312-0.18,0.695,0,1.006C1.924,19.809,2.257,20,2.616,20h20.769c0.359,0,0.691-0.191,0.871-0.504  C24.436,19.186,24.436,18.803,24.256,18.49 M14.268,18.215h-2.533v-1.85h2.533V18.215z M14.268,15.441h-2.533L10.89,6.515h4.222  L14.268,15.441z"></path>
+                        </g>
+                        </svg>
+                    </div>
+                </li>
+
+
+               <li class="nav-item">
+                   <div class="primary-link-wrapper">
+                        <a class="primary_nav_link" href="https://talosintelligence.com/incident_response">
+                           <div class="mobile-nav-icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="111.588" height="148.311" viewBox="0 0 111.588 148.311">
+                                    <path d="M1.181,128.446v15.7a4.167,4.167,0,0,0,4.167,4.167h100.9a4.167,4.167,0,0,0,4.167-4.167v-15.7a4.167,4.167,0,0,0-4.167-4.167H5.348a4.167,4.167,0,0,0-4.167,4.166M55.8,63.109a3.277,3.277,0,1,1,0,6.553c-10.344,0-20.755,8.578-20.755,18.57a3.277,3.277,0,1,1-6.554,0C28.489,73.947,41.93,63.109,55.8,63.109Zm0-12.016c-21.787,0-39.325,17.81-39.325,39.937v26.7H95.122V91.03c0-22.128-17.537-39.937-39.324-39.937m52.365-38.3a3.291,3.291,0,0,0-2.254,1.024L88.432,31.294a3.283,3.283,0,0,0,4.642,4.644l17.478-17.479a3.278,3.278,0,0,0-2.389-5.666m-105.138,0a3.276,3.276,0,0,0-1.98,5.666L18.522,35.938a3.283,3.283,0,0,0,4.643-4.644L5.687,13.817A3.255,3.255,0,0,0,3.025,12.793ZM55.389.026a3.276,3.276,0,0,0-2.867,3.345V19.642a3.277,3.277,0,1,0,6.554,0V3.371A3.283,3.283,0,0,0,55.389.026Z" fill="#fff"></path>
+                                </svg>
+                            </div>
+                            <span class="top-nav-link-text">
+                                Incident Response
+                            </span>
+                       </a>
+                   </div>
+                   <input class="sub-nav-trigger" id="ir-sub-trigger" type="checkbox">
+                   <label class="sub-nav-trigger-label" for="ir-sub-trigger">
+                       <div class="mobile-nav-icon">
+                           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167px" height="47.75px" viewBox="0 0 48.167 47.75">
+                                <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.083" cy="23.875" r="22"></circle>
+                               <g>
+                                <circle fill="#FFFFFF" cx="24.083" cy="16.068" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="23.875" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="31.682" r="2.496"></circle>
+                               </g>
+                           </svg>
+                       </div>
+                   </label>
+                   <ul class="sub-nav sub-nav-single-list">
+                       <li class="desktop-hide">
+                           <a href="/incident_response">
+                               <h1>Incident Response</h1>
+                           </a>
+                        </li>
+                       <li class="desktop-hide">
+                           <label class="subnav-back-button" for="ir-sub-trigger">BACK</label>
+                       </li>
+                       <li>
+                           <a class="secondary_nav_link" href="https://talosintelligence.com/incident_response/services#reactive-services">Reactive Services</a>
+                       </li>
+                       <li>
+                           <a class="secondary_nav_link" href="https://talosintelligence.com/incident_response/services#proactive-services">Proactive Services</a></li>
+                       <li>
+                           <a href="https://talosintelligence.com/incident_response/contact">Emergency Support</a>
+                        </li>
+                   </ul>
+                   <div class="desktop-hide subnav-overlay"><svg xmlns="http://www.w3.org/2000/svg" width="111.588" height="148.311" viewBox="0 0 111.588 148.311">
+                     <path d="M1.181,128.446v15.7a4.167,4.167,0,0,0,4.167,4.167h100.9a4.167,4.167,0,0,0,4.167-4.167v-15.7a4.167,4.167,0,0,0-4.167-4.167H5.348a4.167,4.167,0,0,0-4.167,4.166M55.8,63.109a3.277,3.277,0,1,1,0,6.553c-10.344,0-20.755,8.578-20.755,18.57a3.277,3.277,0,1,1-6.554,0C28.489,73.947,41.93,63.109,55.8,63.109Zm0-12.016c-21.787,0-39.325,17.81-39.325,39.937v26.7H95.122V91.03c0-22.128-17.537-39.937-39.324-39.937m52.365-38.3a3.291,3.291,0,0,0-2.254,1.024L88.432,31.294a3.283,3.283,0,0,0,4.642,4.644l17.478-17.479a3.278,3.278,0,0,0-2.389-5.666m-105.138,0a3.276,3.276,0,0,0-1.98,5.666L18.522,35.938a3.283,3.283,0,0,0,4.643-4.644L5.687,13.817A3.255,3.255,0,0,0,3.025,12.793ZM55.389.026a3.276,3.276,0,0,0-2.867,3.345V19.642a3.277,3.277,0,1,0,6.554,0V3.371A3.283,3.283,0,0,0,55.389.026Z" fill="#fff"></path>
+                   </svg>
+                </div>
+               </li>
+
+
+
+
+
+                <li class="nav-item">
+                    <a class="primary_nav_link" href="https://blog.talosintelligence.com">
+                        <div class="mobile-nav-icon">
+                        <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="260px" height="296.5px" viewBox="0 0 260 296.5" enable-background="new 0 0 260 296.5" xml:space="preserve">
+                        <path fill="#FFFFFF" d="M243.586,42.404h-14.448c-0.943-4.513-3.143-8.813-6.616-12.33L201.793,9.098  c-4.7-4.757-10.972-7.377-17.66-7.377c-6.578,0-12.777,2.547-17.457,7.173l-33.875,33.511H17.586c-6.6,0-12,5.399-12,12V226.28  c0,6.6,5.4,12,12,12H153.83l84.21,56.278l-27.448-56.278h32.994c6.6,0,12-5.4,12-12V54.404  C255.586,47.804,250.186,42.404,243.586,42.404z M214.662,48.045c-0.01,0.2-0.021,0.399-0.044,0.599  c-0.008,0.069-0.021,0.139-0.031,0.207c-0.046,0.345-0.113,0.688-0.196,1.026c-0.034,0.137-0.063,0.273-0.103,0.408  c-0.039,0.135-0.087,0.267-0.133,0.399c-0.051,0.151-0.102,0.302-0.16,0.45c-0.049,0.126-0.105,0.249-0.16,0.373  c-0.068,0.153-0.139,0.307-0.216,0.457c-0.059,0.116-0.12,0.23-0.184,0.345c-0.088,0.157-0.181,0.312-0.278,0.465  c-0.065,0.104-0.13,0.206-0.2,0.308c-0.115,0.168-0.239,0.33-0.366,0.492c-0.064,0.081-0.124,0.165-0.19,0.244  c-0.199,0.238-0.409,0.472-0.635,0.694L82.458,182.308l-47.932,12.871l13.427-47.74L177.223,19.561  c1.917-1.895,4.414-2.84,6.911-2.84c2.534,0,5.068,0.975,6.99,2.92l20.726,20.974c0.545,0.552,1.002,1.156,1.39,1.79  c0.574,0.938,0.975,1.951,1.206,2.993c0.004,0.021,0.01,0.04,0.014,0.06c0.049,0.226,0.086,0.453,0.119,0.682  c0.008,0.06,0.017,0.118,0.024,0.178c0.026,0.211,0.045,0.424,0.058,0.636c0.004,0.077,0.007,0.153,0.009,0.23  c0.007,0.203,0.011,0.407,0.005,0.61C214.673,47.877,214.666,47.961,214.662,48.045z"></path>
+                        </svg>
+                    </div>
+                        <span class="top-nav-link-text">Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="primary_nav_link" href="https://support.talosintelligence.com">
+                        <div class="mobile-nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="20px" viewBox="0 0 123.17 159.292">
+                            <path d="M61.59,0,0,17.069v85.32c0,23.472,61.59,56.9,61.59,56.9s61.58-36.288,61.58-56.9V17.069Zm-.433,149.746C38.314,136.662,8.128,114.3,8.128,102.389V23.239l53.029-14.7Z" fill="#fff"></path>
+                        </svg>
+                        </div>
+                        <span class="top-nav-link-text">Support</span>
+                    </a>
+                </li>
+            </ul>
+
+
+<!--                <li class="nav-item desktop-hide">-->
+<!--                    <button class="search-button" data-ghost-search><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg> <span>Search Blog</span></button>-->
+<!--                </li>-->
+
+            <ul class="secondary-nav-list">
+                <div class="more-desktop-link">
+                    <div class="more-link-wrapper">
+                        <span class="more-nav-link">
+                            <div class="desktop-nav-icon more-menu-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="16px" viewBox="0 0 22 16">
+                                <g id="menu-icon">
+                                    <path fill="#FFFFFF" d="M20.5,3h-19C0.672,3,0,2.329,0,1.5S0.672,0,1.5,0h19C21.328,0,22,0.671,22,1.5S21.328,3,20.5,3z"></path>
+                                    <path fill="#FFFFFF" d="M20.5,9.5h-19C0.672,9.5,0,8.828,0,8c0-0.829,0.672-1.5,1.5-1.5h19C21.328,6.5,22,7.171,22,8   C22,8.828,21.328,9.5,20.5,9.5z"></path>
+                                    <path fill="#FFFFFF" d="M20.5,16h-19C0.672,16,0,15.328,0,14.5S0.672,13,1.5,13h19c0.828,0,1.5,0.672,1.5,1.5S21.328,16,20.5,16z"></path>
+                                </g>
+                                </svg>
+                            </div>
+                            <span class="top-nav-link-text top-nav-more-text">
+                            More
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <li class="nav-item more-text-link">
+                    <div class="more-link-wrapper more-link-wrapper-mobile">
+                        <span class="more-nav-link">
+                            <div class="mobile-nav-icon"><!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" width="25px" height="25px" xml:space="preserve">
+                                <style type="text/css">
+                                    .white{fill:#FFFFFF;}
+                                </style>
+                                <path class="white" d="M19.4,17.1c0,0.1-0.1,0-0.2,0c0,0-1.3-0.9-2-1.4c-0.2-0.1-0.5-0.1-0.6,0.1c-0.3,0.3-0.6,0.8-0.9,1.3  c-0.1,0.2-0.1,0.5,0.1,0.6l2,1.5c0.1,0,0,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2c-1.2,0.5-2.6,0.2-3.5-0.7c-0.8-0.9-1-2-0.7-3.1L4.5,6.5  c-1,0.3-2.3,0-3-0.9c-0.8-0.9-1.1-1.7-1-2.7c0-0.1,0-0.1,0.1-0.2c0.1,0,0.2,0.1,0.2,0.1l2,1.5C3,4.4,3.3,4.5,3.4,4.2  c0,0,0.5-0.8,0.9-1.3c0.1-0.2,0.1-0.5-0.1-0.6L2.3,0.9c-0.1,0,0-0.1-0.1-0.3c0-0.1,0-0.1,0.1-0.2C3.5-0.1,5,0.2,5.8,1.1  c0.8,0.9,1,2,0.7,3.1l9.1,9.3c1-0.3,2.3,0,3,0.9c0.7,0.7,0.9,1.5,0.9,2.5C19.5,16.9,19.5,17,19.4,17.1z"></path>
+                                </svg>
+                            </div>
+                            <span class="top-nav-link-text top-nav-more-text">
+                            Security Resources
+                            </span>
+                        </span>
+                    </div>
+                    <input class="sub-nav-trigger" id="security-resources-sub-trigger" type="checkbox">
+                    <label class="sub-nav-trigger-label" for="security-resources-sub-trigger">
+                        <div class="mobile-nav-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167px" height="47.75px" viewBox="0 0 48.167 47.75">
+                            <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.083" cy="23.875" r="22"></circle>
+                            <g>
+                                <circle fill="#FFFFFF" cx="24.083" cy="16.068" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="23.875" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="31.682" r="2.496"></circle>
+                            </g>
+                        </svg>
+                        </div>
+                    </label>
+                    <div class="sub-nav sub-nav-multiple-list sub-nav-multiple-list-left">
+                        <div class="sub-nav-multiple-wrapper">
+                            <div class="sub-nav-list-top-of-mobile-wrapper">
+                                <h1 class="sub-nav-list-header sub-nav-list-top-of-mobile">Security Resources</h1>
+                                <ul class="sub-nav-list">
+                                    <li class="desktop-hide">
+                                        <label class="subnav-back-button" for="security-resources-sub-trigger">BACK</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-list-item-wrapper">
+                                <span class="sub-nav-desktop-header uppercase">Security Resources</span>
+                                <ul class="sub-nav-list">
+                                    <li>
+                                        <a href="https://talosintelligence.com/software"><span>Open Source Security Tools</span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://talosintelligence.com/categories"><span>Intelligence Categories Reference</span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://talosintelligence.com/secure-endpoint-naming"><span>Secure Endpoint Naming Reference</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-hide subnav-overlay"><!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" width="25px" height="25px" xml:space="preserve">
+                        <style type="text/css">
+                            .white{fill:#FFFFFF;}
+                        </style>
+                                                <path class="white" d="M19.4,17.1c0,0.1-0.1,0-0.2,0c0,0-1.3-0.9-2-1.4c-0.2-0.1-0.5-0.1-0.6,0.1c-0.3,0.3-0.6,0.8-0.9,1.3  c-0.1,0.2-0.1,0.5,0.1,0.6l2,1.5c0.1,0,0,0.1,0.1,0.2c0,0.1,0,0.1-0.1,0.2c-1.2,0.5-2.6,0.2-3.5-0.7c-0.8-0.9-1-2-0.7-3.1L4.5,6.5  c-1,0.3-2.3,0-3-0.9c-0.8-0.9-1.1-1.7-1-2.7c0-0.1,0-0.1,0.1-0.2c0.1,0,0.2,0.1,0.2,0.1l2,1.5C3,4.4,3.3,4.5,3.4,4.2  c0,0,0.5-0.8,0.9-1.3c0.1-0.2,0.1-0.5-0.1-0.6L2.3,0.9c-0.1,0,0-0.1-0.1-0.3c0-0.1,0-0.1,0.1-0.2C3.5-0.1,5,0.2,5.8,1.1  c0.8,0.9,1,2,0.7,3.1l9.1,9.3c1-0.3,2.3,0,3,0.9c0.7,0.7,0.9,1.5,0.9,2.5C19.5,16.9,19.5,17,19.4,17.1z"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="more-link-wrapper more-link-wrapper-mobile">
+                        <span class="more-nav-link">
+                            <div class="mobile-nav-icon"><!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" width="25px" height="25px" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                <style type="text/css">
+                                    .sticoncomment{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                                </style>
+                                <path class="sticoncomment" d="M13.6,7.1H6.4c-0.3,0-0.6-0.3-0.6-0.6c0-0.3,0.3-0.6,0.6-0.6l7.2,0c0.3,0,0.6,0.3,0.6,0.6  C14.2,6.8,13.9,7.1,13.6,7.1L13.6,7.1z M13.6,9.4H6.4c-0.3,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6l7.2,0c0.3,0,0.6,0.3,0.6,0.6  C14.2,9.2,13.9,9.4,13.6,9.4L13.6,9.4z M11.5,11.7H6.4c-0.3,0-0.6-0.3-0.6-0.6c0-0.3,0.3-0.6,0.6-0.6h5.1c0.3,0,0.6,0.3,0.6,0.6  C12.1,11.5,11.8,11.7,11.5,11.7z M15.8,3H4.2C3.5,3,3,3.5,3,4.2V17l2.8-2.3h10c0.6,0,1.2-0.5,1.2-1.2V4.2C17,3.5,16.5,3,15.8,3  L15.8,3z"></path>
+                                </svg>
+                            </div>
+                            <span class="top-nav-link-text top-nav-more-text">
+                            Media
+                            </span>
+                        </span>
+                    </div>
+                    <input class="sub-nav-trigger" id="media-sub-trigger" type="checkbox">
+                    <label class="sub-nav-trigger-label" for="media-sub-trigger">
+                        <div class="mobile-nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167px" height="47.75px" viewBox="0 0 48.167 47.75">
+                            <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.083" cy="23.875" r="22"></circle>
+                            <g>
+                                <circle fill="#FFFFFF" cx="24.083" cy="16.068" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="23.875" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="31.682" r="2.496"></circle>
+                            </g>
+                            </svg>
+                        </div>
+                    </label>
+                    <div class="sub-nav sub-nav-multiple-list sub-nav-multiple-list-middle">
+                        <div class="sub-nav-multiple-wrapper">
+                            <div class="sub-nav-list-top-of-mobile-wrapper">
+                                <h1 class="sub-nav-list-header sub-nav-list-top-of-mobile">Media</h1>
+                                <ul class="sub-nav-list">
+                                    <li class="desktop-hide">
+                                        <label class="subnav-back-button" for="media-sub-trigger">BACK</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-list-item-wrapper">
+                                <span class="sub-nav-desktop-header uppercase">Media</span>
+                                <ul class="sub-nav-list">
+                                    <li>
+                                        <a href="https://blog.talosintelligence.com"><span>Talos Intelligence Blog</span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://blog.talosintelligence.com/category/threat-source-newsletter/"><span>Threat Source Newsletter</span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://talosintelligence.com/podcasts/shows/beers_with_talos"><span>Beers with Talos Podcast</span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://talosintelligence.com/podcasts/shows/talos_takes"><span>Talos Takes Podcast</span>
+                                        </a></li>
+                                    <li>
+                                        <a target="_blank" href="https://www.youtube.com/channel/UCPZ1DtzQkStYBSG3GTNoyfg/featured"><span>Talos Videos</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-hide subnav-overlay"><!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 20 20" width="25px" height="25px" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                        <style type="text/css">
+                            .sticoncomment{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                        </style>
+                        <path class="sticoncomment" d="M13.6,7.1H6.4c-0.3,0-0.6-0.3-0.6-0.6c0-0.3,0.3-0.6,0.6-0.6l7.2,0c0.3,0,0.6,0.3,0.6,0.6  C14.2,6.8,13.9,7.1,13.6,7.1L13.6,7.1z M13.6,9.4H6.4c-0.3,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6l7.2,0c0.3,0,0.6,0.3,0.6,0.6  C14.2,9.2,13.9,9.4,13.6,9.4L13.6,9.4z M11.5,11.7H6.4c-0.3,0-0.6-0.3-0.6-0.6c0-0.3,0.3-0.6,0.6-0.6h5.1c0.3,0,0.6,0.3,0.6,0.6  C12.1,11.5,11.8,11.7,11.5,11.7z M15.8,3H4.2C3.5,3,3,3.5,3,4.2V17l2.8-2.3h10c0.6,0,1.2-0.5,1.2-1.2V4.2C17,3.5,16.5,3,15.8,3  L15.8,3z"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="more-link-wrapper more-link-wrapper-mobile">
+                        <span class="more-nav-link">
+                            <div class="mobile-nav-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px" viewBox="0 0 55 55">
+                                <g>
+                                    <g class="mobile-nav-home">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M45.201,12.343c0.378,0.48,0.758,0.925,1.096,1.401    c2.975,4.207,4.543,8.876,4.494,14.044c-0.05,5.452-1.643,10.386-5.186,14.593c-3.484,4.133-7.929,6.73-13.182,7.895    c-6.313,1.398-12.216,0.275-17.695-3.131c-0.441-0.273-0.847-0.6-1.266-0.904c-0.11-0.078-0.208-0.174-0.337-0.287    c0.127-0.141,0.246-0.27,0.366-0.398c0.887-0.949,1.765-1.904,2.663-2.844c0.114-0.119,0.321-0.217,0.485-0.217    c3.658-0.006,7.318,0,10.975,0.008c3.458,0.006,6.913,0.02,10.369,0.02c0.957,0,1.871-0.193,2.62-0.844    c0.797-0.693,1.157-1.596,1.157-2.643c0.001-7.533,0.003-15.067-0.005-22.601c-0.002-0.309,0.088-0.524,0.3-0.743    C43.098,14.598,44.127,13.49,45.201,12.343"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M41.402,8.822c-0.99,1.027-1.994,2.021-2.935,3.072    c-0.312,0.35-0.616,0.416-1.036,0.415c-6.98-0.009-13.957-0.007-20.938-0.007c-2.039,0-3.561,1.514-3.561,3.557    c0,6.504,0.002,13.008,0.006,19.512c0.002,0.973,0.011,1.943,0.004,2.914c0,0.133-0.04,0.301-0.127,0.393    c-1.069,1.162-2.15,2.314-3.229,3.469c-0.021,0.023-0.052,0.039-0.109,0.08c-0.159-0.188-0.323-0.369-0.471-0.562    c-2.535-3.348-4.119-7.102-4.605-11.268c-0.61-5.229,0.194-10.229,2.835-14.839c2.669-4.664,6.655-7.805,11.618-9.75    c3.205-1.257,6.533-1.852,9.977-1.621c4.478,0.298,8.553,1.754,12.227,4.325c0.101,0.072,0.197,0.151,0.291,0.229    C41.364,8.755,41.374,8.778,41.402,8.822"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M39.799,12.47c0.873-0.911,1.749-1.829,2.676-2.797    c0.605,0.564,1.195,1.112,1.816,1.691c-0.941,0.985-1.817,1.903-2.703,2.83c-0.276-0.339-0.511-0.688-0.807-0.975    C40.492,12.941,40.145,12.728,39.799,12.47"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M10.35,43.279c0.969-1.016,1.885-1.977,2.76-2.893    c0.213,0.369,0.376,0.762,0.639,1.072c0.265,0.312,0.627,0.539,0.98,0.832c-0.853,0.891-1.713,1.791-2.624,2.746    C11.513,44.445,10.939,43.869,10.35,43.279"></path>
+                                    </g>
+                                </g>
+                                </svg>
+                            </div>
+                            <span class="top-nav-link-text top-nav-more-text">
+                            Company
+                            </span>
+                        </span>
+                    </div>
+                    <input class="sub-nav-trigger" id="company-sub-trigger" type="checkbox">
+                    <label class="sub-nav-trigger-label" for="company-sub-trigger">
+                        <div class="mobile-nav-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.167px" height="47.75px" viewBox="0 0 48.167 47.75">
+                            <circle opacity="0.4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="24.083" cy="23.875" r="22"></circle>
+                            <g>
+                                <circle fill="#FFFFFF" cx="24.083" cy="16.068" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="23.875" r="2.496"></circle>
+                                <circle fill="#FFFFFF" cx="24.083" cy="31.682" r="2.496"></circle>
+                            </g>
+                        </svg>
+                        </div>
+                    </label>
+                    <div class="sub-nav sub-nav-multiple-list sub-nav-multiple-list-right">
+                        <div class="sub-nav-multiple-wrapper">
+                            <div class="sub-nav-list-top-of-mobile-wrapper">
+                                <h1 class="sub-nav-list-header sub-nav-list-top-of-mobile">Company</h1>
+                                <ul class="sub-nav-list">
+                                    <li class="desktop-hide">
+                                        <label class="subnav-back-button" for="company-sub-trigger">BACK</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-nav-list-item-wrapper">
+                                <span class="sub-nav-desktop-header uppercase">Company</span>
+                                <ul class="sub-nav-list">
+                                    <li>
+                                        <a href="https://talosintelligence.com/about"><span>About Talos</span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://talosintelligence.com/careers"><span>Careers</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-hide subnav-overlay"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px" viewBox="0 0 55 55">
+                        <g>
+                            <g class="mobile-nav-home">
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M45.201,12.343c0.378,0.48,0.758,0.925,1.096,1.401    c2.975,4.207,4.543,8.876,4.494,14.044c-0.05,5.452-1.643,10.386-5.186,14.593c-3.484,4.133-7.929,6.73-13.182,7.895    c-6.313,1.398-12.216,0.275-17.695-3.131c-0.441-0.273-0.847-0.6-1.266-0.904c-0.11-0.078-0.208-0.174-0.337-0.287    c0.127-0.141,0.246-0.27,0.366-0.398c0.887-0.949,1.765-1.904,2.663-2.844c0.114-0.119,0.321-0.217,0.485-0.217    c3.658-0.006,7.318,0,10.975,0.008c3.458,0.006,6.913,0.02,10.369,0.02c0.957,0,1.871-0.193,2.62-0.844    c0.797-0.693,1.157-1.596,1.157-2.643c0.001-7.533,0.003-15.067-0.005-22.601c-0.002-0.309,0.088-0.524,0.3-0.743    C43.098,14.598,44.127,13.49,45.201,12.343"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M41.402,8.822c-0.99,1.027-1.994,2.021-2.935,3.072    c-0.312,0.35-0.616,0.416-1.036,0.415c-6.98-0.009-13.957-0.007-20.938-0.007c-2.039,0-3.561,1.514-3.561,3.557    c0,6.504,0.002,13.008,0.006,19.512c0.002,0.973,0.011,1.943,0.004,2.914c0,0.133-0.04,0.301-0.127,0.393    c-1.069,1.162-2.15,2.314-3.229,3.469c-0.021,0.023-0.052,0.039-0.109,0.08c-0.159-0.188-0.323-0.369-0.471-0.562    c-2.535-3.348-4.119-7.102-4.605-11.268c-0.61-5.229,0.194-10.229,2.835-14.839c2.669-4.664,6.655-7.805,11.618-9.75    c3.205-1.257,6.533-1.852,9.977-1.621c4.478,0.298,8.553,1.754,12.227,4.325c0.101,0.072,0.197,0.151,0.291,0.229    C41.364,8.755,41.374,8.778,41.402,8.822"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M39.799,12.47c0.873-0.911,1.749-1.829,2.676-2.797    c0.605,0.564,1.195,1.112,1.816,1.691c-0.941,0.985-1.817,1.903-2.703,2.83c-0.276-0.339-0.511-0.688-0.807-0.975    C40.492,12.941,40.145,12.728,39.799,12.47"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M10.35,43.279c0.969-1.016,1.885-1.977,2.76-2.893    c0.213,0.369,0.376,0.762,0.639,1.072c0.265,0.312,0.627,0.539,0.98,0.832c-0.853,0.891-1.713,1.791-2.624,2.746    C11.513,44.445,10.939,43.869,10.35,43.279"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-search-wrapper" id="desktop-search-wrapper">
+                <button class="search-button desktop-search-button" data-ghost-search>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+            </div>
+        </div>
+
+
+
+    </div>
+</nav>
+
+    
+
+    <main id="site-main">
+
+            <div class="banner-content-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col threat-spotlight-graphic banner-post-graphic"></div>
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid">
+                    <div class="row banner-bg-container banner-bg-4">
+                    </div>
+                </div>
+
+
+        <div class="container-fluid px-0">
+            <div class="main-content-row">
+                <div class="main-content-col px-0">
+                    <div class="post-full-content">
+                        
+<article class="post tag-threat-spotlight tag-rat  blog-series-article">
+
+    <h1 class="text-center">Transparent Tribe campaign uses new bespoke malware to target Indian government officials</h1>
+
+    <div class="text-center m-1">
+        <div class="post-author">
+            <span>By </span>
+                <a href="https://blog.talosintelligence.com/author/asheer-malhotra/">Asheer Malhotra</a>, 
+                <a href="https://blog.talosintelligence.com/author/kendall/">Kendall McKay</a>
+        </div>
+
+        <br/>
+        <time class="post-datetime" datetime="March 29, 2022 08:01">
+            Tuesday, March 29, 2022 08:01
+        </time>
+
+        <div class="m-3">
+                        <a href="https://blog.talosintelligence.com/category/threat-spotlight/" class="category primary-category">
+                            Threat Spotlight
+                        </a>
+                                            <a href="https://blog.talosintelligence.com/category/rat/" class="category primary-category">
+                            RAT
+                        </a>
+                            </div>
+    </div>
+
+    <section class="post-content-wrapper mt-5">
+        <div class="post-content" id="post-content">
+            <p></p><p><strong><em>By </em><a href="https://twitter.com/asheermalhotra"><em>Asheer Malhotra</em></a><em> and </em><a href="https://twitter.com/ThattilJustin"><em>Justin Thattil</em></a><em> with contributions from </em><a href="https://twitter.com/kkmckay22"><em>Kendall McKay</em></a><em>.</em></strong></p><p></p><ul><li>Cisco Talos has observed a new Transparent Tribe campaign targeting Indian government and military entities. While the actors are infecting victims with CrimsonRAT, their well-known malware of choice, they are also using new stagers and implants.</li><li>This campaign, which has been ongoing since at least June 2021, uses fake domains mimicking legitimate government and related organizations to deliver malicious payloads, a common Transparent tribe tactic.</li><li>Based on our analysis of Transparent Tribe operations over the last year, the group has continued to change its initial entry mechanisms and incorporate new bespoke malware, indicating the actors are actively diversifying their portfolio to compromise even more victims.</li><li>Notably, the adversary has moved towards deploying small, bespoke stagers and downloaders that can be easily modified, likely to enable quick and agile operations.</li></ul><h1 id="transparent-tribe-deploys-new-implants">Transparent Tribe deploys new implants</h1><p><a href="https://blog.talosintelligence.com/2021/05/transparent-tribe-infra-and-targeting.html">Transparent Tribe</a>, also known as APT36 and Mythic Leopard, continues to create fake domains mimicking legitimate military and defense organizations as a core component of their operations. In the latest campaign conducted by the threat actor, Cisco Talos observed multiple delivery methods, such as executables masquerading as installers of legitimate applications, archive files and maldocs to target Indian entities and individuals. These infection chains led to the deployment of three different types of implants, two of which we had not previously observed:</p><ul><li>CrimsonRAT: A remote access trojan (RAT) family that Transparent Tribe frequently uses to conduct espionage operations against their targets.</li><li>A previously unknown Python-based stager that leads to the deployment of .NET-based reconnaissance tools and RATs.</li><li>A lightweight .NET-based implant to run arbitrary code on the infected system.</li></ul><p>This campaign also uses fake domains mimicking legitimate government and pseudo-government organizations to deliver malicious payloads, a typical Transparent Tribe tactic.</p><p></p><p></p><p></p><h1 id="threat-actor-profile">Threat actor profile</h1><p>Transparent Tribe is a suspected Pakistan-linked threat actor. This group targets individuals and entities associated with governments and military personnel in the Indian subcontinent, specifically Afghanistan and India. Transparent Tribe has also been known to use their CrimsonRAT implant against <a href="https://www.amnesty.org/en/documents/asa33/8366/2018/en/">human rights activists in Pakistan</a>.</p><p>The group primarily uses three Windows-based malware families to carry out espionage activities against their targets.</p><ul><li><em><strong>CrimsonRAT</strong></em> is a .NET-based implant that has been the group’s malware of choice since at least 2020 . Transparent Tribe’s multiple campaigns leveraging <a href="https://malpedia.caad.fkie.fraunhofer.de/details/win.crimson">CrimsonRAT</a> over the years indicate a steady evolution in the implant’s capabilities.</li><li><em><strong>ObliqueRAT</strong></em> is a C/C++-based implant discovered by Talos in early <a href="https://blog.talosintelligence.com/2020/02/obliquerat-hits-victims-via-maldocs.html">2020</a>. ObliqueRAT is primarily reserved for highly targeted attacks on government personnel and in operations where stealth is a prime focus of the attackers’ infection chain. This implant has also seen a <a href="https://blog.talosintelligence.com/2021/02/obliquerat-new-campaign.html">constant evolution in deployment tactics</a> and malicious functionalities over time.</li><li>Custom malware used by Transparent Tribe consists of easily and quickly deployable downloaders, droppers and lightweight RATs containing limited capabilities as opposed to CrimsonRAT and ObliqueRAT.</li></ul><p></p><p>Transparent Tribe also maintains a suite of mobile implants in their arsenal. Implants such as <a href="https://www.trendmicro.com/en_us/research/22/a/investigating-apt36-or-earth-karkaddans-attack-chain-and-malware.html">CapraRAT</a> are constantly modified to be deployed against targets. These implants contain a plethora of malicious capabilities meant to steal data from mobile devices.<br></p><h1 id="downloader-executables">Downloader executables</h1><p>Talos observed the use of downloader executables containing different lures related to the Indian government. Themes included topics related to COVID-19, resumes and installers for government applications, such as the Kavach multi-factor authentication (MFA) application.</p><h2 id="latest-variant">Latest variant</h2><p>The latest downloaders primarily masquerade as installers for Kavach and are distributed for delivering malicious artifacts to targets. Kavach is widely used by government personnel, as it allows employees (including military personnel) to access the Indian government’s I.T. resources, such as email services. </p><p>The droppers are .NET-based executables. They begin execution by checking if the timezone on the infected endpoint contains keywords such as “India.” A splash screen is displayed to the victim notifying them that the Kavach application is being installed:</p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/SrvwM9k01qCOrpxdDwfofv2slapUGXvmrY-xWN2UyxT4kL8GxHpaqc3UfxEbDm6GQKI0XV_LjHJeN-ePDKSmpnTACn46g1If5t2P76YwiLrOA_EKtHTWEEJhbffuPwCUkiGgcxrUi2W8pCS3sDTEMEvA03kZZBU4VXBUwuwEADCLapphVDOre0eh" class="kg-image" alt loading="lazy" width="610" height="641"></figure><p>Fake installation splash screen</p><p>The downloaders will then reach out to a malicious website, masquerading as a legitimate Indian government or pseudo-government entity, to download a malicious payload that is then activated on the endpoint.</p><p>Next, download a legitimate copy of the Kavach application’s MSI installer from yet another attacker-controlled website and execute it to make the whole attack chain appear legitimate.</p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/BwrUIQThpBf9yTDkbwL_QtM1xSkw3zVyzlP-_JUoqjeoMtWIL81GKFiDOtjU056z_h1LAZxoAs0dJdQqBbskibZ_QwRMCSHWWBa6QC0R_zJAc33iG8RF7lbke3VmqM9UpM-FDKwDehY37Z19Kgn1Z-PwGC9kBLhK1bW29N2_1Py528H3RYh1Z3Dl" class="kg-image" alt loading="lazy" width="624" height="332"></figure><p>Downloader fetching and executing malicious payload and legitimate installer for Kavach.</p><h2 id="additional-variant">Additional variant</h2><p>Another variation of the initial infection vector used in the campaign is a notably large downloader binary (141MB) that contains the entire legitimate installer (MSI) for the Kavach application in its resources. The zipped copy of the MSI is extracted from the downloader’s resources and executed on the system as a decoy to appear legitimate to the targets. The actual implant is then downloaded from a remote location, AES-decrypted using a hardcoded key, written to disk and executed on the infected endpoint.</p><figure class="kg-card kg-image-card"><img src="https://lh6.googleusercontent.com/gSrvpQpOcSqu423ml9ES44nHFclgu3V6-6lJ3OwkMMggiCyUGA3ofhKOMslcKqjXXNz6d_w-KP5w-3PsNzDkd4146NmTukUCSXk7jeW4lKp-6FS-E_eAcRPAsoW3z6qACPLAYY24yS1Bnv1D0LAh3KENG-DVFD3FfINe2tIcvD1ciQK3xhQHzggq" class="kg-image" alt loading="lazy" width="624" height="232"></figure><p>The second variant of the downloader downloads and decrypts the payload from a remote location.</p><p></p><p></p><p><br></p><h2 id="a-timeline-of-older-variants">A timeline of older variants<br></h2><p>As early as June 2021, the attackers primarily used malicious documents (maldocs) as an initial infection vector to deliver the malicious downloaders. This vector consisted of a malicious macro that would download and activate the downloader on the infected endpoint. This practice continued into July 2021.</p><p>However, beginning with June 2021, there was also a steady evolution in the distribution tactics used in this campaign. Around this time, we began observing the use of non-traditional initial entry mechanisms throughout the course of this campaign, suggesting a clear intention of aggressively infecting targets for espionage.</p><p>For instance, in June 2021, the attackers used IMG files for distribution, containing multiple infection artifacts — all COVID-19 themed — to trick targets into getting infected. Wrapping malware in IMG files is a tactic gaining traction with crimeware operators and APTs as a way to deliver malware to victims since newer versions of the Windows OS natively support IMG files. </p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/9Aqtb8crgZijnssQlPzCrAsB84uzAhCLHtJN9I3ydXkkC0LrVtvXKJnOKzrG3XON0ksqHNi3AIiyiwLK8g1nKWkuhO7pbuKulNj9tPIs_JlBcnF6Mq1QfmXRKmWCVit_l1q6BMitYV_nwcloYQGfobJ5PgYMAKP9J_1QgchAlgeqX_ts5PjAi5_l" class="kg-image" alt loading="lazy" width="583" height="160"></figure><p>Malicious IMG distributed by Transparent Tribe.</p><p>The malicious image consists of four files:</p><ul><li>Malicious Python-based stager.</li><li>Decoy PDF document containing a COVID-19-themed lure.</li><li>VBS file for executing the stager and displaying the decoy.</li><li>Malicious LNK file for activating the VBS on the endpoint.<br></li></ul><figure class="kg-card kg-image-card"><img src="https://lh5.googleusercontent.com/LpCBLmIMCuJGW5ul-JVgUVRbcIsMwYD-AIYdBIEPbxMg6m3RJ8eX4KSJ2aYnrvyRQrYi3SdEde9BKHOC4w2l239_kEMJWUnSQ-wf1FJxOeaVyXxg8zniNfo0Ow_hQFZZLFaZgsOQkDYWk2W9eNcWAUkhsVVbb6cBJS3xfFNpCvQFT9yPeK6Y8FH0" class="kg-image" alt loading="lazy" width="624" height="907"></figure><p>In September 2021, the actors switched up their initial infection artifact and used VHDX files delivering the malicious droppers. VHDX files <a href="https://insights.sei.cmu.edu/blog/the-dangers-of-vhd-and-vhdx-files/">do not retain</a> <a href="https://docs.microsoft.com/en-us/archive/blogs/ie/mark-of-the-web">Mark Of the Web (MOTW)</a> stamps and thus artifacts such as maldocs, delivered through these wrappers aren’t identified as originating from the internet by Microsoft utilities such as Word, Excel etc. - allowing the attackers to run malicious code on the endpoint without any Microsoft warnings.</p><p>The variant of the downloaders used here, previously disclosed by <a href="https://blog.cyble.com/2021/09/14/apt-group-targets-indian-defense-officials-through-enhanced-ttps/">Cyble</a>, masqueraded as an app from the <a href="http://csdindia.gov.in">Canteen Stores Department</a> (CSD) of the Government of India. On execution, this variant would open the legitimate website for CSD on the target’s system. However, as seen previously with Transparent Tribe, the threat actors continued the development of similar infection chains consisting of various themes to distribute their malware without regard for any previous public disclosures.<br></p><p>The threat actor then introduced the use of RAR archives to distribute malicious malware in November 2021. The RAR archive consisted of the downloader, this time downloading a highly specific decoy PDF containing the work history of an Indian government official. The RAR archives are typically password-protected and hosted on public media sharing websites. Therefore, it is highly likely that Transparent Tribe used spearphishing emails to deliver download URLs for the archives to their targets via emails containing the passwords for the archives.</p><p>Timeline of the evolution of entry vectors:</p><figure class="kg-card kg-image-card"><img src="https://lh3.googleusercontent.com/jIGkXTxAGPVzz3TI322Rsod-FhTFlvd_my30qTeUsogtzg-K91-59RnBA-fKz5Wr6DUP3c-TVrWYVrcmaLpzcsK0IKF3NVTGN4Gvi_ArfKg6vX3NK0jJxTuFUdJFHkCIQ1RCvADWhVVNk8eSR9aY--4uOFgQcl92Zgq-Hty4V-xIDQSfpRYPH6PW" class="kg-image" alt loading="lazy" width="624" height="413"></figure><p><br><br></p><h1 id="implant-analyses">Implant analyses</h1><h2 id="crimsonrat">CrimsonRAT</h2><p>CrimsonRAT is a popular malware RAT implant that consists of a wide variety of capabilities. It is the staple implant of choice for Transparent Tribe to establish long-term access into victim networks. This RAT is actively worked upon and has seen considerable updates over the years in not just the development of new capabilities, but also to obfuscate the implant by the APT group.</p><p>The latest version of CrimsonRAT seen in this campaign in January and February 2022 contains a number of capabilities, including:</p><ul><li>List files and folders in a directory path specified by the C2.</li><li>Run specific processes on the endpoint — keylogger and USB modules.</li><li>List process IDs and names running on the endpoint.</li><li>Get information such as name, creation times and size of image files (pictures such as BMP, JPG etc.) specified by the C2.</li><li>Take screenshots of the current screen and send it to C2.</li><li>Upload keylogger logs from a file on disk to the C2.</li><li>Send system information to C2 including:</li><li>Computername, username, Operating System name, filepath of implant, parent folder path.</li><li>Indicator of whether the keylogger module is in the endpoint and running and its version.</li><li>Indicator of whether the USB module is in the endpoint and running and its version.</li><li>Run arbitrary commands on the system.</li><li>Write data sent by C2 to a file on disk.</li><li>Read contents of a file on disk and exfiltrate to C2.</li><li>List all drives on the system.</li><li>List all files in a directory.</li><li>Download the USB worm and keylogger modules from the C2 and write them to disk.</li><li>Send a file’s name, creation time and size to the C2- file path is specified by the C2.</li><li>Delete files specified by the C2 from the endpoint.</li><li>Get names, creation times and size of all files containing the file extension specified by the C2.<br></li></ul><figure class="kg-card kg-image-card"><img src="https://lh5.googleusercontent.com/IokQxmyay_TxOoDrVJumY_CkfRezeyma6ZBzkXu_nTN8eUkOz8s_e8Tn_tGFqnYAyFVwdCr_luYhWFu9OE5Q79HoZacX9oBc62tJ22WEoZxmCqclEfgik5w1QYb4p_xDFzdbv0jXoDZYDHK9m8xGBSZLrriRrOploawufDWGqWGL2gW4NjLEJdJX" class="kg-image" alt loading="lazy" width="624" height="549"></figure><p>Code Snippet: CrimsonRAT command handler.</p><p>Seen in:</p><ul><li><strong>Jan-Feb 2022</strong>: Deployed by Kavach-themed downloaders.<br></li></ul><h2 id="lightweight-implant">Lightweight implant</h2><p>A new lightweight, .NET-based implant was also seen in this campaign in several infection chains. This implant has limited capabilities when compared to CrimsonRAT but contains enough functionality to control and monitor the infected system. Capabilities include:</p><ul><li>List all running processes on the endpoint.</li><li>Download and execute a file from the C2.</li><li>Download and execute a file specified by the C2 from another remote location.</li><li>Close connection with the C2 until the next run.</li><li>Gather system information from the endpoint such as Computer Name, username, public and local IPs, Operating system name, list of runnings AVs, device type (desktop or laptop).</li></ul><p>The implant also persists via an InternetShortcut in the current user’s Startup directory.</p><figure class="kg-card kg-image-card"><img src="https://lh6.googleusercontent.com/0av3g-K624v2npmFFEHoqYm7s7xe0fdMQ9jgovnBqx0RghTolMjrq0XQS6YjhPK3iNYZU8X92j5A9UmxAKW0bHbVNLGuVh2m0rhkzh9FPK6xXIhVYkJDGesxJoAj0eUlwxnz1B7CWH7JHA31RQDyrDJfIR6bOlpH4qbyxNsZlyiMq6DyXvSyy-Jg" class="kg-image" alt loading="lazy" width="624" height="279"></figure><p>Implant downloading and executing a file from a remote location.</p><p>Seen in:</p><ul><li><strong>Jan-Feb</strong> <strong>2022</strong>: Deployed by Kavach-themed downloaders.</li><li><strong>November 2021</strong>: Seen in infection chains using RAR archives hosted on CMS.</li><li><strong>September 2021</strong>: Deployed by CSD-themed downloaders.</li></ul><h2 id="python-based-stagers">Python-based stagers</h2><p>We’ve also observed the use of Python-based stagers throughout this campaign. These stagers are pyinstaller-based EXEs and consist of the following functionalities:</p><ul><li>Collect system information from the endpoint consisting of all running process names, computername and OS name and send it to a remote C2 URL.</li><li>Drops one of two embedded files: A malicious DLL used to activate a recon tool in the current user’s Startup folder based on whether the endpoint is Windows 7 or not.</li><li>Parse responses from the C2 to obtain data that is then written to a file to disk.</li></ul><p>All the relevant information used in the functioning of the stager is kept in a separate Python file.</p><figure class="kg-card kg-image-card"><img src="https://lh6.googleusercontent.com/MDiATwrdXiFltYtNURci1sMSKdEcyHlcb-gUmTmLeStAbUgpKJf-RTjWadI4ZP-VyG6YV3vOdUa440bBA36QeaQZTkw-CR5ZpKQLTHGkeYu-s11BXtf6nKemH3nFDV1WmGSVmIXSji3SFIHuBucESg2Xjwj6a8eJ3_hkC2ap27c8gISZM4Rdg-Gr" class="kg-image" alt loading="lazy" width="624" height="92"></figure><p>Stager configuration information.</p><p>Seen in:</p><ul><li><strong>June 2021</strong>: Maldocs.</li><li><strong>June 2021</strong>: IMG files.</li></ul><h3 id="embedded-implant">Embedded implant</h3><p>The embedded implants deployed by the python based stager will simply activate a malicious DLL existing on disk by loading and running it in the embedded implant’s process. The DLL loaded is the actual malicious reconnaissance tool used by the attackers.</p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/mwnLmVZLqA2saV1huvchz4hKWxubkVmsT_pWMgINnNpV1TqyBjXhRgVLYXRQ-X1jrsYkYcgCqXUNXZac32h_fzG5wnjtkNSjhbv-cy393FzMXsx5HSc1TNNgKXjq0OeaXZC9zzfrzhXa8J1IB29kVjyrb5uTVeR1a-fxh6sF7i1oVHMLHvUgPDAB" class="kg-image" alt loading="lazy" width="624" height="117"></figure><h3 id="recon-tool">Recon tool</h3><p>The  DLL implant will first send a beacon to the C2 server URL to indicate that it has been successfully deployed. The C2 server must reply with a specific keyword such as “onlyparanoidsurvive” for the implant to start accepting commands from another C2 URL. The implant will first send a list of all files in the current user’s Cookie directory to the C2. In response, the C2 may send the “senddevices” command to the implant. If this command is received, the implant will send the following data to a third C2 URL:</p><ul><li>OS Caption from CIM_OperatingSystem.</li><li>All local IP addresses of the infected endpoint.</li><li>Device type — desktop or laptop.</li><li>Product version of the executable in which the DLL has been loaded.</li></ul><figure class="kg-card kg-image-card"><img src="https://lh3.googleusercontent.com/XqsZt5QkyAnuXZj1JPFxj4no67imyJ5B19wAG_UgvEr7R33vUbZ1oHnkp4Dwv6HkY7uFNvoXeWS691koITOQpwhEVheEK4iZwng27pLmVMRNbr2Ipwp9GZ9Ev62AczfLlvuTyk0bAcFVB-M72dv3rK82SR4Q1sEFHLsQBGZFoyYppuXylwcF6lX3" class="kg-image" alt loading="lazy" width="624" height="751"></figure><p>Implant gathering system information for exfiltration to the C2.</p><p>The implant will then proceed to get executables from the remote C2 server that are then executed on the infected endpoint.</p><figure class="kg-card kg-image-card"><img src="https://lh5.googleusercontent.com/RMZqBV61YzasxtR6bksPmFMtfMR2CeeawGoUNR5YtxCmeB2A2KIFStV4K8lhIErn_j_rSuEcfgMn5Dcz1m5bWYBW9rZ-nSqEw-Kkj8cW89O6FhBStvZ0C65PshyNGLvPSEy_mHF-ACBoUbzlsJjMUOVcP2bTUZR4_Z1p-teuupRE7DFHrUQdRkjC" class="kg-image" alt loading="lazy" width="624" height="537"></figure><p>Helper DLL used to execute binaries on the endpoint.</p><p></p><p></p><h1 id="targeting-and-attribution">Targeting and attribution</h1><p>This campaign saw the use of multiple types of lures and decoys to target Indian government personnel. This is a targeting tactic typical of groups operating under the Pakistani nexus of APT groups, such as Transparent Tribe and <a href="https://blog.talosintelligence.com/2021/07/sidecopy.html">SideCopy</a>.</p><p>For example, in July 2021, we saw the attackers use themes related to the 7th Indian Central Pay Commission (7th CPC) for government employees in maldocs to deliver the Python-based stager that deployed malware on the infected endpoints. Transparent Tribe will frequently use the 7th CPC as a topic of interest to trick victims into opening maldocs and infecting themselves.</p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/lXHrB8YneCQwNu6olQljZumC1FRchKu2633kCxl5yQYKUP_DQGiy5byrVW1p1csMicpIo7RrtIqd432dAn29ZYoCmIpZ3RZAihxGdyJs9xfkuWBzrM57T2KMFjFrjlKLtc0zGozWTeswbbQKOB4TKJeU5emK55OERUlTnHVtakbUb--3CHc9hlPu" class="kg-image" alt loading="lazy" width="624" height="540"></figure><p>Maldoc with 7th CPC themes.</p><p>We also saw the use of COVID-themed lures and decoys containing advisories primarily targeting employees of the government of India. This is another tactic that the Transparent Tribe has utilized in <a href="https://blog.talosintelligence.com/2021/05/transparent-tribe-infra-and-targeting.html">past operations</a>.</p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/YAjdGR-ZqcN_NRUOODAkVD85221ZgFdjXTpIgmNmuKq62CcMnsEuxzYEPABVcbw0HygzeT0zicsZuNSXeFfrQki7hw-kIufVQi6eBAfStCnzTYpgFqM-OZuAGqEQ0BkqjnlBekttYkEP6oSsE5_cZWHm4Cz3vEyf5JVpK_ksVilR0MiJTIU9Tm77" class="kg-image" alt loading="lazy" width="624" height="613"></figure><p>COVID-19-themed decoy used against government employees.</p><p>Over the past year, we have observed this threat actor heavily utilize women’s resumes to target individuals of interest. This is inline with their tactic of honey trapping targets by using such malicious resumes and executables that display alluring pictures. This campaign, however, used a similar yet distinct theme. Instead of resumes, we observed the use of a decoy document in November 2021 that detailed a male Indian <a href="https://www.mod.gov.in/">Ministry of Defence (MoD)</a> employee’s work experience.</p><figure class="kg-card kg-image-card"><img src="https://lh5.googleusercontent.com/X2IiqCbZhC_QxmEwg0Y4I_LM513qF7lUaLiQXgFoHK2p-7Yj9_pG0tfEK6jdyNYExy4_RWiUb_q6z4FmQngJxMzb10Qg2Qt3e2yNlpYhIbUUlz8UlJLUFeHgr-wkKXuEyfQbS7PY8ruzH6Yrki_oHEu9p4gKiAEjHU4fh-IL8dCSCHLXjlOgjufm" class="kg-image" alt loading="lazy" width="624" height="499"></figure><p>Service history of an MoD official used as a lure/decoy.</p><p>Another TTP used by Transparent Tribe in their operations is the cloning of legitimate websites into fake ones owned and operated by the attackers. These fake websites are used along with typo-squatted or similarly spelled domains to appear legitimate but serve malicious artifacts as part of the attackers’ infection chains. One such example in this campaign is the malicious domain dsoi[.]info. This domain is a direct copy of the legitimate website of the <a href="https://dsoi.org.in/">Defence Service Officers’ Institute (DSOI)</a> of India, created by cloning content using HTTrack, a free website copier program.</p><figure class="kg-card kg-image-card"><img src="https://lh3.googleusercontent.com/xe7KoM0d4UXm7zzSvu2dC79PqAjCQbSDkPEt2QgCQ2biLy6ekn7D2Tx_-vnd8p_XSs46vOx0jS-nTO-br6qGxhuOqhiNVWJ7SUovjHR6L0qI_gJMdek93cIgeQlzTTnJobvJnM4q1bqT-GwsNq2HhfHju07qXLh9fpFuV-EKLrv16J0No5qWeepY" class="kg-image" alt loading="lazy" width="624" height="109"></figure><p>We’ve seen this tactic (cloning legitimate websites using HTTrack) used by Transparent Tribe in the past to deliver <a href="https://blog.talosintelligence.com/2021/05/transparent-tribe-infra-and-targeting.html">ObliqueRAT</a> malware payloads around mid-2021.</p><p>Transparent Tribe commonly uses malicious artifacts against Indian targets, masquerading as legitimate applications maintained by the government of India. In September 2021, Talos disclosed <a href="https://blog.talosintelligence.com/2021/09/operation-armor-piercer.html">Operation Armor Piercer</a>, which consisted of the use of  themes pertaining to the Kavach MFA application to spread commodity RATs. The SideCopy APT group also uses trojans such as <a href="https://blog.talosintelligence.com/2021/07/sidecopy.html">MargulasRAT</a> pretending to be a VPN application for India’s <a href="https://www.nic.in/">National Informatics Centre (NIC)</a>. This new campaign from Transparent Tribe also saw fake installers for the Kavach application being used to deploy CrimsonRAT and other malware. </p><p>The use of CrimsonRAT in operations such as these is expected of Transparent Tribe. It has been seen in the wild for years and is the tool of choice for the threat actors in campaigns that cast a relatively wide net for targeting their victims. This is unlike ObliqueRAT, which is used in highly targeted operations by Transparent Tribe.</p><p>The use of new bespoke malware in addition to the RATs indicates the group is diversifying their malware portfolio to achieve an even greater degree of success. In another common trend, we have also observed Transparent Tribe quickly develop and deploy bespoke, small and lightweight stagers and downloaders that can be modified with relative ease (and discarded if needed), leading to the deployment of their actual implants meant to provide long term access into their targets’ networks and systems.</p><p></p><p></p><h1 id="conclusion">Conclusion</h1><p>Transparent Tribe has been a highly active APT group in the Indian subcontinent. Their primary targets have been government and military personnel in Afghanistan and India. This campaign furthers this targeting and their central goal of establishing long term access for espionage. The use of multiple types of delivery vehicles and file formats indicates that the group is aggressively trying to infect their targets with their implants such as CrimsonRAT. They have continued the use of fake domains masquerading as government and quasi-government entities, as well as the use of generically themed content-hosting domains to host malware. Although not very sophisticated, this is an extremely motivated and persistent adversary that constantly evolves tactics to infect their targets.</p><p>Organizations should remain vigilant against such threats, as they are likely to proliferate in the future. In-depth defense strategies based on a risk analysis approach can deliver the best results in the prevention. However, this should always be complemented by a good incident response plan which has been not only tested with tabletop exercises and reviewed and improved every time it's put to the test on real engagements.</p><p></p><p></p><h1 id="coverage">Coverage</h1><p>Ways our customers can detect and block this threat are listed below.</p><p><a href="https://www.cisco.com/c/en/us/products/security/amp-for-endpoints/index.html">Cisco Secure Endpoint</a> (formerly AMP for Endpoints) is ideally suited to prevent the execution of the malware detailed in this post. Try Secure Endpoint for free <a href="https://www.cisco.com/c/en/us/products/security/amp-for-endpoints/free-trial.html?utm_medium=web-referral?utm_source=cisco&amp;utm_campaign=amp-free-trial&amp;utm_term=pgm-talos-trial&amp;utm_content=amp-free-trial">here.</a></p><figure class="kg-card kg-image-card"><img src="https://lh4.googleusercontent.com/ENZFWgZA9poH2fpMrWIWBr07a_Xw1gvfa_RxwAoOPLU20NYNsNeD7R51UCvf2tmgQO8YI4-ryBEiQYGU4TzvZ340e8oXvKXw1WnaDC6mbwjvx4kuE4XSncH56Y7UelnxzJJJkbr8TyPid_qIOoKdVLne2I488U3gasSp4A6qHH0Mi_Oy5W-9Ps0f" class="kg-image" alt loading="lazy" width="382" height="371"></figure><p><a href="https://www.cisco.com/c/en/us/products/security/web-security-appliance/index.html">Cisco Secure Web Appliance</a> web scanning prevents access to malicious websites and detects malware used in these attacks.</p><p><a href="https://www.cisco.com/c/en/us/products/security/email-security/index.html">Cisco Secure Email</a> (formerly Cisco Email Security) can block malicious emails sent by threat actors as part of their campaign. You can try Secure Email for free <a href="https://www.cisco.com/c/en/us/products/security/cloud-mailbox-defense?utm_medium=web-referral&amp;utm_source=cisco&amp;utm_campaign=cmd-free-trial-request&amp;utm_term=pgm-talos-trial">here</a>.</p><p><a href="https://www.cisco.com/c/en/us/products/security/firewalls/index.html">Cisco Secure Firewall</a> (formerly Next-Generation Firewall and Firepower NGFW) appliances such as <a href="https://www.cisco.com/c/en/us/products/collateral/security/firepower-ngfw-virtual/datasheet-c78-742858.html">Threat Defense Virtual</a>, <a href="https://www.cisco.com/c/en/us/products/security/adaptive-security-appliance-asa-software/index.html">Adaptive Security Appliance</a> and <a href="https://meraki.cisco.com/products/appliances">Meraki MX</a> can detect malicious activity associated with this threat.</p><p><a href="https://www.cisco.com/c/en/us/products/security/threat-grid/index.html">Cisco Secure Malware Analytics</a> (Threat Grid) identifies malicious binaries and builds protection into all Cisco Secure products.</p><p><a href="https://umbrella.cisco.com/">Umbrella</a>, Cisco’s secure internet gateway (SIG), blocks users from connecting to malicious domains, IPs and URLs, whether users are on or off the corporate network. Sign up for a free trial of Umbrella <a href="https://signup.umbrella.com/?utm_medium=web-referral?utm_source=cisco&amp;utm_campaign=umbrella-free-trial&amp;utm_term=pgm-talos-trial&amp;utm_content=automated-free-trial">here</a>.</p><p><a href="https://www.cisco.com/c/en/us/products/security/web-security-appliance/index.html">Cisco Secure Web Appliance</a> (formerly Web Security Appliance) automatically blocks potentially dangerous sites and tests suspicious sites before users access them. </p><p>Additional protections with context to your specific environment and threat data are available from the <a href="https://www.cisco.com/c/en/us/products/security/firepower-management-center/index.html">Firewall Management Center</a>.</p><p><a href="https://signup.duo.com/?utm_source=talos&amp;utm_medium=referral&amp;utm_campaign=duo-free-trial">Cisco Duo</a> provides multi-factor authentication for users to ensure only those authorized are accessing your network. </p><p>Open-source Snort Subscriber Rule Set customers can stay up to date by downloading the latest rule pack available for purchase on <a href="https://www.snort.org/products">Snort.org</a>.</p><p>Snort SIDs: <strong>59222-59223</strong></p><p>The following ClamAV signatures available for protection against this threat:</p><ul><li>Vbs.Downloader.Agent-9940743-0</li><li>Win.Downloader.TransparentTribe-9940744-0</li><li>Win.Trojan.MargulasRAT-9940745-0</li><li>Win.Downloader.Agent-9940746-0</li><li>Win.Trojan.MSILAgent-9940762-1</li><li>Win.Trojan.PythonAgent-9940791-0</li><li>Lnk.Trojan.Agent-9940793-0</li><li>Win.Trojan.TransparentTribe-9940795-0</li><li>Win.Trojan.TransparentTribe-9940801-0</li><li>Win.Downloader.TransparentTribe-9940802-0</li></ul><h3 id="orbital-queries">Orbital Queries</h3><p>Cisco Secure Endpoint users can use <a href="https://orbital.amp.cisco.com/help/">Orbital Advanced Search</a> to run complex OSqueries to see if their endpoints are infected with this specific threat. For specific OSqueries on this threat, click below:</p><ul><li><a href="https://github.com/Cisco-Talos/osquery_queries/blob/master/win_malware/malware_transparent_tribe_downloader_filepath.yaml">Downloader</a></li><li><a href="https://github.com/Cisco-Talos/osquery_queries/blob/master/win_malware/malware_transparent_tribe_maldoc_filepath.yaml">Maldoc</a></li><li><a href="https://github.com/Cisco-Talos/osquery_queries/blob/master/win_malware/malware_transparent_tribe_python_stager_filepath.yaml">Python stagers</a></li></ul><p></p><p></p><h1 id="iocs">IOCs<br></h1><h3 id="maldocs">Maldocs</h3><!--kg-card-begin: markdown--><p>15b90d869b4bcc3cc4b886abbf61134e408088fdfbf48e9ab5598a4c80f6f4d8<br>
+d2113b820db894f08c47aa905b6f643b1e6f38cce7adf7bf7b14d8308c3eaf6e</p>
+<!--kg-card-end: markdown--><h3 id="downloaders">Downloaders</h3><!--kg-card-begin: markdown--><p>b0ecab678b02fa93cf07cef6e2714698d38329931e5d6598b98ce6ee4468c7df<br>
+2ca028a2d7ae7ea0c55a1eeccd08a9386f595c66b7a0c6099c0e0d7c0ad8b6b8<br>
+9d4e6da67d1b54178343e6607aa459fd4d711ce372de00a00ae5d81d12aa44be<br>
+2b32aa56da0f309a6cd5d8cd8b3e125cb1b445b6400c3b22cf42969748557228<br>
+1ba7cf0050343faf845553556b5516d96c7c79f9f39899839c1ca9149cf2d838<br>
+84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34<br>
+dd23162785ed4e42fc1abed4addcab2219f45c802cccd35b2329606d81f2db71<br>
+4d14df9d5fa637dae03b08dda8fe6de909326d2a1d57221d73ab3938dfe69498<br>
+2bb2a640376a52b1dc9c2b7560a027f07829ae9c5398506dc506063a3e334c3a<br>
+aadaa8d23cc2e49f9f3624038566c3ebb38f5d955b031d47b79dcfc94864ce40<br>
+b3bc8f9353558b7a07293e13dddb104ed6c3f9e5e9ce2d4b7fd8f47b0e3cc3a5<br>
+5911f5bd310e943774a0ca7ceb308d4e03c33829bcc02a5e7bdedfeb8c18f515</p>
+<!--kg-card-end: markdown--><h3 id="lightweight-implant-1">Lightweight implant</h3><!--kg-card-begin: markdown--><p>f66c2e249931b4dfab9b79beb69b84b5c7c4a4e885da458bc10759c11a97108f<br>
+011bcca8feebaed8a2aa0297051dfd59595c4c4e1ee001b11d8fc3d97395cc5c<br>
+5c341d34827c361ba2034cb03dea665a873016574f3b4ff9d208a9760f61b552<br>
+d9037f637566d20416c37bad76416328920997f22ffec9340610f2ea871522d8<br>
+124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce</p>
+<!--kg-card-end: markdown--><h3 id="crimsonrat-1">CrimsonRAT</h3><!--kg-card-begin: markdown--><p>67ad0b41255eca1bba7b0dc6c7bd5bd1d5d74640f65d7a290a8d18fba1372918<br>
+a0f6963845d7aeae328048da66059059fdbcb6cc30712fd10a34018caf0bd28a</p>
+<!--kg-card-end: markdown--><h3 id="python-based-downloaders">Python based downloaders</h3><!--kg-card-begin: markdown--><p>b9fea0edde271f3bf31135bdf1a36e58570b20ef4661f1ab19858a870f4119ba<br>
+dc1a5e76f486268ca8b7f646505e73541e1dc8578a95593f198f93c9cd8a5c8d<br>
+99e6e510722068031777c6470d06e31e020451aa86b3db995755d1af49cc5f9e</p>
+<!--kg-card-end: markdown--><h3 id="intermediate-artifacts">Intermediate artifacts</h3><!--kg-card-begin: markdown--><p>892a753f31dadf1c6e75f1b72ccef58d29454b9f4d28d73cf7e20d137ce6dd8d<br>
+c828bccfc34f16983f624f00d45e54335804b77dd199139b80841ad63b42c1f3<br>
+0d3f5ca81f62b8a68647a4bcc1c5777d3e865168ebb365cab4b452766efc5633<br>
+a0964a46212d50dbbbbd516a8a75c4764e33842e8764d420abe085d0552b5822<br>
+4162eaeb5826f3f337859996fc7f22442dd9b47f8d4c7cf4f942f666b1016661<br>
+e3e9bbdaa4be7ad758b0716ee11ec67bf20646bce620a86c1f223fd2c8d43744<br>
+56f04a39103372acc0f5e9b01236059ab62ea3d5f8236280c112e473672332b1</p>
+<!--kg-card-end: markdown--><h3 id="lnk">LNK</h3><p>08603759173157c2e563973890da60ab5dd758a02480477e5286fccef72ef1a2<br></p><h3 id="vbs">VBS</h3><p>2043e8b280ae016a983ecaea8e2d368f27a31fd90076cdca9cef163d685e1c83<br></p><h3 id="rar">RAR</h3><p>adc8e40ecb2833fd39d856aa8d05669ac4815b02acd1861f2693de5400e34f72<br></p><h3 id="img">IMG</h3><p>adaf7b3a432438a04d09c718ffddc0a083a459686fd08f3955014e6cf3abeec1<br></p><h3 id="vhdx">VHDX</h3><p>5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836<br><br></p><h3 id="ips">IPs</h3><!--kg-card-begin: markdown--><p>144[.]91.79.40<br>
+194[.]163.129.89<br>
+200[.]202.100.110<br>
+206[.]215.155.105<br>
+45[.]147.228.195<br>
+5[.]189.170.84</p>
+<!--kg-card-end: markdown--><h3 id="domains">Domains</h3><!--kg-card-begin: markdown--><p>zoneflare[.]com<br>
+secure256[.]net<br>
+directfileshare[.]net<br>
+dsoi[.]info<br>
+download[.]kavach-app[.]in<br>
+kavach-app[.]in<br>
+otbmail[.]com</p>
+<!--kg-card-end: markdown--><h3 id="urls">URLs</h3><!--kg-card-begin: markdown--><p>hxxp://directfileshare[.]net/DA-Updated.xls<br>
+hxxp://directfileshare[.]net/dd/m.exe<br>
+hxxp://download[.]kavach-app[.]in/Kavach.msi<br>
+hxxp://dsoi[.]info/downloads/chrmeziIIa.exe<br>
+hxxp://iwestcloud[.]com/Pick@Whatsoever/Qu33nRocQCl!mbing.php<br>
+hxxp://iwestcloud[.]com/Pick@Whatsoever/S3r&amp;eryvUed.php<br>
+hxxp://iwestcloud[.]com/Pick@Whatsoever/S3r&amp;eryvUed.php<br>
+hxxp://zoneflare[.]com/C2L!Dem0&amp;PeN/A@llPack3Ts/Cert.php<br>
+hxxp://zoneflare[.]com/C2L!Dem0&amp;PeN/A@llPack3Ts/Cor2PoRJSet!On.php<br>
+hxxp://zoneflare[.]com/C2L!Dem0&amp;PeN/A@llPack3Ts/Dev3l2Nmpo7nt.php<br>
+hxxp://zoneflare[.]com/C2L!Dem0&amp;PeN/A@llPack3Ts/f3dlPr00f.php<br>
+hxxp://zoneflare[.]com/C2L!Dem0&amp;PeN/A@llPack3Ts/xwunThedic@t6.php&quot;<br>
+hxxp://zoneflare[.]com/R!bB0nBr3@k3r/FunBreaker.php<br>
+hxxp://zoneflare[.]com/R!bB0nBr3@k3r/tallerthanhills.php&quot;<br>
+hxxp://zoneflare[.]com/R!bB0nBr3@k3r/zoneblue/mscontainer.dll<br>
+hxxps://drive[.]google[.]com/uc?export=download&amp;id=1kMeI1R-7sthlqWaPrp8xiNcQLjbKY9qf<br>
+hxxps://kavach-app[.]in/auth/ver4.mp3<br>
+hxxps://secure256[.]net/pdf/ServicedetailforDARevision.pdf<br>
+hxxps://secure256[.]net/ver4.mp3<br>
+hxxps://zoneflare[.]com/uipool.scr</p>
+<!--kg-card-end: markdown-->
+            
+                    </div>
+    </section>
+    <div class="social-media-wrapper">
+    <h5>Share this post</h5>
+    <ul class="social-media-share-list">
+        <li>
+            <a class="share-facebook" title="Share this on Facebook" data-text="Transparent Tribe campaign uses new bespoke malware to target Indian government officials" data-href="https://blog.talosintelligence.com/transparent-tribe-new-campaign/" rel="nofollow" target="_blank" href="https://www.facebook.com/sharer.php?u=https://blog.talosintelligence.com/transparent-tribe-new-campaign/"></a>
+        </li>
+        <li>
+            <a class="share-x" title="Post This" data-text="Transparent Tribe campaign uses new bespoke malware to target Indian government officials" data-href="https://blog.talosintelligence.com/transparent-tribe-new-campaign/" rel="nofollow" target="_blank" href="https://x.com/share?url=https://blog.talosintelligence.com/transparent-tribe-new-campaign/"></a>
+        </li>
+        <li>
+            <a class="share-linkedin" title="Share this on LinkedIn" data-text="Transparent Tribe campaign uses new bespoke malware to target Indian government officials" data-href="https://blog.talosintelligence.com/transparent-tribe-new-campaign/" rel="nofollow" target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://blog.talosintelligence.com/transparent-tribe-new-campaign/"></a>
+        </li>
+        <li>
+            <a class="share-reddit" title="Reddit This" data-text="Transparent Tribe campaign uses new bespoke malware to target Indian government officials" data-href="https://blog.talosintelligence.com/transparent-tribe-new-campaign/" rel="nofollow" target="_blank" href="https://www.reddit/submit?url=https://blog.talosintelligence.com/transparent-tribe-new-campaign/"></a>
+        </li>
+        <li>
+            <a class="share-email" title="Email This" href="mailto:?body=Transparent Tribe campaign uses new bespoke malware to target Indian government officialshttps://blog.talosintelligence.com/transparent-tribe-new-campaign/"></a>
+        </li>
+    </ul>
+</div></article>
+                    </div>
+                </div>
+                <div class="alt-layout-row-dk sidebar" id="side-bar">
+
+
+                            <h4>Related Content</h4>
+                                <div class="sidebar-snippet-wrapper">
+                                    <a href="/ransomware-incidents-in-japan-in-the-first-half-of-2026/">
+                                        <h3>Ransomware incidents in Japan in the first half of 2026: Investigation of The Gentlemen’s infrastructure and evidence of Qilin&#x27;s AI use</h3>
+                                        <span  class="preview-attributes">September 17, 2026 06:00</span>
+                                        <p>Ransomware incidents in Japan rose 4.7% year over year. The Gentlemen was the most active group, with leak-site listings more than doubling from January to July. Qilin ranked second and appeared to use AI, while SMEs with capital under JPY 1 billion represented 80% of victims.</p>
+                                    </a>
+                                </div>
+                                <div class="sidebar-snippet-wrapper">
+                                    <a href="/clearfake-webdav-infection-chain/">
+                                        <h3>ClearFake WebDAV infection chain delivers Amatera stealer, ZigCryptoStealer, and NetSupport Manager</h3>
+                                        <span  class="preview-attributes">September 8, 2026 06:01</span>
+                                        <p>We assess with moderate confidence that the attacks are not targeted at a particular organization, but are a part of a cryptocurrency and credentials-stealing operation using the Amatera stealer as the primary payload.</p>
+                                    </a>
+                                </div>
+                                <div class="sidebar-snippet-wrapper">
+                                    <a href="/clickfix-moves-into-the-browser/">
+                                        <h3>ClickFix moves into the browser: Cryptocurrency theft with Google-hosted C2</h3>
+                                        <span  class="preview-attributes">September 8, 2026 06:00</span>
+                                        <p>Cisco Talos is tracking a cryptocurrency-stealing campaign that abuses the Google Visualization API for command and control (C2), retrieving obfuscated JavaScript from a publicly published Google Sheets document and injecting it into the victim&#39;s browser session.</p>
+                                    </a>
+                                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer id="footer">
+    <div class="container-fluid px-0">
+        <div class="row footer_nav_wrapper mx-0">
+            <div class="col-xl-10 col-12">
+                <div class="multi-col-list-wrapper">
+                    <ul class="footer-parent-list">
+                        <li class="footer-links-group">
+                            <ul>
+                                <li>
+                                    <h6><a href="https://talosintelligence.com/reputation">Intelligence Center</a></h6>
+                                </li>
+                                <li><a href="https://talosintelligence.com/reputation_center">Intelligence Search</a></li>
+                                <li><a href="https://talosintelligence.com/reputation_center/email_rep">Email &amp; Spam Trends</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-links-group">
+                            <ul>
+                                <li>
+                                    <h6><a href="https://talosintelligence.com/vulnerability_info">Vulnerability Research</a></h6>
+                                </li>
+                                <li><a href="https://talosintelligence.com/vulnerability_reports">Vulnerability Reports</a></li>
+                                <li><a href="https://talosintelligence.com/ms_advisories">Microsoft Advisories</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-links-group">
+                             <ul>
+                                <li>
+                                    <h6><a href="https://talosintelligence.com/incident_response">Incident Response</a></h6>
+                                </li>
+                                <li>
+                                    <a href="https://talosintelligence.com/incident_response/services#reactive-services">Reactive Services</a>
+                                </li>
+                                <li>
+                                    <a href="https://talosintelligence.com/incident_response/services#proactive-services">Proactive Services</a>
+                                </li>
+                                <li>
+                                    <a href="https://talosintelligence.com/incident_response/contact">Emergency Support</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer-links-group">
+                            <ul>
+                                <li>
+                                    <h6>Security Resources</h6>
+                                </li>
+                                <li><a href="https://talosintelligence.com/software">Open Source Security Tools</a></li>
+                                <li><a href="https://talosintelligence.com/categories">Intelligence Categories Reference</a></li>
+                                <li><a href="https://talosintelligence.com/secure-endpoint-naming">Secure Endpoint Naming Reference</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-links-group">
+                            <ul>
+                                <li>
+                                    <h6>Media</h6>
+                                </li>
+                                <li><a href="https://blog.talosintelligence.com">Talos Intelligence Blog</a></li>
+                                <li><a href="https://blog.talosintelligence.com/category/threat-source-newsletter/">Threat Source Newsletter</a></li>
+                                <li><a href="https://talosintelligence.com/podcasts/shows/beers_with_talos">Beers with Talos Podcast</a></li>
+                                <li><a href="https://talosintelligence.com/podcasts/shows/talos_takes">Talos Takes Podcast</a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/channel/UCPZ1DtzQkStYBSG3GTNoyfg/featured">Talos Videos</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-links-group">
+                            <ul>
+                                <li>
+                                    <h6>Support</h6>
+                                </li>
+                                <li><a href="https://support.talosintelligence.com">Support Documentation</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-links-group">
+                            <ul>
+                                <li>
+                                    <h6>Company</h6>
+                                </li>
+                                <li><a href="https://talosintelligence.com/about">About Talos</a></li>
+                                <li><a href="https://talosintelligence.com/careers">Careers</a></li>
+                                <li><a target="_blank" href="https://www.cisco.com/c/en/us/products/security/product-listing.html">Cisco Security</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-12 connect_social">
+                <div class="connect-footer-section-wrapper">
+                    <h6>Follow us</h6>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://x.com/talossecurity"><div class="footer-media-icon" id="footer-media-icon-x"></div>
+                            </a></li>
+                        <li>
+                            <a target="_blank" href="https://www.youtube.com/channel/UCPZ1DtzQkStYBSG3GTNoyfg/featured"><div class="footer-media-icon" id="footer-media-icon-youtube"></div>
+                            </a></li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/company/cisco-talos-intelligence-group/"><div class="footer-media-icon" id="footer-media-icon-linkedin"></div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0">
+            <div class="col-12 footer_corporate">
+                <a target="_blank" href="http://tools.cisco.com/security/center/home.x"><img alt="Cisco" src="https://blog.talosintelligence.com/assets/images/logo_cisco_white.svg">
+                </a><p class="copyright">
+                ©
+                <span id='current-year'></span>
+                Cisco Systems, Inc. and/or its affiliates. All rights
+                reserved. View our
+                <a target="_blank" class="underline" href="http://www.cisco.com/web/siteassets/legal/privacy_full.html">Privacy Policy.</a>
+            </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+  function coverageView() {
+    const coverageTable = document.getElementById('coverage-block');
+    const sidebar = document.getElementById('side-bar');
+    const postContent = document.getElementById('post-content');
+    const currentWidth = window.innerWidth;  
+  
+    if (coverageTable && sidebar && postContent) {
+      if (currentWidth < 1000) {
+        // For viewport less than 1000px, append to post content
+        postContent.appendChild(coverageTable);
+      } else {
+        // For viewport 1000px and wider, check for subscribe button
+        const subscribeButton = sidebar.querySelector('.subscribe-button');
+        
+        if (subscribeButton) {
+          // Insert coverage block after the subscribe button
+          subscribeButton.insertAdjacentElement('afterend', coverageTable);
+        } else {
+          // No subscribe button found, prepend to top of sidebar
+          sidebar.prepend(coverageTable);
+        }
+      }
+    }
+  }
+  
+  window.addEventListener("resize", coverageView);
+  window.addEventListener("load", coverageView);
+
+
+  (function() {
+    Array.from(document.querySelectorAll("a")).filter(a => {
+        return a.hostname && a.hostname !== location.hostname
+    }).forEach(a => a.setAttribute('target', '_blank'))
+})();
+</script>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://blog.talosintelligence.com/assets/js/jquery-3.6.0.min.js?v=_xUj-3OJU5yExlq6"></script>
+<script src="https://blog.talosintelligence.com/assets/js/popper.min.js?v=ZvOgfh-ptkpoa2Y4"></script>
+<script src="https://blog.talosintelligence.com/assets/js/resize-styles.js?v=iB-0rQKwd6f_Dllp"></script>
+<script src="https://blog.talosintelligence.com/assets/js/bootstrap.bundle.min.js?v=JRXjfu4x9e89ZZsh"></script>
+<script src="https://blog.talosintelligence.com/assets/js/date.js?v=TlJWK1qtzFQeV9lL"></script>
+<script src="https://blog.talosintelligence.com/assets/js/prism.js?v=roQly8fYXhzQ4Osd"></script>
+<script src="https://cdn.jsdelivr.net/npm/ghost-theme-utils@latest/dist/js/ghost-theme-utils.min.js" async defer></script>
+<script src="https://blog.talosintelligence.com/assets/js/chart.min.js?v=dEAdc43T4D7l37O2"></script>
+<script src="https://blog.talosintelligence.com/assets/js/x-scroll.js?v=DuV8f5nlfWlGIAUr"></script>
+<script src="https://blog.talosintelligence.com/assets/js/2025_yir_chart.js?v=OSqUj45x6XXKWbZW"></script>
+
+
+</body>
+
+</html>

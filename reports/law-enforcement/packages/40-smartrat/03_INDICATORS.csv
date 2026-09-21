@@ -1,0 +1,11 @@
+indicator_id,type,value,notes,source
+SMT-IND-0001,md5,297EB45F028D44D750297D2F932B9C91,st.txt,Zscaler ThreatLabz
+SMT-IND-0002,md5,6BF4D4C62B5138ACE281CE3D08297787,payload.php,Zscaler ThreatLabz
+SMT-IND-0003,md5,3C72E1F37F115B00C3AD6ED31BACFE8A,PowerShell RAT,Zscaler ThreatLabz
+SMT-IND-0004,md5,B17CCDB5531555E43F082D6E77C07227,PowerShell RAT,Zscaler ThreatLabz
+SMT-IND-0005,domain,crefisa.online,fraudulent,Zscaler ThreatLabz
+SMT-IND-0006,domain,vfsgloball.net,fraudulent,Zscaler ThreatLabz
+SMT-IND-0007,domain,cartaobb.com,fraudulent,Zscaler ThreatLabz
+SMT-IND-0008,domain,windowsupdate-cdn.com,C2,Zscaler ThreatLabz
+SMT-IND-0009,ip,64.95.13.238,C2,Zscaler ThreatLabz
+SMT-IND-0010,ip,162.141.111.227,C2,Zscaler ThreatLabz

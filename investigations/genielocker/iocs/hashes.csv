@@ -1,0 +1,11 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+A50EAAF514F4F84E61CA2455A8789753,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,kftd.exe / genie_encrypt.exe,genielocker
+F08F476F26B01D142CA73923DE65FC0C,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,Windows sample,genielocker
+FD46A80C2F45577263328984EDF7F4DC,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,Windows sample,genielocker
+DE3CFBB50F66079BFEE20A6F64E59433,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,Windows sample,genielocker
+780C8F4C6F077DA4DA96582987920362,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,Windows sample,genielocker
+D87D0B01D95ACC936B7DC47B8F41937A,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,run.exe / genie_encrypt.exe,genielocker
+34A7F28E0BB69B0D49BACC88BDF20AC1,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,run.exe / genie.exe,genielocker
+5D62C1349B8981C396C9A23F4F8F053C,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,genie_encrypt.exe,genielocker
+A8842616C9057D5CF6E1FE1FA8C3C160,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,Windows sample,genielocker
+9201E35E2993612612919A3C71302CAB,md5,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,Linux/ESXi vzdump,genielocker

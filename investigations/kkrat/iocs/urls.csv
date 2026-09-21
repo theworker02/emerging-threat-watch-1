@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+http://key2025.oss-cn-hongkong.aliyuncs.com/2025.bin,url,,,Zscaler ThreatLabz,High,kkrat,CAMPAIGN ASSOCIATED,stage3,kkrat
+http://key2025.oss-cn-hongkong.aliyuncs.com/trx38.zip,url,,,Zscaler ThreatLabz,High,kkrat,CAMPAIGN ASSOCIATED,DLL zip,kkrat

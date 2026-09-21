@@ -1,0 +1,2 @@
+indicator_id,type,value,notes,source
+PRT-IND-0001,ip,212.11.64.105,hosting,Cisco Talos

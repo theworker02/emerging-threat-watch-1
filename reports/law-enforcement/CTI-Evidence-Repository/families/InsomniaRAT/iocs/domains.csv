@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+stryper.info,domain,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,PS/Node host,insomniarat
+aa.amazingshield.xyz,domain,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python agent host,insomniarat
+crowdstri.com,domain,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python C2 typosquat,insomniarat

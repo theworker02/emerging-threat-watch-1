@@ -1,0 +1,7 @@
+indicator_id,type,value,notes,source
+PPM-IND-0001,sha256,38ec1f5e23f65b10ae3027beabfa0bf7f9fb686355a9e33c7e7e44e6a998e04c,Tax_Notice_23665.img,JUMPSEC
+PPM-IND-0002,domain,dsfgssd.uk.cc,landing,JUMPSEC
+PPM-IND-0003,domain,dgdskfds.uk.cc,infra,JUMPSEC
+PPM-IND-0004,ip,154.36.188.201,VenomRAT C2 :4449,JUMPSEC
+PPM-IND-0005,ip,103.119.15.189,related C2,JUMPSEC
+PPM-IND-0006,url,https://dsfgssd.uk.cc/download.php,payload landing,JUMPSEC

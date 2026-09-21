@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+64.95.13.238,ip,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,C2,smartrat
+162.141.111.227,ip,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,C2,smartrat

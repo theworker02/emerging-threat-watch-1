@@ -1,0 +1,6 @@
+indicator_id,type,value,notes,source
+ARK-IND-0001,sha256,aaebc8c07de485be6d1bfa956668c5e18aa1ff5588dfe84672e20ae90b4560f1,eld1.exe LSB dropper,Palo Alto Networks Unit 42
+ARK-IND-0002,sha256,e05bc22afbc5ddd50b49c85ee169dd13318000d38286de2b8bcff98217256a8d,procorTrex.zip carved,Palo Alto Networks Unit 42
+ARK-IND-0003,sha256,b367762140ae7f5098230b8a5da738c9241f286281ec9439dd6ca581fc87989c,wscl.exe WebSocket RAT,Palo Alto Networks Unit 42
+ARK-IND-0004,sha256,d8d783f8e050a6e394f3c0aa5e2bc73a38d822e55fbc39c0648cbff566de3cdf,shared resource icon,Palo Alto Networks Unit 42
+ARK-IND-0005,sha256,06e0afd01bbc6c9d5dc16c3165089b233dc071e1f251abd06235d1b9166cdac5,shared resource icon,Palo Alto Networks Unit 42

@@ -1,0 +1,2 @@
+evidence_id,family,artifact_type,path_or_ref,retrieved_date_utc,sha256,provenance,notes
+OFR-EV-0001,offerloader,primary_html,evidence/primary-sources/offerloader/unit42-cl-cri-1171-ppi-2026.html,2026-09-21T01:10:00Z,,PRIMARY-SOURCE,Frozen primary HTML

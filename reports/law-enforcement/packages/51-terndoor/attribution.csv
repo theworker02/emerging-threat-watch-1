@@ -1,0 +1,2 @@
+claim,confidence,source,aliases,lineage_notes,nationality_folder
+"UAT-9244 — China-linked (Talos)","Medium","Cisco Talos","CrowDoor variant","Same actor cluster as PeerTime/BruteEntry — separate packages","NONE — metadata only"

@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+5A1BBB40C442B12594A913431F8C6757A3A66E8F,sha1,,,ESET,High,frienddelivery,CAMPAIGN ASSOCIATED,wer.dll FriendDelivery,frienddelivery
