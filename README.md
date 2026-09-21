@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://github.com/theworker02/emerging-threat-watch-1"><img alt="Repository" src="https://img.shields.io/badge/repo-emerging--threat--watch--1-22D3EE?style=flat-square&logo=github&logoColor=white"/></a>
-  <img alt="Families" src="https://img.shields.io/badge/families-15-3B82F6?style=flat-square"/>
+  <img alt="Families" src="https://img.shields.io/badge/families-66-3B82F6?style=flat-square"/>
   <img alt="IC3 filed" src="https://img.shields.io/badge/IC3%20filed-9%20packages-10B981?style=flat-square"/>
   <img alt="Scope" src="https://img.shields.io/badge/scope-defensive%20CTI%20only-0EA5E9?style=flat-square"/>
 </p>
@@ -77,7 +77,14 @@ See [`DISCLAIMER.md`](DISCLAIMER.md) and [`SECURITY.md`](SECURITY.md).
 | 14 | Matanbuchus | `ETW-MAT-IC3` | `PRIMARY_FROZEN` (comparator) | [`packages/14-matanbuchus`](reports/law-enforcement/packages/14-matanbuchus/) |
 | 15 | StarlandRAT | `ETW-STR-IC3` | `PRIMARY_FROZEN` | [`packages/15-starlandrat`](reports/law-enforcement/packages/15-starlandrat/) |
 
-**Case isolation (mandatory):** MiniFast ≠ PollCat. Matanbuchus ≠ SynkLoader (technique comparator only). NodeRabbit ≠ PollCat.
+**Case isolation (mandatory):** MiniFast ≠ PollCat. Matanbuchus ≠ SynkLoader (technique comparator only). NodeRabbit ≠ PollCat. NightLedger/ArcBridge/BridgeHead ≠ NodeRabbit/PollCat. MiniUpdate/MiniJunk/MiniBrowse ≠ MiniFast.
+
+### Sparse-corpus expansion (packages 16–66)
+
+- **16–30:** CountLoader, MAYBEROBOT/NOROBOT/YESROBOT, Tsundere, MonsterV2, PhantomHeart, ABCDoor, MiniUpdate/MiniJunk V2, HEAVYGRAM, CHOSEN BRICK, PromptSpy, GhostChat, HybridPetya
+- **31–42:** MovieReaper … kkRAT (prior deep-research freezes)
+- **43–66:** Foxveil → Atlas RAT (GhostContainer, Dohdoor, GopherWhisper, LongNosedGoblin, UAT-9244, UNC1069, Mirage Kitten, MuddyWater, MiniBrowse, plus CANDIDATE stubs)
+- Attribution is metadata only (`attribution.csv`) — not nationality-based folders. Catalog: [`docs/CANDIDATE_FAMILIES.md`](docs/CANDIDATE_FAMILIES.md) · [`intelligence/candidate-families.csv`](intelligence/candidate-families.csv)
 
 ---
 

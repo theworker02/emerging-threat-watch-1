@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+abc.haijing88.com,domain,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,lure,abcdoor
+abc.fetish-friends.com,domain,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,ABCDoor staging,abcdoor

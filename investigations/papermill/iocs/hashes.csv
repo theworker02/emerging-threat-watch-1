@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+38ec1f5e23f65b10ae3027beabfa0bf7f9fb686355a9e33c7e7e44e6a998e04c,sha256,,,JUMPSEC,High,papermill,CAMPAIGN ASSOCIATED,Tax_Notice_23665.img,papermill

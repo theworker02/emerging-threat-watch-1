@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+crefisa.online,domain,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,fraudulent,smartrat
+vfsgloball.net,domain,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,fraudulent,smartrat
+cartaobb.com,domain,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,fraudulent,smartrat
+windowsupdate-cdn.com,domain,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,C2,smartrat

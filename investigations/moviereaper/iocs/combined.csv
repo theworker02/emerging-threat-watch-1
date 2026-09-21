@@ -1,0 +1,16 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+A0B13781EDD7CFDAB13D79AFFF3C83C1,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader popular film EXE,moviereaper
+4334BBAEA8DE33BF9D45E9B4E4E3BC2,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+4843F9FAFCAE492F11E2D4D33DBB4CDD,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+5310CABAE3FBE6DB8742849B588093F9,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+70060341CAF3338697A7DDFE0FB62875,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+AD4643EEA15AC286FA47D1131F9EF756,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+D0B967571AC8A3863C7F324BF5BDE99C,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+D88D550D0FB8E60CFFFF3EA61FF7A067,md5,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader variant,moviereaper
+deadhub.org,domain,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,First-stage C2,moviereaper
+193.23.118.155,ip,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,First-stage C2 fallback,moviereaper
+208.64.33.90,ip,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,Second-stage C2,moviereaper
+208.94.246.53,ip,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,Second-stage C2,moviereaper
+%ProgramData%\Microsoft\Windows\Telemetry\msedge.exe,path,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,persistence masquerade,moviereaper
+Global\E4AyDKzvEhe2hgAr,mutex,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader mutex,moviereaper
+Global\fnulSktzSqvVLXHU,mutex,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,loader mutex,moviereaper

@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="ru-RU" prefix="og: https://ogp.me/ns#">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://securelist.ru/xmlrpc.php" />
+	<link rel="apple-touch-icon" sizes="192x192" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/favicon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/favicon-192x192.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/favicon-16x16.png">
+	<link rel="manifest" href="https://securelist.ru/wp-content/themes/securelist2020/assets/images/favicons/site.webmanifest">
+	<title>Как изменился арсенал группы Head Mare в начале 2026 года | Securelist</title>
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="keywords" content="Head Mare,PowerShell,Бэкдоры,Данные о киберугрозах,Хактивисты,Целевые атаки" />
+<meta property="vk:image" content="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-scaled.jpg" />
+<link rel="canonical" href="https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/" />
+<meta name="description" content="Разбираем текущую кампанию Head Mare: теперь группа использует новый бэкдор PhantomHeart и прокси PhantomProxyLite, переписанный на PowerShell." />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="ru_RU" />
+<meta property="og:site_name" content="Securelist" />
+<meta property="og:title" content="В самое сердце: разбираем новый инструментарий Head Mare" />
+<meta property="og:description" content="Разбираем текущую кампанию Head Mare: теперь группа использует новый бэкдор PhantomHeart и прокси PhantomProxyLite, переписанный на PowerShell." />
+<meta property="og:url" content="https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/" />
+<meta property="og:image" content="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-scaled.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Securelist_ru" />
+<meta name="twitter:creator" content="@Securelist_ru" />
+<meta name="twitter:title" content="В самое сердце: разбираем новый инструментарий Head Mare" />
+<meta name="twitter:description" content="Разбираем текущую кампанию Head Mare: теперь группа использует новый бэкдор PhantomHeart и прокси PhantomProxyLite, переписанный на PowerShell." />
+<meta name="twitter:image" content="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-scaled.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://securelist.ru/#/schema/WebSite","url":"https://securelist.ru/","name":"Securelist","alternateName":"Kaspersky","inLanguage":"ru-RU","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://securelist.ru/search/{search_term_string}/"},"query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/","url":"https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/","name":"Как изменился арсенал группы Head Mare в начале 2026 года | Securelist","description":"Разбираем текущую кампанию Head Mare: теперь группа использует новый бэкдор PhantomHeart и прокси PhantomProxyLite, переписанный на PowerShell.","inLanguage":"ru-RU","isPartOf":{"@id":"https://securelist.ru/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://securelist.ru/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://securelist.ru/","name":"Securelist"},{"@type":"ListItem","position":2,"item":"https://securelist.ru/category/crimeware-reports/","name":"Category: Отчеты о crimeware"},{"@type":"ListItem","position":3,"name":"Как изменился арсенал группы Head Mare в начале 2026 года"}]},"potentialAction":{"@type":"ReadAction","target":"https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/"},"datePublished":"2026-02-13T10:00:53+00:00","dateModified":"2026-02-16T12:51:24+00:00","author":[{"@type":"Person","name":"Kaspersky","url":"https://securelist.ru/author/kaspersky/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/"},"headline":"В самое сердце: разбираем новый инструментарий Head Mare","image":"https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-scaled.jpg","datePublished":"2026-02-13T10:00:53+00:00","dateModified":"2026-02-16T12:51:24+00:00","author":[{"@type":"Person","name":"Kaspersky","url":"https://securelist.ru/author/kaspersky/"}],"publisher":{"@type":"Organization","name":"Kaspersky","logo":{"@type":"ImageObject","url":"https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/03/19180627/logo-kaspersky.png","width":315,"height":60}},"description":"Разбираем текущую кампанию Head Mare: теперь группа использует новый бэкдор PhantomHeart и прокси PhantomProxyLite, переписанный на PowerShell."}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 29.33ms meta | 0.28ms boot -->
+
+<link rel='dns-prefetch' href='//smartcaptcha.yandexcloud.net' />
+<link rel="alternate" type="application/rss+xml" title="Securelist - Russian - Russia - securelist.ru &raquo; Лента" href="https://securelist.ru/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Securelist - Russian - Russia - securelist.ru &raquo; Лента комментариев" href="https://securelist.ru/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Securelist - Russian - Russia - securelist.ru &raquo; Лента комментариев к &laquo;В самое сердце: разбираем новый инструментарий Head Mare&raquo;" href="https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://securelist.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecurelist.ru%2Fhead-mare-phantomheart-and-phantomproxylite%2F114753%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://securelist.ru/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsecurelist.ru%2Fhead-mare-phantomheart-and-phantomproxylite%2F114753%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='urvanov_syntax_highlighter-css' href='https://securelist.ru/wp-content/plugins/urvanov-syntax-highlighter/css/min/urvanov_syntax_highlighter.min.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='crayon-theme-classic-css' href='https://securelist.ru/wp-content/plugins/urvanov-syntax-highlighter/themes/classic/classic.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='crayon-font-monaco-css' href='https://securelist.ru/wp-content/plugins/urvanov-syntax-highlighter/fonts/monaco.css?ver=1789623413' media='all' />
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='custom-gallery-slick-style-css' href='https://securelist.ru/wp-content/plugins/kaspersky-custom-gallery/assets/slick/slick.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='custom-gallery-style-css' href='https://securelist.ru/wp-content/plugins/kaspersky-custom-gallery/assets/css/style.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='kaspersky-link-preview-css-css' href='https://securelist.ru/wp-content/plugins/kaspersky-link-preview/assets/css/style.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='taxonomy-image-plugin-public-css' href='https://securelist.ru/wp-content/plugins/taxonomy-images/css/style.css?ver=1789623413' media='screen' />
+<link rel='stylesheet' id='kspr_twitter_pullquote-css' href='https://securelist.ru/wp-content/plugins/kspr_twitter_pullquote/css/style.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='securelist-style-css' href='https://securelist.ru/wp-content/themes/securelist2020/assets/css/main.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='securelist-style-post-css' href='https://securelist.ru/wp-content/themes/securelist2020/assets/css/post.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='kss_css-css' href='https://securelist.ru/wp-content/plugins/kaspersky-social-sharing/assets/css/style.css?ver=1789623413' media='all' />
+<link rel='stylesheet' id='kss_custom_css-css' href='https://securelist.ru/wp-content/plugins/kaspersky-social-sharing/assets/css/custom.css?ver=1789623413' media='all' />
+<script id="jquery-core-js" src="https://securelist.ru/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="urvanov_syntax_highlighter_js-js-extra">
+var UrvanovSyntaxHighlighterSyntaxSettings = {"version":"2.9.0","is_admin":"0","ajaxurl":"https://securelist.ru/wp-admin/admin-ajax.php","prefix":"urvanov-syntax-highlighter-","setting":"urvanov-syntax-highlighter-setting","selected":"urvanov-syntax-highlighter-setting-selected","changed":"urvanov-syntax-highlighter-setting-changed","special":"urvanov-syntax-highlighter-setting-special","orig_value":"data-orig-value","debug":""};
+var UrvanovSyntaxHighlighterSyntaxStrings = {"copy":"Copied to the clipboard","minimize":"Click To Expand Code"};
+//# sourceURL=urvanov_syntax_highlighter_js-js-extra
+</script>
+<script id="urvanov_syntax_highlighter_js-js" src="https://securelist.ru/wp-content/plugins/urvanov-syntax-highlighter/js/min/urvanov_syntax_highlighter.min.js?ver=1789623413"></script>
+<script id="kaspersky-lazy-load-external-js" src="https://securelist.ru/wp-content/plugins/kaspersky-lazy-load/assets/js/lazyload.js?ver=1789623413"></script>
+<script id="kasbanner-front-script-js-extra">
+var kasbanner_frontend_ajax_object = {"restURL":"https://securelist.ru/wp-json/","postID":"114753","postStatus":"publish"};
+//# sourceURL=kasbanner-front-script-js-extra
+</script>
+<script id="kasbanner-front-script-js" src="https://securelist.ru/wp-content/plugins/kaspersky-banners/assets/js/script.js?ver=1789623413"></script>
+<script id="notification_strings-js-extra">
+var gdprDynamicStrings = {"notification_text":"\u041c\u044b \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0435\u043c \u0444\u0430\u0439\u043b\u044b cookie, \u0447\u0442\u043e\u0431\u044b \u0441\u0434\u0435\u043b\u0430\u0442\u044c \u0440\u0430\u0431\u043e\u0442\u0443 \u0441 \u0441\u0430\u0439\u0442\u043e\u043c \u0443\u0434\u043e\u0431\u043d\u0435\u0435. \u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0430\u044f \u043d\u0430\u0445\u043e\u0434\u0438\u0442\u044c\u0441\u044f \u043d\u0430 \u0441\u0430\u0439\u0442\u0435, \u0432\u044b \u0441\u043e\u0433\u043b\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044c \u0441 \u044d\u0442\u0438\u043c. \u041f\u043e\u0434\u0440\u043e\u0431\u043d\u0443\u044e \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044e \u043e \u0444\u0430\u0439\u043b\u0430\u0445 cookie \u043c\u043e\u0436\u043d\u043e \u043f\u0440\u043e\u0447\u0438\u0442\u0430\u0442\u044c \u003Ca href=\"https://www.kaspersky.ru/third-party-tracking\" target=\"_blank\"\u003E\u0437\u0434\u0435\u0441\u044c\u003C/a\u003E.","button_text":"\u041f\u0440\u0438\u043d\u044f\u0442\u044c"};
+//# sourceURL=notification_strings-js-extra
+</script>
+<script id="notification_strings-js" src="https://securelist.ru/wp-content/plugins/kaspersky-cookies-notification/scripts/alert_text.js?ver=1789623413"></script>
+<script id="kasp-cookie-alert-js" src="https://securelist.ru/wp-content/plugins/kaspersky-cookies-notification/scripts/alert.js?ver=1789623413"></script>
+<script id="kspr_twitter_pullquote-js" src="https://securelist.ru/wp-content/plugins/kspr_twitter_pullquote/js/kaspersky-twitter-pullquote.js?ver=1789623413"></script>
+<script id="kss_js-js-extra">
+var kss = {"twitter_account":"Securelist_ru"};
+//# sourceURL=kss_js-js-extra
+</script>
+<script id="kss_js-js" src="https://securelist.ru/wp-content/plugins/kaspersky-social-sharing/assets/js/social-share.js?ver=1789623413"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				'Author' : 'Kaspersky',
+				'PostId' : '114753',
+				'PublicationDate' : '2026-02-13',
+				'Categories': 'Отчеты о crimeware, Описание вредоносного ПО',
+				'Tags': 'Целевые атаки, Бэкдоры, PowerShell, Данные о киберугрозах, Хактивисты, TTP, Head Mare',
+			});
+		</script>
+						<link rel="alternate" hreflang="ru" href="https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/" />
+<link rel="https://api.w.org/" href="https://securelist.ru/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://securelist.ru/wp-json/wp/v2/posts/114753" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://securelist.ru/xmlrpc.php?rsd" />
+<script type="text/javascript">
+var sNew = document.createElement("script");
+sNew.async = true;
+sNew.src = "https://kasperskycontenthub.com/?dm=ed1f9e435dc885292eab65620c51f3fb&action=load&blogid=58&siteid=1&t=367546811&back=https%3A%2F%2Fsecurelist.ru%2Fhead-mare-phantomheart-and-phantomproxylite%2F114753%2F"
+var s0 = document.getElementsByTagName('script')[0];
+s0.parentNode.insertBefore(sNew, s0);
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109078665', 'ym');
+  
+     ym(109078665, "init", {
+        ssr:true, 
+        defer:true,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<!-- /Yandex.Metrika counter -->
+
+<script>
+    mindbox = window.mindbox || function() { mindbox.queue.push(arguments); };
+    mindbox.queue = mindbox.queue || [];
+    mindbox('create');
+</script>
+<script src="https://api.s.mindbox.ru/scripts/v1/tracker.js" async></script>
+
+						<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5CGZ3HG');</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WZ7LJ3');</script>
+		<!-- End Google Tag Manager -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=160639043985664";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<link rel="icon" href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2018/11/06155411/cropped-sl_favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2018/11/06155411/cropped-sl_favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2018/11/06155411/cropped-sl_favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2018/11/06155411/cropped-sl_favicon-270x270.png" />
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-114753 single-format-standard wp-theme-securelist2020 lang-ru_RU c-theme--light">
+	<!-- Yandex.Metrika counter (noscript) -->
+<noscript><div><img src="https://mc.yandex.ru/watch/109078665" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CGZ3HG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ7LJ3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->			
+	<div id="site-top" class="site-top">
+	<div class="container">
+		<nav class="site-nav" data-element-id="product-menu">
+			<div class="label">
+				<p>Продукты:</p>
+			</div>
+			<ul id="menu-product-menu-daily-nxgen" class="site-selector"><li><a target="_blank" href="https://www.kaspersky.ru/home-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_prodmen_sm-team_______8379a2496c7ab534" data-element-id="product-menu-link" class="font-icons icon-home menu-item menu-item-type-custom menu-item-object-custom menu-item-91490">Для дома</a></li>
+<li><a title="font-icons icon-small-business" target="_blank" href="https://www.kaspersky.ru/small-business-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_prodmen_sm-team_______8379a2496c7ab534" data-element-id="product-menu-link" class="font-icons icon-small-business menu-item menu-item-type-custom menu-item-object-custom menu-item-91491">Для малого бизнеса</a></li>
+<li><a target="_blank" href="https://www.kaspersky.ru/small-to-medium-business-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_prodmen_sm-team_______8379a2496c7ab534" data-element-id="product-menu-link" class="font-icons icon-medium-business menu-item menu-item-type-custom menu-item-object-custom menu-item-91492">Для среднего бизнеса</a></li>
+<li><a target="_blank" href="https://www.kaspersky.ru/enterprise-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_prodmen_sm-team_______8379a2496c7ab534" data-element-id="product-menu-link" class="font-icons icon-enterprise menu-item menu-item-type-custom menu-item-object-custom menu-item-91493">Для крупного бизнеса</a></li>
+</ul>		</nav>
+	</div>
+</div>
+
+<header id="site-header" class="site-header js-sticky-mobile-header">
+	<div class="container">
+		<a href="" class="c-page-nav-toggle js-mobile-menu-toggle">
+			<span class="c-page-nav-toggle__icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</span>
+		</a>
+		<a href="" class="menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="c-site-title">
+			<div class="c-site-logo__group">
+				<a data-element-id="securelist-logo" href="https://securelist.ru/" class="c-site-logo c-site-logo--basic"></a>
+								<span class="c-site-tagline">by Kaspersky</span>
+			</div>
+		</div>
+
+		<ul id="menu-my-kaspersky" class="menu-utility sticky-utility"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91434"><a href="https://companyaccount.kaspersky.com/account/login?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="companyaccount">CompanyAccount</a>
+<li class="sticky-item sticky-xl-only menu-item menu-item-type-custom menu-item-object-custom menu-item-91435"><a href="https://www.kaspersky.ru/enterprise-security/contact?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="getintouch">ЗАДАТЬ ВОПРОС</a>
+<li class="securelist-theme-switcher menu-item menu-item-type-custom menu-item-object-custom menu-item-99525"><a data-element-id="dark-mode" href="#" class="js-theme-switcher"><i class="font-icons icon-moon"></i>Темная тема<span class="u-hidden u-inline--dark"> выкл.</span></a>
+<li class="dropdown"><a data-element-id="lang-selector" href="#" class="">Russian</a><ul class="sub-menu-regular"><li><a href="https://securelist.com">English</a></li><li><a href="https://latam.securelist.com">Spanish</a></li><li><a href="https://securelist.com.br">Brazil</a></li></ul>
+</ul>
+		<div class="c-page-search js-main-search">
+			<form class="c-page-search__form c-page-search__form--small js-wizardinfosys_autosearch_form" full_search_url="https://securelist.ru/?s=%q%" action="https://securelist.ru/" method="get">
+	<div class="c-form-element c-form-element--style-fill">
+		<div class="c-form-element__field wp_autosearch_form_wrapper">
+			<input name="s" class="c-form-element__text wp_autosearch_input ac_input" data-webinars="" type="text" value="" placeholder="Поиск" autocomplete="off">
+		</div>
+	</div>
+	<button class="c-button c-button--icon wp_autosearch_submit"><svg class="o-icon o-svg-icon o-svg-large"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://securelist.ru/wp-content/themes/securelist2020/assets/sprite/icons.svg#icon-search"></use></svg></button>
+</form>
+			<div class="c-page-search__toggle js-main-search-toggle"><svg class="o-icon o-svg-icon o-svg-larger"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://securelist.ru/wp-content/themes/securelist2020/assets/sprite/icons.svg#icon-search"></use></svg></div>
+		</div>
+		<nav class="main-nav" data-element-id="nextgen-menu">
+			<ul id="menu-corp-menu" class="main-menu"><li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91436"><a href="https://www.kaspersky.ru/enterprise-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Решения</a>
+<ul class="submenu">
+<li class="first featured featured-smaller menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91437">
+	<ul class="featured section-col-l-3 no-gutter">
+<li class="show-figure smaller-item icon-hybrid-cloud-security_solutions menu-item menu-item-type-custom menu-item-object-custom menu-item-91439"><figure><a href="https://www.kaspersky.ru/enterprise-security/cloud-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/hybrid-cloud-security_solutions.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/cloud-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Безопасность виртуальных и облачных сред</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/cloud-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-iot-embed-security menu-item menu-item-type-custom menu-item-object-custom menu-item-91440"><figure><a href="https://www.kaspersky.ru/enterprise-security/embedded-security-internet-of-things?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/iot-embed-security.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/embedded-security-internet-of-things?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Защита встраиваемых систем и Интернета вещей</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/embedded-security-internet-of-things?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-transportation-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91442"><figure><a href="https://www.kaspersky.ru/enterprise-security/industrial-solution?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/transportation-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/industrial-solution?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Защита критических инфраструктур</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/industrial-solution?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-fraud-prevention menu-item menu-item-type-custom menu-item-object-custom menu-item-91443"><figure><a href="https://www.kaspersky.ru/enterprise-security/fraud-prevention?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/fraud-prevention.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/fraud-prevention?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Защита от кибермошенничества</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/fraud-prevention?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>другие решения</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104326"><a href="https://www.kaspersky.ru/enterprise-security/security-operations-center-soc?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky для Security Operations Center</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104327"><a href="https://www.kaspersky.ru/enterprise-security/blockchain-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Blockchain Security</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91444"><a href="https://www.kaspersky.ru/enterprise-security/industries?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Отраслевая защита</a>
+<ul class="submenu">
+<li class="first featured featured-smaller menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91445">
+	<ul class="featured section-col-l-3 no-gutter">
+<li class="show-figure smaller-item icon-national-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91446"><figure><a href="https://www.kaspersky.ru/enterprise-security/national-cybersecurity?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/national-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/national-cybersecurity?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Кибербезопасность государственных организаций</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/national-cybersecurity?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-industrial-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91447"><figure><a href="https://www.kaspersky.ru/enterprise-security/industrial?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/industrial-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/industrial?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Промышленная кибербезопасность</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/industrial?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-financial-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91448"><figure><a href="https://www.kaspersky.ru/enterprise-security/finance?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/financial-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/finance?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Кибербезопасность финансовых учреждений</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/finance?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-healthcare-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91449"><figure><a href="https://www.kaspersky.ru/enterprise-security/healthcare?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/healthcare-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/healthcare?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Кибербезопасность медицинских учреждений</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/healthcare?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-transportation-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91450"><figure><a href="https://www.kaspersky.ru/enterprise-security/transportation-cybersecurity-it-infrastructure?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/transportation-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/transportation-cybersecurity-it-infrastructure?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Кибербезопасность транспортной инфраструктуры</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/transportation-cybersecurity-it-infrastructure?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-retail-cybersecurity menu-item menu-item-type-custom menu-item-object-custom menu-item-91451"><figure><a href="https://www.kaspersky.ru/enterprise-security/retail-cybersecurity?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/retail-cybersecurity.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/retail-cybersecurity?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Кибербезопасность розничной торговли</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/retail-cybersecurity?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>ДРУГИЕ ОТРАСЛИ</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91454"><a href="https://www.kaspersky.ru/enterprise-security/telecom?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Кибербезопасность телекоммуникационных компаний</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91455"><a href="https://www.kaspersky.ru/enterprise-security/industries?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Все отраслевые решения</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91456"><a href="https://www.kaspersky.ru/enterprise-security/products?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Продукты</a>
+<ul class="submenu">
+<li class="first featured featured-smaller menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91458">
+	<ul class="featured section-col-l-3 no-gutter">
+<li class="show-figure smaller-item icon-endpoint-security_products menu-item menu-item-type-custom menu-item-object-custom menu-item-91457"><figure><a href="https://www.kaspersky.ru/enterprise-security/endpoint?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/endpoint-security_products.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/endpoint?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Security для бизнеса</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/endpoint?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-hybrid-cloud-security_products menu-item menu-item-type-custom menu-item-object-custom menu-item-91460"><figure><a href="https://www.kaspersky.ru/enterprise-security/internet-gateway?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/hybrid-cloud-security_products.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/internet-gateway?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Security для интернет-шлюзов</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/internet-gateway?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-endpoint-detection-and-response menu-item menu-item-type-custom menu-item-object-custom menu-item-91459"><figure><a href="https://www.kaspersky.ru/enterprise-security/endpoint-detection-response-edr?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/endpoint-detection-and-response.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/endpoint-detection-response-edr?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Endpoint Detection and Response</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/endpoint-detection-response-edr?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-embedded-systems-security menu-item menu-item-type-custom menu-item-object-custom menu-item-91463"><figure><a href="https://www.kaspersky.ru/enterprise-security/embedded-systems?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/embedded-systems-security.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/embedded-systems?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Embedded Systems Security</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/embedded-systems?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-anti-targeted-attack-platform menu-item menu-item-type-custom menu-item-object-custom menu-item-91461"><figure><a href="https://www.kaspersky.ru/enterprise-security/anti-targeted-attack-platform?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/anti-targeted-attack-platform.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/anti-targeted-attack-platform?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Anti Targeted Attack</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/anti-targeted-attack-platform?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-private-security-network menu-item menu-item-type-custom menu-item-object-custom menu-item-91462"><figure><a href="https://www.kaspersky.ru/enterprise-security/private-security-network?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/private-security-network.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/private-security-network?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Private Security Network</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/private-security-network?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-private-security-network menu-item menu-item-type-custom menu-item-object-custom menu-item-104329"><figure><a href="https://www.kaspersky.ru/enterprise-security/malware-sandbox?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/private-security-network.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/malware-sandbox?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Sandbox</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/malware-sandbox?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-private-security-network menu-item menu-item-type-custom menu-item-object-custom menu-item-104328"><figure><a href="https://www.kaspersky.ru/enterprise-security/cyber-attack-attribution-tool?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/private-security-network.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/cyber-attack-attribution-tool?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Threat Attribution Engine</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/cyber-attack-attribution-tool?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-private-security-network menu-item menu-item-type-custom menu-item-object-custom menu-item-104330"><figure><a href="https://www.kaspersky.ru/enterprise-security/unified-monitoring-and-analysis-platform?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/private-security-network.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/unified-monitoring-and-analysis-platform?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Unified Monitoring and Analysis Platform</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/unified-monitoring-and-analysis-platform?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>ДРУГИЕ ПРОДУКТЫ</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91466"><a href="https://www.kaspersky.ru/enterprise-security/mail-server-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Security для почтовых серверов</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91467"><a href="https://www.kaspersky.ru/enterprise-security/internet-gateway?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Security для интернет-шлюзов</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91469"><a href="https://www.kaspersky.ru/enterprise-security/storage-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Security для систем хранения данных</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91468"><a href="https://www.kaspersky.ru/enterprise-security/aws-hybrid-cloud-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Security для виртуальных и облачных сред (для AWS)</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104331"><a href="https://www.kaspersky.ru/enterprise-security/azure-hybrid-cloud-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Security для виртуальных и облачных сред (для Azure)</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91470"><a href="https://www.kaspersky.ru/enterprise-security/products?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Все продукты</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown mega menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91471"><a href="https://www.kaspersky.ru/enterprise-security/services?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Сервисы</a>
+<ul class="submenu">
+<li class="first featured featured-smaller menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91472">
+	<ul class="featured section-col-l-3 no-gutter">
+<li class="show-figure smaller-item icon-cybersecurity-services menu-item menu-item-type-custom menu-item-object-custom menu-item-91473"><figure><a href="https://www.kaspersky.ru/enterprise-security/cybersecurity-services?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/cybersecurity-services.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/cybersecurity-services?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Сервисы кибербезопасности</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/cybersecurity-services?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-security-awareness menu-item menu-item-type-custom menu-item-object-custom menu-item-91474"><figure><a href="https://www.kaspersky.ru/enterprise-security/security-awareness?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/security-awareness.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/security-awareness?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Security Awareness</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/security-awareness?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-premium-support menu-item menu-item-type-custom menu-item-object-custom menu-item-91475"><figure><a href="https://www.kaspersky.ru/enterprise-security/premium-support?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/premium-support.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/premium-support?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Расширенная техническая поддержка</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/premium-support?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-threat-intelligence menu-item menu-item-type-custom menu-item-object-custom menu-item-91476"><figure><a href="https://www.kaspersky.ru/enterprise-security/threat-intelligence?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/threat-intelligence.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/threat-intelligence?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Threat Intelligence</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/threat-intelligence?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-threat-hunting menu-item menu-item-type-custom menu-item-object-custom menu-item-91477"><figure><a href="https://www.kaspersky.ru/enterprise-security/targeted-attack-discovery?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/threat-hunting.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/targeted-attack-discovery?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Threat Intelligence</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/targeted-attack-discovery?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-incident-response menu-item menu-item-type-custom menu-item-object-custom menu-item-91478"><figure><a href="https://www.kaspersky.ru/enterprise-security/apt-intelligence-reporting?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/incident-response.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/apt-intelligence-reporting?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Аналитические отчеты об APT-угрозах</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/apt-intelligence-reporting?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-incident-response menu-item menu-item-type-custom menu-item-object-custom menu-item-104332"><figure><a href="https://www.kaspersky.ru/enterprise-security/targeted-attack-discovery?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/incident-response.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/targeted-attack-discovery?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Targeted Attack Discovery</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/targeted-attack-discovery?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+<li class="show-figure smaller-item icon-incident-response menu-item menu-item-type-custom menu-item-object-custom menu-item-104333"><figure><a href="https://www.kaspersky.ru/enterprise-security/managed-detection-and-response?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/enterprise-menu-icons/incident-response.png"</a></figure><a href="https://www.kaspersky.ru/enterprise-security/managed-detection-and-response?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link"><span class="surtitle">Kaspersky</span>Managed Detection and Response</a><div class="desc"><p><a href="https://www.kaspersky.ru/enterprise-security/managed-detection-and-response?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078">Подробнее</a></p></div>
+	</ul>
+
+<li>
+	<ul class="regular">
+<li class="title"><h6>ДРУГИЕ СЕРВИСЫ</h6>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91481"><a href="https://www.kaspersky.ru/enterprise-security/professional-services?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Professional Services</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91482"><a href="https://www.kaspersky.ru/enterprise-security/incident-response?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Incident Response</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91483"><a href="https://www.kaspersky.ru/enterprise-security/cyber-security-training?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Kaspersky Security Training</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91484"><a href="https://www.kaspersky.ru/enterprise-security/services?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Все сервисы</a>
+	</ul>
+
+</ul>
+
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91485"><a href="https://www.kaspersky.ru/enterprise-security/resources?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Материалы</a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91486"><a href="https://www.kaspersky.ru/enterprise-security/resources/case-studies?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Реализованные проекты</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91487"><a href="https://www.kaspersky.ru/enterprise-security/resources/white-papers?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Обзоры</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91488"><a href="https://www.kaspersky.ru/enterprise-security/resources/data-sheets?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Брошюры</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102586"><a href="https://www.kaspersky.ru/enterprise-security/wiki-section/home?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Технологии</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-102587"><a href="https://www.kaspersky.com/MITRE?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">MITRE ATT&#038;CK</a>
+</ul>
+
+<li class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-91489"><a href="https://www.kaspersky.ru/about/contact?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">О нас</a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104334"><a href="https://www.kaspersky.ru/about/transparency?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Как мы работаем</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104335"><a href="https://www.kaspersky.ru/about/press-releases?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Новости</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104336"><a href="https://www.kaspersky.ru/about/press-center?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Пресс-центр</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104337"><a href="https://www.kaspersky.ru/about/careers?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Карьера</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104338"><a href="https://www.kaspersky.com/about/sponsorships/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Спонсорство</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104339"><a href="https://www.kaspersky.ru/about/contact?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="nextgen-menu-link">Контакты</a>
+</ul>
+
+</ul>		</nav>
+	</div>
+</header>
+
+<div class="mobile-menu-wrapper mobile-menu-wrapper--dark">
+	<ul class="mobile-nav" data-back="Back">
+		<li class="selector">
+			<!-- <a data-element-id="subscribe-button" href="#modal-newsletter" class="button-link js-modal-open"><i class="font-icons icon-envelope"></i>Подписаться</a> -->
+			<a data-element-id="mobile-menu-dark-mode" href="#" class="button-link c-theme-switcher js-theme-switcher"><i class="font-icons icon-moon"></i> Темная тема<span class="u-hidden u-inline--dark"> выкл.</span></a>
+					</li>
+		<li class="title">
+			<span>Securelist menu</span>
+		</li>
+		<li class="parent" data-parent data-icon="top-item"><a data-element-id="lang-selector" href="#" class=""><i class="top-item"></i><span>Russian</span></a><ul class="submenu"><li class="menu-item"><a href="https://securelist.com">English</a></li><li class="menu-item"><a href="https://latam.securelist.com">Spanish</a></li><li class="menu-item"><a href="https://securelist.com.br">Brazil</a></li></ul>
+<li class="parent" data-parent="" data-icon="top-item"><a href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>Клиентам</span></a>
+<ul class="submenu">
+<li class="parent" data-parent="  " data-icon="font-icons top-item"><a rel="  " href="#" data-element-id="mobile-menu"><i class="font-icons top-item"></i><span>ДЛЯ ДОМА</span></a>
+	<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91393"><a href="https://my.kaspersky.com/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">My Kaspersky</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104592"><a href="https://www.kaspersky.ru/new-renewal-center/home?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Продлить лицензию</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104593"><a href="https://www.kaspersky.ru/downloads?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Обновить продукт</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104594"><a href="https://support.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Поддержка</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104595"><a href="https://www.kaspersky.ru/home-security/special-offers?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Акции</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104596"><a href="https://partnersearch.kaspersky.com/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Найти магазин</a>
+	</ul>
+
+<li class="parent" data-parent="  " data-icon="top-item"><a rel="  " href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>ДЛЯ БИЗНЕСА</span></a>
+	<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104598"><a href="https://ksos.kaspersky.com/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">KSOS portal</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104599"><a href="https://cloud.kaspersky.com/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Kaspersky Business Hub</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104600"><a href="https://ksc.kaspersky.com/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">KSC Cloud Console</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104601"><a href="https://companyaccount.kaspersky.com/account/login?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Company Account</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104602"><a href="https://support.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Техническая поддержка</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104603"><a href="https://www.kaspersky.ru/renewal-center/vsb?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Продлить лицензию</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104604"><a href="https://www.kaspersky.ru/small-to-medium-business-security/special-offers?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Акции</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104605"><a href="https://partnersearch.kaspersky.com/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Найти партнера</a>
+	</ul>
+
+</ul>
+
+<li class="parent" data-parent=" " data-icon="top-item"><a rel=" " href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>Для дома</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91295"><a href="https://www.kaspersky.ru/home-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Продукты</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91391"><a href="https://www.kaspersky.ru/downloads?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Скачать</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91311"><a href="https://www.kaspersky.ru/resource-center?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Об угрозах</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91394"><a href="https://www.kaspersky.ru/home-security/special-offers?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Акции</a>
+</ul>
+
+<li class="parent" data-parent=" " data-icon="top-item"><a rel=" " href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>Для бизнеса</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91292"><a rel="   " href="https://www.kaspersky.ru/small-business-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Для малого бизнеса (1-25 сотрудников)</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91304"><a rel="   " href="https://www.kaspersky.ru/small-to-medium-business-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Для среднего бизнеса (26-999 сотрудников)</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91305"><a rel="   " href="https://www.kaspersky.ru/enterprise-security?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Для крупного бизнеса (1000+ сотрудников)</a>
+</ul>
+
+<li class="splitter"></li>
+<li class="title"><span>Securelist</span>
+<li class="parent" data-parent="" data-icon="top-item no-icon"><a href="https://securelist.ru/threat-categories/" data-element-id="mobile-menu"><span>Угрозы</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category current-post-ancestor current-menu-parent current-post-parent menu-item-101262"><a href="https://securelist.ru/threat-category/celevye-kiberataki/" data-element-id="mobile-menu">Целевые кибератаки</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101261"><a href="https://securelist.ru/threat-category/finansovye-ugrozy/" data-element-id="mobile-menu">Финансовые угрозы</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101259"><a href="https://securelist.ru/threat-category/mobilnye-ugrozy/" data-element-id="mobile-menu">Мобильные угрозы</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101258"><a href="https://securelist.ru/threat-category/industrialnye-ugrozy/" data-element-id="mobile-menu">Индустриальные угрозы</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101257"><a href="https://securelist.ru/threat-category/veb-ugrozy/" data-element-id="mobile-menu">Веб-угрозы</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101256"><a href="https://securelist.ru/threat-category/bezopasnoe-okruzhenie/" data-element-id="mobile-menu">Безопасное окружение (IoT)</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101260"><a href="https://securelist.ru/threat-category/spam-i-fishing/" data-element-id="mobile-menu">Спам и фишинг</a>
+</ul>
+
+<li class="parent" data-parent="" data-icon="top-item no-icon"><a href="https://securelist.ru/categories/" data-element-id="mobile-menu"><span>Категории</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101255"><a href="https://securelist.ru/category/kaspersky-security-bulletin/" data-element-id="mobile-menu">Kaspersky Security Bulletin</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101253"><a href="https://securelist.ru/category/apt-reports/" data-element-id="mobile-menu">Отчеты о целевых атаках (APT)</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101252"><a href="https://securelist.ru/category/malware-reports/" data-element-id="mobile-menu">Отчеты о вредоносном ПО</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101250"><a href="https://securelist.ru/category/research/" data-element-id="mobile-menu">Исследование</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101254"><a href="https://securelist.ru/category/security-technologies/" data-element-id="mobile-menu">Технологии безопасности</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-101251"><a href="https://securelist.ru/category/malware-descriptions/" data-element-id="mobile-menu">Описание вредоносного ПО</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101249"><a href="https://securelist.ru/category/incidents/" data-element-id="mobile-menu">Инциденты</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-101263"><a href="https://securelist.ru/category/opinions/" data-element-id="mobile-menu">Мнение</a>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-101264"><a href="https://securelist.ru/threat-category/uyazvimosti-i-eksplojty/" data-element-id="mobile-menu">Уязвимости и эксплойты</a>
+</ul>
+
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-101243"><a href="https://securelist.ru/all/" data-element-id="mobile-menu">Архив</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101242"><a href="https://securelist.ru/tags/" data-element-id="mobile-menu">Все тэги</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101244"><a href="https://apt.securelist.com/ru?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">APT-хроники</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101685"><a href="https://statistics.securelist.com/ru?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Статистика</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91431"><a target="_blank" href="https://encyclopedia.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Энциклопедия</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91432"><a target="_blank" href="https://threats.kaspersky.com/ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Описания угроз</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104589"><a href="https://securelist.ru/ksb-2021/" data-element-id="mobile-menu">KSB 2021</a>
+<li class="splitter"></li>
+<li class="parent" data-parent=" " data-icon="top-item"><a rel=" " href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>О нас</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91321"><a href="https://www.kaspersky.ru/about?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">О компании</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91320"><a href="https://www.kaspersky.ru/transparency?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Открытость</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91324"><a href="https://www.kaspersky.ru/about/press-releases?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Новости</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91325"><a href="https://www.kaspersky.ru/about/press-center?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Пресс-центр</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91326"><a href="https://careers.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Карьера</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91327"><a href="https://www.kaspersky.com/about/sponsorships?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Спонсорство</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91322"><a href="https://www.kaspersky.ru/about/contact?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Контакты</a>
+</ul>
+
+<li class="parent" data-parent="" data-icon="top-item"><a href="#" data-element-id="mobile-menu"><i class="top-item"></i><span>Партнерам</span></a>
+<ul class="submenu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91314"><a href="https://www.kaspersky.ru/partners?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Стать партнером</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91402"><a href="https://www.kaspersky.ru/partners/special-offers?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Акции</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91315"><a href="https://partners.kaspersky.com/s/login/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_mobmen_sm-team_______b8b5831c19c023e4" data-element-id="mobile-menu">Партнерский сайт</a>
+</ul>
+
+	</ul>
+	<div class="background-overlay"></div>
+</div>
+	<div class="c-page">
+		<section class="c-block c-block--bg-image c-page-header js-sticky-header" style="background-image: url(https://securelist.ru/wp-content/themes/securelist2020/assets/images/content/bg-gradient-01.jpg);">
+			<div class="o-container-fluid">
+				<div class="c-page-header__wrapper u-mt-spacer-base-">
+					<div class="o-row o-row--small-gutters">
+						<div class="o-col-3@md u-mt-spacer-base-">
+							<a data-element-id="content-menu" href="#" class="c-page-nav-toggle js-main-menu-toggle">
+								<span class="c-page-nav-toggle__icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+								<span class="c-page-nav-toggle__text">Меню контента</span>
+								<span class="c-page-nav-toggle__text c-page-nav-toggle__text--active">Закрыть</span>
+															</a>
+						</div>
+						<div class="o-col-6@md">
+							<form class="c-page-search__form js-main-search-popup js-wizardinfosys_autosearch_form" full_search_url="https://securelist.ru/?s=%q%" action="https://securelist.ru/" method="get">
+	<div class="c-form-element c-form-element--style-fill">
+		<div class="c-form-element__field wp_autosearch_form_wrapper">
+			<input name="s" class="c-form-element__text wp_autosearch_input ac_input" data-webinars="" type="text" value="" placeholder="Поиск" autocomplete="off">
+		</div>
+	</div>
+	<button class="c-button c-button--icon wp_autosearch_submit"><svg class="o-icon o-svg-icon o-svg-large"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://securelist.ru/wp-content/themes/securelist2020/assets/sprite/icons.svg#icon-search"></use></svg></button>
+</form>
+						</div>
+						<div class="o-col-3@md c-page-header__utilities" style="display: none;">
+							<a data-element-id="subscribe-button" href="#modal-newsletter" class="c-button c-subscribe-modal-toggle js-modal-open"><svg class="o-icon o-svg-icon o-svg-large"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://securelist.ru/wp-content/themes/securelist2020/assets/sprite/icons.svg#icon-envelope"></use></svg><span>Подписаться</span></a>
+							<div class="c-page-header__dropdown-wrapper">
+															</div>
+						</div>
+
+						
+												<div class="o-col-3@md">
+							<button class="c-button c-button_tr c-button--red" data-url="https://securelist.ru/tr/">
+								<span class="c-button__text">Threat Response</span>
+							</button>
+						</div>
+											</div>
+				</div>
+			</div>
+
+			<nav class="c-page-nav c-color--invert">
+				<div class="o-container-fluid">
+					<div class="o-row o-row--small-gutters">
+						<div class="o-col-3@md c-page-nav__info">
+							<div class="c-site-logo__group">
+								<a data-element-id="content-menu-securelist-logo" href="https://securelist.ru/" class="c-site-logo c-site-logo--basic c-site-logo--sm"></a>
+								<span class="c-site-tagline">by Kaspersky</span>
+							</div>
+							<a data-element-id="content-menu-dark-mode" href="#" class="c-theme-switcher js-theme-switcher"><i class="font-icons icon-moon"></i> Темная тема<span class="u-hidden u-inline--dark"> выкл.</span></a>
+						</div>
+						<div class="o-col-9@md">
+							<div class="c-page-menu">
+								<div class="o-row c-page-menu__dividers">
+									<div class="o-col-4@md"><div class="c-accordion js-accordion c-accordion--reset@md"><p id="menu-item-11084" class="menu-item-threats section-title accordion menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11084 c-page-menu__title u-hidden u-block@md"><a href="https://securelist.ru/threat-categories/" data-element-id="content-menu-link">Угрозы</a></p><div class="c-accordion-toggle js-accordion-toggle"><p>Угрозы</p></div><div class="c-accordion-container js-accordion-container">
+<ul class="sub-menu">
+	<li id="menu-item-99533" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category current-post-ancestor current-menu-parent current-post-parent menu-item-99533"><a href="https://securelist.ru/threat-category/celevye-kiberataki/" data-element-id="content-menu-link">Целевые кибератаки</a></li>
+	<li id="menu-item-93345" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93345"><a href="https://securelist.ru/threat-category/finansovye-ugrozy/" data-element-id="content-menu-link">Финансовые угрозы</a></li>
+	<li id="menu-item-93343" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93343"><a href="https://securelist.ru/threat-category/mobilnye-ugrozy/" data-element-id="content-menu-link">Мобильные угрозы</a></li>
+	<li id="menu-item-93347" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93347"><a href="https://securelist.ru/threat-category/industrialnye-ugrozy/" data-element-id="content-menu-link">Индустриальные угрозы</a></li>
+	<li id="menu-item-93349" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93349"><a href="https://securelist.ru/threat-category/veb-ugrozy/" data-element-id="content-menu-link">Веб-угрозы</a></li>
+	<li id="menu-item-93344" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93344"><a href="https://securelist.ru/threat-category/bezopasnoe-okruzhenie/" data-element-id="content-menu-link">Безопасное окружение (IoT)</a></li>
+	<li id="menu-item-93346" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93346"><a href="https://securelist.ru/threat-category/spam-i-fishing/" data-element-id="content-menu-link">Спам и фишинг</a></li>
+	<li id="menu-item-93348" class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93348"><a href="https://securelist.ru/threat-category/uyazvimosti-i-eksplojty/" data-element-id="content-menu-link">Уязвимости и эксплойты</a></li>
+</ul>
+
+</div></div></div><div class="o-col-4@md"><div class="c-accordion js-accordion c-accordion--reset@md"><p id="menu-item-15748" class="menu-item-categories section-title accordion menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15748 c-page-menu__title u-hidden u-block@md"><a href="https://securelist.ru/categories/" data-element-id="content-menu-link">Категории</a></p><div class="c-accordion-toggle js-accordion-toggle"><p>Категории</p></div><div class="c-accordion-container js-accordion-container">
+<ul class="sub-menu">
+	<li id="menu-item-88916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88916"><a href="https://securelist.ru/category/kaspersky-security-bulletin/" data-element-id="content-menu-link">Kaspersky Security Bulletin</a></li>
+	<li id="menu-item-99536" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99536"><a href="https://securelist.ru/category/apt-reports/" data-element-id="content-menu-link">Отчеты о целевых атаках (APT)</a></li>
+	<li id="menu-item-88922" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88922"><a href="https://securelist.ru/category/malware-reports/" data-element-id="content-menu-link">Отчеты о вредоносном ПО</a></li>
+	<li id="menu-item-88918" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88918"><a href="https://securelist.ru/category/research/" data-element-id="content-menu-link">Исследование</a></li>
+	<li id="menu-item-99534" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99534"><a href="https://securelist.ru/category/security-technologies/" data-element-id="content-menu-link">Технологии безопасности</a></li>
+	<li id="menu-item-99535" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-99535"><a href="https://securelist.ru/category/malware-descriptions/" data-element-id="content-menu-link">Описание вредоносного ПО</a></li>
+	<li id="menu-item-88917" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88917"><a href="https://securelist.ru/category/incidents/" data-element-id="content-menu-link">Инциденты</a></li>
+	<li id="menu-item-88919" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88919"><a href="https://securelist.ru/category/opinions/" data-element-id="content-menu-link">Мнение</a></li>
+</ul>
+
+</div></div></div><div class="o-col-4@md"><p id="menu-item-15749" class="menu-item-tags section-title after-accordion menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15749 c-page-menu__title u-hidden u-block@md"><a data-element-id="content-menu-link">Другие разделы</a></p>
+<ul class="sub-menu">
+	<li id="menu-item-115832" class="link_red menu-item menu-item-type-post_type_archive menu-item-object-threat_response menu-item-115832"><a href="https://securelist.ru/tr/" data-element-id="content-menu-link">Threat Response</a></li>
+	<li id="menu-item-21990" class="show-all-tags menu-item menu-item-type-post_type menu-item-object-page menu-item-21990"><a href="https://securelist.ru/tags/" data-element-id="content-menu-link">Все тэги</a></li>
+	<li id="menu-item-100757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100757"><a href="https://apt.securelist.com/ru?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="content-menu-link">APT-хроники</a></li>
+	<li id="menu-item-94188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94188"><a target="_blank" rel="noopener noreferrer" href="https://statistics.securelist.com/ru?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="content-menu-link">Статистика</a></li>
+	<li id="menu-item-90503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90503"><a target="_blank" rel="noopener noreferrer" href="https://encyclopedia.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="content-menu-link">Энциклопедия</a></li>
+	<li id="menu-item-29129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29129"><a target="_blank" rel="noopener noreferrer" href="https://threats.kaspersky.com/ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="content-menu-link">Описания угроз</a></li>
+	<li id="menu-item-111427" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111427"><a href="https://lp.kaspersky.com/global/ksb2025/" data-element-id="content-menu-link">KSB 2025</a></li>
+	<li id="menu-item-113450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113450"><a href="https://ics-cert.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="content-menu-link">Kaspersky ICS CERT</a></li>
+</ul>
+
+</div>								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</section>			<section class="c-block c-block--spacing-t@md c-block--spacing-b-small@md c-block--divider-internal" style="z-index:10">
+				<div class="o-container-fluid">
+					<article class="c-article">
+						<header class="c-article__header">
+							<figure class="c-article__figure u-hidden@md">
+								<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" fetchpriority="high" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-800x450.jpg" data-srcset="" srcset="" />							</figure>
+															<p class="c-article__headline u-hidden@md">
+									<a href="https://securelist.ru/category/crimeware-reports/" class="c-tag c-tag--primary">Отчеты о crimeware</a>
+								</p>
+														<h1 class="c-article__title">В самое сердце: разбираем новый инструментарий Head Mare</h1>							<div class="c-article__info">
+																	<p class="c-article__headline u-hidden u-block@md">
+										<a href="https://securelist.ru/category/crimeware-reports/" class="c-tag c-tag--primary">Отчеты о crimeware</a>
+									</p>
+																<p class="u-uppercase"><time datetime="2026-02-13T13:00:53+03:00">13 Фев 2026</time></p>
+								<p class="c-article__reading u-ml-auto@md">
+									<svg class="o-icon o-svg-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://securelist.ru/wp-content/themes/securelist2020/assets/sprite/icons.svg#icon-hourglass"></use></svg> <span class="js-reading-time"></span> мин. на чтение								</p>
+							</div>
+							<div class="c-article__authors c-article__authors_mobile u-hidden@md">												
+								<ul class="c-list-authors">
+												<li>
+			<a  href="https://securelist.ru/author/kaspersky/" >
+																<img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/avatar-default/avatar_default_2.png">
+													<span>Kaspersky</span></a>
+		</li>
+									</ul>
+							</div>
+						</header>
+
+						<div class="c-article__wrapper">
+
+							<div class="c-article__main">
+
+																	<div class="c-highlight c-highlight--overflow-down@md js-accordion u-hidden@md">
+										<div class="c-accordion-toggle js-accordion-toggle">
+											<div class="c-highlight__header">
+												<div class="c-highlight__icon">
+													<div class="u-block--theme-light u-hidden--theme-dark">
+														<img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/icon/icon-categories.svg" />
+													</div>
+													<div class="u-block--theme-dark u-hidden--theme-light">
+														<img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/icon/icon-categories--invert.svg" />
+													</div>
+												</div>
+												<div class="c-highlight__title">
+													<p>Содержание</p>
+												</div>
+											</div>
+										</div>
+										<div class="js-accordion-container">
+											<div class="c-highlight__body">
+												<ul class='c-list-links'><li><a href="#vvedenie">Введение</a></li><li><a href="#instrumentarij-gruppirovki">Инструментарий группировки</a></li><ul class='c-list-links'><li><a href="#phantomheart">PhantomHeart</a></li><li><a href="#phantomproxylite-powershell-realizatsiya">PhantomProxyLite: PowerShell-реализация</a></li><li><a href="#drugie-instrumenty">Другие инструменты</a></li></ul><li><a href="#zhertvy">Жертвы</a></li><li><a href="#atributsiya">Атрибуция</a></li><li><a href="#vyvody">Выводы</a></li><li><a href="#indikatory-komprometatsii">Индикаторы компрометации</a></li></ul>											</div>
+										</div>
+									</div>
+								
+								<div class="o-row c-article__container">
+									<div class="o-col c-article__content js-article-body">
+										<div class="js-reading-wrapper">
+											<figure class="c-article__figure u-hidden u-block@md">
+												<img width="1200" height="600" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-1200x600.jpg" class="attachment-securelist-2020-thumbnail-large size-securelist-2020-thumbnail-large wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123724/head-mare-phantomheart-featured-1200x600.jpg" data-srcset="" srcset="" />											</figure>
+
+											<div class="c-article__authors u-hidden u-block@md">
+												<p class="c-block__title">Авторы</p>
+												<ul class="c-list-authors">
+																<li>
+			<a  href="https://securelist.ru/author/kaspersky/" >
+																<img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/avatar-default/avatar_default_2.png">
+													<span>Kaspersky</span></a>
+		</li>
+													</ul>
+											</div>
+
+											
+											<div class="js-reading-content">
+												<div class="c-wysiwyg">
+													<h2 id="vvedenie">Введение</h2>
+<p>В конце 2025 – начале 2026 года мы зафиксировали заметный рост новой вредоносной активности, нацеленной на российские организации. Совокупность используемой инфраструктуры, тактик, техник и процедур (TTP) и особенностей кода указывает на связь этой кампании с проукраинской группировкой Head Mare, за деятельностью которой <a href="https://securelist.ru/tag/head-mare/" target="_blank">мы наблюдаем уже несколько лет</a>.</p>
+<p>Новая волна атак продемонстрировала дальнейшее развитие инструментария группировки. Ключевой находкой стал новый бэкдор PhantomHeart, который изначально распространялся в виде DLL-библиотеки, а позднее был переработан в PowerShell-скрипт. Такой переход отражает стремление Head Mare активнее применять подход Living-off-the-Land и опираться на нативные механизмы Windows, которые использовались для постэксплуатации.</p>
+<p>Эта стратегия прослеживается и в остальном арсенале группы. В рамках текущей кампании прокси-инструмент PhantomProxyLite, характерный для атак Head Mare, также получил реализацию на PowerShell. Кроме того, мы выявили новые кастомизированные утилиты с ограниченной, узкой функциональностью, используемые для закрепления в инфраструктуре жертв и повышения привилегий.</p>
+<p>При этом подходы к первоначальному доступу остаются во многом неизменными. Head Mare продолжает эксплуатировать уязвимость <a href="https://bdu.fstec.ru/vul/2025-10114" target="_blank">BDU:2025-10114</a> в программном обеспечении TrueConf Server, а в отдельных случаях по-прежнему использует фишинговые рассылки, сочетая проверенные векторы проникновения с постепенно обновляемым арсеналом.<br />
+<input type="hidden" class="category_for_banner" data-type="posts" value="incident-response-in-post-banner" /></p>
+<h2 id="instrumentarij-gruppirovki">Инструментарий группировки</h2>
+<h3 id="phantomheart">PhantomHeart</h3>
+<p>PowerShell-бэкдор PhantomHeart реализует канал удаленного доступа, сочетающий HTTP-коммуникацию с C2-сервером и возможность развертывания SSH-туннеля по запросу оператора. На этапе инициализации вредоносное ПО формирует идентификатор жертвы (<code>clientId</code>), основанный на MAC-адресе проводного сетевого адаптера. Этот идентификатор используется как для дальнейшей коммуникации с C2, так и для привязки конфигурации бэкдора к конкретному хосту.</p>
+<p>Список управляющих серверов хранится в зашифрованном виде и расшифровывается во время выполнения. Для этого используется алгоритм AES-128-CBC, при этом ключ генерируется на основе MAC-адреса зараженной системы. Такой подход затрудняет статический анализ образцов и извлечение адресов C2-серверов без запуска кода в целевой среде.</p>
+<p>После расшифровки адресов PhantomHeart переходит в основной цикл взаимодействия с C2. Для обмена данными используются HTTP POST-запросы, содержащие вредоносную нагрузку в формате JSON. Запросы отправляются через встроенные PowerShell-механизмы. Для каждой целевой системы собирается базовая информация: имя компьютера (<code>hostname</code>), домен (<code>domain</code>), внешний IP-адрес (<code>publicIp</code>) и уникальный идентификатор (<code>clientId</code>). Эти данные отправляются в POST-запросе на <code>/api/clients/register</code>.</p>
+<p>Пример POST-запроса:<br />
+<a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6.png" class="magnificImage"><img loading="lazy" decoding="async" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6.png" alt="" width="1102" height="292" class="aligncenter size-full wp-image-114788" srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6.png 1102w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6-300x79.png 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6-1024x271.png 1024w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6-768x203.png 768w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6-740x196.png 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6-1057x280.png 1057w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122717/head-mare-phantomheart-6-800x212.png 800w" sizes="auto, (max-width: 1102px) 100vw, 1102px" /></a></p>
+<p>Получив первичную информацию о новом зараженном хосте, бэкдор в дальнейшем периодически отправляет heartbeat-запросы на <code>/api/clients/heartbeat</code>, проверяя активность хоста и готовность к приему команд:<br />
+<a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7.png" class="magnificImage"><img loading="lazy" decoding="async" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7.png" alt="" width="1104" height="294" class="aligncenter size-full wp-image-114789" srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7.png 1104w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7-300x80.png 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7-1024x273.png 1024w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7-768x205.png 768w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7-740x197.png 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7-1051x280.png 1051w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16122730/head-mare-phantomheart-7-800x213.png 800w" sizes="auto, (max-width: 1104px) 100vw, 1104px" /></a></p>
+<p>Ключевой функциональной возможностью PhantomHeart является развертывание SSH-туннеля по указанию C2-сервера. При получении соответствующих параметров (включая адрес сервера, имя пользователя, порт и параметры проброса) бэкдор запускает клиент OpenSSH. Затем PhantomHeart динамически создает временный конфигурационный файл в директории <code>C:\Windows\Temp\config</code> и инициирует сессию с использованием удаленного проброса портов (remote port forwarding). Это позволяет оператору получить устойчивый удаленный доступ к скомпрометированной системе.</p>
+<p>Бэкдор также предусматривает возможность завершения работы по команде и обработку ошибок. В случае получения команды на отключение или при возникновении проблем с соединением PhantomHeart завершает SSH-сессию, удаляет временные артефакты и уведомляет C2-сервер на <code>/api/clients/ssh-terminated</code>.</p>
+<p>Отдельного внимания заслуживает обнаруженный механизм закрепления. В одной из атак бэкдор запускался через планировщик задач под видом легитимного скрипта обновления, размещенного в директории средства удаленного администрирования LiteManager. Использование пути <code>$ProgramFiles\LiteManager Pro - Server\rom\check-update.ps1</code> указывает на попытку замаскировать вредоносную активность под штатную работу легитимного программного обеспечения.</p>
+<h3 id="phantomproxylite-powershell-realizatsiya">PhantomProxyLite: PowerShell-реализация</h3>
+<p>В ходе анализа инструментария, используемого Head Mare в рамках новой кампании, мы обнаружили, что группировка переработала ранее известный инструмент PhantomProxyLite, реализовав его в виде PowerShell-скрипта.</p>
+<p>В предыдущих кампаниях PhantomProxyLite представлял собой скомпилированный бинарный файл, функционировавший в виде фонового сервиса с именем <code>SSHService</code>. Этот инструмент отвечал за установку и поддержание обратного SSH-туннеля к C2-инфраструктуре. При первом запуске он генерировал постоянный порт для обратного подключения, сохранял его в реестре Windows по пути <code>HKLM\SOFTWARE\SSHService</code> и обеспечивал закрепление за счет регистрации сервиса.</p>
+<p>Новая версия PhantomProxyLite сохраняет ту же архитектурную логику, но реализована полностью на PowerShell. Вместо фонового сервиса закрепление теперь осуществляется через задачу планировщика Windows с тем же именем, <code>SSHService</code>, настроенную на запуск при старте системы от имени учетной записи SYSTEM. При этом бэкдор по-прежнему использует тот же ключ реестра для хранения постоянного порта, динамически создает временный конфигурационный файл SSH-туннеля в каталоге <code>C:\Windows\Temp</code> и запускает <code>ssh.exe</code> для установления обратного туннеля.</p>
+<p>Переход к скриптовой реализации показывает, что Head Mare все чаще опирается на встроенные средства Windows. Таким образом группа адаптирует инструмент под конкретные условия, реализуя вредоносную функциональность без использования отдельных скомпилированных компонентов.</p>
+<p>Для автоматизации развертывания и закрепления новой версии PhantomProxyLite группировка использует вспомогательный PowerShell-скрипт <code>Create-SSHServiceTask.ps1</code>. Ниже приведен пример содержимого скрипта:<br />
+<a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2.png" class="magnificImage"><img loading="lazy" decoding="async" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2.png" alt="" width="1116" height="1247" class="aligncenter size-full wp-image-114782" srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2.png 1116w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-268x300.png 268w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-916x1024.png 916w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-768x858.png 768w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-313x350.png 313w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-740x827.png 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-251x280.png 251w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120610/head-mare-phantomheart-2-800x894.png 800w" sizes="auto, (max-width: 1116px) 100vw, 1116px" /></a><br />
+Этот скрипт настраивает задачу планировщика, которая запускает основной PowerShell-бэкдор при старте системы. Задача запускается с максимальными привилегиями от имени SYSTEM и дополнительно снабжена параметрами устойчивости, включая автоматический перезапуск в случае сбоев.</p>
+<p>При обнаружении уже существующей задачи с тем же именем скрипт удаляет ее и создает новую, гарантируя согласованную конфигурацию и предотвращая конфликты. После регистрации задача немедленно запускается, активируя бэкдор без ожидания следующей перезагрузки системы.</p>
+<h3 id="drugie-instrumenty">Другие инструменты</h3>
+<p>Помимо PowerShell-бэкдоров, группа Head Mare также расширила вспомогательный инструментарий, используемый в рамках постэксплуатации. В ходе расследования мы выявили новые утилиты и скрипты, предназначенные для автоматизации типовых задач на уровне хоста, включая закрепление в системе, управление привилегиями и организацию сетевого доступа.</p>
+<p>Одним из таких инструментов является исполняемый файл <code>adduser.exe</code>, разработанный для быстрой модификации локальной конфигурации системы. Эта утилита выполняет ограниченный, но важный набор действий: создает локальную учетную запись с именем <code>user</code>, добавляет ее в группу локальных администраторов и отключает механизм User Account Control (UAC). Использование подобного инструмента позволяет оператору получить административный доступ к системе без необходимости подключения вручную или использования встроенных средств управления пользователями.<br />
+<div id="attachment_114756-2" style="width: 1606px" class="wp-caption aligncenter"><a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1.png" class="magnificImage"><img loading="lazy" decoding="async" aria-describedby="caption-attachment-114756-2" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1.png" alt="Детонация образца в Kaspersky Research Sandbox" width="1596" height="1234" class="size-full wp-image-114756" srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1.png 1596w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-300x232.png 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-1024x792.png 1024w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-768x594.png 768w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-1536x1188.png 1536w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-453x350.png 453w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-740x572.png 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-362x280.png 362w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/13123704/head-mare-phantomheart-1-800x619.png 800w" sizes="auto, (max-width: 1596px) 100vw, 1596px" /></a><p id="caption-attachment-114756-2" class="wp-caption-text">Детонация образца в Kaspersky Research Sandbox</p></div><br />
+Также в рамках атак мы зафиксировали инструмент MicroSocks — реализацию SOCKS5-прокси, полученную из открытого репозитория на GitHub.</p>
+<p>В совокупности эти утилиты не представляют собой технически сложные разработки, однако их интеграция в общую цепочку атаки подчеркивает ориентацию Head Mare на автоматизацию, повторяемость и снижение операционной нагрузки на этапе постэксплуатации. Это говорит о том, что группа стремится проводить большее количество атак.</p>
+<h2 id="zhertvy">Жертвы</h2>
+<p>Новая волна активности Head Mare затронула широкий спектр российских организаций. Зафиксированные атаки пришлись как на организации из государственного сектора, так и на компании из строительной и промышленной отраслей.</p>
+<h2 id="atributsiya">Атрибуция</h2>
+<p>Описанную волну атак мы с высокой степенью уверенности связываем с проукраинской группировкой Head Mare. Основанием для этого служат технические и операционные признаки, уже хорошо знакомые нам по предыдущим кампаниям группы.</p>
+<ul>
+<li>Прежде всего, вектор первоначального доступа совпадает с тем, что мы фиксировали в прошлых атаках. В этой кампании вновь используется эксплуатация уязвимости BDU:2025-10114 в TrueConf Server — эту технику группа Head Mare активно применяет с прошлого года.
+<p>В ходе анализа мы зафиксировали множественные примеры успешной эксплуатации, включая внедрение команд PowerShell через параметры запуска <code>tc_server.exe</code>, что позволяло атакующим выполнять произвольный код в целевых системах:<br />
+<a href="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120623/head-mare-phantomheart-3.png" class="magnificImage"><img loading="lazy" decoding="async" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/02/16120623/head-mare-phantomheart-3.png" alt="" width="1116" height="141" class="aligncenter size-full wp-image-114783" /></a> </li>
+<li>Дополнительным индикатором, способствующим атрибуции, является повторное использование инфраструктуры. В рамках текущей кампании атакующие задействовали C2-адреса, которые ранее уже фигурировали в активности Head Mare:
+<p></p><!-- Urvanov Syntax Highlighter v2.9.0 -->
+
+		<div id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962" class="urvanov-syntax-highlighter-syntax crayon-theme-classic urvanov-syntax-highlighter-font-monaco urvanov-syntax-highlighter-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 12px !important; line-height: 15px !important;">
+		
+			<div class="crayon-toolbar" data-settings=" mouseover overlay hide delay" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+			<div class="crayon-tools" style="font-size: 12px !important;height: 18px !important; line-height: 18px !important;"><div class="crayon-button urvanov-syntax-highlighter-nums-button" title="Включить/Отключить нумерацию строк"><div class="urvanov-syntax-highlighter-button-icon"></div></div><div class="crayon-button urvanov-syntax-highlighter-plain-button" title="Включить/Отключить подсветку кода"><div class="urvanov-syntax-highlighter-button-icon"></div></div><div class="crayon-button urvanov-syntax-highlighter-wrap-button" title="Включить/Отключить перенос строк"><div class="urvanov-syntax-highlighter-button-icon"></div></div><div class="crayon-button urvanov-syntax-highlighter-expand-button" title="Expand Code"><div class="urvanov-syntax-highlighter-button-icon"></div></div><div class="crayon-button urvanov-syntax-highlighter-copy-button" title="Copy"><div class="urvanov-syntax-highlighter-button-icon"></div></div><div class="crayon-button urvanov-syntax-highlighter-popup-button" title="Показать код в новом окне"><div class="urvanov-syntax-highlighter-button-icon"></div></div></div></div>
+			<div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div>
+			<div class="urvanov-syntax-highlighter-plain-wrap"><textarea wrap="soft" class="urvanov-syntax-highlighter-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12px !important; line-height: 15px !important;">
+cyberposi[.]space
+nexaguard[.]space
+safebloom[.]space
+optivault[.]space
+brightshield[.]space
+analytisec[.]space
+shieldify[.]online
+195.133.32[.]213
+188.127.227[.]46</textarea></div>
+			<div class="urvanov-syntax-highlighter-main" style="">
+				<table class="crayon-table">
+					<tr class="urvanov-syntax-highlighter-row">
+				<td class="crayon-nums " data-settings="hide">
+					<div class="urvanov-syntax-highlighter-nums-content" style="font-size: 12px !important; line-height: 15px !important;"><div class="crayon-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-1">1</div><div class="crayon-num crayon-striped-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-2">2</div><div class="crayon-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-3">3</div><div class="crayon-num crayon-striped-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-4">4</div><div class="crayon-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-5">5</div><div class="crayon-num crayon-striped-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-6">6</div><div class="crayon-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-7">7</div><div class="crayon-num crayon-striped-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-8">8</div><div class="crayon-num" data-line="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-9">9</div></div>
+				</td>
+						<td class="urvanov-syntax-highlighter-code"><div class="crayon-pre" style="font-size: 12px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-1"><span class="crayon-v">cyberposi</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-e">space</span></div><div class="crayon-line crayon-striped-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-2"><span class="crayon-v">nexaguard</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-e">space</span></div><div class="crayon-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-3"><span class="crayon-v">safebloom</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-e">space</span></div><div class="crayon-line crayon-striped-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-4"><span class="crayon-v">optivault</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-e">space</span></div><div class="crayon-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-5"><span class="crayon-v">brightshield</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-e">space</span></div><div class="crayon-line crayon-striped-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-6"><span class="crayon-v">analytisec</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-e">space</span></div><div class="crayon-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-7"><span class="crayon-v">shieldify</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-i">online</span></div><div class="crayon-line crayon-striped-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-8"><span class="crayon-cn">195.133.32</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-cn">213</span></div><div class="crayon-line" id="urvanov-syntax-highlighter-6ab06b3ce28d8884690962-9"><span class="crayon-cn">188.127.227</span><span class="crayon-sy">[</span><span class="crayon-sy">.</span><span class="crayon-sy">]</span><span class="crayon-cn">46</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0003 seconds] -->
+<p> </li>
+<li>Группировка не изменила и подход к целям: как география атак, так и выбор отраслей повторяют ее предыдущие кампании.</li>
+<li>Наконец, используемый инструментарий демонстрирует знакомый для Head Mare подход. Обнаруженные PowerShell-версии PhantomProxyLite представляют собой переработку ранее применявшегося бинарного бэкдора: изменилась форма реализации, но сама логика использования инструмента осталась прежней.</li>
+</ul>
+<p>Совокупность этих факторов позволяет уверенно отнести описанную активность к группировке Head Mare.</p>
+<h2 id="vyvody">Выводы</h2>
+<p>Текущая активность Head Mare показывает, что группировка продолжает перестраивать свой инструментарий и цепочки атак. Появление нового бэкдора PhantomHeart и все более активное использование средств автоматизации делают такие операции проще в повторении и масштабировании. За счет этого Head Mare может регулярно проводить новые кампании и продолжает представлять ощутимую угрозу для российских организаций из различных отраслей.</p>
+<p>Продукты &#171;Лаборатории Касперского&#187; детектируют описанное в статье вредоносное ПО со следующими вердиктами: HEUR:Trojan-Ransom.Win32.*, not-a-virus:NetTool.Win32.NetScan.*, HEUR:Trojan.Win32.Generic, not-a-virus:NetTool.Win64.MicroSocks.*, Backdoor.PowerShell.Agent.gen, Trojan.PowerShell.Agent.*.</p>
+<h2 id="indikatory-komprometatsii">Индикаторы компрометации</h2>
+<p>Дополнительные индикаторы компрометации доступны клиентам сервиса аналитических отчетов <a href="https://www.kaspersky.com/enterprise-security/threat-intelligence?icid=kl-ru_post-link-crimeware-reports_ef2b5222695e8e87" target="_blank">Kaspersky Crimeware Intelligence Reporting</a>. Для получения более подробной информации свяжитесь с нами по адресу <a href="mailto:crimewareintel@kaspersky.com" target="_blank">crimewareintel@kaspersky.com</a>.</p>
+<p><strong>Хэши файлов</strong></p>
+<p><strong>PhantomHeart</strong><br />
+<a href="https://opentip.kaspersky.com/f6fe88cf5674d4d032646e3c5c1a5a01/results?icid=kl-ru_sl_post-opentip_sm-team_bf8efa570e7bc400&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">F6FE88CF5674D4D032646E3C5C1A5A01</a><br />
+<a href="https://opentip.kaspersky.com/137e563355d1d83e822b80956f589bf8/results?icid=kl-ru_sl_post-opentip_sm-team_39546ba554133c0f&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">137E563355D1D83E822B80956F589BF8</a><br />
+<a href="https://opentip.kaspersky.com/186f7f0f64358c1affd314be1406225e/results?icid=kl-ru_sl_post-opentip_sm-team_60b9208bd8d9d5c1&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">186F7F0F64358C1AFFD314BE1406225E</a><br />
+<a href="https://opentip.kaspersky.com/1c66d261808114a48e444666a7baad38/results?icid=kl-ru_sl_post-opentip_sm-team_4195b4790d8bfff2&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">1C66D261808114A48E444666A7BAAD38</a><br />
+<a href="https://opentip.kaspersky.com/26d134f56489b7703b403276d75fb016/results?icid=kl-ru_sl_post-opentip_sm-team_986a1522b0ee7a8d&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">26D134F56489B7703B403276D75FB016</a><br />
+<a href="https://opentip.kaspersky.com/54e128b861c5052666a86b470e34c33b/results?icid=kl-ru_sl_post-opentip_sm-team_1af95c0109a5395d&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">54E128B861C5052666A86B470E34C33B</a><br />
+<a href="https://opentip.kaspersky.com/a484661d7a2897365e07a2d79e4f4d60/results?icid=kl-ru_sl_post-opentip_sm-team_5578ba82abbee709&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">A484661D7A2897365E07A2D79E4F4D60</a><br />
+<a href="https://opentip.kaspersky.com/e26aafb5d3fec5dcd8c1aad73cb02414/results?icid=kl-ru_sl_post-opentip_sm-team_94a22592be06e081&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">E26AAFB5D3FEC5DCD8C1AAD73CB02414</a><br />
+<a href="https://opentip.kaspersky.com/02be93f46743ff293644433089a47bbc/results?icid=kl-ru_sl_post-opentip_sm-team_108a34ffc850a398&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">02BE93F46743FF293644433089A47BBC</a><br />
+<a href="https://opentip.kaspersky.com/5fe4a4ca52319b97196183a47fb17bf8/results?icid=kl-ru_sl_post-opentip_sm-team_22b64769b6215355&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">5FE4A4CA52319B97196183A47FB17BF8</a><br />
+<a href="https://opentip.kaspersky.com/a50b645c933e3c2895397401a0dc46b9/results?icid=kl-ru_sl_post-opentip_sm-team_76cf7c775259fb1e&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">A50B645C933E3C2895397401A0DC46B9</a><br />
+<a href="https://opentip.kaspersky.com/ad85916797773e3191fd8ab45111f3ef/results?icid=kl-ru_sl_post-opentip_sm-team_3a07f5ee7e8f3a0b&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">AD85916797773E3191FD8AB45111F3EF</a><br />
+<a href="https://opentip.kaspersky.com/b251ffc6665a3f6bb63728be76f2de0c/results?icid=kl-ru_sl_post-opentip_sm-team_ce3c7012bf87bf41&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">B251FFC6665A3F6BB63728BE76F2DE0C</a><br />
+<a href="https://opentip.kaspersky.com/23e91b4d5a65403479648dde7c1a92e3/results?icid=kl-ru_sl_post-opentip_sm-team_0a286c1d9b3cb2a1&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">23E91B4D5A65403479648DDE7C1A92E3</a><br />
+<a href="https://opentip.kaspersky.com/be6ed8287b22f91d0f8a66e901393d13/results?icid=kl-ru_sl_post-opentip_sm-team_b37478f7af502a63&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">BE6ED8287B22F91D0F8A66E901393D13</a></p>
+<p><strong>PhantomProxyLite (PowerShell версия)</strong><br />
+<a href="https://opentip.kaspersky.com/17eb5cc5ef4b7cc6a0d7233af97da29e/results?icid=kl-ru_sl_post-opentip_sm-team_06f694048a380a1a&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">17EB5CC5EF4B7CC6A0D7233AF97DA29E</a><br />
+<a href="https://opentip.kaspersky.com/8f72e0dd349bb32a100d19bad260bd2e/results?icid=kl-ru_sl_post-opentip_sm-team_10b766bcdc9fd9a5&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">8F72E0DD349BB32A100D19BAD260BD2E</a><br />
+<a href="https://opentip.kaspersky.com/bf73d5f96394bf47d329b848d58bf9fe/results?icid=kl-ru_sl_post-opentip_sm-team_c19e455b3a8d47e8&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">BF73D5F96394BF47D329B848D58BF9FE</a><br />
+<a href="https://opentip.kaspersky.com/76cdcfea6be9b7172b2c3a5fae59da09/results?icid=kl-ru_sl_post-opentip_sm-team_b3f1258a542f6c97&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">76CDCFEA6BE9B7172B2C3A5FAE59DA09</a><br />
+<a href="https://opentip.kaspersky.com/dc41c9267a636da409bbf60f802b8e62/results?icid=kl-ru_sl_post-opentip_sm-team_cbb593f6246828f9&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">DC41C9267A636DA409BBF60F802B8E62</a><br />
+<a href="https://opentip.kaspersky.com/5427ba3ef8bd2c4e57b33dd039ce6ea3/results?icid=kl-ru_sl_post-opentip_sm-team_e42610d8e7a2717f&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">5427BA3EF8BD2C4E57B33DD039CE6EA3</a></p>
+<p><strong>Create-SSHServiceTask.ps1</strong><br />
+<a href="https://opentip.kaspersky.com/79b11a56618cfb43953b29b71406c1ee/results?icid=kl-ru_sl_post-opentip_sm-team_477f6a1c95c21ba9&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">79B11A56618CFB43953B29B71406C1EE</a></p>
+<p><strong>MicroSocks</strong><br />
+<a href="https://opentip.kaspersky.com/2dc957cf3f0f6c5c5e6fc865f8bbce42/results?icid=kl-ru_sl_post-opentip_sm-team_b493235069182e4d&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">2DC957CF3F0F6C5C5E6FC865F8BBCE42</a>		micro.exe</p>
+<p><strong>Mimikatz</strong><br />
+<a href="https://opentip.kaspersky.com/29efd64dd3c7fe1e2b022b7ad73a1ba5/results?icid=kl-ru_sl_post-opentip_sm-team_c7f91a8d765a4bbd&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">29EFD64DD3C7FE1E2B022B7AD73A1BA5</a></p>
+<p><strong>Advanced Port Scanner</strong><br />
+<a href="https://opentip.kaspersky.com/6a58b52b184715583cda792b56a0a1ed/results?icid=kl-ru_sl_post-opentip_sm-team_2f85d003e86d0359&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">6A58B52B184715583CDA792B56A0A1ED</a>	Advanced_Port_Scanner_2.5.3869.exe</p>
+<p><strong>LockBit</strong><br />
+<a href="https://opentip.kaspersky.com/8f1ef9e7ea31b20fa5ebb4e747003b5c/results?icid=kl-ru_sl_post-opentip_sm-team_0818aa1d9e400f56&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">8F1EF9E7EA31B20FA5EBB4E747003B5C</a>		avp.exe</p>
+<p><strong>Пути, по которым был найден PhantomHeart</strong><br />
+c:\Windows\ime<br />
+c:\Windows\pla<br />
+c:\Windows\System32\ime<br />
+c:\Windows\inf\lsm<br />
+c:\windows\ime<br />
+c:\Windows\guard\gshared<br />
+c:\Windows\migration<br />
+c:\Windows\System32<br />
+c:\Windows\guard<br />
+c:\Windows\inf<br />
+c:\csc<br />
+c:\Windows\tapi<br />
+c:\Windows\csc<br />
+c:\Windows\System32\com<br />
+c:\Windows\skb\languagemodels<br />
+c:\Windows\vss<br />
+c:\Windows\System32\timecontrolsvc<br />
+c:\Windows\System32\mrt</p>
+<p><strong>PhantomHeart</strong><br />
+<a href="https://opentip.kaspersky.com/aegissecurity.online/?icid=kl-ru_sl_post-opentip_sm-team_6207e5a84324a81c&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">aegissecurity[.]online</a><br />
+<a href="https://opentip.kaspersky.com/defentry.online/?icid=kl-ru_sl_post-opentip_sm-team_b3bddd44ea060ac8&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">defentry[.]online</a><br />
+<a href="https://opentip.kaspersky.com/tastehub.online/?icid=kl-ru_sl_post-opentip_sm-team_ae523244ad945ba4&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">tastehub[.]online</a><br />
+<a href="https://opentip.kaspersky.com/netvion.online/?icid=kl-ru_sl_post-opentip_sm-team_f1685723b32f60a4&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">netvion[.]online</a><br />
+<a href="https://opentip.kaspersky.com/cryptara.online/?icid=kl-ru_sl_post-opentip_sm-team_1b97d1b60041f889&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">cryptara[.]online</a><br />
+<a href="https://opentip.kaspersky.com/optivault.space/?icid=kl-ru_sl_post-opentip_sm-team_70a3073636234356&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">optivault[.]space</a><br />
+<a href="https://opentip.kaspersky.com/infoseon.online/?icid=kl-ru_sl_post-opentip_sm-team_6d4c26d916618bcb&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">infoseon[.]online</a><br />
+<a href="https://opentip.kaspersky.com/msnetsec.space/?icid=kl-ru_sl_post-opentip_sm-team_b7817d318455d13c&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">msnetsec[.]space</a><br />
+<a href="https://opentip.kaspersky.com/fortisec.online/?icid=kl-ru_sl_post-opentip_sm-team_6da35da7c93cfabe&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">fortisec[.]online</a><br />
+<a href="https://opentip.kaspersky.com/vitalock.space/?icid=kl-ru_sl_post-opentip_sm-team_a51677fe19a413b8&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">vitalock[.]space</a><br />
+<a href="https://opentip.kaspersky.com/cyvantis.online/?icid=kl-ru_sl_post-opentip_sm-team_01de8473d389447a&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">cyvantis[.]online</a></p>
+<p><strong>PhantomProxyLite (PowerShell версия)</strong><br />
+<a href="https://opentip.kaspersky.com/195.133.32.213/?icid=kl-ru_sl_post-opentip_sm-team_7a94f8a4fb1960d8&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">195.133.32[.]213</a><br />
+<a href="https://opentip.kaspersky.com/31.56.227.61/?icid=kl-ru_sl_post-opentip_sm-team_1b62337952b307f1&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">31.56.227[.]61</a><br />
+<a href="https://opentip.kaspersky.com/31.58.137.197/?icid=kl-ru_sl_post-opentip_sm-team_edd2694de8e16e59&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">31.58.137[.]197</a><br />
+<a href="https://opentip.kaspersky.com/31.56.48.178/?icid=kl-ru_sl_post-opentip_sm-team_f0a3167fb05f55c4&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">31.56.48[.]178</a><br />
+<a href="https://opentip.kaspersky.com/193.176.153.162/?icid=kl-ru_sl_post-opentip_sm-team_93995315e20219f1&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">193.176.153[.]162</a><br />
+<a href="https://opentip.kaspersky.com/188.127.254.233/?icid=kl-ru_sl_post-opentip_sm-team_d847b91edc39d6ab&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">188.127.254[.]233</a><br />
+<a href="https://opentip.kaspersky.com/94.183.188.166/?icid=kl-ru_sl_post-opentip_sm-team_5f65ff23bc81555b&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">94.183.188[.]166</a><br />
+<a href="https://opentip.kaspersky.com/80.66.81.13/?icid=kl-ru_sl_post-opentip_sm-team_78e4ac1ac5cab355&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">80.66.81[.]13</a><br />
+<a href="https://opentip.kaspersky.com/213.232.204.111/?icid=kl-ru_sl_post-opentip_sm-team_cacb8919ff76e1dc&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">213.232.204[.]111</a><br />
+<a href="https://opentip.kaspersky.com/31.56.227.100/?icid=kl-ru_sl_post-opentip_sm-team_72683f330c6a9bb7&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">31.56.227[.]100</a></p>
+<p><strong>Другие релевантные домены</strong><br />
+<a href="https://opentip.kaspersky.com/unlikeu.org/?icid=kl-ru_sl_post-opentip_sm-team_a764db38c78b9c1f&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">unlikeu[.]org</a><br />
+<a href="https://opentip.kaspersky.com/hostinfo-service.info/?icid=kl-ru_sl_post-opentip_sm-team_ef48495b32b44018&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">hostinfo-service[.]info</a></p>
+<p><strong>Другие релевантные IP</strong><br />
+<a href="https://opentip.kaspersky.com/176.98.189.101/?icid=kl-ru_sl_post-opentip_sm-team_e4078c606498d9a5&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">176.98.189[.]101</a><br />
+<a href="https://opentip.kaspersky.com/178.255.127.65/?icid=kl-ru_sl_post-opentip_sm-team_193f5d7aac312a0c&amp;utm_source=SL&amp;utm_medium=SL&amp;utm_campaign=SL" target="_blank">178.255.127[.]65</a></p>
+												</div>
+											</div>
+										</div>
+
+										<div class="c-article__footer">
+											<div class="c-article__categories">
+													<ul class="c-list-tags">
+				<li><a   href="https://securelist.ru/tag/head-mare/" class="c-link-tag"><span>Head Mare</span></a></li>
+					<li><a   href="https://securelist.ru/tag/ttp/" class="c-link-tag"><span>TTP</span></a></li>
+					<li><a   href="https://securelist.ru/tag/xaktivisty/" class="c-link-tag"><span>Хактивисты</span></a></li>
+					<li><a   href="https://securelist.ru/tag/dannye-o-kiberugrozax/" class="c-link-tag"><span>Данные о киберугрозах</span></a></li>
+					<li><a   href="https://securelist.ru/tag/powershell/" class="c-link-tag"><span>PowerShell</span></a></li>
+					<li><a   href="https://securelist.ru/tag/bekdor/" class="c-link-tag"><span>Бэкдоры</span></a></li>
+					<li><a   href="https://securelist.ru/tag/tselevye-ataki/" class="c-link-tag"><span>Целевые атаки</span></a></li>
+			</ul>
+												</div>
+										</div>
+																		<div id="comments" class="entry-comments c-article__comments js-comments-wrapper">
+	<p class="c-title--extra-small">В самое сердце: разбираем новый инструментарий Head Mare</p>		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="u-hidden"> <small></small></h3><form action="https://securelist.ru/wp-comments-post.php" method="post" id="loginform" class="comment-form"><p class="comment-notes"><span id="email-notes">Ваш e-mail не будет опубликован.</span> <span class="required-field-message">Обязательные поля помечены <span class="required">*</span></span></p><div class="comment-form-comment"><textarea id="comment" name="comment" style="width:100%" rows="8" aria-required="true" placeholder="Введите свой комментарий"></textarea></div><!-- .comment-form-comment --><p class="comment-form-author"><label for="author">Имя <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<div id="kaspersky-smart-captcha-wrapper" style="display:none;margin-top:12px;"><div id="kaspersky-smart-captcha-container" class="smart-captcha" data-sitekey="ysc1_bqx9QRMlPhtcQYFAYxgtNgRsjoBCuX9ycqocUNba04e42ec0" data-hl="en"></div><div id="kaspersky-smart-captcha-error" style="margin-top:8px;color:#d63638;font-weight:700;display:none;">Captcha validation failed. Please confirm you are not a robot and try again.</div></div><p class="form-submit"><input name="submit" type="submit" id="commentsubmit" class="submit" value="Ответить" /><a rel="nofollow" id="cancel-comment-reply-link" href="/head-mare-phantomheart-and-phantomproxylite/114753/#respond" style="display:none;">Cancel</a> <input type='hidden' name='comment_post_ID' value='114753' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="28dd6f65f5" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="73"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+				<ol class="comment-list js-comments">
+			
+		<li class="comment even thread-even depth-1  js-comment" id="comment-406585">
+			<article>
+				<figure class="comment-avatar">
+									</figure>
+
+				<header class="comment-header">
+					<div class="comment-author">
+						<p class="comment-name"><span>Валерия</span> <span class="says"></span></p>
+						<div class="comment-meta commentmetadata">
+
+							Опубликовано							<time datetime="2026-02-13T17:44:37+03:00">13/02/2026. 17:44</time>						</div><!-- .comment-meta -->
+
+					</div><!-- .comment-author -->
+				</header>
+
+				<div class="comment-content">
+										<p>Напоминаем, что данная уязвимость была устранена еще в августе 2025 года. Мы выпустили обновления безопасности для трех последних основных версий TrueConf Server &#8212; 5.5.1, 5.4.6 и 5.3.7.</p>
+<p>Эти обновления доступны всем и не требуют обращения в техническую поддержку. Достаточно скачать актуальную версию с нашего сайта и установить её самостоятельно. Мы настоятельно рекомендуем пользователям своевременно обновлять программное обеспечение для обеспечения максимальной защиты.</p>
+					<div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="https://securelist.ru/head-mare-phantomheart-and-phantomproxylite/114753/?replytocom=406585#respond" data-commentid="406585" data-postid="114753" data-belowelement="comment-406585" data-respondelement="respond" data-replyto="Комментарий к записи Валерия" aria-label="Комментарий к записи Валерия">Ответить</a></div><!-- .comment-reply -->				</div><!-- .comment-content -->
+
+			</article>
+	</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+		
+	
+</div><!-- .entry-comments -->
+																		</div>
+									<div class="o-col c-article__sidebar c-widgets--distributed u-hidden u-flex@md">
+																					<div class="c-widget__wrapper">
+												<div class="c-highlight js-accordion is-active u-hidden u-block@md js-sticky-widget">
+													<div class="c-accordion-toggle js-accordion-toggle">
+														<div class="c-highlight__header">
+															<div class="c-highlight__icon">
+																<div class="u-block--theme-light u-hidden--theme-dark">
+																	<img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/icon/icon-categories.svg" />
+																</div>
+																<div class="u-block--theme-dark u-hidden--theme-light">
+																	<img src="https://securelist.ru/wp-content/themes/securelist2020/assets/images/icon/icon-categories--invert.svg" />
+																</div>
+															</div>
+															<div class="c-highlight__title">
+																<p>Содержание</p>
+															</div>
+														</div>
+													</div>
+													<div class="js-accordion-container">
+														<div class="c-highlight__body">
+															<ul class='c-list-links'><li><a href="#vvedenie">Введение</a></li><li><a href="#instrumentarij-gruppirovki">Инструментарий группировки</a></li><ul class='c-list-links'><li><a href="#phantomheart">PhantomHeart</a></li><li><a href="#phantomproxylite-powershell-realizatsiya">PhantomProxyLite: PowerShell-реализация</a></li><li><a href="#drugie-instrumenty">Другие инструменты</a></li></ul><li><a href="#zhertvy">Жертвы</a></li><li><a href="#atributsiya">Атрибуция</a></li><li><a href="#vyvody">Выводы</a></li><li><a href="#indikatory-komprometatsii">Индикаторы компрометации</a></li></ul>														</div>
+													</div>
+												</div>
+											</div>
+																																<div class="c-widget__wrapper">
+			<div class="js-sticky-widget">
+				<p><span class="c-tag c-tag--primary">От тех же авторов</span></p>
+				<div class="o-row o-row--small-gutters">
+								<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/awaken-likho-tokenbuoy/116536/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/06204703/SL-Awaken-Likho-TokenBuoy_3-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="" sizes="auto, (max-width: 800px) 100vw, 800px" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/06204703/SL-Awaken-Likho-TokenBuoy_3-800x450.jpg" data-srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/06204703/SL-Awaken-Likho-TokenBuoy_3-800x450.jpg 800w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/06204703/SL-Awaken-Likho-TokenBuoy_3-300x168.jpg 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/06204703/SL-Awaken-Likho-TokenBuoy_3-740x415.jpg 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/06204703/SL-Awaken-Likho-TokenBuoy_3-500x280.jpg 500w" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/awaken-likho-tokenbuoy/116536/" class="c-card__link">Awaken Likho окончательно меняет почерк: переход на собственные бэкдоры TokenBuoy и TokenBuoySH</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/cloudatlasgo-backdoor/116367/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/07/20104052/cloudatlasgo-featured-image-scaled-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/07/20104052/cloudatlasgo-featured-image-scaled-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/cloudatlasgo-backdoor/116367/" class="c-card__link">Новый CloudAtlas от Cloud Atlas: разбираем бэкдор на Go</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/openclaw-security/116168/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/06/30205432/SL-OpenClaw-skills-featured-scaled-1-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/06/30205432/SL-OpenClaw-skills-featured-scaled-1-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/openclaw-security/116168/" class="c-card__link">Кому удобен OpenClaw: риски для пользователей агента и как их снизить</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/unknown-group-targets-maritime-universities/115765/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/05/29122248/ravage-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/05/29122248/ravage-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/unknown-group-targets-maritime-universities/115765/" class="c-card__link">Вузы и энергетику атакует неизвестная группа, активная минимум с 2024 года</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/cloud-atlas-2026/115682/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/05/22110550/cloud-atlas-2026-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/05/22110550/cloud-atlas-2026-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/cloud-atlas-2026/115682/" class="c-card__link">Активность Cloud Atlas во второй половине 2025 года и в начале 2026 года: новые инструменты и вредоносная нагрузка</a></h3>		</header>
+					</div>
+</article>			</div>
+				</div>
+			</div>
+		</div>
+		<li id="text-13" class="widget widget_text">			<div class="textwidget"><div data-popmechanic-embed="102247"></div>
+</div>
+		</li>
+		<div class="c-widget__wrapper">
+			<div class="js-sticky-widget">
+				<p><span class="c-tag c-tag--primary">В той же категории</span></p>
+				<div class="o-row o-row--small-gutters">
+								<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/sambaspy-rat-targets-italian-users/110592/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/09/18122421/SL-SambaSpy-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/09/18122421/SL-SambaSpy-featured-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/sambaspy-rat-targets-italian-users/110592/" class="c-card__link">В ритме самбы: экзотический SambaSpy покоряет Италию</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/mallox-ransomware/110314/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/08/30205039/SL-Mallox-elliptic-curve-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/08/30205039/SL-Mallox-elliptic-curve-featured-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/mallox-ransomware/110314/" class="c-card__link">Как менялся шифровальщик Mallox: детальный анализ</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/twelve-group-unified-kill-chain/110128/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/08/14110809/SL-Twelve-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/08/14110809/SL-Twelve-featured-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/twelve-group-unified-kill-chain/110128/" class="c-card__link">Возвращение группировки -=TWELVE=-</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/sexi-key-group-mallox-ransomware/109966/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/07/29132809/ransomware-report-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2024/07/29132809/ransomware-report-featured-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/sexi-key-group-mallox-ransomware/109966/" class="c-card__link">Как &#171;профессиональные&#187; шифровальщики дают толчок новым группам вымогателей</a></h3>		</header>
+					</div>
+</article>			</div>
+			<div class="o-col-12 c-card__dividers c-card__dividers--hide-first@xs c-card__dividers--show-last@xs">
+			<article class="c-card c-card--hor-reverse@xs u-items-center">
+			<a  href="https://securelist.ru/crimeware-report-stealers/109535/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2021/11/26125432/abstract_digits_cell-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2021/11/26125432/abstract_digits_cell-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/crimeware-report-stealers/109535/" class="c-card__link">Стилеры, стилеры и еще раз стилеры</a></h3>		</header>
+					</div>
+</article>			</div>
+				</div>
+			</div>
+		</div>
+	<li id="text-12" class="widget widget_text">			<div class="textwidget"><p><a href="https://t.me/kasperskyb2b?icid=kl-ru_tg_acq_ona_smm__onl_b2b_securelist_ban_sm-team______" target="_blank" rel="noopener"><img decoding="async" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2023/11/29122455/Telegram-2trojana_banner_310x420_RU.jpg" width="370" data-element-id="sidebar-banner" /></a></p>
+</div>
+		</li>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="c-article__progress rpi-progress-bar">
+							<div class="c-article__progress-bar__position rpi-progress-bar__position"></div>
+							<div class="rpi-progress-bar__percentage"></div>
+						</div>
+
+						<style>
+							.c-article__progress .c-article__progress-bar__position {
+								width: 0%;
+							}
+						</style>
+
+						<script>
+							jQuery(function($) {
+								const elPBar = $('.c-article__progress .c-article__progress-bar__position');
+								const box = $('.js-article-body .js-reading-wrapper');
+								const boxTop = box.offset().top;
+								const wH = $(window).height();
+
+								let wPerc = 0;
+								let boxH = 0;
+								let maxScroll = 0;
+
+								$(window).on('scroll', function() {
+									boxH = box.height();
+									maxScroll = boxH + boxTop - wH;
+									wPerc = Math.ceil($(document).scrollTop() / maxScroll * 100);
+
+									if (wPerc <= 100 && wPerc >= 0) {
+										elPBar.css('width', wPerc + '%');
+									}
+								})
+
+							});
+						</script>
+
+					</article>
+				</div>
+			</section>
+<section class="c-block c-block--spacing-t-small c-block--spacing-b-small@md c-block--divider-internal">
+	<div class="o-container-fluid">
+		<h5 class="c-block__title">Последние публикации</h5>
+		<div class="o-row o-row--small-gutters@sm c-card__row c-card__row--fixed-width-down@sm js-slider-posts-mobile">
+						<div class="o-col-6@sm o-col-3@md">
+			<article class="c-card c-card--standard@xs">
+			<a  href="https://securelist.ru/toy-ghouls-new-hivemq-and-element-backdoors/117010/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="" sizes="auto, (max-width: 800px) 100vw, 800px" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-800x450.jpg" data-srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-800x450.jpg 800w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-300x168.jpg 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-768x431.jpg 768w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-624x350.jpg 624w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-740x415.jpg 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/09/04120653/toy-ghouls-birds-backdoor-featured-image-scaled-2-500x280.jpg 500w" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+							<p class="c-card__headline u-hidden u-block@md">
+					<a  href="https://securelist.ru/category/soc-ti-and-ir-posts/" class="c-tag c-tag--primary">Посты о SOC, TI и IR</a>
+				</p>
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/toy-ghouls-new-hivemq-and-element-backdoors/117010/" class="c-card__link">У меня тоже есть птички: новые инструменты группировки Toy Ghouls</a></h3>		</header>
+							<footer class="c-card__footer">
+				<div class="c-card__authors">
+					<ul class="c-list-authors c-list-authors--comma">
+									<li>
+			<a  href="https://securelist.ru/author/kasperskygert/" >
+								<span>Kaspersky GERT</span></a>
+		</li>
+			<li>
+			<a  href="https://securelist.ru/author/securityservices/" >
+								<span>Kaspersky Security Services</span></a>
+		</li>
+						</ul>
+				</div>
+			</footer>
+			</div>
+</article>			</div>
+			<div class="o-col-6@sm o-col-3@md">
+			<article class="c-card c-card--standard@xs">
+			<a  href="https://securelist.ru/valleyrat-backdoor-adware/116778/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28214234/SL-valleyRAT-abuses-adware-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="" sizes="auto, (max-width: 800px) 100vw, 800px" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28214234/SL-valleyRAT-abuses-adware-featured-800x450.jpg" data-srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28214234/SL-valleyRAT-abuses-adware-featured-800x450.jpg 800w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28214234/SL-valleyRAT-abuses-adware-featured-300x168.jpg 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28214234/SL-valleyRAT-abuses-adware-featured-740x415.jpg 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28214234/SL-valleyRAT-abuses-adware-featured-500x280.jpg 500w" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+							<p class="c-card__headline u-hidden u-block@md">
+					<a  href="https://securelist.ru/category/malware-descriptions/" class="c-tag c-tag--primary">Описание вредоносного ПО</a>
+				</p>
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/valleyrat-backdoor-adware/116778/" class="c-card__link">ValleyRAT маскируется под рекламное ПО</a></h3>		</header>
+							<footer class="c-card__footer">
+				<div class="c-card__authors">
+					<ul class="c-list-authors c-list-authors--comma">
+									<li>
+			<a  href="https://securelist.ru/author/pavelbukhtenko/" >
+								<span>Павел Бухтенко</span></a>
+		</li>
+						</ul>
+				</div>
+			</footer>
+			</div>
+</article>			</div>
+			<div class="o-col-6@sm o-col-3@md">
+			<article class="c-card c-card--standard@xs">
+			<a  href="https://securelist.ru/tr/goffee-apt-attacks-with-mythic-agent-and-warprat/116796/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28094246/Goffee_beans-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="" sizes="auto, (max-width: 800px) 100vw, 800px" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28094246/Goffee_beans-800x450.jpg" data-srcset="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28094246/Goffee_beans-800x450.jpg 800w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28094246/Goffee_beans-300x168.jpg 300w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28094246/Goffee_beans-740x415.jpg 740w, https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/28094246/Goffee_beans-500x280.jpg 500w" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/tr/goffee-apt-attacks-with-mythic-agent-and-warprat/116796/" class="c-card__link">APT-группа GOFFEE продолжает атаки на организации в РФ, распространяя два бэкдора через целевой фишинг</a></h3>		</header>
+							<footer class="c-card__footer">
+				<div class="c-card__authors">
+					<ul class="c-list-authors c-list-authors--comma">
+									<li>
+			<a  href="https://securelist.ru/author/kaspersky/" >
+								<span>Kaspersky</span></a>
+		</li>
+						</ul>
+				</div>
+			</footer>
+			</div>
+</article>			</div>
+			<div class="o-col-6@sm o-col-3@md">
+			<article class="c-card c-card--standard@xs">
+			<a  href="https://securelist.ru/industrial-threat-report-q2-2026/116760/" class="c-card__figure" style="">
+			<img width="800" height="450" src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/26220900/SL-industrial-threat-report-q2-2026-featured-800x450.jpg" class="attachment-securelist-2020-thumbnail size-securelist-2020-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" data-src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2026/08/26220900/SL-industrial-threat-report-q2-2026-featured-800x450.jpg" data-srcset="" srcset="" />		</a>
+		<div class="c-card__body">
+		<header class="c-card__header">
+							<p class="c-card__headline u-hidden u-block@md">
+					<a  href="https://securelist.ru/category/industrial-threats/" class="c-tag c-tag--primary">Индустриальные угрозы</a>
+				</p>
+			
+			
+			<h3 class="c-card__title"><a   href="https://securelist.ru/industrial-threat-report-q2-2026/116760/" class="c-card__link">Ландшафт угроз для систем промышленной автоматизации. Второй квартал 2026 года</a></h3>		</header>
+							<footer class="c-card__footer">
+				<div class="c-card__authors">
+					<ul class="c-list-authors c-list-authors--comma">
+									<li>
+			<a  href="https://securelist.ru/author/icscert/" >
+								<span>Kaspersky ICS CERT</span></a>
+		</li>
+						</ul>
+				</div>
+			</footer>
+			</div>
+</article>			</div>
+		</div>
+	</div>
+</section>
+	<section data-element-id="footer-reports-section" class="c-block c-block--spacing-t-small c-block--spacing-b-small@md c-block--divider-internal">
+		<div class="o-container-fluid">
+			<h5 class="c-block__title">Отчеты</h5>
+			<div class="o-row o-row--small-gutters">
+				<div class="o-col-8@sm">
+					<div class="o-row o-row--small-gutters">
+																												<div class="o-col-6@md">
+																	<article class="c-card c-card--standard@xs">
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a  data-element-id="footer-reports-title"   href="https://securelist.ru/honeymyte-coolclient-driver-rootkit/116614/" class="c-card__link">APT-группа HoneyMyte обновила CoolClient: бэкдор получил руткит уровня ядра Windows</a></h3>		</header>
+					<div class="c-card__desc">
+				<p>Наши эксперты обнаружили новый вариант бэкдора CoolClient с драйвером-руткитом уровня ядра, который скрывает вредоносные процессы, файлы и сетевые соединения от средств защиты и аналитиков.</p>
+			</div>
+					</div>
+</article>									</div>
+																															<div class="o-col-6@md c-card__dividers c-card__dividers--hide@md">
+																		<article class="c-card c-card--standard@xs">
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a  data-element-id="footer-reports-title"   href="https://securelist.ru/armored-likho-still-toolkit/116417/" class="c-card__link">Благотворительность как приманка: Armored Likho расширяет арсенал инструментов для кибершпионажа</a></h3>		</header>
+					<div class="c-card__desc u-hidden u-block@md">
+				<p>Эксперты «Лаборатории Касперского» разбирают новую кампанию Armored Likho, маскирующуюся под благотворительность и доставляющую новый Still Toolkit, нацеленный на кражу данных из Telegram и прослушку.</p>
+			</div>
+					</div>
+</article>									</div>
+																															<div class="o-col-6@md c-card__dividers c-card__dividers--hide@md">
+																		<article class="c-card c-card--standard@xs">
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a  data-element-id="footer-reports-title"   href="https://securelist.ru/awaken-likho-tokenbuoy/116536/" class="c-card__link">Awaken Likho окончательно меняет почерк: переход на собственные бэкдоры TokenBuoy и TokenBuoySH</a></h3>		</header>
+					<div class="c-card__desc u-hidden u-block@md">
+				<p>Мы рассказали о миграции APT-группы Awaken Likho на собственные бэкдоры TokenBuoy и TokenBuoySH и разобрали цепочку заражения — от фишингового письма до эксфильтрации данных.</p>
+			</div>
+					</div>
+</article>									</div>
+																															<div class="o-col-6@md c-card__dividers c-card__dividers--hide@md">
+																		<article class="c-card c-card--standard@xs">
+		<div class="c-card__body">
+		<header class="c-card__header">
+			
+			
+			<h3 class="c-card__title"><a  data-element-id="footer-reports-title"   href="https://securelist.ru/toddycat-apt-umbrij-tool-and-oauth/116029/" class="c-card__link">ToddyCat — ваш скрытый почтовый ассистент. Часть 2</a></h3>		</header>
+					<div class="c-card__desc u-hidden u-block@md">
+				<p>Разбираем Umbrij — новый инструмент APT-группы ToddyCat для компрометации корпоративной переписки в сервисе Gmail. Целью атак стал токен авторизации OAuth, при помощи которого злоумышленники получали доступ к сервисам Google.</p>
+			</div>
+					</div>
+</article>									</div>
+																								</div>
+					</div>
+											<div class="o-col-4@sm u-hidden u-block@sm footer-reports-section__banner footer-reports-section__banner_desktop">
+							<div class="c-image c-image--overflow-down@sm">
+								<a href="https://t.me/purpleshift?icid=kl-ru_securelist_acq_ona_smm__onl_b2b_securelist_banner_sm-team_______44116bda06cea95f"><img src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2020/12/21144042/purple_shift_banner_370_500_1.jpg" /></a>							</div>
+						</div>
+						<div class="o-col-4@sm u-block u-hidden@sm footer-reports-section__banner footer-reports-section__banner_mobile">
+							<div class="c-image c-image--overflow-down@sm">
+								<a href="https://t.me/purpleshift?icid=kl-ru_securelist_acq_ona_smm__onl_b2b_securelist_banner_sm-team_______44116bda06cea95f"><img src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2020/12/30174347/purple_shift_banner_800x800_1-740x740.jpg" /></a>							</div>
+						</div>
+									</div>
+			</div>
+	</section>
+	<section class="c-block c-block--spacing-t-small c-block--spacing-b-small@md" data-element-id="footer-subscribe-section">
+		<div class="o-container-fluid">
+			<div class="o-row c-block__row u-flex-nowrap@md">
+				<div class="o-col">
+					<div class="c-block__header">
+						<h5 class="c-block__title">Подпишитесь на еженедельную рассылку</h5>
+						<p>Самая актуальная аналитика – в вашем почтовом ящике</p>
+					</div>
+				</div>
+				<div class="o-col u-flex-shrink-0 u-flex-grow">
+					<div class="c-form--newsletter u-ml-auto c-form--newsletter_sb c-form--newsletter-popmechanic">
+						<div data-popmechanic-embed="102245"></div>
+					</div>
+				</div>
+			</div>
+							<div class="u-hidden@sm u-mb-spacer-base-">
+					<div class="c-image c-image--overflow-down@sm">
+						<a href="https://t.me/purpleshift?icid=kl-ru_securelist_acq_ona_smm__onl_b2b_securelist_banner_sm-team_______44116bda06cea95f"><img src="https://media.kasperskycontenthub.com/wp-content/uploads/sites/58/2020/12/30174347/purple_shift_banner_800x800_1-740x740.jpg" /></a>					</div>
+				</div>
+					</div>
+	</section>
+</div><!-- /.c-page -->
+
+<section class="c-block c-block--spacing-t-small c-block--spacing-t-large@md c-block--spacing-b c-page-footer c-block--bg-image c-color--invert" style="background-image: url(https://securelist.ru/wp-content/themes/securelist2020/assets/images/content/bg-gradient-02.jpg);">
+	<div class="o-container-fluid">
+		<div data-element-id="footer-content-block" class="c-page-footer__content">
+			<div class="o-row o-row--reverse">
+				<div class="o-col-9@md">
+					<div class="c-page-menu">
+						<div class="o-row c-page-menu__dividers">
+							<div class="o-col-4@md"><div class="c-accordion js-accordion c-accordion--reset@md"><p class="menu-item-threats section-title accordion menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11084 c-page-menu__title u-hidden u-block@md"><a href="https://securelist.ru/threat-categories/" data-element-id="footer-content-link">Угрозы</a></p><div class="c-accordion-toggle js-accordion-toggle"><p>Угрозы</p></div><div class="c-accordion-container js-accordion-container">
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category current-post-ancestor current-menu-parent current-post-parent menu-item-99533"><a href="https://securelist.ru/threat-category/celevye-kiberataki/" data-element-id="footer-content-link">Целевые кибератаки</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93345"><a href="https://securelist.ru/threat-category/finansovye-ugrozy/" data-element-id="footer-content-link">Финансовые угрозы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93343"><a href="https://securelist.ru/threat-category/mobilnye-ugrozy/" data-element-id="footer-content-link">Мобильные угрозы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93347"><a href="https://securelist.ru/threat-category/industrialnye-ugrozy/" data-element-id="footer-content-link">Индустриальные угрозы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93349"><a href="https://securelist.ru/threat-category/veb-ugrozy/" data-element-id="footer-content-link">Веб-угрозы</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93344"><a href="https://securelist.ru/threat-category/bezopasnoe-okruzhenie/" data-element-id="footer-content-link">Безопасное окружение (IoT)</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93346"><a href="https://securelist.ru/threat-category/spam-i-fishing/" data-element-id="footer-content-link">Спам и фишинг</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-threat-category menu-item-93348"><a href="https://securelist.ru/threat-category/uyazvimosti-i-eksplojty/" data-element-id="footer-content-link">Уязвимости и эксплойты</a></li>
+</ul>
+
+</div></div></div><div class="o-col-4@md"><div class="c-accordion js-accordion c-accordion--reset@md"><p class="menu-item-categories section-title accordion menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15748 c-page-menu__title u-hidden u-block@md"><a href="https://securelist.ru/categories/" data-element-id="footer-content-link">Категории</a></p><div class="c-accordion-toggle js-accordion-toggle"><p>Категории</p></div><div class="c-accordion-container js-accordion-container">
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88916"><a href="https://securelist.ru/category/kaspersky-security-bulletin/" data-element-id="footer-content-link">Kaspersky Security Bulletin</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99536"><a href="https://securelist.ru/category/apt-reports/" data-element-id="footer-content-link">Отчеты о целевых атаках (APT)</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88922"><a href="https://securelist.ru/category/malware-reports/" data-element-id="footer-content-link">Отчеты о вредоносном ПО</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88918"><a href="https://securelist.ru/category/research/" data-element-id="footer-content-link">Исследование</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99534"><a href="https://securelist.ru/category/security-technologies/" data-element-id="footer-content-link">Технологии безопасности</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-99535"><a href="https://securelist.ru/category/malware-descriptions/" data-element-id="footer-content-link">Описание вредоносного ПО</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88917"><a href="https://securelist.ru/category/incidents/" data-element-id="footer-content-link">Инциденты</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88919"><a href="https://securelist.ru/category/opinions/" data-element-id="footer-content-link">Мнение</a></li>
+</ul>
+
+</div></div></div><div class="o-col-4@md"><p class="menu-item-tags section-title after-accordion menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15749 c-page-menu__title u-hidden u-block@md"><a data-element-id="footer-content-link">Другие разделы</a></p>
+<ul class="sub-menu">
+	<li class="link_red menu-item menu-item-type-post_type_archive menu-item-object-threat_response menu-item-115832"><a href="https://securelist.ru/tr/" data-element-id="footer-content-link">Threat Response</a></li>
+	<li class="show-all-tags menu-item menu-item-type-post_type menu-item-object-page menu-item-21990"><a href="https://securelist.ru/tags/" data-element-id="footer-content-link">Все тэги</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100757"><a href="https://apt.securelist.com/ru?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="footer-content-link">APT-хроники</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94188"><a target="_blank" rel="noopener noreferrer" href="https://statistics.securelist.com/ru?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="footer-content-link">Статистика</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90503"><a target="_blank" rel="noopener noreferrer" href="https://encyclopedia.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="footer-content-link">Энциклопедия</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29129"><a target="_blank" rel="noopener noreferrer" href="https://threats.kaspersky.com/ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="footer-content-link">Описания угроз</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111427"><a href="https://lp.kaspersky.com/global/ksb2025/" data-element-id="footer-content-link">KSB 2025</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113450"><a href="https://ics-cert.kaspersky.ru/?icid=kl-ru_seclistheader_acq_ona_smm__onl_b2b_securelist_main-menu_sm-team_______e5593e665bad6078" data-element-id="footer-content-link">Kaspersky ICS CERT</a></li>
+</ul>
+
+</div>						</div>
+					</div>
+				</div>
+				<div class="o-col-3@md">
+					<div class="c-site-logo c-site-logo--kaspersky"></div>
+				</div>
+			</div>
+		</div>
+		<div data-element-id="footer-menu-block" class="c-page-footer__wrapper">
+			<div class="c-page-footer__info">
+									<p>* Facebook, Instagram, WhatsApp, Meta AI принадлежат компании Meta,<br />
+признанной экстремистской организацией в России.<br />
+© АО «Лаборатория Касперского», 2026.</p>
+							</div>
+			<div class="c-page-footer__links">
+				<ul>
+																<li><a data-element-id="footer-menu-link" href="https://www.kaspersky.ru/web-privacy-policy?icid=kl-ru_seclistfooter_acq_ona_smm__onl_b2b_securelist_footer_sm-team_______33ad3cbf4655a731">Политика конфиденциальности</a></li>
+																<li><a data-element-id="footer-menu-link" href="https://securelist.ru/terms-of-use/">Terms of use</a></li>
+																<li><a data-element-id="footer-menu-link" href="https://www.kaspersky.ru/end-user-license-agreement?icid=kl-ru_seclistfooter_acq_ona_smm__onl_b2b_securelist_footer_sm-team_______33ad3cbf4655a731">Лицензионное соглашение</a></li>
+														</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/securelist-russia/wp-content/*","/wp-content/plugins/*","/wp-content/themes/securelist2020/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+        <script type="text/javascript">
+            (function () {
+                var commentField = document.getElementById('comment');
+                var wrapper = document.getElementById('kaspersky-smart-captcha-wrapper');
+                if (!commentField || !wrapper) {
+                    return;
+                }
+
+                var shown = false;
+                var showCaptcha = function () {
+                    if (shown) {
+                        return;
+                    }
+                    if (commentField.value.trim().length > 0) {
+                        wrapper.style.display = 'block';
+                        shown = true;
+                    }
+                };
+
+                commentField.addEventListener('input', showCaptcha);
+                commentField.addEventListener('focus', showCaptcha);
+            })();
+        </script>
+        		<script type="text/javascript">
+			var visualizerUserInteractionEvents = [
+				"scroll",
+				"mouseover",
+				"keydown",
+				"touchmove",
+				"touchstart"
+			];
+
+			visualizerUserInteractionEvents.forEach(function(event) {
+				window.addEventListener(event, visualizerTriggerScriptLoader, { passive: true });
+			});
+
+			function visualizerTriggerScriptLoader() {
+				visualizerLoadScripts();
+				visualizerUserInteractionEvents.forEach(function(event) {
+					window.removeEventListener(event, visualizerTriggerScriptLoader, { passive: true });
+				});
+			}
+
+			function visualizerLoadScripts() {
+				document.querySelectorAll("script[data-visualizer-script]").forEach(function(elem) {
+					jQuery.getScript( elem.getAttribute("data-visualizer-script") )
+					.done( function( script, textStatus ) {
+						elem.setAttribute("src", elem.getAttribute("data-visualizer-script"));
+						elem.removeAttribute("data-visualizer-script");
+						setTimeout( function() {
+							visualizerRefreshChart();
+						} );
+					} );
+				});
+			}
+
+			function visualizerRefreshChart() {
+				jQuery( '.visualizer-front:not(.visualizer-chart-loaded)' ).resize();
+				if ( jQuery( 'div.viz-facade-loaded:not(.visualizer-lazy):empty' ).length > 0 ) {
+					visualizerUserInteractionEvents.forEach( function( event ) {
+						window.addEventListener( event, function() {
+							jQuery( '.visualizer-front:not(.visualizer-chart-loaded)' ).resize();
+						}, { passive: true } );
+					} );
+				}
+			}
+		</script>
+			<script id="kaspersky-lazy-load-js" src="https://securelist.ru/wp-content/plugins/kaspersky-lazy-load/assets/js/main.js?ver=1789623413"></script>
+<script id="custom-gallery-slick-script-js" src="https://securelist.ru/wp-content/plugins/kaspersky-custom-gallery/assets/slick/slick.min.js?ver=1789623413"></script>
+<script id="custom-gallery-script-js" src="https://securelist.ru/wp-content/plugins/kaspersky-custom-gallery/assets/js/script.js?ver=1789623413"></script>
+<script id="kaspersky-link-preview-js-js" src="https://securelist.ru/wp-content/plugins/kaspersky-link-preview/assets/js/script.js?ver=1789623413"></script>
+<script id="kaspersky-omniture-js-extra">
+var kaspersky = {"pageName":"Kaspersky Securelist","pageType":"blog","platformName":"Micro Site","businessType":"b2c","siteLocale":"ru-RU"};
+//# sourceURL=kaspersky-omniture-js-extra
+</script>
+<script id="kaspersky-omniture-js" src="https://securelist.ru/wp-content/plugins/kaspersky-omniture/assets/dataLayer.js?ver=1789623413"></script>
+<script id="wp-autosearch-migrate-js" src="https://securelist.ru/wp-content/plugins/kaspersky-wp-autosearch/assert/js/migrate.js?ver=1789623413"></script>
+<script id="wp-autosearch-script-core-js" src="https://securelist.ru/wp-content/plugins/kaspersky-wp-autosearch/assert/js/autocomplete.js?ver=1789623413"></script>
+<script id="wp-autosearch-script-js-extra">
+var wp_autosearch_config = {"autocomplete_taxonomies":{"0":"category","1":"product_tag","2":"threat-category"},"split_results_by_type":"true","search_title":"true","search_content":"false","search_terms":"false","search_exactonly":"true","order_by":"title","order":"DESC","search_comments":"false","search_tags":"false","no_of_results":"5","description_limit":"100","title_limit":"50","excluded_ids":{},"excluded_cats":{"0":0},"full_search_url":"https://kasperskycontenthub.com/securelist-russia/?s=%q%","min_chars":"3","ajax_delay":"200","cache_length":"200","autocomplete_sortorder":"posts","thumb_image_display":"false","thumb_image_width":"50","thumb_image_height":"50","get_first_image":"true","force_resize_first_image":"true","thumb_image_crop":"true","default_image":"https://kasperskycontenthub.com/securelist-russia/wp-content/plugins/wp-autosearch/assert/image/default.png","search_image":"","display_more_bar":"false","display_result_title":"false","enable_token":"true","custom_css":"","custom_js":"","try_full_search_text":"Search more...","no_results_try_full_search_text":"No Results!","show_author":"false","show_date":"false","description_result":"false","color":{"results_even_bar":"E8E8E8","results_odd_bar":"FFFFFF","results_even_text":"000000","results_odd_text":"000000","results_hover_bar":"5CCCB2","results_hover_text":"FFFFFF","seperator_bar":"2D8DA0","seperator_hover_bar":"6A81A0","seperator_text":"FFFFFF","seperator_hover_text":"FFFFFF","more_bar":"5286A0","more_hover_bar":"4682A0","more_text":"FFFFFF","more_hover_text":"FFFFFF","box_border":"57C297","box_background":"FFFFFF","box_text":"000000"},"title":{"page":"Pages","post":"Posts","threat_response":"Threat Response"},"post_types":{"0":"page","1":"post","2":"threat_response"},"nonce":"f777d10553","ajax_url":"https://securelist.ru/wp-admin/admin-ajax.php"};
+//# sourceURL=wp-autosearch-script-js-extra
+</script>
+<script id="wp-autosearch-script-js" src="https://securelist.ru/wp-content/plugins/kaspersky-wp-autosearch/assert/js/ajax-script.js?ver=1789623413"></script>
+<script id="yandex-smart-captcha-js-js" defer src="https://smartcaptcha.yandexcloud.net/captcha.js?ver=1.0.0"></script>
+<script id="noautocomplete-js" src="https://securelist.ru/wp-content/plugins/wds-no-login-autocomplete/js/script.js?ver=1789623413"></script>
+<script id="kspr_embeds-js" src="https://securelist.ru/wp-content/plugins/kaspersky-embeds/js/scripts.js?ver=1789623413"></script>
+<script id="securelist-script-js-extra">
+var securelist2020Data = {"ajaxUrl":"https://securelist.ru/wp-admin/admin-ajax.php","loading":"\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430\u2026","marketoBaseURL":"","marketoVirtualForm":"","munchkinID":"","reCaptcha_key":"6Lf2eUQUAAAAAC-GQSZ6R2pjePmmD6oA6F_3AV7j"};
+//# sourceURL=securelist-script-js-extra
+</script>
+<script id="securelist-script-js" src="https://securelist.ru/wp-content/themes/securelist2020/assets/js/main.js?ver=1789623413"></script>
+<script id="securelist-script-authors-js-extra">
+var aData = {"ajaxUrl":"https://securelist.ru/wp-admin/admin-ajax.php"};
+//# sourceURL=securelist-script-authors-js-extra
+</script>
+<script id="securelist-script-authors-js" src="https://securelist.ru/wp-content/themes/securelist2020/assets/js/authors.js?ver=1789623413"></script>
+<script async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" src="https://securelist.ru/wp-includes/js/comment-reply.min.js?ver=7.1"></script>
+<script defer id="akismet-frontend-js" src="https://securelist.ru/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1789623413"></script>
+<script src="https://securelist.ru/wp-content/themes/securelist2020/assets/js/fix.js"></script>
+</body>
+
+</html>
+<!-- Performance optimized by Redis Object Cache. Learn more: https://wprediscache.com -->

@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+app-updater.app,domain,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,C2 pattern,countloader
+ms-team-ping2.com,domain,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,C2 exemplar,countloader
+ms-team-connect2.com,domain,,,Silent Push,High,countloader,CAMPAIGN ASSOCIATED,task host,countloader

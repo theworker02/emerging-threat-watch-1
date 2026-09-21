@@ -1,0 +1,2 @@
+claim,confidence,source,aliases,lineage_notes,nationality_folder
+"COLDRIVER (vendor)","High (vendor)","Google GTIG","BAITSWITCH (Zscaler)","Delivers YESROBOT then MAYBEROBOT — do not merge IOCs across ROBOT packages without linkage rows","NONE — metadata only"

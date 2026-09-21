@@ -1,0 +1,2 @@
+claim_id,family,case_id,claim,source_organization,source_team,source_title,source_url,published,source_type,status,confidence,independently_verified,evidence_tags,related_evidence_ids,derives_from,notes,retrieval_date_utc,cutoff_applies
+SHK-CLAIM-0001,SharkLoader,SHK,"Candidate catalog entry: Custom loader leading to Cobalt Strike",Emerging Threat Watch candidate pipeline,,CANDIDATE_FAMILIES.md,docs/CANDIDATE_FAMILIES.md,2026,INTERNAL,UNVERIFIED,Low,false,pipeline,,,,ASSOCIATION_ONLY stub — freeze vendor PRIMARY before elevating.,2026-09-19T20:30:00Z,true

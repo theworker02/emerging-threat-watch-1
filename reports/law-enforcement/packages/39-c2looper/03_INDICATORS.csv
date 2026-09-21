@@ -1,0 +1,6 @@
+indicator_id,type,value,notes,source
+C2L-IND-0001,sha256,f96ff2f3abbff7f382ace509b90e54853b4b61c402ecde27d82f1c17b414867b,latest variant,Zscaler ThreatLabz
+C2L-IND-0002,sha256,20675a659c338f7267fd09bacb431f4491f061d3acf42d07aca2dec3d25fa549,debug build,Zscaler ThreatLabz
+C2L-IND-0003,sha256,f59f32c9af4fa8a5dbd4668df8893593bc0c4324816cbf9b956acedcbfb8cdb6,older variant,Zscaler ThreatLabz
+C2L-IND-0004,ip,45.158.196.23,C2 :8888,Zscaler ThreatLabz
+C2L-IND-0005,ip,45.158.196.184,C2 :8888,Zscaler ThreatLabz

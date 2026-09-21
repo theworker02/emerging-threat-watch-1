@@ -1,0 +1,6 @@
+indicator_id,type,value,notes,source
+OFR-IND-0001,sha256,7f792c45de1e28fd42ac44c9444f157a2161742d130bac336c0e991aabbb112c,windirstat.exe OfferLoader,Palo Alto Networks Unit 42
+OFR-IND-0002,sha256,fc485882626512e7ff82a1d7cd8e8fb3e9751b026d97e682d6908aefff1f2d73,windirstat.tmp,Palo Alto Networks Unit 42
+OFR-IND-0003,domain,noiseship.cfd,SEO lure,Palo Alto Networks Unit 42
+OFR-IND-0004,domain,voyagemist.space,loader beacon gate,Palo Alto Networks Unit 42
+OFR-IND-0005,domain,dinosaursjam.cfd,gate/landing pattern exemplar,Palo Alto Networks Unit 42

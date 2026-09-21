@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+https://stryper.info/t.ps1,url,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,stage-2 PS,insomniarat
+https://stryper.info/aa.js,url,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Node agent,insomniarat
+http://aa.amazingshield.xyz/33244556546.py,url,,,Palo Alto Networks Unit 42,High,insomniarat,CAMPAIGN ASSOCIATED,Python agent,insomniarat

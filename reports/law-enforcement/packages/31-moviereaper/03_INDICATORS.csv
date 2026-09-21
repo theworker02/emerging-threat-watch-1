@@ -1,0 +1,16 @@
+indicator_id,type,value,notes,source
+MOV-IND-0001,md5,A0B13781EDD7CFDAB13D79AFFF3C83C1,loader popular film EXE,Kaspersky GReAT
+MOV-IND-0002,md5,4334BBAEA8DE33BF9D45E9B4E4E3BC2,loader variant,Kaspersky GReAT
+MOV-IND-0003,md5,4843F9FAFCAE492F11E2D4D33DBB4CDD,loader variant,Kaspersky GReAT
+MOV-IND-0004,md5,5310CABAE3FBE6DB8742849B588093F9,loader variant,Kaspersky GReAT
+MOV-IND-0005,md5,70060341CAF3338697A7DDFE0FB62875,loader variant,Kaspersky GReAT
+MOV-IND-0006,md5,AD4643EEA15AC286FA47D1131F9EF756,loader variant,Kaspersky GReAT
+MOV-IND-0007,md5,D0B967571AC8A3863C7F324BF5BDE99C,loader variant,Kaspersky GReAT
+MOV-IND-0008,md5,D88D550D0FB8E60CFFFF3EA61FF7A067,loader variant,Kaspersky GReAT
+MOV-IND-0009,domain,deadhub.org,First-stage C2,Kaspersky GReAT
+MOV-IND-0010,ip,193.23.118.155,First-stage C2 fallback,Kaspersky GReAT
+MOV-IND-0011,ip,208.64.33.90,Second-stage C2,Kaspersky GReAT
+MOV-IND-0012,ip,208.94.246.53,Second-stage C2,Kaspersky GReAT
+MOV-IND-0013,path,%ProgramData%\Microsoft\Windows\Telemetry\msedge.exe,persistence masquerade,Kaspersky GReAT
+MOV-IND-0014,mutex,Global\E4AyDKzvEhe2hgAr,loader mutex,Kaspersky GReAT
+MOV-IND-0015,mutex,Global\fnulSktzSqvVLXHU,loader mutex,Kaspersky GReAT

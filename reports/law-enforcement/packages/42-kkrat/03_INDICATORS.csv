@@ -1,0 +1,14 @@
+indicator_id,type,value,notes,source
+KKR-IND-0001,sha256,02cce1811ed8ac074b211717e404fbadffa91b0881627e090da97769f616c434,first-stage EXE,Zscaler ThreatLabz
+KKR-IND-0002,sha256,003998d12e3269286df1933c1d9f8c95ab07c74fa34e31ce563b524e22bb7401,second-stage shellcode,Zscaler ThreatLabz
+KKR-IND-0003,sha256,71ca5dd59e90ec83518f9b33b2a8cdb6a0d6ad4c87293b27885fa2a8e8e07f1c,third-stage downloader,Zscaler ThreatLabz
+KKR-IND-0004,sha256,a0f70c9350092b31ae77fc0d66efa007ccacbbc4b9355c877c1f64b29012178c,sideloaded DLL,Zscaler ThreatLabz
+KKR-IND-0005,sha256,f557a90c1873eeb7f269ae802432f72cc18d5272e13f86784fdc3c38cbaca019,kkRAT payload,Zscaler ThreatLabz
+KKR-IND-0006,sha256,140426a92c3444d8dc5096c99fa605fd46cb788393c6522c65336d93cb53c633,campaign sample,Zscaler ThreatLabz
+KKR-IND-0007,sha256,181b04d6aea27f4e981e22b66a4b1ac778c5a84d48160f7f5d7c75dffd5157f8,campaign sample,Zscaler ThreatLabz
+KKR-IND-0008,sha256,35385ab772ebcc9df30507fd3f2a544117fb6f446437c948e84a4fdf707f8029,campaign sample,Zscaler ThreatLabz
+KKR-IND-0009,domain,youdaoselw.icu,phishing installer mimic,Zscaler ThreatLabz
+KKR-IND-0010,domain,kmhhla.top,phishing,Zscaler ThreatLabz
+KKR-IND-0011,ip,154.44.30.27,kkRAT C2 :8250,Zscaler ThreatLabz
+KKR-IND-0012,url,http://key2025.oss-cn-hongkong.aliyuncs.com/2025.bin,stage3,Zscaler ThreatLabz
+KKR-IND-0013,url,http://key2025.oss-cn-hongkong.aliyuncs.com/trx38.zip,DLL zip,Zscaler ThreatLabz

@@ -1,0 +1,3 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+youdaoselw.icu,domain,,,Zscaler ThreatLabz,High,kkrat,CAMPAIGN ASSOCIATED,phishing installer mimic,kkrat
+kmhhla.top,domain,,,Zscaler ThreatLabz,High,kkrat,CAMPAIGN ASSOCIATED,phishing,kkrat

@@ -1,0 +1,2112 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="page-en">
+  <head>
+    <script src="https://layer.proofpoint.com/tags/app.js" async></script>
+<meta charset="utf-8" />
+<meta name="description" content="Key findings TA585 is a sophisticated cybercriminal threat actor recently named by Proofpoint. It operates its entire attack chain from infrastructure to email delivery to malware" />
+<link rel="canonical" href="https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<link rel="shortlink" href="https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<link rel="image_src" href="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=ILZPftnU" />
+<link rel="icon" href="/themes/custom/proofpoint/apps/drupal/favicon.ico" />
+<link rel="mask-icon" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon.svg" />
+<link rel="icon" sizes="16x16" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-32x32.png" />
+<link rel="icon" sizes="96x96" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-192x192.png" />
+<link rel="apple-touch-icon" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-152x152.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-180x180.png" />
+<meta property="og:site_name" content="Proofpoint" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<meta property="og:title" content="When the monster bytes: tracking TA585 and its arsenal | Proofpoint US" />
+<meta property="og:description" content="Key findings TA585 is a sophisticated cybercriminal threat actor recently named by Proofpoint. It operates its entire attack chain from infrastructure to email delivery to malware" />
+<meta property="og:image" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=ILZPftnU" />
+<meta property="og:image:url" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=ILZPftnU" />
+<meta property="og:image:secure_url" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=ILZPftnU" />
+<meta property="article:published_time" content="2025-10-03T07:15:27-07:00" />
+<meta property="article:modified_time" content="2025-10-15T07:25:55-07:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Key findings TA585 is a sophisticated cybercriminal threat actor recently named by Proofpoint. It operates its entire attack chain from infrastructure to email delivery to malware" />
+<meta name="twitter:site" content="@proofpoint" />
+<meta name="twitter:title" content="When the monster bytes: tracking TA585 and its arsenal | Proofpoint US" />
+<meta name="twitter:image" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=ILZPftnU" />
+<script data-cfasync="false" type="text/javascript" id="vwoCode">window._vwo_code=window._vwo_code || (function() {
+      var account_id=1002484,
+      version=1.3,
+      settings_tolerance=2000,
+      library_tolerance=2500,z
+      use_existing_jquery=false,
+      is_spa=1,
+      hide_element='body',
+      /* DO NOT EDIT BELOW THIS LINE */
+      f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},init:function(){window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');e.setAttribute('nonce',document.querySelector('#vwoCode').nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version);return settings_timer}};window._vwo_settings_timer = code.init();return code;}());</script>
+<meta name="facebook-domain-verification" content="l349mr2tyecyl7w3a1146378lqxru1" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preload" href="/themes/custom/proofpoint/dist/app-drupal/assets/fonts/proofpoint.woff2" as="font" crossorigin="anonymous" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@id": "https://www.proofpoint.com/#organization",
+            "@type": "Organization",
+            "name": "Proofpoint",
+            "url": "https://www.proofpoint.com/us",
+            "description": "Proofpoint is a cybersecurity company that helps organizations protect people and defend data from advanced threats, human risk, and data loss.",
+            "alternateName": [
+                "Proofpoint, Inc."
+            ],
+            "sameAs": [
+                "http://www.facebook.com/proofpoint",
+                "https://x.com/proofpoint",
+                "https://www.linkedin.com/company/proofpoint"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "925 West Maude Avenue",
+                "addressLocality": "Sunnyvale",
+                "addressRegion": "California",
+                "postalCode": "94085",
+                "addressCountry": "United States"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-408-517-4710",
+                "contactType": "Sales"
+            }
+        },
+        {
+            "@id": "https://www.proofpoint.com/us/#website",
+            "@type": "WebSite",
+            "name": "Proofpoint US",
+            "url": "https://www.proofpoint.com/us",
+            "publisher": {
+                "@id": "https://www.proofpoint.com/#organization"
+            }
+        },
+        {
+            "@id": "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal#webpage",
+            "@type": "WebPage",
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal",
+            "name": "When the monster bytes: tracking TA585 and its arsenal ",
+            "isPartOf": {
+                "@id": "https://www.proofpoint.com/us/#website"
+            },
+            "publisher": {
+                "@id": "https://www.proofpoint.com/#organization"
+            },
+            "description": "Key findings TA585 is a sophisticated cybercriminal threat actor recently named by Proofpoint. It operates its entire attack chain from infrastructure to email delivery to malware installation. The actor demonstrates innovation in a constantly changing cybercrime threat landscape, with unique web...",
+            "mainEntity": {
+                "@id": "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal#blogposting"
+            }
+        },
+        {
+            "@type": "BlogPosting",
+            "@id": "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal#blogposting",
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal",
+            "mainEntityOfPage": {
+                "@id": "https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal#webpage"
+            },
+            "publisher": {
+                "@id": "https://www.proofpoint.com/#organization"
+            },
+            "headline": "When the monster bytes: tracking TA585 and its arsenal",
+            "description": "Key findings TA585 is a sophisticated cybercriminal threat actor recently named by Proofpoint. It operates its entire attack chain from infrastructure to email delivery to malware installation. The actor demonstrates innovation in a constantly changing cybercrime threat landscape, with unique web...",
+            "datePublished": "2025-10-13T14:15:27Z",
+            "dateModified": "2025-10-15T14:25:55Z",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://www.proofpoint.com/us/blog-authors/kyle-cucci-tommy-madjar-selena-larson-and-proofpoint-threat-research-team#person",
+                    "name": "Kyle Cucci, Tommy Madjar, Selena Larson, and the Proofpoint Threat Research Team",
+                    "worksFor": {
+                        "@id": "https://www.proofpoint.com/#organization"
+                    }
+                }
+            ],
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.proofpoint.com/sites/default/files/blog-banners/pfpt-us-threat-actor-hood.jpg"
+                }
+            ]
+        }
+    ]
+}</script>
+<link rel="alternate" hreflang="en-us" href="https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<link rel="alternate" hreflang="en-gb" href="https://www.proofpoint.com/uk/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<link rel="alternate" hreflang="ja" href="https://www.proofpoint.com/jp/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<link rel="alternate" hreflang="en-au" href="https://www.proofpoint.com/au/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+<link rel="alternate" hreflang="x-default" href="https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" />
+
+    <title>When the monster bytes: tracking TA585 and its arsenal | Proofpoint US</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_-RMsCccN5uB7HaD7q3zXkxLHTrJsyIOEJwOaR2D1KPQ.css?delta=0&amp;language=en&amp;theme=particle&amp;include=eJxlj2EOwjAIhS80sjMBw9qMlgU6425vjcZ18Rfhg_fgbegts8pMamnaxg5ip2DPJAN3wYV9LxQnZKtNaoMNk_iIfVAmNUIFUSl9d1Ans6QCN7vQe7-T6_CRSkI-4G0KHPE3-PgPvKCv0qwbe4HrL79g0HPyeg4e4nnJWJ9dZa2HiSOalJkwZGpmSujzt74AlXJ5RQ" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_e7pHxAnQVu9ZuE67HsyWg84hXpYiCYQDFH5S33MDHQc.css?delta=1&amp;language=en&amp;theme=particle&amp;include=eJxlj2EOwjAIhS80sjMBw9qMlgU6425vjcZ18Rfhg_fgbegts8pMamnaxg5ip2DPJAN3wYV9LxQnZKtNaoMNk_iIfVAmNUIFUSl9d1Ans6QCN7vQe7-T6_CRSkI-4G0KHPE3-PgPvKCv0qwbe4HrL79g0HPyeg4e4nnJWJ9dZa2HiSOalJkwZGpmSujzt74AlXJ5RQ" />
+
+    <script src="https://platform-api.sharethis.com/js/sharethis.js#property=6543fd1a2398960013d900a7&amp;product=inline-share-buttons&amp;source=platform"></script>
+<script src="/sites/default/files/js/js_NPxh2djuPqqOb4Fjhy-wB_EhpR1Kv1AhSr4PQTcFQC0.js?scope=header&amp;delta=1&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+
+  </head>
+  <body class="path-node user-anonymous">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<header class="navigation navigation--us">
+  <nav class="flex-wrap navbar navbar-expand-lg w-100 p-0" aria-label="Primary navigation">
+    <div class="container d-flex main-navigation">
+      <div class="navigation__main-row w-100">
+        <a class="navbar-brand navigation__brand" href="/us" aria-label="Proofpoint">
+                      <img class="navigation__logo" src="/themes/custom/proofpoint/dist/app-drupal/assets/header-nav__logo-white.svg" alt="Proofpoint">
+                  </a>
+
+        <div class="navigation__mobile-controls">
+                      <a class="navigation__mobile-search" href="#veridianx-navigation-search-modal" aria-label="Search" data-bs-toggle="modal" data-bs-target="#veridianx-navigation-search-modal">
+              <span aria-hidden="true"></span>
+            </a>
+                    <button class="navbar-toggler navigation__toggle" type="button" aria-controls="veridianx-navigation" data-bs-target="#veridianx-navigation" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" data-navigation-toggle>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="navigation__menu navbar-collapse flex-wrap collapse" id="veridianx-navigation" data-navigation-menu>
+
+
+                  <ul class="navbar-nav navigation__primary mx-auto">
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Products" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Products" aria-controls="veridianx-navigation-dropdown-1" data-navigation-dropdown-toggle>
+                    Products
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-1" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--columns">
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-1">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-1">
+                                                                  <a class="navigation__mega-heading-link" href="/us/products/collaboration-security-prime">Collaboration Security</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/email-protection">
+                                    <span class="navigation__mega-link-title">Core Email Protection</span>
+                                                                          <span class="navigation__mega-link-description">Get industry-leading threat protection via API or gateway</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/email-protection/email-fraud-defense">
+                                    <span class="navigation__mega-link-title">Email Fraud Defense</span>
+                                                                          <span class="navigation__mega-link-description">Protect your brand, increase deliverability, and identify lookalike domains</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/mitigate-human-risk">
+                                    <span class="navigation__mega-link-title">ZenGuide</span>
+                                                                          <span class="navigation__mega-link-description">Deliver targeted, risk-based security awareness training</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/email-security-and-protection/secure-email-relay">
+                                    <span class="navigation__mega-link-title">Secure Email Relay</span>
+                                                                          <span class="navigation__mega-link-description">Secure application email and implement DMARC faster</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/identity-protection/account-takeover">
+                                    <span class="navigation__mega-link-title">Account Takeover Protection</span>
+                                                                          <span class="navigation__mega-link-description">Detect, investigate, and respond to account takeovers</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-2">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-2">
+                                                                  <a class="navigation__mega-heading-link" href="/us/products/data-security-governance">Data Security</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/data-security-for-ai">
+                                    <span class="navigation__mega-link-title">Data Security for AI</span>
+                                                                          <span class="navigation__mega-link-description">Secure data across shadow and approved AI</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/data-loss-prevention">
+                                    <span class="navigation__mega-link-title">Enterprise DLP</span>
+                                                                          <span class="navigation__mega-link-description">Prevent data loss across email, cloud, and endpoints</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/adaptive-email-dlp">
+                                    <span class="navigation__mega-link-title">Adaptive Email DLP</span>
+                                                                          <span class="navigation__mega-link-description">Prevent misdirected emails and hidden data exfiltration</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/insider-threat-management">
+                                    <span class="navigation__mega-link-title">Insider Threat Management</span>
+                                                                          <span class="navigation__mega-link-description">Get visibility into risky behavior by careless, malicious, and compromised users</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/data-security-posture-management">
+                                    <span class="navigation__mega-link-title">Data Security Posture Management</span>
+                                                                          <span class="navigation__mega-link-description">Discover, classify, and protect sensitive data across cloud and hybrid environments</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/digital-communications-governance">
+                                    <span class="navigation__mega-link-title">Digital Communications Governance</span>
+                                                                          <span class="navigation__mega-link-description">Intelligently capture, retain, and discover digital communications</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-3">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-3">
+                                                                  <a class="navigation__mega-heading-link" href="/us/platform/ai-security">AI Security</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/ai-access-security">
+                                    <span class="navigation__mega-link-title">Secure AI Usage by People</span>
+                                                                          <span class="navigation__mega-link-description">Get visibility and control around employees&#039; use of AI</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/agentic-ai-security">
+                                    <span class="navigation__mega-link-title">Secure AI Usage by Agents</span>
+                                                                          <span class="navigation__mega-link-description">Understand AI agent intent and control their use of other AI tools</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/ai-mcp-security">
+                                    <span class="navigation__mega-link-title">Secure MCP Across Your Enterprise</span>
+                                                                          <span class="navigation__mega-link-description">Unify MCP discovery, authorization, and monitoring</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-4">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-4">
+                                                                  <a class="navigation__mega-heading-link" href="/us/platform">Our Platform</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/platform/nexus">
+                                    <span class="navigation__mega-link-title">Proofpoint Nexus</span>
+                                                                          <span class="navigation__mega-link-description">Advanced AI and threat intel to detect threats and assess data risk</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/platform/zen">
+                                    <span class="navigation__mega-link-title">Proofpoint Zen</span>
+                                                                          <span class="navigation__mega-link-description">Integrated control points to protect people and data anywhere</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/platform/satori">
+                                    <span class="navigation__mega-link-title">Proofpoint Satori</span>
+                                                                          <span class="navigation__mega-link-description">The power behind agentic security operations</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/365-total-protection">
+                                    <span class="navigation__mega-link-title">Proofpoint 365 Total Protection</span>
+                                                                          <span class="navigation__mega-link-description">Enabling the channel, protecting humans and agents</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                              <a class="navigation__mega-footer-link" href="/us/products">
+                          <span>View All Products</span>
+                        </a>
+                                          </div>
+                  </div>
+                              </li>
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Solutions" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Solutions" aria-controls="veridianx-navigation-dropdown-2" data-navigation-dropdown-toggle>
+                    Solutions
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-2" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--columns">
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-2-column-1">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-2-column-1">
+                                                                  By Use Case
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/ensure-acceptable-genai-use">
+                                    <span class="navigation__mega-link-title">Ensure Acceptable GenAI Use</span>
+                                                                          <span class="navigation__mega-link-description">Empower your workforce with safe GenAI practices</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/claude-compliance-api-integration">
+                                    <span class="navigation__mega-link-title">Govern Claude AI Activity</span>
+                                                                          <span class="navigation__mega-link-description">Integrate Proofpoint with Claude Compliance API</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/secure-microsoft-365">
+                                    <span class="navigation__mega-link-title">Secure Microsoft 365</span>
+                                                                          <span class="navigation__mega-link-description">Implement flexible security and compliance for M365</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/prevent-loss-from-ransomware">
+                                    <span class="navigation__mega-link-title">Ransomware Prevention</span>
+                                                                          <span class="navigation__mega-link-description">Stop attacks by securing ransomware&#039;s top vector</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/combat-email-and-cloud-threats">
+                                    <span class="navigation__mega-link-title">Combat Email and Cloud Threats</span>
+                                                                          <span class="navigation__mega-link-description">Protect your people with a smart, holistic approach</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/protect-cloud-apps">
+                                    <span class="navigation__mega-link-title">Protect Cloud Apps</span>
+                                                                          <span class="navigation__mega-link-description">Eliminate threats and data loss across cloud apps</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/change-user-behavior">
+                                    <span class="navigation__mega-link-title">Change User Behavior</span>
+                                                                          <span class="navigation__mega-link-description">Help your users identify, resist, and report attacks</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/enable-digital-communications-governance">
+                                    <span class="navigation__mega-link-title">Modernize Compliance and Archiving</span>
+                                                                          <span class="navigation__mega-link-description">Manage your risk and data retention requirements</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/email-authentication-with-dmarc">
+                                    <span class="navigation__mega-link-title">Authenticate Your Email</span>
+                                                                          <span class="navigation__mega-link-description">Protect your email deliverability with DMARC</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-2-column-2">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-2-column-2">
+                                                                  By Industry
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/federal">
+                                    <span class="navigation__mega-link-title">Federal Government</span>
+                                                                          <span class="navigation__mega-link-description">Enable your agency with FedRAMP certified security</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/higher-education-security">
+                                    <span class="navigation__mega-link-title">Higher Education</span>
+                                                                          <span class="navigation__mega-link-description">Protect your campus, people, data, and research</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/healthcare-cybersecurity">
+                                    <span class="navigation__mega-link-title">Healthcare</span>
+                                                                          <span class="navigation__mega-link-description">Protect clinicians, patient data, and intellectual property</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/email-security-solutions-for-service-providers">
+                                    <span class="navigation__mega-link-title">Internet Service Providers</span>
+                                                                          <span class="navigation__mega-link-description">Deliver leading email protection for your networks and customers</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/state-and-local-government">
+                                    <span class="navigation__mega-link-title">State and Local Government</span>
+                                                                          <span class="navigation__mega-link-description">Secure your institutions, services, and communities against cyberthreats</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/financial-services-and-insurance">
+                                    <span class="navigation__mega-link-title">Financial Services</span>
+                                                                          <span class="navigation__mega-link-description">Protect your institution while meeting compliance requirements</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/mobile-message-security-solutions-for-service-providers">
+                                    <span class="navigation__mega-link-title">Mobile Operators</span>
+                                                                          <span class="navigation__mega-link-description">Protect your messaging environments and subscribers at scale</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/protection-compliance-small-business">
+                                    <span class="navigation__mega-link-title">Small and Medium Businesses</span>
+                                                                          <span class="navigation__mega-link-description">Strengthen your business with enterprise-grade security built to grow with you</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-2-column-3">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-2-column-3">
+                                                                  Services
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/proofpoint-services">
+                                    <span class="navigation__mega-link-title">Proofpoint Services</span>
+                                                                          <span class="navigation__mega-link-description">Leverage our expertise to maximize your investment</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/premium-services/advisory-services">
+                                    <span class="navigation__mega-link-title">Advisory Services</span>
+                                                                          <span class="navigation__mega-link-description">Maintain control with expert guidance and recommendations</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/premium-services/applied-services">
+                                    <span class="navigation__mega-link-title">Applied Services</span>
+                                                                          <span class="navigation__mega-link-description">Get hands-on execution, guidance, and measurable impact</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                          </div>
+                  </div>
+                              </li>
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Resources" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Resources" aria-controls="veridianx-navigation-dropdown-3" data-navigation-dropdown-toggle>
+                    Resources
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-3" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--columns">
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-1">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-1">
+                                                                  Learn
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/resources">
+                                    <span class="navigation__mega-link-title">Resource library</span>
+                                                                          <span class="navigation__mega-link-description">Research, insights, and resources from Proofpoint experts.</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/blog">
+                                    <span class="navigation__mega-link-title">Blog</span>
+                                                                          <span class="navigation__mega-link-description">Keep up with the latest news and expert insights</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/customer-stories">
+                                    <span class="navigation__mega-link-title">Customer Stories</span>
+                                                                          <span class="navigation__mega-link-description">Read how customers solve their toughest security challenges</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/cybersecurityacademy">
+                                    <span class="navigation__mega-link-title">Cybersecurity Academy</span>
+                                                                          <span class="navigation__mega-link-description">Become a Proofpoint Certified Guardian</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/company/events">
+                                    <span class="navigation__mega-link-title">Events</span>
+                                                                          <span class="navigation__mega-link-description">Connect and learn with peers at in-person events</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/webinars">
+                                    <span class="navigation__mega-link-title">Webinars</span>
+                                                                          <span class="navigation__mega-link-description">Browse our complete webinar library</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-2">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-2">
+                                                                  Threat Intelligence
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/threat-reference">
+                                    <span class="navigation__mega-link-title">Threat glossary</span>
+                                                                          <span class="navigation__mega-link-description">Learn about the latest security threats and techniques</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/podcasts">
+                                    <span class="navigation__mega-link-title">Podcasts</span>
+                                                                          <span class="navigation__mega-link-description">Stay informed with our renowned threat researchers</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link navigation__mega-link--external" href="https://go.proofpoint.com/PowerSeries?utm_source=pfpt-website&amp;amp;utm_medium=web&amp;amp;utm_campaign=EventsPage" target="_blank" rel="noopener">
+                                    <span class="navigation__mega-link-title">Power Series</span>
+                                                                          <span class="navigation__mega-link-description">Join our virtual event series on the industry&#039;s hottest topics</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/blog/threat-insight">
+                                    <span class="navigation__mega-link-title">Threat Insight Blog</span>
+                                                                          <span class="navigation__mega-link-description">Discover actionable threat intel and expert analysis</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-3">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-3">
+                                                                  Partners
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link navigation__mega-link--external" href="https://partners.proofpoint.com" target="_blank" rel="noopener">
+                                    <span class="navigation__mega-link-title">Partner Portal</span>
+                                                                          <span class="navigation__mega-link-description">Unlock tools with your partner credentials</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/channel-partners-and-distributors">
+                                    <span class="navigation__mega-link-title">Channel Partners &amp; Distributors</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/partners/technology-alliance-partners">
+                                    <span class="navigation__mega-link-title">Technology Partners</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/partners/msp">
+                                    <span class="navigation__mega-link-title">MSP Partners</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/partners/oem-security">
+                                    <span class="navigation__mega-link-title">OEM Partners</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-4">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-4">
+                                                                  Support
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link navigation__mega-link--external" href="https://proofpoint.my.site.com/community/s/" target="_blank" rel="noopener">
+                                    <span class="navigation__mega-link-title">Support Portal</span>
+                                                                          <span class="navigation__mega-link-description">Access our knowledge base or file a support ticket</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/postmaster">
+                                    <span class="navigation__mega-link-title">IP Address Blocked?</span>
+                                                                          <span class="navigation__mega-link-description">Best practices for email delivery, authentication, and troubleshooting</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/support-services">
+                                    <span class="navigation__mega-link-title">Support Services</span>
+                                                                          <span class="navigation__mega-link-description">Get help with current incidents with Proofpoint products</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                          </div>
+                  </div>
+                              </li>
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Company" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Company" aria-controls="veridianx-navigation-dropdown-4" data-navigation-dropdown-toggle>
+                    Company
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-4" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--flat">
+                                                  <section class="navigation__mega-column">
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/why-proofpoint">
+                                    <span class="navigation__mega-link-title">Why Proofpoint</span>
+                                                                          <span class="navigation__mega-link-description">Proofpoint provides intent-based protection for every human, every AI agent, across all data</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/our-leadership-team">
+                                    <span class="navigation__mega-link-title">Leadership</span>
+                                                                          <span class="navigation__mega-link-description">Learn about the executive team leading Proofpoint&#039;s strategy and vision</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/legal/esg">
+                                    <span class="navigation__mega-link-title">ESG</span>
+                                                                          <span class="navigation__mega-link-description">Learn about our environmental, social, and governance principles</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column">
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/compare">
+                                    <span class="navigation__mega-link-title">Comparing Proofpoint</span>
+                                                                          <span class="navigation__mega-link-description">Evaluating security vendors? Check out side-by-side industry comparisons</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/newsroom">
+                                    <span class="navigation__mega-link-title">News Center</span>
+                                                                          <span class="navigation__mega-link-description">Read press releases, news, and media highlights about Proofpoint</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/company/careers">
+                                    <span class="navigation__mega-link-title">Careers</span>
+                                                                          <span class="navigation__mega-link-description">Make a difference at one of the world&#039;s leading security companies</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column">
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/company/about">
+                                    <span class="navigation__mega-link-title">About</span>
+                                                                          <span class="navigation__mega-link-description">Learn more about the team driving human and agent-centric security</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/legal/trust">
+                                    <span class="navigation__mega-link-title">AI, Privacy and Trust</span>
+                                                                          <span class="navigation__mega-link-description">Learn about our data handling, privacy, and compliance</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                          </div>
+                  </div>
+                              </li>
+                      </ul>
+        
+                  <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item navigation__action">
+                <a class="nav-link" href="/us/products/how-to-buy">
+                  <span class="btn btn-outline-primary small mt-0">How to buy</span>
+                </a>
+              </li>
+                                        <li class="nav-item navigation__action">
+                <a class="nav-link" href="/us/free-demo-request">
+                  <span class="btn btn-primary small mt-0">Request a demo</span>
+                </a>
+              </li>
+                      </ul>
+        
+        <div class="navigation__utility-bar w-100">
+          <div class="container d-flex navigation__utility-container">
+                          <a class="navigation__search-link nav-link" href="#veridianx-navigation-search-modal" data-bs-toggle="modal" data-bs-target="#veridianx-navigation-search-modal">Search</a>
+            
+                          <ul class="navbar-nav navigation__utility ms-auto">
+                                                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="veridianx-navigation-utility-dropdown-1" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Partners
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-utility-dropdown-1">
+                                                                                                                              <li>
+                                                          <a class="dropdown-item" href="/us/channel-partners-and-distributors">
+                                Channel Partners and Distributors
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/partners/msp">
+                                MSP Partners
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/partners/technology-alliance-partners">
+                                Technology and Alliance Partners
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/partners/oem-security">
+                                OEM Partners
+                              </a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="veridianx-navigation-utility-dropdown-2" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Support
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-utility-dropdown-2">
+                                                                                                                              <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://proofpoint.my.site.com/community/s/" target="_blank" rel="noopener">
+                                Support Login
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://www.proofpoint.com/us/support-services" target="_blank" rel="noopener">
+                                Support Services
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/postmaster">
+                                IP Address Blocked?
+                              </a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="veridianx-navigation-utility-dropdown-3" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Login
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-utility-dropdown-3">
+                                                                                                                              <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://learningmanager.adobe.com/proofpointcybersecurityacademy" target="_blank" rel="noopener">
+                                Proofpoint Cybersecurity Academy
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://partners.proofpoint.com/English/" target="_blank" rel="noopener">
+                                Partner Hub
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://v1.us1.digitalrisk.proofpoint.com/users/sign_in" target="_blank" rel="noopener">
+                                Digital Risk Portal
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://threatintel.proofpoint.com" target="_blank" rel="noopener">
+                                ET Intelligence
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://app.emaildefense.proofpoint.com/login" target="_blank" rel="noopener">
+                                Email Fraud Defense
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://us1.proofpointessentials.com/app/login.php" target="_blank" rel="noopener">
+                                Proofpoint Essentials
+                              </a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                  
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" id="veridianx-navigation-language-dropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+    EN: Americas
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-language-dropdown">
+    <li>
+      <span class="dropdown-header">Select Language</span>
+    </li>
+      <li>
+    <span class="dropdown-item is-active" aria-current="true">English: Americas</span>
+  </li>
+                  <li>
+        <a class="dropdown-item" href="/uk/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal">English: Europe, Middle East, Africa</a>
+      </li>
+                <li>
+        <a class="dropdown-item" href="/au/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal">English: Asia Pacific</a>
+      </li>
+                                              <li>
+        <a class="dropdown-item" href="/jp/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal">日本語</a>
+      </li>
+            
+  </ul>
+</li>
+                              </ul>
+                      </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+  <div class="modal navigation__search-dialog" id="veridianx-navigation-search-modal" tabindex="-1" aria-label="Search" data-navigation-search-dialog>
+    <div class="modal-dialog navigation__search-dialog-shell">
+      <div class="modal-content navigation__search-panel">
+        <button class="navigation__search-close" type="button" aria-label="Close search" data-bs-dismiss="modal"></button>
+        <form class="navigation__search-form" action="/us/search" method="get" role="search" data-navigation-search-form>
+          <label class="visually-hidden" for="veridianx-navigation-search-input">Search</label>
+          <input class="navigation__search-input" id="veridianx-navigation-search-input" type="search" name="content[query]" placeholder="Search Proofpoint" autocomplete="off" data-navigation-search-input>
+          <button class="navigation__search-clear" type="reset" aria-label="Clear search" data-navigation-search-clear></button>
+          <button class="navigation__search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true"></span>
+          </button>
+        </form>
+                  <div class="navigation__search-suggestions">
+            <p class="navigation__search-suggestions-label">Top Suggestions:</p>
+            <ul class="navigation__search-suggestion-list">
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Email%20Security">Email Security</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Phishing">Phishing</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=DLP">DLP</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Email%20Fraud">Email Fraud</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Prime%20Threat%20Protection">Prime Threat Protection</a>
+                </li>
+                          </ul>
+          </div>
+              </div>
+    </div>
+  </div>
+
+
+
+
+  <main class="layout-container" role="main">
+  <div data-drupal-messages-fallback class="hidden"></div>
+
+
+    <a id="main-content" tabindex="-1"></a>      
+
+
+
+
+
+<article about="/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal" class="node--type--blog-post node--view-mode--full node node-blog-full _legacy_content _blog-full">
+  
+
+
+
+  <div class="breadcrumbs _legacy_element _breadcrumbs"><div class="nav-crumbs container"><div class="breadcrumb__item"><a href="/us/blog" class="breadcrum__item-link">Blog</a></div><div class="breadcrumb__item"><a href="/us/blog/threat-insight" class="breadcrum__item-link">Threat Insight</a></div><div class="breadcrumb__item">
+        When the monster bytes: tracking TA585 and its arsenal      </div></div></div>  
+
+  <div class="blog-banner">
+    <div class="blog-banner__image vx-media--legacy-grayscale">      <picture>
+                  <source srcset="/sites/default/files/styles/image_1920_750/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=_xIXkCHG 1x" media="screen and (min-width: 1440px)" type="image/webp" width="1920" height="750"/>
+              <source srcset="/sites/default/files/styles/image_1024_400/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=BksMDkYd 1x" media="screen and (min-width: 1024px)" type="image/webp" width="1024" height="400"/>
+              <source srcset="/sites/default/files/styles/image_768_375/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=6ux1Cxv6 1x" media="screen and (min-width: 768px)" type="image/webp" width="768" height="375"/>
+              <source srcset="/sites/default/files/styles/image_1920_750/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=_xIXkCHG 1x" media="screen and (min-width: 1440px)" type="image/webp" width="1920" height="750"/>
+              <source srcset="/sites/default/files/styles/image_1024_400/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=BksMDkYd 1x" media="screen and (min-width: 1024px)" type="image/webp" width="1024" height="400"/>
+              <source srcset="/sites/default/files/styles/image_768_375/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=6ux1Cxv6 1x" media="screen and (min-width: 768px)" type="image/webp" width="768" height="375"/>
+                  <img loading="eager" width="768" height="300" src="/sites/default/files/styles/image_768_300/public/blog-banners/pfpt-us-threat-actor-hood.jpg.webp?itok=i-FGeg7r" alt="Threat actor hood" typeof="foaf:Image" />
+
+  </picture>
+
+
+</div>
+    <div class="blog-banner__gradient-overlay"></div>
+    <div class="blog-banner__heading-wrap">
+      
+      
+
+      
+<h1 class="blog-banner__heading">
+      When the monster bytes: tracking TA585 and its arsenal 
+  </h1>
+
+    </div>
+  </div>
+
+  <div class="blog-content">
+    <div class="blog-content__sharethis sharethis_toolbox sharethis_32x32_style">
+      <div class="blog-content__sharethis_label sharethis__label">Share with your network!</div>
+      <div class="blog-content__sharethis_buttons sharethis_buttons">
+        <div class="sharethis-inline-share-buttons"></div>
+      </div>
+    </div>
+        <div class="blog-content__metadata blog-content__metadata-author">
+      <span class="blog-content__date">  <time datetime="2025-10-13T14:15:27Z">October 13, 2025</time>
+
+</span>
+        <span class="blog-content__author">
+                Kyle Cucci, Tommy Madjar, Selena Larson, and the Proofpoint Threat Research Team
+  
+        </span>
+    </div>
+    <div class="node-full__body blog-content__body">  <h3 aria-level="2" paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{104}" paraid="547258602" role="heading">Key findings&nbsp;</h3>
+
+<ul>
+	<li paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{110}" paraid="1945420963">TA585 is a sophisticated cybercriminal threat actor recently named by Proofpoint. It operates its entire attack chain from infrastructure to email delivery to malware installation.&nbsp;</li>
+	<li paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{118}" paraid="389326903">The actor demonstrates innovation in a constantly changing cybercrime threat landscape, with unique web injection campaigns and complicated filtering.&nbsp;&nbsp;</li>
+	<li paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{128}" paraid="1997158851">TA585 frequently delivers MonsterV2, a malware with numerous capabilities sold on cybercriminal forums. It is not sold by TA585, and has multiple cybercriminal customers.&nbsp;</li>
+	<li paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{142}" paraid="124317185">MonsterV2 has capabilities of a remote access trojan (RAT), loader, and stealer. It avoids infecting computers in Commonwealth of Independent States (CIS) countries.&nbsp;</li>
+</ul>
+
+<h3 aria-level="2" paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{154}" paraid="271093136" role="heading">Overview&nbsp;&nbsp;</h3>
+
+<p paraeid="{c34df672-90f0-4cf8-a359-97f38ad1511d}{124}" paraid="396073762">As the cybercrime landscape continues to innovate, new threat actors and capabilities are emerging. One new cybercriminal threat actor, TA585, operates with a high level of sophistication and delivers a variety of malware including the recently released MonsterV2.&nbsp;&nbsp;</p>
+
+<p paraeid="{c34df672-90f0-4cf8-a359-97f38ad1511d}{148}" paraid="728480046">MonsterV2 is advertised as a remote access trojan (RAT), stealer, and loader. It is expensive compared to its peer malware families, and used by only a small number of actors, including TA585. Proofpoint researchers first observed it sold on hacking forms in February 2025.&nbsp;</p>
+
+<p paraeid="{605da692-9ea9-4d4b-98cc-3281efdadc60}{208}" paraid="1478638107">TA585 is notable because it appears to own its entire attack chain with multiple delivery techniques. Instead of leveraging other threat actors – like paying for distribution, buying access from initial access brokers, or using a third-party traffic delivery system – TA585 manages its own infrastructure, delivery, and malware installation. The evolution of cybercrime and its supporting ecosystem has made the threat landscape comparable to the modern job market and the “gig economy.” However, TA585 bucks that trend and owns and manages nearly all of its business model, except the final malware which is sourced from a MaaS (Malware as a Service) such as Lumma Stealer, Rhadamanthys or MonsterV2.</p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{15}" paraid="590182023">This report details both the newly named TA585 as well as the MonsterV2 malware, which is used by multiple actors. While TA585 is one customer of MonsterV2, it is not the malware author, and multiple threat actors use it in campaigns.&nbsp;</p>
+
+<h3 aria-level="2" paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{23}" paraid="309524732" role="heading">Campaign details&nbsp;</h3>
+
+<h4 paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{29}" paraid="646670681">Government impersonation&nbsp;</h4>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{35}" paraid="1419509188">Proofpoint first observed MonsterV2 in a late February 2025 campaign leveraging U.S. Internal Revenue Service (IRS) themed lures. Messages contained URLs linking to a PDF which would open in the browser. The PDF linked to a webpage that was using the ClickFix technique, a technique named by <a href="https://www.proofpoint.com/us/blog/threat-insight/clipboard-compromise-powershell-self-pwn" rel="noreferrer noopener" target="_blank">Proofpoint in June 2024</a>, which lures visitors to manually run a malicious command in the Windows Run-box or PowerShell terminal.<br>
+&nbsp;<br>
+<img alt="Figure 1" data-entity-type="file" data-entity-uuid="c71f7e50-8dff-4d51-99d8-60414b0e7e02" height="801" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.09.40%E2%80%AFAM.png" width="924" loading="lazy"></p>
+
+<p paraeid="{3d9d4a9a-ab0e-4efa-b769-4c27979f5337}{12}" paraid="327275866"><em>SBA themed PDF.&nbsp;</em></p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{67}" paraid="2098519613"><img alt="Figure 2" data-entity-type="file" data-entity-uuid="e7692160-5523-40b3-af19-340acf1101c3" height="613" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.10.13%E2%80%AFAM.png" width="931" loading="lazy"></p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{67}" paraid="2098519613">&nbsp;<em>IRS Themed ClickFix Landing leading to MonsterV2, observed on&nbsp;</em><em>26 February 2025.&nbsp;&nbsp;</em></p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{81}" paraid="2096865055"><img alt="Figure 3" data-entity-type="file" data-entity-uuid="5171fdc9-7643-44d9-99d7-a34918eb6ba0" height="540" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.16.54%E2%80%AFAM.png" width="1139" loading="lazy"></p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{85}" paraid="1089734026"><em>ClickFix themed landing leading to MonsterV2.&nbsp;&nbsp;</em></p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{111}" paraid="505866302">If the user copied and pasted the PowerShell script as instructed, it executed a second PowerShell script ultimately leading to MonsterV2.&nbsp;</p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{129}" paraid="1056114566">Proofpoint observed two more U.S. government-themed MonsterV2 campaigns in March 2025, one impersonating the IRS and a second impersonating the Small Business Administration. Both campaigns included less than 200 messages and mostly targeted finance and accounting firms. None of the campaigns are attributed to a tracked threat actor.&nbsp;&nbsp;</p>
+
+<h5 paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{143}" paraid="1533540893">TA585 campaigns&nbsp;</h5>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{149}" paraid="1627658883">In April 2025, Proofpoint researchers investigated an interesting vector: unique web injects and activity we named “CoreSecThree” based on domain names and infrastructure. The actor registers and maintains its own domain names and uses Cloudflare hosting infrastructure. Initial campaigns delivered Lumma Stealer, but the actor began using MonsterV2 in early May 2025.&nbsp;</p>
+
+<p paraeid="{443fbe80-a028-4f3c-91d9-ba18c5beb42c}{223}" paraid="124086809">TA585 activity is typically distributed via compromised websites. Proofpoint detects the threat by sandboxing URLs from business email messages that lead to legitimate websites that have been compromised to serve malware to selected visitors.&nbsp; Although neither the sender nor the site owner may intend harm, the websites have been compromised with a malicious JavaScript injection. This injection causes the website to load a malicious script which, in campaigns so far this year, is used to create an overlay of the compromised website to present a fake CAPTCHA (<a href="https://www.proofpoint.com/us/blog/threat-insight/security-brief-clickfix-social-engineering-technique-floods-threat-landscape" rel="noreferrer noopener" target="_blank">ClickFix</a>) instructing users to verify they are human. Unlike some other <a href="https://www.proofpoint.com/us/blog/threat-insight/update-fake-updates-two-new-actors-and-new-mac-malware" rel="noreferrer noopener" target="_blank">web inject campaigns</a> that rely on third-party traffic distribution systems, TA585 does its own filtering and checks to ensure a real person is receiving the payload.&nbsp;</p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{9}" paraid="1787169907"><img alt="Figure 4" data-entity-type="file" data-entity-uuid="1fab7813-9178-47e7-aa91-abaecc543f0a" height="187" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.17.04%E2%80%AFAM.png" width="1018" loading="lazy"></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{16}" paraid="1424994608"><em>Example TA585 JavaScript inject.&nbsp;&nbsp;</em></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{22}" paraid="1058605861"><img alt="Figure 5" data-entity-type="file" data-entity-uuid="e8d41eec-a491-4a30-8d85-6b785c9443ba" height="347" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.18.47%E2%80%AFAM.png" width="716" loading="lazy"></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{27}" paraid="1187982"><em>ClickFix overlay on compromised website.&nbsp;</em></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{35}" paraid="1827308412">This attack chain is able to react on the “Win+R” activity from the user with an actual “reaction” from the website upon completing it. Once the user clicks the “Verify you are human” they are prompted to complete the “Win+R” action:&nbsp;</p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{91}" paraid="1586860618">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="Figure 6" data-entity-type="file" data-entity-uuid="c3880930-7025-4690-b725-9b6a484be8ab" height="320" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.18.59%E2%80%AFAM.png" width="502" loading="lazy"></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{96}" paraid="851015786"><em>“Verification” page owned by the threat actor.&nbsp;</em></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{102}" paraid="2127115840">Following the instructions will initiate a PowerShell command that downloads and executes malware. Meanwhile, the page starts beaconing repetitively to the lure server which will reply with: “Access denied” until the PowerShell script finishes downloading and running, and the malware is checking in to the payload server from the same IP address that is loading the web page. The user is then redirected to the actual website (with <span style="white-space: pre; font-family: monospace;">/?verified=true,</span>).&nbsp;</p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{130}" paraid="210492011"><img alt="Figure 7" data-entity-type="file" data-entity-uuid="9b8f947d-4ab1-41e8-b8ab-e53e11be5b99" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.19.46%E2%80%AFAM.png" width="1708" height="596" loading="lazy"></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{139}" paraid="1204210439"><em>Traffic on the compromised site; the user is redirected once their IP is confirmed.&nbsp;</em></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{145}" paraid="31235873">Proofpoint has observed the above JavaScript inject and infrastructure (intlspring[.]com) delivering two different malware payloads: MonsterV2 and Rhadamanthys.&nbsp;&nbsp;</p>
+
+<h5 paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{159}" paraid="1632519950">GitHub themed campaigns&nbsp;</h5>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{165}" paraid="1750911245">While the majority of the TA585 malware payloads are distributed via web injects, Proofpoint has also observed it delivered via emails such as notifications from GitHub caused by the threat actor tagging GitHub users in fake security notices that contain URLs leading to actor-controlled websites. Third-party researchers have <a href="https://github.com/prodaft/malware-ioc/tree/master/CoreSecThree" rel="noreferrer noopener" target="_blank">observed</a> TA585 activity delivered via malvertising.&nbsp;</p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{184}" paraid="844819630">In August 2025, Proofpoint identified a unique TA585 attack chain leveraging GitHub notifications to deliver Rhadamanthys. We first <a href="https://infosec.exchange/@anyrun_app/115019769476243964" rel="noreferrer noopener" target="_blank">spotted this post</a> by ANY.RUN about ClickFix delivering Rhadamanthys and began investigating.&nbsp;&nbsp;</p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{201}" paraid="2069682430">We identified GitHub notification emails that kicked off the attack chain. The emails were likely generated by the threat actor creating an issue in an actor-controlled repository with a fake security warning and then tagging legitimate accounts who receive notifications that they have been tagged, with the text from the issue.&nbsp;&nbsp;</p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{219}" paraid="1338946470"><img alt="Figure 8" data-entity-type="file" data-entity-uuid="49a5300d-dd85-4d0f-8857-c8542708d5b0" height="1007" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.21.55%E2%80%AFAM.png" width="1166" loading="lazy"></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{224}" paraid="1612855093"><em>GitHub notification email generated by the threat actor.&nbsp;</em></p>
+
+<p paraeid="{2a39995e-64f5-4dd0-ba90-7a15eb0710d2}{234}" paraid="1440541196">The notifications contained shortened URLs that led to an actor-controlled website. Like TA585’s typical web inject campaigns, the website performed filtering functions, and if those checks were passed, the visitor will be redirected to a website that presents a fake GitHub-branded CAPTCHA instructing users to verify they are human.&nbsp;</p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{9}" paraid="893795825"><img alt="Figure 9" data-entity-type="file" data-entity-uuid="b6e7db8c-84db-4943-96aa-39d20e3f4e3e" height="502" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.22.34%E2%80%AFAM.png" width="788" loading="lazy"></p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{9}" paraid="893795825"><em>GitHub themed web page, using the typical CoreSecThree filtering and beaconing techniques.&nbsp;</em></p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{30}" paraid="2044029207">Following the instructions initiated a command that downloaded and executed Rhadamanthys.&nbsp;&nbsp;</p>
+
+<h3 aria-level="2" paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{48}" paraid="2045893609" role="heading">MonsterV2 malware details&nbsp;</h3>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{56}" paraid="1386564842">MonsterV2 is advertised as a RAT, stealer, and loader. It is full-featured and has many capabilities that allow it to perform varying functions during a breach. Proofpoint has observed MonsterV2 acting either primarily as a stealer or as a loader, dropping malware such as StealC Version 2. While Proofpoint observes TA585 using MonsterV2, it is also used by other cybercriminal threat actors.&nbsp;&nbsp;</p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{108}" paraid="1928503098">MonsterV2 has the following capabilities:&nbsp;</p>
+
+<ul>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{114}" paraid="106718321">Able to enumerate and exfiltrate sensitive information such as browser and login data, credit card and crypto wallet information, login data, and tokens for services such as Steam, Telegram, and Discord, files and documents, as well as other data typical of infostealers&nbsp;&nbsp;</li>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{136}" paraid="1901535200">View the infected systems’ desktop and record the webcam&nbsp;</li>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{148}" paraid="1239730257">Clipper capabilities (essentially replacing cryptocurrency addresses in the infected systems’ clipboard with threat actor-provided addresses)&nbsp;</li>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{162}" paraid="1832797354">HVNC (Hidden Virtual Network Computing) – Allows the threat actor to establish a remote desktop-like connection to the infected system, giving graphical user interface access without alerting the user of the infected system&nbsp;</li>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{182}" paraid="948007128">Receive and execute a wide variety of commands from its C2&nbsp;</li>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{188}" paraid="1639805277">Download and execute additional payloads&nbsp;</li>
+	<li paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{194}" paraid="2008452498">Avoids infecting CIS countries: Russia, Belarus, Ukraine, Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, Armenia, Tajikistan, Moldova, Latvia, Lithuania, and Estonia&nbsp;</li>
+</ul>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{208}" paraid="735810296">MonsterV2 has been advertised on criminal hacking forums, as seen in the following post excerpt:&nbsp;</p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{234}" paraid="1171525020"><img alt="Figure 10" data-entity-type="file" data-entity-uuid="d5054ebc-6186-493b-a711-dda7e10f0ab0" height="442" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.24.13%E2%80%AFAM.png" width="591" loading="lazy"></p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{239}" paraid="848413594"><em>MonsterV2 advertisement.&nbsp;</em></p>
+
+<p paraeid="{671b0b2f-9ad8-4c4e-88f0-521863e749d4}{245}" paraid="1379635173">Here is an excerpt of the translation (from Russian, using Google Translate) of the original advertisement of MonsterV2:&nbsp;</p>
+
+<ul>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{8}" paraid="518705807">Languages used in development: C++ for the client (build), Go and TypeScript for the server logic and panel&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{14}" paraid="832334011">The build has built-in RAII wrappers over handles and pointers throughout to prevent memory leaks and UB&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{20}" paraid="1483377389">Wherever threads are used, the thread-safety concept is observed&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{26}" paraid="174094949">Self-written obfuscator and source code generator through direct modification of AST&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{32}" paraid="843330926">Build has no dependencies on various additionally installed runtimes and runs even on clean systems&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{38}" paraid="2109903974">Automatic privilege escalation and modern approaches to evade detection&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{44}" paraid="751045705">Before release, the code is run through sanitizers, linters and autotests. Coverage close to 100%&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{54}" paraid="2014843002">Functionality testing of features is carried out on real machines under conditions as close as possible to «field» ones.&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{60}" paraid="1312624347">A professional approach to creating an architecture that ensures high scalability and performance&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{66}" paraid="393203504">Current modules list: File Manager, Process Manager, Resident Loader, Webcam Recorder, Remote Desktop (HVNC), Remote CMD/PowerShell (read the description of each module below; the number of modules will increase as the project is updated)&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{76}" paraid="929832942">To communicate with the C2 server, a raw TCP connection is used with a small add-on on top in the form of an exchange of encryption keys with two-way authentication (analogous to SSL/TLS)&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{82}" paraid="1242681303">If the connection is lost, the bot will try to restore the connection (reconnect)&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{88}" paraid="677337063">The panel is written in a convenient and minimalistic style, so that users do not get distracted, but at the same time maintain good UX&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{94}" paraid="1824262365">The panel supports Russian and English localizations&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{100}" paraid="78446393">Real-time UI updates&nbsp;</li>
+	<li paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{106}" paraid="453083945">One-click installation and intuitive settings&nbsp;</li>
+</ul>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{116}" paraid="1403968143">The malware is sold in tiered options, with pricing for one week, two week, or month-long use. The “Standard” version costs $800 USD per month, while the “Enterprise” version that includes a stealer, loader, HVNC, and HCDP (Chrome developer tools) costs $2,000 per month. To compare that with another common stealer, Rhadamanthys is advertised for $199 per month.&nbsp;</p>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{148}" paraid="1579768451">Proofpoint has observed that MonsterV2 is actively being maintained and updated, even with minor and “cosmetic” updates. For example, Proofpoint identified the following string in earlier versions of the malware (with a misspelling of the word “terminate”):&nbsp;</p>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{168}" paraid="1790244045"><img alt="Figure 12" data-entity-type="file" data-entity-uuid="c90df632-65e9-4adf-be05-c981ada9d8dd" height="154" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.25.02%E2%80%AFAM.png" width="625" loading="lazy">&nbsp;<br>
+&nbsp;<br>
+<em>Misspelled “terminate” string.&nbsp;</em></p>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{175}" paraid="1865723073">This was fixed in later versions of the malware:&nbsp;</p>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{181}" paraid="280321767"><img alt="Figure 13" data-entity-type="file" data-entity-uuid="74087b09-dc21-4a26-bc34-fc9f8b502494" height="209" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.25.09%E2%80%AFAM.png" width="523" loading="lazy"></p>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{186}" paraid="1484497136"><em>Fixed string spelling.&nbsp;</em></p>
+
+<h4 aria-level="3" paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{192}" paraid="21787152" role="heading">Behavior&nbsp;</h4>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{198}" paraid="1867534838">Analyst Note: Prior to execution, MonsterV2 may be decrypted and loaded via another malware called SonicCrypt. This crypter will be detailed later in this report.&nbsp;</p>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{222}" paraid="599347361">Once executed on the target system, MonsterV2 executes the following actions:&nbsp;</p>
+
+<h5 aria-level="4" paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{232}" paraid="1423258429" role="heading">Initialization&nbsp;</h5>
+
+<p paraeid="{1b5d447c-0b38-488f-9d40-c2e6c24b0ad0}{238}" paraid="1638158203">It first decrypts and resolves several Windows API functions it requires. Each library and function name string is decrypted using a unique ChaCha20 key, which complicates reverse engineering and static analysis. The ChaCha20 functionality is discussed later in this report.&nbsp;</p>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{25}" paraid="1298522371">Next, MonsterV2 attempts to elevate its privileges on the system by requesting many permissions, such as the following (this list is not exhaustive). These permissions also hint at the malware’s functionality:&nbsp;</p>
+
+<ul>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{59}" paraid="1115617320">SeDebugPrivilege - Processes that obtain this privilege are potentially able to read and modify the memory of other processes, elevate privileges and bypass security controls, among other things. This is a common privilege that malware may request&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{83}" paraid="856831803">SeTakeOwnershipPrivilege – Processes with this privilege can modify object permissions and effectively bypass restrictions, commonly leveraged in privilege escalation scenarios&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{93}" paraid="974923065">SeIncreaseBasePriorityPrivilege - Allows changing the base priority of a process, influencing its CPU scheduling&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{101}" paraid="1617254467">SeIncreaseWorkingSetPrivilege - Permits raising a process’s working set, allocating more physical memory for its operations, and improving performance&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{111}" paraid="1080114838">SeSecurityPrivilege - Required to view/edit the security event log&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{117}" paraid="277222402">SeShutdownPrivilege - Lets processes shut down the system&nbsp;</li>
+</ul>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{133}" paraid="1414650412">Additionally, MonsterV2 will optionally create a mutex on the infected system, in the format “Mutant-&lt;unique_id_64_characters&gt;”. Here are a few examples:&nbsp;</p>
+
+<ul>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{155}" paraid="1796697576">Mutant-5B7C3E6F9D8A1F42BCDE0347FA8C9E12D13A4597628F6BD57C4E81A9670D3F5A&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{161}" paraid="2095070799">Mutant-A8F1D32C497EB560C9A21D87F34EB70591D2C864EAF53BD7906C12F8D4E39BAF&nbsp;</li>
+	<li paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{167}" paraid="40581385">Mutant-93D8FE2065BCA71BEF2486AD7FA0C935ECC27104ABF9E6531875F22CB40D9E8F&nbsp;</li>
+</ul>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{173}" paraid="595433079">This mutex creation and format is a good indicator for threat hunting.&nbsp;</p>
+
+<h5 aria-level="4" paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{187}" paraid="759957808" role="heading">Configuration decryption&nbsp;</h5>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{193}" paraid="1316818657">MonsterV2 then decrypts its config, which is stored as an encrypted blob in the binary. The config is decrypted using ChaCha20, and then decompressed using an embedded ZLib decompression library. The malware seems to make use of the LibSodium (https://doc[.]libsodium[.]org/) library for encryption/decryption.&nbsp;</p>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{237}" paraid="515412130">Below are some examples of a decrypted MonsterV2 configuration:&nbsp;</p>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{243}" paraid="777957383"><img alt="Figure 13" data-entity-type="file" data-entity-uuid="125962d5-9245-456b-bd79-1349365e7183" height="186" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.27.05%E2%80%AFAM.png" width="829" loading="lazy"></p>
+
+<p paraeid="{98d94901-7167-4f60-8ca6-ea4a0ac9ba55}{249}" paraid="1859466716"><em>MonsterV2 config examples.&nbsp;</em></p>
+
+<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{2}" paraid="656495435">In a later sample we analyzed, MonsterV2 supported multiple C2s also in the form of domains instead of just IP addresses:&nbsp;</p>
+
+<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{8}" paraid="2067093785"><img alt="Figure 14" data-entity-type="file" data-entity-uuid="9239786c-8bae-4bd0-8c79-4fef8c3b28bd" height="128" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.27.14%E2%80%AFAM.png" width="842" loading="lazy"></p>
+
+<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{13}" paraid="1571275684"><em>MonsterV2 config example, with four C2 domains.&nbsp;</em></p>
+
+<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{25}" paraid="1009920835">The configuration consists of the following values:&nbsp;</p>
+
+<table aria-rowcount="9" border="1" data-tablelook="1696" data-tablestyle="MsoTableGrid" dir="ltr">
+	<tbody>
+		<tr aria-rowindex="1" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{35}" paraid="1756045056"><strong>Value&nbsp;</strong></p>
+			</td>
+			<td data-celllook="0" role="columnheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{42}" paraid="131152075"><strong>Description&nbsp;</strong></p>
+			</td>
+		</tr>
+		<tr aria-rowindex="2" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{50}" paraid="1934448248">anti_dbg&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{57}" paraid="1562985681">If set to “True”, the malware attempts to detect and evade debuggers in use. In the samples we analyzed, we did not witness this value being anything other than “False”&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="3" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{73}" paraid="1845875826">anti_sandbox&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{80}" paraid="1886637653">If set to “True”, the malware attempts to detect sandboxes and execute some rudimentary anti-sandbox techniques. In the samples we analyzed, we did not witness this value being anything other than “False”&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="4" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{88}" paraid="629523890">aurotun (misspelling of “autorun”)&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{101}" paraid="550860763">If set to “True”, the malware attempts to establish persistence&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="5" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{109}" paraid="639797877">build_name&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{116}" paraid="1411907722">The build name of the malware, which could be used to cluster campaigns and potentially threat actors&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="6" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{126}" paraid="171256223">disable_mutex&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{133}" paraid="1789188378">If set to “True”, the malware does not create a mutex on the host&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="7" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{141}" paraid="1000768189">ip / port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{150}" paraid="1515301628">The C2 IP and Port. The IP field can consist of multiple IP addresses or domains&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="8" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{168}" paraid="772353072">priviledge_escalation (another misspelling)&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{177}" paraid="1079682799">If set to “True”, the malware attempts to elevate its privileges&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="9" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{187}" paraid="1542033770">kx_pk / seal_pk / sign_pk&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{202}" paraid="1970792087">Keys or key material likely related to encryption, authentication, and integrity of communication between the C2 server and malware client. See also section “Gather System Information” later.&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p paraeid="{c24a1d82-59b7-4024-854d-dbb55ae1a8db}{240}" paraid="641520981">As mentioned, the config is decrypted using ChaCha20. The overall process looks as follows:&nbsp;</p>
+
+<ol>
+	<li>The malware reads the first 32 bytes prior to its config (the header) and this is used as key material to generate the ChaCha20 decryption key.</li>
+	<li>This key material is combined with hardcoded “master key” data embedded in the malware which is used to derive the ChaCha20 decryption key and nonce.</li>
+	<li>ChaCha20 is initialized to decrypt the config. ChaCha20 can be identified in memory via the constant “expand 32-byte k”, and the resulting ChaCha20 key, counter, and nonce can be seen in memory after the constant:</li>
+</ol>
+
+<p><img alt="Figure 14" data-entity-type="file" data-entity-uuid="157df5e6-fa78-472f-8a73-bec29c0d5093" height="280" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.28.56%E2%80%AFAM.png" width="804" loading="lazy"></p>
+
+<p><i>In this image, we can see the ChaCha20 initialization constant (1), and Key (2), and counter + Nonce (3).</i></p>
+
+<p>4.&nbsp; The encrypted config blob is decrypted using the derived ChaCha20 key and nonce. The resulting decrypted config blob is ZLib-compressed (78 9C is a typical ZLib header):</p>
+
+<p><img alt="Figure 15" data-entity-type="file" data-entity-uuid="333c5b71-2221-4581-b815-081fe51a30c0" height="309" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.30.19%E2%80%AFAM.png" width="818" loading="lazy"></p>
+
+<p><i>Decrypted config blob in memory</i></p>
+
+<p>5.&nbsp; The compressed config blob is then decompressed in memory, resulting in the config:</p>
+
+<p><img alt="Figure 16" data-entity-type="file" data-entity-uuid="9a7a866c-28fc-4424-b5b2-7a0a09e07dcd" height="305" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.31.54%E2%80%AFAM.png" width="836" loading="lazy"></p>
+
+<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{135}" paraid="1266326765"><em>Cleartext config in memory.&nbsp;</em></p>
+
+<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{144}" paraid="1615131015">Here is a Python script that decrypts a MonsterV2 config using a provided key and nonce:&nbsp;</p>
+
+<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{164}" paraid="424433513"><img alt="Figure 16" data-entity-type="file" data-entity-uuid="8b091c9c-37b7-4274-ab68-988a33c29576" height="714" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.32.50%E2%80%AFAM.png" width="1006" loading="lazy"></p>
+
+<h5 aria-level="4" paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{169}" paraid="1799513098" role="heading">Gather system information&nbsp;</h5>
+
+<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{177}" paraid="356682976">After MonsterV2 decrypts its config, it attempts to reach out to its C2 server. It will continue to attempt this connection until there is a successful connection to the C2 or the malware process terminates. After connecting to its C2, it sends the following information:&nbsp;</p>
+
+<table aria-rowcount="14" border="1" data-tablelook="1184" data-tablestyle="MsoTableGrid" dir="ltr">
+	<tbody>
+		<tr aria-rowindex="1" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{201}" paraid="1688461678"><strong>Value&nbsp;</strong></p>
+			</td>
+			<td data-celllook="0" role="columnheader">
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{208}" paraid="2114725581"><strong>Description&nbsp;</strong></p>
+			</td>
+		</tr>
+		<tr aria-rowindex="2" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{216}" paraid="1117002167">version&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{223}" paraid="746382741">The version of the MonsterV2 malware&nbsp;</p>
+
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{231}" paraid="1185630109">&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="3" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{237}" paraid="1185022211">build_name&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{244}" paraid="515711969">The build name of the malware, from the config&nbsp;</p>
+
+			<p paraeid="{9fd0fcab-4605-411d-9188-13de33255f66}{252}" paraid="1343074016">&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="4" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{3}" paraid="1306811508">pk&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{10}" paraid="1461377745">Likely a public key or key material used for secure communication between the malware client and the C2&nbsp;</p>
+
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{20}" paraid="1287367802">&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="5" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{26}" paraid="934454153">ad&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{33}" paraid="1530432843">Possibly used as integrity protection for data being sent to the C2, to ensure data is not manipulated prior to or during transit to and from the C2&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="6" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{41}" paraid="1713037114">geo&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{48}" paraid="804426728">The geolocation of the infected system, for example “BR” for Brazil&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="7" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{60}" paraid="629397236">sign&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{67}" paraid="1306138066">Possibly used along with the “ad” to support authentication and data integrity.&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="8" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{75}" paraid="1031782648">compression&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{82}" paraid="1763356614">Possibly used to inform the C2 of the data compression methods supported by the infected system&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="9" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{92}" paraid="1759716971">os&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{99}" paraid="1833287026">The operating system version&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="10" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{107}" paraid="1564409912">uuid&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{114}" paraid="1425560170">A unique ID assigned to the infected system, which is the same as the Mutex value we discussed previously&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="11" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{126}" paraid="1470542389">os_name&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{133}" paraid="1967312832">The operating system of the infected system&nbsp;</p>
+
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{143}" paraid="823097195">&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="12" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{149}" paraid="1243279349">user_name&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{156}" paraid="108287331">The username of the infected system&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="13" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{170}" paraid="1635091302">computer_name&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{177}" paraid="1950267377">The computer name of the infected system&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="14" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{189}" paraid="1430182796">ip&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{196}" paraid="1736011657">The external IP address of the infected system&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{210}" paraid="467635866">This data is stored in stack memory as a structure and then later base-64 encoded and sent to the C2 server.&nbsp;&nbsp;</p>
+
+<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{224}" paraid="170678589"><img alt="Figure 17" data-entity-type="file" data-entity-uuid="1d60b1af-d9d5-410c-85e5-5a8516c5f73e" height="435" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.34.05%E2%80%AFAM.png" width="264" loading="lazy"></p>
+
+<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{229}" paraid="182561437"><em>The struct containing the initial data sent to the C2.&nbsp;</em></p>
+
+<h5 aria-level="4" paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{235}" paraid="1069779314" role="heading">Command &amp; control&nbsp;</h5>
+
+<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{241}" paraid="139358331">Prior to connecting to the C2, the malware reaches out to api[.]ipify[.]org to get the infected system’s IP/location and likely as an internet connection test. If this is successful, the malware sends an initial connect request to its C2. Following this, the malware sends the previously gathered infected system’s information to the C2 (see Gather System Information section).&nbsp;</p>
+
+<p paraeid="{bf172c77-fee9-4e9c-a298-6adf170390c4}{241}" paraid="139358331">Responses from the C2 may be intentionally bloated and can be several megabytes. The C2 responses can contain command and control instructions to issue commands to the client, or can consist of another payload (more on this later). Based on code analysis, C2 commands seem to be processed in the following manner:&nbsp;</p>
+
+<ol>
+	<li>C2 response is received via a raw socket, using the WSARecv Windows API function.</li>
+	<li>The received data is Base64-decoded, decrypted using the ChaCha20 algorithm, and ZLib-decompressed (similar to the config decryption that we outlined previously).</li>
+	<li>The data is formatted and processed into a JSON-like structure. This structure differs depending on the command the C2 controller sends, but here is a generalized example of the structure:</li>
+</ol>
+
+<p paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{112}" paraid="1086920448"><img alt="Figure 18" data-entity-type="file" data-entity-uuid="b6b48c28-8271-449f-a37b-c8b5945cecc0" height="173" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.35.05%E2%80%AFAM.png" width="212" loading="lazy">&nbsp;<br>
+&nbsp;</p>
+
+<p>The “flags” member may contain various flags or other data related to the command. The “data” member may contain payload data that supports the command. For example, for the C2 commands related to file operations, this payload may contain a list of file paths. &nbsp;</p>
+
+<p>4.&nbsp; The processed commands and data are dispatched to a command handler function.</p>
+
+<p paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{163}" paraid="1711820268">The malware’s command handler function supports a large number of commands from the C2 server. These commands include, but are not limited to, the following:&nbsp;</p>
+
+<ul>
+	<li paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{181}" paraid="1573013411">Terminate the malware’s process and clean up (delete its files and mutex, etc.)&nbsp;</li>
+	<li paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{187}" paraid="1513162478">Execute infostealer functionality and exfiltrate data to the C2&nbsp;</li>
+	<li paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{193}" paraid="541729308">Execute an arbitrary command line command (cmd[.]exe, PowerShell commands)&nbsp;</li>
+	<li paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{201}" paraid="1975756839">Terminate, suspend, and resume target processes. This potentially could be used for evading endpoint defenses&nbsp;</li>
+	<li paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{225}" paraid="1269604217">Establish an HVNC connection to the infected system’s system&nbsp;</li>
+	<li paraeid="{0555cb10-ff82-469d-a83f-e0f4d9129a98}{247}" paraid="1219016468">Take screenshots of the infected system’s desktop&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{2}" paraid="1778005614">Start a keylogger&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{8}" paraid="2007043712">Enumerate, manipulate, copy, and exfiltrate files&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{14}" paraid="1164634069">Shut down or crash (BSOD) the infected system&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{24}" paraid="1377138379">Download and execute another payload&nbsp;</li>
+</ul>
+
+<h5 aria-level="4" paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{30}" paraid="1061757090" role="heading">Delivery and loading of additional payloads&nbsp;&nbsp;</h5>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{44}" paraid="1694087117">Proofpoint witnessed in multiple occasions MonsterV2 loading the StealC V2 infostealer as well as the Remcos remote access trojan (RAT). This activity was not correlated with TA585, however. Notably with StealC, the MonsterV2 payloads were configured to use the same C2 server as the dropped StealC payload.&nbsp;&nbsp;</p>
+
+<h3 aria-level="2" paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{106}" paraid="1006173878" role="heading">SonicCrypt crypter details&nbsp;</h3>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{118}" paraid="1205149213">Proofpoint has observed that MonsterV2 is often packed using SonicCrypt, a crypter written in C++ advertised on forum[.]exploit[.]in:&nbsp;</p>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{150}" paraid="596506639"><img alt="Figure 19" data-entity-type="file" data-entity-uuid="2204fe13-9d04-40ff-bf8a-2038b9bc594b" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.36.56%E2%80%AFAM.png" width="1428" height="770" loading="lazy"></p>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{155}" paraid="1413945896"><em>SonicCrypt advertisement.&nbsp;</em></p>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{163}" paraid="1366243138">Here is the translation of the above (provided by Google Translate):&nbsp;</p>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{173}" paraid="6954570">Modern technological crypt with many functions, prompt cleaning and professional support. I present to you a new level of crypts for any budget. Crypt provides a wide range of functions to choose from:&nbsp;</p>
+
+<ul>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{179}" paraid="1790975003">Written in modern C++ with a custom source code mutator that allows you to clean signatures in the blink of an eye&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{185}" paraid="1939528039">Support for adding your file to startup&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{191}" paraid="900970318">Support for adding your file to Windows Defender exceptions&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{197}" paraid="862687089">If your file requires administrator rights to work, the crypt supports the ability to bypass UAC&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{203}" paraid="1124170813">Runs both native and .NET files&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{209}" paraid="680973126">Both bit depths are supported: 32 and 64-bit&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{215}" paraid="1733037345">Competent support will help you decide on the choice of configuration for your unique traffic source&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{221}" paraid="769345627">The crypt does not cut the percentage of the knockout and does not interfere with the operation of the encrypted file&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{227}" paraid="1910837823">Usually the crypt process takes no more than 30 minutes, but in exceptional cases it can reach 12 hours&nbsp;</li>
+	<li paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{235}" paraid="708913227">Supported crypt customizations: icon, manifest, Assembly Info, inflation (pump)&nbsp;</li>
+</ul>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{241}" paraid="1434593337"><em>Rates:&nbsp;</em></p>
+
+<p paraeid="{1a4a2db4-62f2-4fc8-a501-b04a75e13c32}{241}" paraid="1434593337"><em>Public $ 50 - Standard file crypt. Stab is designed for 5-7 clients, without a warranty period. Possible functionality: icon, manifest, Assembly Info, bloat (pump), UAC Bypass&nbsp;<br>
+Private $100 - Private crypt file. The stab is designed for a maximum of 3 people; the warranty period for the stab, when you can ask for a recrypt, is 4 days. All the advantages of the Public tariff + autorun + Windows Defender exceptions&nbsp;<br>
+Unique $150 - Unique crypt file. The stab is designed for a maximum of 1 person, the warranty period for the stab is 6 days. All the advantages of Private, but each client receives a unique stab&nbsp;</em></p>
+
+<h4 aria-level="4" paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{6}" paraid="1352446454" role="heading">Malware analysis&nbsp;</h4>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{14}" paraid="367570869">SonicCrypt-packed executables are intentionally bloated and therefore contain a lot of junk code, making it difficult to statically analyze. Across SonicCrypt samples, this code is inconsistent and is likely generated to evade static detection:&nbsp;</p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{26}" paraid="1730930850"><img alt="Figure 20" data-entity-type="file" data-entity-uuid="7d5fcc30-9888-44d9-8412-4da6b27470c0" height="226" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.38.05%E2%80%AFAM.png" width="820" loading="lazy"></p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{31}" paraid="869376102"><em>An example of junk code in SonicCrypt-protected binaries.&nbsp;</em></p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{41}" paraid="1385305318">The general flow of the malware can be seen in the following code examples:&nbsp;</p>
+
+<ol>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{51}" paraid="562848979">Runs initial evasion and environment checks (more on this in a moment).&nbsp;</li>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{59}" paraid="1477284971">Creates the file where the decrypted payload will be written. The file is named in a similar theme, such as “WinHealth[.]exe” or “WindowsSecurity[.]exe”.&nbsp;</li>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{65}" paraid="1266525510">The payload is decrypted and written to this file.&nbsp;</li>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{71}" paraid="1709544005">In the samples we analyzed, the payload is executed using the task scheduler.&nbsp;</li>
+</ol>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{85}" paraid="1052752266">Here are two code examples demonstrating this behavior.&nbsp;</p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{91}" paraid="1517620636">Example 1:&nbsp;</p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{97}" paraid="2061616542"><img alt="Figure 21" data-entity-type="file" data-entity-uuid="d6e33870-0fd1-4153-b236-5be119a05a69" height="165" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.38.45%E2%80%AFAM.png" width="819" loading="lazy"></p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{102}" paraid="1287133107">Example 2:&nbsp;</p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{108}" paraid="98951787"><img alt="Figure 22" data-entity-type="file" data-entity-uuid="52b8e5d0-f8b4-4c86-b484-67d7f3ef8f00" height="192" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.38.51%E2%80%AFAM.png" width="730" loading="lazy"></p>
+
+<h5 paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{117}" paraid="839596685">Anti-analysis checks&nbsp;</h5>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{117}" paraid="839596685">Before decrypting and loading its payload, SonicCrypt runs through several checks, including:&nbsp;</p>
+
+<ul>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{129}" paraid="907758104">Checking amount of RAM&nbsp;</li>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{135}" paraid="728891532">Checks the infected systems’ BIOS manufacturer (in some cases “GenuineIntel” or “AuthenticAMD”)&nbsp;</li>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{165}" paraid="1065341321">Some samples check the BIOS version as well &nbsp;</li>
+	<li paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{183}" paraid="1703438301">Depending on configuration, SonicCrypt may attempt to add the dropped Exe file as a Defender exclusion.&nbsp;</li>
+</ul>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{193}" paraid="658129748"><img alt="Figure 23" data-entity-type="file" data-entity-uuid="7395646f-4d1a-4435-9ead-50bfc518926e" height="341" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.40.40%E2%80%AFAM.png" width="669" loading="lazy"></p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{198}" paraid="617318679"><em>A code example of SonicCrypt gathering BIOS data.&nbsp;</em></p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{208}" paraid="553301845">After these checks are passed, the crypter decrypts the payload, writes it to a file on disk, and executes the payload executable via the TaskScheduler COM object (CLSID: CLSID_TaskScheduler). The process behavior tree will look as follows:&nbsp;&nbsp;</p>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{234}" paraid="499742964"><img alt="Figure 24" data-entity-type="file" data-entity-uuid="890ce377-085f-457f-ae06-6c2bf99a5c4b" src="/sites/default/files/inline-images/Screenshot%202025-10-03%20at%2010.40.50%E2%80%AFAM.png" width="1404" height="150" loading="lazy">&nbsp;<em>Example MonsterV2 process tree.&nbsp;&nbsp;</em></p>
+
+<h3 aria-level="2" paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{247}" paraid="2098647946" role="heading">Conclusion&nbsp;</h3>
+
+<p paraeid="{4b743af2-4db1-4751-a59b-8ae194b918a2}{253}" paraid="1620063701">TA585 is a unique threat actor with advanced capabilities for targeting and delivery. As the cybercrime threat landscape is constantly changing, TA585 has adopted effective strategies for filtering, delivery, and malware installation. One of its favored payloads is MonsterV2, a malware that may be filling gaps in the criminal ecosystem following high profile law enforcement disruptions of other malware like Lumma Stealer. Proofpoint anticipates we will continue to see new malware families emerge, many of which contain a variety of capabilities baked into one malware.&nbsp;</p>
+
+<p paraeid="{15d15903-a7dd-4750-ae5f-7492aec6ed61}{24}" paraid="1208996531">Proofpoint recommends training users to recognize the ClickFix technique and to prevent non-administrative users from executing PowerShell.&nbsp;&nbsp;</p>
+
+<h3 aria-level="2" paraeid="{15d15903-a7dd-4750-ae5f-7492aec6ed61}{34}" paraid="676549803" role="heading">Emerging Threats rule&nbsp;</h3>
+
+<p paraeid="{15d15903-a7dd-4750-ae5f-7492aec6ed61}{40}" paraid="351082177"><a href="https://threatintel.proofpoint.com/sid/2061200" rel="noreferrer noopener" target="_blank">2061200</a> – MonsterV2 Stealer CnC Checkin&nbsp;</p>
+
+<h3 aria-level="2" paraeid="{15d15903-a7dd-4750-ae5f-7492aec6ed61}{55}" paraid="1182012755" role="heading">Indicators of compromise&nbsp;</h3>
+
+<table aria-rowcount="14" border="1" data-tablelook="1184" data-tablestyle="MsoTableGrid" dir="ltr">
+	<tbody>
+		<tr aria-rowindex="1" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{12}" paraid="1209100523">Indicators&nbsp;</p>
+			</td>
+			<td data-celllook="0" role="columnheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{21}" paraid="1592975060">Description&nbsp;</p>
+			</td>
+			<td data-celllook="0" role="columnheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{28}" paraid="643519639">First Seen&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="2" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{36}" paraid="535058312">SHA256: ccac0311b3e3674282d87db9fb8a151c7b11405662159a46dda71039f2200a67&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{44}" paraid="1250284411">C2: 139.180.160[.]173&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{58}" paraid="1903896796">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{65}" paraid="484144758">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{84}" paraid="710692386">2025-02-22&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="3" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{92}" paraid="1863589088">SHA256: 666944b19c707afaa05453909d395f979a267b28ff43d90d143cd36f6b74b53e&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{98}" paraid="922256882">C2: 155.138.150[.]12&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{112}" paraid="805840346">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{119}" paraid="1134617249">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{126}" paraid="237177457">2025-03-08&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="4" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{134}" paraid="382257163">SHA256: 7cd1fd7f526d4f85771e3b44f5be064b24fbb1e304148bbac72f95114a13d8c5&nbsp;<br>
+			C2: 83.217.208[.]77:&nbsp;<br>
+			Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{151}" paraid="800002127">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{158}" paraid="1779529477">2025-05-12&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="5" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{166}" paraid="201393474">SHA256: 0e83e8bfa61400e2b544190400152a54d3544bf31cfec9dda21954a79cf581e9&nbsp;<br>
+			C2: 83.217.208[.]77&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{176}" paraid="1837093660">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{183}" paraid="1540539531">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{190}" paraid="1070263699">2025-05-19&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="6" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{198}" paraid="1140382695">SHA256: d221bf1318b8c768a6d824e79c9e87b488c1ae632b33848b638e6b2d4c76182b&nbsp;<br>
+			C2: 91.200.14[.]69&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{208}" paraid="1861217059">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{215}" paraid="85760059">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{222}" paraid="889762528">2025-05-26&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="7" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{230}" paraid="529013968">SHA256: 69e9c41b5ef6c33b5caff67ffd3ad0ddd01a799f7cde2b182df3326417dfb78e&nbsp;<br>
+			C2: 212.102.255[.]102&nbsp;</p>
+
+			<p paraeid="{32b91aa7-b8d0-43a4-8072-f00a7e17da61}{250}" paraid="1850236324">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{4}" paraid="1765624121">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{11}" paraid="1865349179">2025-06-02&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="8" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{19}" paraid="723867579">SHA256: 6237f91240abdbe610a8201c9d55a565aabd2419ecbeb3cd4fe387982369f4ae&nbsp;<br>
+			C2: 84.200.154[.]105&nbsp;</p>
+
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{39}" paraid="1698611206">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{48}" paraid="861510053">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{55}" paraid="258483523">2025 – 06 - 09&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="9" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{69}" paraid="975599724">SHA256: b36aac2ea25afd2010d987de524f9fc096bd3e1b723d615a2d85d20c52d2a711&nbsp;<br>
+			C2: 144.172.117[.]158&nbsp;</p>
+
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{89}" paraid="1455583411">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{98}" paraid="2087344164">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{107}" paraid="381971064">2025-06-16&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="10" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{115}" paraid="2175511">SHA256: 912ef177e319b5010a709a1c7143f854e5d1220d176bc130c5564f5efe8145ed&nbsp;<br>
+			C2: 109.120.137[.]128:&nbsp;</p>
+
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{135}" paraid="1567428052">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{144}" paraid="1001940005">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{151}" paraid="736536838">2025-06-23&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="11" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{159}" paraid="1260370209">SHA256: ba72e8024c90aeffbd56cdf2ab9033a323b63c83bd5df19268978cded466214e&nbsp;<br>
+			C2: 84.200.17[.]240&nbsp;</p>
+
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{179}" paraid="1137901030">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{188}" paraid="274933924">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{195}" paraid="1192936707">2025-06-30&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="12" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{203}" paraid="607586639">SHA256: e7bcd70f0ee4a093461cfb964955200b409dfffd3494b692d54618d277cb309e&nbsp;<br>
+			C2: 84.200.77[.]213&nbsp;</p>
+
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{225}" paraid="983785621">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{234}" paraid="683475585">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{241}" paraid="1981147277">2025-07-15&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="13" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ff56c467-23ad-47a3-90a9-bbfd7ebfbed7}{249}" paraid="237641176">SHA256: 399d3e0771b939065c980a5e680eec6912929b64179bf4c36cefb81d77a652da&nbsp;<br>
+			C2: 79.133.51[.]100&nbsp;</p>
+
+			<p paraeid="{ed5ac794-f189-4587-84e9-d2a771f49726}{14}" paraid="1272480713">Port: 7712&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ed5ac794-f189-4587-84e9-d2a771f49726}{23}" paraid="1279566852">MonsterV2 SHA256 file hash, C2, and Port&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ed5ac794-f189-4587-84e9-d2a771f49726}{30}" paraid="5568975">2025-09-01&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="14" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{ed5ac794-f189-4587-84e9-d2a771f49726}{38}" paraid="1845282433">98f647eada829bad4d30594496953ddc788c06044f949514e43c3532a83f79e2&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ed5ac794-f189-4587-84e9-d2a771f49726}{45}" paraid="358102095">TA585 Evasion&nbsp;&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{ed5ac794-f189-4587-84e9-d2a771f49726}{52}" paraid="1943760505">2025-04-14&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+  </div>
+
+      <div class="blog__content-pager">
+      
+  <div class="content-pager _legacy_blocks _content_pager">
+    <div class="content-pager__items-wrapper">
+      <div class="content-pager__items">
+        <div class="content-pager__item content-pager__item--prev">
+          <a href="/us/blog/threat-insight/going-underground-china-aligned-ta415-conducts-us-china-economic-relations" hreflang="en">Previous Blog Post</a>
+        </div>
+        <div class="content-pager__item content-pager__item--next">
+          <a href="/us/blog/threat-insight/beyond-credentials-weaponizing-oauth-applications-persistent-cloud-access" hreflang="en">Next Blog Post</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+        
+
+
+
+
+  
+        
+<div class="subscribe-block blog-subscribe _legacy_blocks _subscribe-block subscribe-block--black blog-subscribe--black v3-dark-bg-only" data-animate="true">
+  <div class="subscribe-block__inner blog-subscribe__inner">
+    <div class="subscribe-block__copy">
+      
+
+      
+<h3 class="subscribe-block__heading">
+      Subscribe to the Proofpoint Blog
+  </h3>
+
+          </div>
+    <div class="subscribe-block__form">
+        <div class="mk-form">
+  <div class="mk-form__form-container _legacy_element _marketo_form">
+    <script type="IN/Form2"
+      data-data-form="mktoForm_19277"
+      data-field-firstname="FirstName"
+      data-field-lastname="LastName"
+      data-field-email="Email"
+      data-field-company="Company"
+      data-field-title="Title"
+      data-field-state="State"
+      data-field-country="Country"
+    ></script>
+    <form
+      id="mktoForm_19277"
+      data-mkto-id="19277"
+      data-mkto-base="//go.proofpoint.com"
+      data-munchkin-id="309-RHV-619"
+      data-submit-text=""
+      data-redirect-link=""
+      data-prefill=""
+      data-event-label=""
+      data-lang-code="us"
+      data-validate-email="1"
+      data-allow-personal-email-amer="false"
+      class="mk-form__form marketo-form-block__form"
+    ></form>
+  </div>
+</div>
+
+  
+
+
+    </div>
+  </div>
+</div>
+
+
+
+  </article>
+
+
+
+
+  </main>
+
+  
+
+
+
+<footer class="veridianx-footer veridianx-footer--us">
+  <div class="container">
+    <div class="veridianx-footer__inner">
+              <nav class="veridianx-footer__nav" aria-label="Footer navigation">
+                                                        <div class="order-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Products</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Products footer links" aria-expanded="false" aria-controls="veridianx-footer-1-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-1-1">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/platform">
+                            Platform Overview
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/products/collaboration-security-prime">
+                            Collaboration Security
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/products/data-security-governance">
+                            Data Security and Governance
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/platform/ai-security">
+                            AI Security
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Partners</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Partners footer links" aria-expanded="false" aria-controls="veridianx-footer-1-2" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-1-2">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/channel-partners-and-distributors">
+                            Channel Partners and Distributors
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/partners/msp">
+                            MSP Partners
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/partners/technology-alliance-partners">
+                            Technology and Alliance Partners
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                                              <div class="order-1 order-md-3 order-xl-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Get Support</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Get Support footer links" aria-expanded="false" aria-controls="veridianx-footer-2-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-2-1">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="https://proofpoint.my.site.com/community/s/" target="_blank" rel="noopener">
+                            Product Support Login
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/support-services">
+                            Support Services
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/postmaster">
+                            IP Address Blocked?
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                                              <div class="order-1 order-md-2 order-xl-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">More</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle More footer links" aria-expanded="false" aria-controls="veridianx-footer-3-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-3-1">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/company/about">
+                            About Proofpoint
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/why-proofpoint">
+                            Why Proofpoint
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/products/how-to-buy/collaboration-security">
+                            How to Buy
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/company/careers">
+                            Careers
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/company/leadership">
+                            Leadership Team
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/newsroom">
+                            News Center
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/legal/trust">
+                            AI, Privacy, and Trust
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="https://www.proofpoint-total-protection.com/" target="_blank" rel="noopener">
+                            Hornetsecurity
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                                              <div class="order-1 order-md-4 order-xl-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Connect with Us</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Connect with Us footer links" aria-expanded="false" aria-controls="veridianx-footer-4-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-4-1">
+                                            <ul class="veridianx-footer__social">
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--facebook" href="https://www.facebook.com/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--x" href="https://x.com/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">X</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--linkedin" href="https://www.linkedin.com/company/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--youtube" href="https://www.youtube.com/channel/UCIvtJgsrUzFo90NKeiVozhQ" target="_blank" rel="noopener">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--instagram" href="https://www.instagram.com/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      </ul>
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="tel:+14085174710">
+                            +1 408 517 4710
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/events">
+                            Attend an Event
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/contact">
+                            Contact Us
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/free-demo-request">
+                            Free Demo Request
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                  </nav>
+      
+      <div class="veridianx-footer__bottom">
+        <a class="veridianx-footer__logo" href="/us">
+          <span class="visually-hidden">Proofpoint home</span>
+        </a>
+
+                  <ul class="veridianx-footer__legal">
+                          <li>
+                                  <a class="veridianx-footer__legal-link" href="/us/legal/license">
+                    Terms and Conditions
+                  </a>
+                              </li>
+                          <li>
+                                  <a class="veridianx-footer__legal-link" href="/us/legal/privacy-policy">
+                    Privacy Policy
+                  </a>
+                              </li>
+                          <li>
+                                  <a class="veridianx-footer__legal-link" href="/us/sitemap">
+                    Sitemap
+                  </a>
+                              </li>
+                          <li>
+                                  <button id="ot-sdk-btn" class="veridianx-footer__legal-link ot-sdk-show-settings" type="button">
+                    Cookie Settings
+                  </button>
+                              </li>
+                      </ul>
+        
+        <p class="veridianx-footer__copyright">
+          &copy; 2026. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+    <script type="text/javascript">document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E")); </script> <script>Munchkin.init('309-RHV-619');</script><div class="element-invisible" style="clear:both;"><!-- Google Code for Remarketing Tag -->
+                <!--------------------------------------------------
+                Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+                --------------------------------------------------->
+                <script type="text/javascript">
+                /* <![CDATA[ */
+                var google_conversion_id = 950296937;
+                var google_custom_params = window.google_tag_params;
+                var google_remarketing_only = true;
+                /* ]]> */
+                </script>
+                <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+                </script>
+                <noscript>
+                <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/950296937/?value=0&amp;guid=ON&amp;script=0"/>
+                </div>
+                </noscript></div>
+    <div id="flyout-container"></div>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"us\/","currentPath":"node\/144149","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxlkFFuAyEMRC8UhPrX20S21wW0gFfGVM3tA5soIeoPkp8Zj8cHqCXK7DFLuBxr5VrHRpqQF64MG2kv2N6QpBpXcwcE1hXrogxZELLjzGX8XdRBJGR2P_JB4_BJddkocwC6uTnUUWv_Go_5Cy-gO5uMwVrc5y6vYG7kpP3d-GVNW4L6N1RiM8xxTV_f1WeooY94bmNjMjk7TwdfeqW4pzpZY1CKvluau4w6gg7D-VpMJ7I4TuANsALimfHFRDKCXtqtGReP0PgOtSqgoQ","theme":"particle","theme_token":null},"ajaxTrustedUrl":[],"vwo":{"id":1002484,"timeout_library":2500,"timeout_setting":2000,"usejquery":"false","testnull":null},"pp_i18n":{"language":"us"},"instantsearch":{"indexName":"content","path":"us\/search"},"node":{"contentType":"Blog post"},"user":{"uid":0,"permissionsHash":"d2c690dc50aab9a747cb007581c42f03855e8fe2ed922e6706b178b00522f212"}}</script>
+<script src="/sites/default/files/js/js_Cqv5G6EEa2Ko46nk7wBQlluQdwwh0V5m_Eqt14yshOo.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+<script src="/themes/custom/proofpoint/apps/drupal/../../dist/app-drupal/assets/js/app.js?q=tMLG0Cyxtmc&amp;v=1"></script>
+<script src="//go.proofpoint.com/js/forms2/js/forms2.min.js"></script>
+<script src="/sites/default/files/js/js_WGd_XpYAz7fd5Sh0XO89un34RdZGW01POvnOjZ4lcfc.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+<script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js"></script>
+<script src="/sites/default/files/js/js_dfzxI1kBLIpbsNtAM8XOdI0AdbyzPfJ9AFJNYycoYfA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+<script src="//munchkin.marketo.net/munchkin.js"></script>
+<script src="/sites/default/files/js/js_RvylBOqqv8F1IZ4XsVsRq53zZ7n9Dd_ZdTQVYICPjX0.js?scope=footer&amp;delta=7&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+
+  </body>
+</html>

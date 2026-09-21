@@ -1,0 +1,2 @@
+evidence_id,family,artifact_type,path_or_ref,retrieved_date_utc,sha256,provenance,notes
+C2L-EV-0001,c2looper,primary_html,evidence/primary-sources/c2looper/zscaler-c2looper-2026.html,2026-09-21T01:10:00Z,,PRIMARY-SOURCE,Frozen primary HTML

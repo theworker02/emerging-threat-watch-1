@@ -1,0 +1,3 @@
+indicator_id,type,value,notes,source
+TSU-IND-0001,ip,94.159.113.37,campaign infra per Proofpoint IOC section,Proofpoint
+TSU-IND-0002,url,http://94.159.113.37/ssd.png,staging,Proofpoint

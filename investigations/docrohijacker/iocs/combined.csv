@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+2c6e11027b011042c9a118fc20728f8f4ebb6be8795cc84cc9a45622c297d354,sha256,,,Palo Alto Networks Unit 42,High,docrohijacker,CAMPAIGN ASSOCIATED,eld2.exe,docrohijacker
+553ce594c9c6afdd4794fddc28c194e3bc3c1b052310e5099c58ac15bab72104,sha256,,,Palo Alto Networks Unit 42,High,docrohijacker,CAMPAIGN ASSOCIATED,eld2.tmp,docrohijacker
+fdcc95b7791c0d6590dcf1a412dc9fcc92ad2095818d1b78368b31efad012007,sha256,,,Palo Alto Networks Unit 42,High,docrohijacker,CAMPAIGN ASSOCIATED,Adblock.dll,docrohijacker
+%TEMP%\\Adblock.dll,path,,,Palo Alto Networks Unit 42,High,docrohijacker,CAMPAIGN ASSOCIATED,HMAC bypass DLL,docrohijacker

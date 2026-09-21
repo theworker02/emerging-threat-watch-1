@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+southprovesolutions.com,domain,,,Google GTIG,High,mayberobot,CAMPAIGN ASSOCIATED,MAYBEROBOT C2,mayberobot

@@ -1,0 +1,19 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+4ac3e1ecd2c4745f2e846ec7655b92234ee92068bffc7690c3f0184dc25c71da,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,chain artifact per eSentire,denorat
+ece42baaca7524460cc5ffc9ae94c2a634a67610decdd2bdc8f134c36fa2dd6c,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,chain artifact,denorat
+7682e9ac86ff47cc198812719ca54e169c3cb21ce584ad2a278a640f4833de46,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,chain artifact,denorat
+3dffe05d9cc49b2598d743301a8991965056d97bb8d429de461ed66c0dbde28b,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,chain artifact,denorat
+6103228087aaee53f37db88ab7aa1e7e5dd8c27a395bef7e3af985774a888c94,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,exec-ps Nightshade decrypt,denorat
+1f233db3e59051811e16c65e32121f69dd80e91567002978e47a613a5a4903b0,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,exec-ps install.pyc download,denorat
+e0dd60bb3a409029988db6a10cb1e36586c2636da9eff3a3587bc38473fde54b,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,install.pyc,denorat
+b4fd836b82f2d8daf8b90a95046987e993e5687707fc57b527a8145d865e3fdc,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,encrypted NightshadeC2,denorat
+c1e0a0543b12c64726f8bb36389010d7f35e57993a22ce5b73c56b9cc2a87a00,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,NightshadeC2 payload,denorat
+c2cdf1ecd6684bbcef0405444a570a76e9589bbd563476b08788bde34d83b511,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,install.py,denorat
+a06d514a34d2ab08c3a13a58056827c50ba9bf01b68ca4b2cecb4e1462af53fa,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,install.py stage2,denorat
+fa0d1adb545881a2d8a508191961a9fd39485c4ac2a0f20ad8e2f931dc45c9ef,sha256,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,reflective PE loader shellcode,denorat
+columbnezhjdq.com,domain,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,ClickFix,denorat
+webstizkgao.com,domain,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,DinDoor/DenoRAT C2,denorat
+smallsmokik.com,domain,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,NightshadeC2 dead-drop,denorat
+http://webstizkgao.com/message-event,url,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,DenoRAT tasks,denorat
+http://webstizkgao.com/health,url,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,health,denorat
+http://webstizkgao.com/user,url,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,registration,denorat

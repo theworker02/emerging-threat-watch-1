@@ -1,0 +1,1743 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="page-en">
+  <head>
+    <script src="https://layer.proofpoint.com/tags/app.js" async></script>
+<meta charset="utf-8" />
+<meta name="description" content="Key findings TA584 is one of the most prominent cybercriminal threat actors tracked by Proofpoint threat researchers. In 2025, the actor demonstrated multiple" />
+<link rel="canonical" href="https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" />
+<link rel="shortlink" href="https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" />
+<link rel="image_src" href="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=RgzICjbR" />
+<link rel="icon" href="/themes/custom/proofpoint/apps/drupal/favicon.ico" />
+<link rel="mask-icon" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon.svg" />
+<link rel="icon" sizes="16x16" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-32x32.png" />
+<link rel="icon" sizes="96x96" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-192x192.png" />
+<link rel="apple-touch-icon" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-152x152.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/themes/custom/proofpoint/apps/drupal/images/favicons/favicon-180x180.png" />
+<meta property="og:site_name" content="Proofpoint" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" />
+<meta property="og:title" content="Can’t stop, won’t stop: TA584 innovates initial access | Proofpoint US" />
+<meta property="og:description" content="Key findings TA584 is one of the most prominent cybercriminal threat actors tracked by Proofpoint threat researchers. In 2025, the actor demonstrated multiple" />
+<meta property="og:image" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=RgzICjbR" />
+<meta property="og:image:url" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=RgzICjbR" />
+<meta property="og:image:secure_url" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=RgzICjbR" />
+<meta property="article:published_time" content="2026-01-26T07:38:07-08:00" />
+<meta property="article:modified_time" content="2026-01-28T01:58:26-08:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Key findings TA584 is one of the most prominent cybercriminal threat actors tracked by Proofpoint threat researchers. In 2025, the actor demonstrated multiple" />
+<meta name="twitter:site" content="@proofpoint" />
+<meta name="twitter:title" content="Can’t stop, won’t stop: TA584 innovates initial access | Proofpoint US" />
+<meta name="twitter:image" content="https://www.proofpoint.com/sites/default/files/styles/metatag/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=RgzICjbR" />
+<script data-cfasync="false" type="text/javascript" id="vwoCode">window._vwo_code=window._vwo_code || (function() {
+      var account_id=1002484,
+      version=1.3,
+      settings_tolerance=2000,
+      library_tolerance=2500,z
+      use_existing_jquery=false,
+      is_spa=1,
+      hide_element='body',
+      /* DO NOT EDIT BELOW THIS LINE */
+      f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},init:function(){window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');e.setAttribute('nonce',document.querySelector('#vwoCode').nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version);return settings_timer}};window._vwo_settings_timer = code.init();return code;}());</script>
+<meta name="facebook-domain-verification" content="l349mr2tyecyl7w3a1146378lqxru1" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preload" href="/themes/custom/proofpoint/dist/app-drupal/assets/fonts/proofpoint.woff2" as="font" crossorigin="anonymous" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@id": "https://www.proofpoint.com/#organization",
+            "@type": "Organization",
+            "name": "Proofpoint",
+            "url": "https://www.proofpoint.com/us",
+            "description": "Proofpoint is a cybersecurity company that helps organizations protect people and defend data from advanced threats, human risk, and data loss.",
+            "alternateName": [
+                "Proofpoint, Inc."
+            ],
+            "sameAs": [
+                "http://www.facebook.com/proofpoint",
+                "https://x.com/proofpoint",
+                "https://www.linkedin.com/company/proofpoint"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "925 West Maude Avenue",
+                "addressLocality": "Sunnyvale",
+                "addressRegion": "California",
+                "postalCode": "94085",
+                "addressCountry": "United States"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-408-517-4710",
+                "contactType": "Sales"
+            }
+        },
+        {
+            "@id": "https://www.proofpoint.com/us/#website",
+            "@type": "WebSite",
+            "name": "Proofpoint US",
+            "url": "https://www.proofpoint.com/us",
+            "publisher": {
+                "@id": "https://www.proofpoint.com/#organization"
+            }
+        },
+        {
+            "@id": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access#webpage",
+            "@type": "WebPage",
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access",
+            "name": "Can’t stop, won’t stop: TA584 innovates initial access ",
+            "isPartOf": {
+                "@id": "https://www.proofpoint.com/us/#website"
+            },
+            "publisher": {
+                "@id": "https://www.proofpoint.com/#organization"
+            },
+            "description": "Key findings TA584 is one of the most prominent cybercriminal threat actors tracked by Proofpoint threat researchers. In 2025, the actor demonstrated multiple attack chain changes including expanded global targeting; ClickFix social engineering; and delivering new malware, Tsundere Bot. TA584’s...",
+            "mainEntity": {
+                "@id": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access#blogposting"
+            }
+        },
+        {
+            "@type": "BlogPosting",
+            "@id": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access#blogposting",
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access",
+            "mainEntityOfPage": {
+                "@id": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access#webpage"
+            },
+            "publisher": {
+                "@id": "https://www.proofpoint.com/#organization"
+            },
+            "headline": "Can’t stop, won’t stop: TA584 innovates initial access",
+            "description": "Key findings TA584 is one of the most prominent cybercriminal threat actors tracked by Proofpoint threat researchers. In 2025, the actor demonstrated multiple attack chain changes including expanded global targeting; ClickFix social engineering; and delivering new malware, Tsundere Bot. TA584’s...",
+            "datePublished": "2026-01-28T13:00:07Z",
+            "dateModified": "2026-01-28T09:58:26Z",
+            "author": [
+                {
+                    "@type": "Person",
+                    "@id": "https://www.proofpoint.com/us/blog-authors/proofpoint-threat-research-team#person",
+                    "name": "The Proofpoint Threat Research Team",
+                    "worksFor": {
+                        "@id": "https://www.proofpoint.com/#organization"
+                    }
+                }
+            ],
+            "image": [
+                {
+                    "@type": "ImageObject",
+                    "url": "https://www.proofpoint.com/sites/default/files/blog-banners/pfpt-us-europe-connect.jpg"
+                }
+            ]
+        }
+    ]
+}</script>
+<link rel="alternate" hreflang="en-us" href="https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" />
+<link rel="alternate" hreflang="ja" href="https://www.proofpoint.com/jp/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" />
+<link rel="alternate" hreflang="x-default" href="https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" />
+
+    <title>Can’t stop, won’t stop: TA584 innovates initial access | Proofpoint US</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_-RMsCccN5uB7HaD7q3zXkxLHTrJsyIOEJwOaR2D1KPQ.css?delta=0&amp;language=en&amp;theme=particle&amp;include=eJxlj2EOwjAIhS80sjMBw9qMlgU6425vjcZ18Rfhg_fgbegts8pMamnaxg5ip2DPJAN3wYV9LxQnZKtNaoMNk_iIfVAmNUIFUSl9d1Ans6QCN7vQe7-T6_CRSkI-4G0KHPE3-PgPvKCv0qwbe4HrL79g0HPyeg4e4nnJWJ9dZa2HiSOalJkwZGpmSujzt74AlXJ5RQ" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_e7pHxAnQVu9ZuE67HsyWg84hXpYiCYQDFH5S33MDHQc.css?delta=1&amp;language=en&amp;theme=particle&amp;include=eJxlj2EOwjAIhS80sjMBw9qMlgU6425vjcZ18Rfhg_fgbegts8pMamnaxg5ip2DPJAN3wYV9LxQnZKtNaoMNk_iIfVAmNUIFUSl9d1Ans6QCN7vQe7-T6_CRSkI-4G0KHPE3-PgPvKCv0qwbe4HrL79g0HPyeg4e4nnJWJ9dZa2HiSOalJkwZGpmSujzt74AlXJ5RQ" />
+
+    <script src="https://platform-api.sharethis.com/js/sharethis.js#property=6543fd1a2398960013d900a7&amp;product=inline-share-buttons&amp;source=platform"></script>
+<script src="/sites/default/files/js/js_NPxh2djuPqqOb4Fjhy-wB_EhpR1Kv1AhSr4PQTcFQC0.js?scope=header&amp;delta=1&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+
+  </head>
+  <body class="path-node user-anonymous">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+<header class="navigation navigation--us">
+  <nav class="flex-wrap navbar navbar-expand-lg w-100 p-0" aria-label="Primary navigation">
+    <div class="container d-flex main-navigation">
+      <div class="navigation__main-row w-100">
+        <a class="navbar-brand navigation__brand" href="/us" aria-label="Proofpoint">
+                      <img class="navigation__logo" src="/themes/custom/proofpoint/dist/app-drupal/assets/header-nav__logo-white.svg" alt="Proofpoint">
+                  </a>
+
+        <div class="navigation__mobile-controls">
+                      <a class="navigation__mobile-search" href="#veridianx-navigation-search-modal" aria-label="Search" data-bs-toggle="modal" data-bs-target="#veridianx-navigation-search-modal">
+              <span aria-hidden="true"></span>
+            </a>
+                    <button class="navbar-toggler navigation__toggle" type="button" aria-controls="veridianx-navigation" data-bs-target="#veridianx-navigation" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" data-navigation-toggle>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="navigation__menu navbar-collapse flex-wrap collapse" id="veridianx-navigation" data-navigation-menu>
+
+
+                  <ul class="navbar-nav navigation__primary mx-auto">
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Products" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Products" aria-controls="veridianx-navigation-dropdown-1" data-navigation-dropdown-toggle>
+                    Products
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-1" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--columns">
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-1">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-1">
+                                                                  <a class="navigation__mega-heading-link" href="/us/products/collaboration-security-prime">Collaboration Security</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/email-protection">
+                                    <span class="navigation__mega-link-title">Core Email Protection</span>
+                                                                          <span class="navigation__mega-link-description">Get industry-leading threat protection via API or gateway</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/email-protection/email-fraud-defense">
+                                    <span class="navigation__mega-link-title">Email Fraud Defense</span>
+                                                                          <span class="navigation__mega-link-description">Protect your brand, increase deliverability, and identify lookalike domains</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/mitigate-human-risk">
+                                    <span class="navigation__mega-link-title">ZenGuide</span>
+                                                                          <span class="navigation__mega-link-description">Deliver targeted, risk-based security awareness training</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/email-security-and-protection/secure-email-relay">
+                                    <span class="navigation__mega-link-title">Secure Email Relay</span>
+                                                                          <span class="navigation__mega-link-description">Secure application email and implement DMARC faster</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/identity-protection/account-takeover">
+                                    <span class="navigation__mega-link-title">Account Takeover Protection</span>
+                                                                          <span class="navigation__mega-link-description">Detect, investigate, and respond to account takeovers</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-2">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-2">
+                                                                  <a class="navigation__mega-heading-link" href="/us/products/data-security-governance">Data Security</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/data-security-for-ai">
+                                    <span class="navigation__mega-link-title">Data Security for AI</span>
+                                                                          <span class="navigation__mega-link-description">Secure data across shadow and approved AI</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/data-loss-prevention">
+                                    <span class="navigation__mega-link-title">Enterprise DLP</span>
+                                                                          <span class="navigation__mega-link-description">Prevent data loss across email, cloud, and endpoints</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/adaptive-email-dlp">
+                                    <span class="navigation__mega-link-title">Adaptive Email DLP</span>
+                                                                          <span class="navigation__mega-link-description">Prevent misdirected emails and hidden data exfiltration</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/insider-threat-management">
+                                    <span class="navigation__mega-link-title">Insider Threat Management</span>
+                                                                          <span class="navigation__mega-link-description">Get visibility into risky behavior by careless, malicious, and compromised users</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/data-security-posture-management">
+                                    <span class="navigation__mega-link-title">Data Security Posture Management</span>
+                                                                          <span class="navigation__mega-link-description">Discover, classify, and protect sensitive data across cloud and hybrid environments</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/digital-communications-governance">
+                                    <span class="navigation__mega-link-title">Digital Communications Governance</span>
+                                                                          <span class="navigation__mega-link-description">Intelligently capture, retain, and discover digital communications</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-3">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-3">
+                                                                  <a class="navigation__mega-heading-link" href="/us/platform/ai-security">AI Security</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/ai-access-security">
+                                    <span class="navigation__mega-link-title">Secure AI Usage by People</span>
+                                                                          <span class="navigation__mega-link-description">Get visibility and control around employees&#039; use of AI</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/agentic-ai-security">
+                                    <span class="navigation__mega-link-title">Secure AI Usage by Agents</span>
+                                                                          <span class="navigation__mega-link-description">Understand AI agent intent and control their use of other AI tools</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/ai-mcp-security">
+                                    <span class="navigation__mega-link-title">Secure MCP Across Your Enterprise</span>
+                                                                          <span class="navigation__mega-link-description">Unify MCP discovery, authorization, and monitoring</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-1-column-4">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-1-column-4">
+                                                                  <a class="navigation__mega-heading-link" href="/us/platform">Our Platform</a>
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/platform/nexus">
+                                    <span class="navigation__mega-link-title">Proofpoint Nexus</span>
+                                                                          <span class="navigation__mega-link-description">Advanced AI and threat intel to detect threats and assess data risk</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/platform/zen">
+                                    <span class="navigation__mega-link-title">Proofpoint Zen</span>
+                                                                          <span class="navigation__mega-link-description">Integrated control points to protect people and data anywhere</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/platform/satori">
+                                    <span class="navigation__mega-link-title">Proofpoint Satori</span>
+                                                                          <span class="navigation__mega-link-description">The power behind agentic security operations</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/365-total-protection">
+                                    <span class="navigation__mega-link-title">Proofpoint 365 Total Protection</span>
+                                                                          <span class="navigation__mega-link-description">Enabling the channel, protecting humans and agents</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                              <a class="navigation__mega-footer-link" href="/us/products">
+                          <span>View All Products</span>
+                        </a>
+                                          </div>
+                  </div>
+                              </li>
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Solutions" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Solutions" aria-controls="veridianx-navigation-dropdown-2" data-navigation-dropdown-toggle>
+                    Solutions
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-2" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--columns">
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-2-column-1">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-2-column-1">
+                                                                  By Use Case
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/ensure-acceptable-genai-use">
+                                    <span class="navigation__mega-link-title">Ensure Acceptable GenAI Use</span>
+                                                                          <span class="navigation__mega-link-description">Empower your workforce with safe GenAI practices</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/claude-compliance-api-integration">
+                                    <span class="navigation__mega-link-title">Govern Claude AI Activity</span>
+                                                                          <span class="navigation__mega-link-description">Integrate Proofpoint with Claude Compliance API</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/secure-microsoft-365">
+                                    <span class="navigation__mega-link-title">Secure Microsoft 365</span>
+                                                                          <span class="navigation__mega-link-description">Implement flexible security and compliance for M365</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/prevent-loss-from-ransomware">
+                                    <span class="navigation__mega-link-title">Ransomware Prevention</span>
+                                                                          <span class="navigation__mega-link-description">Stop attacks by securing ransomware&#039;s top vector</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/combat-email-and-cloud-threats">
+                                    <span class="navigation__mega-link-title">Combat Email and Cloud Threats</span>
+                                                                          <span class="navigation__mega-link-description">Protect your people with a smart, holistic approach</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/protect-cloud-apps">
+                                    <span class="navigation__mega-link-title">Protect Cloud Apps</span>
+                                                                          <span class="navigation__mega-link-description">Eliminate threats and data loss across cloud apps</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/change-user-behavior">
+                                    <span class="navigation__mega-link-title">Change User Behavior</span>
+                                                                          <span class="navigation__mega-link-description">Help your users identify, resist, and report attacks</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/enable-digital-communications-governance">
+                                    <span class="navigation__mega-link-title">Modernize Compliance and Archiving</span>
+                                                                          <span class="navigation__mega-link-description">Manage your risk and data retention requirements</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/email-authentication-with-dmarc">
+                                    <span class="navigation__mega-link-title">Authenticate Your Email</span>
+                                                                          <span class="navigation__mega-link-description">Protect your email deliverability with DMARC</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-2-column-2">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-2-column-2">
+                                                                  By Industry
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/federal">
+                                    <span class="navigation__mega-link-title">Federal Government</span>
+                                                                          <span class="navigation__mega-link-description">Enable your agency with FedRAMP certified security</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/higher-education-security">
+                                    <span class="navigation__mega-link-title">Higher Education</span>
+                                                                          <span class="navigation__mega-link-description">Protect your campus, people, data, and research</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/healthcare-cybersecurity">
+                                    <span class="navigation__mega-link-title">Healthcare</span>
+                                                                          <span class="navigation__mega-link-description">Protect clinicians, patient data, and intellectual property</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/email-security-solutions-for-service-providers">
+                                    <span class="navigation__mega-link-title">Internet Service Providers</span>
+                                                                          <span class="navigation__mega-link-description">Deliver leading email protection for your networks and customers</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/state-and-local-government">
+                                    <span class="navigation__mega-link-title">State and Local Government</span>
+                                                                          <span class="navigation__mega-link-description">Secure your institutions, services, and communities against cyberthreats</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/financial-services-and-insurance">
+                                    <span class="navigation__mega-link-title">Financial Services</span>
+                                                                          <span class="navigation__mega-link-description">Protect your institution while meeting compliance requirements</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/mobile-message-security-solutions-for-service-providers">
+                                    <span class="navigation__mega-link-title">Mobile Operators</span>
+                                                                          <span class="navigation__mega-link-description">Protect your messaging environments and subscribers at scale</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/solutions/protection-compliance-small-business">
+                                    <span class="navigation__mega-link-title">Small and Medium Businesses</span>
+                                                                          <span class="navigation__mega-link-description">Strengthen your business with enterprise-grade security built to grow with you</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-2-column-3">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-2-column-3">
+                                                                  Services
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/proofpoint-services">
+                                    <span class="navigation__mega-link-title">Proofpoint Services</span>
+                                                                          <span class="navigation__mega-link-description">Leverage our expertise to maximize your investment</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/premium-services/advisory-services">
+                                    <span class="navigation__mega-link-title">Advisory Services</span>
+                                                                          <span class="navigation__mega-link-description">Maintain control with expert guidance and recommendations</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/products/premium-services/applied-services">
+                                    <span class="navigation__mega-link-title">Applied Services</span>
+                                                                          <span class="navigation__mega-link-description">Get hands-on execution, guidance, and measurable impact</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                          </div>
+                  </div>
+                              </li>
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Resources" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Resources" aria-controls="veridianx-navigation-dropdown-3" data-navigation-dropdown-toggle>
+                    Resources
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-3" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--columns">
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-1">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-1">
+                                                                  Learn
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/resources">
+                                    <span class="navigation__mega-link-title">Resource library</span>
+                                                                          <span class="navigation__mega-link-description">Research, insights, and resources from Proofpoint experts.</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/blog">
+                                    <span class="navigation__mega-link-title">Blog</span>
+                                                                          <span class="navigation__mega-link-description">Keep up with the latest news and expert insights</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/customer-stories">
+                                    <span class="navigation__mega-link-title">Customer Stories</span>
+                                                                          <span class="navigation__mega-link-description">Read how customers solve their toughest security challenges</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/cybersecurityacademy">
+                                    <span class="navigation__mega-link-title">Cybersecurity Academy</span>
+                                                                          <span class="navigation__mega-link-description">Become a Proofpoint Certified Guardian</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/company/events">
+                                    <span class="navigation__mega-link-title">Events</span>
+                                                                          <span class="navigation__mega-link-description">Connect and learn with peers at in-person events</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/webinars">
+                                    <span class="navigation__mega-link-title">Webinars</span>
+                                                                          <span class="navigation__mega-link-description">Browse our complete webinar library</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-2">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-2">
+                                                                  Threat Intelligence
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/threat-reference">
+                                    <span class="navigation__mega-link-title">Threat glossary</span>
+                                                                          <span class="navigation__mega-link-description">Learn about the latest security threats and techniques</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/podcasts">
+                                    <span class="navigation__mega-link-title">Podcasts</span>
+                                                                          <span class="navigation__mega-link-description">Stay informed with our renowned threat researchers</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link navigation__mega-link--external" href="https://go.proofpoint.com/PowerSeries?utm_source=pfpt-website&amp;amp;utm_medium=web&amp;amp;utm_campaign=EventsPage" target="_blank" rel="noopener">
+                                    <span class="navigation__mega-link-title">Power Series</span>
+                                                                          <span class="navigation__mega-link-description">Join our virtual event series on the industry&#039;s hottest topics</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/blog/threat-insight">
+                                    <span class="navigation__mega-link-title">Threat Insight Blog</span>
+                                                                          <span class="navigation__mega-link-description">Discover actionable threat intel and expert analysis</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-3">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-3">
+                                                                  Partners
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link navigation__mega-link--external" href="https://partners.proofpoint.com" target="_blank" rel="noopener">
+                                    <span class="navigation__mega-link-title">Partner Portal</span>
+                                                                          <span class="navigation__mega-link-description">Unlock tools with your partner credentials</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/channel-partners-and-distributors">
+                                    <span class="navigation__mega-link-title">Channel Partners &amp; Distributors</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/partners/technology-alliance-partners">
+                                    <span class="navigation__mega-link-title">Technology Partners</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/partners/msp">
+                                    <span class="navigation__mega-link-title">MSP Partners</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/partners/oem-security">
+                                    <span class="navigation__mega-link-title">OEM Partners</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column" aria-labelledby="veridianx-navigation-dropdown-3-column-4">
+                                                          <h2 class="navigation__mega-heading" id="veridianx-navigation-dropdown-3-column-4">
+                                                                  Support
+                                                              </h2>
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link navigation__mega-link--external" href="https://proofpoint.my.site.com/community/s/" target="_blank" rel="noopener">
+                                    <span class="navigation__mega-link-title">Support Portal</span>
+                                                                          <span class="navigation__mega-link-description">Access our knowledge base or file a support ticket</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/postmaster">
+                                    <span class="navigation__mega-link-title">IP Address Blocked?</span>
+                                                                          <span class="navigation__mega-link-description">Best practices for email delivery, authentication, and troubleshooting</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/support-services">
+                                    <span class="navigation__mega-link-title">Support Services</span>
+                                                                          <span class="navigation__mega-link-description">Get help with current incidents with Proofpoint products</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                          </div>
+                  </div>
+                              </li>
+                                                                                  <li class="nav-item navigation__item has-megamenu dropdown"  data-group="Company" >
+                                  <a class="nav-link" role="button" href="#" aria-expanded="false" aria-haspopup="true" aria-label="Company" aria-controls="veridianx-navigation-dropdown-4" data-navigation-dropdown-toggle>
+                    Company
+                  </a>
+                  <div class="dropdown-menu megamenu navigation__mega-menu" id="veridianx-navigation-dropdown-4" data-navigation-dropdown>
+                    <button class="navigation__mobile-back" type="button" data-navigation-back>
+                      Back
+                    </button>
+                    <div class="container navigation__mega-container">
+                      <div class="navigation__mega-content navigation__mega-content--flat">
+                                                  <section class="navigation__mega-column">
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/why-proofpoint">
+                                    <span class="navigation__mega-link-title">Why Proofpoint</span>
+                                                                          <span class="navigation__mega-link-description">Proofpoint provides intent-based protection for every human, every AI agent, across all data</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/our-leadership-team">
+                                    <span class="navigation__mega-link-title">Leadership</span>
+                                                                          <span class="navigation__mega-link-description">Learn about the executive team leading Proofpoint&#039;s strategy and vision</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/legal/esg">
+                                    <span class="navigation__mega-link-title">ESG</span>
+                                                                          <span class="navigation__mega-link-description">Learn about our environmental, social, and governance principles</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column">
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/compare">
+                                    <span class="navigation__mega-link-title">Comparing Proofpoint</span>
+                                                                          <span class="navigation__mega-link-description">Evaluating security vendors? Check out side-by-side industry comparisons</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/newsroom">
+                                    <span class="navigation__mega-link-title">News Center</span>
+                                                                          <span class="navigation__mega-link-description">Read press releases, news, and media highlights about Proofpoint</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/company/careers">
+                                    <span class="navigation__mega-link-title">Careers</span>
+                                                                          <span class="navigation__mega-link-description">Make a difference at one of the world&#039;s leading security companies</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                                  <section class="navigation__mega-column">
+                                                        <ul class="navigation__mega-list">
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/company/about">
+                                    <span class="navigation__mega-link-title">About</span>
+                                                                          <span class="navigation__mega-link-description">Learn more about the team driving human and agent-centric security</span>
+                                                                      </a>
+                                </li>
+                                                                                                                              <li class="navigation__mega-list-item">
+                                  <a class="navigation__mega-link" href="/us/legal/trust">
+                                    <span class="navigation__mega-link-title">AI, Privacy and Trust</span>
+                                                                          <span class="navigation__mega-link-description">Learn about our data handling, privacy, and compliance</span>
+                                                                      </a>
+                                </li>
+                                                          </ul>
+                          </section>
+                                              </div>
+                                          </div>
+                  </div>
+                              </li>
+                      </ul>
+        
+                  <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item navigation__action">
+                <a class="nav-link" href="/us/products/how-to-buy">
+                  <span class="btn btn-outline-primary small mt-0">How to buy</span>
+                </a>
+              </li>
+                                        <li class="nav-item navigation__action">
+                <a class="nav-link" href="/us/free-demo-request">
+                  <span class="btn btn-primary small mt-0">Request a demo</span>
+                </a>
+              </li>
+                      </ul>
+        
+        <div class="navigation__utility-bar w-100">
+          <div class="container d-flex navigation__utility-container">
+                          <a class="navigation__search-link nav-link" href="#veridianx-navigation-search-modal" data-bs-toggle="modal" data-bs-target="#veridianx-navigation-search-modal">Search</a>
+            
+                          <ul class="navbar-nav navigation__utility ms-auto">
+                                                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="veridianx-navigation-utility-dropdown-1" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Partners
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-utility-dropdown-1">
+                                                                                                                              <li>
+                                                          <a class="dropdown-item" href="/us/channel-partners-and-distributors">
+                                Channel Partners and Distributors
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/partners/msp">
+                                MSP Partners
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/partners/technology-alliance-partners">
+                                Technology and Alliance Partners
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/partners/oem-security">
+                                OEM Partners
+                              </a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="veridianx-navigation-utility-dropdown-2" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Support
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-utility-dropdown-2">
+                                                                                                                              <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://proofpoint.my.site.com/community/s/" target="_blank" rel="noopener">
+                                Support Login
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://www.proofpoint.com/us/support-services" target="_blank" rel="noopener">
+                                Support Services
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item" href="/us/postmaster">
+                                IP Address Blocked?
+                              </a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="veridianx-navigation-utility-dropdown-3" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                        Login
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-utility-dropdown-3">
+                                                                                                                              <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://learningmanager.adobe.com/proofpointcybersecurityacademy" target="_blank" rel="noopener">
+                                Proofpoint Cybersecurity Academy
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://partners.proofpoint.com/English/" target="_blank" rel="noopener">
+                                Partner Hub
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://v1.us1.digitalrisk.proofpoint.com/users/sign_in" target="_blank" rel="noopener">
+                                Digital Risk Portal
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://threatintel.proofpoint.com" target="_blank" rel="noopener">
+                                ET Intelligence
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://app.emaildefense.proofpoint.com/login" target="_blank" rel="noopener">
+                                Email Fraud Defense
+                              </a>
+                                                      </li>
+                                                                                                      <li>
+                                                          <a class="dropdown-item dropdown-item--external" href="https://us1.proofpointessentials.com/app/login.php" target="_blank" rel="noopener">
+                                Proofpoint Essentials
+                              </a>
+                                                      </li>
+                                              </ul>
+                                      </li>
+                                                  
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" id="veridianx-navigation-language-dropdown" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+    EN: Americas
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="veridianx-navigation-language-dropdown">
+    <li>
+      <span class="dropdown-header">Select Language</span>
+    </li>
+      <li>
+    <span class="dropdown-item is-active" aria-current="true">English: Americas</span>
+  </li>
+                                                            <li>
+        <a class="dropdown-item" href="/jp/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access">日本語</a>
+      </li>
+            
+  </ul>
+</li>
+                              </ul>
+                      </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+  </nav>
+</header>
+
+  <div class="modal navigation__search-dialog" id="veridianx-navigation-search-modal" tabindex="-1" aria-label="Search" data-navigation-search-dialog>
+    <div class="modal-dialog navigation__search-dialog-shell">
+      <div class="modal-content navigation__search-panel">
+        <button class="navigation__search-close" type="button" aria-label="Close search" data-bs-dismiss="modal"></button>
+        <form class="navigation__search-form" action="/us/search" method="get" role="search" data-navigation-search-form>
+          <label class="visually-hidden" for="veridianx-navigation-search-input">Search</label>
+          <input class="navigation__search-input" id="veridianx-navigation-search-input" type="search" name="content[query]" placeholder="Search Proofpoint" autocomplete="off" data-navigation-search-input>
+          <button class="navigation__search-clear" type="reset" aria-label="Clear search" data-navigation-search-clear></button>
+          <button class="navigation__search-submit" type="submit" aria-label="Search">
+            <span aria-hidden="true"></span>
+          </button>
+        </form>
+                  <div class="navigation__search-suggestions">
+            <p class="navigation__search-suggestions-label">Top Suggestions:</p>
+            <ul class="navigation__search-suggestion-list">
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Email%20Security">Email Security</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Phishing">Phishing</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=DLP">DLP</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Email%20Fraud">Email Fraud</a>
+                </li>
+                              <li>
+                  <a class="navigation__search-suggestion" href="/us/search?content[query]=Prime%20Threat%20Protection">Prime Threat Protection</a>
+                </li>
+                          </ul>
+          </div>
+              </div>
+    </div>
+  </div>
+
+
+
+
+  <main class="layout-container" role="main">
+  <div data-drupal-messages-fallback class="hidden"></div>
+
+
+    <a id="main-content" tabindex="-1"></a>      
+
+
+
+
+
+<article about="/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access" class="node--type--blog-post node--view-mode--full node node-blog-full _legacy_content _blog-full">
+  
+
+
+
+  <div class="breadcrumbs _legacy_element _breadcrumbs"><div class="nav-crumbs container"><div class="breadcrumb__item"><a href="/us/blog" class="breadcrum__item-link">Blog</a></div><div class="breadcrumb__item"><a href="/us/blog/threat-insight" class="breadcrum__item-link">Threat Insight</a></div><div class="breadcrumb__item">
+        Can’t stop, won’t stop: TA584 innovates initial access      </div></div></div>  
+
+  <div class="blog-banner">
+    <div class="blog-banner__image vx-media--legacy-grayscale">      <picture>
+                  <source srcset="/sites/default/files/styles/image_1920_750/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=SJ56mceF 1x" media="screen and (min-width: 1440px)" type="image/webp" width="1920" height="750"/>
+              <source srcset="/sites/default/files/styles/image_1024_400/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=EjaGaz7h 1x" media="screen and (min-width: 1024px)" type="image/webp" width="1024" height="400"/>
+              <source srcset="/sites/default/files/styles/image_768_375/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=b_k7d0Zl 1x" media="screen and (min-width: 768px)" type="image/webp" width="768" height="375"/>
+              <source srcset="/sites/default/files/styles/image_1920_750/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=SJ56mceF 1x" media="screen and (min-width: 1440px)" type="image/webp" width="1920" height="750"/>
+              <source srcset="/sites/default/files/styles/image_1024_400/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=EjaGaz7h 1x" media="screen and (min-width: 1024px)" type="image/webp" width="1024" height="400"/>
+              <source srcset="/sites/default/files/styles/image_768_375/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=b_k7d0Zl 1x" media="screen and (min-width: 768px)" type="image/webp" width="768" height="375"/>
+                  <img loading="eager" width="768" height="300" src="/sites/default/files/styles/image_768_300/public/blog-banners/pfpt-us-europe-connect.jpg.webp?itok=svz-N9uT" alt="Europe connect" typeof="foaf:Image" />
+
+  </picture>
+
+
+</div>
+    <div class="blog-banner__gradient-overlay"></div>
+    <div class="blog-banner__heading-wrap">
+      
+      
+
+      
+<h1 class="blog-banner__heading">
+      Can’t stop, won’t stop: TA584 innovates initial access 
+  </h1>
+
+    </div>
+  </div>
+
+  <div class="blog-content">
+    <div class="blog-content__sharethis sharethis_toolbox sharethis_32x32_style">
+      <div class="blog-content__sharethis_label sharethis__label">Share with your network!</div>
+      <div class="blog-content__sharethis_buttons sharethis_buttons">
+        <div class="sharethis-inline-share-buttons"></div>
+      </div>
+    </div>
+        <div class="blog-content__metadata blog-content__metadata-author">
+      <span class="blog-content__date">  <time datetime="2026-01-28T13:00:07Z">January 28, 2026</time>
+
+</span>
+        <span class="blog-content__author">
+                The Proofpoint Threat Research Team
+  
+        </span>
+    </div>
+    <div class="node-full__body blog-content__body">  <h3>Key findings&nbsp;</h3>
+
+<ul>
+	<li>TA584 is one of the most prominent&nbsp;cybercriminal threat actors tracked by Proofpoint threat researchers.&nbsp;</li>
+	<li>In 2025, the actor&nbsp;demonstrated&nbsp;multiple&nbsp;attack chain changes including&nbsp;expanded&nbsp;global targeting;&nbsp;ClickFix&nbsp;social engineering;&nbsp;and&nbsp;delivering new malware, Tsundere Bot.&nbsp;&nbsp;</li>
+	<li>TA584’s&nbsp;activity is unique in the cybercrime&nbsp;landscape and&nbsp;shows how static detections&nbsp;alone are not&nbsp;reliable for&nbsp;constantly innovating threat actors.&nbsp;&nbsp;</li>
+</ul>
+
+<h3>Overview&nbsp;</h3>
+
+<p>Proofpoint tracks multiple sophisticated cybercriminal threat actors, and one of the most&nbsp;frequently&nbsp;active&nbsp;with high volume&nbsp;campaigns&nbsp;is TA584. TA584 is&nbsp;a prominent&nbsp;initial&nbsp;access broker (IAB) that targets organizations globally. In the second half of 2025,&nbsp;TA584&nbsp;demonstrated multiple attack chain changes including adopting&nbsp;ClickFix&nbsp;social engineering, expanded targeting&nbsp;to&nbsp;more consistently target&nbsp;specific geographies and languages, and recently delivering a new malware called Tsundere Bot.&nbsp;TA584 overlaps with&nbsp;a&nbsp;group&nbsp;tracked as&nbsp;<a href="https://www.linkedin.com/posts/microsoft-threat-intelligence_on-thanksgiving-eve-november-26-microsoft-activity-7401414126620884992-RmYo" rel="noreferrer noopener" target="_blank">Storm-0900</a>.&nbsp;&nbsp;</p>
+
+<p>The actor’s operational tempo increased throughout 2025, with the number of monthly campaigns&nbsp;tripling from March to December 2025.&nbsp;</p>
+
+<h3>TA584&nbsp;&nbsp;</h3>
+
+<h4>Background&nbsp;</h4>
+
+<p>Tracked by Proofpoint since November 2020, TA584 has demonstrated a variety of tactics, techniques, and procedures (TTPs).&nbsp;Delivery methods included macro-enabled Excel documents, URLs with aggressive filtering, use of various traffic distribution services (TDS), and geo-fenced landing pages.&nbsp;&nbsp;&nbsp;</p>
+
+<p>While TA584 has been tracked for several years, its earlier campaigns followed&nbsp;relatively predictable&nbsp;patterns compared to the&nbsp;variety of techniques&nbsp;observed&nbsp;in 2025.&nbsp;One of the most notable shifts in TA584’s activity during 2025 is&nbsp;how quickly&nbsp;campaigns are launched,&nbsp;modified, and retired.&nbsp;The&nbsp;actor has been active for several years,&nbsp;but&nbsp;earlier activity tended to follow longer-lived patterns, with infrastructure, lures, and delivery mechanisms reused over extended periods&nbsp;of time.&nbsp;In contrast, 2025 activity is characterized by high campaign churn and short operational lifespans.&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 1" data-entity-type="file" data-entity-uuid="1cf6dda3-1727-4ab2-bcef-76d2ac4666e2" height="482" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.09.57%E2%80%AFAM.png" width="768" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;1. </strong>Operational tempo increased throughout 2025.&nbsp;</em></p>
+
+<p>In 2025,&nbsp;TA584 conducted campaigns in&nbsp;rapid succession, often overlapping in time while using distinct lure themes, branding, and landing pages. In many cases, individual campaigns remained active for only&nbsp;a short&nbsp;time&nbsp;(hours to days)&nbsp;before being replaced or significantly&nbsp;modified.&nbsp;Instead of&nbsp;refining a single successful&nbsp;attack chain, TA584 favors&nbsp;continuous iteration, rapidly cycling through&nbsp;various tactics, techniques, and procedures (TTPs),&nbsp;even when prior campaigns&nbsp;remained&nbsp;effective.&nbsp;</p>
+
+<p>The consistency of this pattern throughout 2025&nbsp;shows&nbsp;how a&nbsp;steady stream of brief, thematically distinct campaigns originating from the same actor provides insight into how modern&nbsp;financially-motivated&nbsp;threat actors adapt to defensive pressure.&nbsp;</p>
+
+<h4>Data scope&nbsp;</h4>
+
+<p>Proofpoint’s analysis of&nbsp;TA584 activity&nbsp;is&nbsp;based on&nbsp;email as&nbsp;an initial&nbsp;access vector. Although TA584 has been&nbsp;monitored&nbsp;periodically since 2020, the findings presented here primarily focus on activity&nbsp;observed&nbsp;throughout 2025, when visibility of campaign volume, operational tempo, and variability increased significantly. The&nbsp;analysis follows&nbsp;activity from&nbsp;initial&nbsp;message delivery through malware execution. This perspective&nbsp;lets us see&nbsp;how TA584 adapts social engineering techniques,&nbsp;distribution&nbsp;infrastructure, and payload&nbsp;delivery&nbsp;over time, while also&nbsp;identifying&nbsp;execution behaviors that&nbsp;remain&nbsp;consistent despite other changes.&nbsp;</p>
+
+<p>The scope of this analysis is intentionally focused on the pre-compromise and early execution stages of TA584 attack chains. Areas covered include email lure construction, social engineering themes, brand impersonation, localization strategies, landing page design, delivery infrastructure, and malware execution.&nbsp;&nbsp;</p>
+
+<p>Campaigns were&nbsp;identified&nbsp;and clustered by correlating multiple attributes&nbsp;including&nbsp;delivery characteristics, shared or structurally similar infrastructure, recurring execution patterns, geofencing&nbsp;and&nbsp;IP filtering, landing page design,&nbsp;malware&nbsp;and malware configuration, and overlapping lure characteristics. Attribution to TA584 is based on a combination of historical tracking, continuity across campaigns, and recurring patterns&nbsp;observed&nbsp;over multiple years of activity.&nbsp;&nbsp;</p>
+
+<p>Overall, the&nbsp;methodology&nbsp;used in this report reflects the challenges of tracking modern, high-velocity, email-centric threat actors. TA584’s 2025 activity&nbsp;shows&nbsp;how&nbsp;quick&nbsp;campaign turnover and deliberate variability can&nbsp;make static indicators less effective.&nbsp;&nbsp;</p>
+
+<h3>Campaign details&nbsp;</h3>
+
+<h4>Social engineering&nbsp;</h4>
+
+<p>TA584&nbsp;sends emails impersonating various&nbsp;organizations. Impersonated entities include&nbsp;job-related&nbsp;firms&nbsp;(such as&nbsp;Michael Page,&nbsp;Addeco) or&nbsp;business services&nbsp;(BBB,&nbsp;Companies House), as well as&nbsp;brands&nbsp;like&nbsp;PayPal,&nbsp;OSHA,&nbsp;Medicare,&nbsp;OneDrive,&nbsp;or&nbsp;YourCostSolutions.&nbsp;&nbsp;</p>
+
+<p>The most&nbsp;frequently&nbsp;observed&nbsp;vertical&nbsp;impersonated&nbsp;is healthcare, followed by government entities.&nbsp;Proofpoint has seen this actor impersonate hospitals, care facilities, and multiple various government agencies in multiple countries.&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 2" data-entity-type="file" data-entity-uuid="46af802d-f72d-43b4-a7ad-627603aef414" height="430" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.10.08%E2%80%AFAM.png" width="653" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;2.</strong> TA584 impersonations.&nbsp;</em></p>
+
+<p>TA584&nbsp;demonstrates unique social engineering content using a very wide range of themes and techniques used to get people&nbsp;to engage&nbsp;with malicious content.&nbsp;The&nbsp;emails and associated landing pages always match,&nbsp;with&nbsp;well-designed&nbsp;and believable&nbsp;lures.&nbsp;</p>
+
+<p>Brand impersonation further reinforces this approach. TA584&nbsp;regularly&nbsp;incorporates well-known brands into email content, but brand usage is typically short-lived, with individual brands appearing briefly before being replaced in&nbsp;subsequent&nbsp;campaigns. In several cases, brand&nbsp;selection&nbsp;appears aligned with geographic targeting, with localized or regionally relevant brands used to increase credibility among specific recipients.&nbsp;Importantly, this variability does not appear to be random.&nbsp;Despite frequent changes, lures consistently&nbsp;maintain&nbsp;a sense of urgency or implied legitimacy, often encouraging recipients to view a document, review a transaction, or resolve an outstanding issue. The underlying social engineering&nbsp;objective&nbsp;remains&nbsp;the same, even&nbsp;if&nbsp;the surface-level details change.&nbsp;</p>
+
+<p>This&nbsp;actor’s behavior is notable.&nbsp;Because&nbsp;TA584&nbsp;regularly changes&nbsp;their lures,&nbsp;it reduces&nbsp;the effectiveness of content-based detection and increases&nbsp;the likelihood that at least some variants will evade filtering. For defenders,&nbsp;this shows how&nbsp;campaigns&nbsp;should be assessed&nbsp;holistically, correlating sender behavior, delivery infrastructure, and downstream execution rather than relying solely on static content indicators.&nbsp;</p>
+
+<p>Some themes&nbsp;observed&nbsp;in 2025 include&nbsp;debt collection and payment processing, invitations to events or programs,&nbsp;tax obligations,&nbsp;medical test results,&nbsp;healthcare benefits, parking tickets, recruiting emails,&nbsp;and&nbsp;business complaints.&nbsp;&nbsp;&nbsp;</p>
+
+<p>One campaign in December used a unique social engineering technique:&nbsp;including a photo of an alleged package delivery that&nbsp;contained&nbsp;the name of the recipient in the email lure.&nbsp;</p>
+
+<p><img alt="Figure 3" data-entity-type="file" data-entity-uuid="d2fd4def-6932-4ae8-8c15-96b230635832" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.10.26%E2%80%AFAM.png" width="1048" height="1330" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;3. </strong>Purported photo&nbsp;of physical&nbsp;mail.&nbsp;&nbsp;</em></p>
+
+<p>In the emails,&nbsp;TA584 included a photo of supposed physical mail that&nbsp;displayed&nbsp;the targets’ name and address,&nbsp;customized to each recipient.&nbsp;This likely furthered the believability of the lure.&nbsp;Proofpoint rarely&nbsp;observes&nbsp;this&nbsp;technique,&nbsp;however&nbsp;we have seen it used by TA2725 in recent months.&nbsp;</p>
+
+<h4>Attack chain&nbsp;</h4>
+
+<p>TA584 uses multiple&nbsp;delivery methods via&nbsp;email. In 2025,&nbsp;the actor most often sent emails from&nbsp;compromised individual&nbsp;senders. These accounts were typically paired with&nbsp;several&nbsp;display names&nbsp;per campaign&nbsp;that matched the lure, and a single wave could involve hundreds of different compromised senders across many unrelated, legitimate, and often aged domains.&nbsp;</p>
+
+<p>TA584 also occasionally sends through&nbsp;thirdparty&nbsp;Email Service Providers (ESPs) such as SendGrid and Amazon Simple Email Service (SES). This&nbsp;likely involves&nbsp;stolen credentials to create or takeover ESP accounts and then authenticate the compromised domain for sending. In practice, that usually requires DNS access to add provider-specific&nbsp;DNS&nbsp;records.&nbsp;</p>
+
+<p>Because the emails come from authenticated, aged senders and vary heavily in subject lines and URLs, it can be difficult to reliably track and&nbsp;cluster&nbsp;these campaigns using email characteristics alone.&nbsp;</p>
+
+<p>The&nbsp;emails&nbsp;usually&nbsp;contain&nbsp;unique links&nbsp;for each target&nbsp;that performs&nbsp;geofencing and IP filtering.&nbsp;If these checks&nbsp;were&nbsp;passed, the recipient&nbsp;is&nbsp;redirected to a landing page aligning with the lure in the email.&nbsp;Between&nbsp;March 2021&nbsp;and July 2025,&nbsp;the landing&nbsp;page featured&nbsp;a countdown, the&nbsp;target's&nbsp;name (from a query in the URL), and a CAPTCHA.&nbsp;The timer, which was always placed in the top right corner, added&nbsp;to the sense of urgency a recipient would have,&nbsp;feeling like there was&nbsp;limited time to reply to&nbsp;seemingly important&nbsp;emails.&nbsp;Solving the CAPTCHA revealed&nbsp;a download button for a zipped JavaScript&nbsp;or shortcut (.lnk)&nbsp;file.&nbsp;&nbsp;</p>
+
+<p>In early campaigns, TA584&nbsp;also&nbsp;delivered macro-enabled&nbsp;Excel documents&nbsp;(tracked as&nbsp;EtterSilent)&nbsp;directly after the&nbsp;filtering checks&nbsp;that, if&nbsp;macros were&nbsp;enabled, would lead to malware installation.&nbsp;</p>
+
+<p><img alt="Figure 4" data-entity-type="file" data-entity-uuid="a98412a0-62b9-4f68-a399-0be606a8e483" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.10.48%E2%80%AFAM.png" width="1568" height="570" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;4. </strong>March 2021 campaign,&nbsp;emails&nbsp;containing&nbsp;URLs that redirect to the download of a zipped&nbsp;macro-enabled&nbsp;Excel sheet&nbsp;that, when enabled, downloaded&nbsp;Ursnif.&nbsp;</em></p>
+
+<p><img alt="Figure 5" data-entity-type="file" data-entity-uuid="c64f9d6b-6c23-4337-8094-ccd6c970a0bb" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.11.02%E2%80%AFAM.png" width="1586" height="606" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;5. </strong>Lure impersonating a recruiting firm targeting&nbsp;North American&nbsp;organizations,&nbsp;containing&nbsp;a URL leading to&nbsp;a landing page featuring a countdown, matching the email lure,&nbsp;March 2025.&nbsp;&nbsp;</em></p>
+
+<p>From late July 2025, the actor switched to using the&nbsp;ClickFix&nbsp;technique.&nbsp;The&nbsp;ClickFix&nbsp;social engineering technique uses dialogue boxes&nbsp;containing&nbsp;fake error messages to trick people into copying, pasting, and running malicious content on their own computer.&nbsp;First&nbsp;<a href="https://www.proofpoint.com/us/blog/threat-insight/clipboard-compromise-powershell-self-pwn" rel="noreferrer noopener" target="_blank">observed in&nbsp;2024</a>, the&nbsp;ClickFix&nbsp;technique is now used by&nbsp;many different threat actors that customize the landing pages based on lure theme and objective.&nbsp;&nbsp;</p>
+
+<p>Currently, messages&nbsp;contain&nbsp;unique URLs with a link leading to a&nbsp;customized&nbsp;landing page with a "Slide" CAPTCHA. If the CAPTCHA is resolved, a&nbsp;ClickFix&nbsp;page will be displayed which guides users to follow instructions which, if completed, run a PowerShell command which in turn runs&nbsp;another remote intermediate PowerShell script&nbsp;containing&nbsp;obfuscated code that will&nbsp;execute&nbsp;the malware&nbsp;payload.&nbsp;The&nbsp;initial&nbsp;script from the&nbsp;ClickFix&nbsp;command can only be&nbsp;retrieved if the same&nbsp;IP address has accessed the landing page. The&nbsp;landing page also&nbsp;contains&nbsp;a&nbsp;call-back function to&nbsp;check if the&nbsp;payload has been&nbsp;accessed and redirects the browser to&nbsp;a benign site, for example&nbsp;docusign[.]com,&nbsp;when this has been done.&nbsp;</p>
+
+<p><img alt="Figure 6" data-entity-type="file" data-entity-uuid="5a7ccf16-187a-4a30-97ac-e71347afad21" height="844" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.13.41%E2%80%AFAM.png" width="780" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;6.</strong> BBB complaint lure with URL,&nbsp;November 2025.&nbsp;&nbsp;</em></p>
+
+<p><img alt="Figure 7" data-entity-type="file" data-entity-uuid="90befaf7-3171-41b9-a38d-453d1fa4ef53" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.13.51%E2%80%AFAM.png" width="1362" height="562" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;7. </strong>CAPTCHA and&nbsp;ClickFix&nbsp;landing pages, November 2025.&nbsp;&nbsp;</em></p>
+
+<p>Redirect behavior and intermediate delivery&nbsp;techniques&nbsp;are&nbsp;a&nbsp;notable aspect&nbsp;of TA584’s landing page infrastructure.&nbsp;All&nbsp;campaigns&nbsp;use&nbsp;redirect chains or intermediary resources to obscure the final payload location, adding&nbsp;additional&nbsp;layers between the&nbsp;initial&nbsp;email and malware delivery.&nbsp;The individual URLs&nbsp;are not consistently reused,&nbsp;and&nbsp;the actor changes&nbsp;URLs and redirects with each campaign,&nbsp;often using third-party criminal services&nbsp;in the redirect chain.&nbsp;The&nbsp;actor often&nbsp;uses&nbsp;a set of compromised&nbsp;domains per campaign, with a path in the URL&nbsp;identifying&nbsp;the campaign&nbsp;(such as&nbsp;domain.tld/bbb/[unique&nbsp;query])&nbsp;either directly in the email, or&nbsp;in the&nbsp;redirect chain&nbsp;if a&nbsp;third-party&nbsp;service has been used in the campaign.&nbsp;However, from&nbsp;late&nbsp;2025, the actor preferred to instead use&nbsp;Amazon AWS S3&nbsp;URLs, either&nbsp;directly in the email or in the redirect chain, also most often paired with a unique query per target.&nbsp;In 2025, Proofpoint&nbsp;also&nbsp;observed&nbsp;Blogspot URLs, and other various URLs used in the email lure.&nbsp;While in previous years, the actor commonly used Cookie Reloaded (Prometheus TDS) URLs for filtering payloads, we observed TA584 occasionally switch to Keitaro TDS, but&nbsp;the actor&nbsp;most&nbsp;frequently&nbsp;used&nbsp;404 TDS as the primary filter in 2025.&nbsp;This variability reinforces the actor’s preference for adaptable infrastructure, causing detection to become more challenging.&nbsp;&nbsp;</p>
+
+<p>404 TDS is a traffic distribution system (TDS) used by cybercriminal actors since at least 2021&nbsp;and has been&nbsp;observed&nbsp;used by multiple&nbsp;ecrime&nbsp;actors, particularly those that&nbsp;demonstrate&nbsp;more sophisticated capabilities.&nbsp;404 TDS was named due to the mechanism it used in&nbsp;initial&nbsp;campaigns&nbsp;to redirect users to the payload sites. Specifically, the TDS&nbsp;would respond&nbsp;with a "404 Not Found" code and then use a meta refresh method to automatically refresh the current web page to direct the user to the URL contained in the meta refresh element, which is the next site in the attack chain.&nbsp;404 TDS does not appear to perform any filtering or blocking.&nbsp;In most cases the TDS simply redirects the user to&nbsp;next&nbsp;URL. 404 TDS links are time limited, typically to one day.&nbsp;&nbsp;</p>
+
+<p>After any potential third-party filtering and the&nbsp;initial&nbsp;redirect, the&nbsp;browser is redirected&nbsp;to a long hostname&nbsp;(often related to the lure)&nbsp;hosted on an actor-controlled domain, where&nbsp;additional&nbsp;IP-based filtering is performed. Only if the target passes this final IP filtering step&nbsp;are they&nbsp;redirected to the final landing page, hosted under a campaign-specific path on the same host.&nbsp;</p>
+
+<p>The domain itself is usually used for only one or two campaigns, and new domains are typically registered and deployed&nbsp;at least once per week. Although new domains are rotated&nbsp;frequently, the IP address hosting these final steps often&nbsp;remains&nbsp;static for&nbsp;long periods. For example, 94[.]159[.]113[.]37 (AS216234&nbsp;Komskov&nbsp;Vadim Aleksandrovich) has been used since April 2025.&nbsp;</p>
+
+<p>Because of the layered redirects and filtering, full redirect chains and final landing pages are rarely captured by public sandboxes or URL scanning services.&nbsp;</p>
+
+<h4>Targeting details&nbsp;</h4>
+
+<p>Campaigns typically target hundreds of organizations with message volumes ranging from a few thousand to&nbsp;nearly 200,000&nbsp;messages per campaign.&nbsp;&nbsp;</p>
+
+<p>Historically, this actor&nbsp;largely focuses&nbsp;targeting on organizations in North America, the UK, and Ireland, but at the end of July 2025, the actor expanded targeting to&nbsp;regularly&nbsp;include Germany.&nbsp;(Analyst&nbsp;note: Proofpoint&nbsp;previously&nbsp;observed&nbsp;a small number of campaigns targeting&nbsp;Germany in 2023, but in 2025&nbsp;the actor&nbsp;consistently targeted that country&nbsp;at a significantly higher volume).&nbsp;TA584 focused&nbsp;its targeting efforts on European users for much of the summer, before returning to mostly targeting North America by fall 2025. Proofpoint has also&nbsp;observed&nbsp;limited targeting of Australia since at least spring 2025.&nbsp;&nbsp;</p>
+
+<p>The actor appears to be opportunistic and doesn’t target specific verticals.&nbsp;The actor typically conducts a few campaigns per week, but we have observed breaks between campaigns.&nbsp;The most&nbsp;frequently&nbsp;targeted geography is North America.&nbsp;&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 8" data-entity-type="file" data-entity-uuid="e3d64fd0-aadf-4b98-8b8a-557973987d85" height="487" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.14.01%E2%80%AFAM.png" width="795" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;8.</strong> Targeted countries by campaign, 2025.&nbsp;</em></p>
+
+<p>TA584’s 2025 campaigns&nbsp;show&nbsp;consistent shifts in geographic targeting, with individual operations often focused on specific regions.&nbsp;While earlier activity associated with the actor&nbsp;had a less specific focus on geographic targeting, campaigns&nbsp;observed&nbsp;in 2025&nbsp;frequently&nbsp;included&nbsp;deliberate&nbsp;regional&nbsp;targeting,&nbsp;with less opportunistic activity.&nbsp;TA584 focused its targeting efforts on European users for much of the summer, before returning to mostly targeting North America by fall 2025. Proofpoint has also&nbsp;observed&nbsp;limited targeting of Australia since at least spring 2025.&nbsp;&nbsp;</p>
+
+<p>Targeted regions often change between campaigns, with geographic focus rotating over relatively short timeframes.&nbsp;In several cases, campaigns in a single week targeted different regions while&nbsp;using&nbsp;distinct branding, language, and lure themes&nbsp;relevant to selected targets.&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 9" data-entity-type="file" data-entity-uuid="b2796796-27f7-4276-8411-0f50c5fa5760" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.14.16%E2%80%AFAM.png" width="1044" height="1436" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;9. </strong>UK&nbsp;targeted&nbsp;email&nbsp;lure 24 September 2025.&nbsp;</em></p>
+
+<p><img alt="Figure 10" data-entity-type="file" data-entity-uuid="342c676f-8ea5-4bc6-82bc-ff9d85f07dfa" height="1294" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.14.27%E2%80%AFAM.png" width="1048" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;10. </strong>German&nbsp;targeted&nbsp;email&nbsp;lure 25 September 2025.&nbsp;</em></p>
+
+<p><img alt="Figure 11" data-entity-type="file" data-entity-uuid="1ea63eea-0e03-4249-a6e5-53ad5816eae5" height="344" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.18.28%E2%80%AFAM.png" width="1029" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;11.</strong>&nbsp;U.S.&nbsp;targeted&nbsp;email&nbsp;lure 19 September 2025.&nbsp;</em></p>
+
+<p>This rotational targeting allows TA584 to&nbsp;keep&nbsp;high&nbsp;operational tempo&nbsp;while reducing repeated exposure within any single region.&nbsp;&nbsp;</p>
+
+<h3>Malware details&nbsp;</h3>
+
+<p>The current&nbsp;payload delivered is&nbsp;XWorm&nbsp;with the configuration “P0WER”,&nbsp;which it has&nbsp;used&nbsp;since at least mid-2024.&nbsp;However,&nbsp;at the end of November&nbsp;and through December 2025,&nbsp;TA584&nbsp;also&nbsp;distributed a newly observed malware called Tsundere Bot which we will describe below.&nbsp;&nbsp;</p>
+
+<p>Previously,&nbsp;the actor was&nbsp;observed&nbsp;distributing&nbsp;the following payloads for&nbsp;initial&nbsp;access:&nbsp;Ursnif&nbsp;(2020 – 2022), LDR4&nbsp;(2022 – 2023),&nbsp;WarmCookie&nbsp;(2024), Xeno RAT&nbsp;(2024), and Cobalt Strike&nbsp;(2024).&nbsp;TA584 also used DCRAT in one campaign in&nbsp;September 2025, which was a significant outlier. The actor did not use this payload again.&nbsp;&nbsp;</p>
+
+<p>XWorm&nbsp;is a&nbsp;remote access trojan (RAT)&nbsp;observed&nbsp;since 2022&nbsp;that&nbsp;also includes some ransomware functionality.&nbsp;It is available for sale on criminal forums and used by many different threat actors of various levels of sophistication.&nbsp;&nbsp;</p>
+
+<h4>Tsundere bot&nbsp;</h4>
+
+<p>While&nbsp;Tsundere Bot was&nbsp;previously distributed by other threat actors&nbsp;in Proofpoint campaign data&nbsp;as early as August 2025,&nbsp;TA584 used&nbsp;Tsundere Bot&nbsp;for the first time at the end of November 2025.&nbsp;Throughout December, Proofpoint observed this payload&nbsp;in multiple&nbsp;additional&nbsp;campaigns, and it&nbsp;now&nbsp;appears to be&nbsp;a favored payload alongside&nbsp;XWorm.&nbsp;Tsundere Bot is a&nbsp;new malware with backdoor and loader capabilities. Further investigation&nbsp;identified&nbsp;the panels, which&nbsp;identified&nbsp;themselves&nbsp;as&nbsp;“Tsundere Netto”&nbsp;and “Tsundere Reborn”,&nbsp;from where the name Tsundere Bot was taken. It is a malware-as-a-service (MaaS).&nbsp;It is&nbsp;used by multiple different threat actors,&nbsp;<a href="https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/" rel="noreferrer noopener" target="_blank">according to third-party reporting</a>&nbsp;from Kaspersky, including being dropped by RMMs&nbsp;downstream of&nbsp;web injects,&nbsp;and&nbsp;delivered via&nbsp;fake video game installers.&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 12" data-entity-type="file" data-entity-uuid="7dbed05e-35ca-4927-9a84-6fee769553fa" height="604" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.18.38%E2%80%AFAM.png" width="639" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;12. </strong>Tsundere Bot panel screenshot.&nbsp;&nbsp;</em></p>
+
+<p>The bot needs&nbsp;Node.js to be installed on the system, which is handled by installers available to be built from the&nbsp;command and control&nbsp;(C2)&nbsp;panel&nbsp;in the form of MSI installers or PowerShell scripts.&nbsp;Tsundere Bot&nbsp;has the&nbsp;following capabilities:&nbsp;</p>
+
+<ul>
+	<li>Uses a form of&nbsp;EtherHiding&nbsp;to connect to the Ethereum blockchain via multiple RPC providers&nbsp;in order to&nbsp;retrieve its C2 and config via a&nbsp;Web3 smart&nbsp;contract&nbsp;and&nbsp;wallet defined by the&nbsp;installer,&nbsp;and&nbsp;uses a consensus mechanism to select the&nbsp;most commonly returned&nbsp;C2 URL from multiple providers.&nbsp;The malware also includes a hardcoded C2 fallback in the installer script.&nbsp;</li>
+	<li>Uses&nbsp;WebSockets&nbsp;to communicate with the C2.&nbsp;</li>
+	<li>Checks system locale and exits if the system uses CIS country languages (Russian, Ukrainian, Belarusian, Kazakh, etc.)&nbsp;</li>
+	<li>Collects system information such as CPU/GPU info, username and hostname, Windows version, volume serial numbers, etc. and creates a unique victim ID with this info.&nbsp;</li>
+	<li>Maintains connection health to C2 with a “ping/pong” heartbeat.&nbsp;</li>
+	<li>Can execute arbitrary JavaScript code sent from&nbsp;the&nbsp;C2&nbsp;</li>
+</ul>
+
+<p>The C2 panel, which allows public account creation,&nbsp;contains&nbsp;functions such as:&nbsp;</p>
+
+<ul>
+	<li>Bot control panel which can be filtered by IP, country code,&nbsp;username&nbsp;and hostname&nbsp;</li>
+	<li>User settings where a license key for the&nbsp;MaaS&nbsp;can be applied&nbsp;</li>
+	<li>Build system where installers in the form of MSI or PowerShell can be generated&nbsp;</li>
+	<li>Autotasks&nbsp;management where custom&nbsp;Node.js scripts can be configured to run automatically on first or every bot connection.&nbsp;</li>
+	<li>A market where bots can be sold and&nbsp;purchased.&nbsp;</li>
+	<li>Socks Proxy, where bots can be configured to be used as SOCKS5 proxies.&nbsp;</li>
+</ul>
+
+<p>Proofpoint has&nbsp;observed&nbsp;this malware delivered via a variety of attack chains based on the&nbsp;distinct threat actor using it,&nbsp;including multiple campaigns&nbsp;leveraging&nbsp;the&nbsp;ClickFix&nbsp;social engineering technique. Proofpoint has&nbsp;identified&nbsp;multiple pairs of contracts/wallets that&nbsp;resolves to&nbsp;different active C2 servers.&nbsp;Early versions of the&nbsp;installer and bot code&nbsp;contain&nbsp;comments in both Russian and English in&nbsp;different parts&nbsp;of the code.&nbsp;</p>
+
+<p>In general, the malware can be used for information gathering, data exfiltration, lateral movement, and&nbsp;to install&nbsp;additional&nbsp;payloads. Given that Proofpoint has&nbsp;observed&nbsp;this malware used by TA584, researchers assess with high confidence Tsundere Bot malware infections could lead to ransomware.&nbsp;</p>
+
+<p>The&nbsp;first&nbsp;observed&nbsp;TA584 Tsundere Bot campaign&nbsp;occurred on 28 November 2025 and&nbsp;impersonated the&nbsp;Health&nbsp;and Safety&nbsp;Executive&nbsp;(HSE).&nbsp;Other Tsundere Bot campaigns&nbsp;observed&nbsp;in December include impersonating&nbsp;document review tools, construction companies, and mobile providers.&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 13" data-entity-type="file" data-entity-uuid="f6ce9a33-057e-40c2-9632-0bc9e17f5e0e" height="650" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.18.52%E2%80%AFAM.png" width="693" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;13.</strong> HSE lure.&nbsp;&nbsp;</em></p>
+
+<p>In this email, which is a typical lure style for the threat actor, TA584 is asking&nbsp;for recipients to&nbsp;provide requested information&nbsp;by clicking unique URLs that will redirect to a landing page with a CAPTCHA, if IP filtering and geofencing checks are passed.&nbsp;</p>
+
+<p><img alt="Figure 14" data-entity-type="file" data-entity-uuid="e212ed5f-0e10-49e2-87fe-9acbab9e6485" height="476" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.19.02%E2%80%AFAM.png" width="826" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;14.</strong> HSE themed CAPTCHA.&nbsp;</em></p>
+
+<p>If the CAPTCHA is resolved, a&nbsp;ClickFix&nbsp;page will be displayed which guides users to follow instructions which, if completed, runs a PowerShell command.&nbsp;&nbsp;</p>
+
+<p><img alt="Figure 15" data-entity-type="file" data-entity-uuid="86ca7112-1d9f-49a9-a4fd-6116de4793e5" height="526" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.19.11%E2%80%AFAM.png" width="820" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;15. </strong>ClickFix&nbsp;steps.&nbsp;</em></p>
+
+<p>This command, in turn, runs a remote intermediate PowerShell script that is&nbsp;likely generated&nbsp;from the Tsundere Bot malware panel. The remote script installs Node.js and its dependencies directly from nodejs[.]org, then decrypts two AES-encrypted embedded Node.js files: one loader script, which&nbsp;subsequently&nbsp;loads the second script, the Tsundere Bot itself.&nbsp;</p>
+
+<p><img alt="Figure 16" data-entity-type="file" data-entity-uuid="899bb1b7-9fd7-4732-ae3e-848e481b5883" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.26.33%E2%80%AFAM.png" width="1138" height="1414" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;16. </strong>TA584&nbsp;PowerShell&nbsp;script.&nbsp;&nbsp;</em></p>
+
+<p>Tsundere Bot retrieves its C2 address from the Ethereum blockchain using a variant of the&nbsp;EtherHiding&nbsp;technique,&nbsp;or a hardcoded C2 fallback, profiles the computer, sends this profiling information to the C2 (193[.]17[.]183[.]126:3001), and then waits for&nbsp;additional&nbsp;Node[.]js-based payloads.&nbsp;&nbsp;</p>
+
+<p>Notably, while the PowerShell installer script&nbsp;contains&nbsp;English, the Node.js scripts are commented in Russian and include logic to abort execution if the malware detects that it is running on a system&nbsp;located&nbsp;in a CIS country.&nbsp;</p>
+
+<p>While the contract can be updated to point to a new C2, the contract used in this infection chain has had the same C2 configured since its first transaction on 6 August&nbsp;2025.&nbsp;&nbsp;</p>
+
+<h4>XWorm&nbsp;“P0WER”&nbsp;</h4>
+
+<p>Since&nbsp;XWorm&nbsp;is a well-known malware, we&nbsp;won’t&nbsp;go into details here&nbsp;but&nbsp;include&nbsp;summary&nbsp;of what the&nbsp;“P0WER”&nbsp;configuration&nbsp;means, and how&nbsp;TA584 uses it in their attack chain. Just as with&nbsp;Tsundere Bot,&nbsp;the&nbsp;“P0WER” variant of this&nbsp;malware&nbsp;is&nbsp;likely a&nbsp;complete&nbsp;product that is sold as a&nbsp;MaaS. The name “P0WER” that Proofpoint is using for this configuration is taken from the AES Key&nbsp;used in this specific&nbsp;version.&nbsp;And just as with other malware&nbsp;distributed by TA584, this configuration has also been seen from other&nbsp;unrelated&nbsp;clusters, which also use the same&nbsp;execution method as TA584.&nbsp;</p>
+
+<p>Just as with&nbsp;the Tsundere Bot chain,&nbsp;the infection starts with&nbsp;PowerShell running a remote&nbsp;PowerShell script.&nbsp;Due to the similarity in&nbsp;the execution of this&nbsp;variant from other clusters,&nbsp;it’s&nbsp;likely that this&nbsp;script is built with a&nbsp;malware builder&nbsp;from a&nbsp;MaaS. While the&nbsp;obfuscation&nbsp;of the installation script has changed since the&nbsp;variant first was&nbsp;observed,&nbsp;and&nbsp;additional&nbsp;obfuscation of the&nbsp;binaries, the&nbsp;functionality&nbsp;remains&nbsp;the same.&nbsp;</p>
+
+<p>The script begins by disabling AMSI scanning via a reflection trick that forces an initialization failure (amsiInitFailed), ensuring the rest of the code runs unmonitored. It suppresses errors to stay quiet and reconstructs two hidden Base64 blobs using string replacements. The first blob is a custom .NET loader, which is reflectively loaded into memory; the second is the&nbsp;XWorm&nbsp;malware executable.&nbsp;</p>
+
+<p><img alt="Figure 17" data-entity-type="file" data-entity-uuid="8fdcb0cd-3bfc-40e3-a95c-c56ac764c102" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.26.43%E2%80%AFAM.png" width="1134" height="636" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;17.</strong> XWorm&nbsp;P0WER PowerShell script used by TA584 in April 2025.&nbsp;</em></p>
+
+<p>To execute the malware, the script invokes a method called BIG.BOOM. This method performs process hollowing, a technique where the loader starts a legitimate, signed Microsoft utility, RegSvcs[.]exe, in a suspended state, empties its memory, and replaces it with the&nbsp;XWorm&nbsp;payload.&nbsp;</p>
+
+<p><img alt="Figure 18" data-entity-type="file" data-entity-uuid="4a44f7d5-ecc9-49e2-8a3d-8414a2c240a1" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.26.55%E2%80%AFAM.png" width="1430" height="314" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;18.</strong> Xworm&nbsp;P0WER PowerShell script with XOR obfuscation used by TA584 in December 2025.&nbsp;</em></p>
+
+<p><img alt="Figure 19" data-entity-type="file" data-entity-uuid="352a0020-afb6-4984-b568-a58e583f037c" src="/sites/default/files/inline-images/Screenshot%202026-01-26%20at%208.27.02%E2%80%AFAM.png" width="1420" height="570" loading="lazy"></p>
+
+<p><em><strong>Figure&nbsp;19. </strong>Same as&nbsp;Figure&nbsp;18&nbsp;script with as much obfuscation removed as possible, while still showing the functionality as used by the actor.&nbsp;</em></p>
+
+<p>This makes the detonation effectively file-less, as the malware&nbsp;resides&nbsp;entirely in RAM and masks its activity under the identity of a trusted system process. Finally, the script wipes the clipboard to remove traces of the&nbsp;initial&nbsp;ClickFix&nbsp;command.&nbsp;</p>
+
+<p>Once active in memory, the&nbsp;XWorm&nbsp;client communicates with its C2 server to pull down secondary modules, including a persistence plugin built with&nbsp;<a href="https://github.com/outflanknl/SharpHide" rel="noreferrer noopener" target="_blank">SharpHide</a>. This tool manipulates the Windows Registry by inserting null-byte characters (\x00) into the key names. Because many standard Windows APIs and management tools (like Regedit.exe) treat the null byte as a string terminator, the entry becomes effectively invisible to basic enumeration, hiding the malicious "Run" key from casual inspection.&nbsp;</p>
+
+<p>This hidden key&nbsp;establishes&nbsp;an&nbsp;execution chain that triggers every system boot:&nbsp;</p>
+
+<p>The key launches&nbsp;mshta&nbsp;which executes a VBScript one-liner that instantiates the&nbsp;WScript.Shell&nbsp;COM object. This object is used to execute a PowerShell process with the&nbsp;WindowStyle&nbsp;set to 0 (hidden), preventing any console window from appearing to the user.&nbsp;&nbsp;</p>
+
+<p>The spawned PowerShell process decodes a Base64-encoded string to run another remote PowerShell script, which normally&nbsp;contains&nbsp;the same installation script as the one initially executed. However, by fetching the payload dynamically from an external IP on each boot, the attacker ensures the infection is modular. This allows for C2 infrastructure migration or the delivery of&nbsp;additional&nbsp;malware without needing to&nbsp;modify&nbsp;the local persistence entry,&nbsp;maintaining&nbsp;a persistent, "effectively file-less" foothold that is difficult to disrupt through standard file-system cleanup.&nbsp;</p>
+
+<h3>Attribution&nbsp;</h3>
+
+<p>Proofpoint assesses with high&nbsp;confidence&nbsp;this actor is&nbsp;an initial&nbsp;access broker with infections that can lead to ransomware. TA584 is a sophisticated cybercriminal threat actor that has&nbsp;maintained&nbsp;operational consistency&nbsp;since at least&nbsp;2020.&nbsp;Based on the malware used and artifacts in the attack chains,&nbsp;it is likely this actor is&nbsp;plugged in to the Russian cybercriminal ecosystem&nbsp;and underground markets.&nbsp;</p>
+
+<h3>Defensive recommendations&nbsp;</h3>
+
+<ul>
+	<li>Restrict users from running PowerShell unless necessary for their job function.&nbsp;</li>
+	<li>Use application control policies (like AppLocker or Windows Defender Application Control) to prevent the execution of tools like node.exe from non-standard, user-writable locations such as “C:\Users\*\AppData\Local\”.&nbsp;</li>
+	<li>Create detection rules for powershell[.]exe or cmd[.]exe spawning a node[.]exe process, especially when node[.]exe&nbsp;is located in&nbsp;a user's&nbsp;AppData&nbsp;or other non-standard locations.&nbsp;</li>
+	<li>Block or monitor Ethereum endpoints. The malware relies on a hardcoded list of public Ethereum RPC providers to retrieve its C2 server address. Blocking (or, monitoring) outbound traffic to these specific URLs at the network&nbsp;firewall&nbsp;or web proxy can prevent the malware from receiving its instructions.&nbsp;</li>
+	<li>Monitor and inspect WebSocket traffic. The malware uses&nbsp;WebSockets&nbsp;(ws:// or wss://) for C2 communication. Implement network monitoring to detect and inspect WebSocket connections to unknown or uncategorized domains.&nbsp;</li>
+	<li>Consider disabling&nbsp;Windows+R&nbsp;via Group Policy&nbsp;for users who do not need it for their job function.&nbsp;&nbsp;</li>
+	<li>Organizations should train users to identify the activity and report suspicious activity to their security teams.&nbsp;This is&nbsp;very specific&nbsp;training but can be integrated into an existing user training program. </li>
+</ul>
+
+<h3 aria-level="3" paraeid="{e0f95cbe-d408-44f0-b460-f03c5c35fa63}{244}" paraid="41807819" role="heading">Conclusion&nbsp;</h3>
+
+<p paraeid="{e0f95cbe-d408-44f0-b460-f03c5c35fa63}{250}" paraid="25216981">The cybercriminal threat landscape has experienced dramatic shifts in behaviors, targeting, and malware use&nbsp;over the last year, with many priority threat actors disappearing from email threat data in 2025. TA584, however, bucks this trend and has&nbsp;demonstrated&nbsp;consistent&nbsp;patterns of behavior and targeting since 2020, with recent shifts that&nbsp;demonstrate&nbsp;the actor is&nbsp;attempting&nbsp;to infect a broader range of targets. Proofpoint&nbsp;assesses it’s likely&nbsp;TA584 will increase targeting in Europe in 2025.&nbsp;It is also possible the threat actor will&nbsp;continue experimenting with different payloads, like Tsundere Bot or other&nbsp;remote access payloads newly available for sale on criminal markets.&nbsp;&nbsp;</p>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{23}" paraid="1275613656">Organizations should&nbsp;be aware of techniques used by TA584 and&nbsp;implement preventative&nbsp;defensive measures including&nbsp;restricting&nbsp;users from running PowerShell unless&nbsp;required&nbsp;for&nbsp;job&nbsp;functions and&nbsp;blocking known TA584&nbsp;hosts.&nbsp;</p>
+
+<h3 aria-level="3" paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{47}" paraid="1896528271" role="heading">Example Emerging Threats rules&nbsp;</h3>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{53}" paraid="377465516"><a href="https://threatintel.proofpoint.com/sid/2865239" rel="noreferrer noopener" target="_blank">2865239</a>&nbsp;– Win32/xworm&nbsp;V2&nbsp;CnC&nbsp;Command - RD- Inbound &nbsp;</p>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{75}" paraid="1904362106"><a href="https://threatintel.proofpoint.com/sid/2865240" rel="noreferrer noopener" target="_blank">2865240</a>&nbsp;–&nbsp;Win32/xworm&nbsp;V3&nbsp;CnC&nbsp;Command -&nbsp;sendPlugin&nbsp;&nbsp;</p>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{101}" paraid="1975344712"><a href="https://threatintel.proofpoint.com/sid/2865241" rel="noreferrer noopener" target="_blank">2865241</a>&nbsp;–&nbsp;Win32/xworm&nbsp;V3&nbsp;CnC&nbsp;Command -&nbsp;Informations&nbsp;Outbound&nbsp;</p>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{127}" paraid="36248137"><a href="https://threatintel.proofpoint.com/sid/2865163" rel="noreferrer noopener" target="_blank">2865163</a>&nbsp;– Win32/xworm&nbsp;v3&nbsp;CnC&nbsp;Command -&nbsp;PCShutdown&nbsp;Inbound&nbsp;</p>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{151}" paraid="2142042808"><a href="https://threatintel.proofpoint.com/sid/2865200" rel="noreferrer noopener" target="_blank">2865200</a>&nbsp;– Win32/xworm&nbsp;v3&nbsp;CnC&nbsp;Command -&nbsp;savePlugin&nbsp;Inbound&nbsp;</p>
+
+<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{175}" paraid="1271442550"><a href="https://threatintel.proofpoint.com/sid/2033355" rel="noreferrer noopener" target="_blank">2033355</a>&nbsp;–&nbsp;ET INFO Windows&nbsp;Powershell&nbsp;User-Agent Usage&nbsp;</p>
+
+<h3 aria-level="3" paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{193}" paraid="1425887299" role="heading">Example indicators of compromise&nbsp;&nbsp;</h3>
+
+<table aria-rowcount="10" border="1" data-tablelook="1184" data-tablestyle="MsoTableGrid" dir="ltr">
+	<tbody>
+		<tr aria-rowindex="1" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{205}" paraid="2107425706"><strong>Indicator&nbsp;</strong></p>
+			</td>
+			<td data-celllook="0" role="columnheader">
+			<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{212}" paraid="34293657"><strong>Description&nbsp;</strong></p>
+			</td>
+			<td data-celllook="0" role="columnheader">
+			<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{219}" paraid="96890677"><strong>First Seen</strong>&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="2" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{6ad22379-3f13-40a1-9b67-3d0727727724}{227}" paraid="1579478542">94[.]159[.]113[.]37&nbsp;&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{5}" paraid="1238205107">TA584&nbsp;Host&nbsp;|&nbsp;AS216234&nbsp;Komskov&nbsp;Vadim&nbsp;Aleksandrovich&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{24}" paraid="1813770567">April 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="3" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{32}" paraid="1191982606">85[.]236[.]25[.]119&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{63}" paraid="981637630">Tsundere Bot C2&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{70}" paraid="1062893087">9 December 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="4" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{78}" paraid="442245316">80[.]64[.]19[.]148&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{109}" paraid="1533134549">XWorm&nbsp;C2&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{118}" paraid="1360383000">10 November 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="5" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{126}" paraid="1464332171">85[.]208[.]84[.]208&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{157}" paraid="2109570818">XWorm&nbsp;C2&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{166}" paraid="1774089708">9 September 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="6" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{174}" paraid="328408030">178[.]16[.]52[.]242&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{205}" paraid="228644189">XWorm&nbsp;C2&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{214}" paraid="1847988153">27 October 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="7" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{222}" paraid="1206232531">94[.]159[.]113[.]64&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{31eb23f9-218d-41ef-8532-311f7d2b2b30}{253}" paraid="1343715277">XWorm&nbsp;C2&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f85f85d8-ba83-4058-aa94-dc3285df7bbb}{7}" paraid="794550207">28 March 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="8" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{f7c925ba-245f-4541-9577-cdaa43486f93}{141}" paraid="2106819780">hxxp://94[.]159[.]113[.]37/ssd[.}png&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f7c925ba-245f-4541-9577-cdaa43486f93}{146}" paraid="1766167552">ClickFix&nbsp;Payload URL&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f7c925ba-245f-4541-9577-cdaa43486f93}{151}" paraid="523262346">September 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="9" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{f7c925ba-245f-4541-9577-cdaa43486f93}{246}" paraid="2133837248">bbedc389af45853493c95011d9857f47241a36f7f159305b097089866502ac99&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f7c925ba-245f-4541-9577-cdaa43486f93}{251}" paraid="627215668">SHA256 Remote PowerShell Script Leading to&nbsp;XWorm&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f63a6cc5-2a78-40bd-8f5c-fadebc043925}{1}" paraid="223450231">December 2025&nbsp;</p>
+			</td>
+		</tr>
+		<tr aria-rowindex="10" role="row">
+			<td data-celllook="0" role="rowheader">
+			<p paraeid="{f63a6cc5-2a78-40bd-8f5c-fadebc043925}{6}" paraid="1701289716">441c49b6338ba25519fc2cf1f5cb31ba51b0ab919c463671ab5c7f34c5ce2d30&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f63a6cc5-2a78-40bd-8f5c-fadebc043925}{11}" paraid="279619579">SHA256&nbsp;XWorm&nbsp;SharpHide&nbsp;Payload&nbsp;</p>
+			</td>
+			<td data-celllook="0">
+			<p paraeid="{f63a6cc5-2a78-40bd-8f5c-fadebc043925}{16}" paraid="325906763">December 2025&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+  </div>
+
+      <div class="blog__content-pager">
+      
+  <div class="content-pager _legacy_blocks _content_pager">
+    <div class="content-pager__items-wrapper">
+      <div class="content-pager__items">
+        <div class="content-pager__item content-pager__item--prev">
+          <a href="/us/blog/threat-insight/access-granted-phishing-device-code-authorization-account-takeover" hreflang="en">Previous Blog Post</a>
+        </div>
+        <div class="content-pager__item content-pager__item--next">
+          <a href="/us/blog/threat-insight/dont-trustconnect-its-a-rat" hreflang="en">Next Blog Post</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+        
+
+
+
+
+  
+        
+<div class="subscribe-block blog-subscribe _legacy_blocks _subscribe-block subscribe-block--black blog-subscribe--black v3-dark-bg-only" data-animate="true">
+  <div class="subscribe-block__inner blog-subscribe__inner">
+    <div class="subscribe-block__copy">
+      
+
+      
+<h3 class="subscribe-block__heading">
+      Subscribe to the Proofpoint Blog
+  </h3>
+
+          </div>
+    <div class="subscribe-block__form">
+        <div class="mk-form">
+  <div class="mk-form__form-container _legacy_element _marketo_form">
+    <script type="IN/Form2"
+      data-data-form="mktoForm_19277"
+      data-field-firstname="FirstName"
+      data-field-lastname="LastName"
+      data-field-email="Email"
+      data-field-company="Company"
+      data-field-title="Title"
+      data-field-state="State"
+      data-field-country="Country"
+    ></script>
+    <form
+      id="mktoForm_19277"
+      data-mkto-id="19277"
+      data-mkto-base="//go.proofpoint.com"
+      data-munchkin-id="309-RHV-619"
+      data-submit-text=""
+      data-redirect-link=""
+      data-prefill=""
+      data-event-label=""
+      data-lang-code="us"
+      data-validate-email="1"
+      data-allow-personal-email-amer="false"
+      class="mk-form__form marketo-form-block__form"
+    ></form>
+  </div>
+</div>
+
+  
+
+
+    </div>
+  </div>
+</div>
+
+
+
+  </article>
+
+
+
+
+  </main>
+
+  
+
+
+
+<footer class="veridianx-footer veridianx-footer--us">
+  <div class="container">
+    <div class="veridianx-footer__inner">
+              <nav class="veridianx-footer__nav" aria-label="Footer navigation">
+                                                        <div class="order-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Products</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Products footer links" aria-expanded="false" aria-controls="veridianx-footer-1-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-1-1">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/platform">
+                            Platform Overview
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/products/collaboration-security-prime">
+                            Collaboration Security
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/products/data-security-governance">
+                            Data Security and Governance
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/platform/ai-security">
+                            AI Security
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Partners</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Partners footer links" aria-expanded="false" aria-controls="veridianx-footer-1-2" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-1-2">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/channel-partners-and-distributors">
+                            Channel Partners and Distributors
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/partners/msp">
+                            MSP Partners
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/partners/technology-alliance-partners">
+                            Technology and Alliance Partners
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                                              <div class="order-1 order-md-3 order-xl-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Get Support</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Get Support footer links" aria-expanded="false" aria-controls="veridianx-footer-2-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-2-1">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="https://proofpoint.my.site.com/community/s/" target="_blank" rel="noopener">
+                            Product Support Login
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/support-services">
+                            Support Services
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/postmaster">
+                            IP Address Blocked?
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                                              <div class="order-1 order-md-2 order-xl-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">More</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle More footer links" aria-expanded="false" aria-controls="veridianx-footer-3-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-3-1">
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/company/about">
+                            About Proofpoint
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/why-proofpoint">
+                            Why Proofpoint
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/products/how-to-buy/collaboration-security">
+                            How to Buy
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/company/careers">
+                            Careers
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/company/leadership">
+                            Leadership Team
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/newsroom">
+                            News Center
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/legal/trust">
+                            AI, Privacy, and Trust
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="https://www.proofpoint-total-protection.com/" target="_blank" rel="noopener">
+                            Hornetsecurity
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                                              <div class="order-1 order-md-4 order-xl-1 veridianx-footer__group">
+                                                              <section class="veridianx-footer__section" data-footer-section>
+                  <h2 class="veridianx-footer__heading">
+                    <span class="veridianx-footer__heading-link">Connect with Us</span>
+                    <button class="veridianx-footer__toggle" type="button" aria-label="Toggle Connect with Us footer links" aria-expanded="false" aria-controls="veridianx-footer-4-1" data-footer-toggle>
+                      <span class="veridianx-footer__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                  </h2>
+
+                  <div class="veridianx-footer__section-body" id="veridianx-footer-4-1">
+                                            <ul class="veridianx-footer__social">
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--facebook" href="https://www.facebook.com/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--x" href="https://x.com/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">X</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--linkedin" href="https://www.linkedin.com/company/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">LinkedIn</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--youtube" href="https://www.youtube.com/channel/UCIvtJgsrUzFo90NKeiVozhQ" target="_blank" rel="noopener">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </li>
+          <li>
+        <a class="veridianx-footer__social-link veridianx-footer__social-link--instagram" href="https://www.instagram.com/proofpoint" target="_blank" rel="noopener">
+          <span class="visually-hidden">Instagram</span>
+        </a>
+      </li>
+      </ul>
+                    
+                    <ul class="veridianx-footer__list">
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="tel:+14085174710">
+                            +1 408 517 4710
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/events">
+                            Attend an Event
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/contact">
+                            Contact Us
+                          </a>
+                        </li>
+                                              <li class="veridianx-footer__item">
+                          <a class="veridianx-footer__link" href="/us/free-demo-request">
+                            Free Demo Request
+                          </a>
+                        </li>
+                                          </ul>
+                  </div>
+                </section>
+                          </div>
+                  </nav>
+      
+      <div class="veridianx-footer__bottom">
+        <a class="veridianx-footer__logo" href="/us">
+          <span class="visually-hidden">Proofpoint home</span>
+        </a>
+
+                  <ul class="veridianx-footer__legal">
+                          <li>
+                                  <a class="veridianx-footer__legal-link" href="/us/legal/license">
+                    Terms and Conditions
+                  </a>
+                              </li>
+                          <li>
+                                  <a class="veridianx-footer__legal-link" href="/us/legal/privacy-policy">
+                    Privacy Policy
+                  </a>
+                              </li>
+                          <li>
+                                  <a class="veridianx-footer__legal-link" href="/us/sitemap">
+                    Sitemap
+                  </a>
+                              </li>
+                          <li>
+                                  <button id="ot-sdk-btn" class="veridianx-footer__legal-link ot-sdk-show-settings" type="button">
+                    Cookie Settings
+                  </button>
+                              </li>
+                      </ul>
+        
+        <p class="veridianx-footer__copyright">
+          &copy; 2026. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+    <script type="text/javascript">document.write(unescape("%3Cscript src='//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E")); </script> <script>Munchkin.init('309-RHV-619');</script><div class="element-invisible" style="clear:both;"><!-- Google Code for Remarketing Tag -->
+                <!--------------------------------------------------
+                Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+                --------------------------------------------------->
+                <script type="text/javascript">
+                /* <![CDATA[ */
+                var google_conversion_id = 950296937;
+                var google_custom_params = window.google_tag_params;
+                var google_remarketing_only = true;
+                /* ]]> */
+                </script>
+                <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+                </script>
+                <noscript>
+                <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/950296937/?value=0&amp;guid=ON&amp;script=0"/>
+                </div>
+                </noscript></div>
+    <div id="flyout-container"></div>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"us\/","currentPath":"node\/145172","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJxlkFFuAyEMRC8UhPrX20S21wW0gFfGVM3tA5soIeoPkp8Zj8cHqCXK7DFLuBxr5VrHRpqQF64MG2kv2N6QpBpXcwcE1hXrogxZELLjzGX8XdRBJGR2P_JB4_BJddkocwC6uTnUUWv_Go_5Cy-gO5uMwVrc5y6vYG7kpP3d-GVNW4L6N1RiM8xxTV_f1WeooY94bmNjMjk7TwdfeqW4pzpZY1CKvluau4w6gg7D-VpMJ7I4TuANsALimfHFRDKCXtqtGReP0PgOtSqgoQ","theme":"particle","theme_token":null},"ajaxTrustedUrl":[],"vwo":{"id":1002484,"timeout_library":2500,"timeout_setting":2000,"usejquery":"false","testnull":null},"pp_i18n":{"language":"us"},"instantsearch":{"indexName":"content","path":"us\/search"},"node":{"contentType":"Blog post"},"user":{"uid":0,"permissionsHash":"d2c690dc50aab9a747cb007581c42f03855e8fe2ed922e6706b178b00522f212"}}</script>
+<script src="/sites/default/files/js/js_Cqv5G6EEa2Ko46nk7wBQlluQdwwh0V5m_Eqt14yshOo.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+<script src="/themes/custom/proofpoint/apps/drupal/../../dist/app-drupal/assets/js/app.js?q=tMLG0Cyxtmc&amp;v=1"></script>
+<script src="//go.proofpoint.com/js/forms2/js/forms2.min.js"></script>
+<script src="/sites/default/files/js/js_WGd_XpYAz7fd5Sh0XO89un34RdZGW01POvnOjZ4lcfc.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+<script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js"></script>
+<script src="/sites/default/files/js/js_dfzxI1kBLIpbsNtAM8XOdI0AdbyzPfJ9AFJNYycoYfA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+<script src="//munchkin.marketo.net/munchkin.js"></script>
+<script src="/sites/default/files/js/js_RvylBOqqv8F1IZ4XsVsRq53zZ7n9Dd_ZdTQVYICPjX0.js?scope=footer&amp;delta=7&amp;language=en&amp;theme=particle&amp;include=eJxNi1EKAyEMRC-0EvrX25RoU5OuJhLj_ctKC_0ZmPdmBnpIaQTFnI7xax39pLD0Mu_pPY8xHnK7KzTUurBSelJQCfPLfMfQlxY-RS82Cb0wrJC235PRCXYGy0bB1AkCs2LOovWPmbWM_gFlLDxX"></script>
+
+  </body>
+</html>

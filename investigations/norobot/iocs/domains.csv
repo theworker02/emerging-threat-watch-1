@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+inspectguarantee.org,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,delivery,norobot
+captchanom.top,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,delivery,norobot
+viewerdoconline.com,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,COLDCOPY,norobot
+documentsec.com,domain,,,Google GTIG,High,norobot,CAMPAIGN ASSOCIATED,COLDCOPY,norobot

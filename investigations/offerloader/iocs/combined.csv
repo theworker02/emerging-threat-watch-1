@@ -1,0 +1,6 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+7f792c45de1e28fd42ac44c9444f157a2161742d130bac336c0e991aabbb112c,sha256,,,Palo Alto Networks Unit 42,High,offerloader,CAMPAIGN ASSOCIATED,windirstat.exe OfferLoader,offerloader
+fc485882626512e7ff82a1d7cd8e8fb3e9751b026d97e682d6908aefff1f2d73,sha256,,,Palo Alto Networks Unit 42,High,offerloader,CAMPAIGN ASSOCIATED,windirstat.tmp,offerloader
+noiseship.cfd,domain,,,Palo Alto Networks Unit 42,High,offerloader,CAMPAIGN ASSOCIATED,SEO lure,offerloader
+voyagemist.space,domain,,,Palo Alto Networks Unit 42,High,offerloader,CAMPAIGN ASSOCIATED,loader beacon gate,offerloader
+dinosaursjam.cfd,domain,,,Palo Alto Networks Unit 42,High,offerloader,CAMPAIGN ASSOCIATED,gate/landing pattern exemplar,offerloader

@@ -1,0 +1,5 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+297EB45F028D44D750297D2F932B9C91,md5,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,st.txt,smartrat
+6BF4D4C62B5138ACE281CE3D08297787,md5,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,payload.php,smartrat
+3C72E1F37F115B00C3AD6ED31BACFE8A,md5,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,PowerShell RAT,smartrat
+B17CCDB5531555E43F082D6E77C07227,md5,,,Zscaler ThreatLabz,High,smartrat,CAMPAIGN ASSOCIATED,PowerShell RAT,smartrat

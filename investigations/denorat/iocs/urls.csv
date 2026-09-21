@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+http://webstizkgao.com/message-event,url,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,DenoRAT tasks,denorat
+http://webstizkgao.com/health,url,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,health,denorat
+http://webstizkgao.com/user,url,,,eSentire TRU,High,denorat,CAMPAIGN ASSOCIATED,registration,denorat

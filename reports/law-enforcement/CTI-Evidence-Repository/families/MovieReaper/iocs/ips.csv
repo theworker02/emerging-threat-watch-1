@@ -1,0 +1,4 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+193.23.118.155,ip,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,First-stage C2 fallback,moviereaper
+208.64.33.90,ip,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,Second-stage C2,moviereaper
+208.94.246.53,ip,,,Kaspersky GReAT,High,moviereaper,CAMPAIGN ASSOCIATED,Second-stage C2,moviereaper

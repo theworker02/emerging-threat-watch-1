@@ -1,0 +1,2 @@
+value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+89.125.66.101,ip,,,Kaspersky GReAT,High,genielocker,CAMPAIGN ASSOCIATED,C2 per Securelist,genielocker
