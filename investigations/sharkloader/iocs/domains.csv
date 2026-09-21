@@ -1,5 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-connect-microsoft.com,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain (defanged in article),sharkloader
-ms-record.com,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
-ms-record.top,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
-ms-tray.top,domain,2026-06,,Kaspersky,High,sharkloader,CAMPAIGN ASSOCIATED,C2 / infrastructure domain,sharkloader
+domain,source,confidence,family,status,notes
+connect-microsoft.com,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,C2 / infrastructure domain (defanged in article) NOT OBSERVED by ETW.
+ms-record.com,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,C2 / infrastructure domain NOT OBSERVED by ETW.
+ms-record.top,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,C2 / infrastructure domain NOT OBSERVED by ETW.
+ms-tray.top,https://securelist.com/strikeshark-campaign/120326/,High,sharkloader,PRIMARY,C2 / infrastructure domain NOT OBSERVED by ETW.

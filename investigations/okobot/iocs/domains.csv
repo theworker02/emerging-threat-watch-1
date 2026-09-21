@@ -1,8 +1,9 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-2baserec2.guru,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-recavb22.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-kbeautyreviews.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-coffeesaloon.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,TookPS staging,okobot
-livewallpapers.online,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
-thatwascringe.com,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,Volume2 C2,okobot
-moonsand.store,domain,2025/2026,,Kaspersky,High,okobot,CAMPAIGN ASSOCIATED,SeedHunter C2,okobot
+domain,source,confidence,family,status,notes
+2baserec2.guru,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.
+recavb22.online,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.
+kbeautyreviews.com,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.
+coffeesaloon.online,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,TookPS staging NOT OBSERVED by ETW.
+livewallpapers.online,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Volume2 C2 NOT OBSERVED by ETW.
+thatwascringe.com,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,Volume2 C2 NOT OBSERVED by ETW.
+moonsand.store,https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/,High,okobot,PRIMARY,SeedHunter C2 NOT OBSERVED by ETW.
+22tuk.digital,https://blog.gridinsoft.com/okobot-seed-phrase-malware/,High,okobot,PRIMARY,Gridinsoft high-confidence TookPS/OkoBot callback domain (unpublished in Securelist primary) NOT OBSERVED by ETW.

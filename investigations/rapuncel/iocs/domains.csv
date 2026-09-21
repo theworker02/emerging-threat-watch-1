@@ -1,2 +1,8 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-albinofennel.com,domain,,,TechTimes citing joint report,Moderate,rapuncel,CAMPAIGN ASSOCIATED,Historical association until passive recheck; not auto-malicious,rapuncel
+domain,source,confidence,family,status,notes
+albinofennel.com,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,High,rapuncel,PRIMARY,primary payload server (LastPass/Delphos). DoH 2026-09-19 NXDOMAIN (RAP-CLAIM-0038) — DNS fact only; not permanent takedown proof.
+hanselarinmusky.com,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,High,rapuncel,PRIMARY,payload server | NOT OBSERVED by ETW — primary-source only.
+icansamyope.com,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,High,rapuncel,PRIMARY,secondary payload server | NOT OBSERVED by ETW — primary-source only.
+istatlmenus.com,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,High,rapuncel,PRIMARY,dynamic traffic director | NOT OBSERVED by ETW — primary-source only.
+macperformancetools.com,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,High,rapuncel,PRIMARY,terminal domain | NOT OBSERVED by ETW — primary-source only.
+zaffersnouty.com,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,High,rapuncel,PRIMARY,terminal domain | NOT OBSERVED by ETW — primary-source only.
+ryanpresbrey.cc,https://blog.lastpass.com/posts/lastpass-delphos-report-rapuncel-infostealer,Moderate,rapuncel,PRIMARY,clustering lead | NOT OBSERVED by ETW — primary-source only.

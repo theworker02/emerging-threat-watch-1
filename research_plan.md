@@ -29,13 +29,12 @@
 | P1 | Showboat dating gap | Document ≥2022 activity vs 2026 disclosure; Linux telecom hunting |
 | P2 | Detection + IC3 | Only defensible findings; source-attributed IC3 narratives |
 
-## Immediate agent sequence
+## Research hygiene
 
-1. Save SOURCE-RAP-001 / Cynet / Huntress / MOXFIVE / Zimperium / Kaspersky HTML archives under `evidence/web/`.
-2. Archive Expel SynkLoader and Lumen Showboat primaries under `evidence/primary-sources/{synkloader,showboat}/`.
-3. Execute `shared/queries/certificate_transparency_seeds.csv` passively; store results as UNVERIFIED→OBSERVED only after retrieval.
-4. Do **not** promote Cloudflare/Azure edge IPs as actor-owned.
-5. Keep case isolation except trust-surface / COMMON TECHNIQUE comparisons. PollCat pivots do **not** auto-seed NodeRabbit.
+- Prefer PRIMARY freezes under `evidence/` before expanding narratives.
+- Execute `shared/queries/certificate_transparency_seeds.csv` passively; promote UNVERIFIED→OBSERVED only after retrieval.
+- Do **not** promote Cloudflare/Azure edge IPs as actor-owned.
+- Keep case isolation except trust-surface / COMMON TECHNIQUE comparisons. PollCat pivots do **not** auto-seed NodeRabbit.
 
 See `intelligence/priority-gaps.csv`, `docs/CANDIDATE_FAMILIES.md`, and per-family `gaps/priority-gaps.csv`.
 

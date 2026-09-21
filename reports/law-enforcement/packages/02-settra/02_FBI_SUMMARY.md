@@ -43,3 +43,11 @@ Full table: `03_INDICATORS.csv` (16 rows). No usable Settra sample SHA-256 list 
 2. Correlate MeshAgent / hostname / artifact indicators against existing holdings.
 3. Request sample acquisition through normal vendor/legal channels if needed — this package does not contain malware binaries.
 4. Keep this family separate from other Emerging Threat Watch packages unless linkage evidence appears.
+
+## Evidence inventory (ETW retained)
+
+- **Package ID:** `ETW-SET-IC3` / folder `02-settra`
+- **PRIMARY-SOURCE indicators in `03_INDICATORS.csv`:** **16** rows (**filename** ×5, **ipv4** ×2, **extension** ×2, **hostname** ×1, **path** ×1, **behavioral** ×1, **filename_pattern** ×1, **artifact** ×1, **domain** ×1, **tls_issuer** ×1)
+- **Provenance rule:** Indicators are transcribed from public vendor research only. ETW has **not** executed malware and has **not** contacted suspected C2.
+- **Local freezes:** `evidence/primary-sources/settra/` (and dual refs where noted)
+- **Caveats:** See `05_CAVEATS_AND_LIMITS.md` — author/operator identity remains NOT_ESTABLISHED by ETW unless a court/LE source states otherwise.

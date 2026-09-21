@@ -1,5 +1,11 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-52b400c5be1557a8df146f62fde76d906e7e0a92ed76788717ef61c758f315aa,sha256,,,Zscaler,High,abyssos,CAMPAIGN ASSOCIATED,v2.4F,abyssos
-ca94d95413210a2a325155740eb8a5c58627ad5c4e704478621e7fc8165fe173,sha256,,,Zscaler,High,abyssos,CAMPAIGN ASSOCIATED,v2.1F,abyssos
-213.145.86.42,ipv4,,,Zscaler,High,abyssos,CAMPAIGN ASSOCIATED,C2,abyssos
-209.99.184.223,ipv4,,,Zscaler,High,abyssos,CAMPAIGN ASSOCIATED,C2,abyssos
+indicator,type,first_seen,source,confidence,family,status,notes,case
+52b400c5be1557a8df146f62fde76d906e7e0a92ed76788717ef61c758f315aa,sha256,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Abyssos sample version 2.4F (Zscaler ThreatLabz). NOT OBSERVED by ETW.,abyssos
+ca94d95413210a2a325155740eb8a5c58627ad5c4e704478621e7fc8165fe173,sha256,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Abyssos sample version 2.1F (Zscaler ThreatLabz). NOT OBSERVED by ETW.,abyssos
+213.145.86.42,ipv4,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Abyssos C2 (Zscaler). Defanged in article as 213[.]145.86.42. NOT OBSERVED ownership by ETW. No live C2 contact.,abyssos
+209.99.184.223,ipv4,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Abyssos C2 (Zscaler). Defanged in article as 209[.]99.184.223. NOT OBSERVED ownership by ETW. No live C2 contact.,abyssos
+windows_update_cache.json,filename,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Keylogger log path under Windows TEMP (KEYLOGGER_GETLOGS).,abyssos
+%TEMP%\fontconfigs,path,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,HVNC_CLONE_START / GRABCOOKIES browser clone directory incl. cookies.json.,abyssos
+1234567890abcdef,crypto_constant,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Module XOR key and AES-CBC key/IV for several downloadable modules (Zscaler).,abyssos
+Global\68AA60E5-6C45-4C01-9F0E-E25FC57C652F,mutex,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Example mutex format Global\[UUID4] (+ _Admin/_User). Sample-specific UUID may vary.,abyssos
+HELLO|%s|%s|%s|%s|%s|v2.4F|%s|%s|%s,string,2026-06/2026-08,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Host registration format string for version 2.4F (AES-GCM custom TCP).,abyssos
+Win64.PWS.Abyssos,detection_name,2026-08-10,https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat,High,abyssos,PRIMARY,Zscaler coverage threat name.,abyssos

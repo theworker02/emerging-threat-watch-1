@@ -6,7 +6,7 @@
 
 Huntress · Zscaler ThreatLabz · Morphisec · eSentire
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://www.huntress.com/blog/clickfix-matanbuchus-astarionrat-analysis
 - https://www.zscaler.com/blogs/security-research/technical-analysis-matanbuchus-3-0

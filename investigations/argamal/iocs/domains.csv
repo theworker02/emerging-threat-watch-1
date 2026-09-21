@@ -1,7 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-asper1.freeddns.org,domain,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Early-version default C2,argamal
-Winst0.kozow.com,domain,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Latest-version default C2,argamal
-country1.ignorelist.com,domain,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,Associated infrastructure domain,argamal
-github.com/gmz159/u,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting (hxxps defanged in article),argamal
-github.com/DnyP/files,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting,argamal
-github.com/mgzv/p,url,2024/2026,,Kaspersky,High,argamal,CAMPAIGN ASSOCIATED,GitHub repo used for payload hosting,argamal
+domain,source,confidence,family,status,notes
+asper1.freeddns.org,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Early-version default C2 NOT OBSERVED by ETW.
+Winst0.kozow.com,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Latest-version default C2 NOT OBSERVED by ETW.
+country1.ignorelist.com,https://securelist.com/argamal-rat-distributed-with-hentai-games/119999/,High,argamal,PRIMARY,Associated infrastructure domain NOT OBSERVED by ETW.

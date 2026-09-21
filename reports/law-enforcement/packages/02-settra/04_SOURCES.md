@@ -6,7 +6,7 @@
 
 Cynet Research Labs; Huntress; MOXFIVE; Kaspersky GERT (WIN-LIVFRVQFMKO SSL-CN historical lead only — not Settra attribution)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://www.cynet.com/settra-ransomware-inside-a-new-enterprise-grade-extortion-threat/
 - https://www.cynet.com/blog/inside-cynets-settra-ransomware-investigation/

@@ -1,0 +1,2 @@
+domain,source,confidence,family,status,notes
+id-manulife.com,https://urlscan.io/api/v1/search/?q=ip:193.5.65.114,Low,settra,PRIMARY,Historical domain resolving to MeshAgent IP 193.5.65.114 (MeshCentral UI). INFRASTRUCTURE_OVERLAP / UNKNOWN — not Settra-exclusive.

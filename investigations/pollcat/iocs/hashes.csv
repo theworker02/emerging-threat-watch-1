@@ -1,2 +1,3 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-795e053a990a1569ffdcb57f48f6d085,md5,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,RankChallenge-react-6uJSX3-main.zip,pollcat
+hash,hash_type,source,confidence,family,status,notes
+795e053a990a1569ffdcb57f48f6d085,md5,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,RankChallenge-react-6uJSX3-main.zip PollCat lure. Was mis-tagged NRB-IND-0011; keep NRB cross-ref only. SHA-256 unresolved.
+f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef,sha256,https://www.cyberveille.fr/,High,pollcat,PRIMARY,Cyberveille PollCat-context PRIMARY SHA-256 (verify dual Securelist provenance) NOT OBSERVED by ETW.

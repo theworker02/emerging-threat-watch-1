@@ -38,3 +38,11 @@ Full table: `03_INDICATORS.csv` (19 SHK-IND rows). Dossier: `IC3_FULL_PACKAGE.md
 
 1. Treat as defensive threat-intelligence referral.
 2. Keep **separate** from other ETW packages.
+
+## Evidence inventory (ETW retained)
+
+- **Package ID:** `ETW-SHK-IC3` / folder `09-sharkloader`
+- **PRIMARY-SOURCE indicators in `03_INDICATORS.csv`:** **21** rows (**md5** ×10, **domain** ×4, **filename** ×3, **path** ×2, **string** ×2)
+- **Provenance rule:** Indicators are transcribed from public vendor research only. ETW has **not** executed malware and has **not** contacted suspected C2.
+- **Local freezes:** `evidence/primary-sources/sharkloader/` (and dual refs where noted)
+- **Caveats:** See `05_CAVEATS_AND_LIMITS.md` — author/operator identity remains NOT_ESTABLISHED by ETW unless a court/LE source states otherwise.

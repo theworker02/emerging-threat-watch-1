@@ -17,3 +17,9 @@ Kaspersky GReAT / Securelist
 ## Provenance rule
 
 These URLs are **PRIMARY-SOURCE** publications. Retrieving or retaining them does **not** make infrastructure `OBSERVED` by the Emerging Threat Watch investigation.
+
+## Dual / companion freezes
+
+- Securelist Mirage Kitten / NodeRabbit–PollCat dual article (PollCat sections only for this package)
+- Cyberveille PollCat French mirror — `evidence/primary-sources/pollcat/cyberveille-pollcat-fr.html`
+- Dual-reference note — `evidence/primary-sources/pollcat/DUAL_REFERENCE.md`

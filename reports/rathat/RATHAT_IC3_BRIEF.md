@@ -2,7 +2,7 @@
 
 **Canonical filing package:** [`../law-enforcement/packages/03-rathat/`](../law-enforcement/packages/03-rathat/)  
 **Package ID:** `ETW-RAT-IC3`  
-**Status:** DRAFT — do not auto-submit · **Cutoff:** 2026-09-19  
+**Status:** Human review required — do not auto-submit · **Cutoff:** 2026-09-19  
 **Independently observed by ETW:** none
 
 Use the law-enforcement package for all FBI/IC3 work. This file is a short index only.
@@ -10,7 +10,7 @@ Use the law-enforcement package for all FBI/IC3 work. This file is a short index
 | Need | File |
 |------|------|
 | Cover + integrity gate | `00_COVER_SHEET.md` |
-| Paste into IC3 | `01_NARRATIVE_PASTE.txt` |
+| See structured dossier | `01_NARRATIVE_PASTE.txt` |
 | FBI / field office | `02_FBI_SUMMARY.md` |
 | Indicators CSV | `03_INDICATORS.csv` |
 | Sources | `04_SOURCES.md` |

@@ -1,0 +1,28 @@
+# Vendor / CERT / infra brief — TencShell (`ETW-TEN-IC3`)
+
+**Audience:** Vendor PSIRT / CERT / hosting abuse (after IC3)  
+**Structured dossier:** see package `IC3_FULL_PACKAGE.md` + `02_FBI_SUMMARY.md`
+**PRIMARY:** Cato CTRL; Hunt.io follow-on  
+**Case isolation:** TencShell only — no shared-operator claim with other ETW families.
+
+## One-paragraph referral
+
+Emerging Threat Watch is retaining PRIMARY-SOURCE public research on **TencShell**, a remote-access / intrusion toolset documented by Cato CTRL (2026) with Hunt.io infrastructure follow-on. ETW transcribed published indicators into package `ETW-TEN-IC3` and has **not** executed samples or contacted suspected C2. Operator legal identity is **NOT_ESTABLISHED** by ETW; China-linked framing is vendor assessment only.
+
+## Useful pointers
+
+- Package: `reports/law-enforcement/packages/10-tencshell/`
+- Indicators: `03_INDICATORS.csv` (TEN-IND rows)
+- Caveats: `05_CAVEATS_AND_LIMITS.md`
+- Repo: https://github.com/theworker02/emerging-threat-watch-1
+
+## Preferred public contacts
+
+- CERT/CC: `cert@cert.org`
+- CISA Central: `Contact@mail.cisa.dhs.gov`
+- Do **not** use Cato `vulnerability-report@catonetworks.com` for this TI referral (product CNA only)
+- Draft: [`../email-drafts/10-tencshell.txt`](../email-drafts/10-tencshell.txt) · private pack: `../../private/vendor-submissions/10-tencshell/`
+
+## Hosting abuse gate
+
+Require non-CDN IP + port + timed PCAP + sample SHA-256 before ASN tickets. See [`docs/ENFORCEMENT_READINESS.md`](../../../../docs/ENFORCEMENT_READINESS.md).

@@ -31,3 +31,11 @@ Full table: `03_INDICATORS.csv` (28 MAT-IND rows). Dossier: `IC3_FULL_PACKAGE.md
 1. Treat as defensive threat-intelligence referral material (not yet filed unless separately recorded).
 2. Keep **separate** from other ETW packages.
 3. Do not invent additional IOCs beyond the primary freeze.
+
+## Evidence inventory (ETW retained)
+
+- **Package ID:** `ETW-MAT-IC3` / folder `14-matanbuchus`
+- **PRIMARY-SOURCE indicators in `03_INDICATORS.csv`:** **34** rows (**sha256** ×19, **domain** ×8, **url** ×2, **string** ×2, **ipv4** ×2, **path** ×1)
+- **Provenance rule:** Indicators are transcribed from public vendor research only. ETW has **not** executed malware and has **not** contacted suspected C2.
+- **Local freezes:** `evidence/primary-sources/matanbuchus/` (and dual refs where noted)
+- **Caveats:** See `05_CAVEATS_AND_LIMITS.md` — author/operator identity remains NOT_ESTABLISHED by ETW unless a court/LE source states otherwise.

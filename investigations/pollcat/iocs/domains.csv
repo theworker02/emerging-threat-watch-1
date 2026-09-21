@@ -1,5 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-sahi-finance.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 register #1,pollcat
-gamebarappinformation.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #2,pollcat
-gamebarapp.azurewebsites.net,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,C2 #3,pollcat
-lifespotify.com,domain,,,Kaspersky,High,pollcat,CAMPAIGN ASSOCIATED,OTP lure domain,pollcat
+domain,source,confidence,family,status,notes
+sahi-finance.com,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,PollCat registration C2 #1. NOT OBSERVED ownership.
+gamebarappinformation.azurewebsites.net,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,PollCat C2 #2 Azure. Shared edge ASSOCIATION_ONLY.
+gamebarapp.azurewebsites.net,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,PollCat C2 #3 Azure.
+lifespotify.com,https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/,High,pollcat,PRIMARY,OTP validation host; Kaspersky late-June-2026 registration claim.

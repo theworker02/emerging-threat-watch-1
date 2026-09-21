@@ -6,7 +6,7 @@
 
 Kaspersky GReAT / Securelist · Kaspersky Press · Gridinsoft (+ The Hacker News / BleepingComputer secondaries)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/
 - https://www.kaspersky.com/about/press-releases/kaspersky-reveals-a-new-malicious-framework-targeting-cryptocurrency-users-with-the-use-of-okospyware

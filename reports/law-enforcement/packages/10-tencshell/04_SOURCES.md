@@ -6,7 +6,7 @@
 
 Cato CTRL · Hunt.io (+ Infosecurity Magazine press secondary)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://www.catonetworks.com/blog/cato-ctrl-suspected-china-linked-threat-actor-targets-global-manufacturer/
 - https://hunt.io/blog/chinese-operators-claude-deepseek-government-intrusion

@@ -1,21 +1,20 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id,provenance_url
-fegrs.adidasabc.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv — not passively resolved by ETW,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-admin.xiongmaocs.help,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-oop.uuokxx.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-andxxxo.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-www.blackcat880.shop,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-www.cheng770.cyou,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-admin.xiongmaocs.mom,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-admin.xiongmaocs.pics,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-admin.fjbjwgyuyftg.qpon,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-admin.niaotong2.top,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-www.heilongyk.top,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-cz.gpgmk.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,WSS host from c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-cunzhang.krgdef.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-bc.etlva.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-jiaozhu.etlva.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-mao.terh5.cn,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From c2.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-kingbss.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From phishing.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-app.tmgg01.top,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From phishing.csv,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-primevoria.com,domain,,,Zimperium IOC repo,Moderate,rathat,UNVERIFIED,From phishing.csv path host,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
-s3.ap-south-1.amazonaws.com,domain,,,Zimperium IOC repo,Low,rathat,UNVERIFIED,Shared AWS host — not unique; phishing.csv APK path only,rathat,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat
+domain,source,confidence,family,status,notes
+fegrs.adidasabc.com,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+admin.xiongmaocs.help,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+oop.uuokxx.com,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+andxxxo.com,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+www.blackcat880.shop,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+www.cheng770.cyou,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+admin.xiongmaocs.mom,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+admin.xiongmaocs.pics,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+admin.fjbjwgyuyftg.qpon,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+admin.niaotong2.top,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+www.heilongyk.top,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+cz.gpgmk.com,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,WSS host from c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+cunzhang.jrgdef.cn,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+bc.etlva.cn,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+jiaozhu.etlva.cn,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+mao.terh5.cn,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium c2.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+kingbss.com,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium phishing.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+app.tmgg01.top,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium phishing.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
+primevoria.com,https://github.com/Zimperium/IOC/tree/master/2026-09-RatHat,Moderate,rathat,PRIMARY,From Zimperium phishing.csv | UNVERIFIED pending passive checks where applicable. NOT malware download.
