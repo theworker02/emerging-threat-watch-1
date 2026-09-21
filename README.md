@@ -126,7 +126,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](docs/SUBMIT_INTEL.md). Prefer PRIMARY pu
 | [`METHODOLOGY.md`](METHODOLOGY.md) | Research methodology |
 | [`DISCLAIMER.md`](DISCLAIMER.md) | Scope and liability |
 | [`SECURITY.md`](SECURITY.md) | Security handling |
-| [`LICENSE`](LICENSE) | License |
+| [`LICENSE`](LICENSE) | Proprietary commercial license (all rights reserved) |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidance |
 
-**License:** see [`LICENSE`](LICENSE). Research cutoff for Phase 1 freezes: **2026-09-19** unless a package notes otherwise.
+**License:** **Proprietary / commercial** — see [`LICENSE`](LICENSE). Not open source; sale or redistribution requires a written commercial license. Research cutoff for Phase 1 freezes: **2026-09-19** unless a package notes otherwise.
