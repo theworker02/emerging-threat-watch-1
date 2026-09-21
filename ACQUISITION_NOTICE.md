@@ -1,25 +1,39 @@
-# Acquisition Notice
+# Acquisition / Licensing Status Notice
 
-**Effective with the proprietary commercial license conversion (2026-09-21).**
+**Updated:** 2026-09-21
 
-## Ownership / acquisition
+## Status
 
-The proprietary rights in this Emerging Threat Watch repository — including original packaging, analysis, indices, tooling, compilation, and related intellectual property as described in [`LICENSE`](LICENSE) — are held by **Emerging Threat Watch / theworker02** (the **Acquirer** of these rights for licensing and enforcement purposes).
+This repository is under the proprietary terms in [`LICENSE`](./LICENSE).
+**No third-party acquisition is claimed by this document.**
 
-Any prior **MIT** (or other open-source) terms that may have applied to earlier public snapshots of this repository are **revoked and superseded** for ongoing use. Continued reliance on those prior terms is unauthorized.
+The asserted rights holder for original Emerging Threat Watch packaging,
+analysis, indices, tooling, and compilation is **Emerging Threat Watch /
+theworker02**.
 
-Third-party vendor publications and frozen source materials remain owned by their respective publishers; this notice does not transfer those third-party rights.
+## Historical MIT
 
-## Enforcement warning
+Earlier public snapshots were published under the MIT License. Those historical
+copies remain governed by the MIT terms that accompanied them, where applicable.
+See [`LICENSE_TRANSITION_NOTICE.md`](./LICENSE_TRANSITION_NOTICE.md).
 
-**Anyone who continues to use, copy, modify, redistribute, commercialize, or otherwise exploit this repository or its contents without a valid written commercial license from the Acquirer — including anyone still treating the materials as MIT / open source after the proprietary conversion — is unauthorized.**
+This notice does **not** claim that prior MIT grants are revoked.
 
-**Such unauthorized use is likely to result in legal action by the Acquirer**, including without limitation claims for copyright infringement, injunctions, damages, and other remedies available under applicable law.
+## Current tree
 
-Public visibility of this repository does not grant a license and does not waive enforcement.
+Current repository contents are proprietary. Commercial use requires a signed
+written license — see [`COMMERCIAL.md`](./COMMERCIAL.md).
 
-## Authorized use only
+## Third-party content
 
-Authorized use requires a signed commercial agreement with the Acquirer. Contact the repository owner (`theworker02` on GitHub) for licensing.
+Vendor publications and frozen source materials remain owned by their
+respective publishers.
 
-See also: [`LICENSE`](LICENSE).
+## Enforcement
+
+Use of post-transition proprietary materials outside rights expressly granted
+may constitute unauthorized use. The applicable rights holder may enforce its
+rights as permitted by applicable law. Nothing here cancels rights legitimately
+obtained under prior licenses.
+
+**REQUIRES_LEGAL_REVIEW** for formal enforcement language.

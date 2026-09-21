@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is under a **proprietary commercial license** ([`LICENSE`](LICENSE); acquisition/enforcement: [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md)). Submitting a tip or pull request does **not** place your contribution under MIT or any open-source terms; accepted contributions are licensed to the Acquirer / copyright holder under the same proprietary terms unless a separate written agreement says otherwise. Unauthorized use after the proprietary conversion is likely to result in legal action by the Acquirer.
+This repository is under a **proprietary commercial license** ([`LICENSE`](LICENSE); acquisition/enforcement: [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md)). Submitting a tip or pull request does **not** place your contribution under MIT or any open-source terms; accepted contributions are licensed to the copyright holder (Emerging Threat Watch / theworker02) under the same proprietary terms unless a separate written agreement says otherwise. Post-transition proprietary materials are not MIT. See LICENSE_TRANSITION_NOTICE.md. Contributions are under proprietary terms unless a separate written agreement says otherwise.
 
 To submit **intelligence tips** (indicators, sightings, corrections) about tracked families — including notes for FBI / IC3 reporting packages — see [`docs/SUBMIT_INTEL.md`](docs/SUBMIT_INTEL.md).
 
