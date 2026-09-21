@@ -127,6 +127,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](docs/SUBMIT_INTEL.md). Prefer PRIMARY pu
 | [`DISCLAIMER.md`](DISCLAIMER.md) | Scope and liability |
 | [`SECURITY.md`](SECURITY.md) | Security handling |
 | [`LICENSE`](LICENSE) | Proprietary commercial license (all rights reserved) |
+| [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md) | Acquisition notice and Acquirer enforcement warning |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidance |
 
-**License:** **Proprietary / commercial** — see [`LICENSE`](LICENSE). Not open source; sale or redistribution requires a written commercial license. Research cutoff for Phase 1 freezes: **2026-09-19** unless a package notes otherwise.
+**License:** **Proprietary / commercial** — see [`LICENSE`](LICENSE) and [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md). Not open source. Prior MIT terms are revoked. Unauthorized use (including continued use as if MIT still applied) is **likely to result in legal action by the Acquirer**. Sale or redistribution requires a written commercial license. Research cutoff for Phase 1 freezes: **2026-09-19** unless a package notes otherwise.

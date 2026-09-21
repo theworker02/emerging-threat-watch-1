@@ -2,40 +2,46 @@
 
 Copyright (c) 2026 Emerging Threat Watch / theworker02. All rights reserved.
 
+## Acquisition notice
+
+Proprietary rights in this repository’s original packaging, analysis, indices, tooling, and compilation are held by **Emerging Threat Watch / theworker02** (the **Acquirer**). Prior MIT or other open-source terms that may have applied to earlier snapshots are **revoked and superseded**. Full acquisition and enforcement notice: [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md).
+
 ## Summary
 
-This repository and its contents are **proprietary**. They are **not** licensed under MIT, Apache, GPL, Creative Commons, or any other open-source or public-domain terms. Use, copying, modification, redistribution, and commercial exploitation require a **separate written commercial license** from the copyright holder.
+This repository and its contents are **proprietary**. They are **not** licensed under MIT, Apache, GPL, Creative Commons, or any other open-source or public-domain terms. Use, copying, modification, redistribution, and commercial exploitation require a **separate written commercial license** from the Acquirer / copyright holder.
 
 ## Grant of rights
 
-No license is granted by default. Without a signed commercial agreement (or other express written permission from the copyright holder), you may **not**:
+No license is granted by default. Without a signed commercial agreement (or other express written permission from the Acquirer), you may **not**:
 
 1. Use the contents for commercial products, services, resale, syndication, SaaS, or paid intelligence offerings
 2. Copy, reproduce, republish, mirror, scrape, or redistribute substantial portions of the repository
 3. Modify, create derivative works from, or incorporate contents into other works for distribution
 4. Sublicense, sell, lease, or transfer rights in the contents
-5. Remove or obscure copyright, license, or proprietary notices
+5. Remove or obscure copyright, license, proprietary, or acquisition notices
 
 ## Limited evaluation viewing
 
-Public visibility of this repository on GitHub (or similar hosting), if any, is for **evaluation and awareness only**. Viewing publicly displayed pages does **not** grant any of the rights listed above, does **not** constitute open-source publication, and does **not** waive proprietary claims.
+Public visibility of this repository on GitHub (or similar hosting), if any, is for **evaluation and awareness only**. Viewing publicly displayed pages does **not** grant any of the rights listed above, does **not** constitute open-source publication, and does **not** waive proprietary claims or enforcement rights of the Acquirer.
 
 ## Commercial licensing
 
-To obtain rights to use, redistribute, or commercialize this material, contact the copyright holder and execute a written commercial license. Pricing, scope, territory, and term are defined only in that agreement.
+To obtain rights to use, redistribute, or commercialize this material, contact the Acquirer and execute a written commercial license. Pricing, scope, territory, and term are defined only in that agreement.
 
 ## Third-party content
 
 Vendor research, public advisories, frozen source HTML/PDF, and similar materials remain the property of their respective owners and are subject to their terms. This proprietary license covers Emerging Threat Watch’s original packaging, analysis, indices, tooling, and compilation as applicable; it does not reclaim third-party copyrights.
 
+## Enforcement — legal action by the Acquirer
+
+**Anyone still using this repository or its contents without a valid written commercial license under these proprietary terms — including anyone continuing to use the materials as if they remained under MIT or another open license — is unauthorized and is likely to have legal action taken by the Acquirer.**
+
+Remedies may include civil claims for copyright infringement, injunctive relief, damages, and other remedies available under applicable law. Continued hosting, forking, scraping, or contribution does not create an implied open license and does not bar enforcement.
+
 ## No warranty
 
-THE CONTENTS ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF OR INABILITY TO USE THE CONTENTS.
-
-## Enforcement
-
-Unauthorized use may result in civil and/or criminal remedies available under applicable law. Continued hosting or contribution under this repository does not create an implied open license.
+THE CONTENTS ARE PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR ACQUIRER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM USE OF OR INABILITY TO USE THE CONTENTS, EXCEPT TO THE EXTENT LIABILITY ARISES FROM THE ACQUIRER’S OWN ENFORCEMENT OF THESE TERMS AGAINST UNAUTHORIZED USERS.
 
 ## Contact
 
-For commercial licensing inquiries, contact the repository owner (`theworker02` on GitHub) via the channels listed in the repository profile or funding configuration.
+For commercial licensing inquiries, contact the repository owner / Acquirer (`theworker02` on GitHub) via the channels listed in the repository profile or funding configuration.
