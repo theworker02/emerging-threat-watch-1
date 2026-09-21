@@ -14,6 +14,19 @@
 | Kaspersky ICS CERT | `ics-cert@kaspersky.com` | ICS/OT-scoped questions | [ICS CERT services](https://ics-cert.kaspersky.com/services/) |
 | Kaspersky incident form | [Report an incident](https://www.kaspersky.com/enterprise-security/contact-investigation) | Customer incident response | Web form — not email from this environment |
 | abuse.ch ThreatFox | [Share IOCs](https://threatfox.abuse.ch/share/) · [API](https://threatfox.abuse.ch/api/) | Community malware IOC share (Auth-Key) | Requires Auth-Key; submit **PRIMARY** IOCs only with provenance; no invented IoCs |
+| Check Point Research | `cpr@checkpoint.com` | MiniFast / Screening Serpens research correlation | Documented CPR research contact |
+| GitHub Security | `security@github.com` | Platform Trust & Safety when PRIMARY cites GitHub-hosted lure/infra | Rapuncel package context |
+| LastPass securitydisclosure | `securitydisclosure@lastpass.com` | Rapuncel (LastPass TIME / Delphos PRIMARY) researcher dossier | Not a LastPass product-vuln claim |
+| eSentire security | `security@esentire.com` | Matanbuchus + Cruciferra/Rapuncel lineage dossiers | Not an MDR customer ticket |
+| Unit 42 investigations | `unit42-investigations@paloaltonetworks.com` | MiniFast awareness only — **not** a breach/IR request | Explicit non-incident framing required |
+| Team Cymru | `security@cymru.com` | Community / network TI correlation of full repo | Not an abuse complaint against Cymru |
+| Shadowserver | `abuse@shadowserver.org` | Network-reporting correlation of PRIMARY IOC catalog | Not `report_admin@` subscription admin |
+| Cynet support | `support@cynet.com` | Settra detection-coverage feedback | Prefer over `responsible-disclosure@` (product vulns) |
+| Android Security | `security@android.com` | Android malware reports (Okobot Accessibility abuse) | Android Security FAQ malware reporting channel |
+| ESET Research Lab | `samples@eset.com` | Suspicious file/site / IOC researcher dossiers | [KB141](https://support.eset.com/en/kb141-submit-a-virus-website-or-potential-false-positive-sample-to-the-eset-lab) — **no binaries from ETW** |
+| SentinelLabs | `labs@sentinelone.com` | Researcher malware-family / TI correlation | GitHub org public email; not `security@` VDP |
+| Microsoft WDSI | [File submission portal](https://www.microsoft.com/en-us/wdsi/filesubmission) | Samples / hashes / detection gaps | **No email** — portal only |
+| Cisco Talos Reputation | [Reputation Center](https://talosintelligence.com/reputation_center/) | File / Web / IP / Domain reputation tickets | Cisco account required; not ESA sample aliases |
 
 ## Family → preferred public contacts
 

@@ -43,7 +43,7 @@
 | 14 | Matanbuchus | Paste-ready | `briefs/14-matanbuchus.md` | Comparator ≠ SynkLoader | Separate from SynkLoader filing |
 | 15 | StarlandRAT | Paste-ready | `briefs/15-starlandrat.md` | Multiple IPs; PCAP lack | |
 
-**Send status (2026-09-20):** Resend MCP had no verified domain/API key — all vendor emails are **prepared only**. See [`VENDOR_SUBMISSION_STATUS.md`](VENDOR_SUBMISSION_STATUS.md) · [`VENDOR_EMAIL_MATRIX.md`](VENDOR_EMAIL_MATRIX.md) · [`VENDOR_CONTACTS.md`](VENDOR_CONTACTS.md) · non-PII drafts [`email-drafts/`](email-drafts/) · private Gmail launcher `../private/vendor-submissions/GMAIL_LAUNCHER.html`.
+**Send status (2026-09-20):** **30** defensive TI referral emails sent via Gmail MCP (Rounds 1–5), including ESET `samples@eset.com`, CERT/CC + CISA Round-5 updates, and SentinelLabs `labs@sentinelone.com`. Microsoft WDSI and Cisco Talos Reputation Center remain **portal-only** (no campaign-TI email). See [`VENDOR_SUBMISSION_STATUS.md`](VENDOR_SUBMISSION_STATUS.md) · [`VENDOR_EMAIL_MATRIX.md`](VENDOR_EMAIL_MATRIX.md) · [`VENDOR_CONTACTS.md`](VENDOR_CONTACTS.md). Private message IDs: `../private/vendor-submissions/SEND_LOG.md`.
 
 ## Safe phrasing (all channels)
 
