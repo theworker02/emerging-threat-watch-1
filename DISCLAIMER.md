@@ -2,7 +2,7 @@
 
 This repository contains defensive threat-intelligence research for educational, detection-engineering, and lawful reporting purposes.
 
-**Acquisition / license:** This material is proprietary. See [`LICENSE`](LICENSE) and [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md). Prior MIT terms are revoked. Unauthorized use — including continued use as if open-source terms still applied — is likely to result in legal action by the Acquirer.
+**Acquisition / license:** Current materials are proprietary. See [`LICENSE`](LICENSE), [`LICENSE_TRANSITION_NOTICE.md`](LICENSE_TRANSITION_NOTICE.md), and [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md). Historical MIT snapshots remain under MIT for those copies where applicable. Unauthorized use of post-transition proprietary materials outside granted rights may be enforced as permitted by law (**REQUIRES_LEGAL_REVIEW**).
 
 - Content may describe publicly reported malware behavior. Description is not endorsement or instruction for misuse.
 - Indicators may be historical, ephemeral, or incorrectly attributed in source material. Always validate before operational use.
