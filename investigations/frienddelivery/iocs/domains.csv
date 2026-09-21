@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+FDL-IND-0002,ip,43.231.113.50,GopherWhisper arsenal C2 (SSLORDoor); shared toolset context only,ESET malware-ioc GitHub (gopherwhisper)

@@ -1,2 +1,11 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+DOH-IND-0008,domain,cjitdrpwnna.mswinsoftupdload.design,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0009,domain,lbandugzcfg.deepinspectionsystem.online,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0010,domain,lsypdqgxredfpx.mswinsoftupdload.design,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0011,domain,yhdjtylnsmwvuu.deepinspectionsystem.online,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0012,domain,sdxsiol.pnuisckmhwagzvdyjrlbeft.software,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0013,domain,ezqrvkfgejwctdnc.pnuisckmhwagzvdyjrlbeft.software,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0014,domain,txjiqslrrig.mswinsoftupdload.design,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0015,domain,qhtckzbxtkdvyr.mswinsoftupdload.design,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0016,domain,gitkzxd.pnuisckmhwagzvdyjrlbeft.software,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)
+DOH-IND-0017,domain,gppiwogwndiakkdu.pnuisckmhwagzvdyjrlbeft.software,Dohdoor DoH domain,Cisco Talos Dohdoor IoC freeze (github-ioc/dohdoor.txt)

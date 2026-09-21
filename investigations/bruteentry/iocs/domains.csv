@@ -1,2 +1,3 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+BRE-IND-0001,ip,212.11.64.105,BruteEntry infrastructure (also PeerTime host),Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+BRE-IND-0002,ip,185.196.10.247,BruteEntry infrastructure,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)

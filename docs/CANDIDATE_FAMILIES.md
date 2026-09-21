@@ -87,6 +87,11 @@ Prior deep-research freezes (MovieReaper, Insomnia RAT, ARKTunnel, Docro, OfferL
 
 **Argamal** remains package `12-argamal` (already PRIMARY_FROZEN) — not duplicated as 40.
 
+
+### IOC / WHOIS enrichment (2026-09-21)
+
+Non-redundant harvest from frozen primaries + vendor GitHub IoC corpora; passive RDAP/WHOIS in [`intelligence/infra-ownership.csv`](../intelligence/infra-ownership.csv). Findings summary: [`intelligence/INFRA_OWNERSHIP_FINDINGS.md`](../intelligence/INFRA_OWNERSHIP_FINDINGS.md). Still thin / PRIMARY-gap: PhantomPyramid, ZeronetKit, PaperGrabber, PowerLoader, Atlas RAT, UNC1069 trio (Mandiant PRIMARY gated).
+
 ### South Asia branch (follow-on)
 
 APT36 / Transparent Tribe tooling evolution (Linux `.desktop` delivery; Go Poseidon-class backdoors when PRIMARY confirms) tracked as future package after dedicated PRIMARY freeze — do not invent Poseidon IOCs from older PoSeidon POS malware.

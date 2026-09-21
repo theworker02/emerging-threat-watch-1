@@ -1,2 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+LXG-IND-0002,sha1,C72E7540D6F12D74D8E737B02F31568385F575D7,CompactGopher temp001.exe,ESET malware-ioc GitHub (gopherwhisper)
+LXG-IND-0003,sha1,57C2490E4DB194D3503EE85635FB1D6F26E8C534,RatGopher Discord C2,ESET malware-ioc GitHub (gopherwhisper)
+LXG-IND-0004,sha1,AD7E264EB08415871617E45F21D03F7D71E4C36F,SSLORDoor delltool.exe,ESET malware-ioc GitHub (gopherwhisper)
+LXG-IND-0005,sha1,926974FACFD0383C65458D6EF1F31FBB7C769E18,BoxOfFriends,ESET malware-ioc GitHub (gopherwhisper)

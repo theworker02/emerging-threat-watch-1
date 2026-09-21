@@ -1,1 +1,5 @@
 indicator_id,type,value,notes,source
+MJV-IND-0001,domain,buisness-centeral-transportation.com,Screening Serpens related domain (Unit 42); MiniJunk context,Unit 42 Screening Serpens freeze
+MJV-IND-0002,domain,business-startup.org,Screening Serpens related domain (Unit 42); MiniJunk context,Unit 42 Screening Serpens freeze
+MJV-IND-0003,domain,premierhealthadvisory.com,Screening Serpens related domain (Unit 42); MiniJunk context,Unit 42 Screening Serpens freeze
+MJV-IND-0004,domain,ramiltonsfinance.com,Screening Serpens related domain (Unit 42); MiniJunk context,Unit 42 Screening Serpens freeze

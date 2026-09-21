@@ -84,6 +84,7 @@ See [`DISCLAIMER.md`](DISCLAIMER.md) and [`SECURITY.md`](SECURITY.md).
 - **16–30:** CountLoader, MAYBEROBOT/NOROBOT/YESROBOT, Tsundere, MonsterV2, PhantomHeart, ABCDoor, MiniUpdate/MiniJunk V2, HEAVYGRAM, CHOSEN BRICK, PromptSpy, GhostChat, HybridPetya
 - **31–42:** MovieReaper … kkRAT (prior deep-research freezes)
 - **43–66:** Foxveil → Atlas RAT (GhostContainer, Dohdoor, GopherWhisper, LongNosedGoblin, UAT-9244, UNC1069, Mirage Kitten, MuddyWater, MiniBrowse, plus CANDIDATE stubs)
+- Network IOC + passive WHOIS enrichment: [`intelligence/infra-ownership.csv`](intelligence/infra-ownership.csv) · [`INFRA_OWNERSHIP_FINDINGS.md`](intelligence/INFRA_OWNERSHIP_FINDINGS.md)
 - Attribution is metadata only (`attribution.csv`) — not nationality-based folders. Catalog: [`docs/CANDIDATE_FAMILIES.md`](docs/CANDIDATE_FAMILIES.md) · [`intelligence/candidate-families.csv`](intelligence/candidate-families.csv)
 
 ---

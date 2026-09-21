@@ -1,1 +1,6 @@
 indicator_id,type,value,notes,source
+BRE-IND-0001,ip,212.11.64.105,BruteEntry infrastructure (also PeerTime host),Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+BRE-IND-0002,ip,185.196.10.247,BruteEntry infrastructure,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+BRE-IND-0003,sha256,1fcdd5a417db31e5e07d32cecfa69e53f0dce95b7130ad9c03b92249f001801d,BruteEntry installation script,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+BRE-IND-0004,sha256,66adeedfb739774fcc09aa7426c8fad29f8047ab4caee8040d07c0e84d011611,BruteEntry agent,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+BRE-IND-0005,sha256,66bdce93de3b02cf9cdadad18ca1504ac83e379a752d51f60deae6dcbafe4e31,BruteEntry agent,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)

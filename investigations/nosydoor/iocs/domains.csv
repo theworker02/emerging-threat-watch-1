@@ -1,2 +1,11 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+NSD-IND-0001,ip,118.107.234.26,NosyDownloader C2; www.sslvpnserver.com,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0002,domain,www.sslvpnserver.com,NosyDownloader C2 domain,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0003,ip,103.159.132.30,NosyDownloader C2; www.threadstub.com,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0004,domain,www.threadstub.com,NosyDownloader C2 domain,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0005,ip,101.99.88.113,NosyDownloader C2; www.blazenewso.com,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0006,domain,www.blazenewso.com,NosyDownloader C2 domain,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0007,ip,101.99.88.188,NosyDownloader C2; www.privacypolicy-my.com,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0008,domain,www.privacypolicy-my.com,NosyDownloader C2 domain,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0009,ip,118.107.234.29,ReverseSocks5 server,ESET malware-ioc GitHub (longnosedgoblin)
+NSD-IND-0010,ip,38.54.17.131,malware host (possibly Cobalt Strike) — association-only,ESET malware-ioc GitHub (longnosedgoblin)

@@ -1,2 +1,6 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+BRH-IND-0023,md5,6038d42af0affd1fb263f470c0956f6b,BridgeHead unbcl.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0024,md5,ae628efa305387b633dce82f9364875b,BridgeHead unbcl.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0025,md5,f7d36cc5904a53252d2bb3d21615134f,BridgeHead libwinpthread-1.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0026,md5,c90f0efadbf322e5eb1c4103a38c30e6,BridgeHead libwinpthread-1.dll,Kaspersky Securelist Mirage Kitten 2026-07-28
+BRH-IND-0027,md5,d09b14a2fe01c7363ecc56f5d046162c,BridgeHead IPHLPAPI.dll,Kaspersky Securelist Mirage Kitten 2026-07-28

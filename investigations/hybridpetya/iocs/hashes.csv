@@ -1,2 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+HYP-IND-0001,sha1,9B0EE05FFFDA0B16CF9DAAC587CB92BB06D3981B,HybridPetya installer,ESET malware-ioc GitHub (hybridpetya)
+HYP-IND-0002,sha1,3393A8C258239D6802553FD1CCE397E18FA285A1,HybridPetya installer,ESET malware-ioc GitHub (hybridpetya)
+HYP-IND-0003,sha1,BD35908D5A5E9F7E41A61B7AB598AB9A88DB723D,UEFI bootkit,ESET malware-ioc GitHub (hybridpetya)
+HYP-IND-0004,sha1,9DF922D00171AA3C31B75446D700EE567F8D787B,UEFI bootkit,ESET malware-ioc GitHub (hybridpetya)

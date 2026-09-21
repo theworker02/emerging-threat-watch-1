@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-https://abc.fetish-friends.com/setup/install,url,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,Go stager,abcdoor
+indicator_id,type,value,notes,source
+ABC-IND-0005,url,https://abc.fetish-friends.com/setup/install,Go stager,Kaspersky

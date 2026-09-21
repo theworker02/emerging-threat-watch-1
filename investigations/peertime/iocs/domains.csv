@@ -1,2 +1,7 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PRT-IND-0001,ip,212.11.64.105,hosting,Cisco Talos
+PRT-IND-0002,ip,185.196.10.247,PeerTime remote location,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+PRT-IND-0003,ip,185.196.10.38,PeerTime C2,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+PRT-IND-0004,domain,xtibh.com,PeerTime remote location,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+PRT-IND-0005,domain,xcit76.com,PeerTime remote location,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)
+PRT-IND-0006,domain,bloopencil.net,PeerTime C2,Cisco Talos UAT-9244 IoC freeze (github-ioc/uat-9244.txt)

@@ -1,2 +1,2 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+HVG-IND-0002,url,https://sgp1.vultrobjects.com/downloads/pictory/Pictory_premium_ver9.0.4.exe,Malware staging URL (Vultr Objects),FBI FLASH HEAVYGRAM PDF 2026-09-15

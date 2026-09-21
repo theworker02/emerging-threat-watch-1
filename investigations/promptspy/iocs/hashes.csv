@@ -1,2 +1,4 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-
+indicator_id,type,value,notes,source
+PSP-IND-0004,sha1,F8F4C5BC498BCCE907DC975DD88BE8D594629909,sample,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0005,sha1,6BBC9AB132BA066F63676E05DA13D108598BC29B,sample,ESET malware-ioc GitHub (promptspy)
+PSP-IND-0006,sha1,C14E9B062ED28115EDE096788F62B47A6ED841AC,sample,ESET malware-ioc GitHub (promptspy)

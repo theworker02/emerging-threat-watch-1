@@ -1,3 +1,27 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
-abc.haijing88.com,domain,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,lure,abcdoor
-abc.fetish-friends.com,domain,,,Kaspersky,High,abcdoor,CAMPAIGN ASSOCIATED,ABCDoor staging,abcdoor
+indicator_id,type,value,notes,source
+ABC-IND-0002,domain,abc.haijing88.com,lure,Kaspersky
+ABC-IND-0003,domain,abc.fetish-friends.com,ABCDoor staging,Kaspersky
+ABC-IND-0004,ip,154.82.81.205,archive host,Kaspersky
+ABC-IND-0006,ip,108.187.37.85,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0007,ip,108.187.41.221,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0008,ip,108.187.42.63,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0009,ip,139.180.128.251,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0010,ip,154.82.81.192,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0011,ip,192.163.167.14,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0012,ip,192.229.115.229,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0013,ip,192.238.205.47,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0014,ip,207.56.119.216,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0015,ip,207.56.138.28,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0016,ip,45.118.133.203,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0017,ip,45.192.219.60,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0018,ip,45.32.108.178,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0019,ip,57.133.212.106,ABCDoor related IP (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0020,domain,abc.3mkorealtd.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0021,domain,abc.doublemobile.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0022,domain,abc.ilptour.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0023,domain,abc.petitechanson.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0024,domain,abc.sudsmama.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0025,domain,abc.woopami.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0026,domain,mcagov.cc,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0027,domain,roldco.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor
+ABC-IND-0028,domain,vnc.kcii2.com,ABCDoor related domain (OpenTIP),Kaspersky Securelist ABCDoor

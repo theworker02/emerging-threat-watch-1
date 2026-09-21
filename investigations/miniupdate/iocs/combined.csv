@@ -1,1 +1,5 @@
-value,type,first_seen,last_seen,source,confidence,campaign_association,status,notes,case_id
+indicator_id,type,value,notes,source
+MUP-IND-0001,domain,buisness-centeral-transportation.com,Screening Serpens related domain (Unit 42); MiniUpdate context,Unit 42 Screening Serpens freeze
+MUP-IND-0002,domain,business-startup.org,Screening Serpens related domain (Unit 42); MiniUpdate context,Unit 42 Screening Serpens freeze
+MUP-IND-0003,domain,premierhealthadvisory.com,Screening Serpens related domain (Unit 42); MiniUpdate context,Unit 42 Screening Serpens freeze
+MUP-IND-0004,domain,ramiltonsfinance.com,Screening Serpens related domain (Unit 42); MiniUpdate context,Unit 42 Screening Serpens freeze
