@@ -9,7 +9,7 @@
 | Need | File |
 |------|------|
 | **Full structured dossier** | [`IC3_FULL_PACKAGE.md`](../law-enforcement/packages/06-synkloader/IC3_FULL_PACKAGE.md) |
-| Paste into IC3 description | local `private/filing-helpers/06-synkloader/01_NARRATIVE_PASTE.txt` |
+| See structured dossier description | local `private/filing-helpers/06-synkloader/01_NARRATIVE_PASTE.txt` |
 | Indicators CSV | `03_INDICATORS.csv` (29 SYN-IND rows) |
 | Sources | `04_SOURCES.md` |
 | Caveats | `05_CAVEATS_AND_LIMITS.md` |

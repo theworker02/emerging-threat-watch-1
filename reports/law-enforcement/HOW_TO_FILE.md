@@ -1,38 +1,37 @@
 # How to File — IC3 and FBI
 
-**These steps are organizational guidance for defensive threat-intelligence reporting. They are not legal advice. A human reviewer must approve every filing.**
+**Organizational guidance for defensive threat-intelligence reporting. Not legal advice. A human reviewer must approve every filing.**
 
-## Two package classes (different audiences)
+## Two package classes
 
-| Package | Audience | What to emphasize | Template / guide |
-|---------|----------|-------------------|------------------|
-| **FBI / IC3 narrative** | IC3 complaint form; FBI tips / field office | Crime-type language, PRIMARY sources, caveats, indicator CSV on request | This file + `packages/0N-<family>/` |
-| **Hosting / registrar / platform takedown** | ASN/hosting abuse desks, registrars, Discord/Telegram Trust & Safety | IP+port, timed PCAP, sample SHA-256, pDNS, chat IDs + timestamped logs | [`TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md`](TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md) · methodology [`shared/methodology/TAKEDOWN_AND_ENFORCEMENT_EVIDENCE.md`](../../shared/methodology/TAKEDOWN_AND_ENFORCEMENT_EVIDENCE.md) |
+| Package | Audience | Emphasize | Guide |
+|---------|----------|-----------|-------|
+| **FBI / IC3 narrative** | IC3 form; FBI tips / field office | Crime-type language, PRIMARY sources, caveats, indicator CSV on request | This file + `packages/NN-<family>/` |
+| **Hosting / registrar / platform takedown** | ASN/hosting abuse, registrars, platform Trust & Safety | IP+port, timed PCAP, sample SHA-256, pDNS, chat IDs + logs | [`TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md`](TAKEDOWN_EVIDENCE_PACKAGE.TEMPLATE.md) |
 
-Both need **technical telemetry**. IC3 often cannot accept PCAPs — retain them offline and state availability. Hosting abuse tickets usually require traffic proof. Do not treat an IC3 narrative paste as a complete takedown package (or vice versa). Readiness gaps: [`docs/ENFORCEMENT_READINESS.md`](../../docs/ENFORCEMENT_READINESS.md).
+IC3 often cannot accept PCAPs — retain them offline and state availability. Hosting abuse usually requires traffic proof. An IC3 narrative is not a complete takedown package. Readiness: [`docs/ENFORCEMENT_READINESS.md`](../../docs/ENFORCEMENT_READINESS.md).
 
 ## Which channel?
 
 | Channel | Use when | Do not use for |
 |---------|----------|----------------|
-| **IC3** ([ic3.gov](https://www.ic3.gov/)) | You want a cyber complaint / tip on the public record for FBI Internet Crime Complaint Center correlation | Uploading malware binaries; claiming losses you cannot document |
-| **FBI tips / field office** ([tips.fbi.gov](https://tips.fbi.gov/) or local field office cyber squad) | You have a structured TI package and want investigator attention beyond the IC3 web form | Substituting for IC3 if you still want an IC3 complaint number — file IC3 first when appropriate, then reference the number |
-| **Hosting / registrar / platform abuse** | You have IP:port + PCAP (or equivalent) / domain + pDNS + sample hash / chat IDs + logs for infrastructure or account removal | Substituting for IC3 when you need a criminal complaint number; authenticating to attacker panels to “gather more” |
+| **IC3** ([ic3.gov](https://www.ic3.gov/)) | Cyber complaint / tip for FBI IC3 correlation | Uploading malware binaries; undocumented loss claims |
+| **FBI tips / field office** ([tips.fbi.gov](https://tips.fbi.gov/)) | Structured TI package needing investigator attention beyond the web form | Substituting for IC3 when you still need a complaint number — file IC3 first when appropriate |
+| **Hosting / registrar / platform abuse** | IP:port + PCAP (or equivalent) / domain + pDNS + sample hash | Substituting for a criminal complaint number |
 
-Many reporters file **IC3 first** (get a complaint number), then send the same package (or a pointer) to FBI tips / a field-office contact **referencing that IC3 number**. That is optional and depends on your situation. Parallel hosting-abuse tickets may cite the same IC3 number when useful.
+Many reporters file **IC3 first**, then reference the complaint number in FBI tips or abuse tickets.
 
 ## Recommended order per family
 
-1. Open `packages/0N-<family>/` and read `02_FBI_SUMMARY.md` + `05_CAVEATS_AND_LIMITS.md`.  
+1. Open `packages/NN-<family>/` and read `02_FBI_SUMMARY.md` + `05_CAVEATS_AND_LIMITS.md`.  
 2. Confirm case isolation (one family only).  
-3. Run through `../SUBMISSION_CHECKLIST.md` if filing.  
-3b. **Complainant identity (private):** paste name / phone / email / mailing address from `private/COMPLAINANT_PROFILE.md` (gitignored). Never commit PII. Do not enter SSN/DOB.
+3. Review [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md).  
+4. Complainant identity stays in offline `private/COMPLAINANT_PROFILE.md` (never commit PII; no SSN/DOB).  
+5. **IC3:** use `IC3_FULL_PACKAGE.md` as the structured narrative source; add high-value indicators from `03_INDICATORS.csv` only if space allows — otherwise state that a CSV is retained and available on request. List primary URLs from `04_SOURCES.md`.  
+6. Record the IC3 Submission ID in `IC3_FILING_RECORD.md`, `02_FBI_SUMMARY.md`, and `MASTER_INDEX.csv`.  
+7. **FBI (optional):** provide `02_FBI_SUMMARY.md` + `03_INDICATORS.csv` + `04_SOURCES.md` + `05_CAVEATS_AND_LIMITS.md`, citing the IC3 ID if available.
 
-4. **IC3:** use the local narrative helper at `private/filing-helpers/0N-<family>/01_NARRATIVE_PASTE.txt` (gitignored). Add high-value indicators from `03_INDICATORS.csv` only if the form has space — otherwise state that a CSV is retained and available on request. List primary URLs from `04_SOURCES.md` in the additional-information field.  
-5. Save the IC3 confirmation / Submission ID into `IC3_FILING_RECORD.md`, `02_FBI_SUMMARY.md`, and `MASTER_INDEX.csv`.  
-6. **FBI (optional):** submit or email `02_FBI_SUMMARY.md` + `03_INDICATORS.csv` + `04_SOURCES.md` + `05_CAVEATS_AND_LIMITS.md`, citing the IC3 Submission ID if you have one.
-
-## What to say in the form (safe phrasing)
+## Safe phrasing
 
 **Use**
 
@@ -43,59 +42,58 @@ Many reporters file **IC3 first** (get a complaint number), then send the same p
 
 **Avoid**
 
-- “I discovered this malware family” (unless you independently discovered it)
-- “Victims lost $X” without documented loss
-- “Attributed to [APT]” without stating whose assessment
-- Merging Rapuncel + Settra + RatHat + NodeRabbit into one complaint
+- “I discovered this malware family” (unless independently true)
+- Undocumented dollar-loss claims
+- Attribution without stating whose assessment
+- Merging multiple ETW families into one complaint
 
 ## Attachments
 
 IC3 web forms often limit uploads. Prefer:
 
 1. Narrative text in the form  
-2. Short indicator list in the form (hashes/domains that fit)  
+2. Short indicator list (hashes/domains that fit)  
 3. Note: “Full PRIMARY-SOURCE indicator CSV and source list retained under package ID ETW-*-IC3 and available to investigators on request.”
 
-If a field office requests files, send the entire `packages/0N-<family>/` folder (still no malware binaries).
+If a field office requests files, send the public `packages/NN-<family>/` folder (no malware binaries).
 
-## Nine active filings, not one
+## Filed packages (01–09)
 
-| Package ID | Family | Why separate | Status |
-|------------|--------|--------------|--------|
-| ETW-RAP-IC3 | Rapuncel | Stealer + GitHub distribution; Cruciferra is shared tooling | `FILED_IC3` |
-| ETW-SET-IC3 | Settra | Ransomware encryptor ≠ operator intrusion tooling | `FILED_IC3` |
-| ETW-RAT-IC3 | RatHat | Android Accessibility/ADB chain | `FILED_IC3` |
-| ETW-NRB-IC3 | NodeRabbit | Developer-targeted Node.js RAT; Mirage Kitten is Kaspersky’s attribution | `FILED_IC3` |
-| ETW-POL-IC3 | PollCat | Obfuscated JS RAT; RankChallenge lure; co-disclosed with NodeRabbit but **separate implant** | `FILED_IC3` `98a4444754324e539dbbffcb10c70637` |
-| ETW-SYN-IC3 | SynkLoader | Teams IT-helpdesk phishing / modular loader / PhishLocker | `FILED_IC3` `3440d0c64dc240499ff66deaa3311a0b` |
-| ETW-SHO-IC3 | Showboat | Linux telecom post-exploitation; historical activity may predate 2026 disclosure | `FILED_IC3` `db42033f319844c08ad103befebfca08` |
-| ETW-ABY-IC3 | Abyssos | Modular Windows C++ RAT (HVNC / credential theft); Zscaler primary | `FILED_IC3` `a23f0a9d6799480e994284416d354713` |
-| ETW-SHK-IC3 | SharkLoader | Custom loader → Cobalt Strike (StrikeShark / Kaspersky) | `FILED_IC3` `6ed57963d0c64750aa14b6fcbaa2e576` |
+| Package ID | Family | Status |
+|------------|--------|--------|
+| ETW-RAP-IC3 | Rapuncel | `FILED_IC3` |
+| ETW-SET-IC3 | Settra | `FILED_IC3` |
+| ETW-RAT-IC3 | RatHat | `FILED_IC3` |
+| ETW-NRB-IC3 | NodeRabbit | `FILED_IC3` |
+| ETW-POL-IC3 | PollCat | `FILED_IC3` |
+| ETW-SYN-IC3 | SynkLoader | `FILED_IC3` |
+| ETW-SHO-IC3 | Showboat | `FILED_IC3` |
+| ETW-ABY-IC3 | Abyssos | `FILED_IC3` |
+| ETW-SHK-IC3 | SharkLoader | `FILED_IC3` |
 
-There is **no** evidence in this repository establishing that these campaigns share operators. A combined filing would be analytically incorrect unless new linkage evidence appears. PollCat and NodeRabbit share a dual-referenced Securelist primary artifact only — do **not** merge. Matanbuchus is a technique comparator for SynkLoader only — do **not** file jointly.
+Complaint numbers: [`MASTER_INDEX.csv`](MASTER_INDEX.csv) and each `IC3_FILING_RECORD.md`.
 
-### Primary-frozen packages (10–15) — paste packs ready; not yet filed
+There is **no** evidence in this repository that these campaigns share operators. PollCat ≠ NodeRabbit ≠ MiniFast. Matanbuchus is a SynkLoader technique comparator only — do **not** file jointly.
 
-| Package ID | Family | IND rows | Paste pack | Status |
-|------------|--------|----------|------------|--------|
-| ETW-TEN-IC3 | TencShell | 30 | [`IC3_PASTE_READY.md`](packages/10-tencshell/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/10-tencshell.md`](RESPONSIBLE_SUBMISSION/briefs/10-tencshell.md) |
-| ETW-MNF-IC3 | MiniFast | 44 | [`IC3_PASTE_READY.md`](packages/11-minifast/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/11-minifast.md`](RESPONSIBLE_SUBMISSION/briefs/11-minifast.md) |
-| ETW-ARG-IC3 | Argamal | 22 | [`IC3_PASTE_READY.md`](packages/12-argamal/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/12-argamal.md`](RESPONSIBLE_SUBMISSION/briefs/12-argamal.md) |
-| ETW-OKO-IC3 | Okobot | 33 | [`IC3_PASTE_READY.md`](packages/13-okobot/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/13-okobot.md`](RESPONSIBLE_SUBMISSION/briefs/13-okobot.md) |
-| ETW-MAT-IC3 | Matanbuchus | 28 | [`IC3_PASTE_READY.md`](packages/14-matanbuchus/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` (comparator — do not file with SynkLoader) · [`briefs/14-matanbuchus.md`](RESPONSIBLE_SUBMISSION/briefs/14-matanbuchus.md) |
-| ETW-STR-IC3 | StarlandRAT | 35 | [`IC3_PASTE_READY.md`](packages/15-starlandrat/IC3_PASTE_READY.md) | `PRIMARY_FROZEN` · vendor brief [`RESPONSIBLE_SUBMISSION/briefs/15-starlandrat.md`](RESPONSIBLE_SUBMISSION/briefs/15-starlandrat.md) |
+## Primary-frozen packages (10–15)
 
-Complainant name / phone / email / address for all IC3 forms: `private/COMPLAINANT_PROFILE.md` (gitignored).
+Structured dossiers (`IC3_FULL_PACKAGE.md` + `02`–`05`) are ready for human filing. Not auto-filed.
 
-### Vendor / CERT coordination (parallel to IC3)
+| Package ID | Family | Status |
+|------------|--------|--------|
+| ETW-TEN-IC3 | TencShell | `PRIMARY_FROZEN` |
+| ETW-MNF-IC3 | MiniFast | `PRIMARY_FROZEN` |
+| ETW-ARG-IC3 | Argamal | `PRIMARY_FROZEN` |
+| ETW-OKO-IC3 | Okobot | `PRIMARY_FROZEN` |
+| ETW-MAT-IC3 | Matanbuchus | `PRIMARY_FROZEN` (comparator) |
+| ETW-STR-IC3 | StarlandRAT | `PRIMARY_FROZEN` |
 
-Do **not** auto-email from agents without a verified sending domain. Ready packs:
+Vendor briefs: [`RESPONSIBLE_SUBMISSION/briefs/`](RESPONSIBLE_SUBMISSION/briefs/).
 
-- Contacts: [`RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md`](RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md)
-- Email matrix: [`RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md`](RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md)
-- Status (sent vs prepared): [`RESPONSIBLE_SUBMISSION/VENDOR_SUBMISSION_STATUS.md`](RESPONSIBLE_SUBMISSION/VENDOR_SUBMISSION_STATUS.md)
-- Non-PII drafts: `RESPONSIBLE_SUBMISSION/email-drafts/`
-- Full drafts + Reply-To + Gmail launcher: `private/vendor-submissions/` (gitignored; start with `GMAIL_LAUNCHER.html`)
-- Private send log: `private/vendor-submissions/SEND_LOG.md` / `private/VENDOR_SUBMISSION_LOG.md`
+## Vendor / CERT coordination
 
-Abyssos (`ETW-ABY-IC3`) filed — Submission ID `a23f0a9d6799480e994284416d354713`. SharkLoader (`ETW-SHK-IC3`) filed — Submission ID `6ed57963d0c64750aa14b6fcbaa2e576`.
+- Contacts: [`RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md`](RESPONSIBLE_SUBMISSION/VENDOR_CONTACTS.md)  
+- Email matrix: [`RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md`](RESPONSIBLE_SUBMISSION/VENDOR_EMAIL_MATRIX.md)  
+- Family briefs: [`RESPONSIBLE_SUBMISSION/briefs/`](RESPONSIBLE_SUBMISSION/briefs/)  
+
+Human-only sends. No malware binaries. Verified public contacts only.

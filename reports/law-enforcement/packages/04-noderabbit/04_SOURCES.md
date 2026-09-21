@@ -6,7 +6,7 @@
 
 Kaspersky GReAT / Securelist (primary); Kaspersky press (campaign summary)
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://securelist.com/mirage-kitten-new-backdoors-noderabbit-pollcat/121244/
 - https://www.kaspersky.com/about/press-releases/kaspersky-great-uncovers-linkedin-recruitment-phishing-and-new-cross-platform-spyware-targeting-mea-by-mirage-kitten

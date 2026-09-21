@@ -1,7 +1,7 @@
 # Vendor / CERT / infra brief — MiniFast (`ETW-MNF-IC3`)
 
 **Audience:** Vendor PSIRT / CERT / cloud abuse (after IC3)  
-**IC3 paste pack:** [`../../packages/11-minifast/IC3_PASTE_READY.md`](../../packages/11-minifast/IC3_PASTE_READY.md)  
+**Structured dossier:** see package `IC3_FULL_PACKAGE.md` + `02_FBI_SUMMARY.md`
 **PRIMARY:** Check Point Research; Unit 42  
 **Case isolation:** MiniFast only — **do not merge with PollCat**. IRGC/Nimbus attribution = vendor only.
 

@@ -27,6 +27,20 @@
 | SentinelLabs | `labs@sentinelone.com` | Researcher malware-family / TI correlation | GitHub org public email; not `security@` VDP |
 | Microsoft WDSI | [File submission portal](https://www.microsoft.com/en-us/wdsi/filesubmission) | Samples / hashes / detection gaps | **No email** — portal only |
 | Cisco Talos Reputation | [Reputation Center](https://talosintelligence.com/reputation_center/) | File / Web / IP / Domain reputation tickets | Cisco account required; not ESA sample aliases |
+| Sekoia CERT / TDR | `cert@sekoia.com` · `tdr@sekoia.io` | CERT (RFC 2350) + Threat Detection & Research collaboration | Prefer CERT for incidents; TDR for research |
+| Datadog Security Labs | `securitylabs@datadoghq.com` | Researcher / detection-engineering correlation | Not `security@` (product VDP) |
+| CERT-GIB (Group-IB) | `response@cert-gib.com` | Malware intelligence / CERT referral | FIRST-listed CERT-GIB |
+| Infoblox Threat | `reportthreat@infoblox.com` | Malicious domain/IP reporting (non-customer) | Not `security-report@` (product VDP) |
+| G DATA CSIRT | `csirt@gdata.de` | Malware / CSIRT correlation | Prefer over `psirt@` for TI |
+| Expel | `security@expel.io` | SynkLoader publisher / TI correlation | Distinct from `bug-reports@` VDP |
+| ANY.RUN | `newvirus@any.run` | New malware / IOC awareness | No binaries from ETW |
+| GreyNoise Labs | `labs@greynoise.io` · `research@greynoise.io` | Internet / infra IOC correlation | Labs public contact |
+| Orange Cyberdefense CERT | `cert-contact.ocd@orange.com` | CERT TI / incident correlation | FIRST Global CERT OCD |
+| Gridinsoft | `virus@gridinsoft.com` · `antimalware@gridinsoft.com` | Okobot companion / malware TI | FP form also exists — frame as TI not FP |
+| IBM X-Force Exchange | `xfe@us.ibm.com` | TI platform awareness | Not `psirt@us.ibm.com` |
+| Cybereason | `security@cybereason.com` | Campaign / malware research liaison | Redirect if VDP-only |
+| HarfangLab | `contact@harfanglab.fr` | CTR research forward | General intake — request CTR routing |
+| Bitdefender Labs | `virus_submission@bitdefender.com` | Labs IOC correlation | Portal preferred for samples; no ETW binaries |
 
 ## Family → preferred public contacts
 

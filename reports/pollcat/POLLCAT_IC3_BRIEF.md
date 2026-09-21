@@ -12,7 +12,7 @@ Use the law-enforcement package for all FBI/IC3 work. This file is a short index
 |------|------|
 | **Full structured dossier** | [`../law-enforcement/packages/05-pollcat/IC3_FULL_PACKAGE.md`](../law-enforcement/packages/05-pollcat/IC3_FULL_PACKAGE.md) |
 | Cover + integrity gate | `00_COVER_SHEET.md` (local: `private/filing-helpers/05-pollcat/`) |
-| Paste into IC3 | `01_NARRATIVE_PASTE.txt` (local helper; expanded narrative + IOC block) |
+| See structured dossier | `01_NARRATIVE_PASTE.txt` (local helper; expanded narrative + IOC block) |
 | FBI / field office | `02_FBI_SUMMARY.md` |
 | Indicators CSV | `03_INDICATORS.csv` (15 rows) |
 | Sources | `04_SOURCES.md` |

@@ -6,7 +6,7 @@
 
 Zscaler ThreatLabz
 
-## Copy-pasteable URLs
+## Primary source URLs
 
 - https://www.zscaler.com/blogs/security-research/abyssos-technical-analysis-new-modular-rat
 

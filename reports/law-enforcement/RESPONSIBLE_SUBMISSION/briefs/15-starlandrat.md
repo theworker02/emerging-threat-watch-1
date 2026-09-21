@@ -1,7 +1,7 @@
 # Vendor / CERT / infra brief — StarlandRAT (`ETW-STR-IC3`)
 
 **Audience:** Vendor PSIRT / CERT / hosting abuse (after IC3)  
-**IC3 paste pack:** [`../../packages/15-starlandrat/IC3_PASTE_READY.md`](../../packages/15-starlandrat/IC3_PASTE_READY.md)  
+**Structured dossier:** see package `IC3_FULL_PACKAGE.md` + `02_FBI_SUMMARY.md`
 **PRIMARY:** Cisco Talos (UAT-11795 assessment)  
 **Case isolation:** StarlandRAT only. UAT-11795 attribution = Talos assessment only.
 

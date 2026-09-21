@@ -1,7 +1,7 @@
 # Vendor / CERT / infra brief — Okobot (`ETW-OKO-IC3`)
 
 **Audience:** Vendor PSIRT / CERT / hosting abuse (after IC3)  
-**IC3 paste pack:** [`../../packages/13-okobot/IC3_PASTE_READY.md`](../../packages/13-okobot/IC3_PASTE_READY.md)  
+**Structured dossier:** see package `IC3_FULL_PACKAGE.md` + `02_FBI_SUMMARY.md`
 **PRIMARY:** Kaspersky GReAT / Securelist; Gridinsoft companion  
 **Case isolation:** Okobot only. Extended IoCs behind Kaspersky TI service are not invented here.
 

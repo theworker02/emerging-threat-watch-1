@@ -1,7 +1,7 @@
 # Vendor / CERT / infra brief — Matanbuchus (`ETW-MAT-IC3`)
 
 **Audience:** Vendor PSIRT / CERT / hosting abuse (after IC3)  
-**IC3 paste pack:** [`../../packages/14-matanbuchus/IC3_PASTE_READY.md`](../../packages/14-matanbuchus/IC3_PASTE_READY.md)  
+**Structured dossier:** see package `IC3_FULL_PACKAGE.md` + `02_FBI_SUMMARY.md`
 **PRIMARY:** Huntress; Morphisec; Zscaler; eSentire  
 **Case isolation:** Matanbuchus only — **technique comparator** to SynkLoader (`COMMON TECHNIQUE`); **do not merge** with SynkLoader IC3 `3440d0c64dc240499ff66deaa3311a0b`.
 
