@@ -1,24 +1,27 @@
-# Transfer Manifest — Emerging Threat Watch
+# Transfer manifest â€” emerging-threat-watch-1
 
-**Date:** 2026-09-21
+## Schedule A â€” Included (typical)
 
-| Asset | Category | Notes |
-|-------|----------|-------|
-| repository | TRANSFERABLE | github.com/theworker02/emerging-threat-watch-1 |
-| original analysis / indices / methodology | REQUIRES_LEGAL_REVIEW | AI authorship + MIT history |
-| evidence/primary-sources/* | PUBLIC/THIRD-PARTY | Vendor copyrights — not exclusive ETW property |
-| IOC CSV compilations | REQUIRES_LEGAL_REVIEW | Compilation copyright possible; underlying indicators often public facts |
-| LE package templates | TRANSFERABLE | Original forms; no auto-submit |
-| malware binaries | NONTRANSFERABLE | Not present; must not be added as assets |
-| secrets | NONTRANSFERABLE | Rotate; private/ gitignored |
+1. Git repository `theworker02/emerging-threat-watch-1` (or content transfer)
+2. Original Product source/docs as of closing tag
+3. `docs/acquisition/` diligence materials
+4. In-repo marks created for emerging-threat-watch-1
+5. Asserted copyright in original works (counsel to confirm)
 
-## Credentials migration checklist (no secrets committed)
+## Schedule B â€” Excluded (typical)
 
-- [ ] Inventory GitHub secrets / Actions secrets
-- [ ] Inventory cloud API tokens (Cloudflare, etc.)
-- [ ] Inventory package registry tokens
-- [ ] Inventory signing keys
-- [ ] Rotate all of the above at closing — **ROTATE_IMMEDIATELY** if any exposure suspected
-- [ ] Buyer creates replacement secrets in buyer-controlled accounts
+1. Seller personal accounts
+2. Unrelated theworker02 repositories
+3. Personal cloud billing accounts
+4. Registry credentials (rotate / re-issue)
+5. Historical secrets (rotate)
 
-**NEVER commit credentials.**
+## Schedule C â€” License supersession
+
+Definitive agreement supersedes root `LICENSE` for the buyer to the extent of conflict. Specify public-repo disposition (archive / private / transfer).
+
+## Schedule D â€” Transition assistance (optional)
+
+Docs-only vs time-boxed engineering help â€” negotiate separately.
+
+*Updated: 2026-09-22*

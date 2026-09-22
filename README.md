@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Independent, evidence-driven threat intelligence for emerging malware families</strong><br/>
-  Defensive research only Â· Case-isolated packages Â· Law-enforcement and industry handoff
+  Defensive research only Ã‚Â· Case-isolated packages Ã‚Â· Law-enforcement and industry handoff
 </p>
 
 <p align="center">
@@ -22,10 +22,10 @@
 
 | Audience | Go to |
 |----------|--------|
-| **Law enforcement / IC3 investigators** | [`reports/law-enforcement/README.md`](reports/law-enforcement/README.md) Â· [`MASTER_INDEX.csv`](reports/law-enforcement/MASTER_INDEX.csv) |
-| **Cybersecurity vendors / CERT / CTI teams** | [`reports/INDEX.md`](reports/INDEX.md) Â· [`intelligence/combined_iocs.csv`](intelligence/combined_iocs.csv) Â· [`RESPONSIBLE_SUBMISSION/`](reports/law-enforcement/RESPONSIBLE_SUBMISSION/) |
+| **Law enforcement / IC3 investigators** | [`reports/law-enforcement/README.md`](reports/law-enforcement/README.md) Ã‚Â· [`MASTER_INDEX.csv`](reports/law-enforcement/MASTER_INDEX.csv) |
+| **Cybersecurity vendors / CERT / CTI teams** | [`reports/INDEX.md`](reports/INDEX.md) Ã‚Â· [`intelligence/combined_iocs.csv`](intelligence/combined_iocs.csv) Ã‚Â· [`RESPONSIBLE_SUBMISSION/`](reports/law-enforcement/RESPONSIBLE_SUBMISSION/) |
 | **Full corpus map** | [`reports/INDEX.md`](reports/INDEX.md) |
-| **ATT&CK / landscape** | [`reports/landscape/ATTACK_CORPUS_MAP.md`](reports/landscape/ATTACK_CORPUS_MAP.md) Â· [`EVIDENCE_COMPLETENESS.md`](reports/landscape/EVIDENCE_COMPLETENESS.md) |
+| **ATT&CK / landscape** | [`reports/landscape/ATTACK_CORPUS_MAP.md`](reports/landscape/ATTACK_CORPUS_MAP.md) Ã‚Â· [`EVIDENCE_COMPLETENESS.md`](reports/landscape/EVIDENCE_COMPLETENESS.md) |
 
 ---
 
@@ -35,10 +35,10 @@
 
 Priorities:
 
-- Evidence before narrative â€” claims are ledgered with source class and confidence
-- Passive collection by default â€” no malware execution or C2 contact during research
-- Defender and LE utility â€” summaries, IOC CSVs, ATT&CK maps, STIX where available
-- Honest uncertainty â€” explicit non-authorship defaults when techniques overlap
+- Evidence before narrative Ã¢â‚¬â€ claims are ledgered with source class and confidence
+- Passive collection by default Ã¢â‚¬â€ no malware execution or C2 contact during research
+- Defender and LE utility Ã¢â‚¬â€ summaries, IOC CSVs, ATT&CK maps, STIX where available
+- Honest uncertainty Ã¢â‚¬â€ explicit non-authorship defaults when techniques overlap
 
 ---
 
@@ -48,7 +48,7 @@ Priorities:
 |------------------------|----------------------------|
 | Defensive CTI research packages | A malware sample archive |
 | Claim ledgers, sources, IOC corpora | Live C2 monitoring or tasking |
-| Independent family case files | A merged â€œmega-campaignâ€ attribution dump |
+| Independent family case files | A merged Ã¢â‚¬Å“mega-campaignÃ¢â‚¬Â attribution dump |
 | Structured LE packages for human review | Automated law-enforcement filing |
 
 > **Hard boundary:** This repository must never contain functionality intended to improve, weaponize, deploy, propagate, conceal, or operationalize malware.
@@ -77,22 +77,22 @@ See [`DISCLAIMER.md`](DISCLAIMER.md) and [`SECURITY.md`](SECURITY.md).
 | 14 | Matanbuchus | `ETW-MAT-IC3` | `PRIMARY_FROZEN` (comparator) | [`packages/14-matanbuchus`](reports/law-enforcement/packages/14-matanbuchus/) |
 | 15 | StarlandRAT | `ETW-STR-IC3` | `PRIMARY_FROZEN` | [`packages/15-starlandrat`](reports/law-enforcement/packages/15-starlandrat/) |
 
-**Case isolation (mandatory):** MiniFast â‰  PollCat. Matanbuchus â‰  SynkLoader (technique comparator only). NodeRabbit â‰  PollCat. NightLedger/ArcBridge/BridgeHead â‰  NodeRabbit/PollCat. MiniUpdate/MiniJunk/MiniBrowse â‰  MiniFast.
+**Case isolation (mandatory):** MiniFast Ã¢â€°Â  PollCat. Matanbuchus Ã¢â€°Â  SynkLoader (technique comparator only). NodeRabbit Ã¢â€°Â  PollCat. NightLedger/ArcBridge/BridgeHead Ã¢â€°Â  NodeRabbit/PollCat. MiniUpdate/MiniJunk/MiniBrowse Ã¢â€°Â  MiniFast.
 
-### Sparse-corpus expansion (packages 16â€“66)
+### Sparse-corpus expansion (packages 16Ã¢â‚¬â€œ66)
 
-- **16â€“30:** CountLoader, MAYBEROBOT/NOROBOT/YESROBOT, Tsundere, MonsterV2, PhantomHeart, ABCDoor, MiniUpdate/MiniJunk V2, HEAVYGRAM, CHOSEN BRICK, PromptSpy, GhostChat, HybridPetya
-- **31â€“42:** MovieReaper â€¦ kkRAT (prior deep-research freezes)
-- **43â€“66:** Foxveil â†’ Atlas RAT (GhostContainer, Dohdoor, GopherWhisper, LongNosedGoblin, UAT-9244, UNC1069, Mirage Kitten, MuddyWater, MiniBrowse, plus CANDIDATE stubs)
-- Network IOC + passive WHOIS enrichment: [`intelligence/infra-ownership.csv`](intelligence/infra-ownership.csv) Â· [`INFRA_OWNERSHIP_FINDINGS.md`](intelligence/INFRA_OWNERSHIP_FINDINGS.md)
-- Attribution is metadata only (`attribution.csv`) â€” not nationality-based folders. Catalog: [`docs/CANDIDATE_FAMILIES.md`](docs/CANDIDATE_FAMILIES.md) Â· [`intelligence/candidate-families.csv`](intelligence/candidate-families.csv)
+- **16Ã¢â‚¬â€œ30:** CountLoader, MAYBEROBOT/NOROBOT/YESROBOT, Tsundere, MonsterV2, PhantomHeart, ABCDoor, MiniUpdate/MiniJunk V2, HEAVYGRAM, CHOSEN BRICK, PromptSpy, GhostChat, HybridPetya
+- **31Ã¢â‚¬â€œ42:** MovieReaper Ã¢â‚¬Â¦ kkRAT (prior deep-research freezes)
+- **43Ã¢â‚¬â€œ66:** Foxveil Ã¢â€ â€™ Atlas RAT (GhostContainer, Dohdoor, GopherWhisper, LongNosedGoblin, UAT-9244, UNC1069, Mirage Kitten, MuddyWater, MiniBrowse, plus CANDIDATE stubs)
+- Network IOC + passive WHOIS enrichment: [`intelligence/infra-ownership.csv`](intelligence/infra-ownership.csv) Ã‚Â· [`INFRA_OWNERSHIP_FINDINGS.md`](intelligence/INFRA_OWNERSHIP_FINDINGS.md)
+- Attribution is metadata only (`attribution.csv`) Ã¢â‚¬â€ not nationality-based folders. Catalog: [`docs/CANDIDATE_FAMILIES.md`](docs/CANDIDATE_FAMILIES.md) Ã‚Â· [`intelligence/candidate-families.csv`](intelligence/candidate-families.csv)
 
 ---
 
 ## Repository layout
 
 ```
-reports/law-enforcement/packages/   Investigator packages (02â€“05 core + filing records)
+reports/law-enforcement/packages/   Investigator packages (02Ã¢â‚¬â€œ05 core + filing records)
 reports/law-enforcement/CTI-Evidence-Repository/   STIX / CSV LE ingest tree
 reports/landscape/                  Cross-family ATT&CK and evidence completeness
 investigations/<family>/            Analyst evidence workspace
@@ -130,7 +130,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](docs/SUBMIT_INTEL.md). Prefer PRIMARY pu
 | [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md) | Acquisition notice and Acquirer enforcement warning |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Contribution guidance |
 
-**License:** **Proprietary / commercial** â€” see [`LICENSE`](LICENSE), [`LICENSE_TRANSITION_NOTICE.md`](LICENSE_TRANSITION_NOTICE.md), and [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md). Not open source. Historical MIT snapshots remain under MIT for those copies where applicable; current contents are proprietary. Commercial use requires a written license. Research cutoff for Phase 1 freezes: **2026-09-19** unless a package notes otherwise.
+**License:** **Proprietary / commercial** Ã¢â‚¬â€ see [`LICENSE`](LICENSE), [`LICENSE_TRANSITION_NOTICE.md`](LICENSE_TRANSITION_NOTICE.md), and [`ACQUISITION_NOTICE.md`](ACQUISITION_NOTICE.md). Not open source. Historical MIT snapshots remain under MIT for those copies where applicable; current contents are proprietary. Commercial use requires a written license. Research cutoff for Phase 1 freezes: **2026-09-19** unless a package notes otherwise.
 
 
 ---
@@ -138,3 +138,7 @@ External tips: [`docs/SUBMIT_INTEL.md`](docs/SUBMIT_INTEL.md). Prefer PRIMARY pu
 ## License & acquisition
 
 This project is **proprietary**. Production use, redistribution, and commercial deployment require a written commercial license or completed acquisition. See [LICENSE](./LICENSE) and [ACQUISITION.md](./ACQUISITION.md). Contact [@theworker02](https://github.com/theworker02).
+
+## Acquisition diligence
+
+Buyer-facing diligence materials live in [docs/acquisition/](./docs/acquisition/). Commercial licensing contact path: [COMMERCIAL.md](./COMMERCIAL.md).
