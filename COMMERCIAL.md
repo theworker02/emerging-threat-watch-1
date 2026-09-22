@@ -1,4 +1,4 @@
-# Commercial licensing — Emerging Threat Watch
+# Commercial licensing â€” Emerging Threat Watch
 
 Emerging Threat Watch materials are **proprietary**. This is **not** an open-source license.
 
@@ -18,3 +18,7 @@ See [`LICENSE_TRANSITION_NOTICE.md`](./LICENSE_TRANSITION_NOTICE.md). Historical
 Vendor publications remain third-party. A commercial license for ETW original packaging does not sell vendor copyrights.
 
 This file is not a binding quote. **REQUIRES_LEGAL_REVIEW** for agreement drafting.
+
+## After sale
+
+A completed acquisition or commercial license does **not** automatically convert emerging-threat-watch-1 to open source. Post-closing rights are only those granted in the definitive agreement; absent an express open-source relicense, the Product stays proprietary.
