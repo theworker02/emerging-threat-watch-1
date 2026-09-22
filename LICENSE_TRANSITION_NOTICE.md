@@ -1,58 +1,62 @@
-# License Transition & Enforcement Notice
+# License Transition Notice
 
-**Project:** Emerging Threat Watch  
-**Copyright holder (asserted):** Emerging Threat Watch / theworker02  
-**Effective for current and future distributions of this repository**
+**Effective:** 2026-09-22  
+**Product:** emerging-threat-watch-1  
+**Rightsholder:** theworker02 (https://github.com/theworker02)
 
-This notice is provided for users, evaluators, diligence teams, and prospective
-licensees or acquirers. It is **not legal advice**.
+This repository's default license has been changed to a **proprietary sale / acquisition license** (see root `LICENSE`).
+
+## Effect on prior grants
+
+- **Third parties who already received** a prior open-source grant (for example MIT, Apache-2.0, or BSD) for a specific historical commit or release retain whatever rights that prior license granted for that received copy, to the extent required by that license.
+- **Going forward**, new copies obtained from this repository are governed by the proprietary `LICENSE` unless a separate written commercial license or completed acquisition says otherwise.
+- This notice does **not** re-open source the Product and does **not** grant production, redistribution, or SaaS rights for current Materials.
+
+## Prior license text (archival excerpt)
+
+Prior license posture detected as open-source-style. Historical license text excerpt (first 40 lines) for diligence:
+
+```
+# Proprietary Commercial License
+
+Copyright (c) 2026 Emerging Threat Watch / theworker02. All rights reserved.
+
+## Important
+
+This is **not** an open-source license. Viewing source or browsing this
+repository does not grant production, redistribution, SaaS, or other commercial
+rights.
+
+## Historical MIT releases
+
+Versions / snapshots distributed under the MIT License before the proprietary
+conversion (see git history of this file; MIT introduced in commit `6e5fd08`)
+remain governed by the MIT terms applicable to the copy received, where
+applicable. This license does **not** revoke those historical MIT grants.
+See [`LICENSE_TRANSITION_NOTICE.md`](./LICENSE_TRANSITION_NOTICE.md).
 
 ## Summary
 
-| Period | Terms |
-|--------|--------|
-| **Historical** public distributions expressly licensed under the **MIT License** (approximately 2026-09-19 through the proprietary conversion commits on 2026-09-21; see git history of `LICENSE`, first MIT commit `6e5fd08`) | Those copies remain governed by the MIT terms that accompanied them, where applicable. This notice does **not** claim those MIT grants are revoked, and it does **not** claim that continued use of such historical MIT-licensed copies under MIT is unlawful solely because of this transition. |
-| **Current and future** materials in this repository (and builds/exports derived from the post-transition tree) | **Proprietary Commercial License** in [`LICENSE`](./LICENSE). Commercial use/redistribution requires a signed written commercial license — see [`COMMERCIAL.md`](./COMMERCIAL.md). |
+Current repository contents are **proprietary**. Use, copying, modification,
+redistribution, and commercial exploitation of **post-transition** materials
+require a **separate written commercial license** from the copyright holder,
+except for any rights expressly granted in writing.
 
-## What changed
+## Grant of rights
 
-Emerging Threat Watch was briefly published under MIT and then converted to a
-proprietary commercial model so that commercial licenses can be sold and so
-that intellectual property in **original** ETW packaging/analysis/compilation
-can be transferred or exclusively licensed in an acquisition — subject to
-counsel review of chain of title and third-party content.
+No license is granted by default to current repository contents. Without a
+signed commercial agreement (or other express written permission), you may
+**not** with respect to post-transition materials:
 
-## Enforcement (post-transition materials)
+1. Use the contents for commercial products, services, resale, syndication,
+   SaaS, or paid intelligence offerings
+2. Copy, reproduce, republish, mirror, scrape, or redistribute substantial
+   portions of the repository
+3. Modify, create derivative works from, or incorporate contents into other
+   works for distribution
+4. Sublicense, sell, lease, or transfer rights in the contents
+5. Remove or obscure copyright, license, or proprietary notices
 
-Unauthorized commercial use, redistribution, or other exploitation of
-**post-transition** proprietary materials outside rights expressly granted may
-constitute unauthorized use. The applicable rights holder may enforce its
-copyright, contractual, trademark, or other rights as permitted by applicable
-law.
+```
 
-## Historical MIT copies (accuracy)
-
-If you lawfully received a prior snapshot published under MIT, the MIT license
-that shipped with that material continues to apply **to that historical
-material**. This transition notice:
-
-- does **not** purport to revoke MIT grants for those historical copies;
-- does **not** recharacterize lawful use of those historical copies under MIT as
-  unauthorized solely because of this transition;
-- **does** make clear that **new work** and **current repository contents** are
-  not offered under MIT.
-
-## Third-party content
-
-Vendor research, advisories, and frozen HTML/PDF remain owned by their
-publishers. Neither MIT-era nor proprietary ETW terms transfer those rights.
-
-## Acquisition status
-
-**No acquisition transaction is asserted by this notice.** References to an
-“Acquirer” in older drafts meant the asserted rights holder for licensing
-purposes, not a completed third-party purchase. Use
-[`docs/legal/CHANGE_OF_CONTROL_NOTICE_TEMPLATE.md`](./docs/legal/CHANGE_OF_CONTROL_NOTICE_TEMPLATE.md)
-only after a real closing.
-
-See also: [`docs/legal/RIGHTS_AND_ENFORCEMENT.md`](./docs/legal/RIGHTS_AND_ENFORCEMENT.md) (**REQUIRES_LEGAL_REVIEW**).
+See `ACQUISITION.md` for purchase / acquisition process.
