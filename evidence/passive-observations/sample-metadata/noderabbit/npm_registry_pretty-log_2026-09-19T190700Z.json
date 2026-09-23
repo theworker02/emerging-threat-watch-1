@@ -1,4 +1,4 @@
-﻿{
+{
     "retrieved_utc":  "2026-09-19T19:10:01.4614986Z",
     "body_preview":  "{\"_id\":\"pretty-log\",\"_rev\":\"5-2dd5cd93ba0894b9c773b37ab3098920\",\"name\":\"pretty-log\",\"description\":\"Simple log messages for NodeJs\",\"dist-tags\":{\"latest\":\"0.1.0\"},\"versions\":{\"0.1.0\":{\"name\":\"pretty-log\",\"version\":\"0.1.0\",\"description\":\"Simple log messages for NodeJs\",\"main\":\"index.js\",\"scripts\":{\"test\":\"echo \\\"Error: no test specified\\\" \u0026\u0026 exit 1\"},\"repository\":{\"type\":\"git\",\"url\":\"https://github.com/raphaelivan/pretty-log.git\"},\"keywords\":[\"log\",\"pretty\",\"log\",\"logger\"],\"author\":{\"name\":\"Raphae",
     "http_status":  200,

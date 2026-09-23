@@ -1,4 +1,4 @@
-﻿# Autonomous Collection Policy
+# Autonomous Collection Policy
 
 **Status:** Binding for Emerging Threat Watch collectors and agents  
 **Effective:** 2026-09-19  

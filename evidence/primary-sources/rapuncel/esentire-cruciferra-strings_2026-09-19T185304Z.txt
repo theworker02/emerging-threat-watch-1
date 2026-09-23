@@ -1,4 +1,4 @@
-﻿ERROR: Cannot convert argument "bytes", with value: "Found encrypted string at: 0x1802b86e8, encrypted: B94nHQvgNXA=, decrypted: b'xagt.exe'
+ERROR: Cannot convert argument "bytes", with value: "Found encrypted string at: 0x1802b86e8, encrypted: B94nHQvgNXA=, decrypted: b'xagt.exe'
 Found encrypted string at: 0x1802b8b00, encrypted: Bdc1DUrrKnMANmHPzH4VUyQ=, decrypted: b'zhudongfangyu.exe'
 Found encrypted string at: 0x1802b8be0, encrypted: C80nHEyrKG0E, decrypted: b'trgui.exe'
 Found encrypted string at: 0x1802b8c10, encrypted: C94zAk3qPmFPPX7T, decrypted: b'taskhost.exe'
