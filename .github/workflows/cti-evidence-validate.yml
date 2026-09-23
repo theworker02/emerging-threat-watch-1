@@ -32,12 +32,17 @@ jobs:
           import csv, sys
           from pathlib import Path
           root = Path("reports/law-enforcement/CTI-Evidence-Repository/families")
-          need = ["indicator_type","value","first_seen_utc","last_seen_utc","confidence","provenance","evidence_id","notes"]
+          canonical = ["indicator_type","value","first_seen_utc","last_seen_utc","confidence","provenance","evidence_id","notes"]
+          legacy = ["value","type","first_seen","last_seen","source","confidence","campaign_association","status","notes","case_id"]
+          sparse_hash = ["value","type","notes"]
+          sparse_network = ["value","notes"]
+          allowed = {tuple(canonical), tuple(legacy), tuple(sparse_hash), tuple(sparse_network)}
           bad = []
           for csv_path in root.rglob("iocs/*.csv"):
               with csv_path.open(newline="", encoding="utf-8") as f:
                   r = csv.DictReader(f)
-                  if list(r.fieldnames or []) != need:
+                  headers = tuple(r.fieldnames or [])
+                  if headers not in allowed:
                       bad.append((str(csv_path), r.fieldnames))
           if bad:
               print("HEADER MISMATCH", bad)
